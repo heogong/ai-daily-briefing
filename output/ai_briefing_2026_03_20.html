@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Daily Briefing — 2026.03.20 (금)</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #12121a;
+    --surface-2: #1a1a26;
+    --accent: #00e5a0;
+    --accent-dim: rgba(0,229,160,0.12);
+    --accent-glow: rgba(0,229,160,0.25);
+    --text: #e8e8ed;
+    --text-dim: #8888a0;
+    --text-muted: #555568;
+    --orange: #ff8844;
+    --blue: #4488ff;
+    --pink: #ff4488;
+    --yellow: #ffcc00;
+    --border: rgba(255,255,255,0.06);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    min-height: 100vh;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+  .header {
+    padding: 60px 0 40px;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: -100px; right: -100px;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+    pointer-events: none;
+    animation: pulse 4s ease-in-out infinite;
+  }
+  @keyframes pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.6; } }
+  .header-top { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+  .logo-mark {
+    width: 36px; height: 36px;
+    background: var(--accent);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500; font-size: 14px; color: var(--bg);
+  }
+  .brand-name {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; font-weight: 500;
+    color: var(--text-dim);
+    letter-spacing: 2px; text-transform: uppercase;
+  }
+  .header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px; font-weight: 900; line-height: 1.15;
+    margin-bottom: 12px;
+    background: linear-gradient(135deg, var(--text) 0%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .date-line {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; color: var(--text-muted);
+    display: flex; align-items: center; gap: 12px;
+  }
+  .date-line .dot {
+    width: 6px; height: 6px;
+    background: var(--accent); border-radius: 50%;
+    animation: blink 2s ease-in-out infinite;
+  }
+  @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+  .tldr { padding: 32px 0; border-bottom: 1px solid var(--border); }
+  .tldr-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; color: var(--accent);
+    letter-spacing: 3px; text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .tldr p { font-size: 17px; font-weight: 500; line-height: 1.8; }
+  .section { padding: 40px 0; border-bottom: 1px solid var(--border); }
+  .section:last-child { border-bottom: none; }
+  .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+  .section-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px; font-weight: 900; color: var(--accent); line-height: 1;
+  }
+  .section-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+    padding: 4px 10px; border-radius: 4px; font-weight: 500;
+  }
+  .tag-model { background: rgba(68,136,255,0.15); color: var(--blue); }
+  .tag-product { background: rgba(0,229,160,0.12); color: var(--accent); }
+  .tag-society { background: rgba(255,68,136,0.15); color: var(--pink); }
+  .tag-industry { background: rgba(255,136,68,0.15); color: var(--orange); }
+  .tag-insight { background: rgba(255,204,0,0.15); color: var(--yellow); }
+  .news-title { font-size: 22px; font-weight: 700; line-height: 1.4; margin-bottom: 16px; }
+  .news-body {
+    font-size: 15px; line-height: 1.85; margin-bottom: 16px; font-weight: 300;
+  }
+  .news-body strong { color: var(--accent); font-weight: 500; }
+  .insight-box {
+    background: var(--surface-2);
+    border-left: 3px solid var(--accent);
+    padding: 16px 20px; border-radius: 0 8px 8px 0; margin-top: 16px;
+  }
+  .insight-box .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; color: var(--accent);
+    letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;
+  }
+  .insight-box p { font-size: 14px; line-height: 1.75; font-weight: 400; }
+  .bottom-line {
+    padding: 40px 0; border-top: 2px solid var(--accent); margin-top: 20px;
+  }
+  .bottom-line h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; font-weight: 700; margin-bottom: 20px; color: var(--accent);
+  }
+  .bottom-line p { font-size: 15px; line-height: 1.85; font-weight: 300; margin-bottom: 12px; }
+  .action-list { list-style: none; margin-top: 20px; }
+  .action-list li {
+    position: relative; padding: 10px 0 10px 24px;
+    font-size: 14px; font-weight: 400; line-height: 1.7;
+  }
+  .action-list li::before {
+    content: '→'; position: absolute; left: 0;
+    color: var(--accent); font-family: 'JetBrains Mono', monospace; font-weight: 500;
+  }
+  .action-list li strong { color: var(--accent); font-weight: 500; }
+  .footer {
+    padding: 40px 0; text-align: center;
+    color: var(--text-muted); font-size: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    border-top: 1px solid var(--border);
+  }
+  .footer .accent { color: var(--accent); }
+  @media (max-width: 600px) {
+    .header h1 { font-size: 30px; }
+    .news-title { font-size: 19px; }
+    .container { padding: 0 16px; }
+    .header { padding: 40px 0 30px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <div class="header-top">
+      <div class="logo-mark">AI</div>
+      <span class="brand-name">Daily Briefing</span>
+    </div>
+    <h1>오늘의 AI, 3분 안에 끝내기</h1>
+    <div class="date-line">
+      <span class="dot"></span>
+      <span>2026.03.20 (금) — 바쁜 당신을 위한 AI 핵심 브리핑</span>
+    </div>
+  </header>
+
+  <div class="tldr">
+    <div class="tldr-label">오늘의 한 줄</div>
+    <p>AI가 일하는 방식·뽑는 방식·인프라 판을 동시에 뒤집는 중: 구글·오라클·맥킨지·OpenAI가 모두 움직였다.</p>
+  </div>
+
+  
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <span class="section-tag tag-product">제품 업데이트</span>
+    </div>
+    <h3 class="news-title">구글, Gemini를 Docs·Sheets·Drive에 전면 통합 — 오늘부터 베타 시작</h3>
+    <p class="news-body">구글이 3월 19일 공식 발표를 통해 <strong>Gemini를 Google Docs·Sheets·Slides·Drive에 깊숙이 통합</strong>한 새 베타 기능을 오늘부터 순차 배포한다고 밝혔다. 이제 Drive에서 자연어로 검색하면 AI가 내 파일 속 정보를 요약·인용까지 곁들여 바로 보여주고, Docs에서는 '지난 1월 HOA 회의록과 행사 일정을 참고해 뉴스레터 초안 작성'처럼 다른 파일을 맥락으로 활용한 문서 생성이 가능해진다.
+
+<strong>Google AI Ultra·Pro 구독자</strong>에게 우선 제공되며, 영어 기준 전 세계 Docs·Sheets·Slides, 미국 내 Drive부터 순서대로 열린다. 마이크로소프트 Copilot과 정면으로 맞붙는 전략이며, 이미 Claude가 Excel·PowerPoint에, ChatGPT가 Excel에 들어간 상황에서 '오피스 AI 전쟁'이 본격 불붙는 모습이다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>구글 Workspace를 업무에 쓰는 직장인이라면 지금 바로 Google AI Pro 요금제를 확인해볼 것. 문서 초안·스프레드시트 정리·Drive 검색 시간이 획기적으로 줄어들 수 있다. 단, 현재 영어 전용 베타이므로 한국어 지원 시점을 주시할 것.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <span class="section-tag tag-model">모델 릴리스</span>
+    </div>
+    <h3 class="news-title">OpenAI, GPT-5.4 mini 전격 배포 — 무료 사용자도 '추론 AI' 쓴다</h3>
+    <p class="news-body">OpenAI가 <strong>GPT-5.4 mini</strong>를 ChatGPT 전 플랜에 배포하기 시작했다. 무료·Go 사용자는 '+메뉴 → Thinking' 기능으로 접근할 수 있고, Plus·Pro 등 유료 사용자는 GPT-5.4 Thinking의 사용량 한도를 초과할 때 자동으로 대체 모델로 작동한다. 엔터프라이즈 고객은 기본 라우팅을 GPT-5.4 mini로 설정하는 옵션도 가진다.
+
+이번 배포로 기존의 <strong>GPT-5 Thinking mini는 30일 후 종료</strong>될 예정이다. 2026년 1분기에만 Gemini 3.1 Pro·Claude Opus 4.6·GPT-5.3 Codex·Grok 4.20 등 12개 주요 모델이 릴리스된 가운데, OpenAI는 사실상 '2주에 한 번' 업데이트 속도를 유지하며 경쟁사를 압박 중이다. OpenAI의 연간 매출은 이미 <strong>250억 달러</strong>를 돌파했으며, 연내 IPO도 검토 중인 것으로 알려졌다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>ChatGPT 무료 사용자도 이제 'Thinking(추론)' 모드를 체험할 수 있다. 복잡한 분석·계획·코딩 작업에서 일반 응답과 품질 차이가 느껴지면, 유료 플랜 전환을 진지하게 고려할 시점이다.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <span class="section-tag tag-society">일자리·사회</span>
+    </div>
+    <h3 class="news-title">오라클, 최대 3만 명 감원 추진 — AI 데이터센터 짓느라 사람을 판다</h3>
+    <p class="news-body">엔터프라이즈 소프트웨어 대기업 오라클이 <strong>2만~3만 명(전체 직원의 12~18%)을 감원</strong>하는 방안을 검토 중이라고 블룸버그·TD코웬 리서치가 보도했다. 감원으로 확보될 현금은 약 <strong>80~100억 달러</strong>로 추산되며, 전액 AI 데이터센터 구축에 투입될 계획이다. 일부 감원 대상 직무는 'AI로 대체 가능하다'고 회사가 판단한 카테고리다.
+
+배경엔 오라클이 OpenAI와 체결한 <strong>5년간 GPU 300만 개 규모, 약 1,560억 달러짜리 클라우드 계약</strong>이 있다. AWS·Azure·Google Cloud와의 경쟁을 위해 래리 엘리슨 회장이 'AI 클라우드 올인' 전략을 밀어붙이는 중이지만, 미국 은행들이 프로젝트 파이낸싱에서 발을 빼면서 차입 비용이 두 배로 치솟은 상황이다. 2026년 최대 테크 감원 사태로 기록될 전망이다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>오라클의 이번 감원은 단순 비용 절감이 아닌 'AI 인프라 확보를 위해 인력을 유동화'하는 구조적 전환의 신호다. IT·클라우드·SaaS 업계 종사자라면 자신의 역할이 AI로 대체 가능한지 점검하고, 클라우드·AI 운영 역량을 선제적으로 쌓아야 할 때다.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <span class="section-tag tag-industry">산업 동향</span>
+    </div>
+    <h3 class="news-title">맥킨지, 'AI와 협업 능력'을 채용 면접에 공식 도입 — 이제 AI 못 쓰면 탈락?</h3>
+    <p class="news-body">글로벌 컨설팅 1위 맥킨지가 신입 최종 면접에 <strong>'AI 면접'을 새 단계로 추가</strong>했다. 지원자는 맥킨지 자체 AI 도구 <strong>'Lilli'</strong>를 활용해 실제 클라이언트 시나리오를 해결해야 하며, 평가 기준은 기술적 AI 지식이 아닌 '추론·판단·협업 방식'이다. 즉, AI를 얼마나 잘 부릴 줄 아는지가 핵심이다.
+
+맥킨지 CEO 밥 스턴펠스는 현재 임직원 4만 명 옆에 <strong>AI 에이전트 2만 개</strong>가 사실상 동료처럼 일하고 있다고 밝혔다. 18개월 전 3,000개에서 500% 이상 성장한 수치다. 그는 '18개월 후엔 모든 직원 옆에 에이전트 하나씩 배치될 것'이라고 예고했다. 맥킨지가 선도하면 BCG·베인 등 다른 컨설팅사와 글로벌 기업들도 유사한 채용 방식으로 전환할 가능성이 높다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>이제 취업·이직 준비에서 'AI 툴 활용 능력'은 선택이 아닌 필수다. ChatGPT·Claude·Gemini를 업무 맥락에서 실제로 쓰는 경험을 쌓고, 본인의 사고·판단을 AI 결과 위에 얹는 연습을 해두자. 이 역량은 컨설팅뿐 아니라 모든 산업으로 빠르게 확산될 것이다.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">05</span>
+      <span class="section-tag tag-insight">글로벌 이슈</span>
+    </div>
+    <h3 class="news-title">컴퓨터 과학의 전설 크누스 교수, 'Claude가 내가 못 푼 수학 난제를 풀었다' 충격 발표</h3>
+    <p class="news-body">알고리즘 분석의 아버지로 불리는 스탠퍼드 명예교수 <strong>도널드 크누스</strong>가 3월 초 'Claude's Cycles'라는 논문을 발표하며 Anthropic의 <strong>Claude Opus 4.6</strong>이 자신이 수 주간 씨름하던 복잡한 그래프 이론 난제(3D 방향 그래프에서의 해밀턴 순환 구성)를 해결했다고 밝혔다. 논문은 'Shock! Shock!(충격! 충격!)'이라는 감탄사로 시작한다.
+
+크누스 교수는 이 성과를 <strong>'자동 추론과 창의적 문제 해결의 극적인 진보'</strong>라고 평가했다. 이는 AI가 단순한 코딩 보조나 글쓰기 도구를 넘어, 인간 전문가조차 해결하지 못한 수학·과학 난제에 도전할 수준에 이르렀음을 상징적으로 보여주는 사건이다. AI의 '연구 브레이크스루' 가능성이 학계 전반에서 다시 주목받고 있다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>AI가 이제 '창의적 난제 해결사' 역할을 하기 시작했다는 신호다. 연구·분석 직군이라면 AI를 단순 검색 도구가 아닌 '공동 연구자'로 활용하는 실험을 당장 시작해볼 것. 특히 Claude의 코딩·수학적 추론 능력은 최근 가파르게 상승 중이다.</p>
+    </div>
+  </section>
+
+  <div class="bottom-line">
+    <h2>오늘의 핵심 테이크어웨이</h2>
+    <ul class="action-list">
+      <li><strong>AI는 이제 오피스 앱 안으로 들어왔다</strong> — 구글 Gemini의 Workspace 통합, Claude의 Excel·PowerPoint 탑재, ChatGPT의 Google·MS 앱 연동이 동시에 진행 중. 지금 쓰는 툴이 AI를 품기 시작했다.</li>
+      <li><strong>'AI를 얼마나 잘 쓰느냐'가 채용 기준이 됐다</strong> — 맥킨지가 먼저 쏜 신호탄. 업종을 불문하고 AI 협업 역량이 스펙의 핵심 항목으로 빠르게 자리 잡을 것이다.</li>
+      <li><strong>AI 인프라 전쟁의 희생양은 일자리다</strong> — 오라클 최대 3만 명 감원은 단순 구조조정이 아닌 'AI 설비 투자를 위한 인력 현금화'다. AI가 만드는 일자리보다 없애는 속도가 빠른 국면이 시작됐다.</li>
+    </ul>
+  </div>
+
+  <footer class="footer">
+    <p>AI Daily Briefing — <span class="accent">바쁜 사람을 위한 3분 AI 뉴스</span></p>
+    <p style="margin-top: 8px;">2026.03.20 (금) | 매일 아침 업데이트</p>
+  </footer>
+</div>
+</body>
+</html>
