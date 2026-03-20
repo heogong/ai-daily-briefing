@@ -84,7 +84,7 @@ def collect_and_analyze_news(client: openai.OpenAI) -> str:
 - 카테고리 태그 (모델 릴리스 / 제품 업데이트 / 일자리·사회 / 산업 동향 / 글로벌 이슈 중 택1)
 - 제목 (한국어, 임팩트 있게)
 - 본문 요약 (2~3문단, 핵심 숫자/사실 포함)
-- 시사점 (독자가 실제로 행동할 수 있는 인사이트)
+- 시사점: 이 기사 자체의 의미와 흐름 — 업계 전반에 어떤 변화를 의미하는지, 독자가 알아야 할 맥락 (특정 회사 관점이 아닌 해당 뉴스에 대한 시사점)
 
 최종 출력 형식 (반드시 이 JSON 형식으로):
 ```json
@@ -97,7 +97,7 @@ def collect_and_analyze_news(client: openai.OpenAI) -> str:
       "category": "모델 릴리스",
       "title": "뉴스 제목",
       "body": "본문 요약. 핵심 키워드는 **별표두개**로 감싸서 강조. 큰따옴표 대신 작은따옴표 사용.",
-      "insight": "시사점",
+      "insight": "이 뉴스가 업계 전반에 미치는 의미와 맥락 (이수시스템 언급 금지)",
       "isu_area": "AI 사업",
       "isu_tag": "[핵심 기회]",
       "isu_insight": "이수시스템 관점 인사이트"
@@ -116,11 +116,14 @@ def collect_and_analyze_news(client: openai.OpenAI) -> str:
 - JSON 문자열 값 안에서 큰따옴표(")를 절대 사용하지 마세요. 작은따옴표(')를 쓰세요.
 - HTML 태그를 사용하지 마세요. 강조는 **별표두개**만 사용하세요.
 - JSON이 유효한지 반드시 확인 후 출력하세요.
+- insight 필드에는 이수시스템을 절대 언급하지 마세요. ISU 관련 내용은 오직 isu_insight에만 작성합니다.
 
 웹 검색을 적극적으로 활용해 최신 정보를 확보하세요.
 오래된 정보가 아닌 오늘/이번 주의 뉴스를 우선하세요.
 
 --- 이수시스템 컨텍스트 ---
+insight 필드는 기사 자체의 업계 시사점이므로 절대 수정하지 않는다. ISU 관점은 isu_insight와 isu_summary에만 작성한다.
+
 {isu_context}
 
 각 뉴스에 isu_area, isu_tag, isu_insight 필드를 추가하고,

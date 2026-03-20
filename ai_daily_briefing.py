@@ -30,7 +30,15 @@ from pathlib import Path
 MODEL = "claude-sonnet-4-6"          # 비용 효율 모델 (Opus는 더 좋지만 비쌈)
 MAX_TOKENS = 8192
 OUTPUT_DIR = Path("output")
-MAX_SEARCH_USES = 10                 # 웹 검색 최대 횟수
+MAX_SEARCH_USES = 5                 # 웹 검색 최대 횟수
+ISU_CONTEXT_PATH = Path("ISU_COMPANY.md")
+
+
+def load_isu_context() -> str:
+    """이수시스템 컨텍스트 로드"""
+    if ISU_CONTEXT_PATH.exists():
+        return ISU_CONTEXT_PATH.read_text(encoding="utf-8")
+    return ""
 
 
 def get_today_str() -> str:
@@ -54,6 +62,7 @@ def collect_and_analyze_news(client: anthropic.Anthropic) -> str:
     """
 
     today = get_today_str()
+    isu_context = load_isu_context()
 
     system_prompt = f"""당신은 AI 산업 전문 뉴스레터 에디터입니다.
 오늘은 {today}입니다.
@@ -75,7 +84,7 @@ def collect_and_analyze_news(client: anthropic.Anthropic) -> str:
 - 카테고리 태그 (모델 릴리스 / 제품 업데이트 / 일자리·사회 / 산업 동향 / 글로벌 이슈 중 택1)
 - 제목 (한국어, 임팩트 있게)
 - 본문 요약 (2~3문단, 핵심 숫자/사실 포함)
-- 시사점 (독자가 실제로 행동할 수 있는 인사이트)
+- 시사점: 이 기사 자체의 의미와 흐름 — 업계 전반에 어떤 변화를 의미하는지, 독자가 알아야 할 맥락 (특정 회사 관점이 아닌 해당 뉴스에 대한 시사점)
 
 최종 출력 형식 (반드시 이 JSON 형식으로):
 ```json
@@ -88,14 +97,18 @@ def collect_and_analyze_news(client: anthropic.Anthropic) -> str:
       "category": "모델 릴리스",
       "title": "뉴스 제목",
       "body": "본문 요약. 핵심 키워드는 **별표두개**로 감싸서 강조. 큰따옴표 대신 작은따옴표 사용.",
-      "insight": "시사점"
+      "insight": "이 뉴스가 업계 전반에 미치는 의미와 맥락 (이수시스템 언급 금지)",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "이수시스템 관점 인사이트"
     }}
   ],
   "takeaways": [
     "핵심 테이크어웨이 1 (**별표두개**로 강조 가능)",
     "핵심 테이크어웨이 2",
     "핵심 테이크어웨이 3"
-  ]
+  ],
+  "isu_summary": "이수시스템 관점의 오늘 AI 뉴스 종합 인사이트 (2~3문장)"
 }}
 ```
 
@@ -103,9 +116,20 @@ def collect_and_analyze_news(client: anthropic.Anthropic) -> str:
 - JSON 문자열 값 안에서 큰따옴표(")를 절대 사용하지 마세요. 작은따옴표(')를 쓰세요.
 - HTML 태그를 사용하지 마세요. 강조는 **별표두개**만 사용하세요.
 - JSON이 유효한지 반드시 확인 후 출력하세요.
+- insight 필드에는 이수시스템을 절대 언급하지 마세요. ISU 관련 내용은 오직 isu_insight에만 작성합니다.
 
-웹 검색을 적극적으로 활용해 최신 정보를 확보하세요. 
-오래된 정보가 아닌 오늘/이번 주의 뉴스를 우선하세요."""
+웹 검색을 적극적으로 활용해 최신 정보를 확보하세요.
+오래된 정보가 아닌 오늘/이번 주의 뉴스를 우선하세요.
+
+--- 이수시스템 컨텍스트 ---
+insight 필드는 기사 자체의 업계 시사점이므로 절대 수정하지 않는다. ISU 관점은 isu_insight와 isu_summary에만 작성한다.
+
+{isu_context}
+
+각 뉴스에 isu_area, isu_tag, isu_insight 필드를 추가하고,
+마지막에 isu_summary로 이수시스템 관점 종합 인사이트를 작성하라.
+isu_area는 6대 영역(AI 사업 / 디지털서비스 사업 / ESG 사업 / HR 사업 / 안전 사업 / 클라우드 사업) 중 가장 연관도 높은 것 1개 선택.
+isu_tag는 [핵심 기회] [제품 강화] [영업 기회] [리스크] [모니터링] [정부 사업] 중 1개."""
 
     response = client.messages.create(
         model=MODEL,
@@ -260,6 +284,20 @@ def generate_html(data: dict) -> str:
     for item in data["news"]:
         cat = item.get("category", "산업 동향")
         tag_class, _ = category_tags.get(cat, ("tag-industry", "#ff8844"))
+        isu_area = item.get("isu_area", "")
+        isu_tag = item.get("isu_tag", "")
+        isu_insight = item.get("isu_insight", "")
+
+        isu_box = ""
+        if isu_area or isu_insight:
+            isu_box = f"""
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">{isu_area}</span>
+        <span class="isu-opp-tag">{isu_tag}</span>
+      </div>
+      <p>{isu_insight}</p>
+    </div>"""
 
         news_sections += f"""
   <section class="section">
@@ -272,13 +310,23 @@ def generate_html(data: dict) -> str:
     <div class="insight-box">
       <div class="label">시사점</div>
       <p>{md_to_html(item['insight'])}</p>
-    </div>
+    </div>{isu_box}
   </section>"""
 
     # 테이크어웨이 리스트
     takeaway_items = ""
     for t in data.get("takeaways", []):
         takeaway_items += f"\n      <li>{md_to_html(t)}</li>"
+
+    # ISU 종합 인사이트 섹션
+    isu_summary = data.get("isu_summary", "")
+    isu_summary_section = ""
+    if isu_summary:
+        isu_summary_section = f"""
+  <div class="isu-section">
+    <h2>이수시스템 인사이트</h2>
+    <p>{isu_summary}</p>
+  </div>"""
 
     html = f"""<!DOCTYPE html>
 <html lang="ko">
@@ -406,6 +454,35 @@ def generate_html(data: dict) -> str:
     letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;
   }}
   .insight-box p {{ font-size: 14px; line-height: 1.75; font-weight: 400; }}
+  .isu-box {{
+    background: rgba(255,136,68,0.08);
+    border-left: 3px solid var(--orange);
+    padding: 10px 14px; border-radius: 0 6px 6px 0; margin-top: 12px;
+  }}
+  .isu-box .isu-label {{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; color: var(--orange);
+    letter-spacing: 2px; text-transform: uppercase; margin-bottom: 6px;
+  }}
+  .isu-area-tag {{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; padding: 2px 8px; border-radius: 3px;
+    background: rgba(255,136,68,0.15); color: var(--orange);
+    margin-right: 6px;
+  }}
+  .isu-opp-tag {{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; padding: 2px 8px; border-radius: 3px;
+    background: rgba(255,204,0,0.15); color: var(--yellow);
+  }}
+  .isu-section {{
+    padding: 40px 0; border-top: 2px solid var(--orange); margin-top: 20px;
+  }}
+  .isu-section h2 {{
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; font-weight: 700; margin-bottom: 16px; color: var(--orange);
+  }}
+  .isu-section p {{ font-size: 15px; line-height: 1.85; font-weight: 300; }}
   .bottom-line {{
     padding: 40px 0; border-top: 2px solid var(--accent); margin-top: 20px;
   }}
@@ -459,6 +536,7 @@ def generate_html(data: dict) -> str:
   </div>
 
   {news_sections}
+  {isu_summary_section}
 
   <div class="bottom-line">
     <h2>오늘의 핵심 테이크어웨이</h2>
@@ -469,7 +547,7 @@ def generate_html(data: dict) -> str:
   <footer class="footer">
     <p>AI Daily Briefing — <span class="accent">바쁜 사람을 위한 3분 AI 뉴스</span></p>
     <p style="margin-top: 8px;">{data['date']} | 매일 아침 업데이트</p>
-    <p style="margin-top: 8px;">© keyboard@kakao.com </p>
+    <p style="margin-top: 8px;">© keyboard@kakao.com</p>
   </footer>
 </div>
 </body>
