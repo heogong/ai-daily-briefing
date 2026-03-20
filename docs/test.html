@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Daily Briefing — 2026.03.20 (금)</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #12121a;
+    --surface-2: #1a1a26;
+    --accent: #00e5a0;
+    --accent-dim: rgba(0,229,160,0.12);
+    --accent-glow: rgba(0,229,160,0.25);
+    --text: #e8e8ed;
+    --text-dim: #8888a0;
+    --text-muted: #555568;
+    --orange: #ff8844;
+    --blue: #4488ff;
+    --pink: #ff4488;
+    --yellow: #ffcc00;
+    --border: rgba(255,255,255,0.06);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    min-height: 100vh;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+  .header {
+    padding: 60px 0 40px;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: -100px; right: -100px;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+    pointer-events: none;
+    animation: pulse 4s ease-in-out infinite;
+  }
+  @keyframes pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.6; } }
+  .header-top { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+  .logo-mark {
+    width: 36px; height: 36px;
+    background: var(--accent);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500; font-size: 14px; color: var(--bg);
+  }
+  .brand-name {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; font-weight: 500;
+    color: var(--text-dim);
+    letter-spacing: 2px; text-transform: uppercase;
+  }
+  .header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px; font-weight: 900; line-height: 1.15;
+    margin-bottom: 12px;
+    background: linear-gradient(135deg, var(--text) 0%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .date-line {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; color: var(--text-muted);
+    display: flex; align-items: center; gap: 12px;
+  }
+  .date-line .dot {
+    width: 6px; height: 6px;
+    background: var(--accent); border-radius: 50%;
+    animation: blink 2s ease-in-out infinite;
+  }
+  @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+  .tldr { padding: 32px 0; border-bottom: 1px solid var(--border); }
+  .tldr-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; color: var(--accent);
+    letter-spacing: 3px; text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .tldr p { font-size: 17px; font-weight: 500; line-height: 1.8; }
+  .section { padding: 40px 0; border-bottom: 1px solid var(--border); }
+  .section:last-child { border-bottom: none; }
+  .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+  .section-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px; font-weight: 900; color: var(--accent); line-height: 1;
+  }
+  .section-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+    padding: 4px 10px; border-radius: 4px; font-weight: 500;
+  }
+  .tag-model { background: rgba(68,136,255,0.15); color: var(--blue); }
+  .tag-product { background: rgba(0,229,160,0.12); color: var(--accent); }
+  .tag-society { background: rgba(255,68,136,0.15); color: var(--pink); }
+  .tag-industry { background: rgba(255,136,68,0.15); color: var(--orange); }
+  .tag-insight { background: rgba(255,204,0,0.15); color: var(--yellow); }
+  .news-title { font-size: 22px; font-weight: 700; line-height: 1.4; margin-bottom: 16px; }
+  .news-body {
+    font-size: 15px; line-height: 1.85; margin-bottom: 16px; font-weight: 300;
+  }
+  .news-body strong { color: var(--accent); font-weight: 500; }
+  .insight-box {
+    background: var(--surface-2);
+    border-left: 3px solid var(--accent);
+    padding: 16px 20px; border-radius: 0 8px 8px 0; margin-top: 16px;
+  }
+  .insight-box .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; color: var(--accent);
+    letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;
+  }
+  .insight-box p { font-size: 14px; line-height: 1.75; font-weight: 400; }
+  .isu-box {
+    background: rgba(255,136,68,0.08);
+    border-left: 3px solid var(--orange);
+    padding: 10px 14px; border-radius: 0 6px 6px 0; margin-top: 12px;
+  }
+  .isu-box .isu-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; color: var(--orange);
+    letter-spacing: 2px; text-transform: uppercase; margin-bottom: 6px;
+  }
+  .isu-area-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; padding: 2px 8px; border-radius: 3px;
+    background: rgba(255,136,68,0.15); color: var(--orange);
+    margin-right: 6px;
+  }
+  .isu-opp-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; padding: 2px 8px; border-radius: 3px;
+    background: rgba(255,204,0,0.15); color: var(--yellow);
+  }
+  .isu-section {
+    padding: 40px 0; border-top: 2px solid var(--orange); margin-top: 20px;
+  }
+  .isu-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; font-weight: 700; margin-bottom: 16px; color: var(--orange);
+  }
+  .isu-section p { font-size: 15px; line-height: 1.85; font-weight: 300; }
+  .bottom-line {
+    padding: 40px 0; border-top: 2px solid var(--accent); margin-top: 20px;
+  }
+  .bottom-line h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; font-weight: 700; margin-bottom: 20px; color: var(--accent);
+  }
+  .bottom-line p { font-size: 15px; line-height: 1.85; font-weight: 300; margin-bottom: 12px; }
+  .action-list { list-style: none; margin-top: 20px; }
+  .action-list li {
+    position: relative; padding: 10px 0 10px 24px;
+    font-size: 14px; font-weight: 400; line-height: 1.7;
+  }
+  .action-list li::before {
+    content: '→'; position: absolute; left: 0;
+    color: var(--accent); font-family: 'JetBrains Mono', monospace; font-weight: 500;
+  }
+  .action-list li strong { color: var(--accent); font-weight: 500; }
+  .footer {
+    padding: 40px 0; text-align: center;
+    color: var(--text-muted); font-size: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    border-top: 1px solid var(--border);
+  }
+  .footer .accent { color: var(--accent); }
+  @media (max-width: 600px) {
+    .header h1 { font-size: 30px; }
+    .news-title { font-size: 19px; }
+    .container { padding: 0 16px; }
+    .header { padding: 40px 0 30px; }
+  }
+  .tts-bar {
+    position: fixed; bottom: 0; left: 0; right: 0;
+    background: rgba(18,18,26,0.96);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid var(--border);
+    padding: 12px 24px;
+    display: flex; align-items: center; gap: 12px;
+    z-index: 1000; font-family: 'JetBrains Mono', monospace;
+  }
+  .tts-btn {
+    background: var(--accent-dim); color: var(--accent);
+    border: 1px solid rgba(0,229,160,0.3);
+    padding: 6px 16px; border-radius: 6px;
+    font-family: 'JetBrains Mono', monospace; font-size: 12px;
+    cursor: pointer; transition: background 0.2s;
+  }
+  .tts-btn:hover { background: rgba(0,229,160,0.2); }
+  .tts-btn.stop { color: var(--text-dim); border-color: var(--border); background: transparent; }
+  .tts-status { font-size: 11px; color: var(--text-muted); flex: 1; }
+  .tts-speed {
+    background: transparent; color: var(--text-dim); border: 1px solid var(--border);
+    padding: 4px 8px; border-radius: 4px; font-size: 11px; cursor: pointer;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .section.tts-active { outline: 2px solid var(--accent); outline-offset: 8px; border-radius: 4px; }
+  body { padding-bottom: 60px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <div class="header-top">
+      <div class="logo-mark">AI</div>
+      <span class="brand-name">Daily Briefing</span>
+    </div>
+    <h1>오늘의 AI, 3분 안에 끝내기</h1>
+    <div class="date-line">
+      <span class="dot"></span>
+      <span>2026.03.20 (금) — 바쁜 당신을 위한 AI 핵심 브리핑</span>
+    </div>
+  </header>
+
+  <div class="tldr">
+    <div class="tldr-label">오늘의 한 줄</div>
+    <p>OpenAI의 GPT-5.4 출시, Google의 경량 Gemini, Nvidia의 차세대 인프라, 연방기관의 Anthropic 배제, Microsoft의 Copilot 다변화로 기업용 AI 환경이 급변 중</p>
+  </div>
+
+  
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <span class="section-tag tag-model">모델 릴리스</span>
+    </div>
+    <h3 class="news-title">OpenAI, GPT-5.4 출시로 100만 토큰 컨텍스트 지원</h3>
+    <p class="news-body">OpenAI가 2026년 3월 5일 <strong>GPT-5.4</strong> 모델을 출시했다. Pro·Thinking 두 가지 버전을 제공하며 <strong>100만 토큰</strong> 컨텍스트 윈도우를 지원해 대용량 문서 처리와 복잡한 추론 애플리케이션을 강화했다. 가격은 종전 모델 대비 20% 인상된 것으로 알려졌다. ([en.wikipedia.org](https://en.wikipedia.org/wiki/GPT-5.4?utm_source=openai))</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>이 출시로 <strong>대용량 데이터 처리</strong>가 가능해져 기업용 RAG 챗봇 및 문서 분석 애플리케이션의 정확성이 크게 향상될 것으로 예상된다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[제품 강화]</span>
+      </div>
+      <p>이수시스템은 AI 플랫폼 및 RAG 기반 챗봇에 GPT-5.4의 1M 토큰 컨텍스트를 도입해 대규모 인사문서·이력서 분석 기능을 강화해야 한다.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <span class="section-tag tag-product">제품 업데이트</span>
+    </div>
+    <h3 class="news-title">Google, 제미나이 3.1 플래시 라이트 프리뷰 공개</h3>
+    <p class="news-body">Google이 2026년 2월 19일 개발자용 API에서 <strong>제미나이 3.1 플래시 라이트(Gemini 3.1 Flash Lite)</strong> 프리뷰를 공개했다. 이 모델은 Pro 버전 대비 가격을 <strong>8분의 1</strong>로 낮추고 멀티모달 기능을 지원해, 복잡한 이미지 편집과 텍스트 생성 작업을 경량화된 환경에서 수행할 수 있다. ([koreaai.or.kr](https://koreaai.or.kr/dailynews/20260304/?utm_source=openai))</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>경량화된 멀티모달 AI는 모바일·엣지 디바이스에 AI 기능을 확장할 수 있는 가능성을 제시한다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[모니터링]</span>
+      </div>
+      <p>이수시스템은 WORKUP 모바일 HR 서비스에 제미나이 플래시 라이트 API를 테스트해, 고객 현장 단말에 경량 챗봇 기능 탑재 가능성을 검토해야 한다.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <span class="section-tag tag-product">제품 업데이트</span>
+    </div>
+    <h3 class="news-title">Nvidia, Vera Rubin 샘플 배송·1조 달러 AI 칩 매출 전망</h3>
+    <p class="news-body">3월 중순 열린 <strong>Nvidia GTC 2026</strong> 키노트에서 CEO 젠슨 황은 <strong>Blackwell</strong> 및 <strong>Rubin</strong> 시리즈 AI 칩의 매출이 2027년까지 <strong>1조 달러</strong>에 달할 것으로 전망했다. 또한 2월 말 고객사에 <strong>Vera Rubin</strong> AI GPU 샘플을 첫 배송해, <strong>288GB HBM4</strong> 메모리와 <strong>NVLink 6.0</strong>으로 고성능 추론 워크로드를 지원한다고 발표했다. ([techradar.com](https://www.techradar.com/pro/we-expect-at-least-usd1-trillion-revenue-nvidia-ceo-predicts-huge-windfall-on-rubin-and-blackwell-chips-as-he-reveals-new-vera-cpu-and-server-racks?utm_source=openai))</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>차세대 인프라 성능 향상으로 기업용 AI 플랫폼의 비용·성능 최적화 경쟁이 심화될 전망이다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">클라우드 사업</span>
+        <span class="isu-opp-tag">[모니터링]</span>
+      </div>
+      <p>이수시스템은 NCP 기반 클라우드 서비스에 차세대 HBM4급 GPU 호스팅 옵션을 검토해, 클라우드 마이그레이션 영업 전략에 반영해야 한다.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <span class="section-tag tag-insight">글로벌 이슈</span>
+    </div>
+    <h3 class="news-title">트럼프 행정부, 연방기관에 Anthropic AI 사용 중단 지시</h3>
+    <p class="news-body">2026년 2월 27일 도널드 트럼프 대통령은 '국가 안보 위험'을 이유로 모든 연방기관에 <strong>Anthropic</strong>사의 <strong>Claude</strong> 모델 사용을 즉시 중단하라고 지시했다. 이 조치로 <strong>국방부·재무부·주택금융청</strong> 등 주요 기관이 Claude 페이즈아웃을 시작했으며, 6개월 내 완전 전환을 요구받았다. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Claude_%28language_model%29))</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>미 연방 부문의 AI 채택 전략이 특정 벤더 의존에서 벗어나 다중 공급망 체제로 전환하는 계기가 될 수 있다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[리스크]</span>
+      </div>
+      <p>이수시스템은 공공부문 사업 제안 시 Anthropic 의존도를 낮추고 GPT·Gemini 등 대체 LLM 지원 방안을 마련해야 한다.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">05</span>
+      <span class="section-tag tag-industry">산업 동향</span>
+    </div>
+    <h3 class="news-title">Microsoft, M365 Copilot에 Claude Sonnet 통합</h3>
+    <p class="news-body">2026년 3월 9일 마이크로소프트는 자사 AI 어시스턴트 서비스 <strong>M365 Copilot</strong>에 <strong>Anthropic</strong>의 <strong>Claude Sonnet</strong> 모델을 통합한다고 밝혔다. 이를 통해 사용자는 Copilot 내에서 OpenAI 모델뿐만 아니라 Sonnet 모델을 선택해 에이전트 워크플로우를 구성할 수 있다. ([investing.com](https://www.investing.com/news/stock-market-news/microsoft-taps-anthropic-for-copilot-cowork-in-push-for-ai-agents-4549778?utm_source=openai))</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>기업 고객은 Office 365 워크플로우에 다양한 LLM 옵션을 활용할 수 있게 돼, Copilot 커스터마이징 수요가 증가할 것으로 보인다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">디지털서비스 사업</span>
+        <span class="isu-opp-tag">[영업 기회]</span>
+      </div>
+      <p>이수시스템은 M365 Copilot 연동형 RPA 및 Chatbot 구축 서비스를 강화해, WORKUP 고객사의 업무 자동화·생산성 혁신 프로젝트를 제안할 수 있다.</p>
+    </div>
+  </section>
+  
+  <div class="isu-section">
+    <h2>이수시스템 인사이트</h2>
+    <p>이수시스템은 최신 LLM을 자사 AI 플랫폼 및 HR AI 패키지에 접목해 대용량 문서 처리 역량을 강화하고, 공공부문 사업에서 Anthropic 의존도를 낮춰 다중모델 지원 구조를 마련해야 한다. 또한 Microsoft 365 Copilot 연동 서비스와 차세대 클라우드 인프라 호스팅 옵션을 영업 전략에 반영해 디지털서비스 사업 기회를 확대해야 한다.</p>
+  </div>
+
+  <div class="bottom-line">
+    <h2>오늘의 핵심 테이크어웨이</h2>
+    <ul class="action-list">
+      <li>대용량 컨텍스트 지원 모델의 등장으로 <strong>RAG 챗봇·문서분석</strong> 성능이 획기적으로 개선될 전망</li>
+      <li>인프라 업그레이드 경쟁 심화로 <strong>클라우드·하드웨어 최적화</strong> 전략이 차별화 요인으로 부상</li>
+      <li>기업용 AI 생태계는 <strong>다중 LLM 지원</strong> 및 <strong>공급망 다변화</strong>가 필수</li>
+    </ul>
+  </div>
+
+  <footer class="footer">
+    <p>AI Daily Briefing — <span class="accent">바쁜 사람을 위한 3분 AI 뉴스</span></p>
+    <p style="margin-top: 8px;">2026.03.20 (금) | 매일 아침 업데이트</p>
+    <p style="margin-top: 8px;">© keyboard@kakao.com</p>
+  </footer>
+</div>
+<div class="tts-bar" id="ttsBar">
+  <button class="tts-btn" id="ttsPlayBtn" onclick="ttsToggle()">▶ 읽기 시작</button>
+  <button class="tts-btn stop" id="ttsStopBtn" onclick="ttsStop()">⏹</button>
+  <span class="tts-status" id="ttsStatus">준비</span>
+  <select class="tts-speed" id="ttsSpeed" onchange="ttsChangeSpeed()">
+    <option value="0.8">0.8×</option>
+    <option value="1.0" selected>1.0×</option>
+    <option value="1.2">1.2×</option>
+    <option value="1.5">1.5×</option>
+  </select>
+</div>
+<script>
+const TTS = {
+  synth: window.speechSynthesis,
+  parts: [],
+  idx: 0,
+  playing: false,
+
+  build() {
+    this.parts = [];
+    const oneliner = document.querySelector('.tldr p')?.innerText;
+    if (oneliner) this.parts.push({ text: `오늘의 한 줄. ${oneliner}`, section: null });
+
+    document.querySelectorAll('.section').forEach((sec, i) => {
+      const title   = sec.querySelector('.news-title')?.innerText || '';
+      const body    = sec.querySelector('.news-body')?.innerText  || '';
+      const insight = sec.querySelector('.insight-box p')?.innerText || '';
+      const num = i + 1;
+      this.parts.push({
+        text: `${num}번 뉴스. ${title}. ${body}. 시사점. ${insight}`,
+        section: sec
+      });
+    });
+  },
+
+  speak(idx) {
+    if (idx >= this.parts.length) { this.stop(); return; }
+    this.idx = idx;
+    const part = this.parts[idx];
+
+    document.querySelectorAll('.section.tts-active').forEach(s => s.classList.remove('tts-active'));
+    if (part.section) {
+      part.section.classList.add('tts-active');
+      part.section.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    const isNews = idx > 0;
+    document.getElementById('ttsStatus').textContent =
+      isNews ? `뉴스 ${idx}/${this.parts.length - 1}` : '한 줄 요약';
+
+    const speed = parseFloat(document.getElementById('ttsSpeed').value);
+    const utt = new SpeechSynthesisUtterance(part.text);
+    utt.lang = 'ko-KR';
+    utt.rate = speed;
+    utt.onend = () => { if (this.playing) this.speak(this.idx + 1); };
+    this.synth.speak(utt);
+  },
+
+  toggle() {
+    if (!this.playing) {
+      this.playing = true;
+      document.getElementById('ttsPlayBtn').textContent = '⏸ 일시정지';
+      if (this.synth.paused) {
+        this.synth.resume();
+      } else {
+        if (this.parts.length === 0) this.build();
+        this.speak(this.idx);
+      }
+    } else {
+      this.playing = false;
+      document.getElementById('ttsPlayBtn').textContent = '▶ 재생';
+      this.synth.pause();
+    }
+  },
+
+  stop() {
+    this.playing = false;
+    this.idx = 0;
+    this.synth.cancel();
+    document.getElementById('ttsPlayBtn').textContent = '▶ 읽기 시작';
+    document.getElementById('ttsStatus').textContent = '준비';
+    document.querySelectorAll('.section.tts-active').forEach(s => s.classList.remove('tts-active'));
+  },
+
+  changeSpeed() {
+    if (this.playing) {
+      this.synth.cancel();
+      const cur = this.idx;
+      this.idx = cur;
+      setTimeout(() => this.speak(cur), 50);
+    }
+  }
+};
+
+function ttsToggle()      { TTS.toggle(); }
+function ttsStop()        { TTS.stop(); }
+function ttsChangeSpeed() { TTS.changeSpeed(); }
+
+window.addEventListener('beforeunload', () => TTS.stop());
+</script>
+</body>
+</html>
