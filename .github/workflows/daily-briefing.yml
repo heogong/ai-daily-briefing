@@ -55,3 +55,10 @@ jobs:
           git add docs/ output/
           git diff --cached --quiet || git commit -m "📰 AI Daily Briefing $(date +%Y-%m-%d)"
           git push
+
+      - name: Send email to subscribers
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: |
+          python3 send_email.py
