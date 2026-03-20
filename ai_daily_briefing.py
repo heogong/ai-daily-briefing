@@ -469,7 +469,7 @@ def generate_html(data: dict) -> str:
   <footer class="footer">
     <p>AI Daily Briefing — <span class="accent">바쁜 사람을 위한 3분 AI 뉴스</span></p>
     <p style="margin-top: 8px;">{data['date']} | 매일 아침 업데이트</p>
-    <p style="margin-top: 8px;">© keyboard@kakao.com</p>
+    <p style="margin-top: 8px;">© keyboard@kakao.com </p>
   </footer>
 </div>
 </body>
