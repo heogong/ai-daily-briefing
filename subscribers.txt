@@ -4,5 +4,5 @@
 
 # 예시 (아래 줄의 #을 제거하고 실제 이메일로 교체):
 jeongjin@isu.co.kr
-# kim@company.com
+keyboard@kakao.com
 # lee@naver.com
