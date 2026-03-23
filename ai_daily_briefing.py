@@ -388,9 +388,22 @@ def _strip_special(text: str) -> str:
     return text
 
 
+def _date_to_tts(date_str: str) -> str:
+    """'2026.03.23 (월)' → '2026년 3월 23일 월요일'"""
+    weekday_map = {"월": "월요일", "화": "화요일", "수": "수요일",
+                   "목": "목요일", "금": "금요일", "토": "토요일", "일": "일요일"}
+    import re
+    m = re.match(r'(\d{4})\.(\d{2})\.(\d{2})\s*\(([월화수목금토일])\)', date_str)
+    if m:
+        y, mo, d, wd = m.groups()
+        return f"{y}년 {int(mo)}월 {int(d)}일 {weekday_map[wd]}"
+    return date_str
+
+
 def build_tts_text(news_data: dict) -> str:
+    date_tts = _date_to_tts(news_data.get('date', ''))
     lines = [
-        f"AI 데일리 브리핑, {news_data.get('date', '')}.",
+        f"AI 데일리 브리핑, {date_tts}.",
         "바쁜 사람을 위한 오늘의 AI 뉴스를 전해드립니다.",
         "",
     ]
