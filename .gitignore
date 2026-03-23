@@ -10,3 +10,12 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### 산출물 ###
+output/
+docs/ai_briefing_*.html
+docs/ai_briefing_*.json
+
+### Python ###
+__pycache__/
+*.pyc

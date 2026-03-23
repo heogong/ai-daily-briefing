@@ -17,10 +17,12 @@ HTML 뉴스레터를 생성하는 반자동화 스크립트
 """
 
 import anthropic
+import feedparser
 import json
+import requests
 import os
 import re
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 
@@ -30,7 +32,6 @@ from pathlib import Path
 MODEL = "claude-sonnet-4-6"          # 비용 효율 모델 (Opus는 더 좋지만 비쌈)
 MAX_TOKENS = 8192
 OUTPUT_DIR = Path("output")
-MAX_SEARCH_USES = 5                 # 웹 검색 최대 횟수
 ISU_CONTEXT_PATH = Path("ISU_COMPANY.md")
 
 
@@ -41,33 +42,155 @@ def load_isu_context() -> str:
     return ""
 
 
+KST = timezone(timedelta(hours=9))
+
+def _kst_now():
+    """대한민국 표준시(KST, UTC+9) 기준 현재 시각"""
+    return datetime.now(tz=KST)
+
+
+def get_news_window_str() -> str:
+    """뉴스 수집 시간 범위 문자열 (KST 기준 최근 24시간)"""
+    now = _kst_now()
+    since = now - timedelta(hours=24)
+    return (f"{since.strftime('%Y년 %m월 %d일 %H:%M')} ~ "
+            f"{now.strftime('%Y년 %m월 %d일 %H:%M')} (KST)")
+
+
 def get_today_str() -> str:
-    """오늘 날짜 문자열"""
-    now = datetime.now()
+    """오늘 날짜 문자열 (KST 기준)"""
+    now = _kst_now()
     weekdays = ["월", "화", "수", "목", "금", "토", "일"]
     return f"{now.strftime('%Y.%m.%d')} ({weekdays[now.weekday()]})"
 
 
 def get_file_date() -> str:
-    return datetime.now().strftime("%Y_%m_%d")
+    return _kst_now().strftime("%Y_%m_%d")
 
 
 # ============================================================
-# Step 1: Claude API + Web Search로 뉴스 수집 & 분석
+# Step 1: RSS 피드에서 뉴스 수집
+# ============================================================
+RSS_USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/124.0.0.0 Safari/537.36"
+)
+
+def _rss_feeds_with_date() -> list[str]:
+    """Google News RSS에 어제 날짜 after: 필터 적용한 URL 목록 반환"""
+    yesterday = (_kst_now() - timedelta(hours=24)).strftime("%Y-%m-%d")
+    return [
+        f"https://news.google.com/rss/search?q=artificial+intelligence+LLM+after:{yesterday}&hl=en&gl=US&ceid=US:en",
+        f"https://news.google.com/rss/search?q=OpenAI+Anthropic+Google+Gemini+after:{yesterday}&hl=en&gl=US&ceid=US:en",
+        f"https://news.google.com/rss/search?q=인공지능+AI+LLM+after:{yesterday}&hl=ko&gl=KR&ceid=KR:ko",
+        "https://techcrunch.com/tag/artificial-intelligence/feed/",
+        "https://venturebeat.com/ai/feed/",
+        "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+    ]
+
+
+def _parse_entry_date(entry) -> datetime | None:
+    """feedparser 항목에서 발행 시각 파싱 (여러 필드 시도)"""
+    for attr in ('published_parsed', 'updated_parsed', 'created_parsed'):
+        val = getattr(entry, attr, None)
+        if val:
+            try:
+                return datetime(*val[:6], tzinfo=timezone.utc)
+            except Exception:
+                continue
+    return None
+
+
+def fetch_rss_articles(max_hours: int = 24) -> list:
+    """RSS 피드에서 최근 max_hours 시간 AI 뉴스 수집 및 필터링"""
+    cutoff = _kst_now() - timedelta(hours=max_hours)
+    articles = []
+    seen_titles = set()
+
+    for url in _rss_feeds_with_date():
+        try:
+            resp = requests.get(url, headers={"User-Agent": RSS_USER_AGENT}, timeout=15, verify=False)
+            feed = feedparser.parse(resp.content)
+            status = getattr(feed, 'status', 0)
+            total = len(feed.entries)
+
+            if status not in (0, 200, 301, 302) and status != 0:
+                print(f"   ⚠️ HTTP {status}: {url[:60]}")
+                continue
+
+            within = 0
+            no_date = 0
+            for entry in feed.entries:
+                published = _parse_entry_date(entry)
+
+                # 날짜 없는 항목은 최신으로 간주해 포함
+                if published is None:
+                    no_date += 1
+                    pub_str = _kst_now().strftime('%Y-%m-%d %H:%M KST')
+                elif published < cutoff:
+                    continue
+                else:
+                    within += 1
+                    pub_str = published.astimezone(KST).strftime('%Y-%m-%d %H:%M KST')
+
+                title = entry.get('title', '').strip()
+                if not title or title in seen_titles:
+                    continue
+                seen_titles.add(title)
+
+                summary = entry.get('summary', entry.get('description', ''))
+                summary = re.sub(r'<[^>]+>', '', summary).strip()[:400]
+
+                articles.append({
+                    'title': title,
+                    'summary': summary,
+                    'link': entry.get('link', ''),
+                    'published': pub_str,
+                    'source': feed.feed.get('title', url.split('/')[2]),
+                })
+
+            print(f"   {url.split('/')[2][:40]:40s} 전체:{total:3d} | {max_hours}h이내:{within:3d} | 날짜없음:{no_date:2d}")
+
+        except Exception as e:
+            print(f"   ⚠️ RSS 피드 오류 ({url[:60]}): {e}")
+
+    articles.sort(key=lambda x: x['published'], reverse=True)
+
+    # 수집 실패 시 시간 범위 확장 재시도
+    if len(articles) < 5 and max_hours < 72:
+        extended = max_hours * 2
+        print(f"   ⚠️ 기사 부족 ({len(articles)}개) → {extended}시간으로 범위 확장 재시도")
+        return fetch_rss_articles(max_hours=extended)
+
+    return articles
+
+
+# ============================================================
+# Step 2: Claude API로 뉴스 분석
 # ============================================================
 def collect_and_analyze_news(client: anthropic.Anthropic) -> str:
-    """
-    Claude에게 web_search 도구를 주고, AI 뉴스를 직접 검색 + 분석하게 함.
-    별도의 뉴스 API 없이 Claude가 알아서 검색하고 정리.
-    """
+    """RSS로 수집한 기사 목록을 Claude에게 전달해 선별 + 분석"""
 
     today = get_today_str()
+    news_window = get_news_window_str()
     isu_context = load_isu_context()
+
+    print("   📡 RSS 피드 수집 중...")
+    articles = fetch_rss_articles()
+    print(f"   ✅ {len(articles)}개 기사 수집 ({news_window})")
+
+    if not articles:
+        print("   ⚠️ RSS 기사 수집 실패 — 피드 연결을 확인하세요.")
+        raise ValueError("RSS에서 수집된 기사가 없습니다.")
+
+    # 기사 목록 포맷팅
+    articles_text = ""
+    for i, a in enumerate(articles, 1):
+        articles_text += f"\n[{i}] {a['published']} | {a['source']}\n제목: {a['title']}\n요약: {a['summary']}\n링크: {a['link']}\n"
 
     system_prompt = f"""당신은 AI 산업 전문 뉴스레터 에디터입니다.
 오늘은 {today}입니다.
-
-목표: 오늘/최근의 AI 관련 주요 뉴스 5개를 선별하고 분석합니다.
 
 대상 독자:
 - AI에 관심은 있지만 너무 바빠서 뉴스를 못 보는 직장인
@@ -84,7 +207,7 @@ def collect_and_analyze_news(client: anthropic.Anthropic) -> str:
 - 카테고리 태그 (모델 릴리스 / 제품 업데이트 / 일자리·사회 / 산업 동향 / 글로벌 이슈 중 택1)
 - 제목 (한국어, 임팩트 있게)
 - 본문 요약 (2~3문단, 핵심 숫자/사실 포함)
-- 시사점: 이 기사 자체의 의미와 흐름 — 업계 전반에 어떤 변화를 의미하는지, 독자가 알아야 할 맥락 (특정 회사 관점이 아닌 해당 뉴스에 대한 시사점)
+- 시사점: 업계 전반에 어떤 변화를 의미하는지, 독자가 알아야 할 맥락 (특정 회사 관점 아닌 해당 뉴스 시사점)
 
 최종 출력 형식 (반드시 이 JSON 형식으로):
 ```json
@@ -96,7 +219,7 @@ def collect_and_analyze_news(client: anthropic.Anthropic) -> str:
       "number": 1,
       "category": "모델 릴리스",
       "title": "뉴스 제목",
-      "body": "본문 요약. 핵심 키워드는 **별표두개**로 감싸서 강조. 큰따옴표 대신 작은따옴표 사용.",
+      "body": "본문 요약. 핵심 키워드는 **별표두개**로 강조. 큰따옴표 대신 작은따옴표 사용.",
       "insight": "이 뉴스가 업계 전반에 미치는 의미와 맥락 (이수시스템 언급 금지)",
       "isu_area": "AI 사업",
       "isu_tag": "[핵심 기회]",
@@ -118,9 +241,6 @@ def collect_and_analyze_news(client: anthropic.Anthropic) -> str:
 - JSON이 유효한지 반드시 확인 후 출력하세요.
 - insight 필드에는 이수시스템을 절대 언급하지 마세요. ISU 관련 내용은 오직 isu_insight에만 작성합니다.
 
-웹 검색을 적극적으로 활용해 최신 정보를 확보하세요.
-오래된 정보가 아닌 오늘/이번 주의 뉴스를 우선하세요.
-
 --- 이수시스템 컨텍스트 ---
 insight 필드는 기사 자체의 업계 시사점이므로 절대 수정하지 않는다. ISU 관점은 isu_insight와 isu_summary에만 작성한다.
 
@@ -131,26 +251,18 @@ insight 필드는 기사 자체의 업계 시사점이므로 절대 수정하지
 isu_area는 6대 영역(AI 사업 / 디지털서비스 사업 / ESG 사업 / HR 사업 / 안전 사업 / 클라우드 사업) 중 가장 연관도 높은 것 1개 선택.
 isu_tag는 [핵심 기회] [제품 강화] [영업 기회] [리스크] [모니터링] [정부 사업] 중 1개."""
 
+    user_message = f"""아래는 {news_window} 사이에 RSS 피드에서 수집한 AI 뉴스 {len(articles)}개입니다.
+이 중에서 가장 중요한 5개를 선별하고, 각 뉴스를 분석해서 JSON으로 정리해주세요.
+
+{articles_text}"""
+
     response = client.messages.create(
         model=MODEL,
         max_tokens=MAX_TOKENS,
         system=system_prompt,
-        messages=[
-            {
-                "role": "user",
-                "content": f"오늘({today}) 기준으로 AI 분야의 가장 중요한 뉴스 5개를 웹에서 검색하고, 분석해서 JSON으로 정리해줘."
-            }
-        ],
-        tools=[
-            {
-                "type": "web_search_20250305",
-                "name": "web_search",
-                "max_uses": MAX_SEARCH_USES,
-            }
-        ],
+        messages=[{"role": "user", "content": user_message}],
     )
 
-    # 응답에서 텍스트 블록 추출
     full_text = ""
     for block in response.content:
         if hasattr(block, "text"):
@@ -334,6 +446,11 @@ def generate_html(data: dict) -> str:
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Daily Briefing — {data['date']}</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:title" content="AI Daily Briefing — {data['date']}">
+<meta property="og:description" content="바쁜 사람을 위한 3분 AI 뉴스">
+<meta property="og:image" content="og-image.png">
+<meta property="og:type" content="article">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {{
@@ -360,6 +477,7 @@ def generate_html(data: dict) -> str:
     font-weight: 400;
     line-height: 1.75;
     min-height: 100vh;
+    padding-bottom: 0;
   }}
   .container {{ max-width: 720px; margin: 0 auto; padding: 0 24px; }}
   .header {{
@@ -441,6 +559,7 @@ def generate_html(data: dict) -> str:
   .news-title {{ font-size: 22px; font-weight: 700; line-height: 1.4; margin-bottom: 16px; }}
   .news-body {{
     font-size: 15px; line-height: 1.85; margin-bottom: 16px; font-weight: 300;
+    overflow-wrap: break-word; word-break: break-word;
   }}
   .news-body strong {{ color: var(--accent); font-weight: 500; }}
   .insight-box {{
