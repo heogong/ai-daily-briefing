@@ -29,6 +29,7 @@ jobs:
       - name: Generate briefing
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GCP_TTS_KEY: ${{ secrets.GCP_TTS_KEY }}
         run: python ai_daily_briefing.py
 
       - name: Copy to docs (GitHub Pages source)
@@ -42,6 +43,7 @@ jobs:
             # 아카이브도 복사 (날짜별 보관)
             cp output/ai_briefing_*.html docs/ 2>/dev/null || true
             cp output/ai_briefing_*.json docs/ 2>/dev/null || true
+            cp output/ai_briefing_*.mp3 docs/ 2>/dev/null || true
             echo "✅ Copied $LATEST to docs/index.html"
           else
             echo "❌ No briefing file found"

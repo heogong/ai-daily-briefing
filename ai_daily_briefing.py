@@ -110,7 +110,10 @@ def fetch_rss_articles(max_hours: int = 24) -> list:
 
     for url in _rss_feeds_with_date():
         try:
-            resp = requests.get(url, headers={"User-Agent": RSS_USER_AGENT}, timeout=15, verify=False)
+            try:
+                resp = requests.get(url, headers={"User-Agent": RSS_USER_AGENT}, timeout=15)
+            except requests.exceptions.SSLError:
+                resp = requests.get(url, headers={"User-Agent": RSS_USER_AGENT}, timeout=15, verify=False)
             feed = feedparser.parse(resp.content)
             status = getattr(feed, 'status', 0)
             total = len(feed.entries)
@@ -373,15 +376,86 @@ def fix_json_with_claude(raw_text: str) -> dict:
 
 
 # ============================================================
-# Step 3: HTML 생성
+# Step 3: TTS 음성 생성
+# ============================================================
+def _strip_special(text: str) -> str:
+    """TTS용 특수기호 제거"""
+    import re
+    text = re.sub(r'\*+', '', text)          # ** 마크다운 강조
+    text = re.sub(r'[#\[\](){}<>|\\^~`]', '', text)  # 기타 마크업
+    text = re.sub(r'https?://\S+', '', text)  # URL
+    text = re.sub(r'\s+', ' ', text).strip()
+    return text
+
+
+def build_tts_text(news_data: dict) -> str:
+    lines = [
+        f"AI 데일리 브리핑, {news_data.get('date', '')}.",
+        "바쁜 사람을 위한 오늘의 AI 뉴스를 전해드립니다.",
+        "",
+    ]
+
+    for i, item in enumerate(news_data.get('news', []), 1):
+        cat = _strip_special(item.get('category', ''))
+        title = _strip_special(item.get('title', ''))
+        summary = _strip_special(item.get('summary', ''))
+        body = _strip_special(item.get('body', ''))
+
+        lines.append(f"뉴스 {i}번. {cat}.")
+        lines.append(title)
+        lines.append(summary)
+        if body:
+            lines.append(body)
+        lines.append("")
+
+    isu_summary = _strip_special(news_data.get('isu_summary', ''))
+    if isu_summary:
+        lines.append("오늘의 이슈 종합.")
+        lines.append(isu_summary)
+        lines.append("")
+
+    lines.append("오늘의 핵심 테이크어웨이.")
+    for j, t in enumerate(news_data.get('takeaways', []), 1):
+        lines.append(f"{j}. {_strip_special(t)}")
+
+    lines.append("")
+    lines.append("이상 AI 데일리 브리핑이었습니다. 좋은 하루 되세요.")
+    return "\n".join(lines)
+
+
+def generate_tts_audio(text: str, api_key: str) -> bytes | None:
+    import base64
+    url = f"https://texttospeech.googleapis.com/v1/text:synthesize?key={api_key}"
+    payload = {
+        "input": {"text": text[:4900]},
+        "voice": {"languageCode": "ko-KR", "name": "ko-KR-Wavenet-D"},
+        "audioConfig": {"audioEncoding": "MP3"}
+    }
+    try:
+        resp = requests.post(url, json=payload, timeout=30)
+        if resp.status_code == 200:
+            return base64.b64decode(resp.json()["audioContent"])
+        print(f"   ⚠️ TTS API 오류 {resp.status_code}: {resp.text[:200]}")
+    except Exception as e:
+        print(f"   ⚠️ TTS 생성 실패: {e}")
+    return None
+
+
+# ============================================================
+# Step 4: HTML 생성
 # ============================================================
 def md_to_html(text: str) -> str:
     """**마크다운 강조**를 <strong>HTML</strong>로 변환"""
     return re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', text)
 
 
-def generate_html(data: dict) -> str:
+def generate_html(data: dict, audio_filename=None) -> str:
     """뉴스 데이터로 HTML 뉴스레터 생성"""
+
+    if audio_filename:
+        audio_tag = f'<audio src="{audio_filename}" controls style="position:fixed;bottom:20px;right:20px;z-index:100;width:260px;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.5);"></audio>'
+    else:
+        audio_tag = ""
 
     category_tags = {
         "모델 릴리스": ("tag-model", "#4488ff"),
@@ -669,6 +743,7 @@ def generate_html(data: dict) -> str:
     <p style="margin-top: 8px;">© keyboard@kakao.com</p>
   </footer>
 </div>
+{audio_tag}
 </body>
 </html>"""
 
@@ -715,9 +790,24 @@ def main():
 
     print(f"   ✅ {len(news_data.get('news', []))}개 뉴스 수집 완료")
 
-    # Step 3: HTML 생성
+    # Step 3: TTS 음성 생성 (선택적)
+    audio_filename = None
+    tts_api_key = os.environ.get("GCP_TTS_KEY")
+    if tts_api_key:
+        print("🔊 TTS 음성 생성 중...")
+        tts_text = build_tts_text(news_data)
+        audio_bytes = generate_tts_audio(tts_text, tts_api_key)
+        if audio_bytes:
+            audio_filename = f"ai_briefing_{get_file_date()}.mp3"
+            audio_path = OUTPUT_DIR / audio_filename
+            audio_path.write_bytes(audio_bytes)
+            print(f"   ✅ 음성 파일 저장: {audio_path}")
+    else:
+        print("   ⏭️ GCP_TTS_KEY 없음 — TTS 생략")
+
+    # Step 4: HTML 생성
     print("🎨 HTML 뉴스레터 생성 중...")
-    html = generate_html(news_data)
+    html = generate_html(news_data, audio_filename=audio_filename)
 
     # 파일 저장
     OUTPUT_DIR.mkdir(exist_ok=True)
