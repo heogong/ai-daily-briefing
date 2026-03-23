@@ -385,12 +385,10 @@ def build_tts_text(news_data: dict) -> str:
     for i, item in enumerate(news_data.get('news', []), 1):
         cat = _strip_special(item.get('category', ''))
         title = _strip_special(item.get('title', ''))
-        summary = _strip_special(item.get('summary', ''))
         body = _strip_special(item.get('body', ''))
 
         lines.append(f"뉴스 {i}번. {cat}.")
         lines.append(title)
-        lines.append(summary)
         if body:
             lines.append(body)
         lines.append("")
@@ -401,11 +399,6 @@ def build_tts_text(news_data: dict) -> str:
         lines.append(isu_summary)
         lines.append("")
 
-    lines.append("오늘의 핵심 테이크어웨이.")
-    for j, t in enumerate(news_data.get('takeaways', []), 1):
-        lines.append(f"{j}. {_strip_special(t)}")
-
-    lines.append("")
     lines.append("이상 AI 데일리 브리핑이었습니다. 좋은 하루 되세요.")
     return "\n".join(lines)
 
