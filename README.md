@@ -113,25 +113,6 @@ jobs:
           publish_dir: ./docs
 ```
 
-### 옵션 C: Slack/Discord 웹훅
-생성된 HTML의 텍스트 버전을 Slack으로 보내기:
-
-```python
-import requests
-
-def post_to_slack(news_data, webhook_url):
-    blocks = [{"type": "header", "text": {
-        "type": "plain_text",
-        "text": f"🤖 AI Daily Briefing — {news_data['date']}"
-    }}]
-    for item in news_data['news']:
-        blocks.append({"type": "section", "text": {
-            "type": "mrkdwn",
-            "text": f"*{item['number']}. {item['title']}*\n{item['insight']}"
-        }})
-    requests.post(webhook_url, json={"blocks": blocks})
-```
-
 ## 커스터마이징
 
 ### 뉴스 주제 변경
