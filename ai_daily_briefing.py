@@ -378,12 +378,22 @@ def fix_json_with_claude(raw_text: str) -> dict:
 # ============================================================
 # Step 3: TTS 음성 생성
 # ============================================================
+_TTS_WORD_MAP = {
+    r'\bWORKUP\b': '워크업',
+    r'\bRAG\b': '레그',
+    r'\bClaude\b': '클로드',
+    r'\bOpenAI\b': '오픈에이아이',
+}
+
+
 def _strip_special(text: str) -> str:
-    """TTS용 특수기호 제거"""
+    """TTS용 특수기호 제거 및 발음 치환"""
     import re
     text = re.sub(r'\*+', '', text)          # ** 마크다운 강조
     text = re.sub(r'[#\[\](){}<>|\\^~`]', '', text)  # 기타 마크업
     text = re.sub(r'https?://\S+', '', text)  # URL
+    for pattern, replacement in _TTS_WORD_MAP.items():
+        text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
     text = re.sub(r'\s+', ' ', text).strip()
     return text
 
