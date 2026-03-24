@@ -419,12 +419,6 @@ def build_tts_text(news_data: dict) -> str:
             lines.append(body)
         lines.append("")
 
-    isu_summary = _strip_special(news_data.get('isu_summary', ''))
-    if isu_summary:
-        lines.append("오늘의 이슈 종합.")
-        lines.append(isu_summary)
-        lines.append("")
-
     lines.append("이상 AI 데일리 브리핑이었습니다. 좋은 하루 되세요.")
     return "\n".join(lines)
 
