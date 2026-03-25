@@ -224,7 +224,9 @@ def collect_and_analyze_news(client: openai.OpenAI) -> str:
       "insight": "이 뉴스가 업계 전반에 미치는 의미와 맥락 (이수시스템 언급 금지)",
       "isu_area": "AI 사업",
       "isu_tag": "[핵심 기회]",
-      "isu_insight": "이수시스템 관점 인사이트"
+      "isu_insight": "이수시스템 관점 인사이트",
+      "url": "원문 기사 링크 (제공된 링크 그대로 사용)",
+      "source": "출처명 (예: TechCrunch, VentureBeat, Google News)"
     }}
   ],
   "takeaways": [
@@ -468,6 +470,14 @@ def generate_html(data: dict, audio_filename=None) -> str:
       <p>{isu_insight}</p>
     </div>"""
 
+        url = item.get("url", "")
+        source = item.get("source", "")
+        source_link = ""
+        if url:
+            source_label = source if source else "원문 보기"
+            source_link = f"""
+    <div class="source-link"><a href="{url}" target="_blank" rel="noopener noreferrer">출처: {source_label} →</a></div>"""
+
         news_sections += f"""
   <section class="section">
     <div class="section-header">
@@ -479,7 +489,7 @@ def generate_html(data: dict, audio_filename=None) -> str:
     <div class="insight-box">
       <div class="label">시사점</div>
       <p>{md_to_html(item['insight'])}</p>
-    </div>{isu_box}
+    </div>{isu_box}{source_link}
   </section>"""
 
     takeaway_items = ""
@@ -650,6 +660,9 @@ def generate_html(data: dict, audio_filename=None) -> str:
     font-size: 10px; padding: 2px 8px; border-radius: 3px;
     background: rgba(255,204,0,0.15); color: var(--yellow);
   }}
+  .source-link {{ margin-top: 10px; text-align: right; }}
+  .source-link a {{ font-size: 12px; color: var(--text-muted); text-decoration: none; }}
+  .source-link a:hover {{ color: var(--text-dim); }}
   .isu-section {{
     padding: 40px 0; border-top: 2px solid var(--orange); margin-top: 20px;
   }}
