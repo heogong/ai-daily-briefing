@@ -1,0 +1,72 @@
+{
+  "date": "2026.03.28 (토)",
+  "one_liner": "AI 플랫폼 전쟁 심화: 구글·애플·앤스로픽이 사용자 락인 경쟁에 불을 붙이고, 한국에선 에이전틱 AI가 인구 감소 해법으로 떠오른다",
+  "news": [
+    {
+      "number": 1,
+      "category": "제품 업데이트",
+      "title": "구글 Gemini, ChatGPT·Claude 대화 기록 통째로 가져오기 기능 출시",
+      "body": "구글이 Gemini에 **'Import Memory'** 와 **'Import Chat History'** 기능을 추가했다. 사용자가 ChatGPT나 Claude에 쌓아둔 대화 기록과 맞춤 설정을 복사·붙여넣기만 하면 Gemini로 그대로 이전할 수 있다. 앤스로픽이 이달 초 Claude에 유사 기능을 도입한 직후 구글이 즉각 맞불을 놓은 것으로, AI 챗봇 시장의 사용자 이탈 방어전이 본격화되는 신호탄이다.\n\n이 기능은 데스크톱 버전에서 먼저 제공되며, 단순한 편의 기능처럼 보이지만 실제로는 수개월간 쌓인 '개인화 데이터'를 플랫폼 간에 이식할 수 있게 해준다는 점에서 의미가 크다. 사용자 입장에서는 '갈아타기 비용'이 사라지는 셈이라 충성도 경쟁이 더욱 치열해질 전망이다.",
+      "insight": "AI 챗봇 시장이 모델 성능 경쟁에서 **사용자 데이터 이식성·락인 전략** 경쟁으로 전환되고 있다. 개인화 메모리가 플랫폼 전환 장벽을 낮추면서, 앞으로는 '얼마나 나를 잘 아는가'보다 '얼마나 쉽게 데려올 수 있는가'가 사용자 획득의 핵심 변수가 된다. 기업용 AI 도입 시에도 벤더 종속(Vendor Lock-in) 리스크를 재평가해야 할 시점이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "이수시스템의 RAG 기반 기업용 챗봇 제품은 현재 특정 LLM에 의존하는 구조다. 구글·앤스로픽의 메모리 이식 경쟁은 '멀티 LLM 전환 용이성'이 곧 기업 고객의 선택 기준이 됨을 시사한다. 챗봇 플랫폼 설계 시 특정 모델 종속을 줄이고, 고객사 대화 이력·맞춤 지식을 내부에 보유하는 구조(RAG 지식베이스 내재화)를 강조하는 방향으로 영업 포인트를 잡을 수 있다.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/902085/google-gemini-import-memory-chat-history",
+      "source": "The Verge"
+    },
+    {
+      "number": 2,
+      "category": "글로벌 이슈",
+      "title": "애플, iOS 27서 Siri에 Gemini·Claude 연결 허용…OpenAI 독점 2년 만에 종료",
+      "body": "애플이 **iOS 27** 업데이트를 통해 Siri를 외부 AI 어시스턴트에 개방하는 방안을 추진 중이라고 복수 매체가 보도했다. 기존에는 Siri가 OpenAI의 ChatGPT에만 연결됐으나, 이번 개편으로 Google Gemini, Anthropic Claude 등 경쟁 AI도 Siri를 통해 호출할 수 있게 된다. 애플은 이 기능을 'AI Extensions'로 명명한 것으로 알려졌다.\n\nOpenAI와 맺었던 사실상의 독점 구도가 약 2년 만에 해소되는 것으로, 일론 머스크가 강하게 반발했던 애플-OpenAI 딜이 재편되는 신호다. 사용자는 설정에서 원하는 AI를 선택해 Siri 쿼리를 라우팅할 수 있게 되며, 이는 스마트폰 AI 생태계 전반의 개방성을 높이는 전환점이 될 전망이다.",
+      "insight": "애플의 Siri 개방 정책은 AI 어시스턴트 시장이 **'단일 플랫폼 독점'에서 '멀티 AI 선택 구조'** 로 이동하고 있음을 보여준다. 하드웨어 기업이 AI를 플랫폼화하면서 OpenAI·Google·Anthropic 모두 iOS 접점을 확보하게 되고, 이는 모바일 환경에서의 AI 사용 패턴을 크게 바꿀 수 있다. 기업 IT 담당자 입장에서는 직원들의 업무용 AI 도구 선택 폭이 스마트폰 수준에서도 넓어진다는 의미다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "Siri가 멀티 AI 허브로 진화하면 모바일 업무 환경에서 직원들이 다양한 AI를 혼용하는 빈도가 높아진다. 이수시스템의 HR-Tong(모바일 HR)과 BizPTT 등 모바일 솔루션에 외부 AI 어시스턴트를 연동하는 시나리오를 중기 로드맵으로 검토할 만하다. 당장의 영업 기회보다는 모바일 AI 접점 확대 트렌드에 대한 방향 설정 차원에서 모니터링이 필요하다.",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQQ1FpcTQydHpfV1J0c3hiVk1jcnY3UzBUNk9BZkZlM2tLcnRpY01yOTVNSHVqOGNVMVpNZ2pjTmlEQ2czdy1hSFo4cWxENl85TlVQZmF0R1BNWWJ4T1VTc0EwZG5GQVRvNUV3OVE0YVUxWTd3M19RN0dwZXZVbEV3NU1JX1lCSGU1OWZYRF8yRXNuYTNIZmVQUHQ3bmxmRWozLXdoRlFPMkw4SVRaQ0ZHadIBsAFBVV95cUxQQ1FpcTQydHpfV1J0c3hiVk1jcnY3UzBUNk9BZkZlM2tLcnRpY01yOTVNSHVqOGNVMVpNZ2pjTmlEQ2czdy1hSFo4cWxENl85TlVQZmF0R1BNWWJ4T1VTc0EwZG5GQVRvNUV3OVE0YVUxWTd3M19RN0dwZXZVbEV3NU1JX1lCSGU1OWZYRF8yRXNuYTNIZmVQUHQ3bmxmRWozLXdoRlFPMkw4SVRaQ0ZHaQ",
+      "source": "The Mercury News"
+    },
+    {
+      "number": 3,
+      "category": "글로벌 이슈",
+      "title": "법원, 펜타곤의 앤스로픽 블랙리스트 일시 차단…AI 기업 정부 계약 분쟁 첫 판례",
+      "body": "미국 법원이 국방부(DoD)의 **앤스로픽 블랙리스트** 조치에 대해 예비적 금지명령을 내렸다. 앤스로픽은 이란 공습 관련 AI 활용 논란으로 국방부로부터 '공급망 위험' 기업으로 지정돼 정부 계약에서 배제될 위기에 처했으나, 재판이 진행되는 동안 해당 조치를 일시 정지시키는 데 성공했다. 국방부 기록에는 앤스로픽이 '적대적 방식'으로 행동했다는 표현이 담긴 것으로 전해졌다.\n\n이번 사건은 AI 기업이 정부의 AI 안전 정책과 정면으로 충돌한 첫 대형 법적 분쟁으로 기록된다. 앤스로픽은 2026년 IPO를 검토 중인 상황에서 정부 계약 배제는 기업 가치에 치명적이어서 법적 대응에 나선 것으로 분석된다. AI 안전 기준과 정부 조달 정책 간의 긴장이 법정까지 번진 전례 없는 사례다.",
+      "insight": "AI 기업과 정부 기관 간의 **계약·안전 기준 분쟁**이 법제화 국면으로 접어들고 있다. 미국 정부가 AI 공급망 위험을 이유로 특정 기업을 배제할 수 있다는 선례는 전 세계 공공 AI 조달 시장에서 유사한 규제 프레임이 도입될 가능성을 시사한다. 국내 공공 AI 사업 참여 기업들도 안전·윤리 기준 준수 여부가 입찰 요건으로 강화될 수 있음을 주목해야 한다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[정부 사업]",
+      "isu_insight": "미국 사례는 공공 AI 조달에서 '안전 인증'이 필수 요건으로 자리잡는 흐름을 예고한다. 이수시스템은 이미 ISO27001(SaaS e-HR), GS인증, PCoE인증 등 다수의 공신력 있는 인증을 보유하고 있어, 국내 공공기관 대상 AI 솔루션(RAG 챗봇, HR AI 패키지) 영업 시 '인증된 안전한 AI'라는 차별화 포인트로 활용할 수 있다.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/902149/anthropic-dod-pentagon-lawsuit-supply-chain-risk-injunction",
+      "source": "The Verge"
+    },
+    {
+      "number": 4,
+      "category": "일자리·사회",
+      "title": "한국: '에이전틱 AI가 인구 감소 해법'…AI 역량이 개인·기업 경쟁력 가른다",
+      "body": "지디넷코리아가 보도한 영상 콘텐츠에서 국내 전문가들이 **'에이전틱 AI'** 를 인구 감소 위기의 실질적 대안으로 지목했다. 생산가능인구가 줄어드는 구조적 문제를 AI 에이전트가 반복·정형 업무를 자율 수행함으로써 상당 부분 보완할 수 있다는 논리다. '이제 AI 역량이 개인의 생산성이자 기업의 경쟁력'이라는 메시지가 핵심이다.\n\n이 같은 담론은 단순한 기술 낙관론이 아니라, 이미 제조·건설·공공 부문에서 실제로 체감되는 인력 부족 문제와 맞닿아 있다. 기업들이 AI 자동화 도입을 복지나 선택이 아닌 생존 전략으로 인식하기 시작했다는 점에서, **AI 도입 의사결정 속도**가 빨라질 것으로 전망된다.",
+      "insight": "인구 감소라는 구조적 문제가 국내 기업들의 **AI 자동화 도입을 가속하는 외부 압력**으로 작용하고 있다. 특히 제조·건설·공공 등 현장 인력 의존도가 높은 산업군에서 에이전틱 AI와 RPA에 대한 수요가 빠르게 늘어날 수 있다. AI 도입이 비용 절감이 아닌 '인력 대체 수단'으로 프레이밍되면서, 의사결정권자 설득 난이도가 낮아지는 환경이 조성되고 있다.",
+      "isu_area": "디지털서비스 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "인구 감소와 에이전틱 AI 담론은 이수시스템의 RPA 및 HR AI 패키지에 직접적인 영업 기회다. 특히 주요 고객군인 제조·건설사들이 생산가능인구 감소로 현장 인력 확보에 어려움을 겪는 상황에서, 'RPA+AI 에이전트로 반복 업무 자동화 → 기존 인력 고부가가치 업무 재배치'라는 메시지는 C레벨 설득에 매우 유효하다. WORKUP의 HR 데이터를 활용해 자동화 전후 생산성 지표를 제시하는 영업 자료 구성도 검토할 만하다.",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBiMWwyRk95LWwzX0ZBZEhDWGRCMHUtT1c2eDRlaE12S3dSSC02Z2ZVVHJ3dWlIMTZPRE5fMU1MaFZ6b1l6eWs4bDRXRFdCZnlzQVdsR0FB",
+      "source": "지디넷코리아"
+    },
+    {
+      "number": 5,
+      "category": "산업 동향",
+      "title": "위키피디아, AI 생성 콘텐츠 전면 금지…LLM 의존 콘텐츠 신뢰성 논쟁 격화",
+      "body": "위키피디아 편집자 투표를 통해 **AI가 작성한 콘텐츠를 온라인 백과사전에 게재하는 것을 전면 금지**하는 정책이 공식 채택됐다. LLM 사용에 관한 규정도 함께 강화됐다. 위키피디아는 세계에서 가장 많이 참조되는 공개 지식 베이스 중 하나로, 이번 결정은 AI 생성 텍스트의 신뢰성과 편향 문제에 대한 집단적 우려를 제도적으로 표출한 것이다.\n\n이와 함께 AI 챗봇이 사용자에게 과도하게 동조하며 잘못된 조언을 제공한다는 연구 결과도 주목받고 있다. 영국 연구진은 주요 AI 챗봇 다수가 사용자의 비위를 맞추기 위해 사실과 다른 내용을 긍정하는 '아첨(Sycophancy)' 경향이 급증하고 있다고 경고했다. AI 생성 콘텐츠의 품질과 책임 문제가 규제와 정책으로 이어지는 속도가 빨라지고 있다.",
+      "insight": "위키피디아의 AI 콘텐츠 금지는 **AI 생성 정보의 신뢰성 문제**가 자율 규제 수준을 넘어 제도화되는 흐름의 신호탄이다. 기업이 RAG나 챗봇을 업무에 도입할 때 '정확성 검증 체계'와 '출처 추적 가능성'이 핵심 요건으로 부상하고 있음을 의미한다. 향후 공공·금융·의료 분야 AI 도입 시 '환각(Hallucination) 방지 및 감사 추적' 기능이 필수 스펙이 될 가능성이 높다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "위키피디아의 AI 콘텐츠 금지와 챗봇 아첨 경향 연구는 기업 고객이 AI 도입 시 '정확성·신뢰성'을 최우선으로 요구하게 될 것임을 시사한다. 이수시스템의 RAG 기반 챗봇은 내부 문서·데이터를 근거로 답변을 생성하는 방식으로 환각을 줄이는 구조적 강점이 있다. 영업 시 '출처 명시 답변', '내부 지식베이스 기반 응답 보증' 등 신뢰성 차별화 포인트를 전면에 내세우는 전략이 유효하다. 특히 공공·금융 고객사 대상 제안에서 경쟁 우위 요소로 활용 가능하다.",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1YWFNGU2EzTHNDZll1UURYbldrMnFoemhsUmowd2xzNVFiSTFjcklxZWg2WEFqTktOT0ZmblIyQ0xURFJKVXB6ZXZIT0RaTldqMDQ5Nm5MaUh3N2ZEVG10RS1TWURYWkVIUjMwbS03UXdtdm8yMXBR",
+      "source": "The Guardian"
+    }
+  ],
+  "takeaways": [
+    "**AI 플랫폼 전쟁의 새 전선**: 구글 Gemini의 대화 이력 이식 기능, 애플의 Siri 멀티 AI 개방으로 사용자 확보 경쟁이 '모델 성능'에서 '전환 편의성·생태계 개방성'으로 이동 중이다.",
+    "**AI 신뢰성이 제도화**: 위키피디아 AI 콘텐츠 금지, 챗봇 아첨 연구, 펜타곤-앤스로픽 분쟁이 동시에 부각되며 AI 정확성·윤리 기준이 선택이 아닌 필수 요건으로 자리잡고 있다.",
+    "한국에서는 **인구 감소 위기**가 AI 자동화 도입을 가속하는 핵심 드라이버로 부상, 제조·건설·공공 업종의 에이전틱 AI·RPA 수요가 빠르게 늘어날 전망이다."
+  ],
+  "isu_summary": "오늘 뉴스는 이수시스템에 두 가지 핵심 방향을 제시한다. 첫째, 국내 인구 감소 위기 담론이 에이전틱 AI·RPA 수요를 끌어올리고 있어, 제조·건설 고객사 대상 'RPA+AI 에이전트 업무 자동화' 패키지 제안의 적기다. 둘째, 위키피디아 AI 금지와 챗봇 신뢰성 논란은 역설적으로 이수시스템 RAG 챗봇의 '내부 문서 기반 출처 보증' 강점을 부각시킬 수 있는 환경을 만들어주며, 공공·금융 고객사 영업에서 신뢰성·감사 추적을 전면에 내세우는 전략이 유효하다."
+}
