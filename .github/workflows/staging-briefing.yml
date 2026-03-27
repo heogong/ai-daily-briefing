@@ -1,0 +1,59 @@
+name: AI Daily Briefing (Staging)
+
+on:
+  push:
+    branches: [develop]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-staging:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout develop
+        uses: actions/checkout@v4.2.2
+        with:
+          ref: develop
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install anthropic feedparser requests
+
+      - name: Generate briefing
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GCP_TTS_KEY: ${{ secrets.GCP_TTS_KEY }}
+        run: python ai_daily_briefing.py
+
+      - name: Switch to main and deploy to docs/staging/
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout main
+
+          mkdir -p docs/staging
+          touch docs/staging/.nojekyll
+
+          LATEST=$(ls -t output/ai_briefing_*.html 2>/dev/null | head -1)
+          if [ -z "$LATEST" ]; then
+            echo "❌ No briefing file found"
+            exit 1
+          fi
+
+          cp "$LATEST" docs/staging/index.html
+          cp output/ai_briefing_*.html docs/staging/ 2>/dev/null || true
+          cp output/ai_briefing_*.json docs/staging/ 2>/dev/null || true
+          cp output/ai_briefing_*.mp3  docs/staging/ 2>/dev/null || true
+          echo "✅ Copied $LATEST to docs/staging/index.html"
+
+          git add -f docs/staging/
+          git diff --cached --quiet || git commit -m "🧪 Staging: AI Daily Briefing $(date +%Y-%m-%d)"
+          git push origin main
