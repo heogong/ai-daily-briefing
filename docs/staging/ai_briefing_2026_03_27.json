@@ -1,0 +1,72 @@
+{
+  "date": "2026.03.27 (금)",
+  "one_liner": "구글은 AI 생태계 장악을 위해 기술·서비스 양면에서 공세를 펼치고, 한국은 통신3사·서울시 주도로 AI 인프라 투자와 공공 AI 행정을 본격 가동했다.",
+  "news": [
+    {
+      "number": 1,
+      "category": "제품 업데이트",
+      "title": "구글 Gemini, ChatGPT·Claude 기억 한 번에 흡수…AI 플랫폼 락인 전쟁 시작",
+      "body": "구글 Gemini가 'Import Memory' 및 'Import Chat History' 기능을 데스크톱에 출시했다. 사용자는 **ChatGPT나 Claude에 저장된 대화 기록과 개인 메모리**를 복사·붙여넣기만으로 Gemini에 통째로 이식할 수 있다. Anthropic이 이달 초 유사한 이식 도구를 먼저 선보인 데 이어 구글이 즉각 맞불을 놓은 것으로, AI 챗봇 시장이 '획득' 경쟁에서 '이탈 방지·흡수' 경쟁으로 전환되고 있음을 보여준다. 블룸버그에 따르면 구글은 동시에 ChatGPT 사용자들이 Gemini로 전환하기 쉽도록 별도 스위칭 툴도 함께 공개했다.",
+      "insight": "AI 플랫폼 간 사용자 이동 비용(스위칭 코스트)이 급격히 낮아지면서, 모델 성능이나 가격만큼이나 '기억·맥락 연속성'이 사용자 잔류 핵심 요인으로 부상하고 있다. 이는 기업용 AI 도입 시에도 벤더 종속 리스크를 줄이는 방향으로 구매 기준이 바뀔 수 있음을 의미한다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "이수시스템의 RAG 기반 챗봇 및 HR AI 패키지는 사용자의 업무 맥락·히스토리를 누적 학습하는 구조가 핵심 차별점이다. Gemini의 메모리 이식 사례처럼, WORKUP·Smart HR과 연동된 챗봇이 인사 데이터를 지속 학습·기억하는 기능을 강조하면 고객사 이탈 방지 및 신규 영업 설득력을 높일 수 있다.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/902085/google-gemini-import-memory-chat-history",
+      "source": "The Verge"
+    },
+    {
+      "number": 2,
+      "category": "제품 업데이트",
+      "title": "애플 iOS 27, Siri에 Gemini·Claude 전부 꽂는다…AI 어시스턴트 '멀티 플러그' 시대",
+      "body": "블룸버그 마크 거먼 보도에 따르면 애플은 iOS 27 업데이트에서 **App Store에 등록된 Gemini, Claude 등 서드파티 AI 챗봇을 Siri에 직접 연결**할 수 있도록 개방할 계획이다. 기존 OpenAI와의 단독 협력 구조에서 벗어나 복수의 AI 엔진이 Siri 응답을 생성하는 방식으로 전환된다. 이는 사용자가 선호 AI 모델을 직접 선택할 수 있게 되는 것으로, 스마트폰 운영체제가 AI 서비스의 '유통 채널'로 자리잡는 변화를 예고한다.",
+      "insight": "OS 레벨에서 AI 챗봇이 표준 인터페이스로 통합되면, 기업용 AI 솔루션도 모바일 OS 플랫폼과의 연동성을 갖춰야 경쟁력을 유지할 수 있다. 특히 모바일 워크플레이스가 확산된 산업 환경에서는 OS 내장 AI와 기업 전용 AI의 역할 분담 전략이 필요해진다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "이수시스템의 모바일 HR 서비스 HR-Tong은 iOS 환경에서 구동된다. iOS 27에서 서드파티 AI가 Siri와 연동될 경우, HR-Tong 내 AI 기능(이력서 분석·HR AI 패키지)을 Siri 연동 API로 확장하는 방안을 중장기 로드맵에 반영할 필요가 있다.",
+      "url": "https://www.theverge.com/tech/902048/apple-siri-ai-chatbot-update-ios-27",
+      "source": "The Verge"
+    },
+    {
+      "number": 3,
+      "category": "산업 동향",
+      "title": "한국 통신3사, 6년간 AI에 4.5조 쏜다…데이터센터 600㎿로 '탈통신' 가속",
+      "body": "SK텔레콤·KT·LG유플러스 3사가 **향후 6년간 총 4조5천억 원을 AI R&D에 투자**하고, AI 데이터센터 용량을 600㎿ 규모로 확대할 계획이라고 파이낸셜뉴스 등이 보도했다. 이는 기존 통신 인프라 사업에서 AI·클라우드 중심으로 사업 구조를 전환하는 '탈통신' 전략의 일환으로, 단순 네트워크 제공자에서 AI 플랫폼 사업자로의 변신을 선언한 것이다. 3사는 각각 자체 AI 모델 개발 및 B2B AI 서비스 확대에 투자를 집중할 예정이다.",
+      "insight": "국내 통신사들이 AI 인프라 투자를 대규모로 단행하면서, 기업용 AI 솔루션 수요가 제조·금융·공공을 넘어 통신 생태계 전반으로 빠르게 확산될 전망이다. 동시에 통신사들이 직접 B2B AI 서비스를 공급하게 되면, 기존 IT 솔루션 기업들과의 경쟁 구도가 형성될 수 있다.",
+      "isu_area": "클라우드 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "통신3사가 AI 데이터센터를 대폭 증설하면 네이버 클라우드(NCP) 공식 파트너사인 이수시스템에게 클라우드 마이그레이션 및 멀티 클라우드 컨설팅 수요가 늘어날 수 있다. 또한 통신사 계열 기업들이 AI 기반 HR·ERP 전환 수요를 발생시킬 가능성이 높아, WORKUP SaaS 및 SAP 컨설팅 영업 대상을 통신 산업군으로 확대하는 전략이 유효하다.",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBPUGVnUXJyMXpxbHFlcFk1eU5VR1BhT21SdE5iZzN6VmNJdDEzRzhWRGUtdWlfNmhtMGNoZGxaV25EUVVKeTFveEItV3FNem1vOVJXeTE2QnNGd9IBXkFVX3lxTE5seERfVHFQamYwS1Zob2tYRTZITUh6RUotUElYTktYUjdFdTNVc29RZFBSVzFMTXozQ0NQX05hS3o1MkgybUR3Uy1TaVR1ZmVEeWl0Z2lnSG12dXRSR2c?oc=5",
+      "source": "파이낸셜뉴스"
+    },
+    {
+      "number": 4,
+      "category": "글로벌 이슈",
+      "title": "서울시 '인공지능위원회' 출범…공공 AI 행정 본격화, 시민 신뢰가 우선",
+      "body": "서울시가 **민·관·학 전문가로 구성된 인공지능위원회를 공식 출범**시키며 AI 기반 행정 서비스를 본격 추진한다. 서울 시민 설문 결과 시민들은 'AI 행정의 속도보다 신뢰'를 더 중시하는 것으로 나타났으며, 민원상담 자동화·서류 간소화 등 실생활 접점 서비스에 AI 역할을 기대하는 것으로 조사됐다. 위원회는 AI 도입 시 윤리·보안·데이터 거버넌스 기준을 마련하고, 시민 참여형 피드백 채널도 운영할 계획이다.",
+      "insight": "지방정부가 직접 AI 거버넌스 기구를 설치하는 것은 공공 부문 AI 도입이 시범 단계를 넘어 제도화 단계로 진입했음을 의미한다. 이는 공공기관의 AI 솔루션 조달 기준이 기술 성능뿐 아니라 신뢰성·투명성·윤리 준수 여부로 확대될 것임을 예고한다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[정부 사업]",
+      "isu_insight": "서울시 인공지능위원회 출범은 공공 AI 솔루션 조달 수요 확대의 신호탄이다. 이수시스템은 GS인증을 보유한 OPTI-HR, ISO27001 인증 SaaS HR 제품을 앞세워 서울시·자치구 단위의 AI 행정 자동화(민원 챗봇, HR 디지털화) 사업에 입찰 가능성을 검토할 수 있다. 특히 '시민 신뢰' 중심의 AI 요구에 맞춰 RAG 기반 챗봇의 답변 근거 투명성 기능을 공공 제안서에 강조하는 전략이 유효하다.",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE96UkZGMWtrRGMycXNPcnNXY2lHeHVjVlVhbWlhR0Z5akJGN1NFUWVqNEV5aTJ6ck1nd2FQX29hZDRKeDFERWhyMlJXdVc?oc=5",
+      "source": "한국AI부동산신문"
+    },
+    {
+      "number": 5,
+      "category": "산업 동향",
+      "title": "구글 '터보퀀트' 공개…LLM 메모리 6배 압축, AI 인프라 비용 구조를 바꾼다",
+      "body": "구글 리서치가 **LLM의 KV 캐시를 성능 저하 없이 최대 6배 압축**하는 양자화 기술 '터보퀀트(TurboQuant)'를 공개했다. 이 기술은 대규모 언어 모델 추론 시 GPU 메모리 병목을 획기적으로 완화해 동일한 하드웨어로 더 많은 사용자 요청을 처리할 수 있게 한다. 가트너는 별도 보고서에서 2030년까지 1조 파라미터 LLM 추론 비용이 2025년 대비 90% 이상 절감될 것으로 예측해, 기업용 AI 도입의 경제적 장벽이 빠르게 낮아질 것임을 시사했다.",
+      "insight": "AI 인프라 비용이 급격히 내려가면 기업들이 자체 AI 모델을 운영하거나 더 많은 API 호출을 감당할 수 있게 돼, 엔터프라이즈 AI 솔루션의 대중화가 한층 빨라진다. 클라우드 공급자들이 동일 비용으로 더 많은 AI 워크로드를 처리할 수 있게 되면 중소·중견기업도 본격적인 AI 도입 검토에 나설 가능성이 높다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "LLM 추론 비용이 빠르게 하락하면 이수시스템의 RAG 기반 챗봇 및 HR AI 패키지의 API 운영 비용이 줄어들어 중견·중소 고객사에게도 경제적 제안이 가능해진다. 특히 현재 비용 부담으로 AI 도입을 미뤄온 제조·건설 분야 500개 이상 HR 레퍼런스 고객사를 대상으로 WORKUP AI 업그레이드 영업을 가속화할 적기가 다가오고 있다.",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBEN00xNGhPRTg4aElQTjhpdzVmQml3bk5KNHhUVjIxQ2p4dXBDek96Ynd1Z00tamVERWhqY09SM0gxNE5NWW56YzF1U0o1M2FtS21VQTFn?oc=5",
+      "source": "지디넷코리아"
+    }
+  ],
+  "takeaways": [
+    "**AI 플랫폼 전쟁은 이제 '기억 이식' 싸움**: Gemini의 ChatGPT 메모리 흡수 기능처럼, 사용자 맥락을 얼마나 잘 이어받는가가 AI 플랫폼의 핵심 경쟁력이 됐다.",
+    "**한국 AI 투자는 공공·민간 동시 가속**: 통신3사 6년간 4.5조 투자, 서울시 AI위원회 출범이 같은 날 터졌다. AI 인프라와 공공 거버넌스가 함께 움직이는 구조다.",
+    "**LLM 비용 하락이 기업용 AI 대중화를 앞당긴다**: 구글 터보퀀트(6배 압축)와 가트너 예측(2030년 90% 비용 절감)이 맞물려, 중소·중견기업도 AI 도입을 진지하게 검토해야 할 시점이 예상보다 빨리 오고 있다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심은 AI 도입 비용 하락과 공공 수요 확대다. 구글 터보퀀트로 LLM 운영 비용 부담이 줄어들면 이수시스템의 HR AI 패키지·RAG 챗봇의 가격 경쟁력이 강화되고, 서울시 인공지능위원회 출범은 공공 AI 솔루션 조달 시장의 문을 여는 신호다. 통신3사의 대규모 AI 투자는 이수시스템의 클라우드·HR·ERP 솔루션을 통신 산업군으로 확장할 새로운 영업 창구가 될 수 있다."
+}
