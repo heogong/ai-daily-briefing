@@ -1,179 +1,35 @@
 """
-AI Daily Briefing Generator (OpenAI 버전)
+AI Daily Briefing Generator — OpenAI API
 ==========================================
-OpenAI Responses API의 web_search_preview 도구를 활용해 AI 뉴스를 자동 수집하고
-HTML 뉴스레터를 생성하는 반자동화 스크립트
-
 사용법:
-  1. pip install openai
+  1. pip install openai feedparser requests
   2. export OPENAI_API_KEY="your-api-key"
   3. python ai_daily_briefing_openai.py
   4. output/ 디렉토리에 HTML 파일 생성됨
-
-비용 추정 (1회 실행):
-  - gpt-4o: 입력 ~5K + 출력 ~4K ≈ $0.04~$0.07
-  - Web Search: 검색당 $0.03 × ~5회 = $0.15
-  - 총 1회 실행 비용: 약 $0.19~$0.22 (≈ 270~310원)
 """
 
-import feedparser
+import openai
 import json
-import requests
 import os
 import re
-from datetime import datetime, timedelta, timezone
-from pathlib import Path
 
-import openai
-
-
-# ============================================================
-# 설정
-# ============================================================
-MODEL = "o4-mini"
-MAX_TOKENS = 8192
-OUTPUT_DIR = Path("output")
-ISU_CONTEXT_PATH = Path("ISU_COMPANY.md")
-
-
-def load_isu_context() -> str:
-    """이수시스템 컨텍스트 로드"""
-    if ISU_CONTEXT_PATH.exists():
-        return ISU_CONTEXT_PATH.read_text(encoding="utf-8")
-    return ""
-
-
-KST = timezone(timedelta(hours=9))
-
-def _kst_now():
-    """대한민국 표준시(KST, UTC+9) 기준 현재 시각"""
-    return datetime.now(tz=KST)
-
-
-def get_news_window_str() -> str:
-    """뉴스 수집 시간 범위 문자열 (KST 기준 최근 24시간)"""
-    now = _kst_now()
-    since = now - timedelta(hours=24)
-    return (f"{since.strftime('%Y년 %m월 %d일 %H:%M')} ~ "
-            f"{now.strftime('%Y년 %m월 %d일 %H:%M')} (KST)")
-
-
-def get_today_str() -> str:
-    """오늘 날짜 문자열 (KST 기준)"""
-    now = _kst_now()
-    weekdays = ["월", "화", "수", "목", "금", "토", "일"]
-    return f"{now.strftime('%Y.%m.%d')} ({weekdays[now.weekday()]})"
-
-
-def get_file_date() -> str:
-    return _kst_now().strftime("%Y_%m_%d")
-
-
-# ============================================================
-# Step 1: RSS 피드에서 뉴스 수집
-# ============================================================
-RSS_USER_AGENT = (
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-    "AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/124.0.0.0 Safari/537.36"
+from briefing_core import (
+    MAX_TOKENS, OUTPUT_DIR,
+    load_isu_context, get_today_str, get_news_window_str, get_file_date,
+    fetch_rss_articles, fetch_it_company_articles, format_articles_text,
+    build_ai_briefing_prompt, build_it_company_prompt,
+    parse_news_json,
+    build_tts_text, generate_tts_audio,
+    generate_html,
 )
 
-def _rss_feeds_with_date() -> list[str]:
-    """Google News RSS에 어제 날짜 after: 필터 적용한 URL 목록 반환"""
-    yesterday = (_kst_now() - timedelta(hours=24)).strftime("%Y-%m-%d")
-    return [
-        f"https://news.google.com/rss/search?q=artificial+intelligence+LLM+after:{yesterday}&hl=en&gl=US&ceid=US:en",
-        f"https://news.google.com/rss/search?q=OpenAI+Anthropic+Google+Gemini+after:{yesterday}&hl=en&gl=US&ceid=US:en",
-        f"https://news.google.com/rss/search?q=인공지능+AI+LLM+after:{yesterday}&hl=ko&gl=KR&ceid=KR:ko",
-        "https://techcrunch.com/tag/artificial-intelligence/feed/",
-        "https://venturebeat.com/ai/feed/",
-        "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
-    ]
-
-
-def _parse_entry_date(entry) -> datetime | None:
-    """feedparser 항목에서 발행 시각 파싱 (여러 필드 시도)"""
-    for attr in ('published_parsed', 'updated_parsed', 'created_parsed'):
-        val = getattr(entry, attr, None)
-        if val:
-            try:
-                return datetime(*val[:6], tzinfo=timezone.utc)
-            except Exception:
-                continue
-    return None
-
-
-def fetch_rss_articles(max_hours: int = 24) -> list:
-    """RSS 피드에서 최근 max_hours 시간 AI 뉴스 수집 및 필터링"""
-    cutoff = _kst_now() - timedelta(hours=max_hours)
-    articles = []
-    seen_titles = set()
-
-    for url in _rss_feeds_with_date():
-        try:
-            try:
-                resp = requests.get(url, headers={"User-Agent": RSS_USER_AGENT}, timeout=15)
-            except requests.exceptions.SSLError:
-                resp = requests.get(url, headers={"User-Agent": RSS_USER_AGENT}, timeout=15, verify=False)
-            feed = feedparser.parse(resp.content)
-            status = getattr(feed, 'status', 0)
-            total = len(feed.entries)
-
-            if status not in (0, 200, 301, 302) and status != 0:
-                print(f"   ⚠️ HTTP {status}: {url[:60]}")
-                continue
-
-            within = 0
-            no_date = 0
-            for entry in feed.entries:
-                published = _parse_entry_date(entry)
-
-                if published is None:
-                    no_date += 1
-                    pub_str = _kst_now().strftime('%Y-%m-%d %H:%M KST')
-                elif published < cutoff:
-                    continue
-                else:
-                    within += 1
-                    pub_str = published.astimezone(KST).strftime('%Y-%m-%d %H:%M KST')
-
-                title = entry.get('title', '').strip()
-                if not title or title in seen_titles:
-                    continue
-                seen_titles.add(title)
-
-                summary = entry.get('summary', entry.get('description', ''))
-                summary = re.sub(r'<[^>]+>', '', summary).strip()[:400]
-
-                articles.append({
-                    'title': title,
-                    'summary': summary,
-                    'link': entry.get('link', ''),
-                    'published': pub_str,
-                    'source': feed.feed.get('title', url.split('/')[2]),
-                })
-
-            print(f"   {url.split('/')[2][:40]:40s} 전체:{total:3d} | {max_hours}h이내:{within:3d} | 날짜없음:{no_date:2d}")
-
-        except Exception as e:
-            print(f"   ⚠️ RSS 피드 오류 ({url[:60]}): {e}")
-
-    articles.sort(key=lambda x: x['published'], reverse=True)
-
-    if len(articles) < 5 and max_hours < 72:
-        extended = max_hours * 2
-        print(f"   ⚠️ 기사 부족 ({len(articles)}개) → {extended}시간으로 범위 확장 재시도")
-        return fetch_rss_articles(max_hours=extended)
-
-    return articles
+MODEL = "o4-mini"
 
 
 # ============================================================
-# Step 2: OpenAI API로 뉴스 분석
+# OpenAI API 전용: 뉴스 분석
 # ============================================================
 def collect_and_analyze_news(client: openai.OpenAI) -> str:
-    """RSS로 수집한 기사 목록을 OpenAI에게 전달해 선별 + 분석"""
-
     today = get_today_str()
     news_window = get_news_window_str()
     isu_context = load_isu_context()
@@ -181,83 +37,17 @@ def collect_and_analyze_news(client: openai.OpenAI) -> str:
     print("   📡 RSS 피드 수집 중...")
     articles = fetch_rss_articles()
     print(f"   ✅ {len(articles)}개 기사 수집 ({news_window})")
-
     if not articles:
-        print("   ⚠️ RSS 기사 수집 실패 — 피드 연결을 확인하세요.")
         raise ValueError("RSS에서 수집된 기사가 없습니다.")
 
-    articles_text = ""
-    for i, a in enumerate(articles, 1):
-        articles_text += f"\n[{i}] {a['published']} | {a['source']}\n제목: {a['title']}\n요약: {a['summary']}\n링크: {a['link']}\n"
-
-    system_prompt = f"""당신은 AI 산업 전문 뉴스레터 에디터입니다.
-오늘은 {today}입니다.
-
-대상 독자:
-- AI에 관심은 있지만 너무 바빠서 뉴스를 못 보는 직장인
-- 기술적 깊이보다는 "그래서 나한테 뭐가 달라지는데?"를 궁금해하는 사람
-
-뉴스 선별 기준 (중요도 순):
-1. 새로운 AI 모델/제품 출시 (GPT, Claude, Gemini 등)
-2. 빅테크의 AI 전략 변화 (구조조정, 투자, 인수합병)
-3. AI가 실제 업무/산업에 미치는 영향
-4. AI 규제/정책 변화
-5. AI 연구 브레이크스루
-
-각 뉴스에 반드시 포함할 것:
-- 카테고리 태그 (모델 릴리스 / 제품 업데이트 / 일자리·사회 / 산업 동향 / 글로벌 이슈 중 택1)
-- 제목 (한국어, 임팩트 있게)
-- 본문 요약 (2~3문단, 핵심 숫자/사실 포함)
-- 시사점: 업계 전반에 어떤 변화를 의미하는지, 독자가 알아야 할 맥락 (특정 회사 관점 아닌 해당 뉴스 시사점)
-
-최종 출력 형식 (반드시 이 JSON 형식으로):
-```json
-{{
-  "date": "{today}",
-  "one_liner": "오늘의 AI를 한 문장으로 요약",
-  "news": [
-    {{
-      "number": 1,
-      "category": "모델 릴리스",
-      "title": "뉴스 제목",
-      "body": "본문 요약. 핵심 키워드는 **별표두개**로 강조. 큰따옴표 대신 작은따옴표 사용.",
-      "insight": "이 뉴스가 업계 전반에 미치는 의미와 맥락 (이수시스템 언급 금지)",
-      "isu_area": "AI 사업",
-      "isu_tag": "[핵심 기회]",
-      "isu_insight": "이수시스템 관점 인사이트",
-      "url": "원문 기사 링크 (제공된 링크 그대로 사용)",
-      "source": "출처명 (예: TechCrunch, VentureBeat, Google News)"
-    }}
-  ],
-  "takeaways": [
-    "핵심 테이크어웨이 1 (**별표두개**로 강조 가능)",
-    "핵심 테이크어웨이 2",
-    "핵심 테이크어웨이 3"
-  ],
-  "isu_summary": "이수시스템 관점의 오늘 AI 뉴스 종합 인사이트 (2~3문장)"
-}}
-```
-
-중요 규칙:
-- JSON 문자열 값 안에서 큰따옴표(")를 절대 사용하지 마세요. 작은따옴표(')를 쓰세요.
-- HTML 태그를 사용하지 마세요. 강조는 **별표두개**만 사용하세요.
-- JSON이 유효한지 반드시 확인 후 출력하세요.
-- insight 필드에는 이수시스템을 절대 언급하지 마세요. ISU 관련 내용은 오직 isu_insight에만 작성합니다.
-
---- 이수시스템 컨텍스트 ---
-insight 필드는 기사 자체의 업계 시사점이므로 절대 수정하지 않는다. ISU 관점은 isu_insight와 isu_summary에만 작성한다.
-
-{isu_context}
-
-각 뉴스에 isu_area, isu_tag, isu_insight 필드를 추가하고,
-마지막에 isu_summary로 이수시스템 관점 종합 인사이트를 작성하라.
-isu_area는 6대 영역(AI 사업 / 디지털서비스 사업 / ESG 사업 / HR 사업 / 안전 사업 / 클라우드 사업) 중 가장 연관도 높은 것 1개 선택.
-isu_tag는 [핵심 기회] [제품 강화] [영업 기회] [리스크] [모니터링] [정부 사업] 중 1개."""
-
-    user_message = f"""아래는 {news_window} 사이에 RSS 피드에서 수집한 AI 뉴스 {len(articles)}개입니다.
-이 중에서 가장 중요한 5개를 선별하고, 각 뉴스를 분석해서 JSON으로 정리해주세요.
-
-{articles_text}"""
+    system_prompt = build_ai_briefing_prompt(today, isu_context)
+    user_message = (
+        f"아래는 {news_window} 사이에 RSS 피드에서 수집한 AI 뉴스 {len(articles)}개입니다.\n"
+        f"이 중에서 가장 중요한 5개를 선별하고, 각 뉴스를 분석해서 JSON으로 정리해주세요.\n\n"
+        f"선별 조건: **대한민국 AI 산업 관련 기사를 반드시 1개 이상 포함**하세요. "
+        f"한국 기사가 없거나 부족할 경우, 나머지 중 가장 중요한 기사로 채워도 됩니다.\n\n"
+        f"{format_articles_text(articles)}"
+    )
 
     response = client.responses.create(
         model=MODEL,
@@ -265,488 +55,58 @@ isu_tag는 [핵심 기회] [제품 강화] [영업 기회] [리스크] [모니�
         input=user_message,
         max_output_tokens=MAX_TOKENS,
     )
-
     return response.output_text
 
 
-# ============================================================
-# Step 2: JSON 파싱
-# ============================================================
-def parse_news_json(raw_text: str) -> dict:
-    """응답에서 JSON 추출 (견고한 파싱)"""
+def analyze_it_company_news(client: openai.OpenAI, articles: list) -> str:
+    today = get_today_str()
+    news_window = get_news_window_str()
 
-    # ```json ... ``` 블록 찾기
-    json_match = re.search(r"```json\s*(.*?)\s*```", raw_text, re.DOTALL)
-    if json_match:
-        json_str = json_match.group(1)
-    else:
-        # 블록 없으면 전체에서 { ... } 찾기 (가장 바깥 중괄호)
-        depth = 0
-        start = -1
-        for i, ch in enumerate(raw_text):
-            if ch == '{':
-                if depth == 0:
-                    start = i
-                depth += 1
-            elif ch == '}':
-                depth -= 1
-                if depth == 0 and start != -1:
-                    json_str = raw_text[start:i+1]
-                    break
-        else:
-            raise ValueError("JSON을 찾을 수 없습니다. 응답을 확인하세요.")
+    if not articles:
+        raise ValueError("IT 기업 동향 기사가 없습니다.")
 
-    json_str = fix_json_string(json_str)
-
-    try:
-        return json.loads(json_str)
-    except json.JSONDecodeError as e:
-        print(f"  ⚠️ 1차 파싱 실패: {e}")
-        print("  🔧 OpenAI에게 JSON 수정 요청 중...")
-        return fix_json_with_openai(raw_text)
-
-
-def fix_json_string(json_str: str) -> str:
-    """흔한 JSON 깨짐 패턴 자동 수정"""
-    lines = json_str.split('\n')
-    json_str = '\n'.join(lines)
-
-    json_str = re.sub(
-        r'<(\w+)\s+(\w+)="([^"]*)"',
-        r'<\1 \2=\'\3\'',
-        json_str
+    system_prompt = build_it_company_prompt(today)
+    user_message = (
+        f"아래는 {news_window} 사이에 RSS 피드에서 수집한 국내 IT 기업 동향 기사 {len(articles)}개입니다.\n"
+        f"이 중에서 가장 중요한 5개를 선별하고, 각 뉴스를 분석해서 JSON으로 정리해주세요.\n\n"
+        f"{format_articles_text(articles)}"
     )
 
-    json_str = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f]', '', json_str)
-    json_str = re.sub(r',\s*([\]}])', r'\1', json_str)
-
-    return json_str
+    response = client.responses.create(
+        model=MODEL,
+        instructions=system_prompt,
+        input=user_message,
+        max_output_tokens=MAX_TOKENS,
+    )
+    return response.output_text
 
 
 def fix_json_with_openai(raw_text: str) -> dict:
     """파싱 실패 시 OpenAI에게 JSON 수정 요청 (fallback)"""
     client = openai.OpenAI()
-    truncated = raw_text[:8000] if len(raw_text) > 8000 else raw_text
-
+    truncated = raw_text[:8000]
     response = client.responses.create(
         model=MODEL,
-        input=f"""아래 텍스트에서 JSON 부분을 추출하고, 문법 오류를 수정해서
-올바른 JSON만 출력해줘. 다른 설명 없이 JSON만 출력해.
-
-원본 텍스트:
-{truncated}""",
+        input=(
+            "아래 텍스트에서 JSON 부분을 추출하고, 문법 오류를 수정해서 "
+            "올바른 JSON만 출력해줘. 다른 설명 없이 JSON만 출력해.\n\n"
+            f"원본 텍스트:\n{truncated}"
+        ),
         max_output_tokens=MAX_TOKENS,
     )
-
     fixed_text = response.output_text
 
-    json_match = re.search(r"```json\s*(.*?)\s*```", fixed_text, re.DOTALL)
-    if json_match:
-        return json.loads(json_match.group(1))
-
-    json_match = re.search(r"\{.*\}", fixed_text, re.DOTALL)
-    if json_match:
-        return json.loads(json_match.group(0))
-
+    m = re.search(r"```json\s*(.*?)\s*```", fixed_text, re.DOTALL)
+    if m:
+        return json.loads(m.group(1))
+    m = re.search(r"\{.*\}", fixed_text, re.DOTALL)
+    if m:
+        return json.loads(m.group(0))
     raise ValueError("JSON 복구에 실패했습니다. output/ 폴더의 raw 파일을 확인하세요.")
 
 
 # ============================================================
-# Step 3: TTS 음성 생성
-# ============================================================
-_TTS_WORD_MAP = {
-    r'\bWORKUP\b': '워크업',
-    r'\bRAG\b': '레그',
-    r'\bClaude\b': '클로드',
-    r'\bOpenAI\b': '오픈에이아이',
-}
-
-
-def _strip_special(text: str) -> str:
-    """TTS용 특수기호 제거 및 발음 치환"""
-    import re
-    text = re.sub(r'\*+', '', text)          # ** 마크다운 강조
-    text = re.sub(r'[#\[\](){}<>|\\^~`]', '', text)  # 기타 마크업
-    text = re.sub(r'https?://\S+', '', text)  # URL
-    for pattern, replacement in _TTS_WORD_MAP.items():
-        text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
-    text = re.sub(r'\s+', ' ', text).strip()
-    return text
-
-
-def _date_to_tts(date_str: str) -> str:
-    """'2026.03.23 (월)' → '2026년 3월 23일 월요일'"""
-    weekday_map = {"월": "월요일", "화": "화요일", "수": "수요일",
-                   "목": "목요일", "금": "금요일", "토": "토요일", "일": "일요일"}
-    import re
-    m = re.match(r'(\d{4})\.(\d{2})\.(\d{2})\s*\(([월화수목금토일])\)', date_str)
-    if m:
-        y, mo, d, wd = m.groups()
-        return f"{y}년 {int(mo)}월 {int(d)}일 {weekday_map[wd]}"
-    return date_str
-
-
-def build_tts_text(news_data: dict) -> str:
-    date_tts = _date_to_tts(news_data.get('date', ''))
-    lines = [
-        f"AI 데일리 브리핑, {date_tts}.",
-        "바쁜 사람을 위한 오늘의 AI 뉴스를 전해드립니다.",
-        "",
-    ]
-
-    for i, item in enumerate(news_data.get('news', []), 1):
-        cat = _strip_special(item.get('category', ''))
-        title = _strip_special(item.get('title', ''))
-        body = _strip_special(item.get('body', ''))
-
-        lines.append(f"뉴스 {i}번. {cat}.")
-        lines.append(title)
-        if body:
-            lines.append(body)
-        lines.append("")
-
-    lines.append("이상 AI 데일리 브리핑이었습니다. 좋은 하루 되세요.")
-    return "\n".join(lines)
-
-
-def generate_tts_audio(text: str, api_key: str) -> bytes | None:
-    import base64
-    url = f"https://texttospeech.googleapis.com/v1/text:synthesize?key={api_key}"
-    payload = {
-        "input": {"text": text[:4900]},
-        "voice": {"languageCode": "ko-KR", "name": "ko-KR-Wavenet-D"},
-        "audioConfig": {"audioEncoding": "MP3"}
-    }
-    try:
-        resp = requests.post(url, json=payload, timeout=30)
-        if resp.status_code == 200:
-            return base64.b64decode(resp.json()["audioContent"])
-        print(f"   ⚠️ TTS API 오류 {resp.status_code}: {resp.text[:200]}")
-    except Exception as e:
-        print(f"   ⚠️ TTS 생성 실패: {e}")
-    return None
-
-
-# ============================================================
-# Step 4: HTML 생성 (Anthropic 버전과 동일)
-# ============================================================
-def md_to_html(text: str) -> str:
-    """**마크다운 강조**를 <strong>HTML</strong>로 변환"""
-    return re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', text)
-
-
-def generate_html(data: dict, audio_filename=None) -> str:
-    """뉴스 데이터로 HTML 뉴스레터 생성"""
-
-    if audio_filename:
-        audio_tag = f'<audio src="{audio_filename}" controls style="position:fixed;bottom:20px;right:20px;z-index:100;width:260px;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.5);"></audio>'
-    else:
-        audio_tag = ""
-
-    category_tags = {
-        "모델 릴리스": ("tag-model", "#4488ff"),
-        "제품 업데이트": ("tag-product", "#00e5a0"),
-        "일자리·사회": ("tag-society", "#ff4488"),
-        "산업 동향": ("tag-industry", "#ff8844"),
-        "글로벌 이슈": ("tag-insight", "#ffcc00"),
-    }
-
-    news_sections = ""
-    for item in data["news"]:
-        cat = item.get("category", "산업 동향")
-        tag_class, _ = category_tags.get(cat, ("tag-industry", "#ff8844"))
-        isu_area = item.get("isu_area", "")
-        isu_tag = item.get("isu_tag", "")
-        isu_insight = item.get("isu_insight", "")
-
-        isu_box = ""
-        if isu_area or isu_insight:
-            isu_box = f"""
-    <div class="isu-box">
-      <div class="isu-label">
-        <span class="isu-area-tag">{isu_area}</span>
-        <span class="isu-opp-tag">{isu_tag}</span>
-      </div>
-      <p>{isu_insight}</p>
-    </div>"""
-
-        url = item.get("url", "")
-        source = item.get("source", "")
-        source_link = ""
-        if url:
-            source_label = source if source else "원문 보기"
-            source_link = f"""
-    <div class="source-link"><a href="{url}" target="_blank" rel="noopener noreferrer">출처: {source_label} →</a></div>"""
-
-        news_sections += f"""
-  <section class="section">
-    <div class="section-header">
-      <span class="section-number">{item['number']:02d}</span>
-      <span class="section-tag {tag_class}">{cat}</span>
-    </div>
-    <h3 class="news-title">{item['title']}</h3>
-    <p class="news-body">{md_to_html(item['body'])}</p>
-    <div class="insight-box">
-      <div class="label">시사점</div>
-      <p>{md_to_html(item['insight'])}</p>
-    </div>{isu_box}{source_link}
-  </section>"""
-
-    takeaway_items = ""
-    for t in data.get("takeaways", []):
-        takeaway_items += f"\n      <li>{md_to_html(t)}</li>"
-
-    # ISU 종합 인사이트 섹션
-    isu_summary = data.get("isu_summary", "")
-    isu_summary_section = ""
-    if isu_summary:
-        isu_summary_section = f"""
-  <div class="isu-section">
-    <h2>이수시스템 인사이트</h2>
-    <p>{isu_summary}</p>
-  </div>"""
-
-    html = f"""<!DOCTYPE html>
-<html lang="ko">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Daily Briefing — {data['date']}</title>
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
-<meta property="og:title" content="AI Daily Briefing — {data['date']}">
-<meta property="og:description" content="바쁜 사람을 위한 3분 AI 뉴스">
-<meta property="og:image" content="og-image.png">
-<meta property="og:type" content="article">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
-  :root {{
-    --bg: #0a0a0f;
-    --surface: #12121a;
-    --surface-2: #1a1a26;
-    --accent: #00e5a0;
-    --accent-dim: rgba(0,229,160,0.12);
-    --accent-glow: rgba(0,229,160,0.25);
-    --text: #e8e8ed;
-    --text-dim: #8888a0;
-    --text-muted: #555568;
-    --orange: #ff8844;
-    --blue: #4488ff;
-    --pink: #ff4488;
-    --yellow: #ffcc00;
-    --border: rgba(255,255,255,0.06);
-  }}
-  * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-  body {{
-    background: var(--bg);
-    color: var(--text);
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 400;
-    line-height: 1.75;
-    min-height: 100vh;
-    padding-bottom: 0;
-  }}
-  .container {{ max-width: 720px; margin: 0 auto; padding: 0 24px; }}
-  .header {{
-    padding: 60px 0 40px;
-    border-bottom: 1px solid var(--border);
-    position: relative;
-    overflow: hidden;
-  }}
-  .header::before {{
-    content: '';
-    position: absolute;
-    top: -100px; right: -100px;
-    width: 300px; height: 300px;
-    background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
-    pointer-events: none;
-    animation: pulse 4s ease-in-out infinite;
-  }}
-  @keyframes pulse {{ 0%, 100% {{ opacity: 0.3; }} 50% {{ opacity: 0.6; }} }}
-  .header-top {{ display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }}
-  .logo-mark {{
-    width: 36px; height: 36px;
-    background: var(--accent);
-    border-radius: 8px;
-    display: flex; align-items: center; justify-content: center;
-    font-family: 'JetBrains Mono', monospace;
-    font-weight: 500; font-size: 14px; color: var(--bg);
-  }}
-  .brand-name {{
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 13px; font-weight: 500;
-    color: var(--text-dim);
-    letter-spacing: 2px; text-transform: uppercase;
-  }}
-  .header h1 {{
-    font-family: 'Playfair Display', serif;
-    font-size: 42px; font-weight: 900; line-height: 1.15;
-    margin-bottom: 12px;
-    background: linear-gradient(135deg, var(--text) 0%, var(--accent) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }}
-  .date-line {{
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 13px; color: var(--text-muted);
-    display: flex; align-items: center; gap: 12px;
-  }}
-  .date-line .dot {{
-    width: 6px; height: 6px;
-    background: var(--accent); border-radius: 50%;
-    animation: blink 2s ease-in-out infinite;
-  }}
-  @keyframes blink {{ 0%, 100% {{ opacity: 1; }} 50% {{ opacity: 0.3; }} }}
-  .tldr {{ padding: 32px 0; border-bottom: 1px solid var(--border); }}
-  .tldr-label {{
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px; color: var(--accent);
-    letter-spacing: 3px; text-transform: uppercase;
-    margin-bottom: 12px;
-  }}
-  .tldr p {{ font-size: 17px; font-weight: 500; line-height: 1.8; }}
-  .section {{ padding: 40px 0; border-bottom: 1px solid var(--border); }}
-  .section:last-child {{ border-bottom: none; }}
-  .section-header {{ display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }}
-  .section-number {{
-    font-family: 'Playfair Display', serif;
-    font-size: 28px; font-weight: 900; color: var(--accent); line-height: 1;
-  }}
-  .section-tag {{
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
-    padding: 4px 10px; border-radius: 4px; font-weight: 500;
-  }}
-  .tag-model {{ background: rgba(68,136,255,0.15); color: var(--blue); }}
-  .tag-product {{ background: rgba(0,229,160,0.12); color: var(--accent); }}
-  .tag-society {{ background: rgba(255,68,136,0.15); color: var(--pink); }}
-  .tag-industry {{ background: rgba(255,136,68,0.15); color: var(--orange); }}
-  .tag-insight {{ background: rgba(255,204,0,0.15); color: var(--yellow); }}
-  .news-title {{ font-size: 22px; font-weight: 700; line-height: 1.4; margin-bottom: 16px; }}
-  .news-body {{
-    font-size: 15px; line-height: 1.85; margin-bottom: 16px; font-weight: 300;
-    overflow-wrap: break-word; word-break: break-word;
-  }}
-  .news-body strong {{ color: var(--accent); font-weight: 500; }}
-  .insight-box {{
-    background: var(--surface-2);
-    border-left: 3px solid var(--accent);
-    padding: 16px 20px; border-radius: 0 8px 8px 0; margin-top: 16px;
-  }}
-  .insight-box .label {{
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 10px; color: var(--accent);
-    letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;
-  }}
-  .insight-box p {{ font-size: 14px; line-height: 1.75; font-weight: 400; }}
-  .isu-box {{
-    background: rgba(255,136,68,0.08);
-    border-left: 3px solid var(--orange);
-    padding: 10px 14px; border-radius: 0 6px 6px 0; margin-top: 12px;
-  }}
-  .isu-box .isu-label {{
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 10px; color: var(--orange);
-    letter-spacing: 2px; text-transform: uppercase; margin-bottom: 6px;
-  }}
-  .isu-area-tag {{
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 10px; padding: 2px 8px; border-radius: 3px;
-    background: rgba(255,136,68,0.15); color: var(--orange);
-    margin-right: 6px;
-  }}
-  .isu-opp-tag {{
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 10px; padding: 2px 8px; border-radius: 3px;
-    background: rgba(255,204,0,0.15); color: var(--yellow);
-  }}
-  .source-link {{ margin-top: 10px; text-align: right; }}
-  .source-link a {{ font-size: 12px; color: var(--text-muted); text-decoration: none; }}
-  .source-link a:hover {{ color: var(--text-dim); }}
-  .isu-section {{
-    padding: 40px 0; border-top: 2px solid var(--orange); margin-top: 20px;
-  }}
-  .isu-section h2 {{
-    font-family: 'Playfair Display', serif;
-    font-size: 24px; font-weight: 700; margin-bottom: 16px; color: var(--orange);
-  }}
-  .isu-section p {{ font-size: 15px; line-height: 1.85; font-weight: 300; }}
-  .bottom-line {{
-    padding: 40px 0; border-top: 2px solid var(--accent); margin-top: 20px;
-  }}
-  .bottom-line h2 {{
-    font-family: 'Playfair Display', serif;
-    font-size: 24px; font-weight: 700; margin-bottom: 20px; color: var(--accent);
-  }}
-  .bottom-line p {{ font-size: 15px; line-height: 1.85; font-weight: 300; margin-bottom: 12px; }}
-  .action-list {{ list-style: none; margin-top: 20px; }}
-  .action-list li {{
-    position: relative; padding: 10px 0 10px 24px;
-    font-size: 14px; font-weight: 400; line-height: 1.7;
-  }}
-  .action-list li::before {{
-    content: '→'; position: absolute; left: 0;
-    color: var(--accent); font-family: 'JetBrains Mono', monospace; font-weight: 500;
-  }}
-  .action-list li strong {{ color: var(--accent); font-weight: 500; }}
-  .footer {{
-    padding: 40px 0; text-align: center;
-    color: var(--text-muted); font-size: 12px;
-    font-family: 'JetBrains Mono', monospace;
-    border-top: 1px solid var(--border);
-  }}
-  .footer .accent {{ color: var(--accent); }}
-  @media (max-width: 600px) {{
-    .header h1 {{ font-size: 30px; }}
-    .news-title {{ font-size: 19px; }}
-    .container {{ padding: 0 16px; }}
-    .header {{ padding: 40px 0 30px; }}
-  }}
-</style>
-</head>
-<body>
-<div class="container">
-  <header class="header">
-    <div class="header-top">
-      <div class="logo-mark">AI</div>
-      <span class="brand-name">Daily Briefing</span>
-    </div>
-    <h1>오늘의 AI, 3분 안에 끝내기</h1>
-    <div class="date-line">
-      <span class="dot"></span>
-      <span>{data['date']} — 바쁜 당신을 위한 AI 핵심 브리핑</span>
-    </div>
-  </header>
-
-  <div class="tldr">
-    <div class="tldr-label">오늘의 한 줄</div>
-    <p>{data['one_liner']}</p>
-  </div>
-
-  {news_sections}
-  {isu_summary_section}
-
-  <div class="bottom-line">
-    <h2>오늘의 핵심 테이크어웨이</h2>
-    <ul class="action-list">{takeaway_items}
-    </ul>
-  </div>
-
-  <footer class="footer">
-    <p>AI Daily Briefing — <span class="accent">바쁜 사람을 위한 3분 AI 뉴스</span></p>
-    <p style="margin-top: 8px;">{data['date']} | 매일 아침 업데이트</p>
-    <p style="margin-top: 8px;">© keyboard@kakao.com</p>
-  </footer>
-</div>
-{audio_tag}
-</body>
-</html>"""
-
-    return html
-
-
-# ============================================================
-# Step 4: 메인 실행
+# 메인 실행
 # ============================================================
 def main():
     print("=" * 60)
@@ -762,11 +122,10 @@ def main():
 
     client = openai.OpenAI(api_key=api_key)
 
-    # Step 1: 뉴스 수집 & 분석
+    # Step 1: AI 뉴스 수집 & 분석
     print("\n🔍 AI 뉴스 검색 및 분석 중...")
     raw_response = collect_and_analyze_news(client)
 
-    # 원본 응답 저장 (디버깅용)
     OUTPUT_DIR.mkdir(exist_ok=True)
     raw_path = OUTPUT_DIR / f"ai_briefing_{get_file_date()}_raw.txt"
     raw_path.write_text(raw_response, encoding="utf-8")
@@ -775,12 +134,11 @@ def main():
     # Step 2: JSON 파싱
     print("📋 뉴스 데이터 파싱 중...")
     try:
-        news_data = parse_news_json(raw_response)
+        news_data = parse_news_json(raw_response, fix_fn=fix_json_with_openai)
     except (json.JSONDecodeError, ValueError) as e:
         print(f"\n❌ JSON 파싱 최종 실패: {e}")
         print(f"   원본 응답은 {raw_path} 에서 확인하세요.")
         return
-
     print(f"   ✅ {len(news_data.get('news', []))}개 뉴스 수집 완료")
 
     # Step 3: TTS 음성 생성 (선택적)
@@ -788,33 +146,42 @@ def main():
     tts_api_key = os.environ.get("GCP_TTS_KEY")
     if tts_api_key:
         print("🔊 TTS 음성 생성 중...")
-        tts_text = build_tts_text(news_data)
-        audio_bytes = generate_tts_audio(tts_text, tts_api_key)
+        audio_bytes = generate_tts_audio(build_tts_text(news_data), tts_api_key)
         if audio_bytes:
             audio_filename = f"ai_briefing_{get_file_date()}.mp3"
-            audio_path = OUTPUT_DIR / audio_filename
-            audio_path.write_bytes(audio_bytes)
-            print(f"   ✅ 음성 파일 저장: {audio_path}")
+            (OUTPUT_DIR / audio_filename).write_bytes(audio_bytes)
+            print(f"   ✅ 음성 파일 저장: {OUTPUT_DIR / audio_filename}")
     else:
         print("   ⏭️ GCP_TTS_KEY 없음 — TTS 생략")
 
-    # Step 4: HTML 생성
+    # Step 4: 국내 IT 기업 동향 수집 & 분석
+    print("\n🏢 국내 IT 기업 동향 수집 중...")
+    it_data = None
+    try:
+        it_articles = fetch_it_company_articles()
+        print(f"   ✅ {len(it_articles)}개 IT 기업 기사 수집")
+        if it_articles:
+            it_raw = analyze_it_company_news(client, it_articles)
+            it_raw_path = OUTPUT_DIR / f"it_company_{get_file_date()}_raw.txt"
+            it_raw_path.write_text(it_raw, encoding="utf-8")
+            it_data = parse_news_json(it_raw, fix_fn=fix_json_with_openai)
+            print(f"   ✅ {len(it_data.get('news', []))}개 IT 기업 뉴스 파싱 완료")
+            (OUTPUT_DIR / f"it_company_{get_file_date()}.json").write_text(
+                json.dumps(it_data, ensure_ascii=False, indent=2), encoding="utf-8"
+            )
+    except Exception as e:
+        print(f"   ⚠️ IT 기업 동향 수집 실패 (Tab 2 플레이스홀더로 표시): {e}")
+
+    # Step 5: HTML 생성 & 저장
     print("🎨 HTML 뉴스레터 생성 중...")
-    html = generate_html(news_data, audio_filename=audio_filename)
-
-    OUTPUT_DIR.mkdir(exist_ok=True)
-    filename = f"ai_briefing_{get_file_date()}.html"
-    filepath = OUTPUT_DIR / filename
+    html = generate_html(news_data, it_data=it_data, audio_filename=audio_filename)
+    filepath = OUTPUT_DIR / f"ai_briefing_{get_file_date()}.html"
     filepath.write_text(html, encoding="utf-8")
-
     print(f"\n✅ 완료! 파일 저장됨: {filepath}")
     print(f"   브라우저에서 열기: open {filepath}")
 
     json_path = OUTPUT_DIR / f"ai_briefing_{get_file_date()}.json"
-    json_path.write_text(
-        json.dumps(news_data, ensure_ascii=False, indent=2),
-        encoding="utf-8"
-    )
+    json_path.write_text(json.dumps(news_data, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"   JSON 원본: {json_path}")
 
 
