@@ -1,0 +1,72 @@
+{
+  "date": "2026.03.29 (일)",
+  "one_liner": "OpenAI는 Sora를 접고, Anthropic은 유료 구독자 2배 성장, Google은 Gemini 3 Deep Think를 출시하며 AI 왕좌 경쟁이 재편되는 한 주",
+  "news": [
+    {
+      "number": 1,
+      "category": "제품 업데이트",
+      "title": "OpenAI, Sora 전격 폐기…디즈니 계약도 포기한 이유",
+      "body": "OpenAI가 자사 AI 영상 생성 앱 **Sora**를 공식 종료하고, ChatGPT 내 영상 생성 기능 계획도 백지화했다. 동시에 **1조 원 규모의 디즈니 계약**을 스스로 파기하고, 영상 관련 고위 임원의 역할도 축소하는 등 하루 만에 굵직한 변화를 연달아 발표했다. The Verge에 따르면 이는 단순한 제품 정리가 아니라 OpenAI가 영상 생성 시장에서의 경쟁 전략을 전면 재검토한 결과로 해석된다.\n\n이미 **Runway, Kling, Veo 2** 등 경쟁 모델들이 품질과 속도 면에서 빠르게 추격하면서 Sora만의 차별성이 희석됐고, 막대한 컴퓨팅 비용 대비 수익성이 검증되지 않은 상황이었다. OpenAI는 자원을 텍스트·에이전트 중심으로 재집중하겠다는 신호를 보내고 있다.",
+      "insight": "AI 빅랩도 모든 모달리티를 동시에 선도할 수 없다는 현실이 드러난 사건이다. 영상 생성 시장은 오픈소스와 특화 스타트업의 경쟁이 치열해지면서 대형 플랫폼의 수직 통합 전략이 흔들리고 있다. 반면 텍스트·에이전트 영역에서의 집중 투자는 기업용 AI 자동화 수요를 더욱 가속할 가능성이 높다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "OpenAI가 영상 생성보다 텍스트·에이전트 기반 AI에 집중하겠다는 방향은 이수시스템의 RAG 챗봇·HR AI Package와 같은 업무 자동화 솔루션 시장의 성장 가능성을 뒷받침한다. 기업 고객사에 'AI는 영상이 아닌 업무 효율화'라는 메시지로 WORKUP AI 기능 및 챗봇 도입 영업 논리를 강화할 수 있다.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/902368/openai-sora-dead-ai-video-generation-competition",
+      "source": "The Verge"
+    },
+    {
+      "number": 2,
+      "category": "모델 릴리스",
+      "title": "Google, Gemini 3 Deep Think 유료 구독자 공개 배포…추론 경쟁 본격화",
+      "body": "Google이 최신 모델 **Gemini 3 Deep Think**를 유료 구독자 대상으로 정식 배포했다. 이 모델은 복잡한 수학·코딩·논리 문제에서 기존 Gemini 대비 크게 향상된 추론 능력을 갖춘 것으로 알려졌으며, OpenAI의 **o3·o4** 시리즈 및 Anthropic의 Claude 3.7과 직접 경쟁하는 포지션이다.\n\n특히 Google은 Gemini를 Siri와 연동하는 계약을 Apple과 체결한 직후 이번 모델을 출시해, **기기 AI와 클라우드 AI**의 통합 생태계 구축 속도를 높이고 있다. 유료 구독 모델로 먼저 배포한 것은 수익화와 성능 검증을 동시에 추구하는 전략으로 읽힌다.",
+      "insight": "추론 특화 모델 경쟁이 GPT·Claude·Gemini 삼파전으로 고착화되는 가운데, 각사가 유료 구독 전환율 제고를 위해 고성능 모델을 프리미엄 티어에 먼저 제공하는 패턴이 굳어지고 있다. 기업 구매자 입장에서는 어떤 모델을 API로 연동할지 선택지가 넓어지는 동시에, 비용-성능 트레이드오프 분석이 더욱 중요해진다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "Gemini 3 Deep Think가 API로 제공될 경우, 이수시스템의 RAG 기반 챗봇이나 HR AI Package에 고성능 추론 모델을 백엔드로 선택적으로 적용할 수 있는 옵션이 생긴다. 특히 복잡한 취업규칙 해석이나 급여 계산 예외 케이스처리 등 HR 도메인 추론 품질 향상에 활용 가능성을 검토할 시점이다.",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0tbXQ0MlpPVmp6S3h4dDRpUmtkbDd0RGFrWHc4RThvYWt2U1JjdTcwamFxcUVyUG5mS1MxTTVjck9EV1g1NDgzX2loc0FJUmVVUGEyQVhoOUFldw?oc=5",
+      "source": "Mashable"
+    },
+    {
+      "number": 3,
+      "category": "산업 동향",
+      "title": "Anthropic Claude 유료 구독자 1년 만에 2배…AI 어시스턴트 시장 판도 변화",
+      "body": "Anthropic이 **Claude의 유료 구독자 수가 1년 만에 2배**로 증가했다고 밝혔다. TechCrunch 보도에 따르면 Claude Pro·Team·Enterprise 등 유료 플랜 전반에서 급성장이 확인됐으며, 특히 코딩 보조 및 기업 문서 작업 분야에서 ChatGPT 대비 높은 만족도가 구독 유지율을 끌어올리고 있다.\n\nAnthropic은 최근 **Claude 3.7 Sonnet** 출시와 함께 코딩 에이전트 기능을 강화했고, AWS 및 Google Cloud와의 파트너십을 통해 기업 채널 확산에 속도를 내고 있다. 유료 구독자 기반 확대는 연간 수억 달러 수준의 매출 성장을 의미하며, 2026년 말 IPO 가능성을 높이는 요인으로 작용하고 있다.",
+      "insight": "ChatGPT 독주 체제가 흔들리고 Claude가 기업 사용자 시장에서 실질적인 대안으로 자리잡고 있다는 신호다. AI 어시스턴트 시장이 일반 소비자뿐 아니라 전문직·기업 사용자 중심으로 재편되면서, 도메인 특화 정확도와 안전성이 선택의 핵심 기준이 되고 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "Claude의 기업 채널 확산은 이수시스템이 RAG 챗봇 구축 시 Claude API를 백엔드 옵션으로 제안할 수 있는 근거가 된다. 특히 Claude의 긴 컨텍스트 처리 능력은 방대한 사내 HR 정책 문서·취업규칙을 기반으로 한 챗봇 정확도 향상에 유리하므로, 신규 챗봇 제안서에 모델 옵션 비교 자료로 활용할 수 있다.",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPT2tpQmVpOXRQNDdSM3pLVkhJazlYdTExdGJFTDhWcHljcm1aY3drNmRUU2tkRzUwZzNCdlJoakNZejVpS3B0bDBia21ZMTNuZUxUZC03dUlsQVI1SGpMdnpoV0prajJuWHh3RzNUTzE5T3M2RWNEWjg1amFBN2U4bFVBclZlUnZXT2JMbWFTMkhpOEpBZnMyNXNIOWl4WjJMSGFJ?oc=5",
+      "source": "TechCrunch"
+    },
+    {
+      "number": 4,
+      "category": "산업 동향",
+      "title": "코난테크놀로지, 창사 이래 최대 매출에도 '실적 지속성' 물음표…국내 AI 기업의 딜레마",
+      "body": "국내 AI 전문기업 **코난테크놀로지**가 창사 이래 최대 매출을 기록했음에도 불구하고, 증권가와 시장에서는 **실적 지속성**에 대한 우려가 제기되고 있다. 이는 국내 AI 기업들이 공공·대기업 프로젝트 수주에 의존하는 구조적 특성상, 특정 연도의 대형 계약 종료 후 매출 공백이 발생하는 패턴이 반복되기 때문이다.\n\n코난테크는 자연어처리(NLP)·검색엔진·AI 솔루션 분야에서 레퍼런스를 보유하고 있으나, **구독형 SaaS 수익** 비중이 낮고 프로젝트성 매출 의존도가 높다는 점이 밸류에이션 할인 요인으로 작용하고 있다. 국내 AI 솔루션 시장 전반에서 '한 방 매출' 구조에서 **반복 수익 모델**로의 전환이 핵심 과제로 부상하고 있다.",
+      "insight": "국내 AI 솔루션 기업들이 공통으로 직면한 문제가 수면 위로 드러났다. 기술력이나 레퍼런스보다 수익 모델의 지속성이 기업 가치를 결정하는 시대로 접어들면서, 프로젝트 수주 중심에서 SaaS·구독 기반 전환 속도가 AI 기업 경쟁력의 새로운 척도가 되고 있다.",
+      "isu_area": "HR 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "코난테크놀로지의 사례는 이수시스템이 이미 구독형 SaaS로 전환 중인 **WORKUP** 전략의 방향성이 옳음을 재확인해준다. 공공·대기업 SI 프로젝트 의존도를 낮추고 WORKUP·ESGable의 월정액 구독 고객 수를 늘리는 것이 안정적 매출 기반 구축의 핵심임을 영업·전략 기획 부서에 공유할 수 있는 사례로 활용 가능하다.",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1OWWxsVU1tOTB1emNKNXFrQVNpNUhUTW9LOUI1by0yQWxJLXZUMjg3eEx3WjVPd2FsN1FYdk1rLVhZRnN6NFJrSmg4bHBqTVBpdngw?oc=5",
+      "source": "네이트"
+    },
+    {
+      "number": 5,
+      "category": "글로벌 이슈",
+      "title": "Apple, Siri에 Gemini·Claude 연결 허용 검토…AI 어시스턴트 '멀티 모델' 시대 개막",
+      "body": "Apple이 Siri 쿼리를 **Google Gemini와 Anthropic Claude**로 라우팅할 수 있는 기능을 허용하는 방안을 검토 중이라는 보도가 나왔다. 이미 Apple은 2개월 전 Gemini와의 Siri 연동 계약을 발표한 바 있으며, 이번 추가 보도는 Apple이 특정 AI 파트너에 종속되지 않는 **멀티 모델 전략**으로 선회했음을 시사한다. 동시에 Apple은 전직 Google 임원을 AI 총괄로 영입해 내부 역량 강화에도 나서고 있다.\n\n이 변화는 사용자가 Siri를 통해 선호하는 AI 모델을 직접 선택할 수 있게 되는 것을 의미한다. **iOS 생태계 내 AI 경쟁**이 앱스토어처럼 플랫폼화되는 첫 신호탄으로, OpenAI가 Siri에서 독점적 지위를 잃을 가능성이 높아졌다.",
+      "insight": "스마트폰 OS 수준에서 AI 모델 선택권이 사용자에게 주어지는 구조는 AI 어시스턴트 시장의 판도를 근본적으로 바꾼다. 특정 모델의 OS 레벨 독점이 붕괴되면 성능·가격·개인정보 보호 기준으로 모델 간 실질 경쟁이 심화되고, 기업용 AI 솔루션에서도 '모델 불가지론(model agnosticism)' 설계가 필수 요건이 될 가능성이 높다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "Apple의 멀티 모델 전략은 이수시스템의 기업용 챗봇·HR AI Package 설계에 직접적인 시사점을 준다. 고객사가 특정 AI 모델을 선호하거나 비용·보안 기준으로 교체를 원할 경우, **모델 교체 가능한 추상화 레이어**를 갖춘 아키텍처로 챗봇 플랫폼을 설계하면 장기 유지보수 계약과 업셀 기회를 동시에 확보할 수 있다.",
+      "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxOVlI3b01KMFZDdnpHZTZQZFk1aW9nR2FranUxaHNHMFJFU0ZDdV9MTEFISzIzY2NYOFNvWTdnVlZmbzUtd0RIX0FISVd5clAzQVVwMjNRY081blpaTVpfN3VSazFXQkxwbjNHWUkwRzJJYkYtYUtKbFdNQndlVnh0dFlfSHd6WEhoZUNLcFFwaHE5YmY0WlV0R0JIaXdCdVZveFNQVS1NT3ZmMjdNSVRrQzdGeW9YbWhOandUTzE2b0xPdU54Mml1XzJVMURyRXJGVnloZzNBaTlRRW9RNXk2d3NrV0p3bjRCV1BVVEg5SU1uUXI1b0M4bmZEZkFBdUd5R3ROWXZkdGdTRmYyMXFqd2RvR1VZSnRzdW1ja2d5V1FQMmNDcVNYTFJTbXBUdTVJZHVtSQ?oc=5",
+      "source": "MSN"
+    }
+  ],
+  "takeaways": [
+    "**OpenAI의 Sora 종료**는 AI 빅랩도 선택과 집중이 불가피하다는 신호로, 텍스트·에이전트 기반 업무 AI 시장에 자원이 더 집중될 전망이다.",
+    "**Claude 유료 구독 2배 성장**과 **Gemini 3 Deep Think** 출시로 GPT 일강 체제가 무너지고 기업 AI 구매자의 선택지가 다양해지고 있다.",
+    "**Apple의 멀티 AI 모델 전략**은 특정 AI 파트너 독점 시대의 종말을 예고하며, 기업용 솔루션에서도 모델 교체 가능한 유연한 아키텍처 설계가 경쟁력이 된다."
+  ],
+  "isu_summary": "이번 주 AI 뉴스의 핵심 흐름은 '선택과 집중'과 '모델 다양화' 두 가지다. OpenAI가 Sora를 포기하고 에이전트·텍스트 중심으로 재편하는 것은 이수시스템의 챗봇·HR AI Package 같은 업무 자동화 솔루션 시장의 성장 여건을 강화한다. 동시에 Apple의 멀티 모델 전략과 Claude·Gemini의 동반 성장은 이수시스템이 특정 AI 모델에 종속되지 않는 추상화 아키텍처로 플랫폼을 설계해야 한다는 방향을 제시하며, WORKUP의 SaaS 구독 전환 가속화가 코난테크놀로지 사례에서 보듯 장기 기업가치를 결정하는 핵심 변수임을 다시 한번 확인시켜 준다."
+}
