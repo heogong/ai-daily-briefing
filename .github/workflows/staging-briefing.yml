@@ -1,4 +1,4 @@
-name: AI Daily Briefing (Staging)
+name: AI Daily Briefing (Preview)
 
 on:
   push:
@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  generate-staging:
+  generate-preview:
     runs-on: ubuntu-latest
 
     steps:
@@ -33,14 +33,14 @@ jobs:
           GCP_TTS_KEY: ${{ secrets.GCP_TTS_KEY }}
         run: python ai_daily_briefing.py
 
-      - name: Switch to main and deploy to docs/staging/
+      - name: Switch to main and deploy to docs/preview/
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git checkout main
 
-          mkdir -p docs/staging
-          touch docs/staging/.nojekyll
+          mkdir -p docs/preview
+          touch docs/preview/.nojekyll
 
           LATEST=$(ls -t output/ai_briefing_*.html 2>/dev/null | head -1)
           if [ -z "$LATEST" ]; then
@@ -48,12 +48,12 @@ jobs:
             exit 1
           fi
 
-          cp "$LATEST" docs/staging/index.html
-          cp output/ai_briefing_*.html docs/staging/ 2>/dev/null || true
-          cp output/ai_briefing_*.json docs/staging/ 2>/dev/null || true
-          cp output/ai_briefing_*.mp3  docs/staging/ 2>/dev/null || true
-          echo "✅ Copied $LATEST to docs/staging/index.html"
+          cp "$LATEST" docs/preview/index.html
+          cp output/ai_briefing_*.html docs/preview/ 2>/dev/null || true
+          cp output/ai_briefing_*.json docs/preview/ 2>/dev/null || true
+          cp output/ai_briefing_*.mp3  docs/preview/ 2>/dev/null || true
+          echo "✅ Copied $LATEST to docs/preview/index.html"
 
-          git add -f docs/staging/
-          git diff --cached --quiet || git commit -m "🧪 Staging: AI Daily Briefing $(date +%Y-%m-%d)"
+          git add -f docs/preview/
+          git diff --cached --quiet || git commit -m "🧪 Preview: AI Daily Briefing $(date +%Y-%m-%d)"
           git push origin main

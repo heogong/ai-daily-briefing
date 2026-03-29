@@ -395,22 +395,45 @@ def build_tts_text(news_data: dict) -> str:
     return "\n".join(lines)
 
 
+def _split_tts_chunks(text: str, max_bytes: int = 4900) -> list[str]:
+    """텍스트를 max_bytes 이하의 UTF-8 청크로 분할 (줄 단위 경계)."""
+    chunks, current, current_bytes = [], [], 0
+    for line in text.splitlines(keepends=True):
+        line_bytes = len(line.encode("utf-8"))
+        if current and current_bytes + line_bytes > max_bytes:
+            chunks.append("".join(current))
+            current, current_bytes = [], 0
+        current.append(line)
+        current_bytes += line_bytes
+    if current:
+        chunks.append("".join(current))
+    return chunks
+
+
 def generate_tts_audio(text: str, api_key: str) -> bytes | None:
     import base64
     url = f"https://texttospeech.googleapis.com/v1/text:synthesize?key={api_key}"
-    payload = {
-        "input": {"text": text[:4900]},
-        "voice": {"languageCode": "ko-KR", "name": "ko-KR-Wavenet-D"},
-        "audioConfig": {"audioEncoding": "MP3"}
-    }
-    try:
-        resp = requests.post(url, json=payload, timeout=30)
-        if resp.status_code == 200:
-            return base64.b64decode(resp.json()["audioContent"])
-        print(f"   ⚠️ TTS API 오류 {resp.status_code}: {resp.text[:200]}")
-    except Exception as e:
-        print(f"   ⚠️ TTS 생성 실패: {e}")
-    return None
+    chunks = _split_tts_chunks(text)
+    print(f"   🔊 TTS 청크 {len(chunks)}개 생성 중...")
+    audio_parts = []
+    for i, chunk in enumerate(chunks, 1):
+        payload = {
+            "input": {"text": chunk},
+            "voice": {"languageCode": "ko-KR", "name": "ko-KR-Wavenet-D"},
+            "audioConfig": {"audioEncoding": "MP3"}
+        }
+        try:
+            resp = requests.post(url, json=payload, timeout=30)
+            if resp.status_code == 200:
+                audio_parts.append(base64.b64decode(resp.json()["audioContent"]))
+                print(f"   ✅ 청크 {i}/{len(chunks)} 완료 ({len(chunk.encode('utf-8'))} bytes)")
+            else:
+                print(f"   ⚠️ TTS API 오류 {resp.status_code} (청크 {i}): {resp.text[:200]}")
+                return None
+        except Exception as e:
+            print(f"   ⚠️ TTS 생성 실패 (청크 {i}): {e}")
+            return None
+    return b"".join(audio_parts) if audio_parts else None
 
 
 # ============================================================
@@ -739,6 +762,10 @@ def generate_html(data: dict, it_data: dict = None, audio_filename=None) -> str:
     gap: 0;
     border-bottom: 2px solid var(--border);
     margin-top: 8px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--bg);
   }}
   .tab-btn {{
     font-family: 'JetBrains Mono', monospace;
@@ -829,6 +856,7 @@ def generate_html(data: dict, it_data: dict = None, audio_filename=None) -> str:
     btn.classList.add('active');
     document.getElementById(id).classList.add('active');
     document.getElementById('main-title').textContent = TAB_TITLES[id];
+    window.scrollTo({{ top: 0, behavior: 'smooth' }});
     const audio = document.querySelector('audio');
     if (audio) {{
       if (id === 'tab-it') {{
