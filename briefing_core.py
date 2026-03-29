@@ -856,6 +856,7 @@ def generate_html(data: dict, it_data: dict = None, audio_filename=None) -> str:
     btn.classList.add('active');
     document.getElementById(id).classList.add('active');
     document.getElementById('main-title').textContent = TAB_TITLES[id];
+    window.scrollTo({{ top: 0, behavior: 'smooth' }});
     const audio = document.querySelector('audio');
     if (audio) {{
       if (id === 'tab-it') {{
