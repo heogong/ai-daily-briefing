@@ -1,72 +1,72 @@
 {
   "date": "2026.03.30 (월)",
-  "one_liner": "K-AI 기업 상장 도전, Anthropic 차세대 모델 유출, 위키피디아 AI 콘텐츠 전면 금지까지 — AI 신뢰와 가치 검증의 시간이 왔다",
+  "one_liner": "K-AI 상장 러시부터 Anthropic 차세대 모델 유출, Wikipedia AI 금지까지 — AI 신뢰성과 산업 성숙도가 동시에 시험대에 오른 한 주",
   "news": [
     {
       "number": 1,
       "category": "산업 동향",
-      "title": "K-AI 기업들, 줄줄이 상장 도전…'실적 vs 미래가치' 갈림길",
-      "body": "뤼튼·업스테이지·솔트룩스 등 국내 주요 AI 스타트업들이 2026년 IPO를 본격 추진하며 자본시장의 시험대에 오르고 있다. 투자자들은 **생성형 AI 붐**으로 부풀어 오른 밸류에이션이 실제 매출과 수익성으로 뒷받침되는지를 집중 검증하는 분위기다. AI 기업 특유의 '선투자 후회수' 모델이 공모 시장에서 얼마나 설득력을 가질 수 있을지가 관건으로, 올 하반기 상장 결과가 K-AI 생태계 투자 흐름을 좌우할 전망이다.",
-      "insight": "국내 AI 스타트업의 상장 추진은 한국 AI 산업이 '실험 단계'에서 '수익 증명 단계'로 전환되고 있음을 의미한다. IPO 성공 여부는 후속 AI 투자와 인재 유치에 직결되며, B2B AI 솔루션 기업들의 기업가치 산정 기준이 이번 상장 사례들로 어느 정도 윤곽이 잡힐 것이다. 시장이 'AI 기술력'보다 '반복 매출(ARR)과 고객 이탈률'을 더 중시하는 방향으로 재편될 가능성이 높다.",
+      "title": "K-AI 기업 줄줄이 상장 도전 — '실적'과 '미래가치' 사이에서 시험대",
+      "body": "뤼튼, 업스테이지, 코난테크놀로지 등 국내 AI 스타트업들이 2026년 기업공개(IPO) 준비를 본격화하며 **K-AI 상장 러시**가 재점화됐다. 투자 혹한기를 지나며 실제 매출·영업이익 등 **재무 실적**을 갖춘 기업과 그렇지 못한 기업 간의 옥석 가리기가 본격화될 전망이다. 증권가에서는 '미래 성장성'만으로 높은 밸류에이션을 받기 어려워졌다며 수익 모델의 구체성이 관건이라고 분석한다. 국내 AI 생태계 전반에서 '기술 시연 단계'를 넘어 '수익 실현 단계'로의 전환이 요구되는 시점이 됐다는 평가다.",
+      "insight": "AI 기업의 IPO 러시는 시장이 기술 과대 포장보다 실제 수익 모델을 요구하는 단계로 진입했음을 의미한다. B2B SaaS 기반의 반복 매출 구조를 갖춘 기업일수록 기업가치 평가에서 유리하며, 국내 AI 솔루션 시장의 경쟁 강도가 한층 높아질 수 있다.",
       "isu_area": "AI 사업",
       "isu_tag": "[모니터링]",
-      "isu_insight": "K-AI 기업 IPO 과정에서 B2B AI 솔루션의 밸류에이션 기준이 정립되면, 이수시스템의 **HR AI Package·RAG 챗봇** 등 AI 제품군의 고객사 제안 시 '비용 대비 ROI' 근거 자료로 활용 가능하다. 또한 상장 추진 AI 기업들이 HR·ERP 연동 레퍼런스를 필요로 할 경우 파트너십 기회도 생길 수 있다.",
+      "isu_insight": "K-AI 기업 상장 가속화는 이수시스템이 경쟁하는 기업용 AI 솔루션 시장의 플레이어 지형을 빠르게 바꿀 수 있다. 특히 HR AI, RAG 챗봇 영역에 신규 자본이 유입된 경쟁사가 등장할 수 있으므로, WORKUP·AI 이력서 분석 등 기존 레퍼런스(500개사+)와 SAP 파트너 인증을 차별화 포인트로 영업 메시지를 강화할 시점이다.",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB4MHEwdmFGWElpWWtackkxMzNDdi01VW9kbmhxQXRmVV80WFdoazlLYWxSdjBRUlBsLTB1QVdsWkNDbHdrQWJrVERmNHR3OFVpWU82bUlpR0UxQ2EyM3Vfc2tXcnZUWmZGMklmQjdZZkLSAXRBVV95cUxPMFdFRmhYMW8zQ1FMVlFxWnpMQkw0WmljMy1NcGJSbkFySHdQYTFCSk56TUZUUF80Y2FSeW5Qelg5eTBIRGNSVlFaUGpQWURqOThuMHRFaG1MN3EwTDFKYVlwLUxBTHZ1SEF0d1QyQkxMZlJDRQ?oc=5",
       "source": "IT조선"
     },
     {
       "number": 2,
       "category": "모델 릴리스",
-      "title": "앤스로픽 '클로드 미토스' 유출 — 차세대 최강 AI 모델의 실체는?",
-      "body": "앤스로픽의 차세대 플래그십 모델 **'Claude Mythos(클로드 미토스)'**의 성능 벤치마크와 출시 일정이 내부 문서 유출로 외부에 공개됐다. 앤스로픽 측은 '담당자 실수'로 인한 유출임을 인정했으며, 유출된 내용에 따르면 Mythos는 현존 최고 수준의 추론 능력과 코딩 성능을 보유한 것으로 알려졌다. 이 모델은 **에이전트 작업과 장문 맥락 처리**에서 기존 Claude 3.7 Sonnet을 크게 앞서는 것으로 평가되며, OpenAI GPT-5와 Google Gemini Ultra와의 정면 경쟁이 예고된다.",
-      "insight": "플래그십 AI 모델 간 성능 경쟁이 '추론·에이전트 능력' 중심으로 재편되고 있다는 신호다. 기업 고객 입장에서는 단순 텍스트 생성을 넘어 복잡한 다단계 작업을 자율 수행하는 에이전트 모델 도입 여부를 진지하게 검토해야 할 시점이 됐다. 모델 유출 사태는 AI 기업들의 정보 보안 관리 수준도 함께 도마에 올렸다.",
+      "title": "Anthropic 차세대 최강 AI 'Claude Mythos' 유출 — 실수로 공개된 스펙",
+      "body": "Anthropic의 차세대 플래그십 모델 **'Claude Mythos'**의 세부 사양이 담당자 실수로 외부에 유출됐다. 유출된 정보에 따르면 Claude Mythos는 현재 최고 성능 모델인 Claude 3.7 Sonnet을 크게 상회하는 **추론·연구 능력**을 갖출 것으로 알려졌으며, 특히 '대학원생 수준의 리서치 수행'이 가능한 에이전트 기능이 강조됐다. Anthropic 측은 '담당자 실수'라고 인정하며 공식 발표 전 정보임을 확인했다. 이번 유출은 AI 모델 경쟁에서 Anthropic이 OpenAI, Google과의 정면 대결을 준비 중임을 재확인시켰다.",
+      "insight": "최상위 AI 모델들이 단순 대화를 넘어 **자율 리서치·에이전트 작업**으로 진화하고 있다는 점이 핵심이다. 기업용 AI 솔루션 공급자 입장에서는 이러한 고성능 모델을 얼마나 빠르게 제품에 통합하느냐가 경쟁력의 핵심 축이 되고 있다.",
       "isu_area": "AI 사업",
       "isu_tag": "[제품 강화]",
-      "isu_insight": "Claude Mythos급 고성능 모델이 API로 공개되면, 이수시스템의 **RAG 기반 챗봇·HR AI Package**의 백엔드 LLM을 업그레이드하는 데 활용할 수 있다. 특히 에이전트 능력이 강화된 모델은 WORKUP의 인사 업무 자동화(근태 이상 탐지, 급여 예외 처리 등) 시나리오에 직접 접목 가능하며, 고객사 제안 시 '최신 모델 기반'이라는 차별화 포인트로 활용할 수 있다.",
+      "isu_insight": "Claude Mythos의 고도화된 추론·리서치 기능이 API로 공개될 경우, 이수시스템의 RAG 기반 챗봇 및 AI 이력서 분석 솔루션의 백엔드 모델로 활용 가능성이 높다. 특히 채용 AI에서 '지원자 역량 심층 분석' 기능을 고도화하거나, HR AI Package에 다단계 추론 기능을 추가하는 로드맵 검토가 현실적인 다음 단계다.",
       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBScFRKU0pTOGlvZ2E4aW1Xb2dhMmVFUnZWdktyeFZJbXdiME1SMXdkeEFsR2dmRGxWSXV1cmNkQjlqQWJMMlBLdUI5Z0wyWXdidjd0R0N1OTY1NW55aVRBUTFBaG83d0Nob2xjWHo3eE1Ha0ZYT1RETg?oc=5",
       "source": "네이트"
     },
     {
       "number": 3,
-      "category": "글로벌 이슈",
-      "title": "위키피디아, AI 작성 콘텐츠 전면 금지 — '신뢰의 인터넷'이 선 그었다",
-      "body": "전 세계 최대 무료 백과사전 위키피디아가 **LLM이 생성한 콘텐츠의 등재를 전면 금지**하는 정책을 공식 도입했다. 편집자들이 수년간 AI 생성 텍스트를 걸러내고 수정하는 작업을 반복한 끝에 '근본적으로 품질 기준을 충족할 수 없다'는 결론에 도달한 것이다. 위키피디아는 AI 활용 자체를 금지하는 것이 아니라, AI가 직접 작성한 문서의 신규 등재 및 대규모 편집을 금지한다는 방침이며 **인간 편집자의 검수·감수 책임**을 더욱 강화한다.",
-      "insight": "인터넷에서 가장 광범위하게 참조되는 지식 플랫폼이 AI 콘텐츠에 공식적으로 문을 닫은 것은 'AI 생성 콘텐츠 = 신뢰 가능'이라는 등식이 아직 성립하지 않음을 상징적으로 보여준다. AI 환각(hallucination) 문제가 여전히 해결되지 않은 상황에서, 기업들이 AI를 콘텐츠 생산에 무비판적으로 활용할 경우 평판 리스크로 이어질 수 있다는 경고이기도 하다.",
-      "isu_area": "AI 사업",
-      "isu_tag": "[모니터링]",
-      "isu_insight": "위키피디아의 AI 콘텐츠 금지는 이수시스템 챗봇·HR AI 솔루션 영업 시 고객사의 'AI 신뢰성' 우려를 자극할 수 있다. 이에 대응해 **RAG 기반 챗봇**이 사내 검증된 문서만을 참조 소스로 활용하는 '폐쇄형 지식베이스 구조'임을 강조하는 영업 메시지를 준비해두면 효과적이다.",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOcWpGNlk0Tmw2d2VwX1l3bnEyVGFaZUpSRldYTTgzWU5BUDYwQ1FEY2cyR1lXdkhyV2EyaFZUczJPdXlRazJNb0R6SlhBcUlDNEQ0Rlh3MEFqTEhqRzAxZkJleUdCSU9hXzRlWTBpdGVnWktkNUhSTEhUYUc5bVFhRVZqOA?oc=5",
-      "source": "Futurism"
-    },
-    {
-      "number": 4,
       "category": "일자리·사회",
-      "title": "AI가 헛소리해도 80%는 믿었다 — '과신 효과'의 위험성 확인",
-      "body": "미국 연구진이 발표한 논문에 따르면, AI가 **사실과 다른 정보를 자신감 있게 제시했을 때 실험 참가자의 약 80%가 이를 그대로 수용**했다. AI의 유창한 언어 표현과 권위 있어 보이는 응답 방식이 인간의 비판적 판단력을 무력화시키는 '자동화 편향(automation bias)'을 강화한다는 분석이다. 특히 전문 지식이 부족한 분야일수록 AI에 대한 맹목적 신뢰도가 높아지는 것으로 나타났다.",
-      "insight": "AI 도입 기업이 늘수록 직원들이 AI 출력물을 검증 없이 받아들이는 위험이 커진다. 기업 내 AI 리터러시 교육과 'AI 결과물 검수 프로세스' 구축이 단순한 권고가 아닌 필수 거버넌스 요소가 되고 있다. AI를 업무에 활용하는 조직일수록 '사람이 최종 판단한다'는 원칙을 제도화해야 할 필요성이 커지고 있다.",
+      "title": "AI가 틀려도 80%는 믿는다 — '무장해제된 인간 판단력' 경고 나왔다",
+      "body": "미국 연구진이 발표한 실험 결과에 따르면, AI가 **명백히 틀린 정보를 제시해도 응답자의 약 80%가 그것을 사실로 수용**했다. 연구팀은 AI의 '아부 성향(sycophancy)'이 결합될 경우, 사용자는 자신의 판단을 포기하고 AI의 의견에 동조하는 경향이 강해진다고 분석했다. 별도 연구에서는 AI의 아부적 반응에 노출된 사람들이 **실수를 인정하거나 사과할 가능성이 낮아지고**, 오히려 자신의 의견을 더 강하게 고집한다는 결과도 나왔다. 이는 AI를 의사결정 보조 도구로 활용할 때의 리스크를 재조명한다.",
+      "insight": "AI 리터러시와 **비판적 사고 훈련**의 중요성이 부각되는 동시에, 기업이 업무용 AI를 도입할 때 결과물을 검증하는 인간 검토 프로세스를 반드시 병행해야 한다는 시사점을 준다. AI 도구의 신뢰성 설계와 '인간-AI 협업' 워크플로 설계가 기업 AI 전략의 핵심 과제로 부상하고 있다.",
       "isu_area": "AI 사업",
-      "isu_tag": "[영업 기회]",
-      "isu_insight": "AI 과신 문제는 이수시스템의 **HR AI Package·AI 이력서 분석** 솔루션 도입 고객사에게도 현실적 위험이다. '채용 AI가 추천한 후보자를 그대로 채용한다'는 식의 운영을 방지하기 위해, AI 결과에 대한 인사 담당자 검수 단계와 근거 설명(Explainability) 기능을 제품에 명시적으로 탑재하고 이를 영업 차별화 포인트로 활용할 수 있다.",
+      "isu_tag": "[리스크]",
+      "isu_insight": "이수시스템의 RAG 기반 챗봇 및 HR AI 솔루션 영업 시 고객사가 가장 우려하는 포인트가 바로 'AI 오답 신뢰 문제'다. 이번 연구 결과를 역으로 활용해, WORKUP·HR AI Package에 'AI 답변 출처 명시 및 검토 승인 단계(Human-in-the-loop)' 기능을 탑재하고 있음을 차별화 포인트로 강조하는 영업 시나리오가 유효하다.",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9vRlE2S0VXbkxhWWV3bE8yNDhfMWVGYVJjM1ZqR19MTXZoSmZvU2I2U2RfcXp3VFoyY0FsQ1J1cnhxSWhDS29ick5uY0IyQTRSUE85SUc1Z1VSS3hxeVBsOW1IblpWOW1fN0JEMVV30gFyQVVfeXFMTWZ5TmxxNkF0bWFZMXdDQVFWOUZzeXpXZHczRW9ZeFJDVWV5UHdoaFAyYjQ0dnZEN1ZSVmJaajNOVEhoUlNvbGRIdmpmbEMyM2lTRkdMV0w3WWxITEt3a2xVSzlVaC1yN3htOUtrS2lkS0RB?oc=5",
       "source": "AI포스트"
     },
     {
+      "number": 4,
+      "category": "산업 동향",
+      "title": "위키피디아, AI 작성 콘텐츠 전면 금지 — '쓰레기 정보' 청산 선언",
+      "body": "위키피디아 편집자 커뮤니티가 **LLM이 생성한 콘텐츠의 게시를 전면 금지**하기로 결정했다. 운영진은 수년간 AI 작성 글을 검토·수정해 활용하려 시도했으나, 결국 '사실 오류·출처 날조·문체 불균형' 등의 문제가 해결 불가능한 수준임을 인정하고 완전 배제를 선택했다. AI 생성 콘텐츠를 제출하는 편집자는 계정 정지 등의 제재를 받을 수 있으며, LLM 활용 자체도 엄격히 제한된다. 지식 플랫폼 최대 규모 중 하나의 이 결정은 AI 콘텐츠 신뢰성 논쟁에 새로운 기준점을 제시했다.",
+      "insight": "콘텐츠 품질과 신뢰성을 핵심 가치로 하는 플랫폼에서 AI 생성물을 거부하는 사례가 늘고 있다. 이는 AI 도구의 대중화와 함께 **'검증된 AI 출력물'과 '검증 안 된 AI 출력물'을 구분하는 거버넌스 체계**가 산업 전반에 요구될 것임을 예고한다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "위키피디아의 AI 콘텐츠 금지 결정은 '출처 기반 검색 증강(RAG)' 방식의 중요성을 역설적으로 부각시킨다. 이수시스템의 RAG 챗봇이 단순 생성형 답변이 아닌 '사내 공식 문서 기반 검색 후 답변' 방식임을 강조하면, 기업 고객의 AI 도입 불신을 해소하는 차별화 메시지로 활용 가능하다.",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPYVZYdGRwTjYxbldrX3liODZCMHpUTnQ4Sm1vSXhtQ2RTNi1fUExQSV9RN0M0OWlQRzlwRmxoRnVPX29UMHk2dVliY2JHcUo1STBpeFV2SFphNFFJXzU5WkszakF1a1dlMzRTQ0lnNXl4OG1tN3RsSUNUWVFBUlczTnNyRkVKbnF6NG54Rk05MHgtajR1azlCNkJqSHhFcUl2Y291Z0o3Y2QwdmdzX1FTc3ZGVGdMRHlVM0YyWlprMDJEem41?oc=5",
+      "source": "MSN"
+    },
+    {
       "number": 5,
       "category": "산업 동향",
-      "title": "의료 AI, 문서 작업만 줄여줘도 빅5병원 하루 환자 2000명 더 본다",
-      "body": "국내 빅5 병원을 대상으로 한 분석에 따르면, **AI가 진단서·소견서·처방전 등 행정 문서 작성을 보조**할 경우 의사 1인당 하루 진료 가능 환자 수가 평균 20~30% 증가할 수 있다는 결과가 나왔다. 현재 의사들은 진료 시간의 약 40%를 문서 작업에 쏟고 있으며, AI 기반 자동 문서 생성 도구는 이 시간을 절반 이하로 줄이는 것으로 나타났다. 의료계는 AI를 '진단 보조'가 아닌 **'행정 자동화'** 관점에서 먼저 도입하는 방향으로 실용적 접근을 확대하고 있다.",
-      "insight": "의료 현장에서 AI의 첫 번째 실질적 기여는 '화려한 진단 AI'가 아니라 '지루한 서류 작업 자동화'에서 나오고 있다. 이는 여타 산업에도 동일하게 적용되는 교훈으로, AI 도입의 ROI를 가장 빠르게 실현하는 경로는 전문가의 핵심 업무 시간을 빼앗는 반복 행정 업무를 제거하는 것임을 시사한다. 공공·헬스케어·금융 등 규제 산업일수록 이 접근법이 도입 저항을 낮추는 데 유효하다.",
+      "title": "AI로 진단서만 작성해도 빅5병원, 하루 환자 2000명 더 본다",
+      "body": "국내 의료 AI 연구에 따르면, 서울 주요 상급종합병원에서 AI를 활용해 **진단서·소견서 등 행정 문서 작성 업무를 자동화**할 경우 의사 1인당 진료 가능 환자 수가 하루 최대 2000명까지 늘어날 수 있다는 분석이 나왔다. 현재 의사들이 진료 외 행정 업무에 쏟는 시간이 전체 근무 시간의 **30~40%**에 달하는 것으로 조사됐다. 이는 비단 의료 분야만의 문제가 아니며, AI 기반 문서 자동화가 생산성 혁신의 핵심 수단으로 주목받고 있음을 보여준다.",
+      "insight": "이 사례는 AI의 업무 자동화가 실제 산업 현장에서 **측정 가능한 생산성 수치**로 입증되기 시작했음을 의미한다. 의료뿐 아니라 제조·금융·공공 등 문서 처리 비중이 높은 모든 산업에서 AI 행정 자동화 수요가 본격화될 전환점이 될 수 있다.",
       "isu_area": "AI 사업",
       "isu_tag": "[영업 기회]",
-      "isu_insight": "의료 행정 AI 수요 확대는 이수시스템의 **RAG 챗봇·HR AI Package** 영업에 직접적 시사점을 준다. 병원 인사팀의 근태·급여 관련 반복 문서 작업(재직증명서, 경력증명서 자동 발급 등)을 WORKUP AI 기능으로 자동화하는 시나리오를 의료·공공 고객사 대상 제안서에 포함시킬 수 있다. 특히 빅5 병원 등 대형 의료기관의 HR 시스템 고도화 프로젝트를 공략하는 레퍼런스 전략으로 연결 가능하다.",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5rZmlmSHFoQ3VSOTN3cnVZTzZXYkRRT2NiTDZDUjhpT3FuQS1seE55c1U0Q0JxbVB6c3NsTXg0THc4ZEVDdW9pVFZpajFRSXZ4dGdv?oc=5",
+      "isu_insight": "의료 분야의 AI 행정 자동화 성과는 이수시스템의 주요 고객군인 제조·건설·공공 분야에도 동일하게 적용 가능한 논리다. 특히 WORKUP의 근태·급여·증명서 발급 자동화 기능과 RAG 챗봇을 결합해 'HR 행정 업무의 XX% 절감'이라는 수치화된 제안서를 제조·공공 고객사 대상 영업에 활용할 수 있다. HR 담당자가 전략 업무에 집중할 수 있는 환경을 만든다는 메시지가 유효하다.",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5rZmlmSHFoQ3VSOTN3cnVZTzZXYkRRT2NiTDZDUjhpT3FuQS1seE55c1U4Q0JxbVB6c3NsTXg0THc4ZEVDdW9pVFZpajFRSXZ4dGdv?oc=5",
       "source": "네이트"
     }
   ],
   "takeaways": [
-    "**K-AI 기업 IPO 시즌**이 열리며 '기술 스토리'에서 '실적 증명'으로 무게중심이 이동 — B2B AI 솔루션 기업도 ARR·고객유지율 중심의 가치 증명이 필수가 됐다",
-    "AI 신뢰성 논란이 가속화 — 위키피디아 AI 금지, 80% 과신 연구 결과 등은 **'검증 가능한 AI'**를 만드는 기업이 시장에서 살아남는다는 메시지를 던진다",
-    "AI의 첫 번째 실용 가치는 **반복 행정 자동화**에 있다 — 의료 현장의 사례처럼, 어떤 산업이든 전문가의 시간을 행정에서 해방시키는 AI 도입이 가장 빠른 ROI를 가져다준다"
+    "**AI 신뢰성 위기**가 전면화됐다 — 위키피디아 AI 콘텐츠 금지, '80% 맹목 신뢰' 연구 발표가 같은 날 터졌다. 기업 AI 도입 시 검증 프로세스 설계가 선택이 아닌 필수가 됐다.",
+    "**K-AI 상장 러시**는 국내 AI 산업이 '기술 과시'에서 '수익 증명'으로 패러다임이 전환됐음을 알린다. B2B 반복 매출 구조를 가진 기업이 투자자와 고객 모두에게 선택받을 것이다.",
+    "AI 행정 자동화의 생산성 효과가 **수치로 입증**되기 시작했다. '의사 하루 2000명 추가 진료'처럼 ROI가 명확한 업무 자동화 사례가 각 산업으로 확산되며 AI 도입 설득의 언어가 바뀌고 있다."
   ],
-  "isu_summary": "오늘 뉴스의 핵심은 'AI가 진짜 가치를 증명해야 하는 시기'가 왔다는 것이다. K-AI 기업 IPO 물결은 B2B AI 솔루션 시장 전반의 가치 기준을 재설정할 것이며, 이수시스템은 **HR 레퍼런스 500+와 SAP 파트너** 지위를 기반으로 'AI 기능이 탑재된 검증된 엔터프라이즈 솔루션'이라는 차별화된 포지셔닝을 강화해야 한다. 특히 의료·공공 분야의 행정 자동화 수요와 AI 신뢰성에 대한 고객 우려를 동시에 공략하는 방향으로, **RAG 챗봇의 폐쇄형 지식베이스 구조와 HR AI의 인간 검수 프로세스**를 전면에 내세운 영업 전략이 유효할 것으로 판단된다."
+  "isu_summary": "오늘 뉴스의 핵심 흐름은 'AI 신뢰성 검증 수요 급증'과 'AI 행정 자동화의 ROI 가시화'로 요약된다. 이수시스템 입장에서는 RAG 기반 챗봇의 '출처 명시·Human-in-the-loop' 설계를 전면에 내세워 AI 불신 고객을 공략하는 동시에, WORKUP과 HR AI Package의 행정 업무 절감 효과를 수치화한 제안서로 제조·공공 고객사의 투자 결정을 앞당길 수 있는 최적의 시점이다. K-AI 상장 러시로 경쟁사 자본력이 강화되기 전에 기존 500개사+ 레퍼런스와 SAP·NCP 파트너 인증을 무기로 시장 점유를 확대하는 속도전이 필요하다."
 }
