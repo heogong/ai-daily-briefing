@@ -1,0 +1,72 @@
+{
+  "date": "2026.04.15 (수)",
+  "one_liner": "한국 AI 국가대표 선발전 2차 평가가 코앞으로 다가온 가운데, 글로벌 빅테크는 모델·제품 경쟁을 쉼 없이 이어가고 있다.",
+  "news": [
+    {
+      "number": 1,
+      "category": "글로벌 이슈",
+      "title": "한국 'AI 국가대표' 선발전, 2차 평가 앞두고 물밑 경쟁 치열",
+      "body": "정부가 추진 중인 **국가대표 AI 모델 선발전**이 2차 평가를 앞두고 참여 기업들 간 경쟁이 본격화되고 있다. 선발된 모델은 국가 AI 인프라와 공공 서비스에 우선 탑재될 가능성이 높아 수주 규모와 레퍼런스 측면에서 업계의 관심이 집중되고 있다. 업스테이지·네이버·KT 등 국내 주요 AI 개발사들이 각자의 기술력을 앞세워 경쟁하고 있으며, 평가 기준과 결과가 국내 AI 생태계 판도를 좌우할 전망이다.",
+      "insight": "정부 주도 AI 모델 선발 구조는 국내 LLM 시장의 '공공 레퍼런스 확보' 경쟁을 가속화한다. 선발된 모델이 사실상 공공·준공공 시장의 표준 모델로 자리잡을 수 있어, 이번 경쟁의 결과는 향후 2~3년간 국내 기업용 AI 솔루션 시장의 기반 기술 선택에도 영향을 미칠 수 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[정부 사업]",
+      "isu_insight": "국가대표 AI 선발전 결과에 따라 이수시스템의 RAG 기반 챗봇 및 HR AI 패키지에 탑재할 기반 LLM 선택 방향이 달라질 수 있다. 공공 고객사 대상 영업 시 '국가 인증 모델 기반 솔루션'이라는 포지셔닝이 가능해지므로, 선발 결과를 면밀히 모니터링하고 선발 모델과의 파트너십 또는 연동 계획을 미리 검토할 필요가 있다.",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4wR0VleDBXNHU5bTF0Vlk5cC1iNGRRN2RBUWdJMDRPTGVCSk1IcXVKZlB6Rl8yZUlCLTlGT0FfWWR5RTR2NnlqcnF2T2d0YTM1RzB1R0ZVV0ZJVTZvS3hZ?oc=5",
+      "source": "뉴스1"
+    },
+    {
+      "number": 2,
+      "category": "모델 릴리스",
+      "title": "Meta, 억만장자 알렉산더 왕 팀의 첫 AI 모델 'Muse Spark' 공개",
+      "body": "Meta가 Scale AI 창업자 **알렉산더 왕**이 이끄는 팀의 첫 번째 결과물인 **Muse Spark** 모델을 공개했다. 이 모델은 '개인화된 AI'로 가는 첫 단계라고 Meta 측은 설명했으며, 수십억 달러의 투자 끝에 내놓은 성과물이다. Muse Spark는 광고·콘텐츠 생성 분야에서 Meta의 기존 AI 기능을 강화하는 방향으로 활용될 것으로 보이며, 마크 저커버그가 직접 코딩에 복귀했다는 소식과 함께 Meta의 AI 몰입도가 최고조에 달했음을 보여준다.",
+      "insight": "빅테크의 AI 모델 경쟁이 '범용 LLM'에서 '특정 기능 특화 모델'로 분화되는 흐름이 뚜렷해지고 있다. Meta의 행보는 광고·콘텐츠·커머스 등 자사 생태계에 최적화된 모델을 별도로 개발하는 전략이 주류가 될 수 있음을 시사하며, 기업용 AI 시장에서도 '도메인 특화 소형 모델' 수요가 커질 전망이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "Meta의 도메인 특화 모델 출시 전략은 이수시스템의 'HR AI 패키지'처럼 특정 업무 영역에 집중한 AI 솔루션의 시장 타당성을 높여주는 신호다. 범용 LLM보다 HR·인사 업무에 특화된 소형 모델 또는 파인튜닝 모델을 WORKUP·Smart HR에 탑재하는 방향의 제품 로드맵을 구체화하는 데 참고할 수 있다.",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5Ua3V5d0Z2U1FtRzFqclVBY3g0QTI4eFpWOTNJVl9wMVVPdzZHN09naDRNdmw3TzVHdXNVOVN4RGpiNnktcS0zNnZIbnk0amdkbVhjSjBQVVdTTXA2dHlyRHZlWF9XODVwZmJOZHozemE3blJXQlZUb3N3?oc=5",
+      "source": "AOL.com"
+    },
+    {
+      "number": 3,
+      "category": "제품 업데이트",
+      "title": "구글 크롬, AI 프롬프트를 저장해 반복 실행하는 'Skills' 기능 출시",
+      "body": "구글이 크롬 데스크톱 브라우저에 **Gemini 기반 'Skills' 기능**을 정식 출시했다. 사용자가 자주 쓰는 AI 프롬프트를 저장해두면, 이후 원하는 탭에서 한 번의 클릭으로 동일한 작업을 반복 실행할 수 있다. 예컨대 '이 페이지의 핵심 내용을 3줄 요약해줘'를 Skill로 등록하면, 매번 입력할 필요 없이 즉시 적용된다. 브라우저가 단순 정보 탐색 도구를 넘어 **업무 자동화 플랫폼**으로 진화하고 있음을 보여주는 사례다.",
+      "insight": "AI가 OS·브라우저 수준에 내재화되면서 별도 솔루션 구매 없이도 일상 업무 자동화가 가능해지는 시대가 빠르게 다가오고 있다. 기업용 AI 솔루션 시장은 '브라우저 내장 AI로 대체되지 않는 영역', 즉 보안·데이터 통제·기업 내부 시스템 연동이 필요한 영역으로 포지셔닝을 더욱 명확히 해야 할 필요가 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "브라우저 내장 AI 자동화가 확산될수록 단순 정보 조회형 챗봇의 차별화 가치는 낮아진다. 이수시스템의 RAG 기반 챗봇은 '사내 기밀 문서와의 연동', '인사·ERP 시스템 데이터 접근'처럼 브라우저 AI가 절대 대체할 수 없는 영역을 전면에 내세우는 영업 메시지 강화가 필요하다.",
+      "url": "https://www.theverge.com/tech/911658/google-chrome-gemini-ai-skills-availability-launch",
+      "source": "The Verge"
+    },
+    {
+      "number": 4,
+      "category": "일자리·사회",
+      "title": "현대위아, 전 직원 대상 AI 전환 교육 시작…제조업 'AX' 물결 본격화",
+      "body": "현대위아가 사무직·연구직 전 직원을 대상으로 **AX(AI Transformation) Literacy 교육**을 실시한다고 밝혔다. 'AI 못 쓰면 뒤처진다'는 위기의식 아래 실전 활용 중심의 교육을 전사 차원에서 진행하는 것으로, 단순 인식 제고를 넘어 업무 적용 역량을 키우는 데 초점을 맞추고 있다. 국내 주요 제조사들이 앞다퉈 AI 리터러시 교육을 의무화하는 추세로, 기업 전반의 **AI 내재화 속도**가 빨라지고 있다.",
+      "insight": "대기업 제조사의 전사적 AI 리터러시 교육 의무화는 중간 관리자·실무자 수준까지 AI 활용 수요가 내려오고 있음을 의미한다. 이는 기업 내부 AI 도구 도입 의사결정이 IT 부서에서 현업 부서로 확산되는 신호로, AI 솔루션 벤더들에게는 현업 담당자를 직접 겨냥한 UX와 ROI 증명 사례가 더욱 중요해지는 시점임을 뜻한다.",
+      "isu_area": "HR 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "현대위아처럼 전사 AI 교육을 추진하는 제조사는 교육 이수 현황 관리, AI 활용도 트래킹, 역량 평가 등 새로운 HR 데이터 수요가 생긴다. WORKUP의 교육관리(LMS) 모듈 또는 Smart HR의 역량관리 기능과 연계해 'AI 전환 교육 이력 및 역량 관리 패키지'를 제조·자동차 부품 업종 고객사에 제안하는 영업 시나리오를 검토할 수 있다.",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1sQ0hUbUdLeDlyNmVrNXNXNnFaUVZVWW9mZ3l4d1JsdkRvLWVVRHR1ZE91SFNFd2dhT1dIUDZ5TEQ1SHJ1U09ka1pxaG43M3l0UmdaZzBR?oc=5",
+      "source": "위키트리"
+    },
+    {
+      "number": 5,
+      "category": "산업 동향",
+      "title": "Google·OpenAI·Anthropic AI 서비스, 미국 정부 기관 공식 활용 승인",
+      "body": "미국 정부가 구글, OpenAI, Anthropic의 AI 서비스를 정부 기관에서 활용할 수 있도록 공식 승인했다. 이는 연방 차원에서 **빅3 AI 서비스의 공공 조달 가능성**을 열어주는 조치로, 국방·행정·복지 등 다양한 정부 기능에 생성형 AI 도입을 가속화할 전망이다. AI 기업들의 글로벌 공공 시장 공략이 본격화되는 가운데, 각국 정부의 AI 조달 기준과 규제 방향이 민간 시장에도 영향을 미칠 것으로 분석된다.",
+      "insight": "세계 최대 구매자인 미국 연방정부가 민간 AI 서비스 도입을 공식화함으로써 '공공 AI 조달' 시장이 새로운 격전지로 부상한다. 각국 정부도 유사한 방향으로 AI 조달 정책을 수립할 가능성이 높으며, 이는 보안 인증·데이터 주권·설명가능성 등 공공 특화 요건을 갖춘 AI 솔루션의 중요성을 높인다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[정부 사업]",
+      "isu_insight": "미국의 공공 AI 조달 승인은 한국 공공기관의 AI 도입 가속화에도 영향을 줄 수 있다. 이수시스템은 NCP 파트너 자격과 GS인증 보유라는 강점을 활용해, 공공기관 대상 RAG 챗봇 및 HR AI 패키지 제안 시 '국내 클라우드 기반·보안 인증 완비'라는 차별화 포인트를 강조하는 전략이 유효하다.",
+      "url": "https://news.google.com/rss/articles/CBMiigNBVV95cUxPTFUtaHcySHhRMmM4Zkp4SDdhMWRYNkRqcG1ZdU53ME1ra2NlMV91TTJCdW1zTTBuN1FlU0gzS0U2OE1vdGlRZnF3bkFTUlBLSjBmTkdmaWNnbXhPTm5wb1FMRlgxSEh4aTZ4bDducy0zbHg4WkV3Z3dwV1htRGxuYzg2MDREOERLLUhzSDFJMnFEZDl4NlAxWUVqdERzSzFQRkhCLTdlbFhvcTQ1ek1ncmFTbVdObVFuaV80WmE3dTZ6UzF4YzN3UC1ORDNIWVB5TjNuVGxnZGVINE04ZGZMbmFfMFFlR3NBMlVPRXRXSlNxWUFqVlpaVGhGT1JROVF4RkRSQmZmdGFlX01WVzA1UloxY3Z3ODljNnJYZ1hYQjVHNXlITU5TYjJYQ3ktNzVZTF9kdFlVWmVULVZuWkxDeGptc2pkSnFoQUp2c1UzeHh1WEJlSklROG1EMjZkQVVnLVhYUk1lZ0EtM2gzOHFVUlBER2dGZTd0bHhBQUY1QmpNY21lcWZ6Nm53?oc=5",
+      "source": "MSN"
+    }
+  ],
+  "takeaways": [
+    "**한국 AI 국가대표 선발전**이 2차 평가에 돌입하며 공공 AI 시장 판도가 결정될 분수령에 섰다. 선발 결과가 국내 기업용 AI 솔루션의 기반 모델 선택에도 연쇄 영향을 미칠 것이다.",
+    "구글 크롬의 'Skills' 기능처럼 **AI가 OS·브라우저에 내재화**되는 속도가 빨라질수록, 기업용 AI 솔루션은 '사내 데이터 연동'과 '보안·컴플라이언스'라는 영역에서 차별화를 더욱 명확히 해야 한다.",
+    "현대위아의 전사 **AX Literacy 교육**은 제조업 현장까지 AI 활용 수요가 내려오고 있음을 보여준다. 교육 이수 관리·역량 평가 등 새로운 HR 데이터 수요가 생기고 있어, HR 솔루션과 AI 기능의 결합 시장이 빠르게 열리고 있다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심은 세 가지다. 첫째, 한국 국가대표 AI 선발전 결과가 이수시스템의 RAG 챗봇·HR AI 패키지에 탑재할 기반 LLM 방향을 결정짓는 중요한 변수가 될 수 있어 면밀한 모니터링이 필요하다. 둘째, 현대위아 사례로 대변되는 제조업 AX 교육 의무화 트렌드는 WORKUP·Smart HR의 '교육 이력 및 AI 역량 관리' 기능을 앞세운 제조·부품 업종 영업 기회로 직결된다. 셋째, 미국 공공 AI 조달 승인은 국내 공공기관 시장에서도 GS인증·NCP 파트너십을 보안 신뢰 지표로 활용한 이수시스템의 공공 AI 솔루션 영업을 강화할 근거가 되고 있다."
+}
