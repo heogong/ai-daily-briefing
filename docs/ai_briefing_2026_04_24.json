@@ -1,0 +1,72 @@
+{
+  "date": "2026.04.24 (금)",
+  "one_liner": "OpenAI GPT-5.5 출격·Meta 8천명 감원·Microsoft Office 에이전트 모드 확산까지, AI 전쟁의 속도가 다시 한 단계 올라갔다.",
+  "news": [
+    {
+      "number": 1,
+      "category": "모델 릴리스",
+      "title": "OpenAI, GPT-5.5 전격 출시…'코딩·과학 특화' 차세대 지능 선언",
+      "body": "OpenAI가 **GPT-5.5**를 공식 출시했다. 지난달 GPT-5.4를 내놓은 지 불과 한 달도 되지 않은 시점으로, OpenAI는 이 모델을 '가장 스마트하고 직관적인 모델이자 컴퓨터에서 일하는 새로운 방식의 다음 단계'라고 소개했다. 코드 작성·디버깅, 과학적 추론, 일반 업무에서 탁월한 성능을 보이며 **API 가격은 기존 대비 2배** 수준으로 책정됐다.\n\nVentureBeat에 따르면 GPT-5.5는 Terminal-Bench 2.0 기준에서 Anthropic의 Claude Mythos Preview를 근소한 차이로 앞섰다. How-To Geek은 이 모델이 특히 어려운 코딩과 컴퓨터 작업에 최적화돼 있다고 분석했고, Fast Company는 '코딩·과학·일반 업무를 위한 더 강력한 엔진'이라 평했다. OpenAI는 동시에 수천 명 채용 계획도 발표하며 Anthropic·Google과의 경쟁에 전면 대응 의지를 밝혔다.",
+      "insight": "불과 한 달 간격으로 GPT-5.4에서 5.5로 업그레이드되는 릴리스 사이클은 AI 모델 경쟁이 '분기 단위'에서 '월 단위'로 압축됐음을 의미한다. API 가격이 2배로 오른 점은 AI 서비스 비용의 상승 압력을 기업 고객에게 전가하는 신호탄이 될 수 있으며, 이는 기업용 AI 솔루션의 수익 구조 재편을 촉발할 가능성이 높다. 코딩·과학 특화 포지셔닝은 개발자 도구 및 기술 집약 산업에서의 AI 채택을 가속화할 전망이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "GPT-5.5의 코딩·추론 능력 강화는 이수시스템 RAG 기반 챗봇 및 HR AI Package의 백엔드 LLM 업그레이드 기회다. 현재 OpenAI API를 활용 중이거나 검토 중인 경우, GPT-5.5의 강화된 추론 능력을 WORKUP의 인사 Q&A 챗봇이나 AI 이력서 분석 정확도 개선에 바로 적용할 수 있다. 단, API 단가 2배 인상은 서비스 원가 상승 요인으로 요금 정책 재검토가 필요하다.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/917612/openai-gpt-5-5-chatgpt",
+      "source": "The Verge"
+    },
+    {
+      "number": 2,
+      "category": "일자리·사회",
+      "title": "Meta, 전 직원 10% 감원…AI 투자 확대 속 8,000명 퇴장",
+      "body": "Meta가 5월 중 전체 임직원의 **약 10%(약 8,000명)**를 감원한다고 발표했다. Bloomberg가 입수한 최고인사책임자 Janelle Gale의 사내 메모에 따르면 채용 중이던 약 6,000개 공석도 동시에 폐쇄된다. 이번 구조조정은 Meta의 AI 인프라 및 모델 개발에 대한 대규모 투자가 이어지는 가운데 단행됐다.\n\n한편 Meta는 자체 '초지능(superintelligent)' AI 모델 개발에서 성능 이슈로 출시 일정이 지연되고 있다고 알려졌다. 초기 벤치마크에서 OpenAI·Google·Anthropic에 뒤처진다는 보고도 나왔다. AI 경쟁 선두 그룹을 따라잡기 위해 조직을 슬림화하면서 핵심 AI 인재와 인프라에 자원을 집중하는 전략으로 풀이된다.",
+      "insight": "빅테크가 AI 투자를 늘리는 동시에 비(非)핵심 인력을 대규모로 줄이는 패턴은 이제 산업 전반의 공식처럼 굳어지고 있다. '더 적은 인원으로 더 많은 성과'를 요구하는 기업 환경이 조성되면서, AI 기반 업무 자동화·HR 관리 솔루션의 수요는 오히려 커지는 역설이 나타난다. 감원이 단순한 비용 절감이 아니라 AI 역량 재편을 위한 포트폴리오 조정임을 주목해야 한다.",
+      "isu_area": "HR 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "대규모 구조조정 국면에서는 인력 재배치, 퇴직 처리, 조직 개편을 지원하는 HR 시스템 고도화 수요가 급증한다. 국내 제조·건설·금융 고객사가 AI 도입으로 인력 구조를 재편할 때 WORKUP의 조직관리·인력계획 모듈을 묶어 제안하는 영업 시나리오가 유효하다. 또한 잉여 인력 재교육·이동 배치 기능 강화를 WORKUP 로드맵에 반영하면 차별화 포인트가 될 수 있다.",
+      "url": "https://www.theverge.com/tech/917690/meta-is-laying-off-10-percent-of-its-staff",
+      "source": "The Verge"
+    },
+    {
+      "number": 3,
+      "category": "제품 업데이트",
+      "title": "Microsoft Office에 'Vibe Working' 에이전트 모드 상륙…Word·Excel·PPT가 스스로 일한다",
+      "body": "Microsoft가 Word, Excel, PowerPoint에 **Agent Mode(에이전트 모드)**를 이번 주부터 순차 배포하기 시작했다. 내부적으로 'vibe working'이라 불리는 이 기능은 기존 Copilot보다 훨씬 강력한 자율 실행 능력을 갖춰, 사용자가 의도만 입력하면 AI가 문서 초안 작성·데이터 분석·슬라이드 제작까지 자율적으로 수행한다. Microsoft는 '초기 Copilot 출시 시점과 달리 파운데이션 모델이 크게 발전했다'고 강조했다.\n\n이번 업데이트는 전 세계 수억 명의 Office 사용자에게 직접 영향을 미치는 대형 릴리스다. 단순한 AI 어시스턴트를 넘어 **자율 에이전트**로의 전환을 선언한 것으로, 반복적 문서 업무의 상당 부분이 자동화될 전망이다. 기업 IT 부서는 에이전트의 데이터 접근 범위와 보안 정책을 새롭게 정비해야 하는 과제를 안게 됐다.",
+      "insight": "Office 에이전트 모드는 '직장인 모두가 AI 에이전트를 갖게 되는 시대'의 시작을 알리는 신호탄이다. RPA가 처리하던 정형 반복 업무와 AI가 처리하는 비정형 판단 업무 사이의 경계가 빠르게 허물어지고 있으며, 기업용 생산성 도구 시장의 경쟁 지형이 근본적으로 바뀌고 있다. ERP·HR·문서 관리 솔루션 공급사들은 자사 제품이 Office 에이전트 생태계와 어떻게 연동될지 긴급히 검토해야 한다.",
+      "isu_area": "디지털서비스 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "Microsoft Office Agent Mode는 이수시스템 RPA 사업의 대체 위협 요소인 동시에 연계 기회이기도 하다. Word·Excel 내 반복 문서 작업이 에이전트로 자동화되면 기존 RPA 도입 명분이 약해질 수 있지만, 반대로 SAP ERP 데이터를 Office 에이전트에 공급하는 커넥터 구축이나 Office 에이전트 도입 컨설팅 패키지를 신규 서비스로 발굴할 수 있다. 특히 제조·건설 고객사의 현장 보고서 자동화 수요를 타깃으로 한 제안이 유효하다.",
+      "url": "https://www.theverge.com/news/917328/microsoft-agent-mode-vibe-working-office-word-excel-powerpoint",
+      "source": "The Verge"
+    },
+    {
+      "number": 4,
+      "category": "산업 동향",
+      "title": "네이버, AI 인프라 확장에 4,000억 원 수혈…한국 AI 인프라 전쟁 점화",
+      "body": "네이버가 AI 인프라 확장을 위해 **4,000억 원(약 4억 달러)**의 자금을 조달했다고 W.Media가 보도했다. 이는 글로벌 빅테크와의 AI 경쟁에서 뒤처지지 않기 위한 대규모 투자로, 한국 내 AI 데이터센터 확충과 자체 LLM(HyperCLOVA X) 고도화에 활용될 것으로 전망된다. 네이버는 국내 클라우드·AI 인프라 시장에서 AWS·Azure와 직접 경쟁하는 주요 플레이어다.\n\n이번 투자는 국내 기업의 AI 인프라 자립 의지를 보여주는 상징적 사건이다. 공공기관과 금융권을 중심으로 '국내산 클라우드·AI' 선호 기조가 강화되는 가운데, 네이버 클라우드 플랫폼(NCP)의 인프라 역량 강화는 NCP 파트너사들에게도 직접적인 수혜 요인이 될 수 있다.",
+      "insight": "국내 AI 인프라에 대한 대규모 투자는 '데이터 주권'과 '국내 클라우드 우선' 정책 기조가 맞물려 가속화되는 흐름을 반영한다. 글로벌 AI 서비스에 대한 의존도를 낮추려는 기업·공공기관의 수요는 국산 클라우드 및 온프레미스 AI 솔루션 시장을 키우는 구조적 동력이 된다. 한국형 AI 생태계 확장이 본격화되면 국내 파트너 네트워크를 통한 AI 서비스 납품 경쟁도 치열해질 전망이다.",
+      "isu_area": "클라우드 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "이수시스템은 네이버 클라우드 플랫폼(NCP) 공식 파트너사다. 네이버의 4,000억 원 AI 인프라 투자는 NCP 기반 서비스의 품질·용량 향상을 의미하며, 이수시스템이 공공기관 및 금융 고객사에 'NCP 기반 AI 챗봇·HR 솔루션 클라우드 이전' 패키지를 제안할 때 경쟁력이 높아진다. 특히 정부의 공공 클라우드 전환 사업과 연계해 NCP + WORKUP SaaS 조합의 영업 기회를 선제 발굴해야 한다.",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNY1lrRU16WXA5RzNPN0tiaExFWnFOOTRMNmhwV3k4SUVUcDVRbWhjRmVDT1Q4OFl6d2tEUXo1LUVoOXpFcV9lZWtVQ2g4ck1ZMXlDME5WYXpZOHl3STVFTnJKal9WVU5pUUF6TlJZRGQxS1NNUk9KSE1IaGRyeFNObVpZQndtdw",
+      "source": "W.Media"
+    },
+    {
+      "number": 5,
+      "category": "글로벌 이슈",
+      "title": "싱가포르, 에이전틱 AI 거버넌스 가이드라인 발표…아시아 AI 규제의 새 기준 제시",
+      "body": "싱가포르 정부가 **에이전틱 AI(Agentic AI)**에 특화된 거버넌스 및 보안 지침을 공식 발표했다. Inside Privacy에 따르면 이번 가이드라인은 자율적으로 행동하고 의사결정을 내리는 AI 에이전트의 운영 원칙, 책임 소재, 보안 요건을 구체적으로 명시하고 있다. AI 에이전트가 기업 시스템에 광범위하게 통합되는 현실을 반영해 선제적으로 제도적 틀을 마련한 것이다.\n\n싱가포르는 아시아·태평양 지역에서 AI 규제 선도국으로서의 위상을 굳히고 있으며, 이번 지침은 한국을 포함한 인근 국가들의 AI 거버넌스 정책에도 영향을 줄 것으로 보인다. EU AI Act 이후 에이전틱 AI를 명시적으로 다루는 주요 국가 지침이 등장했다는 점에서 업계의 주목을 받고 있다.",
+      "insight": "에이전틱 AI가 기업 업무에 깊숙이 침투하면서 '누가 AI의 행동에 책임을 지는가'라는 질문이 규제 의제로 부상하고 있다. 싱가포르의 선제적 가이드라인은 기업들이 AI 에이전트 도입 시 내부 거버넌스 체계를 갖춰야 한다는 압력을 높이며, 특히 금융·공공 분야에서 AI 감사 및 설명가능성 요건이 강화될 것을 예고한다. 한국 정부의 AI 기본법 후속 조치에도 에이전틱 AI 관련 규정이 추가될 가능성이 높아졌다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "에이전틱 AI 거버넌스 규정이 강화되면 기업 고객은 도입한 AI 솔루션의 감사 추적·권한 관리·설명가능성 기능을 요구하게 된다. 이수시스템의 RAG 기반 챗봇과 HR AI Package를 기업에 납품할 때 '규제 대응형 AI 거버넌스 기능(로그 관리, 응답 근거 추적, 접근 권한 통제)'을 사전에 탑재하면 금융·공공 고객사 영업에서 차별화 요소가 될 수 있다. 한국 AI 기본법 후속 입법 동향을 모니터링하며 제품 로드맵에 반영 준비를 권장한다.",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPTVVBdTlZWTZpNFAxVXZSbHBMSWpwQ0xTNnB0WlhBRDVnaWRHclo0Wk1XNW1WWldBV3NqTTFTcVBISktXU0dmUTV5V0hMSEV6d0lTOHg0b2RDWHNUMmVDYnZBcWZ1NlpWSW1ITWdMLVdzQl9LcFk0YkZhWFM5Q1hQNTFFUUNGYnkyeWZISHpYRkFrYlRKRXVjVGlaWTBubHdoOWpXSERFTXlqSm02VlE",
+      "source": "Inside Privacy"
+    }
+  ],
+  "takeaways": [
+    "**GPT-5.5 출시**로 AI 모델 릴리스 사이클이 '월 단위'로 단축됐고, API 가격 2배 인상은 기업용 AI 서비스 원가 상승의 신호탄이다.",
+    "**Meta 8,000명 감원**은 빅테크가 AI 투자를 위해 조직을 슬림화하는 패턴이 고착됨을 보여주며, HR 자동화·인력 재편 솔루션 수요를 자극한다.",
+    "**Microsoft Office 에이전트 모드** 배포와 **싱가포르 에이전틱 AI 거버넌스 지침** 발표는 AI가 실제 업무 도구로 자리잡는 속도와 함께 규제 프레임워크도 빠르게 구축되고 있음을 동시에 보여준다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심은 AI 에이전트의 실무 침투 가속화와 그에 따른 비용·거버넌스 이슈의 부상이다. 이수시스템 관점에서는 네이버 4,000억 투자로 NCP 파트너 영업 기회가 커지는 동시에, GPT-5.5의 API 가격 인상으로 AI 챗봇·HR AI 서비스의 원가 구조를 재검토해야 하는 시점이 왔다. 에이전틱 AI 거버넌스 규제 강화 흐름에 대비해 WORKUP과 AI 챗봇 제품에 감사 추적 및 접근 권한 관리 기능을 사전 탑재하는 것이 금융·공공 고객사 공략의 핵심 차별화 전략이 될 것이다."
+}
