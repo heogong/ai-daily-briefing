@@ -175,8 +175,19 @@ def fetch_it_company_articles(max_hours: int = 24) -> list:
 def format_articles_text(articles: list) -> str:
     text = ""
     for i, a in enumerate(articles, 1):
-        text += f"\n[{i}] {a['published']} | {a['source']}\n제목: {a['title']}\n요약: {a['summary']}\n링크: {a['link']}\n"
+        text += f"\n[{i}] {a['published']} | {a['source']}\n제목: {a['title']}\n요약: {a['summary']}\n"
     return text
+
+
+def inject_article_urls(news_data: dict, articles: list) -> dict:
+    """article_ref 번호를 이용해 url 필드에 원본 링크를 주입한다."""
+    for item in news_data.get("news", []):
+        ref = item.pop("article_ref", None)
+        if isinstance(ref, int) and 1 <= ref <= len(articles):
+            item["url"] = articles[ref - 1]["link"]
+        else:
+            item.setdefault("url", "")
+    return news_data
 
 
 # ============================================================
@@ -218,7 +229,7 @@ def build_ai_briefing_prompt(today: str, isu_context: str) -> str:
       "isu_area": "AI 사업",
       "isu_tag": "[핵심 기회]",
       "isu_insight": "이수시스템 관점 인사이트",
-      "url": "원문 기사 링크 (제공된 링크 그대로 사용)",
+      "article_ref": 3,
       "source": "출처명 (예: TechCrunch, VentureBeat, Google News)"
     }}
   ],
@@ -236,6 +247,7 @@ def build_ai_briefing_prompt(today: str, isu_context: str) -> str:
 - HTML 태그를 사용하지 마세요. 강조는 **별표두개**만 사용하세요.
 - JSON이 유효한지 반드시 확인 후 출력하세요.
 - insight 필드에는 이수시스템을 절대 언급하지 마세요. ISU 관련 내용은 오직 isu_insight에만 작성합니다.
+- article_ref 는 해당 뉴스의 원본 기사 번호([1], [2], ... 형식)를 정수로 입력하세요.
 
 --- 이수시스템 컨텍스트 ---
 insight 필드는 기사 자체의 업계 시사점이므로 절대 수정하지 않는다. ISU 관점은 isu_insight와 isu_summary에만 작성한다.
@@ -281,7 +293,7 @@ def build_it_company_prompt(today: str) -> str:
       "title": "뉴스 제목",
       "body": "본문 요약. 핵심 키워드는 **별표두개**로 강조. 큰따옴표 대신 작은따옴표 사용.",
       "insight": "이 뉴스가 국내 IT 업계에 미치는 의미와 맥락",
-      "url": "원문 기사 링크 (제공된 링크 그대로 사용)",
+      "article_ref": 3,
       "source": "출처명"
     }}
   ],
@@ -296,7 +308,8 @@ def build_it_company_prompt(today: str) -> str:
 중요 규칙:
 - JSON 문자열 값 안에서 큰따옴표(")를 절대 사용하지 마세요. 작은따옴표(')를 쓰세요.
 - HTML 태그를 사용하지 마세요. 강조는 **별표두개**만 사용하세요.
-- JSON이 유효한지 반드시 확인 후 출력하세요."""
+- JSON이 유효한지 반드시 확인 후 출력하세요.
+- article_ref 는 해당 뉴스의 원본 기사 번호([1], [2], ... 형식)를 정수로 입력하세요."""
 
 
 # ============================================================

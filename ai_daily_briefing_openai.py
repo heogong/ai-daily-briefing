@@ -18,7 +18,7 @@ from briefing_core import (
     load_isu_context, get_today_str, get_news_window_str, get_file_date,
     fetch_rss_articles, fetch_it_company_articles, format_articles_text,
     build_ai_briefing_prompt, build_it_company_prompt,
-    parse_news_json,
+    parse_news_json, inject_article_urls,
     build_tts_text, generate_tts_audio,
     generate_html,
 )
@@ -29,7 +29,7 @@ MODEL = "o4-mini"
 # ============================================================
 # OpenAI API 전용: 뉴스 분석
 # ============================================================
-def collect_and_analyze_news(client: openai.OpenAI) -> str:
+def collect_and_analyze_news(client: openai.OpenAI) -> tuple[str, list]:
     today = get_today_str()
     news_window = get_news_window_str()
     isu_context = load_isu_context()
@@ -55,10 +55,10 @@ def collect_and_analyze_news(client: openai.OpenAI) -> str:
         input=user_message,
         max_output_tokens=MAX_TOKENS,
     )
-    return response.output_text
+    return response.output_text, articles
 
 
-def analyze_it_company_news(client: openai.OpenAI, articles: list) -> str:
+def analyze_it_company_news(client: openai.OpenAI, articles: list) -> tuple[str, list]:
     today = get_today_str()
     news_window = get_news_window_str()
 
@@ -78,7 +78,7 @@ def analyze_it_company_news(client: openai.OpenAI, articles: list) -> str:
         input=user_message,
         max_output_tokens=MAX_TOKENS,
     )
-    return response.output_text
+    return response.output_text, articles
 
 
 def fix_json_with_openai(raw_text: str) -> dict:
@@ -124,17 +124,18 @@ def main():
 
     # Step 1: AI 뉴스 수집 & 분석
     print("\n🔍 AI 뉴스 검색 및 분석 중...")
-    raw_response = collect_and_analyze_news(client)
+    raw_response, ai_articles = collect_and_analyze_news(client)
 
     OUTPUT_DIR.mkdir(exist_ok=True)
     raw_path = OUTPUT_DIR / f"ai_briefing_{get_file_date()}_raw.txt"
     raw_path.write_text(raw_response, encoding="utf-8")
     print(f"   📄 원본 응답 저장: {raw_path}")
 
-    # Step 2: JSON 파싱
+    # Step 2: JSON 파싱 + URL 주입
     print("📋 뉴스 데이터 파싱 중...")
     try:
         news_data = parse_news_json(raw_response, fix_fn=fix_json_with_openai)
+        news_data = inject_article_urls(news_data, ai_articles)
     except (json.JSONDecodeError, ValueError) as e:
         print(f"\n❌ JSON 파싱 최종 실패: {e}")
         print(f"   원본 응답은 {raw_path} 에서 확인하세요.")
@@ -161,10 +162,11 @@ def main():
         it_articles = fetch_it_company_articles()
         print(f"   ✅ {len(it_articles)}개 IT 기업 기사 수집")
         if it_articles:
-            it_raw = analyze_it_company_news(client, it_articles)
+            it_raw, it_articles = analyze_it_company_news(client, it_articles)
             it_raw_path = OUTPUT_DIR / f"it_company_{get_file_date()}_raw.txt"
             it_raw_path.write_text(it_raw, encoding="utf-8")
             it_data = parse_news_json(it_raw, fix_fn=fix_json_with_openai)
+            it_data = inject_article_urls(it_data, it_articles)
             print(f"   ✅ {len(it_data.get('news', []))}개 IT 기업 뉴스 파싱 완료")
             (OUTPUT_DIR / f"it_company_{get_file_date()}.json").write_text(
                 json.dumps(it_data, ensure_ascii=False, indent=2), encoding="utf-8"
