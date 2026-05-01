@@ -1,0 +1,72 @@
+{
+  "date": "2026.05.02 (토)",
+  "one_liner": "미 국방부가 AI 퍼스트 군대를 선언하며 OpenAI·Google 등 7개사와 기밀 AI 계약을 체결, 글로벌 AI 패권 경쟁이 군사 영역으로 본격 확전됐다.",
+  "news": [
+    {
+      "number": 1,
+      "category": "산업 동향",
+      "title": "미 국방부, 'AI 퍼스트 군대' 선언…OpenAI·Google·Nvidia 등 7개사와 기밀 계약",
+      "body": "미국 국방부(펜타곤)가 **OpenAI, Google, Microsoft, Amazon(AWS), Nvidia, xAI, Reflection** 7개사와 기밀 환경에서 AI를 활용하는 조달 계약을 체결하며 'AI 퍼스트 전투력' 구축을 공식 선언했다. 주목할 점은 기존 파트너였던 **Anthropic이 공급망 리스크**를 이유로 이번 계약에서 제외됐다는 것이다. 이번 계약으로 민간 AI 기업들의 모델이 최초로 군 기밀 시스템에 대규모 통합되는 전례가 마련됐다.",
+      "insight": "민간 AI 기업의 군사 시장 진입이 공식화됨에 따라, AI 모델의 '보안 인증'과 '공급망 신뢰성'이 기업 가치 평가의 핵심 변수로 부상하고 있다. Anthropic 배제 사례는 기술력만큼이나 지정학적 리스크 관리와 컴플라이언스 역량이 중요해졌음을 보여준다. 이는 민간 B2B 시장에서도 AI 솔루션 도입 시 보안·공급망 검증 요구가 강화될 것임을 예고한다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "국방·공공 영역의 AI 보안 요구 강화 흐름은 국내 공공기관 대상 AI 사업에도 영향을 미친다. 이수시스템의 RAG 기반 챗봇·AI 플랫폼을 공공 고객사에 제안할 때, 데이터 보안 아키텍처(온프레미스 배포, 망분리 환경 지원)를 전면에 내세우는 영업 전략이 유효해질 수 있다.",
+      "source": "BBC / The Verge / NYT",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4xRERqS2ZsdzQ3VTBkYzhBZktzOU0yLXp0LXhrbndtU3pHYWZ3aXVFUFRETXdxX1lxWFk0bXB2ZG9CdTZPZmJpQVFHc1BuYUQ5dWdaVi1UdUUwUQ?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "모델 릴리스",
+      "title": "DeepSeek V4 출시·가격 75% 인하…ChatGPT·Claude·Gemini와 정면 승부",
+      "body": "중국 AI 스타트업 DeepSeek이 오랜 기다림 끝에 **DeepSeek V4-Pro를 공개**하고 동시에 가격을 **기존 대비 75% 인하**했다. 성능 면에서는 OpenAI의 ChatGPT, Anthropic의 Claude, Google의 Gemini와 직접 비교될 수준으로 평가되며, 가격 경쟁력에서 압도적 우위를 보인다. 이번 출시로 글로벌 AI 모델 가격 경쟁이 재점화되며 일각에서는 '제2의 DeepSeek 모멘트' 가능성을 거론하고 있다.",
+      "insight": "DeepSeek의 공격적 가격 인하는 글로벌 LLM 시장 전체의 단가 압박으로 이어진다. AI 모델 비용이 지속적으로 낮아질수록 기업들의 AI 도입 장벽이 낮아지고, 차별화 포인트는 '모델 자체'보다 '도메인 특화 구현력'과 '통합 서비스'로 이동한다. 국내외 AI 솔루션 기업들은 저비용 모델을 활용한 빠른 제품화 역량이 더욱 중요해진다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "DeepSeek V4의 저가 API 공개는 이수시스템 AI 제품의 LLM 비용 구조 개선 기회다. 현재 RAG 기반 챗봇이나 AI 이력서 분석 솔루션에 고비용 GPT-4 계열 대신 DeepSeek V4를 백엔드로 테스트·전환하면, 고객사 제안 시 TCO(총소유비용) 경쟁력을 높일 수 있다. 특히 비용에 민감한 중견·중소 제조업 고객군 공략에 유효한 카드가 될 수 있다.",
+      "source": "Mashable / MSN",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNLXRWZ1ZVaXI5MDBqdWtjLWc0VFB4Y1hMRl84M0FCQ1haa3JvRjBNVnQtUzlxYm5lcm9ScUx3QXVPV2ZjcGoyRWo5Njk1NnEwdXVIZ09ScDd5aFpJLU1JblpObkRIbENvcFh4ZDl6ZkNSVHVuZW9nLUZzNFdiSThyVWlaeF9JeDlI?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "제품 업데이트",
+      "title": "Claude 사용량 전월 대비 2배 이상 폭증…Gemini도 꾸준한 성장세",
+      "body": "BNP파리바 리포트에 따르면 **Anthropic의 Claude 사용량이 한 달 만에 2배 이상(MoM) 급증**한 것으로 나타났다. Google의 Gemini도 꾸준한 성장세를 기록 중이며, Gemini 앱은 현재 **3억 5000만 유료 구독자**를 보유한 Google 생태계와의 연동을 강화하고 있다. 반면 Google은 수익성 제고를 위해 Gemini 앱에 광고 도입을 검토 중인 것으로 알려졌다.",
+      "insight": "Claude의 폭발적 성장은 단순 호기심을 넘어 실무 활용도가 높아졌음을 의미하며, AI 어시스턴트 시장의 경쟁 구도가 ChatGPT 1강에서 다강 체제로 빠르게 재편되고 있음을 보여준다. Gemini의 광고 도입 검토는 무료 AI 서비스의 수익화 모델 실험이라는 점에서 업계 전반의 비즈니스 모델 변화를 예고한다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "Claude·Gemini의 기업 활용 급증은 국내 기업 고객들도 단일 AI 플랫폼에 락인되지 않고 멀티 모델 전략을 취할 가능성이 높아짐을 뜻한다. 이수시스템의 기업용 AI 플랫폼이 특정 LLM에 종속되지 않는 멀티 LLM 지원 구조를 갖추는 것이 고객 유치 경쟁력의 핵심이 될 수 있다.",
+      "source": "MSN (BNP 리포트)",
+      "url": "https://news.google.com/rss/articles/CBMilwNBVV95cUxOOEkzVFIyVWQ1NkZ1c3JTREQyMHphbFl3VlVvQW5rTXE3b3U1U3Q2VDJBOWJ6SC1zc3VQeWU1bG1LQ200SGp6TU0wdlZhNEI4UDFxNUxEd3Bsd2tHQWZESWF2bnV6ZFM2MU5Zb1F3Ql9nY09NZHBMaUlGLUVlZVRuWGp3dWM1T2pxYmItdW40dUVjdHM1TW0tSmpIQTkxRUpKdFN0cjVOVHQwd3EwSW1EbW9MWjg0eVN5Q3FDc1RobGlNVkI2QnBha1JKYVI1cng1X3I0VGNjRlhhNWZqdHhKaHplUXZGeFl3VmJwemhJZk90SjRhcFB2NGRxbXMydVhXMzJQaVl6SVVDSWJSMVhubjRHVzF5TkNDeEg5VlJsQ2FvVzJnaW5aVUFid2JwMUxhT0xrODhDNjd4Z0hnWWh6VjhNVm5oU1lMWjFBZ0FSMEtvWFFlYjk2UTBUQzN6TDc2TkdaSDJaQlpLa0lBZUJTQ3hnMHRwamlkTjBUQnd4QkFVRlBCNHp4V1NuN1EtNlc0eGtaVU45Zw?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "일자리·사회",
+      "title": "카카오톡에 AI 에이전트 '오픈클로' 연동…국민 메신저가 AI 플랫폼으로",
+      "body": "카카오톡이 AI 에이전트 **'오픈클로'를 플랫폼 내 연동**하며 국내 최대 메신저가 본격적인 AI 에이전트 허브로 진화하고 있다. 오픈클로는 일정 관리, 정보 검색, 업무 지원 등 다양한 에이전트 기능을 카카오톡 내에서 직접 사용할 수 있도록 하는 서비스다. 이는 카카오가 AI를 기존 서비스에 깊숙이 통합함으로써 **국내 AI 에이전트 생태계의 주도권**을 확보하려는 전략으로 해석된다.",
+      "insight": "국내 최다 사용자를 보유한 카카오톡에 AI 에이전트가 통합된다는 것은 일반 사용자의 AI 에이전트 첫 접점이 메신저가 될 수 있음을 의미한다. 이는 B2C뿐 아니라 B2B 영역에서도 업무용 메신저 기반 AI 에이전트 수요를 자극할 것이며, 국내 AI 솔루션 기업들에게 카카오 생태계 연동 여부가 중요한 경쟁 요소로 부상할 수 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "카카오톡 AI 에이전트 생태계 확장은 이수시스템 HR AI 패키지·챗봇 솔루션의 채널 전략에 시사점을 준다. 현재 구축형으로 납품하는 기업용 HR 챗봇을 카카오워크나 카카오톡 채널 연동 형태로 제공하는 방안을 검토할 수 있으며, 기존 500개 이상 HR 고객사에 카카오 연동 AI 에이전트 업그레이드 제안이 단기 영업 기회가 될 수 있다.",
+      "source": "한국경제",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9mdDg3NTYtcmtlR3JDUEJxUGlERjM2R0dWZ2dRQWNkNDhCUHNXQmZCVDEyQnd1TldWdzAtTkpaWWdua0RidWJrNG1LQzRnVTZ0VHlZbdIBVEFVX3lxTE9mdDg3NTYtcmtlR3JDUEJxUGlERjM2R0dWZ2dRQWNkNDhCUHNXQmZCVDEyQnd1TldWdzAtTkpaWWdua0RidWJrNG1LQzRnVTZ0VHlZbQ?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "일자리·사회",
+      "title": "'AI가 전문가를 검증 기계로 만든다'…맥킨지 보고서도 직장 내 AI 확산 공식화",
+      "body": "동아일보 칼럼(정소연)은 AI 답변이 워낙 방대하고 그럴듯해 보여, 인간 전문가의 역할이 **직접 분석·판단하는 것이 아니라 AI 출력물을 검수하는 기계**로 전락하고 있다는 현실을 날카롭게 짚었다. 같은 시기 맥킨지가 발표한 '2025 직장 내 AI 보고서'도 **AI가 전 산업 직무에서 반복 업무를 대체**하는 속도가 예상보다 빠르다고 진단했다. 두 보고서 모두 전문직군의 업무 방식과 직무 정의 자체가 근본적으로 바뀌고 있음을 경고한다.",
+      "insight": "AI가 '도구'에서 '동료(또는 상사)'로 역할이 바뀌면서 조직 내 AI 거버넌스, 역할 재정의, 재교육 수요가 급증하고 있다. HR 부서는 AI 도입에 따른 직무 재설계, 성과 평가 기준 개편, 직원 역량 개발 계획을 수립해야 하는 새로운 부담을 안게 됐으며, 이는 HR 솔루션과 AI 도구가 더욱 긴밀하게 연동되어야 함을 시사한다.",
+      "isu_area": "HR 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "AI로 인한 직무 재설계와 역량 관리 수요 급증은 WORKUP·Smart HR 고도화의 명확한 방향을 제시한다. AI 기반 직무 분석, 역량 갭 진단, AI 활용 교육 이력 관리 등의 기능을 WORKUP에 추가하면, AI 전환기에 HR 시스템 교체 또는 업그레이드를 고민하는 제조·금융·공공 고객사 대상 차별화 제안이 가능하다. 특히 '인간 전문가의 AI 감수 역할 지원' 관점에서 HR AI 패키지와 연계한 번들 상품 기획도 검토할 만하다.",
+      "source": "네이트 (동아광장) / McKinsey",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB0WC16SDBndkF1c2JCV3daS3BXWXMzM3J3dXhNRFdtLTBnUVBsVG83MHRubW1jWWQxeDVKT0xwRG5ZUms3NkNYSzJqdWU5enFyN29Z?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**미국 국방부의 'AI 퍼스트' 선언**은 AI 군사화의 공식 서막으로, 글로벌 AI 패권 경쟁이 민간을 넘어 안보 영역까지 확전됐음을 의미한다.",
+    "**DeepSeek V4의 75% 가격 인하**로 LLM 비용 하락이 가속화되고 있어, AI 솔루션의 경쟁력은 '모델 품질'보다 '도메인 특화 구현력'으로 이동 중이다.",
+    "**카카오톡 AI 에이전트 연동**은 국내 AI 서비스가 B2C를 넘어 B2B 업무 환경까지 빠르게 침투하고 있음을 보여주며, 국내 기업용 AI 솔루션 경쟁이 한층 치열해질 전망이다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심은 두 가지다. 첫째, DeepSeek V4의 가격 파괴로 LLM 비용 장벽이 낮아지면서 이수시스템의 RAG 챗봇·AI 이력서 분석 등 기존 AI 제품의 원가 경쟁력을 재점검하고, 저비용 모델 기반 신규 제안 패키지를 준비할 시점이다. 둘째, 카카오톡 AI 에이전트 생태계 확장과 맥킨지 직장 내 AI 확산 보고서는 국내 기업 HR 담당자들의 AI 도입 압박을 높이고 있어, WORKUP과 HR AI 패키지를 연계한 'AI 전환기 HR 솔루션' 번들을 기존 500개 고객사 대상 업셀링 캠페인으로 활용하는 것이 단기 영업 기회로 유망하다."
+}
