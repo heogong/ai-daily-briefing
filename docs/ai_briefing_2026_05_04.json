@@ -1,0 +1,72 @@
+{
+  "date": "2026.05.04 (월)",
+  "one_liner": "중국 법원의 AI 대체 해고 금지 판결부터 국내 소버린 AI 5600억 투자까지, AI가 일자리·산업 판도를 바꾸는 속도가 빨라지고 있습니다.",
+  "news": [
+    {
+      "number": 1,
+      "category": "일자리·사회",
+      "title": "중국 법원 '기업이 AI로 직원 해고하면 불법' 판결 — 노동법 새 기준 되나",
+      "body": "중국 법원이 AI 도입을 이유로 근로자를 해고한 기업에 **불법 판결**을 내렸습니다. 해당 근로자는 회사가 자신의 업무를 AI로 대체하면서 일방적으로 계약을 해지했다고 소송을 제기했고, 법원은 이를 부당해고로 인정했습니다. 이는 AI 대체 해고에 대한 **세계 최초 수준의 사법적 판단**으로 주목받고 있습니다.\n\n판결 핵심은 'AI 도입 자체는 합법이지만, 이를 이유로 기존 직원을 해고하는 것은 노동법 위반'이라는 것입니다. 이 판례는 중국 내 다른 AI 해고 사례에도 연쇄적으로 영향을 미칠 수 있으며, 글로벌 노동 정책 논의에도 파장을 줄 것으로 보입니다.",
+      "insight": "AI 자동화로 인한 인력 감축이 법적 리스크로 이어지는 시대가 열리고 있습니다. 기업들은 AI 도입 시 인력 재배치·재교육 계획을 병행하지 않으면 노동 분쟁에 노출될 수 있으며, 이는 AI 도입 전략 수립 방식 자체를 바꾸는 계기가 될 수 있습니다. 장기적으로 각국 정부가 유사한 법제를 도입할 경우 기업의 AI 전환 속도와 방식에 직접적인 영향을 줄 것입니다.",
+      "isu_area": "HR 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "AI 대체 해고 관련 법적 리스크가 부각될수록, 기업들은 AI 도입과 병행한 '인력 재배치·역량 관리' 체계의 필요성을 느낍니다. WORKUP이나 Smart HR의 역량·경력개발 관리 기능을 전면에 내세워, 'AI 시대 안전한 인력 전환 지원 솔루션'으로 포지셔닝하는 영업 시나리오를 검토할 수 있습니다.",
+      "source": "Bitcoin News",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOUDRPNXVReURZN1lCM3RsWnpQV0hoUkZJUHM0OUxub1NJbkcydmxCS2xfdzROcW1KWVNzZ0cwb1laSE1iaUpfb3J1RG1LX3pEckhEQ292Nkt5aG5ZTFREczE1M2piazJvZzhORFpLQXVXSTRjVXFfWVVKd2pSNGxRdkJR?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "모델 릴리스",
+      "title": "DeepSeek V4 출시 — ChatGPT·Claude·Gemini와 정면 대결",
+      "body": "중국 AI 스타트업 DeepSeek이 최신 모델 **DeepSeek V4**를 공개했습니다. 주요 벤치마크에서 OpenAI의 GPT 시리즈, Anthropic의 Claude, Google의 Gemini와 직접 비교되며 성능 경쟁에 뛰어들었습니다. 특히 **비용 효율성**에서 강점을 보이며 기업용 AI 도입을 고려하는 조직들의 관심을 끌고 있습니다.\n\nDeepSeek는 지난 V3·R1 모델로 이미 글로벌 AI 커뮤니티에 충격을 준 바 있으며, V4는 추론 능력과 다국어 처리 성능이 대폭 향상된 것으로 알려졌습니다. 오픈소스 정책을 유지하고 있어 기업들이 자체 서버에 직접 배포할 수 있다는 점도 주목됩니다.",
+      "insight": "LLM 시장의 경쟁이 미국 빅테크 중심에서 중국발 오픈소스 모델로 다변화되고 있습니다. 기업들은 더 이상 특정 공급사에 종속될 필요 없이 비용·성능을 따져 모델을 선택할 수 있는 환경이 되었으며, 이는 AI 솔루션 공급업체들의 '모델 중립적 아키텍처' 설계를 더욱 중요하게 만듭니다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "이수시스템의 RAG 기반 챗봇과 HR AI 패키지는 특정 LLM에 종속되지 않는 구조를 갖추는 것이 중요합니다. DeepSeek V4 같은 오픈소스 고성능 모델을 백엔드로 활용하면 고객사에 라이선스 비용 절감 옵션을 제공할 수 있어, 비용에 민감한 중견·제조 고객사를 대상으로 한 차별화 제안이 가능합니다.",
+      "source": "MSN",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQS3pzNWFkZUNxQlBjRVhPem1GX2pLbEpnSlBZME8zX1dQSVRFU2lOSURVQUNjVW1tRDd0TmdVQWd2SXIzRk1OR092UGdQRi1vOEg0ZjhzQTI1OE1Ia3gtdG85T1E0SWFoZjJVMlk1cW1WdzRSTFJuV3dia1dQX2tUV0RIRWFHY0tvSl9WUWUtbkJBNWJmY2E2NFhmQmVwd2lpSmRxVHB6QW12M01rZWJfSmRGYzBrZG5JRFVpRkpYYjJPaHdC?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "산업 동향",
+      "title": "Apple, Siri에 Gemini·Claude 연동 추진 — AI 어시스턴트 경쟁 새 국면",
+      "body": "Apple이 Siri를 통해 OpenAI 외에 Google Gemini와 Anthropic Claude로 쿼리를 연결할 수 있도록 허용하는 방향을 검토 중이라는 보도가 나왔습니다. 현재 Siri는 ChatGPT와의 연동이 주축이었으나, **복수의 AI 모델 선택권**을 사용자에게 부여하는 멀티모델 전략으로 전환하는 것입니다. 팀 쿡 CEO 교체설과 맞물려 Apple의 AI 전략 전환 신호로 해석되고 있습니다.\n\n이 변화는 **수십억 명의 iPhone 사용자**를 접점으로 Gemini와 Claude의 일상 침투를 가속화할 수 있습니다. AI 모델 시장에서 애플 생태계 진입이 향후 모델 점유율을 결정짓는 핵심 변수가 될 것으로 보입니다.",
+      "insight": "스마트폰 OS 수준에서 AI 모델 경쟁이 펼쳐지면서, 특정 모델의 독점 구조가 무너지고 있습니다. 사용자가 AI 어시스턴트를 직접 선택하는 시대가 오면, 기업 솔루션에서도 '어떤 모델을 쓰느냐'보다 '어떤 UI·경험·데이터 연계를 제공하느냐'가 경쟁력이 됩니다. AI 에이전트 레이어의 중요성이 더욱 높아질 것입니다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "멀티모델 생태계가 확산되면, 이수시스템의 챗봇·HR AI 패키지도 단일 모델 의존에서 벗어나 고객이 원하는 모델을 선택할 수 있는 구조로 발전시킬 필요가 있습니다. 단기적으로는 기술 흐름 모니터링 수준이지만, 제품 로드맵에서 멀티모델 지원 아키텍처를 중기 과제로 설정할 시점입니다.",
+      "source": "MSN",
+      "url": "https://news.google.com/rss/articles/CBMiygNBVV95cUxQREpyTDF1Q2hUMXlKQzJvX25LSUo2SUp0NE5mZmxiWmZiUkJ5cXVwMEl2cjZ3MlE5cXpmVllNUWN6WW1NTjRZSjJ1cXhsUXd0Q09wRUxybW95UEtsVGFqNGYtTjJJNU1OV1ZGSTlKcExieVVXT25JcEJ5ZnI3ZTJneXhuM2ZGa0dRaTc3VS1DVUhKbWhZRE5RRHVWOFFjWm02X0prR3BwalNZanlQT09tTW9DMEJmdWZRcFl1dXRpMXktZ2xXS1Ayb1RuR29aSWlTbjA4UWw3ZXNyYm1QSHlzbHoxVWQwVHNpT2N3QmQ5STFIcy1DWjdZR0x3OXlyNE9DNFBxNWc1TnZKdFdLcnlBSGpIbTVraGZOVGxmVk9CYlBzcUxxaWFMd2g3Z0pjWlY3Y1AyQ0tOME5fbW1fbjEtcTA1dnhYZ0FrSFlXNXBHbm43OEZmX25uNzY1TEpyOGtnZTZ3UVVPRUlNNVRPOW5yeFd0eVUtVHBZMHJyTDFUMHFlSVlNSEdHaDBpM04waGI1UXgxb3NoaTdyTGluRE5iY1dqRVJGVmdjcFpzTDlqbDZCZ0xTVTZMMm1La2ZuSGxfXzZyQlNEellWQQ?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "산업 동향",
+      "title": "업스테이지, 국민성장펀드로부터 5600억 유치 — 한국 소버린 AI 본격 시동",
+      "body": "국내 AI 스타트업 **업스테이지**가 국민성장펀드로부터 **5600억 원** 규모의 투자를 유치했습니다. 이 중 1000억 원은 국민성장펀드의 'AI 모델 부문 1호 직접투자'로, 정부 주도의 소버린 AI(자국 AI) 육성 의지가 자금으로 직접 연결된 첫 사례입니다. 업스테이지는 Solar LLM 등 한국어 특화 모델과 기업용 AI 솔루션으로 국내외 시장을 공략하고 있습니다.\n\n이번 투자는 단순 민간 벤처캐피털을 넘어 **국가 차원의 AI 인프라 투자**라는 점에서 의미가 큽니다. 정부가 외산 LLM 의존도를 낮추고 한국어·한국 문화 맥락에 최적화된 AI 생태계를 육성하겠다는 전략이 구체화된 것으로, 관련 정부 사업 예산 및 후속 지원이 이어질 가능성이 높습니다.",
+      "insight": "정부 주도 소버린 AI 투자가 본격화되면서, 국내 AI 생태계가 외산 모델 의존에서 벗어나 한국어 특화·규제 친화적 모델 중심으로 재편될 가능성이 높아졌습니다. 이는 공공기관 및 금융·의료 등 규제 산업에서 국산 LLM 채택을 촉진하는 계기가 될 수 있으며, 기업용 AI 솔루션 공급사들에게 국산 모델 기반 파트너십 구축이 중요한 전략 변수가 됩니다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "업스테이지 같은 국산 LLM 기업이 대규모 자금을 확보하면, 이수시스템이 RAG 챗봇 및 HR AI Package에 국산 모델을 연동하는 파트너십을 검토할 수 있습니다. 특히 공공·금융 고객사에서 '국산 모델 + 국내 솔루션' 조합에 대한 수요가 높아질 것으로 예상되며, 업스테이지와의 기술 협력 또는 API 연동을 통한 영업 차별화 포인트로 활용할 수 있습니다.",
+      "source": "인공지능신문",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBGMTNmc2NNRXd3VHYzZEw3ZTVySXJ5ZUUzMTBoZkFhbVNxTHM1cjhBM2gtY0JGdVlBU3pRdW5LS3lieE5BRHdvV3NkUkJ6RG1meXNfZlNBRE40T2R1UzJNSXNpdng0bkE?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "산업 동향",
+      "title": "AI 에이전트, SaaS를 대체한다 — 다음 전환점은 '월드모델'",
+      "body": "챗GPT 등장 이후 생성형 AI가 SaaS 산업의 구조를 바꾸고 있으며, 이제 **AI 에이전트**가 기존 SaaS 애플리케이션을 직접 대체하는 국면으로 진입하고 있다는 분석이 나왔습니다. 한국경제 보도에 따르면 AI 에이전트가 사용자의 지시 없이도 스스로 업무를 처리하는 '자율 실행' 단계로 발전하면서, 기존 SaaS 기업들의 수익 모델이 위협받고 있습니다. 전문가들은 다음 패러다임 전환점으로 현실 세계를 시뮬레이션하는 **'월드모델'** 기술을 지목했습니다.\n\nSaaS 기업들은 단순 기능 제공에서 벗어나 AI 에이전트 레이어를 자사 플랫폼에 통합하지 않으면 경쟁력을 잃을 수 있다는 경고가 나오고 있습니다. 구독 기반 SaaS에서 **성과 기반·에이전트 기반 가격 모델**로의 전환이 불가피하다는 전망도 제기됩니다.",
+      "insight": "SaaS 비즈니스 모델 전체가 AI 에이전트 시대에 맞게 재설계되어야 한다는 신호입니다. 기능 중심의 소프트웨어 구독 모델은 AI가 해당 기능을 직접 수행해주는 에이전트로 대체될 수 있으며, 이는 HR·ERP·ESG 등 모든 엔터프라이즈 SaaS 영역에 해당합니다. 생존하는 SaaS 기업은 AI 에이전트를 '경쟁자'가 아닌 '핵심 기능'으로 내재화하는 곳이 될 것입니다.",
+      "isu_area": "디지털서비스 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "이수시스템의 WORKUP(SaaS HR), ESGable 등 클라우드 구독형 제품이 AI 에이전트 전환 트렌드에 직접 노출됩니다. 단순 데이터 입력·조회 기능을 넘어, 근태 이상 자동 감지·급여 오류 사전 알림·ESG 지표 자동 취합 등 에이전트적 자동화 기능을 로드맵에 반영해야 제품 경쟁력을 유지할 수 있습니다. RPA와 AI 에이전트의 결합도 디지털서비스 사업의 단기 업셀링 포인트가 될 수 있습니다.",
+      "source": "한국경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5HcGNlaGVBQVZVcERXNXVua0Q4RkQ1Z2pRQkc2V2dwdkxhREx6X2FmRDA5WnpFWEpqT2VUVlI0T2N6SEJnMzlBWklvTDhENGQwMy1XNmY2bEtpZ9IBVEFVX3lxTE5GNEZHd2lBZ2kwSDNfRVk0bUxOZzBRQ3JLcEs1NzRhc1JOR3puclJDTmdkWDMyZ1NOaFROcVREdjNCeWk3SXA5QkY4QmhnY3hxUFBUdw?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**중국 법원의 AI 대체 해고 불법 판결**은 기업 AI 도입 전략에 '인력 재배치 계획 병행'을 사실상 의무화하는 방향으로 글로벌 노동법 논의를 이끌 수 있습니다.",
+    "**국내 소버린 AI에 5600억 투자** — 정부가 직접 국산 LLM 생태계 육성에 나서면서, 공공·금융·제조 분야에서 국산 모델 기반 AI 솔루션 수요가 빠르게 늘어날 전망입니다.",
+    "**AI 에이전트가 SaaS를 대체**하는 흐름이 가속화되면서, 기능 제공에 머무는 SaaS는 도태되고 자동화·에이전트 기능을 내재화한 제품만이 살아남는 시대가 오고 있습니다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심은 세 가지입니다. 첫째, 국내 소버린 AI 투자(업스테이지 5600억)로 국산 LLM 파트너십 기반의 AI 사업 영업 기회가 열렸습니다. 둘째, AI 에이전트가 SaaS를 대체한다는 트렌드는 WORKUP·ESGable 등 이수시스템의 SaaS 제품에 자동화 기능 내재화를 서두를 것을 요구합니다. 셋째, 중국 AI 대체 해고 판결은 HR 솔루션을 'AI 시대 인력 전환 지원 도구'로 재포지셔닝하는 영업 메시지에 활용할 수 있는 맥락을 제공합니다."
+}
