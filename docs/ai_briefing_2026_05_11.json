@@ -1,0 +1,72 @@
+{
+  "date": "2026.05.11 (월)",
+  "one_liner": "애플의 AI 개방, 메타의 인재 쟁탈, 직장 내 AI 확산까지 — AI가 일상과 산업 깊숙이 침투하는 한 주의 시작",
+  "news": [
+    {
+      "number": 1,
+      "category": "제품 업데이트",
+      "title": "애플, iOS 27에서 써드파티 AI 모델 선택 허용 — 시리가 GPT·제미나이도 쓴다",
+      "body": "애플이 **iOS 27**에서 사용자가 Apple Intelligence의 기반 AI 모델을 직접 선택할 수 있도록 허용할 예정이라는 보도가 나왔다. 기존에는 애플 자체 모델과 OpenAI ChatGPT만 연동됐으나, 이번 개편으로 **Google Gemini, Anthropic Claude 등 경쟁 모델**도 시리의 두뇌로 활용할 수 있게 된다. 이는 스마트폰 AI를 단일 벤더 종속이 아닌 개방형 플랫폼으로 전환하는 신호탄으로, 수억 명의 아이폰 사용자가 체감하는 AI 품질이 크게 달라질 수 있다. 국내 보도에 따르면 달라진 시리와 AI 모델 연동은 '**애플의 AI 반격**'으로 평가받고 있다.",
+      "insight": "스마트폰 OS가 AI 모델 선택의 '허브'가 되는 구조는 AI 시장의 경쟁 축을 모델 성능에서 '플랫폼 접근성'으로 이동시킨다. OpenAI·Google·Anthropic 입장에서는 수억 명의 엔드포인트를 확보할 수 있는 기회이며, 동시에 애플이 중간자 역할로 수수료 수익(앱스토어 내 AI 앱 수수료 1조 원 이상 추산)을 계속 확대하는 구조가 고착된다. 기업 IT 환경에서도 모바일 AI 활용도가 높아질수록 사내 데이터 보안·거버넌스 정책의 재정비가 필요해진다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "iOS 27의 개방형 AI 연동은 기업 임직원이 아이폰으로 다양한 LLM에 접근하는 경로를 다양화한다. WORKUP·Smart HR 등 이수시스템 HR 솔루션에 모바일 AI 어시스턴트를 연동할 때 특정 모델에 종속되지 않고 고객사 보안 정책에 맞는 모델을 선택·연결할 수 있는 '멀티 LLM 연동' 구조를 제품 로드맵에 반영할 시점이다.",
+      "source": "MSN",
+      "url": "https://news.google.com/rss/articles/CBMisgNBVV95cUxONnRfUElNWjVDSGZacU43Z3VvenE2ZjVrVEpEaWxCdWpJVk1Ydk53Y01kYUZKOXFvVzhKMFVQTE8xVlN4TktUeEhiaWlNbkZCOW55bGpwVUUydm5VeFpoamlOdkFkWGp2TmxYbUh1SnBSUUhnaTltMTJudjFTcGthdkMyTXRteW5Qb2hpSkNrLUlJNkczTE5UYWdrZ0VlWGdGSWNUMVYtX3U1RjY4d2xHQU1rLUJ5TElxM2pWTUlpZ29CSFM1YnlpcGQxSVYyamktRm1rVW9TSzZYWE5CVUJlRXU4dWZ6Y05qeXlFdU5VYUtId2RrUE9BbmZ4N01QMERmMmFSeENsZlFmQUF0SHRPZ3IyYkRYeGg5Smp1TTNVRjhTYmdYRm1rbG5PamtRME5sdXpkZXNKUFEzaHRJNVZQdkJTbjdxMnlSQUNFX3RJTU9peDA4Y00wTmtJTmJuZV9EcEZzTnFpRmRHZUpnSnpfUjlIbV93WWtnLUxGLWl3a0lZSE82N2xreHkyYWJ5WDNBWEpmaVl6VkdCN1ZWSmNhODlKVlRzNXZ2c1lfM21CcVNXZw?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "산업 동향",
+      "title": "맥킨지 '2025 직장 내 AI 보고서' — AI, 이제 실험이 아닌 '기본 업무 도구'",
+      "body": "맥킨지가 발표한 **'2025 직장 내 AI 보고서'**에 따르면, AI는 더 이상 파일럿 단계를 넘어 주요 기업에서 일상적인 업무 도구로 자리 잡고 있다. 보고서는 생성형 AI 도입 속도가 가장 빠른 분야로 **마케팅·고객 서비스·HR·소프트웨어 개발**을 꼽았으며, 도입 기업의 생산성 향상 효과가 비도입 기업과 격차를 벌리고 있다고 분석했다. 특히 AI를 '전사 전략'으로 내재화한 기업일수록 단순 효율화를 넘어 새로운 비즈니스 모델 창출로 연결되고 있다는 점이 주목된다.",
+      "insight": "맥킨지 보고서는 AI 도입이 선택이 아닌 경쟁력 유지의 기본 조건이 됐음을 공식화한다. HR·고객 서비스 분야에서의 AI 도입이 빠르게 확산되면서, 이 분야의 SaaS 솔루션 벤더들은 자사 플랫폼에 AI 기능을 내재화하지 못하면 고객 이탈 위험이 커진다. 동시에 AI 도입을 전략적으로 설계하는 컨설팅 수요도 함께 증가하는 양면 시장이 형성되고 있다.",
+      "isu_area": "HR 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "HR이 AI 도입 최우선 분야로 지목된 만큼, WORKUP·Smart HR 영업 시 'AI 기능 내재화 여부'가 고객사 의사결정의 핵심 기준이 된다. 이미 개발 중인 HR AI Package(이력서 분석·RAG 챗봇)를 WORKUP과 통합 패키지로 묶어 '맥킨지 보고서가 말하는 AI 내재화 HR 솔루션'으로 포지셔닝하면 제조·건설·금융 고객사를 대상으로 한 상반기 영업 제안 설득력이 높아진다.",
+      "source": "McKinsey & Company",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQNHluenp6NE4teVg3bTJiWG9VZk81dDQwcDBJcmVJWlBHdWhIYWRSYTNWX052aHVZdjhfdmxXNk9mTENURGRzdURmMExpTm5VazdfTWZpcUxTV21TcThJbHc2cFluMmRjMXdVeE80ZDhBR0JUWUhJcHJiX2Rva1lGT2tfMDNEOHZzRkJwSUpoM3FwZjh1RU56aXcxclFqNnRyVkRBVkJIbUkyaloxWGpscjJTZ2hYVkNxX0g2d2liUm41MlhaZDQwcl9JTlFtcWVGd3d0Vzg5V3Y?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "산업 동향",
+      "title": "메타, '초지능 연구소' 세우고 실리콘밸리 AI 인재 싹쓸이",
+      "body": "마크 저커버그가 이끄는 메타가 **'Meta Superintelligence Labs'**를 공식 출범하고, OpenAI·Google·Anthropic 출신의 최고급 AI 연구 인력을 공격적으로 영입하고 있다고 밝혀졌다. 연봉·스톡옵션·연구 자유도 등 파격적인 조건을 앞세워 경쟁사의 핵심 인재를 빼오는 방식으로, 실리콘밸리 AI 인재 시장의 **몸값 인플레이션**을 더욱 가속하고 있다. 이번 움직임은 메타가 오픈소스 LLaMA 전략을 넘어 독자적인 초지능(AGI급) 시스템 개발에 본격 투자하겠다는 신호로 해석된다.",
+      "insight": "메타의 초지능 연구소 설립은 AI 패권 경쟁이 모델 성능 경쟁을 넘어 '최고 인재 확보 전쟁'으로 전환됐음을 보여준다. 빅테크 간 인재 쟁탈이 심화될수록 AI 스타트업과 중소 기업의 인재 확보 비용이 급등하며, AI 기술 격차가 자본력 격차로 고착화될 위험이 있다. 반면 메타가 오픈소스 기반의 고성능 모델을 지속 공개할 경우, 중소 IT 기업들은 이를 활용해 자체 AI 솔루션을 구축하는 기회가 생긴다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "메타가 오픈소스 LLM(LLaMA 계열)을 초지능 수준으로 고도화할수록, 이수시스템 RAG 챗봇·HR AI Package의 기반 모델을 업그레이드할 수 있는 선택지가 넓어진다. 자체 LLM 개발 없이도 메타·Mistral 등 오픈소스 최신 모델을 온프레미스로 올려 **데이터 외부 유출 없는 기업용 AI**를 제공하는 것이 이수시스템의 차별화 포인트가 될 수 있다. 제조·공공 고객사의 보안 요건에 특히 유효하다.",
+      "source": "MSN",
+      "url": "https://news.google.com/rss/articles/CBMi3gJBVV95cUxPZjJZUUxvUnd6bTdibzFfeGo2ckZPR0tBTm1lYVlxaGpIWUdNajNna2t3cnZXdi0yN1pDc25NeWpsN0lBbERGRnNEaS12bHNndnJnZHFWU3d1WnFzOTc1M0NZYzlQcWJ1NWRyWjNFMlVtN3lDR3NIMXRIUTlSZ2owWTBtZk5XUDBCc3dVUjduWXp6ZHNxX25TNHJXQUNWOWluVEJ6TGc2LVVzLU9YdERXd2hfZHk1SDdLRXIzNklqQW53ZHk1dlh6V1l0NlotU0xhcGEtZW1FdlB6T1czUHhNeDBuSmRhYVROWGpIWTJBcTJ3elpxSmVYQ1R1Nmh4eEtvalBkWXlBdlIwTDR0alEzNjFJOEc0SGo2UTYwQ3hlSWQxd3hWRmxEcFhkVm5lQVFfNnlVYzRLdkFTcWtuaVdSM1RqQ2g5X3NUUXJsV29QU2lVOFd5ZFJOTUhrdVBuUQ?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "글로벌 이슈",
+      "title": "OpenAI·Anthropic의 엔터프라이즈 AI 공세 — IT 서비스 기업들 새로운 위협 직면",
+      "body": "Business Standard 보도에 따르면, **OpenAI와 Anthropic**이 직접 기업 고객을 상대로 엔터프라이즈 AI 솔루션을 공급하는 움직임을 강화하면서 전통적인 IT 서비스 기업(SI, 아웃소싱 업체)들이 **신규 경쟁 위협**에 노출되고 있다. 이들 AI 기업은 자체 API·에이전트 플랫폼으로 기업의 업무 자동화를 직접 담당하려 하고 있어, 기존 미들맨 역할을 해온 IT 서비스 기업들의 수익 모델이 흔들릴 수 있다는 분석이다. 특히 **코딩·문서 처리·고객 응대** 등 반복적이고 정형화된 업무 영역부터 침투가 빠르게 이뤄지고 있다.",
+      "insight": "AI 원천 기술 보유 기업이 최종 고객까지 직접 공략하는 '수직 통합' 전략은 기존 IT 서비스 생태계의 구조를 근본적으로 뒤흔든다. SI·아웃소싱 기업들은 단순 구현 역량만으로는 차별화가 어려워지며, 산업별 도메인 지식·현장 레퍼런스·고객 관계를 무기로 AI를 '통합·운영'하는 역할로 빠르게 포지셔닝을 전환해야 한다. 도메인 특화 AI 솔루션을 보유한 기업일수록 이 위협에서 상대적으로 자유롭다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[리스크]",
+      "isu_insight": "OpenAI·Anthropic의 엔터프라이즈 직판 확대는 이수시스템에게도 중장기 경쟁 압력이다. 그러나 이수시스템은 HR(500+ 레퍼런스)·ERP(SAP 파트너)·안전 등 도메인 특화 솔루션과 고객 관계를 보유하고 있어, 범용 AI API와 경쟁하기보다 '업종별 규정 준수·현장 데이터 연동·기존 시스템 통합'을 묶은 패키지로 포지셔닝하는 전략이 유효하다. 특히 WORKUP에 HR 규정·취업규칙 기반 RAG를 얹는 방식은 OpenAI 직판으로 대체하기 어렵다.",
+      "source": "Business Standard",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQREltWll6MTNoeVpscW5jWDJfUzMyNUlNUFRKRG9jSy1HeWxveWV5LV9kRmlfeGYtVXlTRWFCSzk0c09pcXQ0M2J2UGV0S0dvMXB1TFlIMUFraDlIU3I0U3I4YllSTjZNTWg5QlQtT1ljNUJXcEJUSmdIWnNkMkZfV05IUzQ2XzBJU3dEblhySXUyb3gydi1vSnBkbEFyb0pKLWdYUk5OTEh5YVB6LWVCRXRTQ2lickIxaFB5ak5xVDVBQ2ktMFBhbW1vV1NpLWNGWDZCMdIB1AFBVV95cUxQREltWll6MTNoeVpscW5jWDJfUzMyNUlNUFRKRG9jSy1HeWxveWV5LV9kRmlfeGYtVXlTRWFCSzk0c09pcXQ0M2J2UGV0S0dvMXB1TFlIMUFraDlIU3I0U3I4YllSTjZNTWg5QlQtT1ljNUJXcEJUSmdIWnNkMkZfV05IUzQ2XzBJU3dEblhySXUyb3gydi1vSnBkbEFyb0pKLWdYUk5OTEh5YVB6LWVCRXRTQ2lickIxaFB5ak5xVDVBQ2ktMFBhbW1vV1NpLWNGWDZCMQ?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "산업 동향",
+      "title": "AI EXPO KOREA 2026 성료 — '걷고 움직이는 AI', 한국 로봇·AI 융합의 현주소",
+      "body": "**제9회 국제인공지능산업대전(AI EXPO KOREA 2026)**이 성황리에 마무리됐다. 올해 대전의 핵심 화두는 **'피지컬 AI(Embodied AI)'** — 단순 소프트웨어를 넘어 실제로 걷고, 움직이며, 물리 세계에서 행동하는 AI 로봇이었다. 국내외 주요 기업들이 **휴머노이드 로봇, 산업용 AI 자율 로봇, AI 기반 스마트 팩토리** 솔루션을 선보이며 AI 혁신의 새로운 정점을 찍었다는 평가다. 중국의 구체화된 로봇 산업 육성 전략과 맞물려, 한국도 AI·로봇 융합 생태계 경쟁에 본격 뛰어든 모습이다.",
+      "insight": "피지컬 AI·로봇의 급부상은 AI가 디지털 세계를 넘어 제조·물류·건설 현장의 물리적 노동까지 대체하는 단계로 진입하고 있음을 보여준다. 국내 제조·건설 기업들은 스마트 팩토리·현장 자동화 투자를 가속화할 것이며, 이에 따라 현장 안전관리·IoT 연동·데이터 수집 인프라 수요도 동반 상승할 전망이다. 기업들은 AI 로봇 도입 전후로 현장 인력 재배치·안전 규정 재설계 등 HR·안전 관리 체계 전반을 재정비해야 하는 과제를 안게 된다.",
+      "isu_area": "안전 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "AI 로봇·스마트 팩토리 도입이 확산될수록 현장 안전관리 솔루션 수요가 함께 증가한다. 이수시스템의 **Smart & Safety**와 **BizPTT(영상·음성 스마트 무전기)**는 AI 로봇이 투입되는 제조·건설 현장의 혼재 작업 안전관리 도구로 포지셔닝 가능하다. AI EXPO에 참가한 제조·건설 기업들을 대상으로 '로봇 도입 후 인간-로봇 혼재 작업 안전 솔루션' 제안 영업을 선제적으로 전개할 시점이다.",
+      "source": "인공지능신문",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1QRUhMeVdEZUNSVzhSLUFLeUkxR1F6NWJXV0w3U0VHVFNmMGVNY3RmZ21nV1dPX3h1bG8zQ0NHeXhId2JBdzl6ZzBOX0FMVm5Dc0xoQVZhZVEzTjQwOFlDYTNmcngxUUk?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**애플 iOS 27의 멀티 AI 모델 개방**은 스마트폰을 AI 플랫폼 허브로 만들며, 기업 모바일 환경의 AI 거버넌스 정책 재정비를 촉구한다.",
+    "맥킨지 보고서가 확인한 **HR·고객서비스 분야 AI 내재화 가속**은 SaaS HR 솔루션의 AI 기능 통합 여부가 고객 선택의 핵심 기준이 됨을 의미한다.",
+    "OpenAI·Anthropic의 엔터프라이즈 직판 확대와 메타의 인재 쟁탈전은 **도메인 특화 솔루션과 고객 관계를 보유한 기업**이 생존 경쟁에서 유리하다는 사실을 재확인시켜 준다."
+  ],
+  "isu_summary": "이번 주 AI 뉴스는 이수시스템에 기회와 위협을 동시에 제시한다. 맥킨지 보고서와 AI EXPO 결과는 HR·현장 안전 분야의 AI 수요가 구체화되고 있음을 보여주며, WORKUP에 HR AI Package를 통합 제안하고 Smart & Safety를 스마트 팩토리 안전 솔루션으로 포지셔닝하는 영업 기회가 열리고 있다. 반면 OpenAI·Anthropic의 엔터프라이즈 직판 확대는 중장기 경쟁 압력으로 작용하므로, 범용 AI가 대체하기 어려운 '도메인 규정 준수 + 기존 시스템 통합 + 현장 레퍼런스'의 조합을 전면에 내세우는 차별화 전략이 시급하다."
+}
