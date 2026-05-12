@@ -1,0 +1,72 @@
+{
+  "date": "2026.05.13 (수)",
+  "one_liner": "Claude 128% 급성장으로 엔터프라이즈 AI 판도 재편, 한국 금융위는 2조 원 투자로 'K-엔비디아' 육성 선언",
+  "news": [
+    {
+      "number": 1,
+      "category": "산업 동향",
+      "title": "엔터프라이즈 AI 경쟁, Claude 128% 폭풍 성장…OpenAI는 오히려 8% 역성장",
+      "body": "기업 시장에서 AI 모델 점유율 지각변동이 일어나고 있다. SaaStr 분석에 따르면 **Anthropic의 Claude**는 엔터프라이즈 채택률이 전년 대비 **128% 급증**했고, Google Gemini도 **48% 성장**했다. 반면 시장 선도자였던 **OpenAI는 8% 역성장**을 기록했으며, Elon Musk의 Grok은 여전히 미미한 수준에 머물고 있다.\n\n이 같은 흐름은 기업들이 단순 챗봇 수준을 넘어 안전성·비용·통합 편의성을 기준으로 AI 파트너를 선별하기 시작했음을 보여준다. Claude의 강세는 Anthropic의 안전 중심 브랜딩과 API 유연성이 기업 CTO들에게 어필한 결과로 분석된다.",
+      "insight": "엔터프라이즈 AI 시장은 '브랜드 인지도'보다 '실무 적합성'으로 경쟁 구도가 재편되고 있다. 특정 모델에 종속되지 않고 멀티 LLM 전략을 취하는 기업이 유리해지며, AI 통합 솔루션 제공자에게 오히려 기회가 열리는 국면이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "Claude·Gemini 등 다양한 LLM 선택지가 늘어날수록, 이수시스템의 RAG 기반 챗봇 및 AI 플랫폼이 '특정 모델에 종속되지 않는 기업용 AI 허브'로 포지셔닝할 기회가 커진다. WORKUP·Smart HR에 Claude API를 접목하는 방식으로 고객사 제안 경쟁력을 높이는 영업 시나리오를 검토할 시점이다.",
+      "source": "SaaStr",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZU9JVFJRUkppVVhJMWdIZ050ZTFCWnVsTXNnY1BWY2ZZZWNrSzVhWEZ6c1NLS25Rd2gyYTdoVllPRGhSWnRrY0JvekNmdUprSTNIdThmZGJzWF9hTmVoTjJzckhxVjhQR1BsV1dYcnQ0ZXpvRk85UXJMM2hmSEl0bUFLQm82Y0U2Z3BQOV9kUWJGaGlSSm5xeGM4dEkteVY3VXk3YTljaDBia0UxQUJIQ0RUSUo4TnFWeV9MMms0ckY?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "글로벌 이슈",
+      "title": "한국 금융위, AI에 2조 원 투자 선언…'K-엔비디아' 육성 본격화",
+      "body": "한국 금융위원회가 **AI 분야에 2조 원 규모**의 투자 계획을 공식화했다. 금융위원장은 국내 AI 반도체 스타트업 **퓨리오사AI**를 직접 방문해 'K-엔비디아 육성' 의지를 밝혔으며, 금융 규제 샌드박스를 통해 AI 스타트업의 자금 조달 경로도 확대하겠다고 밝혔다.\n\n이번 발표는 미·중 AI 패권 경쟁 속에서 한국 정부가 AI 인프라 자립화에 방점을 찍겠다는 신호탄이다. 금융 자본이 AI 하드웨어·소프트웨어 생태계 전반으로 유입될 경우, 국내 AI 솔루션 기업들의 수혜도 기대된다.",
+      "insight": "정부 주도의 대규모 AI 투자는 국내 AI 생태계 전반의 기반을 강화하고, 공공·금융 섹터의 AI 도입 수요를 단기간에 끌어올리는 촉매제가 된다. AI 솔루션 기업들은 정부 연계 사업 수주 및 금융권 레퍼런스 확보에 적극 나설 필요가 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[정부 사업]",
+      "isu_insight": "금융위의 2조 원 AI 투자는 금융권 고객사를 대상으로 한 이수시스템의 RAG 챗봇·AI 플랫폼 영업에 직접적인 수요 확대 신호다. 특히 HR AI Package 및 AI 이력서 분석 솔루션을 금융사 AI 도입 패키지로 묶어 제안하는 단기 영업 기회로 연결 가능하다.",
+      "source": "조선일보",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRXVmU2RPMWxndDY3WVM1eWpEUTd2MHNvQVFXbFgwR2RpMGxoYkpESS1keUZ3dGVsd2pKMjk5eDhBMkFMd2s2NkRicERYWGhFREQ0ZFhXMU1jOWJfU0pjQ1JsMWZBU1RxSjIwdkpEWjc0WFFhcXhHTTZNUTk3aGtHYnd1X0lrVTJjbnl1ZzdB?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "모델 릴리스",
+      "title": "OpenAI 'Daybreak' 출시: 코드 취약점 자동 탐지·패치하는 보안 AI 에이전트",
+      "body": "OpenAI가 **Daybreak**를 공식 출시했다. 이는 Anthropic의 Claude Mythos에 맞불을 놓는 사이버보안 특화 AI 이니셔티브로, 지난 3월 출시된 **Codex Security AI 에이전트**를 핵심 엔진으로 활용한다. Daybreak는 기업 코드베이스를 분석해 위협 모델을 구성하고, 잠재적 공격 경로를 자동으로 탐지·검증한 뒤 취약점 패치까지 자동화한다.\n\nAI가 **제로데이 취약점을 30분 안에 무기화**할 수 있다는 보안 전문가들의 경고가 나오는 시점에서, OpenAI가 공격 방어에 AI를 역으로 활용하는 전략을 택한 것은 시장에 강한 메시지를 던진다. 기업 보안팀의 AI 에이전트 도입 압박이 한층 높아질 전망이다.",
+      "insight": "AI 기반 사이버 공격이 현실화되면서 보안 AI 시장이 빠르게 형성되고 있다. 기존 보안 솔루션 벤더들은 LLM 기반 자동 탐지 기능을 통합해야 하는 압박을 받게 되며, 전통적인 취약점 공개 90일 주기 같은 업계 관행도 전면 재검토가 불가피하다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "AI 기반 보안 에이전트가 표준화되면, 이수시스템의 기업용 AI 플랫폼에도 보안 점검 자동화 모듈 연계 수요가 생길 수 있다. 단기적으로는 BizPTT나 Smart Plant 등 안전 솔루션 고객사에 AI 보안 리스크 대응 필요성을 환기하는 컨설팅 접근이 유효하다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/928342/openai-daybreak-security-ai"
+    },
+    {
+      "number": 4,
+      "category": "제품 업데이트",
+      "title": "Google, Android 17에 Gemini 전면 탑재…여행 예약·폼 작성·문자 정리까지 AI가 대신",
+      "body": "Google이 I/O 직전 Android 쇼케이스에서 **Android 17**의 AI 기능을 대거 공개했다. **Gemini**가 Chrome, 자동완성, 앱 내부까지 깊숙이 통합되며, AI 에이전트가 여행 예약·폼 자동 입력·문자 메시지 정리 같은 실생활 작업을 대신 처리한다. 또한 **iOS 27**에서는 Apple Intelligence의 기반 모델을 사용자가 직접 선택할 수 있게 되는 것으로 알려져, 모바일 AI 주도권 경쟁이 OS 레벨로 확대되고 있다.\n\nGoogle이 Apple의 AI 재부팅보다 앞서 Gemini를 Android 생태계의 중심에 놓으려는 속도전을 펼치는 양상이다. 이에 따라 스마트폰은 단순 커뮤니케이션 도구를 넘어 **개인 AI 에이전트 단말**로 전환되는 흐름이 가속화되고 있다.",
+      "insight": "모바일 OS 수준에서 AI 에이전트가 내재화되면, 기업용 앱·HR·ERP 솔루션도 모바일 AI 인터페이스와의 연동을 고려해야 하는 시대가 된다. 사용자들이 AI 자동화에 익숙해질수록 기업 솔루션에도 동급의 자동화를 기대하는 수요가 높아질 것이다.",
+      "isu_area": "HR 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "모바일 AI 에이전트가 일상화되면 직원들의 HR 업무 인터페이스 기대치도 높아진다. HR-Tong 및 WORKUP 모바일 앱에 Gemini API 연동을 통한 자연어 근태 조회·휴가 신청 자동화 기능을 로드맵에 반영하면 제품 경쟁력을 높일 수 있다.",
+      "source": "the-decoder.com",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPZlk0TE9PbUlwa21uZXZkOVVIRjllcV9sZGJSZEJHNkhIMlFSakJlMW9nV2tORl8tVnFSNk13OFFGRE5TR3NVRnZFTE1lbDcxdHlQY0ZPRFlPY1dkQWpxbDNlMWthOVJBcUs2andNbWpwQ3FxU0c5aHR0S0Q2RGwzMm00VF9vaENzM29OSVZzRkhYU0FVRzA4c2dCbXQ?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "일자리·사회",
+      "title": "McKinsey 보고서: AI, 직장인 업무 방식 실질적으로 바꿨다…생산성·불안감 동시 상승",
+      "body": "McKinsey가 발표한 '2025 직장 내 AI 보고서'에 따르면, 응답 기업의 상당수에서 AI 도입 후 **업무 생산성이 실질적으로 향상**된 반면, 직원들의 직업 불안감도 동반 상승한 것으로 나타났다. 특히 반복적 문서 작업, 데이터 정리, 이메일 처리 분야에서 AI 활용이 빠르게 확산됐으며, **인사·HR 부서**가 AI 도입의 핵심 관문 역할을 맡고 있다는 점이 부각됐다.\n\n한편 Microsoft 연구진은 'LLM은 신뢰하기 어려운 대리인'이라며 업무 문서를 AI에게 무단 위임하는 것에 대한 경고를 내놓았다. AI 도입의 성과와 리스크를 동시에 관리하는 **AI 거버넌스 체계** 수립이 기업의 핵심 과제로 부상하고 있다.",
+      "insight": "AI 도입이 생산성 향상과 고용 불안이라는 양면을 동시에 만들어내면서, 기업은 단순 기술 도입을 넘어 변화 관리(Change Management)와 AI 윤리 정책을 함께 설계해야 하는 국면에 접어들었다. HR 부서가 AI 거버넌스의 중심 역할을 맡게 되는 흐름은 HR 솔루션 시장의 구조적 변화를 의미한다.",
+      "isu_area": "HR 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "McKinsey 보고서가 HR 부서를 AI 도입의 핵심 관문으로 지목한 것은 이수시스템에 직접적인 영업 기회다. WORKUP·Smart HR 고객사를 대상으로 'AI 거버넌스 내재화 HR 솔루션' 패키지—AI 이력서 분석, HR AI Package, 직원 챗봇 통합—를 묶어 제안하면 기존 레퍼런스 500개사 기반의 교차 영업이 가능하다.",
+      "source": "McKinsey & Company",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQNHluenp6NE4teVg3bTJiWG9VZk81dDQwcDBJcmVJWlBHdWhIYWRSYTNWX052aHVZdjhfdmxXNk9mTENURGRzdURmMExpTm5VazdfTWZpcUxTV21TcThJbHc2cFluMmRjMXdVeE80ZDhBR0JUWUhJcHJiX2Rva1lGT2tfMDNEOHZzRkJwSUpoM3FwZjh1RU56aXcxclFqNnRyVkRBVkJIbUkyaloxWGpscjJTZ2hYVkNxX0g2d2liUm41MlhaZDQwcl9JTlFtcWVGd3d0Vzg5V3Y?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**Claude 128% 성장 vs OpenAI 8% 역성장**: 엔터프라이즈 AI 시장은 이미 다극 체제로 재편됐고, 멀티 LLM 전략이 기업의 표준 접근법이 되고 있다.",
+    "**한국 금융위 2조 원 AI 투자**: 공공·금융 섹터의 AI 도입 수요가 정책 자금과 맞물려 단기간에 폭발할 수 있는 환경이 만들어지고 있다.",
+    "**모바일 OS부터 기업 HR까지**: AI 에이전트가 일상 도구에 내재화될수록, 기업 솔루션도 동급의 자동화·자연어 인터페이스를 제공하지 못하면 도태될 위험이 커진다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심은 세 가지 기회 신호로 압축된다. 첫째, Claude·Gemini 등 LLM 다변화로 멀티 모델 통합 플랫폼 수요가 커지고 있어 이수시스템의 기업용 AI 플랫폼·RAG 챗봇이 '모델 독립적 AI 허브'로 포지셔닝할 적기다. 둘째, 한국 금융위의 2조 원 AI 투자 선언은 금융·공공 고객사 대상의 단기 영업 파이프라인을 넓힐 직접적인 정책 모멘텀이다. 셋째, McKinsey 보고서가 확인한 'HR 부서 = AI 도입 관문' 트렌드는 WORKUP·Smart HR에 AI 패키지를 번들링해 기존 500개 레퍼런스 고객사에 교차 제안하는 가장 현실적인 성장 경로를 가리키고 있다."
+}
