@@ -1,0 +1,72 @@
+{
+  "date": "2026.05.15 (금)",
+  "one_liner": "ChatGPT 점유율 급락·북한 AI 해킹·SKT 국방 AI 동맹까지, AI 패권 경쟁이 기업·국가 가릴 것 없이 전방위로 확산되는 하루",
+  "news": [
+    {
+      "number": 1,
+      "category": "산업 동향",
+      "title": "ChatGPT 점유율 1년 만에 78%→54%로 급락, Gemini는 3배 성장",
+      "body": "글로벌 AI 챗봇 시장에서 **ChatGPT의 웹 트래픽 점유율이 1년 새 78%에서 54%로 24%p 급락**한 것으로 나타났다. 반면 Google Gemini는 같은 기간 점유율이 3배 이상 늘며 빠르게 추격 중이다. Anthropic Claude 역시 엔터프라이즈 시장에서 강세를 보이며 'Claude가 기업용 AI 레이스에서 앞서고 있다'는 분석이 나왔다. OpenAI가 Apple과의 ChatGPT 통합 계약 이행 문제로 법적 대응까지 검토 중인 상황도 브랜드 이미지에 부담이 되고 있다.",
+      "insight": "AI 챗봇 시장의 패권이 단일 플레이어에서 다수 경쟁자 구도로 빠르게 재편되고 있다. 기업 고객들은 이제 OpenAI 단독 의존 대신 Gemini·Claude 등 복수 모델을 비교·혼합 사용하는 '멀티 LLM 전략'을 채택할 가능성이 높다. 이는 특정 모델에 종속되지 않는 중립적 AI 플랫폼과 통합 게이트웨이 솔루션의 수요를 크게 높이는 신호다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "기업 고객이 단일 LLM 대신 복수 모델을 병행 사용하는 흐름은, 이수시스템의 RAG 기반 챗봇 및 AI 플랫폼이 특정 모델에 종속되지 않는 '모델 중립적 구조'임을 영업 현장에서 강조할 수 있는 좋은 타이밍이다. WORKUP·Smart HR 연동 챗봇 제안 시 'OpenAI·Claude·Gemini 중 고객사 정책에 맞는 모델 선택 가능'이라는 유연성을 차별점으로 내세울 수 있다.",
+      "source": "the-decoder.com",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOREltNkptUERqakVVUFF5ZkxlRUUwNUpucmpHQ2wycGswVDFfUko1Rjg4U1E4WUptb0FXeFRHQWc4b3huaThpY21mMjV6NUZySDBCS1dNOWFmT1hRdHoyWVpIWEhWQ3B4LTFXYnVHRFc4TC1vMUlEUTB4Snlwd1ZMRUhpdHdkekJ1QkpMRVVuRnJuWWhMcDdHMklOeUJXbjZsdk5hRk9xdUpxWmxrcHdmRnI4SVJFV2k1QzRrU3h3?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "글로벌 이슈",
+      "title": "북한 해킹 조직 킴수키, AI로 악성코드 만들었다…공무원 인증서 탈취 시도",
+      "body": "국내 보안 당국에 따르면 **북한 해킹 조직 킴수키(Kimsuky)가 LLM을 활용해 악성코드를 개발한 정황**이 포착됐다. 해당 조직은 AI를 이용해 공무원 인증서를 탈취하려는 시도를 감행한 것으로 알려졌다. IT조선과 국내 주요 언론은 '이미 AI 해킹이 시작됐다'며 정부 핵심 전산망의 방어 태세를 전면 재점검해야 한다고 경고했다. AI를 활용한 사이버 공격은 기존 악성코드 탐지 체계를 무력화할 수 있어 파급력이 크다.",
+      "insight": "AI가 공격 도구로 활용되기 시작하면서 사이버 보안 위협의 질적 수준이 급격히 높아지고 있다. 국가 지원 해킹 조직이 LLM으로 악성코드를 자동 생성·고도화할 경우, 전통적 시그니처 기반 탐지는 효과를 잃는다. 공공기관과 방산·제조 기업의 보안 솔루션 고도화 수요가 단기간 내 급증할 것으로 예상되며, AI 기반 이상행위 탐지(Anomaly Detection) 솔루션의 중요성이 부각된다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "킴수키의 AI 악성코드 개발 정황은 이수시스템의 주요 고객군인 공공·제조·건설 분야에 즉각적인 보안 강화 수요를 만든다. 이수시스템의 BizPTT(현장 무전·영상) 및 클라우드 인프라 구축 고객사를 대상으로 AI 기반 이상행위 탐지 솔루션 연계 제안을 검토할 수 있다. 또한 NCP 파트너 역량을 바탕으로 공공기관의 보안 강화 클라우드 마이그레이션 프로젝트 수주 가능성도 있다.",
+      "source": "IT조선",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1Ta3UtS0NMU3prSi1UZG9meWZ3YlhkZ0ZJQVBZd1R6YnhTWEppMk5MbGVrSm5HR09NcVVnVHJETjJwMlFjTTFPYkc1enRKdF9MTkJiQWhZeENhdzVjcDJ4RmVoTjJqTE5CNXhnSmJmRlVZUHBS0gF0QVVfeXFMTVNrdS1LQ0xTemtKLVRkb2Z5ZndiWGRnRklBUFl3VHpieFNYSmkyTkxsZWtKbkdHT01xVWdUckROMnAyUWNNMU9iRzV6dEp0X0xOQmJBaFl4Q2F3NWNwMnhGZWhOMmpMTkI1eGdKYmZGVVlQcFI?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "산업 동향",
+      "title": "SKT·국방부 'AI 동맹' 체결…국산 소버린 AI로 군 디지털 전환 가속",
+      "body": "SK텔레콤과 국방부가 **'원팀'을 구성해 군 AI 전환(AX) 사업을 본격화**한다. SKT의 소버린 AI(자국 주권 AI) 기술을 국방 시스템에 접목하고, 독자 파운데이션 모델(독파모)을 공공·국방 영역에 투입하는 계획도 함께 추진된다. 또한 AI를 활용한 국방 R&D 예산 수립과 방산 디지털 주권 강화가 핵심 의제로 거론됐다. 이번 협력은 K-방산의 AI 경쟁력 제고와 국방 데이터 보호를 동시에 노리는 전략으로 평가된다.",
+      "insight": "정부와 통신 대기업이 손잡고 국방 AI 전환에 나선 것은 AI가 안보 인프라의 핵심 요소로 격상됐음을 의미한다. 소버린 AI 개념이 공공·국방 영역에 본격 적용되면 외산 모델 의존도를 낮추는 '국산 AI 솔루션 우대' 기조가 강화될 수 있다. 이는 공공 IT 시장에서 국산 AI 솔루션 업체들에게 대형 정부 사업 참여 기회가 열리는 신호로 해석된다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[정부 사업]",
+      "isu_insight": "국방 AI 전환 흐름은 이수시스템의 RAG 기반 챗봇·AI 플랫폼을 공공·국방 고객사에 제안할 수 있는 직접적 기회다. 특히 Smart & Safety(현장 안전관리)와 BizPTT(음성·영상 스마트 무전)는 군·공공기관 현장 적용 레퍼런스로 연결될 수 있으며, NCP 공식 파트너 지위를 활용한 국방 클라우드 인프라 수주 가능성도 검토할 만하다. 2027년 공공 모의해킹 의무화 등 보안 규제 강화와 맞물려 공공 영업 파이프라인 확대를 적극 추진할 시점이다.",
+      "source": "네이트 / aju press",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5QMGV5VENEZTQ4dEZWa3p2eUJmWW5yUXM5MnNrY0tsY0hid0k2akNrbnVOclF5YXBjNnVCcUdhVGpGbnNZWmZramQ3a3B6dDZ5bFFZ?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "제품 업데이트",
+      "title": "Microsoft, 사내 Claude Code 라이선스 전격 취소…코딩 AI 전쟁의 내부 균열",
+      "body": "Microsoft가 지난 12월부터 사내 개발자 수천 명에게 제공하던 **Anthropic Claude Code 라이선스를 돌연 취소**하기 시작했다. Claude Code는 PM·디자이너 등 비개발직군의 코딩 입문을 지원하며 높은 호응을 얻었으나, Microsoft는 자사 AI 코딩 전략 재조정의 일환으로 이 결정을 내린 것으로 알려졌다. 같은 날 OpenAI는 모바일 ChatGPT 앱에 **Codex 기능을 통합**하며 코딩 AI 경쟁에서 반격에 나섰다.",
+      "insight": "빅테크 내부에서도 코딩 AI 도구의 선택과 집중이 시작됐다는 점이 주목된다. 외부 AI 서비스에 대한 라이선스 의존이 단기간에 중단될 수 있다는 사실은, 기업 AI 도입 시 내재화(in-house) 또는 특정 플랫폼 종속 리스크 관리가 얼마나 중요한지를 보여준다. AI 코딩 도구 시장은 향후 몇 개월 내 OpenAI·Anthropic·Google 간 치열한 3파전으로 재편될 가능성이 높다.",
+      "isu_area": "디지털서비스 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "코딩 AI 도구의 기업 내 확산과 재편 흐름은 이수시스템의 RPA 사업과 연관된다. AI 코딩 도구가 단순 반복 업무 자동화를 넘어 RPA 영역을 잠식할 수 있는 중장기 리스크로 작용할 수 있으므로, RPA 솔루션에 AI 코딩·자동화 기능을 접목하는 제품 강화 방향을 내부적으로 검토할 필요가 있다. 당장 영업 타격은 제한적이나 2~3년 내 제품 포지셔닝 재정비가 필요한 영역이다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/930447/microsoft-claude-code-discontinued-notepad"
+    },
+    {
+      "number": 5,
+      "category": "일자리·사회",
+      "title": "맥킨지 보고서: AI, 직장에서 이미 현실…업무 방식 전면 재편 중",
+      "body": "맥킨지앤드컴퍼니가 발표한 '2025 직장 내 AI 보고서'에서 **AI가 단순 자동화를 넘어 지식 노동자의 핵심 업무 방식 자체를 바꾸고 있다**고 분석했다. 보고서는 AI 도입이 빠른 기업과 그렇지 않은 기업 간 생산성 격차가 빠르게 벌어지고 있다고 경고했다. Visa·Intuit·Dropbox·Upwork 등 글로벌 기업 임원들도 'AI 도입에서 가장 많이 틀리는 것은 기술이 아닌 조직 변화 관리'라고 강조했다.",
+      "insight": "AI 도입의 성패는 기술 선택이 아니라 조직·인재 변화 관리에 달려 있다는 컨센서스가 경영계에서 굳어지고 있다. 이는 AI 솔루션을 단독으로 판매하는 것보다 조직 변화 컨설팅과 묶어 제공하는 번들 전략이 더 효과적임을 의미한다. HR 시스템과 AI 솔루션을 함께 보유한 기업이 '기술+조직 변화' 패키지를 제안할 수 있는 독보적 위치에 놓이게 된다.",
+      "isu_area": "HR 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "AI 도입의 핵심이 '조직 변화 관리'라는 맥킨지의 분석은, HR 시스템과 AI를 동시에 보유한 이수시스템의 강점을 부각할 수 있는 근거다. WORKUP·Smart HR 고객사를 대상으로 'AI 도입 전후 조직 성과 추적' 기능을 HR AI Package에 추가하거나, AI 이력서 분석·HR 자동화 패키지를 조직 변화 컨설팅과 묶어 제안하는 영업 전략을 구체화할 시점이다. 특히 AI 도입을 검토 중인 제조·건설 고객사에 'AI+HR 통합 전환 패키지'로 접근하면 경쟁사 대비 차별화가 가능하다.",
+      "source": "McKinsey & Company",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQNHluenp6NE4teVg3bTJiWG9VZk81dDQwcDBJcmVJWlBHdWhIYWRSYTNWX052aHVZdjhfdmxXNk9mTENURGRzdURmMExpTm5VazdfTWZpcUxTV21TcThJbHc2cFluMmRjMXdVeE80ZDhBR0JUWUhJcHJiX2Rva1lGT2tfMDNEOHZzRkJwSUpoM3FwZjh1RU56aXcxclFqNnRyVkRBVkJIbUkyaloxWGpscjJTZ2hYVkNxX0g2d2liUm41MlhaZDQwcl9JTlFtcWVGd3d0Vzg5V3Y?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**ChatGPT 점유율이 1년 새 24%p 급락**하며 AI 챗봇 시장이 다자 경쟁 구도로 전환 중 — 기업은 단일 모델 의존 탈피, 멀티 LLM 전략이 표준이 된다.",
+    "**북한 킴수키의 AI 악성코드 개발**은 AI가 사이버 공격 도구로 실전 투입됐음을 의미 — 공공·기업 보안 체계 전면 재점검이 시급하다.",
+    "맥킨지 보고서가 확인한 핵심 교훈: **AI 도입 성패는 기술이 아닌 조직 변화 관리**에 달려 있으며, HR과 AI를 함께 제공할 수 있는 플레이어가 유리하다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심은 AI 경쟁이 기술 우위에서 '플랫폼 중립성·보안·조직 변화 관리'로 무게중심이 이동하고 있다는 점이다. 이수시스템은 RAG 기반 모델 중립적 AI 플랫폼, HR 솔루션 500+ 레퍼런스, NCP 파트너 인프라라는 세 가지 자산을 연계해, AI 도입을 검토하는 제조·공공·건설 고객사에 '기술+HR+보안 인프라 통합 전환 패키지'를 제안하는 영업 전략을 구체화할 최적의 타이밍이다. 특히 북한발 AI 해킹 위협과 SKT-국방부 AI 동맹은 공공 보안 및 국방 영역에서 국산 AI 솔루션 수요를 급격히 높일 것으로 예상되므로, 관련 공공 사업 파이프라인을 선제적으로 발굴해야 한다."
+}
