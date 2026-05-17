@@ -1,0 +1,72 @@
+{
+  "date": "2026.05.18 (월)",
+  "one_liner": "Claude 128% 급등·Gemini 약진·OpenAI 하락, 엔터프라이즈 AI 판도가 바뀌는 중",
+  "news": [
+    {
+      "number": 1,
+      "category": "산업 동향",
+      "title": "엔터프라이즈 AI 점유율 지각변동: Claude +128%, Gemini +48%, OpenAI -8%",
+      "body": "SaaStr의 최신 분석에 따르면 기업용 AI 시장에서 **Anthropic의 Claude**가 전년 대비 **128% 성장**하며 가장 빠른 상승세를 보이고 있다. **Google Gemini**도 48% 성장하며 뒤를 잇는 반면, 한때 시장을 주도하던 **OpenAI는 8% 하락**해 점유율이 처음으로 역성장을 기록했다. Elon Musk의 Grok은 여전히 무시할 수 있는 수준(rounding error)으로 엔터프라이즈 시장 진입에 실패하고 있다. 이 수치는 API 호출량, 기업 계약 건수, 개발자 채택률을 복합적으로 반영한 것으로, 단순 소비자 인지도가 아닌 실제 업무 투입 비중을 나타낸다.",
+      "insight": "ChatGPT 브랜드 파워로 독주하던 OpenAI의 엔터프라이즈 점유율이 처음으로 하락 전환한 것은 시장이 '브랜드 선택'에서 '성능·안전성·비용 기반 선택'으로 전환됨을 의미한다. Claude의 급성장은 코딩·분석 업무에서의 우수한 추론 능력과 Anthropic의 안전성 철학이 기업 구매 담당자에게 어필하고 있기 때문으로 분석된다. 기업들이 단일 LLM에서 멀티 모델 전략으로 전환하는 흐름도 가속화되고 있어, LLM API 공급사 선택이 IT 아키텍처의 핵심 의사결정 사안으로 부상하고 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "이수시스템의 RAG 기반 챗봇과 HR AI Package는 특정 LLM에 종속되지 않는 멀티 모델 아키텍처로 설계될 필요가 있다. Claude API 비중을 높이거나, 고객사 요청에 따라 Gemini/Claude를 선택적으로 연결하는 'LLM 스위칭' 기능을 WORKUP이나 기업용 챗봇에 탑재하면 경쟁 차별점이 될 수 있다. 특히 제조·건설 고객사 대상 영업 시 '최신 고성능 모델 유연 적용'을 세일즈 포인트로 활용할 수 있다.",
+      "source": "SaaStr",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZU9JVFJRUkppVVhJMWdIZ050ZTFCWnVsTXNnY1BWY2ZZZWNrSzVhWEZ6c1NLS25Rd2gyYTdoVllPRGhSWnRrY0JvekNmdUprSTNIdThmZGJzWF9hTmVoTjJzckhxVjhQR1BsV1dYcnQ0ZXpvRk85UXJMM2hmSEl0bUFLQm82Y0U2Z3BQOV9kUWJGaGlSSm5xeGM4dEkteVY3VXk3YTljaDBia0UxQUJIQ0RUSUo4TnFWeV9MMms0ckY?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "모델 릴리스",
+      "title": "Google I/O 앞두고 Gemini 3.1 Pro 출시…GPT-5.5 맞불 전략",
+      "body": "Google이 연례 개발자 행사 **Google I/O 2026** 키노트를 이틀 앞두고 **Gemini 3.1 Pro**를 전격 공개했다. 벤치마크 성능은 GPT-5.5와 Anthropic의 Claude Mythos 사이에 위치하는 것으로 평가되며, 특히 **100만 토큰 컨텍스트 윈도우**를 유지하면서도 응답 속도를 크게 개선한 것이 특징이다. Bank of America는 이번 I/O를 앞두고 Google 목표 주가를 상향 조정했으며, Gemini 3.2 Flash-Lite-Live 모델도 Google Cloud에서 유출 확인돼 경량 실시간 모델 라인업도 확충되고 있다. Google은 이번 I/O에서 AI 검색, 에이전트, 멀티모달 기능 등 추가 발표를 예고하고 있다.",
+      "insight": "Google이 I/O 직전 모델을 선공개하는 전략은 OpenAI의 GPT-5.5 출시 모멘텀을 상쇄하기 위한 것으로, AI 모델 경쟁이 '분기 단위 릴리스'에서 '상시 경쟁 체제'로 전환됐음을 보여준다. 100만 토큰 컨텍스트 유지+속도 개선 조합은 기업용 장문서 처리, 코드 리뷰, RAG 파이프라인 등 실무 활용도를 직접적으로 높이는 방향이다. 빅테크 간 AI 모델 출시 경쟁이 격화될수록 API 단가 하락과 성능 상향 평준화가 빨라져, 솔루션 기업들의 도입 비용 부담은 줄어들 전망이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "Gemini 3.1 Pro의 100만 토큰 컨텍스트는 이수시스템의 RAG 기반 챗봇에서 사규·계약서·매뉴얼 등 대용량 문서를 청크 분할 없이 직접 처리할 수 있는 가능성을 열어준다. Google Cloud(NCP 파트너십과 병행 가능) 기반으로 Gemini API를 HR AI Package에 연동하는 PoC를 선제적으로 준비해, 제조·금융 고객사에 '최신 모델 즉시 적용' 제안서를 구성할 수 있는 시점이다.",
+      "source": "Mashable",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBCY0xTWHFneDdBTTBhNkFLT3NEdlZBMGR3Y1RKdTVKWTREZmxaaV9ZeEduVjFNWWg0WlNBWTltSkhHV19rMHZiSnQyMm1UZWVxZ3V4UG1PMU1tcDRlTGlPQkwydzhhV1pNbGtsQUVzNDBhbzgxUGtVZVpR?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "모델 릴리스",
+      "title": "DeepSeek, 신규 모델 공개…'OpenAI·Anthropic 수준에 근접' 주장",
+      "body": "중국 AI 스타트업 **DeepSeek**이 OpenAI 및 Anthropic의 최신 모델에 '거의 근접(nearly match)'한다고 주장하는 **신규 AI 모델**을 공개했다. DeepSeek은 올해 초 R1 모델로 글로벌 AI 업계에 충격을 준 이후, 지속적으로 고성능 오픈소스 계열 모델을 출시하며 미국 빅테크의 독주를 견제하고 있다. 이번 모델 역시 상대적으로 **낮은 학습 비용**과 **오픈 웨이트 공개** 방식을 유지해 기업들이 자체 인프라에 직접 배포할 수 있는 옵션을 제공한다. 미-중 AI 기술 격차가 빠르게 좁혀지고 있다는 평가 속에, 미국 정부의 반도체 수출 규제 실효성에 의문을 제기하는 목소리도 커지고 있다.",
+      "insight": "DeepSeek의 연속 출시는 '고비용 클로즈드 모델'이 아닌 '저비용 오픈 웨이트 모델'로도 최전선 성능에 도달할 수 있다는 것을 반복해서 증명하고 있다. 이는 기업들이 월 구독료 기반 API 대신 자체 호스팅 모델로 전환할 유인을 높이며, 클라우드 AI API 시장 전체의 가격 압력으로 작용한다. 동시에 AI 기술 패권 경쟁이 단순한 벤치마크 수치를 넘어 '누가 더 많은 개발자와 기업에 채택되는가'의 생태계 전쟁으로 확장되고 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "DeepSeek 오픈 웨이트 모델은 이수시스템이 고객사 온프레미스 환경에 AI 챗봇을 구축할 때 라이선스 비용 없이 활용 가능한 옵션이 된다. 금융·공공 고객처럼 데이터 외부 전송이 민감한 경우, DeepSeek 모델을 내부 서버에 배포하는 '프라이빗 LLM' 구성을 제안하면 클라우드 API 대비 보안·비용 면에서 차별화된 제안이 가능하다. 다만 미-중 지정학 리스크와 보안 감사 이슈는 고객사와 사전 검토가 필요하다.",
+      "source": "MSN",
+      "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxQVU5Ta3diUldOMnFLNk1BTGdzaldPbG1zb1FiOG5adHJ3VTkyLXZkRDhGLVlGbUhIcnhCalloUzlxRjY2TElmTGFXc2l0QVJOSnJOeWlmQXhpbHNPMjJZLWZmeGxpYjl4eGxSaFhfYklLT0R1RmhxeHB5VVZpOUZWS1hwTWpXQzZrOXBncVJOb2Z0emIyeW5aLXEteWhJcHRfMkR0Q2wyS3BTWW92eURKQjlrQzR1dFdaY1RnVHliZlRYXzRZNlVHVF9yOWFoNUdfTGQxZXFuZHBtaGE4NEVFQ0JFV1lmblplSVdSMG1FaU5LdFRwN1RBcjRySUdhMGxEVHA2eHZOaGhMN0huc0tEck9yUHdzVkdHb0JkYkNR?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "일자리·사회",
+      "title": "졸업식서 AI 찬양하던 에릭 슈밋, 취준생들에게 야유 세례 받다",
+      "body": "전 Google CEO **에릭 슈밋**이 애리조나 대학교 졸업식 축사에서 AI의 미래를 찬양하는 발언을 이어가던 중, 졸업생들로부터 **반복적인 야유(boos)**를 받았다. TechCrunch는 '2026년 졸업식 축사에서 AI 얘기는 하지 말라'는 제목의 기사를 통해 이 사건을 조명했으며, AI가 취업 시장을 직격하고 있는 상황에서 기술 낙관론은 오히려 역효과를 낳고 있다고 분석했다. McKinsey의 '2025 직장 내 AI 보고서'도 같은 날 공개돼, AI 도입이 가장 빠른 산업군에서 **화이트칼라 업무의 구조적 감축**이 이미 진행 중임을 확인했다. 이 두 사건은 AI 기술 낙관주의와 현실의 고용 불안 사이의 간극이 사회적 갈등으로 표출되기 시작했음을 상징적으로 보여준다.",
+      "insight": "AI에 대한 일반 대중, 특히 노동시장에 진입하는 세대의 정서가 '기대'에서 '불안과 반감'으로 전환되는 임계점에 도달했다는 신호다. 기업들이 AI 도입을 커뮤니케이션할 때 '효율화' 프레임만 사용하면 내부 저항이 커질 수 있으며, '직원 역량 강화(augmentation)' 프레임을 전면에 내세우는 전략 전환이 필요해지고 있다. AI 도입 속도와 재교육·전환 지원 프로그램의 속도 간 격차가 사회적 갈등의 핵심 변수가 될 전망이다.",
+      "isu_area": "HR 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "AI 도입에 따른 직원 불안감 확산은 역설적으로 HR 솔루션 수요를 키운다. WORKUP에 'AI 업무 영향 대시보드'(직무별 AI 자동화 비율, 재교육 이수 현황 등)나 '리스킬링 계획 관리' 기능을 추가하면, AI 도입을 추진 중인 제조·금융 고객사 HR 담당자에게 '직원 불안 관리 도구'로 포지셔닝할 수 있다. 직원 경험(EX) 개선 트렌드와 연결해 컨설팅 영업의 접점으로 활용 가능하다.",
+      "source": "The Verge / TechCrunch",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/932203/university-of-arizona-students-boo-eric-schmidt-ai-commencement"
+    },
+    {
+      "number": 5,
+      "category": "산업 동향",
+      "title": "K-피지컬 AI, 제조·센서 강점으로 산업현장 선제 적용 유리",
+      "body": "아주경제는 '기로 선 K-피지컬 AI' 시리즈를 통해 한국이 **제조업 기반의 센서·서보모터·구동계 기술**에서 글로벌 경쟁력을 보유하고 있어, 피지컬 AI(로봇·자율기계에 탑재되는 AI) 분야에서 소프트웨어 후발주자임에도 **산업현장 선제 적용**에서 유리한 위치에 있다고 분석했다. 삼성·현대·LG 등 대기업뿐 아니라 중견 제조사들도 스마트 팩토리와 자율 물류 로봇 도입을 가속화하면서, AI와 물리적 하드웨어를 결합하는 수요가 급증하고 있다. 정부도 **AI 로봇 국가전략**을 수립하며 제조 현장의 피지컬 AI 실증 사업에 예산을 집중 투입할 예정이다.",
+      "insight": "피지컬 AI는 순수 소프트웨어 LLM 경쟁과 달리, 도메인 데이터와 현장 인프라를 가진 기업이 유리한 영역이다. 한국 제조업의 하드웨어 강점이 AI 소프트웨어와 결합될 경우, 스마트 팩토리·산업 자동화 분야에서 새로운 한국형 AI 기업의 등장 가능성이 높아진다. 정부 주도 실증 사업이 확대되면서 중견 IT 솔루션 기업들에도 컨소시엄 참여 및 납품 기회가 생겨날 수 있으며, AI+안전+설비 관리를 통합하는 솔루션 수요가 핵심 과제로 부상한다.",
+      "isu_area": "안전 사업",
+      "isu_tag": "[정부 사업]",
+      "isu_insight": "정부의 피지컬 AI 실증 사업 확대는 이수시스템의 Smart Plant(레이저 스캔 기반 플랜트 관리)와 Smart & Safety(산업현장 안전관리)를 AI 기능과 결합해 국책과제 컨소시엄에 참여할 수 있는 기회다. 특히 센서 데이터를 실시간 수집·분석해 이상 징후를 탐지하는 'AI 기반 설비 이상 예측' 기능을 Smart Plant에 탑재하면, 제조·플랜트 고객사 대상 정부 보조금 연계 영업이 가능해진다. BizPTT와 결합한 현장 작업자 AI 안전 알림 시나리오도 차별화 포인트가 될 수 있다.",
+      "source": "아주경제",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE4tc0tQd0VqbjRCQnV4Q2t0REltUDBialJjelNVVFJLaEVmemEwc2hvZUoxdGstZVNzVjI0S09JSkVMbTlWZE1sajRJSDdEZl83RFBDSDlMNHXSAVhBVV95cUxOLXNLUHdFam40QkJ1eENrdERJbVAwYmpSY3pTVVRSS2hFZnphMHNob2VKMXRrLWVTc1YyNEtPSUpFTG05VmRNbGo0SUg3RGZfN0RQQ0g5TDR1?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**엔터프라이즈 AI 판도 이동**: Claude +128%, Gemini +48% vs OpenAI -8% — 브랜드가 아닌 실성능·안전성으로 기업 선택 기준이 바뀌고 있다.",
+    "**모델 가격·성능 평준화 가속**: DeepSeek 오픈소스 + Gemini 경쟁 출시로 LLM API 비용은 계속 하락 중, AI 솔루션 도입 장벽이 낮아진다.",
+    "**AI 반감 정서 확산**: 취업 세대의 AI 불안이 가시화되며, 기업 AI 도입 시 '직원 역량 강화' 프레임과 HR 관리 도구 병행이 필수 과제로 부상한다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심은 엔터프라이즈 AI 시장에서 멀티 모델 경쟁이 본격화되고 있다는 점으로, 이수시스템의 RAG 챗봇·HR AI Package를 특정 LLM에 종속되지 않는 유연한 구조로 발전시키는 것이 단기 제품 과제다. 동시에 K-피지컬 AI 정부 사업 확대는 Smart Plant·Smart Safety를 AI 고도화해 국책 컨소시엄에 진입할 수 있는 중기 기회이며, AI 도입 불안 확산 트렌드는 WORKUP에 직원 역량 관리 기능을 추가해 제조·금융 HR 담당자 영업을 강화하는 접점이 된다."
+}
