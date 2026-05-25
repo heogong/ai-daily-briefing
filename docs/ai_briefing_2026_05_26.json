@@ -1,0 +1,72 @@
+{
+  "date": "2026.05.26 (화)",
+  "one_liner": "구글이 25년 만에 검색창을 바꾸고, 한국은 AI 산업 골든타임을 선언했다",
+  "news": [
+    {
+      "number": 1,
+      "category": "제품 업데이트",
+      "title": "구글, 25년 만에 검색창 전면 개편…AI가 검색의 '기본값'이 되다",
+      "body": "구글이 **25년간 유지해온 검색창 디자인과 작동 방식을 AI 기반으로 전면 교체**했다. 단순 링크 나열 방식에서 벗어나, AI가 질문 의도를 파악해 직접 답변을 생성하는 방식으로 전환된다. 이는 구글 I/O 2026에서 공개된 에이전틱 AI 전략의 핵심으로, Gemini 모델이 검색 전 과정에 통합된다. 단순한 UI 변경이 아닌, 사용자가 정보를 탐색하는 방식 자체가 달라지는 패러다임 전환이다. 구글은 동시에 **Gemini Spark**라는 24시간 클라우드 AI 에이전트도 공개해, 서드파티 앱에서 직접 작업을 실행할 수 있는 기능까지 선보였다.",
+      "insight": "세계 최대 트래픽을 가진 구글 검색이 AI로 재편되면, 기업들의 콘텐츠 전략·SEO·디지털 마케팅 전반이 흔들린다. 검색 광고 시장 구조도 변화가 불가피하며, AI 에이전트가 사용자 대신 태스크를 처리하는 '에이전틱 AI' 시대가 본격화됨을 의미한다. 업무용 SaaS 서비스들은 AI 에이전트와의 연동 여부가 경쟁력을 좌우하는 요소로 부상하게 된다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "구글 Gemini Spark가 서드파티 앱과 연동되는 에이전틱 구조를 채택함에 따라, 이수시스템의 RAG 기반 챗봇과 AI 플랫폼도 외부 AI 에이전트와의 연동 인터페이스(API) 설계를 선제적으로 검토할 필요가 있다. 특히 WORKUP·Smart HR 등 SaaS 제품이 Gemini 에이전트와 연결될 경우 '인사 업무 자동화' 시나리오를 고객사에 제안하는 영업 기회로 활용 가능하다.",
+      "source": "The New York Times",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPVzZ0WC1UelpJRkNTMldfbkcwaW43MDJ3cXh2elVTLVBhUHZBeTFWYWNXT3NHWjlPcFJ5SjZkOTdOZ21BdEJpeFE5NlE4ZUhpQllLcWEtM0RtTlJhdE9yOUdEajRELTR3ZVFpbXBrbVg3cUVVSGFyc1hTRERfZHhUbg?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "산업 동향",
+      "title": "'움직이는 AI'가 산업 질서 재편…GCC 2026, 한국의 AI 골든타임 선언",
+      "body": "국내 최대 AI 컨퍼런스 **GCC 2026**에서 '피지컬 AI(Physical AI)'와 '에이전틱 AI'가 산업 현장의 판도를 바꾸는 핵심 키워드로 부상했다. 단순 텍스트 생성을 넘어 로봇·제조·물류 현장에서 실제로 '움직이고 판단하는 AI'가 산업 질서를 다시 쓰고 있다는 진단이 나왔다. 전문가들은 **한국이 제조업 강점과 AI 기술을 결합할 수 있는 골든타임**이 지금이라고 강조하며, 정부와 기업의 신속한 AI 전환 투자를 촉구했다. 반도체·자동차·조선 등 주력 산업에 AI를 접목하는 '산업 AI' 전략이 국가 경쟁력의 핵심으로 논의됐다.",
+      "insight": "한국 제조업의 AI 전환은 단순한 생산성 향상을 넘어, 글로벌 공급망에서의 경쟁 우위를 결정하는 변수가 됐다. 에이전틱 AI와 피지컬 AI가 현장에 도입될수록, 이를 운영·관리하는 B2B 소프트웨어(ERP, HR, 안전관리 등)의 AI 연동 수요도 폭발적으로 증가할 전망이다. 국내 AI 솔루션 업체들에게는 제조·건설·플랜트 고객사를 대상으로 한 AI 도입 컨설팅 수요가 급증하는 시기다.",
+      "isu_area": "디지털서비스 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "GCC 2026에서 강조된 '제조업 AI 전환' 흐름은 이수시스템의 주요 고객군(제조·건설)과 직결된다. SAP 파트너사로서 ERP와 AI를 결합한 스마트 팩토리 제안 패키지를 기존 고객사에 먼저 제안하고, RPA와 HR AI Package를 묶은 '업무 자동화 번들' 영업을 가속화할 적기다. 특히 건설·플랜트 고객에게는 Smart Plant와 AI 에이전트를 연계한 현장 안전·공정 관리 시나리오가 설득력 있는 제안이 될 수 있다.",
+      "source": "Daum (GCC 2026)",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5samVpVUc3VGlaekFScEJfWVBvdmVHSkZBaERPNlZSOGhCVW9sM0ZISmhJVDMwWFVKcXRpSkFleWRtdUxvQlFZTU9BVHlrWVk?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "모델 릴리스",
+      "title": "DeepSeek V4 Pro, 가격 75% 인하…AI 모델 가격 전쟁 새 국면",
+      "body": "중국 AI 스타트업 DeepSeek이 최신 모델 **V4 Pro의 API 가격을 75% 전격 인하**했다. 이미 저렴한 가격으로 글로벌 시장을 충격에 빠뜨린 DeepSeek이 추가 가격 인하를 단행하며, AI 모델 비용의 '레이스 투 더 바텀(Race to the Bottom)' 흐름이 가속화되고 있다. OpenAI, Anthropic, Google 등 주요 빅테크도 가격 경쟁 압력에서 자유롭지 않으며, 특히 **OpenAI는 현재의 '무제한 플랜' 유지가 어렵다**고 CEO가 직접 언급하는 등 수익 모델 재편에 나서고 있다. AI 추론 비용의 급격한 하락은 기업의 AI 도입 장벽을 낮추는 동시에, AI 서비스 제공 업체들의 수익성을 압박한다.",
+      "insight": "AI 모델 가격의 급격한 하락은 기업용 AI 솔루션 시장의 지형을 바꾼다. 모델 자체보다 '어떻게 기업 업무에 녹여내는가'—즉 통합, 커스터마이징, 보안, 유지보수—가 차별화 요소로 부각된다. 저렴해진 API를 활용해 B2B AI 제품을 개발하는 국내 솔루션 기업들에게는 오히려 원가 경쟁력이 높아지는 기회이기도 하다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "DeepSeek V4 Pro 가격 인하로 LLM API 비용이 낮아지면, 이수시스템의 RAG 기반 챗봇과 HR AI Package의 운영 원가가 절감된다. 비용 부담을 이유로 AI 도입을 미뤄온 중견·중소 제조·건설 고객사에게 '지금이 도입 적기'라는 메시지로 영업 전환점을 만들 수 있다. 다만 저비용 모델 확산으로 경쟁 솔루션도 많아지므로, HR 도메인 특화 데이터와 500개 이상의 레퍼런스를 강조하는 차별화 전략이 병행돼야 한다.",
+      "source": "Dataconomy",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQSG42YV9iZmF5aDBEVlVoQWZneHdFdXhyTHFUX2lQN3JKSGpGeHM1RGRYSlliQWdYeUx0OHU2bk1RMmJfZXJDdDZVa19mTnViaHF4M1ByTlVvOGlhbUlsalNFMk54VFJKMmtoWXY4OE0zS0pTbTZNcFd5TUhpNFRvdjhfRlg?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "글로벌 이슈",
+      "title": "교황 레오 14세 'AI 시대, 인간다움을 지켜라'…AI 군비경쟁·노동 대체 경고",
+      "body": "교황 레오 14세가 첫 번째 공식 교황 문서 **'Magnifica Humanitas'**를 통해 AI 시대의 위험을 정면으로 경고했다. 문서는 AI 기반 자율 무기, AI로 인한 대규모 일자리 소멸, 기술 권력의 집중이 인간의 존엄성을 위협한다고 지적했다. 교황은 **AI 군비 해제(AI Disarmament)**를 촉구하며 각국 정부와 기업이 'AI 윤리'를 선택이 아닌 의무로 받아들여야 한다고 강조했다. 이 선언은 13억 가톨릭 신자를 넘어 전 세계 AI 규제 논의에 영향을 줄 수 있는 상징적 사건으로 평가된다.",
+      "insight": "종교 최고 권위자가 AI 규제를 공식 의제로 삼았다는 사실은, AI 윤리·거버넌스 논의가 기술 커뮤니티를 넘어 사회 전반의 의제로 확산됐음을 보여준다. AI 노동 대체와 자율 무기에 대한 우려가 주류 담론이 됨에 따라, 각국 정부의 AI 규제 입법 속도도 빨라질 가능성이 높다. 기업들은 AI 도입 시 윤리적 영향 평가(AI Impact Assessment)를 내부화해야 하는 압력을 받게 될 것이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "AI 윤리·거버넌스에 대한 사회적 요구가 커질수록, 기업 고객들은 'AI가 인사 결정에 개입할 때의 공정성·투명성'을 점점 더 민감하게 따지게 된다. 이수시스템의 AI 이력서 분석 솔루션은 채용 AI 편향(bias) 이슈에 선제 대응하는 설명 가능성(explainability) 기능을 강조해야 고객 신뢰를 확보할 수 있다. 국내 공공·금융 고객사 대상 제안 시 AI 윤리 준수 체계를 함께 제시하는 것이 차별화 포인트가 될 수 있다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/news/936945/pope-leo-letter-encyclical-ai-anthropic-labor-warfare"
+    },
+    {
+      "number": 5,
+      "category": "산업 동향",
+      "title": "KAIST·강남세브란스, LLM으로 정신과 초진 면담 자동화…의료 AI 새 지평",
+      "body": "**KAIST와 강남세브란스병원 공동 연구진**이 LLM 기반 정신과 초진 면담 지원 시스템을 개발했다. 이 시스템은 환자와 AI가 먼저 대화를 나눠 **30분 이내에 핵심 임상 정보를 수집**하고, 의사는 이를 바탕으로 심층 상담에 집중할 수 있도록 지원한다. '의사 대체'가 아닌 '스마트 보조자' 포지셔닝으로, 인력 부족이 심각한 정신건강 의료 분야의 접근성 문제를 AI로 해소하려는 시도다. 국내 의료 AI 분야에서 실제 임상 환경과 연계된 LLM 적용 사례가 공개된 것은 의미 있는 진전으로 평가된다.",
+      "insight": "의료·헬스케어 분야의 AI 도입이 연구 단계에서 실제 임상 적용 단계로 진입하고 있다. 특히 정신건강 분야처럼 전문 인력이 부족하고 초기 상담 부담이 큰 영역에서, AI가 '1차 스크리닝 도구'로 자리 잡을 경우 제도적 수용 속도가 빠를 수 있다. 이 흐름은 HR·채용·복지 영역에서도 'AI 사전 인터뷰'와 같은 형태로 확장될 가능성을 시사한다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "KAIST·강남세브란스의 LLM 기반 초진 면담 기술은 이수시스템의 AI 이력서 분석 및 채용 자동화 솔루션과 유사한 '사전 대화형 AI 인터뷰' 기능으로 확장 가능한 레퍼런스다. 특히 대규모 채용이 필요한 제조·건설 고객사에 '지원자와 AI가 먼저 대화해 핵심 정보를 추출, 담당자는 최종 면접에 집중'하는 시나리오를 제안하면 HR AI Package의 실질적 가치를 구체적으로 전달할 수 있다.",
+      "source": "AI넷 / 사이언스타임즈",
+      "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFBTYy1vSUpXaG9hQnBQMU9jNGVONUpnVzU0YVpPc3hKS1RoQzZMaTBQTE04aWNudnRBWXlkVW1faVU?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**구글이 25년 만에 검색을 AI로 전면 개편**하며 에이전틱 AI 시대가 본격 개막—모든 B2B SaaS는 AI 에이전트 연동 전략을 지금 당장 준비해야 한다.",
+    "**DeepSeek의 75% 가격 인하**로 AI 모델 비용 장벽이 무너지고 있어, AI 도입을 망설이던 기업들의 결정 시점이 앞당겨질 것이다.",
+    "한국 GCC 2026에서 '**산업 AI 골든타임**'이 선언됐다—제조·건설·플랜트 분야의 AI 전환 수요가 하반기부터 본격화될 전망이다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심은 AI가 '도구'에서 '에이전트'로 진화하는 속도가 예상보다 빠르다는 것이다. 구글의 검색 개편과 DeepSeek 가격 인하가 동시에 일어나며 AI 도입 비용과 진입 장벽이 동시에 낮아지고 있어, 이수시스템이 공략하는 제조·건설·금융 고객사들의 AI 전환 의사결정이 올 하반기 집중될 가능성이 높다. KAIST의 의료 AI 사례와 GCC 2026의 산업 AI 논의는, HR AI Package와 AI 이력서 분석 솔루션을 중심으로 한 '실무 특화 AI' 영업 메시지가 지금 시장에서 가장 설득력 있는 타이밍임을 확인해준다."
+}
