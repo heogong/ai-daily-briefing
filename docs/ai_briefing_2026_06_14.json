@@ -1,0 +1,72 @@
+{
+  "date": "2026.06.14 (일)",
+  "one_liner": "미국 정부가 Anthropic 최신 AI 모델의 해외 접근을 전격 차단하며, AI가 안보 자산으로 분류되는 시대가 열렸다.",
+  "news": [
+    {
+      "number": 1,
+      "category": "글로벌 이슈",
+      "title": "美 정부, Anthropic 신모델 해외 접근 전면 차단 — AI가 '수출통제 품목'이 됐다",
+      "body": "미국 정부가 Anthropic의 최신 모델 **Fable 5**와 **Mythos 5**에 대해 외국 국적자의 접근을 전면 금지하는 행정명령을 내렸다. Anthropic은 명령 즉시 해당 모델을 모든 고객에게 차단했으며, 자사 직원 중 외국 국적자도 예외가 없었다. WSJ 보도에 따르면 이번 조치는 **Amazon CEO 앤디 재시와 백악관 간 논의**, 그리고 Amazon의 사이버보안 연구 보고서가 촉발한 것으로 알려졌다. 출시 후 수일 만에 서비스가 중단된 이례적 사태로, AI 모델이 핵·반도체에 이어 국가 안보 자산으로 다뤄지기 시작했음을 보여준다.",
+      "insight": "이번 사건은 AI 모델이 단순 소프트웨어가 아닌 '전략 자산'으로 규제될 수 있음을 처음으로 실증한 사례다. 특히 국내외 기업들이 미국 빅테크 AI API에 의존하는 구조에서, 정치·안보 리스크가 곧 서비스 중단 리스크로 직결될 수 있다는 점이 부각됐다. 향후 AI 수출통제가 확대될 경우 비미국 기업·국가들의 자체 AI 역량 확보 필요성이 더욱 커질 전망이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[리스크]",
+      "isu_insight": "이수시스템의 RAG 기반 챗봇·HR AI Package는 외부 LLM API(OpenAI, Anthropic 등)를 연동하는 구조다. 이번 사태처럼 미국 정부 명령 한 번에 서비스가 즉시 중단될 수 있음을 고객사에 선제적으로 알리고, '온프레미스 배포 또는 국산 LLM(EXAONE, HyperCLOVA X 등) 병행 연동' 옵션을 제안하는 영업 시나리오로 전환할 수 있다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/949553/anthropic-fable-5-mythos-5-government-national-security"
+    },
+    {
+      "number": 2,
+      "category": "글로벌 이슈",
+      "title": "한국도 직격탄 — 美 AI 접근 통제에 'API 의존 리스크' 현실화",
+      "body": "글로벌이코노믹은 미국의 AI 모델 해외 접근 통제 강화 기조가 국내 산업에 **API 의존 리스크**를 부각시키고 있다고 보도했다. 국내 스타트업·기업들이 OpenAI·Anthropic 등 미국 빅테크 API를 핵심 인프라로 활용하는 비중이 높아진 상황에서, 이번 Fable 5·Mythos 5 차단 사태는 서비스 연속성에 대한 심각한 경고로 받아들여진다. **국산 LLM 육성과 AI 주권 확보** 논의가 다시 수면 위로 부상할 것으로 예상된다.",
+      "insight": "미국발 AI 수출통제가 현실화되면서 각국 정부와 기업 모두 AI 공급망 다변화 필요성을 재인식하게 됐다. 특히 한국처럼 미국 AI 서비스 의존도가 높은 국가는 정책·산업 양면에서 자국 AI 인프라 강화 논의가 가속화될 수 있으며, 이는 국산 AI 모델 및 온프레미스 솔루션 수요 증가로 이어질 가능성이 높다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "국내 기업들의 'API 의존 리스크' 인식이 높아지는 시점에, 이수시스템은 WORKUP·Smart HR에 탑재된 HR AI Package를 '국산 LLM 연동 + 온프레미스 배포 가능'이라는 차별점으로 적극 마케팅할 수 있다. 특히 공공·금융 고객사를 대상으로 데이터 국내 보관 및 서비스 연속성을 강조하는 제안서 작성이 효과적인 시점이다.",
+      "source": "글로벌이코노믹",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNUlFFVkxqWXY0S01iLWtocnh6SWtPNlhpV1B4eXBpLTFmNkVZWUp4RV9LVjlkaWdfUVRfMGlBTS1rbk5BQlVhQ1VLTklJZFlVVWpVQk91NnZBZzRfbjFESDJtaVdBTVEzb3FWRXBGR21ZNjk2WmhnMXM5RUdWc3NEUGk5NlNBS0ZN?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "산업 동향",
+      "title": "ChatGPT 월간 앱 사용자 **10억 명** 돌파 — 역사상 가장 빠른 성장",
+      "body": "OpenAI의 ChatGPT가 월간 앱 사용자 **10억 명**을 돌파했다. 역대 어떤 앱보다 빠른 속도로 이 이정표를 달성했으며, TikTok·Instagram을 훨씬 상회하는 성장 속도다. 다만 같은 보고서에서 대중의 AI 감정은 **엇갈린(mixed)** 것으로 나타났다. 생산성·편의성에 대한 긍정 평가와 함께, 일자리 불안·개인정보 우려 등 부정적 정서도 동반 상승하는 '사용은 하지만 걱정도 한다'는 양가적 심리가 확인됐다.",
+      "insight": "10억 명 사용자 달성은 AI가 이미 '얼리어답터 단계'를 넘어 전 연령·직군의 일상 도구로 자리잡았음을 의미한다. 동시에 AI 피로감과 신뢰 문제가 부상하면서, 향후 AI 서비스 경쟁은 단순 기능 확장보다 신뢰성·설명 가능성·개인정보 보호 쪽으로 무게중심이 이동할 전망이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "AI 대중화로 인해 기업 임직원들의 AI 활용 기대치가 높아졌다. WORKUP·Smart HR 영업 현장에서 'HR 업무에도 ChatGPT처럼 쓸 수 있는 AI 어시스턴트'를 시연 포인트로 활용하면 의사결정권자의 관심을 끌기 용이하다. 이수시스템 HR AI Package의 채용 자동화·취업규칙 Q&A 챗봇 기능을 이 맥락에서 포지셔닝할 수 있다.",
+      "source": "Yellow.com",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5Gc1RVRFJKb0I2VmJBbEtWaGFhNUtnV0htakJEby1oZGhGQ1BhVzF5OWpKZWZzdEdjVTY1VmtpbjZ2cmlaVGdteTRFTmVEOVRLbTFYT3piWThUWnZVQ1V2VWRaT2N2bjZWRXFuQVNIRXpFR2FOVXpwYlp3?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "모델 릴리스",
+      "title": "Google, Gemini-SQL2로 텍스트→SQL 변환 벤치마크 압도적 1위",
+      "body": "Google Research가 공개한 **Gemini-SQL2**가 텍스트를 SQL 쿼리로 변환하는 **Text-to-SQL 벤치마크**에서 경쟁 모델을 큰 격차로 제치고 1위를 차지했다. 이 모델은 자연어로 된 질문을 복잡한 데이터베이스 쿼리로 자동 변환하는 데 특화되어 있으며, 기업 내 비개발자도 데이터를 직접 조회할 수 있는 가능성을 열어준다. ERP·HR 시스템 등 대규모 데이터베이스를 보유한 기업용 솔루션과의 결합 시 **비즈니스 인텔리전스(BI) 민주화** 흐름이 가속화될 전망이다.",
+      "insight": "Text-to-SQL 기술의 고도화는 데이터 분석가나 개발자 없이도 일반 직원이 자연어로 기업 데이터를 조회할 수 있는 시대를 앞당긴다. ERP·HR·SCM 등 대규모 기업 솔루션 벤더들은 이 기술을 자사 제품에 통합해 사용자 경험을 혁신할 압력을 받게 되며, 데이터 기반 의사결정이 전사적으로 확산되는 계기가 될 수 있다.",
+      "isu_area": "디지털서비스 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "Gemini-SQL2 수준의 Text-to-SQL 기술을 WORKUP 또는 Smart HR의 리포팅 모듈에 연동하면, HR 담당자가 '올해 연차 소진율 하위 20% 부서 알려줘'처럼 자연어로 질의하는 기능 구현이 가능해진다. SAP ERP 파트너로서 SAP Analytics Cloud와 이 기술의 결합도 검토할 수 있으며, 기존 500개 레퍼런스 고객사에 업그레이드 세일즈 기회로 활용 가능하다.",
+      "source": "the-decoder.com",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQdS1pOGtHSUZtTHVhMW9OZmNhelZpQTFMaUY0T1cxc3lZQXNmM2o3VnE2QldfOXJ2Zi0xS2VJWGVxVWl0eDBXUG1Ta1JYc1BuYzFBNDBxZ3NKNzExdWVER01GSXMwMUU1d21aWER3ejhyalNwcTNkUTJIWmFFb1l5M25EeEZRcEpiWHlPRGF2VzJHSzBCVVlhbGdmRnRvdTg?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "일자리·사회",
+      "title": "'AI 안 쓰면 도태?' — 과학자 70% 이상 'AI FOMO' 호소, 네이처 설문 충격",
+      "body": "국제 학술지 **네이처(Nature)**의 설문 결과, 과학자의 **70% 이상**이 'AI를 사용하지 않으면 동료에게 뒤처질 것 같다'는 두려움, 이른바 **AI FOMO(Fear Of Missing Out)**를 경험하고 있다고 응답했다. 실제 AI 활용에 따른 생산성 향상 효과와 무관하게, AI 미사용에 대한 심리적 압박이 전문직 전반으로 확산되는 현상이 포착됐다. 연구자들은 이 현상이 과학계를 넘어 교육·의료·법률·기업 현장으로 광범위하게 번지고 있다고 경고했다.",
+      "insight": "AI FOMO는 AI 도입이 단순한 기술 선택이 아니라 조직 내 생존 압박으로 인식되기 시작했음을 보여준다. 기업 입장에서는 AI 도입 속도를 둘러싼 내부 갈등과 번아웃 리스크 관리가 새로운 인사·조직 과제로 부상하며, '도입하되 올바르게'를 안내하는 AI 리터러시 교육 수요도 급증할 전망이다.",
+      "isu_area": "HR 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "AI FOMO가 기업 현장으로 확산되면, HR 부서는 'AI 활용 역량'을 직원 역량 평가 항목에 포함하거나 관련 교육 이력을 관리해야 하는 수요가 생긴다. WORKUP의 인재개발(CDP) 모듈에 AI 역량 평가 항목 추가, AI 교육 이수 현황 추적 기능을 빠르게 탑재하면 제조·금융 고객사의 HR 담당자에게 즉시 어필할 수 있는 차별 포인트가 된다.",
+      "source": "넷제로뉴스",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5kbWZwdTY0Ny1IejdfZXFtNWhOU21DZTAzS242S0hSSUpIei1qWEdhNjRqNXFvRVZpd0NYZ216NnRkREpKR1lIVWxFMTl4cEYxaFZHREJNdHpFQ1hWMmRLUl9IME91YUJDVkpCdElB0gFuQVVfeXFMTmRtZnB1NjQ3LUh6N19lcW01aE5TbUNlMDNLbjZLSFJJSkh6LWpYR2E2NGo1cW9FVml3Q1hnbXo2dGRESkpHWUhVbEUxOXhwRjFoVkdEQk10ekVDWFYyZEtSX0gwT3VhQkNWSkJ0SUE?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**AI가 수출통제 품목이 됐다** — Anthropic Fable 5·Mythos 5의 해외 접근 차단은 AI 모델이 핵·반도체와 같은 '전략 자산'으로 규제되는 시대의 개막을 알린다.",
+    "**API 의존 = 서비스 연속성 리스크** — 미국 정부 명령 하나로 하루아침에 서비스가 멈출 수 있음이 증명됐고, 국산 LLM 또는 온프레미스 AI 수요가 가속화될 전망이다.",
+    "ChatGPT 10억 사용자 돌파와 AI FOMO 확산이 동시에 진행 중 — AI는 이미 전 직군의 일상 도구가 됐고, 이제 경쟁 축은 '기능'에서 '신뢰성과 사람 관리'로 이동하고 있다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심은 'AI 주권 리스크'다. 미국의 Anthropic 모델 해외 차단 사태는 이수시스템 고객사들이 외부 LLM API에 얼마나 취약하게 노출돼 있는지를 드러낸다. 이수시스템은 HR AI Package·RAG 챗봇 솔루션을 '국산 LLM 연동 + 온프레미스 배포' 옵션으로 포지셔닝하여 공공·금융 고객사의 데이터 주권 니즈를 공략할 적기다. 동시에 AI FOMO 심화로 기업 HR 부서의 AI 역량 관리 수요가 커지는 만큼, WORKUP 인재개발 모듈의 AI 역량 추적 기능 고도화를 단기 로드맵에 반영할 것을 권장한다."
+}
