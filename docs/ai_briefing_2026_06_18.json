@@ -1,0 +1,72 @@
+{
+  "date": "2026.06.18 (목)",
+  "one_liner": "ChatGPT 점유율 50% 붕괴, 美 수출 규제로 Anthropic 혼란, 한국 AI 플랫폼 삼국지 개막",
+  "news": [
+    {
+      "number": 1,
+      "category": "산업 동향",
+      "title": "ChatGPT 점유율 50% 아래로 추락… Gemini·Claude가 왕좌 위협",
+      "body": "챗GPT의 AI 챗봇 시장 점유율이 사상 처음으로 **50% 아래**로 하락했다. 2024년 독주 체제에서 불과 2년 만에 구글 Gemini와 Anthropic의 Claude가 빠르게 점유율을 잠식한 결과다. Pew Research에 따르면 미국인의 **49%**가 AI 챗봇을 정기적으로 사용하고 있으며, 챗GPT 사용률은 2023년 대비 두 배로 늘었지만 경쟁자들의 성장 속도가 더 가파르다.\n\n시장이 커지는 속도보다 경쟁이 심화되는 속도가 빠르다는 점이 핵심이다. Gemini는 구글 생태계(Android, 검색, 워크스페이스) 통합을 앞세우고, Claude는 기업 API 시장에서 입지를 넓히고 있다. OpenAI가 슈퍼앱 전략과 ChatGPT Science 구독 요금제를 준비 중인 것도 이런 위기감의 반영이다.",
+      "insight": "AI 챗봇 시장이 '1강 체제'에서 '다강 경쟁' 구도로 전환되고 있다는 명확한 신호다. 기업 고객 입장에서는 단일 벤더 의존 리스크가 줄고, 용도별로 최적 모델을 선택하는 멀티 LLM 전략이 표준이 될 가능성이 높다. 기업용 AI 솔루션 공급사들은 특정 모델에 종속되지 않는 유연한 아키텍처 설계가 경쟁력의 핵심이 된다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "멀티 LLM 경쟁 심화는 이수시스템 RAG 기반 챗봇·AI 플랫폼에 직접적 기회다. 고객사에 '특정 모델에 종속되지 않는 기업용 AI 플랫폼'을 강점으로 영업할 수 있으며, WORKUP·Smart HR에 Claude/Gemini를 선택적으로 연동하는 멀티 LLM HR AI Package 로드맵을 구체화할 시점이다.",
+      "source": "Business Standard / PCMag / Fast Company",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNRThqU21Dd0F4anVvSWNaSGtWQU4yblR4cGRsQklacjNVYWtHU1FxTWt5RXFaemdtbW40UWNMa3lWdUM4eDNId0RxbnNTSDVlazlyaU82aFM0U3VRUF9zaUVsODJrclFpckIyclA0VjZyaEptOFlSVUs2VzRVWi1rWXl4Rmk1bzdEbHZfbmlzc0VCckdiTjJOT181YWlfLUJ5clRIZXN1Y29pcTFrN05SZmlsczNwakctbDFqanNYQUhxaXhqYTBuZGpDaExPUG1WV2ZZak9WVFEyc3FZYnFqMDI5UjlERXFDYzV5SFlFdUY5STJIY2R6QlNlc9IBgAJBVV95cUxQamtyU1p3VlRJTHhLeHdmTFR0a0hzbmtlOHpqQXdBZmVQRXVNbGJtblVTc3Z4c1hLejNuX1otRXc2QllkZm5hakd6djFkcE1ma0dpT2haSVFHRnk0WFFfb0VxTlRwTU1oa1lGUzZxaEVXajdPekZJV19MN0JYTEU5REVrbE9uT0NTUGlHR3BTVFpQeE9lM1hjeFBEZm5mWmdzR19tRnlBaUktNGxVbjEzcWhGRUxCSzVqdjY2bHNTUllCc3BpRUNURzRQQmoyUklZV2NtODdWWnkzLTNPQXJ2Z29mWm5HTG9scC0zZXROM0pQUHpxNlExTzZSTjNpSFgt?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "글로벌 이슈",
+      "title": "트럼프 행정부, Anthropic 'Fable 5' 수출 차단… 동맹국까지 불똥",
+      "body": "트럼프 행정부가 Anthropic의 최신 모델 **Fable 5·Mythos 5**에 대해 갑작스러운 수출 통제를 발동했다. 외국 국적자 전체(미국 내 거주자·자사 직원 포함)의 접근을 차단하도록 명령했고, Anthropic은 전면 서비스 중단이라는 초강수를 두며 일주일간 복구 작업에 매달렸다. 캐나다·유럽 정부까지 동맹국 관계를 언급하며 강하게 반발했다.\n\n이번 사태는 AI 모델이 사실상 '전략 무기'로 취급받기 시작했음을 보여준다. 트럼프 자문단이 주요 AI 기업에 대한 정부 지분 확보 방안까지 검토했다는 Semafor 보도가 더해지며, 미국 AI 산업에 대한 정부 통제 의지가 뚜렷해지고 있다. 인도 스타트업들이 외산 AI 의존도를 재검토하기 시작한 것도 같은 맥락이다.",
+      "insight": "AI 모델에 대한 수출 통제는 기업들이 해외 클라우드 AI API에 과도하게 의존하는 것의 위험성을 극명하게 드러냈다. 특정 국가·기업이 AI 인프라를 통제할 수 있다는 현실은 각국 정부와 기업 모두에게 'AI 주권' 확보와 온프레미스·로컬 LLM 대안 마련의 필요성을 각인시킨다. 국산 또는 오픈소스 LLM 기반 자체 AI 인프라 수요가 빠르게 높아질 전망이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "해외 LLM API 의존 리스크가 현실화되면서, 국내 고객사(금융·공공·제조)를 대상으로 '국산 LLM 또는 온프레미스 배포 기반 AI 챗봇·HR AI Package'를 제안하는 영업 스토리가 설득력을 얻는다. 특히 공공기관 고객에게는 데이터 주권과 서비스 연속성을 강조한 자체 AI 플랫폼 구축 제안이 유효하다.",
+      "source": "The Verge / Tom's Hardware",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/951703/anthropic-shutdown-export-controls"
+    },
+    {
+      "number": 3,
+      "category": "산업 동향",
+      "title": "한국 AI 플랫폼 삼국지… 업스테이지, 네이버·카카오에 정면 도전",
+      "body": "국내 AI 플랫폼 경쟁이 본격화되고 있다. '검색은 네이버, 모바일은 카카오'라는 공식에 균열이 생기며, **업스테이지**가 AI 경쟁력을 앞세워 제3의 플레이어로 부상하고 있다. 다음(카카오)이 AI 기반 서비스 개편을 서두르는 가운데, 업스테이지는 Solar 모델 등 국산 LLM 기반의 B2B 솔루션으로 기업 시장을 공략 중이다.\n\n금융권도 이 흐름에 뛰어들었다. 국내 주요 은행·증권사들이 '뱅커보다 엔지니어'를 슬로건으로 내걸며 AI 엔지니어 확보전에 사활을 걸고 있다. 2026년 한국 AI 시장은 단순 기술 도입을 넘어 플랫폼 지배력 경쟁 국면으로 진입하고 있다는 분석이 나온다.",
+      "insight": "네이버·카카오 중심의 한국 플랫폼 구도가 AI를 무기로 한 신진 플레이어에 의해 재편될 가능성이 열렸다. 기업 고객 입장에서는 국산 LLM 기반 솔루션의 선택지가 다양해지고 있으며, B2B AI 솔루션 시장에서 기술 차별화보다 레퍼런스와 도메인 특화가 경쟁 우위의 핵심이 되고 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "업스테이지 등 국산 LLM 플레이어의 부상은 이수시스템 AI 챗봇·HR AI Package의 기반 모델 선택지를 넓혀준다. 현재 고객사에 Solar 등 국산 LLM을 RAG 파이프라인에 결합한 '국산 AI 기반 HR 챗봇' 제안이 가능해지며, 외산 API 의존 리스크를 회피하려는 금융·공공 고객에게 차별화된 영업 포인트가 된다.",
+      "source": "아주경제 / 디지털데일리",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5pX3Z0dkVkdUJ3VFJVb282Q1JLV2pjZGJYdzExOVV3bDFfM1ZqVkg3VF9RRmJHYVRWOW1tb1NLZnVjTmFpS2ZuZkhBSQ?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "일자리·사회",
+      "title": "에이전트 AI 시대 본격화… '2026년 AI 대전환' 이미 시작됐다",
+      "body": "2026년을 기점으로 AI가 단순 답변 도구에서 **자율 행동하는 에이전트**로 진화하는 'AI 대전환'이 가속화되고 있다는 진단이 나왔다. 에이전트 AI는 사람의 지시 없이도 멀티스텝 업무를 스스로 기획·실행·완료한다. Accenture 최고경영진은 'AI 학습·관리가 HR 디렉터의 핵심 역할이 될 것'이라고 공개적으로 밝혔다.\n\n기업 현장에서는 RPA(로봇 프로세스 자동화)와 AI 에이전트의 경계가 허물어지는 변화가 감지된다. 단순 반복 자동화를 넘어 판단·조율까지 AI가 담당하는 구조로 바뀌면서, 사람이 하는 일의 범위와 성격 자체가 달라지고 있다. Forbes가 선정한 2026 AI 50대 기업 중 에이전트 플랫폼 기업의 비중이 크게 늘었다.",
+      "insight": "에이전트 AI의 부상은 기존 RPA·업무 자동화 솔루션 시장 전체를 재정의하는 사건이다. 단순 반복 자동화에서 복합 의사결정 자동화로의 전환은 기업 IT 투자 우선순위를 바꾸고, 기존 자동화 솔루션 공급사들에게는 제품 패러다임을 재설계해야 하는 압박으로 작용한다. HR 영역에서는 채용·평가·온보딩까지 에이전트가 개입하는 시나리오가 현실화되고 있다.",
+      "isu_area": "디지털서비스 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "에이전트 AI 확산은 이수시스템 RPA 솔루션의 진화 방향을 명확히 제시한다. 현재 정형 업무 중심의 RPA에 LLM 기반 의사결정 레이어를 추가하면 '인텔리전트 에이전트' 포지셔닝이 가능하다. HR 영역에서는 WORKUP에 에이전트 기반 입사 온보딩·급여 이상 탐지 기능을 추가하는 방향의 로드맵 논의를 시작할 시점이다.",
+      "source": "천지일보 / HR Magazine",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE10RmpDS052YmxzaFFES2VYcGNSNS1sSzAzc0VtVFdKdm5ObzhURVpkNzdOQTZfWWxEVDF5OUlFZFNaTUppZEZWLVZxOTB4U3hLaHpiQ1dhYjAxLTRyZnlyTlgzQktkYmt2VGc?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "산업 동향",
+      "title": "중국 Z.ai, GPT-5.5 꺾었다… 토종 칩으로 학습한 AI 모델도 첫 공개",
+      "body": "중국 Z.ai가 출시한 **GLM-5.2**가 OpenAI의 GPT-5.5를 주요 벤치마크에서 앞질렀다는 평가가 나왔다. 미국의 Anthropic 수출 규제가 발동된 같은 시기에, 중국은 오픈소스 AI 생태계를 빠르게 확장하며 서방의 수출 통제에 정면 대응하는 모양새다. 앞서 美정부의 Fable 5 차단 조치가 중국 오픈소스 AI 확산을 오히려 촉진했다는 분석이 나온다.\n\n더 주목할 만한 것은 엔비디아 GPU 없이 **중국 토종 칩**으로 학습된 5대 AI 모델이 처음으로 공개됐다는 점이다. 반도체 수출 통제가 오히려 중국 자체 AI 칩·모델 생태계 독립을 가속화하는 역설적 결과를 낳고 있다. 글로벌 AI 공급망과 모델 생태계의 '블록화'가 가시화되고 있다.",
+      "insight": "AI 모델 경쟁이 미-중 기술 블록화와 맞물려 '오픈소스 vs 클로즈드' 구도를 넘어 '지정학적 AI 진영' 구도로 재편되고 있다. 기업들은 향후 사용하는 AI 모델의 원산지와 공급망 리스크까지 고려해야 하는 시대에 접어들었다. 오픈소스 LLM의 품질이 클로즈드 최상위 모델과 경쟁 가능한 수준으로 올라오면서, 자체 호스팅 기반 AI 구축의 현실성이 크게 높아졌다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "중국 오픈소스 LLM(GLM 계열 등)의 성능 향상은 이수시스템이 라이선스 비용 없이 고성능 모델을 RAG 파이프라인에 활용할 수 있는 선택지를 넓혀준다. 특히 데이터 외부 유출에 민감한 제조·금융·공공 고객에게 '오픈소스 LLM 온프레미스 배포 + 이수시스템 AI 플랫폼' 조합의 영업 시나리오를 구체화할 수 있다.",
+      "source": "The Economic Times / 초이스스탁",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOVXRPLU1DdS1xcmxQUTZEaU9jMnNkVzFxS0x0dExRWUFwVmNtTXVLY0llSUVCeXRxWW1aQ0hHeDBHUGx3TGdGV2k3YnFBTDZQQTVKeWFkRjBDZ0V5ME1UYlAxenNZajl3SkM0YmpkUnlQTXRwV3pGNHcxQjhiN181ZzlMYkV2ZkE5VGxWWkk2THotbWpKeE1idjVqOW9PeVhXQjIxb3FJcFA0RHFhdzlYcUVYOVhtLVJEVnpWRGJYSmJKV1lkdktfekZnTndMWUIyWllIS1U0UHVaY0NjTl9TbThQdGVXZ9IB5gFBVV95cUxOVXRPLU1DdS1xcmxQUTZEaU9jMnNkVzFxS0x0dExRWUFwVmNtTXVLY0llSUVCeXRxWW1aQ0hHeDBHUGx3TGdGV2k3YnFBTDZQQTVKeWFkRjBDZ0V5ME1UYlAxenNZajl3SkM0YmpkUnlQTXRwV3pGNHcxQjhiN181ZzlMYkV2ZkE5VGxWWkk2THotbWpKeE1idjVqOW9PeVhXQjIxb3FJcFA0RHFhdzlYcUVYOVhtLVJEVnpWRGJYSmJKV1lkdktfekZnTndMWUIyWllIS1U0UHVaY0NjTl9TbThQdGVXZw?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**ChatGPT 점유율 50% 붕괴**는 AI 시장이 1강 체제에서 다강 경쟁으로 전환됐음을 공식 선언한다. 기업은 이제 멀티 LLM 전략을 기본값으로 설계해야 한다.",
+    "미국의 Anthropic 수출 차단은 **AI 모델이 전략 무기**가 됐음을 의미한다. 해외 API 의존 기업은 서비스 연속성 리스크를 재점검해야 한다.",
+    "중국 오픈소스 AI의 약진과 한국 AI 플랫폼 경쟁 심화가 동시에 진행되며, **국산·오픈소스 LLM 기반 자체 AI 인프라** 수요가 2026년 하반기 핵심 화두로 부상할 전망이다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심 흐름은 '해외 AI 의존 리스크 현실화'다. Anthropic 수출 차단 사태와 ChatGPT 점유율 하락이 맞물리면서, 국내 제조·금융·공공 고객사들은 특정 해외 LLM에 종속되지 않는 안정적 AI 인프라를 원하게 된다. 이수시스템은 국산·오픈소스 LLM을 온프레미스로 배포하고 WORKUP·Smart HR에 연동하는 'HR 특화 자체 AI 플랫폼' 포지셔닝으로, 500개 이상 HR 레퍼런스를 기반으로 한 차별화 영업을 강화할 최적 시점이다."
+}
