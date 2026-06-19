@@ -1,0 +1,72 @@
+{
+  "date": "2026.06.20 (토)",
+  "one_liner": "Google의 핵심 AI 인재들이 OpenAI·Anthropic으로 대거 이탈하는 사이, 한국 정부는 'AI 국민비서' 시대를 선언했다.",
+  "news": [
+    {
+      "number": 1,
+      "category": "산업 동향",
+      "title": "Google AI 두뇌 대탈출: 노벨상 수상자·Gemini 아버지 모두 떠났다",
+      "body": "Google DeepMind의 노벨 화학상 수상자 **존 점퍼(John Jumper)**가 Anthropic으로 이직을 결정했으며, 같은 날 Gemini 모델의 핵심 설계자인 **노암 샤지어(Noam Shazeer)**가 OpenAI로 영입됐다는 소식이 전해졌다. 샤지어는 트랜스포머 아키텍처의 핵심 논문 공저자로, 구글이 2021년 그를 붙잡기 위해 **26억 달러(약 3.6조 원)** 규모의 계약을 맺었던 인물이다. 이번 주에만 두 명의 최고급 AI 연구자가 구글을 떠나면서, 구글이 현대 AI의 기반을 쌓았지만 성과를 경쟁사에 빼앗기고 있다는 평가가 나온다. 올트먼 CEO는 '10년을 기다렸던 협업'이라며 샤지어 영입을 공개적으로 자축했다.",
+      "insight": "AI 시대의 경쟁력은 데이터센터나 자본보다 **핵심 연구 인력**에 달려있음을 보여주는 사건이다. 빅테크 간 인재 쟁탈전이 격화되면서 연봉·스톡옵션 조건이 천문학적으로 높아지고 있으며, 이는 중소 AI 기업들이 자체 연구 인력을 확보하기 더 어려운 구조를 만든다. OpenAI와 Anthropic이 구글의 지적 자산을 흡수하는 형국이 지속될 경우, AI 모델 품질 경쟁의 판도가 빠르게 바뀔 수 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "OpenAI·Anthropic의 연구 역량이 빠르게 강화됨에 따라, 이수시스템이 RAG 기반 챗봇 및 HR AI 패키지에 활용하는 외부 LLM API(Claude, GPT 계열)의 성능도 단기간 내 향상될 가능성이 높다. 도입 검토 중인 고객사에 '최신 모델 기반 솔루션'이라는 영업 포인트로 활용 가능하다.",
+      "source": "Reuters, Axios, The Decoder",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWlJJNjNtbk1wb0l5aXZZNzMwOHNJNnFnam1NTWY0dFFES1o0VG15ZDVuYTB1dGs4dlQtUnp6RWM2U19kcVRZOHJ3NEh3RTk1clIta3hQX0pKampSdHo5bnNrNmhoWUJtbEswamhoOXVxRXNOdnRKM2pVeUZjN3gtWVZZN0JWbXAxcHZMYUNSRUlVR1g1UmFtaHRleUJKNXNmOEhmQkhR?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "글로벌 이슈",
+      "title": "'AI 국민비서' 시대 개막: '등본 발급해줘' 한마디로 모든 행정 처리",
+      "body": "한국 정부가 복잡한 행정 업무를 음성 한 마디로 처리하는 **'AI 국민비서'** 서비스 도입 계획을 발표했다. 주민등록등본 발급, 각종 증명서 신청 등 기존에 여러 사이트와 절차를 거쳐야 했던 업무를 AI가 대화 방식으로 원스톱 처리해주는 방식이다. 공공 서비스에 **생성형 AI 기반 대화형 인터페이스**를 본격 도입하는 첫 사례로, 행정 디지털 전환의 새로운 기준점이 될 전망이다. 정부는 올해 안으로 시범 서비스를 시작한다는 목표를 밝혔다.",
+      "insight": "공공 행정에 AI 챗봇이 공식 채널로 편입되는 것은 민간 기업의 AI 도입 속도를 더욱 앞당기는 촉매제 역할을 한다. 국민이 일상에서 AI 대화형 서비스를 직접 경험하게 되면, B2B 영역에서도 유사한 인터페이스에 대한 수요가 빠르게 높아진다. 특히 **공공기관 및 대민 서비스** 분야에서 AI 챗봇 도입 예산과 사업이 확대될 가능성이 크다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[정부 사업]",
+      "isu_insight": "정부의 AI 국민비서 사업은 공공·준공공 기관의 AI 챗봇 수요를 직접적으로 자극한다. 이수시스템의 RAG 기반 생성형 챗봇 솔루션을 공공기관 HR 민원 처리(인사·급여 관련 직원 문의 자동화) 또는 기존 WORKUP 고객사의 내부 행정 챗봇으로 연계하는 제안서를 선제적으로 준비할 시점이다.",
+      "source": "JTBC",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1zVmN6M1NKb2tJTWNPeWlpV0JaM2xMVExPNDU1R3lQOUVjYmhMYWJ4YU5SUnlfODlCMnpFWDQ5QWtLdnRaQW9VU3JDSDBPRmhqWkZLMA?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "산업 동향",
+      "title": "Google·Microsoft 손잡고 새 AI 표준 발표: Anthropic·OpenAI 견제 나섰다",
+      "body": "Google과 Microsoft가 공동으로 새로운 AI 에이전트 통신 프로토콜을 발표했다. 두 회사가 협력해 업계 표준을 선점함으로써, 독자적인 기술 스택을 구축해온 **Anthropic과 OpenAI를 표준 전쟁으로 견제**하려는 전략이라는 분석이다. 표준 프로토콜이 채택될 경우 해당 생태계 내에서 개발된 AI 에이전트들이 더 넓은 호환성을 갖게 되며, 이를 먼저 지원하는 플랫폼이 기업 고객을 선점하는 구조가 형성된다. 빅테크 간 AI 표준 전쟁이 본격화되면서 기업 AI 솔루션 선택 기준이 성능에서 **생태계 호환성**으로 이동할 가능성이 제기된다.",
+      "insight": "AI 시장이 성숙 단계에 진입하면서 경쟁의 축이 '누가 더 똑똑한 모델을 만드느냐'에서 '누가 더 넓은 기업 생태계를 장악하느냐'로 이동하고 있다. 표준 프로토콜을 먼저 채택하는 기업 소프트웨어 공급업체가 자연스럽게 고객사 AI 도입의 진입로가 되며, 이는 ERP·HR·ESG 솔루션 업체들에게도 중요한 포지셔닝 기회다.",
+      "isu_area": "디지털서비스 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "Google(Workspace)-Microsoft(Azure/M365) 연합의 AI 표준이 SAP 생태계와 어떻게 연동될지 주목해야 한다. 이수시스템은 SAP 공식 파트너사로서, SAP S/4HANA가 해당 프로토콜을 채택할 경우 기존 ERP 구축 고객사에 AI 에이전트 연계 서비스를 추가 제안하는 업셀링 기회가 생긴다.",
+      "source": "Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOV2FfOTN5S2c3NVdaVXpsNnBDeUJKaDVfNnlTSERhT2FDaGhkeUhhaU4zbHpMbEZQeDJwMXNlamRrWm1SSjFmcHZZY2dIY0o2UWY5RGE3SDhvQXJ5d0hpT2xUV3JnaVZFaDJvNnJtUlZVTmI3azhJQnYyQW1OOVVNUHZiQW94aDczaU1QN0d3MFo5S2xlSE9yS0g5eTVkOUxW?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "모델 릴리스",
+      "title": "중국 Z.ai의 GLM-5.2, OpenAI·Anthropic과의 격차를 빠르게 좁히다",
+      "body": "중국 AI 기업 **Z.ai**가 공개한 GLM-5.2 모델이 주요 벤치마크에서 OpenAI 및 Anthropic 최상위 모델과의 격차를 크게 줄였다는 평가가 나왔다. Z.ai는 2027년까지 '미토스급(Mythos-class)' AI를 개발하겠다는 로드맵도 공개했다. 미국의 반도체 수출 규제에도 불구하고 중국 AI 기업들이 **모델 효율화와 자체 인프라**를 통해 빠른 추격 속도를 보이고 있으며, 일론 머스크도 중국이 내년 1분기 안에 최상위급 AI를 보유하게 될 것이라고 언급했다. 글로벌 AI 모델 경쟁이 미국 독주에서 **미-중 양강 구도**로 재편될 가능성이 커지고 있다.",
+      "insight": "중국 AI 모델의 급격한 성능 향상은 글로벌 AI 공급망 다변화를 의미한다. 기업들이 비용 효율적인 중국산 오픈소스 모델을 도입하는 사례가 늘어날 수 있으며, 이는 AI 솔루션의 기반 LLM 선택지를 넓히는 동시에 보안·규제 리스크도 함께 증가시킨다. 특히 공공·금융 섹터 고객을 보유한 기업들은 모델 출처에 대한 컴플라이언스 요건을 강화해야 할 수 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "고성능 오픈소스 LLM 선택지가 늘어날수록, 이수시스템의 RAG 기반 챗봇 및 HR AI 패키지의 기반 모델 교체 비용이 낮아진다. 단, 공공기관 및 금융권 고객사에는 국내 또는 미국산 모델만 허용되는 규제 장벽이 있으므로, 고객 세그먼트별 모델 전략을 구분해 제안하는 것이 중요하다.",
+      "source": "Cryptopolitan, The CSR Journal",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPdVF4aHh6Wk5RbXdOQ01MOGRIWEVtU1BNeHZ2anRWY0w0SDV5anR0ZDh6Y1VGTVNWa2Nid25Hb1VwNjhQcnEyOXgydXBiRjZUbHFENFUtcHFCMENzT2NjNFgyS2xTMXIzRmo3cWZfRFpVMFFSNFBEc0Q4NzlLLVZZSzdR?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "일자리·사회",
+      "title": "'LLM은 거품 폭발 직전'…AI 대부 얀 르쿤, 현 AI 패러다임에 직격탄",
+      "body": "페이스북 수석 AI 과학자이자 튜링상 수상자인 **얀 르쿤(Yann LeCun)**이 현재의 LLM 중심 AI가 '거품 폭발 직전'에 있으며 근본적인 한계를 가지고 있다고 강하게 비판했다. 그는 xAI(일론 머스크의 AI 회사)도 실패작이라고 언급하며, 현재 생성형 AI 붐이 과대평가된 기술적 진보에 기반한다고 주장했다. 르쿤은 진정한 AI 발전을 위해서는 **세계 모델(World Model)** 기반의 새로운 아키텍처가 필요하다는 입장을 꾸준히 주장해 왔다. 업계 내에서도 LLM의 한계에 대한 논쟁이 커지는 가운데, 차세대 AI 아키텍처 경쟁이 물밑에서 가속화되고 있다.",
+      "insight": "최고 권위자의 LLM 한계론은 단순한 비관론이 아니라, 기업 AI 투자 전략에 '과도한 LLM 의존 리스크'를 상기시켜주는 경고다. 현재의 생성형 AI 솔루션에 과도하게 투자한 기업들은 차세대 아키텍처 전환 시 높은 마이그레이션 비용을 치를 수 있다. 기업용 AI 솔루션은 특정 모델 종속성을 낮추는 **모델 애그노스틱(Model-agnostic) 설계**가 중장기적으로 중요해진다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[리스크]",
+      "isu_insight": "이수시스템의 AI 사업이 특정 LLM 벤더(OpenAI, Anthropic 등)에 종속되지 않도록, RAG 챗봇 및 HR AI 패키지의 아키텍처를 설계 단계부터 멀티 LLM 교체 가능 구조로 유지하는 것이 중요하다. 고객사에도 '모델 중립적 플랫폼'을 강점으로 내세우면 장기 계약 안정성 측면에서 유리한 차별점이 될 수 있다.",
+      "source": "AI포스트",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBPTkdaN3lUM01UTWNlUV9lbG5wbzItZVdwRXliYzZmcGxvY0IxeVlRQk01Z2dvWGtRTFBVVHQ3R0FjdVNlSzVzNUdTRkQtczBud0lMQ184Qjc0NlNDcXZTRDNDRFBxMkxHYzByVG1yX0Vid9IBckFVX3lxTFBPTkdaN3lUM01UTWNlUV9lbG5wbzItZVdwRXliYzZmcGxvY0IxeVlRQk01Z2dvWGtRTFBVVHQ3R0FjdVNlSzVzNUdTRkQtczBud0lMQ184Qjc0NlNDcXZTRDNDRFBxMkxHYzByVG1yX0Vidw?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**Google AI 인재 대탈출**이 가속화되고 있다. 노벨상 수상자는 Anthropic으로, Gemini 아버지는 OpenAI로 — 현대 AI의 기반을 쌓은 구글이 그 과실을 경쟁사에 내주는 아이러니가 현실화됐다.",
+    "한국 정부의 **'AI 국민비서'** 발표는 공공 부문 AI 챗봇 시장의 본격 개화를 알리는 신호탄이다. 민간 B2B 시장에서도 대화형 AI 인터페이스 수요가 빠르게 확산될 것이다.",
+    "Google·Microsoft의 AI 표준 동맹, 중국 Z.ai의 빠른 추격, 얀 르쿤의 LLM 거품론 — 세 가지 신호 모두 AI 경쟁의 축이 **'모델 성능'에서 '생태계·표준·지속 가능성'**으로 이동하고 있음을 시사한다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심은 AI 생태계의 급격한 재편이다. 이수시스템에는 두 가지 직접적 기회가 눈에 띈다. 첫째, 한국 정부의 'AI 국민비서' 추진은 공공기관 및 준공공 고객사를 대상으로 한 RAG 챗봇 영업 기회를 단기간 내 열어줄 것이며, 기존 WORKUP·Smart HR 고객사의 내부 행정 자동화 챗봇으로의 확장도 자연스럽게 제안할 수 있다. 둘째, Google·Microsoft의 AI 표준 협력은 SAP 파트너인 이수시스템이 ERP 고객사에 AI 에이전트 연계 서비스를 추가하는 업셀링 시나리오의 기술적 기반이 될 수 있으므로 SAP의 프로토콜 대응 동향을 주시해야 한다. 중장기적으로는 LLM 종속성을 낮춘 멀티모델 아키텍처 설계를 AI 제품의 핵심 경쟁력으로 포지셔닝하는 것이 리스크 관리와 영업 차별화 양면에서 유효하다."
+}
