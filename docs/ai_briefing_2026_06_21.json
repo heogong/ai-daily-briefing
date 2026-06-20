@@ -1,0 +1,72 @@
+{
+  "date": "2026.06.21 (일)",
+  "one_liner": "AI 인재 전쟁·중국 모델 약진·한국 AI 주권 위기까지, 글로벌 AI 판도가 동시다발로 흔들리고 있다",
+  "news": [
+    {
+      "number": 1,
+      "category": "글로벌 이슈",
+      "title": "노벨상 수상자까지 빼앗겼다 — Google DeepMind, 3개월 새 핵심 연구자 3명 Anthropic으로 이탈",
+      "body": "2026년 화학 분야 노벨상 수상자인 **존 점퍼(John Jumper)**가 Google DeepMind를 떠나 Anthropic으로 이직한다고 확인됐다. AlphaFold2 개발의 핵심 인물인 그의 이탈은 올해 들어 DeepMind에서 **3개월 연속 시니어 연구자가 Anthropic으로 이동**하는 흐름의 일부다. 업계는 이를 '올해 가장 중요한 AI 인재 이동'으로 평가하며, Alphabet 주가에 미칠 영향을 놓고 투자자들의 우려도 커지고 있다. 이번 이직의 배경으로는 Anthropic의 공격적인 보상 패키지와 연구 자율성이 꼽히며, 빅테크 간 AI 인재 쟁탈전이 새로운 국면에 진입했음을 보여준다.",
+      "insight": "AI 산업에서 인재는 곧 기술 경쟁력이다. 노벨상 수상자급 연구자가 빅테크를 떠나 스타트업으로 이동하는 흐름은, 연봉과 주식보다 **연구 자율성과 임팩트**를 중시하는 최상위 AI 인재의 가치관 변화를 반영한다. 이는 Google 등 대형 플랫폼 기업의 구조적 경쟁력에 의문을 제기하는 신호이며, Anthropic·OpenAI 같은 AI 퍼스트 기업들이 연구 역량 면에서 빠르게 격차를 좁히고 있음을 시사한다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "이수시스템이 RAG 기반 챗봇·HR AI 패키지에 활용하는 외부 LLM(Claude 등) 진영의 연구 역량이 강화되는 흐름이다. Anthropic의 연구 파워가 커질수록 Claude API 기반 솔루션의 성능 개선 속도가 빨라질 수 있어, 현재 연동 중인 AI 플랫폼의 모델 업그레이드 일정을 선제적으로 점검할 필요가 있다.",
+      "source": "Technobezz / Mint",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOWjFwN3dBbnEwVmthRmpEaG5DdXZnbnpFSUFfSnc0OGpkZURRU05XcHNLYnkwajFFTFhnSHRzZHhURDBsY0RSYm16YVg4ZVlaU2RwMTBpOXRJRUxid1FaTW1mZEhMMXVZRnVDenZrck9UNTlHM3J5S2lPQ2ZMRG5oQ1l2UF9ETk9oaGpHSXpMR3hramFKWWw0MUxWaUp5WS1aWTNLS1J3N3JLYTZwMmZReGJiYUkzWk05V0ljMDJUOFFRNV80Umc?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "글로벌 이슈",
+      "title": "중국 AI 모델, 전 세계 사용량에서 ChatGPT·Gemini 추월 — 저비용 전략이 통했다",
+      "body": "최신 글로벌 트래픽 분석에 따르면 중국산 AI 모델들이 전 세계 사용량 기준으로 **OpenAI의 ChatGPT와 Google Gemini를 앞질렀다**. DeepSeek·Qwen 등 중국 모델들은 서구 경쟁사 대비 **10분의 1 수준의 비용**으로 유사한 성능을 제공하며 신흥국과 가격 민감 기업 시장을 빠르게 잠식하고 있다. 특히 API 호출 단가 경쟁에서 중국 모델이 압도적 우위를 보이면서, OpenAI와 Google의 기업용 AI 시장 점유율에도 빨간불이 켜졌다.",
+      "insight": "AI 모델 시장의 경쟁축이 '성능'에서 '가격 대비 성능'으로 이동하고 있다. 중국 모델의 저비용 공세는 서구 AI 기업들의 수익 모델을 직접 위협하는 동시에, 기업 고객들에게는 **AI 도입 비용 절감의 기회**를 열어준다. 다만 데이터 주권·보안 리스크로 인해 공공·금융 부문에서는 여전히 검증된 서구 또는 자국 모델 선호가 유지될 가능성이 높다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "중국 모델의 저가 공세로 LLM API 단가가 전반적으로 하락하는 추세는, 이수시스템의 RAG 기반 챗봇과 HR AI 패키지의 **운영 비용 절감**으로 직결될 수 있다. 단, 고객사(금융·공공)의 데이터 보안 정책상 중국 모델 직접 적용은 어렵고, 오히려 '국산·검증된 모델 기반 기업용 AI'라는 차별화 포인트를 영업 현장에서 적극 활용할 시점이다.",
+      "source": "The News International / The420.in",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPbzZmeXdFS1ZxTGtCbDJPVEFqZmhiUGFXZkhwNU1RTTVPMmdRUzhzNmp2cFJiWG9UT1dlOEJFek1IeVQ4ZXc5WUpVNU1BNEJybW50X0pVVjdnTHY0R2w0aXZfUGFPUnlnbFAyNy1QTWJMTVlpSXhRNnk5R0VvVWtpNDFWSDZ1YnpkSEw0S1RtaGx4b1Ita3doWm1Ub1FyZFJGWHFhT0RRSFQ2TGdK?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "글로벌 이슈",
+      "title": "AI도 안보 자산이다 — '미토스 차단' 사태가 드러낸 한국의 AI 주권 위기",
+      "body": "매일경제는 미국이 한국에 대한 AI 모델 '미토스(Mythos)' 접근을 차단한 사건을 계기로, **AI 기술이 반도체·배터리처럼 안보 자산으로 분류되는 시대**가 도래했음을 집중 보도했다. 이 사태는 해외 AI에 의존하는 한국 기업과 공공기관이 특정 모델에 대한 접근권을 언제든 박탈당할 수 있다는 취약성을 적나라하게 드러냈다. 정부와 산업계를 중심으로 **국산 AI 모델 육성 및 AI 주권 확립**의 필요성이 다시 한번 강조되고 있으며, 관련 정책 논의가 본격화될 전망이다.",
+      "insight": "AI 모델 접근권이 외교·안보 카드로 활용되기 시작했다는 것은, 기업과 공공기관이 특정 해외 AI에 과도하게 의존하는 구조가 **운영 연속성 리스크**임을 의미한다. 이는 국산 AI 모델·온프레미스 배포·프라이빗 LLM 수요를 촉진하는 계기가 될 수 있으며, 중장기적으로 한국 정부의 AI 주권 관련 정책 예산 확대로 이어질 가능성이 크다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[정부 사업]",
+      "isu_insight": "AI 주권 이슈는 이수시스템의 **온프레미스·프라이빗 클라우드 기반 AI 솔루션** 수요를 직접 자극한다. 제조·공공 고객사에 '해외 AI 의존 없이 사내 데이터로 구동되는 RAG 챗봇'을 제안할 때, 이번 미토스 차단 사례를 레퍼런스로 활용하면 설득력이 높아진다. 또한 정부의 AI 주권 예산이 공공 SaaS 전환 사업과 연계될 경우, WORKUP·ESGable의 공공 레퍼런스 확장 기회로도 연결된다.",
+      "source": "매일경제 마켓",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9zNThPRVhmcWRGdjRlcFNycElkS0JVc1dwM21nRjRWWmMzaDIwNllOWmpuOXg1OGVmNS0zVERpZXdNVFQ5Y0xEdmYzczh3eFZra1E?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "산업 동향",
+      "title": "게임이 AI 에이전트 경제의 첫 실험장 — NDC26에서 나온 미래 전망",
+      "body": "넥슨개발자컨퍼런스(NDC26)에서 김서준 연사는 '**게임이 AI 에이전트 경제의 첫 테스트베드**'가 될 것이라고 주장했다. 게임 내 NPC가 자율적으로 의사결정하는 AI 에이전트 구조는, 향후 기업 업무 환경에서 에이전트가 복잡한 태스크를 자동 처리하는 방식의 전조라는 분석이다. 같은 행사에서 넥슨은 **데이터 인프라를 AI 시대의 핵심 경쟁력**으로 삼겠다는 전략도 공개했으며, 국내 게임 업계의 AI 내재화 속도가 빠르게 높아지고 있음을 확인했다.",
+      "insight": "게임 산업은 수백만 사용자와의 실시간 상호작용 데이터를 보유한 덕분에 AI 에이전트 훈련과 검증에 최적의 환경을 제공한다. '게임 → 기업 업무 자동화'로 이어지는 AI 에이전트 기술 이전 경로는 이미 가시화되고 있으며, **멀티 에이전트 협업·자율 의사결정 AI**가 2~3년 내 B2B 소프트웨어 시장에 본격 진입할 것임을 예고한다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "AI 에이전트가 기업 업무 자동화의 핵심으로 부상하는 흐름은, 이수시스템의 **HR AI 패키지와 RPA**를 에이전트 방식으로 고도화할 로드맵 검토가 필요함을 시사한다. 예를 들어 WORKUP에서 근태 이상 감지 → 알림 발송 → 담당자 승인 요청까지를 에이전트가 자율 처리하는 시나리오는 기존 고객사에 즉각적인 체감 가치를 제공할 수 있다.",
+      "source": "Naver Blog (NDC26)",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVC1udFZlLVM3a0pTQU9ISVNXRE14N1lTRXdOcTVUVTh6WjlnMjVkZW1HenZPdHIxYVNQVy00MzJROXNhZzlkcThVT1lsel9kY252RjhyZFUzRUNSRi1oZlRZbEZvd0thdHJ3MlhsSUt5OHJFNXB5NHM2SEFHUzdxT2YwVTVWUURRZG00ZXJBVQ?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "산업 동향",
+      "title": "Google DeepMind, AI 정렬 실패 대비 '심층 방어' 로드맵 공개 — AI 안전 설계가 산업 표준으로",
+      "body": "Google DeepMind는 AI 정렬(Alignment)이 실패했을 경우를 가정한 **'방어 심층화(Defense-in-Depth)' 안전 제어 로드맵**을 공개했다. 이 로드맵은 단일 안전장치에 의존하지 않고, 다중 레이어의 모니터링·차단·감사 메커니즘을 AI 시스템에 내장하는 구조를 제안한다. AI가 기업 핵심 업무에 깊숙이 통합될수록 **오작동·의도치 않은 행동에 대한 제도적 안전망** 수요가 커지고 있으며, 이 로드맵은 향후 기업용 AI 도입 표준에 직접적인 영향을 미칠 것으로 보인다.",
+      "insight": "AI 안전 설계가 연구 차원을 넘어 **기업 AI 거버넌스의 필수 요소**로 자리 잡고 있다. AI를 도입하려는 기업 입장에서는 모델 성능뿐 아니라 '이 AI가 잘못됐을 때 어떻게 통제하는가'를 구매 기준에 포함해야 하는 시대가 됐다. 특히 금융·공공·의료 등 고위험 산업에서는 AI 제어 로드맵 보유 여부가 솔루션 도입의 선결 조건이 될 수 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "AI 안전·거버넌스 기준이 강화되면, 이수시스템의 기업용 AI 솔루션에도 **감사 로그·이상행동 모니터링·관리자 승인 게이트** 같은 안전 레이어를 사전 탑재하는 것이 차별화 포인트가 된다. 특히 금융·공공 고객사는 AI 제어 가능성을 조달 기준으로 요구할 가능성이 높으므로, HR AI 패키지와 RAG 챗봇에 접근 권한 관리 및 응답 검증 기능을 명시적으로 제안 자료에 포함하는 것을 검토할 만하다.",
+      "source": "Tech Times",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSHVwLXU4TWRIa1BUSTM3U3NuT0ZVNUtkVjRBOS02eVp0Vy1nRk5jb05fbEplNFRqZ2Q2QUV1bEdTLU0ySF8xVDRzWk5ueVNhMWFYRXZCdmxyeURDZ0FCTVNBVkJSVXJHcUxtRnViWm1fam41a0NLMnN0LXJ4d2Fkd3JYZWQ5RnlvcG9TM3VHU3cyXzdBdl9oX2s0Z2lyU2J1THVHeWltM2Y5MXM0RGJGRGRoNGx3MEJpT2RoQnBvWnd6OVFwVmVDQkJtZUtRZzNP?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**AI 인재 전쟁이 노벨상 수상자 레벨로 격화** — Google DeepMind에서 Anthropic으로의 연속 이탈은 AI 연구 주도권이 빅테크에서 AI 퍼스트 기업으로 이동하고 있음을 보여준다",
+    "**중국 저비용 AI 모델의 글로벌 사용량 역전**은 AI 도입 비용의 하향 평준화를 앞당기지만, 데이터 주권·보안 이슈로 인해 공공·금융 시장에서는 검증된 국내외 모델 수요가 유지될 것이다",
+    "한국의 미토스 차단 사태는 **AI 주권이 반도체만큼 중요한 안보 의제**임을 증명했고, 온프레미스·국산 AI 기반 솔루션에 대한 정책·예산 지원이 본격화될 신호탄이다"
+  ],
+  "isu_summary": "오늘 뉴스의 핵심 키워드는 'AI 주권·안전·에이전트'로 요약된다. 한국의 미토스 차단 사태는 이수시스템이 온프레미스 RAG 챗봇과 프라이빗 AI 패키지를 제조·공공 고객사에 제안할 때 가장 강력한 영업 논거가 될 수 있다. 동시에 Google DeepMind의 안전 로드맵 공개는 HR AI·챗봇 솔루션에 감사·제어 기능을 선제적으로 내장해 차별화하는 방향을 제시하며, NDC26에서 확인된 AI 에이전트 트렌드는 WORKUP·RPA의 다음 진화 방향을 구체화하는 힌트를 제공한다."
+}
