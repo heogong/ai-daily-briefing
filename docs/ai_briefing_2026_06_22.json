@@ -1,0 +1,72 @@
+{
+  "date": "2026.06.22 (월)",
+  "one_liner": "구글 AI 인재 유출이 가속화되는 사이, 한국은 K-피지컬 AI 2기를 가동하며 현장 적용에 속도를 냈다.",
+  "news": [
+    {
+      "number": 1,
+      "category": "산업 동향",
+      "title": "구글 AI 두뇌 줄줄이 이탈 — 노벨상 수상자도 Anthropic으로",
+      "body": "구글 딥마인드의 단백질 구조 예측 모델 **AlphaFold2**를 이끌어 2024년 노벨 화학상을 수상한 **존 점퍼(John Jumper)**가 Anthropic으로 이직한다. 같은 날 OpenAI는 구글 Gemini 팀의 핵심 개발자 **노암 샤지어(Noam Shazeer)**를 영입했다는 소식도 전해졌다. 샤지어는 트랜스포머 아키텍처 설계에 기여한 AI 업계 레전드급 인물이다. 단 하루 사이에 구글의 최상위급 AI 인재 두 명이 경쟁사로 빠져나간 셈이다.\n\n이로써 구글은 단기간에 제프리 힌튼(퇴사 후 AI 위험성 경고 활동), 노암 샤지어, 존 점퍼 등 상징적 인물들을 잃게 됐다. 업계에서는 구글의 조직 문화, 관료주의적 의사결정, 그리고 OpenAI·Anthropic의 공격적 보상 패키지가 이탈 원인으로 꼽힌다. **AI 패권 경쟁에서 인재가 곧 기술력**이라는 공식이 다시 한번 확인되는 대목이다.",
+      "insight": "빅테크의 AI 인재 전쟁이 단순한 연봉 경쟁을 넘어 '조직 매력도' 싸움으로 전환되고 있다. 구글처럼 자원이 풍부한 기업도 스타 연구자를 붙잡지 못하는 현실은, 기술 리더십이 투자 규모보다 사람에 달려 있음을 보여준다. Anthropic과 OpenAI는 인재 유입으로 모델 품질 격차를 더 벌릴 가능성이 높아졌으며, 이는 앞으로 6~12개월 내 출시될 차세대 모델 성능 경쟁에 직접 영향을 미칠 것이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "Anthropic과 OpenAI의 인재 강화는 Claude·GPT 계열 모델의 성능 향상으로 이어질 가능성이 높다. 이수시스템이 RAG 기반 챗봇과 HR AI Package에 활용 중인 외부 LLM API의 성능이 빠르게 개선될 수 있으므로, 주요 모델 업데이트 시 기존 제품의 응답 품질과 비용 효율을 재검토하는 주기적 점검 프로세스를 마련해 두는 것이 좋다.",
+      "source": "Cybernews / AOL.com / MSN",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPU2k3ZmV4V1J4Zi13R0JYOHhWenZseWNtbU9pcGV1aUVSLTB0ME93RUgzMVczNm1NMnZ6emk5VHQtWnF0TDJPT1A2VHBNeE8zNFhJV1ZaRV90aUFhc2MyWjFhTTlFMGZtRHBON1lPMFhoYTB2S0R6YmZ1aGxoWUswa2V1d253MHNHT1lWZFRLVm96ZF9jU1FzU3k1cmpvN2tZVmFNUw?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "글로벌 이슈",
+      "title": "트럼프 행정부, Anthropic 겨냥한 AI 단속 착수 — 미국판 AI 규제 본격화",
+      "body": "트럼프 행정부가 **Anthropic**을 대상으로 AI 관련 조사 또는 규제 조치에 착수한 것으로 알려졌다. 구체적인 혐의나 조치 내용은 아직 공개되지 않았으나, 미국 정부가 민간 AI 기업에 직접 개입하는 첫 사례 중 하나로 업계의 이목을 끌고 있다. 트럼프 행정부는 그간 AI 규제에 소극적인 입장을 취해 왔지만, 이번 행보는 **AI 안전성·국가 안보** 이슈와 연결된 선택적 단속의 성격을 띠는 것으로 분석된다.\n\n아이러니하게도 같은 날 Anthropic은 구글 딥마인드의 노벨상 수상자를 영입하며 기술력을 과시했다. 정치적 압박과 인재 유입이 동시에 일어나는 이중적 상황은, AI 기업들이 기술 경쟁 외에 **정치·규제 리스크**도 함께 관리해야 하는 시대에 접어들었음을 시사한다.",
+      "insight": "미국 정부가 특정 AI 기업을 타깃으로 삼기 시작했다는 것은 글로벌 AI 거버넌스 지형이 빠르게 변하고 있음을 의미한다. EU의 AI Act에 이어 미국도 선택적 규제의 신호를 보냄으로써, AI 기업들은 기술 개발과 동시에 컴플라이언스 체계를 갖춰야 하는 부담이 커졌다. 한국 기업들도 미국·EU 시장 진출 시 AI 규제 리스크를 사전에 평가하는 것이 필수가 됐다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "미국 정부의 AI 규제 강화 흐름은 국내 공공 기관 및 금융권 고객사들의 AI 도입 시 '안전성 검증' 요구를 더욱 높일 것이다. 이수시스템의 RAG 기반 챗봇과 AI 플랫폼 영업 시, 데이터 보안·모델 투명성·감사 로그 기능을 전면에 내세우는 제안 전략이 설득력을 가질 수 있다.",
+      "source": "The Tech Buzz",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNbzdQSFNvcHEzd19iczJOTkI2Q1dxeWJ1c3ZkeVVRTXhlQXFDNDhBWDRxdm5LWTdmM3ZvSEgyWFZ2UktsR1VUMU9QMGhuWHRJeDllS3RyRU8wTDlIZEpqRThsQjhLei1tSWZqYWxHTk8yQWJLbGh5ckxnS0lkbmlxcEVRZS0?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "모델 릴리스",
+      "title": "xAI Grok 4.3, Amazon Bedrock 입성 — 100만 토큰 컨텍스트·가격 인하 동시 제공",
+      "body": "일론 머스크의 xAI가 개발한 **Grok 4.3**이 Amazon Bedrock에 정식 추가됐다. 핵심 스펙은 **최대 100만 토큰(약 750만 단어)의 컨텍스트 윈도우**로, 방대한 문서를 한 번에 처리할 수 있는 수준이다. 여기에 기존 대비 낮아진 가격 정책까지 더해져 기업 고객의 접근성이 크게 높아졌다. Amazon Bedrock은 AWS 인프라 위에서 다양한 AI 모델을 API 형태로 제공하는 플랫폼으로, Grok 4.3의 합류로 모델 선택지가 한층 다양해졌다.\n\n100만 토큰 컨텍스트는 계약서·법률 문서·대규모 코드베이스 전체를 단일 입력으로 처리하는 실무 시나리오를 가능하게 한다. 가격까지 내려간 만큼, 기업 고객이 GPT-4o·Claude 대신 Grok 4.3을 선택할 유인이 생겼다. **롱 컨텍스트 AI 경쟁**이 이제 가격 경쟁으로도 확장되는 양상이다.",
+      "insight": "초대형 컨텍스트 윈도우와 가격 인하의 조합은 기업용 AI 도입의 핵심 장벽(비용·처리 한계)을 동시에 낮춘다. 이는 단순 챗봇을 넘어 장문 문서 분석·계약 검토·복잡한 데이터 파이프라인 자동화 등 실무 활용 범위가 폭발적으로 넓어질 수 있음을 의미한다. 또한 모델 간 가격 경쟁이 격화될수록 최종 사용자(기업)의 협상력이 높아지고, AI 서비스 공급자들의 차별화 포인트는 가격에서 통합 생태계로 이동하게 된다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "Grok 4.3의 100만 토큰 컨텍스트는 이수시스템 RAG 챗봇의 지식베이스 구성 방식에 영향을 준다. 기존에는 문서를 청크 단위로 분할해 검색하는 방식이 필수였으나, 이 수준의 컨텍스트라면 취업규칙·근로계약서·내규 전체를 단일 입력으로 처리하는 방식도 가능해진다. HR 챗봇이나 WORKUP 연계 AI 기능의 응답 정확도를 높이는 아키텍처 개선 옵션으로 검토해볼 만하다.",
+      "source": "iNews Zoombangla",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNTjlqY3k4TGJPQlY0bllmbHB6N1llcEMyOU9OY2xDSjNZby0yZzU2QW5QaldELWZfQjdINFp5eUsxV0FpNnhaUHF1bGlzRjVOUElnXzh2MjQyTlZlcUJwNmcxV1pxa1Z1QzJkakI1WWZjYVVSUmhEODBHZnNoTVQ1OUhUZ0Z6cjNFcG5xWTVha0dja0NvOGJMSXZxVThvclFISzM1d3Y1VXBSVWdRenFFODI4S3A?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "산업 동향",
+      "title": "K-피지컬 AI 2기 체계 가동 — 현장 적용 단계로 전환",
+      "body": "정부와 산업계가 협력하는 **K-피지컬 AI** 프로젝트가 현장 적용 중심의 '2기 체계'로 전환됐다. 1기가 기술 개발과 시범 적용에 초점을 맞췄다면, 2기는 제조·물류·건설 등 **실제 산업 현장에서의 로봇·자율 시스템 구현**에 방점을 두고 있다. 피지컬 AI는 디지털 공간을 넘어 물리 세계와 상호작용하는 AI로, 공장 자동화·무인 물류·스마트 건설 장비 등이 대표 적용 분야다.\n\n한국 정부는 AI 반도체·로봇·자율주행을 핵심 국가 전략 기술로 지정하고 관련 예산과 규제 샌드박스를 확대 중이다. **피지컬 AI 2기 체계 가동**은 실증에서 실전 배포로 넘어가는 전환점으로, 국내 제조·건설 현장의 AI 자동화 수요가 본격적으로 시장화될 신호탄으로 해석된다.",
+      "insight": "피지컬 AI의 현장 적용 단계 진입은 단순 소프트웨어 AI를 넘어 하드웨어·센서·제어 시스템과 통합된 AI 수요를 만들어낸다. 국내 제조·건설 기업들이 정부 주도 실증 사업에 참여하거나 자체 도입을 검토하는 과정에서, 기존 ERP·안전관리·인사 시스템과의 연동 필요성도 함께 부각될 것이다. 피지컬 AI 도입 기업일수록 데이터 통합 및 운영 관리 솔루션의 업그레이드 수요가 동반 상승할 가능성이 높다.",
+      "isu_area": "안전 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "K-피지컬 AI 2기는 이수시스템의 주요 고객군인 제조·건설사들이 현장 자동화 투자를 늘리는 직접적 계기가 된다. Smart Plant(레이저 스캔 기반 플랜트 관리)와 Smart & Safety(산업현장 안전관리) 솔루션은 피지컬 AI 도입 현장에서 데이터 수집·모니터링 레이어로 포지셔닝할 수 있다. 정부 실증 사업 공고를 모니터링하고, 컨소시엄 참여나 레퍼런스 확보 기회를 선제적으로 검토하는 것이 필요하다.",
+      "source": "대한경제",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9ScVJBem1SdFhpVjFYcnUta0M5aFBHQ3hhbVNmMjBTTnQ5R0ZrdTZHdW5lSzhMQ0tBVTlNcU9EZElVbVVodHoxYWQyTTRtekNFME41a1Q2SVc5MGFNZS02SXRYODZJdW95bTl1cEhHeWNFOF9W?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "모델 릴리스",
+      "title": "세계 최초 완전 오픈소스 의료 LLM '메디트론FO' 공개 — 데이터부터 코드까지 전면 개방",
+      "body": "스위스 EPFL(로잔연방공과대학교)이 **세계 최초의 완전 오픈소스 의료 특화 LLM '메디트론FO(MeditronFO)'**를 공개했다. 기존 오픈소스 의료 AI가 모델 가중치만 공개하던 것과 달리, 이번에는 **학습 데이터·소스 코드·평가 방식·벤치마크**까지 모두 공개해 진정한 의미의 완전 오픈소스를 구현했다. 의료 분야 AI의 투명성과 재현성 문제를 정면 돌파한 시도로 평가받는다.\n\n의료 LLM은 진단 보조·임상 문서 자동화·의학 교육 등에 활용 가능하지만, 지금까지는 데이터 불투명성과 검증 불가능성이 신뢰의 장벽이었다. 메디트론FO의 완전 공개는 **학계·병원·스타트업이 의료 AI를 자유롭게 검증하고 개선할 수 있는 생태계**를 여는 계기가 될 수 있다. 특히 데이터 주권이 중요한 공공 의료 기관에서 자체 파인튜닝 활용 가능성이 주목된다.",
+      "insight": "완전 오픈소스 의료 LLM의 등장은 헬스케어 AI 진입 장벽을 크게 낮춘다. 기존에는 대형 AI 기업의 API에 의존하거나 자체 모델 개발 비용을 감당해야 했던 중소 의료 기관·스타트업도 이제 검증된 오픈소스 모델을 기반으로 맞춤형 AI 서비스를 구축할 수 있다. 이는 특정 도메인에서 완전 오픈소스 LLM이 폐쇄형 상용 모델의 강력한 대안이 될 수 있다는 선례를 만들며, 의료 외 다른 전문 분야(법률·회계·HR 등)의 도메인 특화 오픈소스 LLM 개발을 자극할 것이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "의료 도메인에서 완전 오픈소스 LLM이 등장했다는 것은, HR 도메인 특화 오픈소스 LLM도 머지않아 나올 수 있음을 시사한다. 이수시스템은 500개 이상의 HR 구축 레퍼런스와 데이터 자산을 보유하고 있어, 향후 HR 특화 오픈소스 모델을 파인튜닝하거나 RAG 구성에 활용하는 방식으로 AI 이력서 분석·HR AI Package의 응답 품질을 차별화할 수 있다. 외부 API 비용 절감 효과도 기대할 수 있다.",
+      "source": "인공지능신문",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1qaXZqbmhWRnZnTmhDdEVmYXh3MXM1c1pkcDVPWUdoRUQyekZRUXZHVEI4X3BDUENRbHpfWVdjczNsZnVCUGt3cHUyRVVnTlVIWHVKV3FtMEpEdXQ3QkhOUmQ2d2ptb1k?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**구글 AI 인재 이탈이 단 하루에 두 건** 발생하며 OpenAI·Anthropic으로 판도가 기울고 있다. 어떤 모델 API를 장기 파트너로 선택할지 재검토할 시점이다.",
+    "**K-피지컬 AI 2기 가동**은 국내 제조·건설 현장의 AI 자동화 투자를 공식화하는 신호다. 관련 정부 사업과 레퍼런스 확보 기회를 선점해야 한다.",
+    "Grok 4.3의 **100만 토큰 컨텍스트와 가격 인하**, 의료 오픈소스 LLM 등장이 보여주듯, AI는 빠르게 '더 크고, 더 싸고, 더 투명하게' 진화하고 있다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심은 세 가지다. 첫째, OpenAI·Anthropic으로의 인재 집중은 이들 모델의 성능 향상을 가속화하므로, 이수시스템 AI 제품에서 활용하는 외부 LLM API의 품질 모니터링과 전환 비용 최소화 설계가 중요해졌다. 둘째, K-피지컬 AI 2기 체계는 이수시스템의 제조·건설 고객사들이 현장 AI 투자를 늘리는 직접적 계기로, Smart Plant·Smart & Safety 솔루션의 영업 접점이 확대될 수 있다. 셋째, 도메인 특화 오픈소스 LLM 트렌드는 HR AI Package와 RAG 챗봇의 내재화 고도화 방향을 제시하며, 500개 이상의 HR 레퍼런스 데이터 자산이 실질적 경쟁 우위가 되는 시대가 가까워지고 있다."
+}
