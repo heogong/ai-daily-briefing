@@ -1,0 +1,72 @@
+{
+  "date": "2026.06.23 (화)",
+  "one_liner": "구글 AI 인재 탈출에 시총 270조 증발, 한국은 글로벌 AI 플랫폼 격전지로 부상",
+  "news": [
+    {
+      "number": 1,
+      "category": "산업 동향",
+      "title": "구글 AI 핵심 인재 줄이탈 — 시총 270조 원 하루 만에 증발",
+      "body": "노벨상 수상자이자 AlphaFold 공동 개발자인 존 점퍼가 Anthropic으로 이적하고, '트랜스포머 공동 저자' 노암 샤저가 **2.7조 원 규모 계약**으로 OpenAI에 합류하면서 구글 알파벳 주가가 하루 만에 **6~7% 폭락**했다. 시가총액 기준 약 **2,690억 달러(약 370조 원)**가 사라진 알파벳 역대 최악의 하루 중 하나로 기록됐다.\n\n불과 한 주 만에 두 명의 세계 최정상급 AI 연구자가 이탈한 것은 단순한 인사 문제가 아니라 구글의 AI 경쟁력에 대한 시장의 신뢰 문제로 확산되고 있다. Gemini Pro 3.1을 통해 비용 경쟁력을 유지하고 있음에도, 핵심 두뇌의 유출은 장기 연구 역량 약화 우려를 키우고 있다.",
+      "insight": "AI 경쟁이 '모델 성능' 싸움에서 '인재 확보' 싸움으로 무게중심이 이동하고 있음을 보여준다. 조 단위 계약금으로 스타 연구자를 영입하는 OpenAI·Anthropic의 전략은 기술 격차를 빠르게 좁히는 수단이 되며, 빅테크 내부 인재 유지 문제가 주주가치와 직결되는 새로운 리스크 요인으로 부상했다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "Anthropic과 OpenAI의 인재·투자 집중은 두 회사의 기업용 AI 제품(Claude for Work, GPT Enterprise) 고도화로 이어진다. 이수시스템이 RAG 기반 챗봇과 HR AI Package를 고객사에 제안할 때, 이 모델들의 성능 변화를 지속 추적해 외부 LLM 연동 전략을 선제적으로 업데이트해야 한다.",
+      "source": "CNBC, New York Post, Barron's",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFB0bUh0Uk95MWYxNVZRc2VQdFpaWWRYZEJ0MEdQOWhFWkNNa19pdDcyazBqTGE2MHdMTzhfTHh5STk2NVB0d2dsMlFFb0JteGR4MWxsY3VPUWM4NjdHUk1PY2pJdVA4S1E1allZS0JMWjAyX0lMdUlRRHZR0gF_QVVfeXFMTzFzeWhOZXAwdk9JNDJvekdBajl4X1lBSU0yUmkxVGpoS09rZmFoMDdMRUZkckM2TEs0M3JsZ3hxcThhS0xLRDhIeVVZU3otdWMteGVzMHdNMXBYdVRfZk0xZzg1NU1RbUlrVzNnTXNuX3Y4dEN2aGlzVllRNFA1Yw?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "글로벌 이슈",
+      "title": "한국, 데이터 민감 B2G 시장까지 글로벌 AI 플랫폼 격전지로",
+      "body": "서울경제에 따르면 OpenAI·Google·Anthropic 등 글로벌 AI 플랫폼들이 한국의 **공공(B2G) 시장**까지 공격적으로 진출하며 국내 AI 기업들과 정면 경쟁 구도를 형성하고 있다. 데이터 주권·보안 민감도가 높은 공공 영역에서도 글로벌 빅테크가 로컬 파트너십 등을 통해 진입 장벽을 낮추는 전략을 구사 중이다.\n\n같은 날 네이버가 자사 서비스에 구글·오픈AI 기술을 접목하는 **'투트랙 전략'**을 추진 중이라는 단독 보도가 나왔고, 업스테이지는 다음을 품고 '모두를 위한 AI' 연합군을 출범했다. 국내 AI 생태계가 자체 모델 개발과 글로벌 API 활용의 병행 구조로 빠르게 재편되고 있다.",
+      "insight": "글로벌 AI 플랫폼의 한국 공공시장 진출은 국내 IT 솔루션 기업들의 기존 영역을 위협하는 동시에, 글로벌 모델을 레버리지한 새로운 서비스 기회를 열어준다. 네이버의 투트랙 전략처럼 '자체 역량 + 글로벌 API'의 조합이 국내 B2B·B2G 시장의 표준 접근법이 되고 있으며, 로컬 데이터 보안 규제 준수 능력이 경쟁 차별점으로 부각될 전망이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "글로벌 AI가 국내 공공시장까지 진입하는 상황에서, 이수시스템의 강점인 '국내 규제 이해 + 500개 이상 레퍼런스 + NCP 파트너십'은 핵심 차별점이 된다. 특히 WORKUP·Smart HR에 RAG 챗봇을 결합해 공공기관 인사담당자 대상으로 '보안 내재화된 온프레미스 HR AI' 패키지를 선제 제안하는 영업 시나리오를 검토할 시점이다.",
+      "source": "Seoul Economic Daily, 뉴스1, 한국경제",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQb1FEUjFnazNUejc2QXo0aEFHYkNOR0ZiRHdVSEk0SjE3T2FXLWMzT1VRYWdoT0VsRHZTRTBCSTRLSW5HUGw0UW1qbTJSYmFvZk1sU3BhOV9KUzIzUlNaY3FJaVozYnNSM3Q0Z3MwUmp3TnVzVkFHNEdqaXBydmJXM0ZsWkVzaHVRT3pHaTB5YWlDeHVkTUhkSmV3Z01rRUVFLUxucXRn?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "모델 릴리스",
+      "title": "중국 GLM-5.2 등장 — 오픈소스 AI 성능 두 배 도약으로 실리콘밸리 긴장",
+      "body": "중국 스타트업 Zhipu AI가 공개한 **GLM-5.2**는 이전 버전 대비 벤치마크 성능이 **2배** 향상된 오픈 소스(오픈 웨이트) 모델로, DeepSeek 이후 또다시 실리콘밸리에 충격을 주고 있다. 추론·코딩·수학 등 핵심 영역에서 GPT-4급 성능을 오픈 소스로 구현했다는 점이 주목받고 있으며, Zhipu AI는 이 기간 기업 가치가 **1조 위안(약 190조 원)**을 돌파했다.\n\n중국 정부의 AI 정책 지원과 글로벌 수요가 맞물리며 중국 AI 관련 주식이 일제히 급등했다. GLM-5.2는 상업적 사용이 가능한 라이선스로 공개돼 기업들의 자체 AI 구축 비용을 대폭 낮출 수 있는 선택지로 주목받고 있다.",
+      "insight": "오픈소스 고성능 모델의 등장은 기업용 AI 도입 비용의 하방 압력을 지속적으로 높인다. 클로즈드 API 의존도를 낮추고 싶은 기업들에게 GLM-5.2 같은 모델은 온프레미스 구축의 현실적 대안이 되며, AI 솔루션 시장의 가격 경쟁이 더욱 심화될 것으로 예상된다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "GLM-5.2처럼 성능 높은 오픈 웨이트 모델이 늘어날수록, 이수시스템의 RAG 기반 챗봇을 외부 API 종속 없이 고객사 내부 서버에 배포하는 '온프레미스 AI 패키지' 제안이 설득력을 얻는다. 특히 데이터 외부 유출을 꺼리는 제조·공공 고객에게 GLM-5.2 기반 경량 배포 옵션을 HR AI Package 또는 기업용 챗봇의 추가 구성으로 검토할 수 있다.",
+      "source": "The Hans India, The Indian Express, blockchain.news",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQanVJUWVnVWEzVEIyZ1llcTcxSEhWeHg4OWN4S1lnTmRNbzdRMEg2Nkx0ZVZrTUszQndHY3ZCUVBRRExMYkRqbzJsT1l0QnNpZEJoS2d1eWJQZHNiT2ZCQnIwWHFYdEx1dnNZaGE4LU95T2NrSW4wdC1fRTNaVDlBMno2NGl0QXFNRnpkQzhWWndlNUExNXNyYjVuazRQVC1SbmNpQUVwdXlvQdIBqgFBVV95cUxQanVJUWVnVWEzVEIyZ1llcTcxSEhWeHg4OWN4S1lnTmRNbzdRMEg2Nkx0ZVZrTUszQndHY3ZCUVBRRExMYkRqbzJsT1l0QnNpZEJoS2d1eWJQZHNiT2ZCQnIwWHFYdEx1dnNZaGE4LU95T2NrSW4wdC1fRTNaVDlBMno2NGl0QXFNRnpkQzhWWndlNUExNXNyYjVuazRQVC1SbmNpQUVwdXlvQQ?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "제품 업데이트",
+      "title": "삼성, OpenAI ChatGPT Enterprise·Codex 전 임직원 도입 — 삼성 AI 전략 대전환",
+      "body": "삼성전자가 **ChatGPT Enterprise와 Codex**를 전 세계 임직원 업무에 전면 도입한다고 밝혔다. 과거 ChatGPT 사용 금지령을 내렸던 삼성이 불과 수년 만에 OpenAI의 기업용 솔루션을 공식 채택한 것으로, AI 보안 우려를 자체 데이터 격리 구조(Enterprise 계약)로 해소한 것이 결정적이었다.\n\n이번 도입은 코딩 자동화(Codex)와 업무 전반의 생성형 AI 활용을 동시에 아우르며, **대기업의 기업용 AI 전면 도입 신호탄**으로 해석된다. 삼성의 이 결정은 국내외 대기업들의 유사한 도입 결정을 가속화할 것으로 보인다.",
+      "insight": "글로벌 대기업이 특정 AI 솔루션을 전사 표준으로 채택하는 사례가 늘면서, 기업용 AI 시장은 '파일럿 실험'에서 '전사 롤아웃' 단계로 빠르게 진입하고 있다. 보안 문제를 Enterprise 계약으로 해결한 삼성의 모델은 AI 도입을 망설이는 보수적 기업들에게 도입 근거가 될 수 있다.",
+      "isu_area": "디지털서비스 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "삼성의 ChatGPT Enterprise 전사 도입은 국내 중견·대기업 IT 담당자들의 기업용 AI 도입 검토를 가속화하는 기폭제가 된다. 이수시스템은 WORKUP·Smart HR 고객사(제조·건설 중심)를 대상으로 'AI 업무 자동화 패키지(RPA + HR AI)'의 긴급 도입 필요성을 어필하는 영업 타이밍으로 활용해야 한다.",
+      "source": "Dataconomy, The Business Journals",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQZkRYQ0lyUGY1elhPWklCZlA2eUFKRTdENkdTdW5TMlp2TWhpdHZCOVF5SFpBTGcyRk1leWo5Y1NaczB3bnZTcGdyb1B1ZmphNHdQelFLaDh5S2FmQVJYeGhBTjUxeVhUWkVFM3UxaWJweVFVTFVRbGlqSEZNM1dPaWxnN3VNc1NUb1NTcA?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "글로벌 이슈",
+      "title": "정부, 'AI 개발 표준계약서' 논의 착수 — 국내 AI 사업 룰셋 바뀐다",
+      "body": "디지털데일리 단독 보도에 따르면 한국 정부가 **'AI 개발 표준계약서'** 제정을 논의 중이다. AI 관점에서의 기준 정립을 목표로 하며, 발주사와 개발사 간 AI 프로젝트 계약의 모호한 책임 범위·학습 데이터 권리·결과물 귀속 등의 쟁점을 표준화할 예정이다.\n\n이와 함께 중기부는 기업 AI·LLM 신뢰성 검증 전문기업 **셀렉트스타를 '초격차 DIPS'**에 선정하며 국내 AI 품질·신뢰성 생태계 육성에 속도를 내고 있다. 두 움직임은 정부가 AI 산업의 '신뢰할 수 있는 계약·검증 인프라' 구축에 본격 나섰음을 의미한다.",
+      "insight": "AI 개발 표준계약서가 도입되면 발주처 입장에서는 AI 프로젝트 리스크 관리가 용이해지고, 개발사는 계약 범위와 책임 소재가 명확해져 분쟁 소지가 줄어든다. 단기적으로는 계약 검토 비용이 증가할 수 있으나 중장기적으로 AI 프로젝트의 예측 가능성을 높여 시장 전체의 신뢰도를 향상시킬 것이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[정부 사업]",
+      "isu_insight": "AI 개발 표준계약서는 이수시스템이 수행하는 AI 챗봇·HR AI 구축 프로젝트의 계약 구조에 직접 영향을 준다. 표준계약서 초안이 공개되는 시점에 맞춰 이수시스템의 AI 솔루션 제안서·계약서 양식을 선제적으로 업데이트하면, 고객사(특히 공공·금융)에 '표준 준수 AI 파트너'로서의 신뢰도를 높이는 영업 차별점으로 활용할 수 있다.",
+      "source": "디지털데일리, 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4wOElUNGNFSENlV0ZQX1MzM0hwV1ZBMTZvZUVZWHIwWWJCTXg4QTMtSjJOOEF2NTMwYmZZVF9BWkl5NDVoeGI5Q1JGYVlSY0ZOV0FIOE92Uk45clVrbVVZYy05ZTc?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**구글 AI 인재 대탈출**: 노벨상 수상자·트랜스포머 공동 저자가 Anthropic·OpenAI로 이적하며 시총 370조 원이 증발 — AI 경쟁의 핵심 변수가 '모델'에서 '인재'로 이동 중",
+    "**한국은 AI 격전지**: 글로벌 AI 플랫폼이 국내 공공(B2G)까지 침투하는 가운데, 네이버의 투트랙(자체+글로벌) 전략이 국내 기업들의 생존 모델로 부상",
+    "**기업용 AI 전면 도입 시대 개막**: 삼성의 ChatGPT Enterprise 전사 채택과 한국 정부의 AI 표준계약서 논의는 기업 AI가 실험에서 제도화 단계로 진입했음을 알리는 신호"
+  ],
+  "isu_summary": "오늘 뉴스의 핵심은 '기업용 AI의 제도화'와 '한국 시장의 글로벌 AI 격전지화'다. 삼성의 OpenAI Enterprise 전사 도입과 정부의 AI 표준계약서 논의는 국내 기업 고객들의 AI 솔루션 도입 속도를 끌어올리는 동시에, 계약·검증 기준 준수 능력을 갖춘 파트너사를 선호하게 만드는 환경을 조성한다. 이수시스템은 HR 레퍼런스 500+, NCP 파트너, SAP 파트너라는 기존 신뢰 자산을 바탕으로 WORKUP·Smart HR 고객사에 RAG 챗봇·HR AI Package의 긴급 도입을 제안하고, AI 표준계약서 준수를 선제 선언해 공공·제조·금융 시장에서의 영업 차별화를 가속해야 한다."
+}
