@@ -1,0 +1,72 @@
+{
+  "date": "2026.06.28 (일)",
+  "one_liner": "Anthropic의 최강 AI가 조건부 귀환하고, 구글은 핵심 인재를 잃는 사이 나델라는 '모든 기업이 자체 AI를 가져야 한다'고 외쳤다.",
+  "news": [
+    {
+      "number": 1,
+      "category": "모델 릴리스",
+      "title": "Anthropic 최강 AI 'Mythos 5', 2주간 협상 끝에 제한적 복귀",
+      "body": "Anthropic의 가장 강력한 AI 모델인 **Mythos 5**가 트럼프 행정부와의 2주간 줄다리기 협상 끝에 제한적으로 재가동됐다. 미국 정부가 Anthropic에 보낸 서한에 따르면, 일반 공개용 버전인 'Fable 5'는 여전히 출시가 보류된 채 **일부 선별된 기관에만** 접근이 허용된 상태다. 이번 사태는 AI 최전선 모델이 출시되기 전 정부 검토를 받는 전례를 만든 것으로, 미국 행정부가 고성능 AI 모델의 배포에 직접 개입할 수 있음을 보여줬다.",
+      "insight": "AI 최고 성능 모델의 공개 배포가 정부 승인이라는 새로운 관문을 통과해야 하는 시대가 열리고 있다. 이는 AI 기업들의 출시 일정과 전략에 불확실성을 더하는 동시에, 각국 정부가 AI 안전성 심사를 제도화하려는 흐름의 일환으로 해석된다. 향후 EU AI Act, 영국 AI 안전 연구소 등과 맞물려 글로벌 AI 거버넌스의 핵심 논쟁이 될 가능성이 높다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "고성능 AI 모델의 정부 검토 선례는 이수시스템의 RAG 기반 챗봇 및 AI 플랫폼 사업에 직접적 영향은 없으나, 기업 고객들이 AI 도입 시 '검증된 안전한 모델'을 요구하는 흐름으로 이어질 수 있다. WORKUP·Smart HR에 탑재 예정인 HR AI Package의 모델 선정 시 안전성·규제 준수 여부를 차별화 포인트로 활용할 수 있다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/958458/anthropic-mythos-5-is-back-trump-negotiations"
+    },
+    {
+      "number": 2,
+      "category": "산업 동향",
+      "title": "나델라 '자체 AI 없는 기업은 종속된다'… 모든 회사에 AI 자립 촉구",
+      "body": "마이크로소프트 CEO **사티아 나델라**가 'GPT·Gemini 같은 소수 모델에만 의존하는 건 위험하다'며 기업마다 자체 AI 모델을 구축해야 한다고 강하게 주장했다. 그는 특정 AI 공급업체 종속(vendor lock-in)이 장기적으로 기업 경쟁력을 해칠 수 있다고 경고하며, **소버린 AI(Sovereign AI)** 개념을 기업 단위로 확장해야 한다고 밝혔다. 이 발언은 마이크로소프트 자체가 Azure AI 플랫폼 및 Copilot 생태계를 통해 기업 AI 자립을 지원하겠다는 전략적 맥락에서 나왔다.",
+      "insight": "대형 클라우드·AI 공급사의 수장이 직접 '분산화'를 촉구하는 것은 역설적이지만, 기업용 AI 시장에서 커스텀 모델·온프레미스·프라이빗 AI 수요가 급격히 늘고 있음을 반영한다. 이는 단순 API 연동을 넘어 기업 데이터에 특화된 파인튜닝·RAG 기반 AI 솔루션에 대한 수요 확대로 이어지며, AI 솔루션 시장의 경쟁 구도를 '범용 모델' vs '특화 솔루션'으로 재편할 신호탄이 될 수 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "나델라의 '기업 자체 AI' 촉구는 이수시스템의 RAG 기반 챗봇·HR AI Package에 직접적인 영업 근거가 된다. 대형 모델에 의존하지 않고 고객사 내부 데이터(인사규정, ERP 데이터 등)를 학습시킨 **프라이빗 AI** 솔루션을 제조·건설·금융 고객에게 제안할 때 이 메시지를 레버리지로 활용할 수 있다. 특히 500개 이상 HR 레퍼런스를 기반으로 한 도메인 특화 AI의 차별성을 부각하기 좋은 타이밍이다.",
+      "source": "Business Insider",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNMmZJd2NFRHJxbEp6M0xxVUZBbnE5d0luVklpSkJXTzdrZ0s3Y0E5bDVnNk5PbXN3MHNjZWRiTmxiWC1DbjZIaFAxelBuVjM4dUpCSzBmZnVsXy1LbVlHUUNWU3AzbmZqSjJ0S1h5QkJyMlp4MXFwQ2ZOYWF5aWxTSzg1ZUlDeDZCRDJHR0RuYzl6WmNXVkx4ZmdzcjBldw?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "글로벌 이슈",
+      "title": "구글, AI 핵심 인재 줄줄이 OpenAI·Anthropic으로 이탈… 27억 달러 계약도 등장",
+      "body": "구글의 핵심 AI 연구자들이 OpenAI와 Anthropic으로 잇따라 이직하고 있다. 특히 트랜스포머 아키텍처 공동 창안자 중 한 명인 **노암 샤지르(Noam Shazeer)**가 **27억 달러(약 3.7조 원)** 규모의 영입 계약을 통해 OpenAI로 이동했다는 사실이 알려져 업계에 충격을 줬다. 구글은 Gemini 등 자체 AI 경쟁력 강화에 막대한 투자를 이어가고 있지만, 내부 인재 유출은 중장기 연구 역량에 구조적 리스크로 작용하고 있다.",
+      "insight": "AI 인재 쟁탈전이 수조 원 단위 계약으로 격화되는 것은 LLM 기반 경쟁에서 핵심 연구자 한 명의 가치가 얼마나 큰지를 방증한다. 동시에 구글처럼 거대한 조직도 인재 이탈을 막기 어렵다는 점은, AI 기술 리더십이 회사 규모보다 소수의 핵심 인재에 집중되는 구조적 특성을 드러낸다. 이는 AI 스타트업과 기존 빅테크 간 기술 격차가 예상보다 빠르게 좁혀질 수 있음을 시사한다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "AI 인재 쟁탈전 심화는 이수시스템 같은 중견 IT 기업이 자체 LLM 개발보다 **외부 모델 API + 도메인 특화 RAG** 전략을 택하는 것이 현실적으로 올바른 방향임을 재확인시켜 준다. 오픈소스 LLM(Llama, Mistral 등)과 클라우드 API를 조합한 HR AI Package 고도화에 집중하고, 인재 경쟁 대신 레퍼런스·도메인 데이터 자산으로 차별화하는 전략이 유효하다.",
+      "source": "Memeburn",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNUnFyUzFnWHJxRTZFeDNIc0hObUFUWHJ3b0JXbUhZcm9DaEd3aThmVFhuTXloX3o4UHp2b29YYTZkX0NFMVRkQkFwMmpXNTJ5Zk1QamFoMl9PWkQ2QzRNUldGbXA4aWhHR01Vd1ItN0lEWTAtWVNlOU5JU05pb3lRZHlGTnd0czJPZW81Ui1vVzIwVUhBS21aMmJB?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "모델 릴리스",
+      "title": "자율 AI 코딩, 6만 줄 장벽 돌파… 'MirrorCode' 벤치마크 공개",
+      "body": "자율 AI 코딩 에이전트가 **6만 줄 이상의 대형 코드베이스**를 독립적으로 처리할 수 있는 수준에 도달했다는 벤치마크 결과가 공개됐다. 새로 발표된 **MirrorCode 벤치마크**는 기존 평가 지표가 소규모 코드 스니펫 위주였던 한계를 넘어, 실제 엔터프라이즈 환경에 가까운 대규모 코드베이스 기준으로 AI 코딩 성능을 측정한다. 이는 AI가 단순 코드 보조 도구를 넘어 전체 소프트웨어 개발 파이프라인을 자율적으로 수행할 수 있는 가능성을 제시한다.",
+      "insight": "6만 줄 규모의 자율 코딩 능력은 AI가 실질적인 시니어 개발자 업무를 대체할 임계점에 근접했음을 의미한다. 단순 자동완성을 넘어 아키텍처 수준의 코드 작성이 가능해지면, 소프트웨어 개발 아웃소싱 시장과 SI 업계의 인력 구조에 중대한 변화가 예상된다. 기업들은 개발 속도 향상보다 AI가 생성한 코드의 품질 보증과 보안 검증 프로세스 마련이 더 시급한 과제가 될 것이다.",
+      "isu_area": "디지털서비스 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "자율 AI 코딩 에이전트의 성능 도약은 이수시스템의 RPA 사업과 ERP(SAP) 커스터마이징 영역 모두에 영향을 준다. RPA 스크립트 자동 생성·유지보수에 AI 코딩 에이전트를 접목하면 고객사 RPA 운영 비용을 낮출 수 있고, SAP ABAP 코드 생성 자동화로 ERP 구축 기간 단축도 가능하다. 단기적으로는 내부 개발 생산성 향상 도구로 도입을 검토할 수 있다.",
+      "source": "Tech Times",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQajR2Vk9TMGJMSFNlOVc4MmU1ZUhyOTd6aGxRdjJjQVhzaU0xcmJGbjU1Q19zY1JZNWlLallCYldZYTMxQVR1WGhMNHJaSW5PVjRsdUkxWnp4NkVxR3BWUE00OEVCSEpNWVAtRGRnQ3FwN3k5TFI5dFpMM1Z1WXRwUDE2TVFZWGFWc1VBNjcxNFFQVWRaQWVEa0N0aGFnS0Q2V1NIRHFTOEJtaVR5dzFrZmZOQnA0N1dZRjJZaWVDaWlOTXVXNDUzbWZJRQ?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "산업 동향",
+      "title": "조선소 '암묵지'를 데이터로… 한국 제조업, 피지컬 AI 시대 본격 공략",
+      "body": "국내 조선업계가 숙련 기술자의 **암묵지(경험·감각 기반 노하우)**를 AI가 학습할 수 있는 구조화된 데이터로 변환하는 '피지컬 AI' 프로젝트를 본격화하고 있다. 단순 공정 자동화를 넘어 용접 각도, 판단 타이밍 등 수십 년 경력자만 가진 비정형 지식을 **멀티모달 AI와 센서 데이터**로 포착해 로봇에 이식하는 방식이 핵심이다. 이는 한국 제조업의 고령화·인력 부족 문제를 AI로 돌파하려는 전략적 전환점으로 평가된다.",
+      "insight": "제조 현장의 암묵지를 AI 학습 데이터로 만드는 것은 단순 자동화와 차원이 다른 도전이다. 이 흐름이 조선에서 자동차·반도체·화학 플랜트로 확산되면, 현장 데이터 수집·레이블링·모델 파인튜닝을 통합 지원하는 '제조 특화 AI 플랫폼' 수요가 급증할 것이다. 특히 산업 노하우의 디지털화는 기업 경쟁력의 핵심 자산이 되는 만큼, 이를 체계적으로 관리하는 데이터 거버넌스 솔루션도 함께 주목받게 된다.",
+      "isu_area": "안전 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "조선·제조 현장의 암묵지 데이터화 흐름은 이수시스템의 **Smart Plant**(레이저 스캔 기반 플랜트 통합관리) 및 **Smart & Safety**(산업현장 안전관리)와 직결된다. 현장 센서·스캔 데이터를 AI로 분석해 이상 징후를 사전 감지하는 기능을 Smart Plant에 추가하거나, BizPTT 영상 데이터를 활용한 작업자 행동 분석 기능을 안전 솔루션에 탑재하는 방향으로 제조·조선 고객 대상 영업 시나리오를 구체화할 수 있다.",
+      "source": "이데일리",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQOTl6QklkbDluT29YVWIwdXcxMUw1QWM4X0w1V3d3LWNXTi1OM3pucklQSldwUjdLMVN3WWJ1T0l2d1Zmal9CR2lnMHdQY1BLeU9BazFhM05VT2MwVE55WklSM0FoaTlTLVVlcGJOanM1LWlBaEJMRU1zR1BCR3I1NA?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**Anthropic Mythos 5의 조건부 복귀**는 AI 모델이 출시 전 정부 심사를 받는 새로운 규제 패러다임의 시작을 알린다.",
+    "나델라의 '기업 자체 AI' 촉구는 **도메인 특화 AI 솔루션**에 대한 기업 수요를 공식화하는 신호로, RAG·프라이빗 AI 시장 확대의 전환점이 된다.",
+    "조선 암묵지 데이터화부터 6만 줄 자율 코딩까지, **AI가 인간 고유 영역으로 간주됐던 현장 노하우와 대규모 개발 업무**에 깊숙이 침투하고 있다."
+  ],
+  "isu_summary": "이번 주 AI 뉴스는 이수시스템에 두 가지 명확한 방향을 제시한다. 첫째, 나델라의 '기업 자체 AI' 촉구와 제조 피지컬 AI 확산은 이수시스템의 **HR AI Package·RAG 챗봇·Smart Plant** 등 도메인 특화 AI 솔루션이 시장의 주류 니즈와 정확히 맞닿아 있음을 확인시켜 준다. 둘째, Mythos 5 규제 사례와 AI 인재 쟁탈전 심화는 자체 LLM 개발보다 **검증된 외부 모델 API + 이수시스템의 도메인 데이터 자산** 조합이 현실적으로 최적의 전략임을 재확인하며, 제조·건설 고객 대상 현장 AI 영업을 지금 당장 강화해야 할 시점임을 시사한다."
+}
