@@ -1,0 +1,72 @@
+{
+  "date": "2026.06.29 (월)",
+  "one_liner": "구글 DeepMind 인재 이탈·Gemini 용량 제한·중국 AI 굴기까지, AI 패권 전쟁이 새 국면에 진입했다",
+  "news": [
+    {
+      "number": 1,
+      "category": "산업 동향",
+      "title": "구글 DeepMind 연구진 이탈 쓰나미…알파벳 시총 270조 원 증발",
+      "body": "구글 DeepMind가 코딩 AI 역량 강화를 위해 팀 구조조정을 단행한 이후, **6명의 핵심 연구자**가 Meta·OpenAI·Anthropic으로 이직하며 대규모 인재 유출이 현실화됐다. 이 여파로 알파벳의 시가총액은 **약 2,700억 달러(한화 약 370조 원)** 규모의 손실 압박을 받았다는 분석이 나온다. 특히 트랜스포머 아키텍처 핵심 설계자 중 한 명인 Noam Shazeer가 **27억 달러 규모의 영입 계약**으로 OpenAI로 이동한 것이 상징적 사건으로 꼽힌다.\n\n이번 사태는 단순 이직을 넘어 구글의 AI 전략 신뢰성에 대한 의구심을 키우고 있다. AI 인재들이 연봉보다 '연구 자유도'를 더 중시한다는 분석도 함께 제기되며, 빅테크의 AI 조직 운영 방식 전반에 경종을 울리고 있다.",
+      "insight": "빅테크 내부의 AI 인재 쟁탈전이 단순한 연봉 경쟁을 넘어 **연구 자율성과 조직 문화** 싸움으로 진화하고 있음을 보여준다. 구글처럼 방대한 인프라를 가진 기업도 핵심 인재 이탈을 막지 못한다는 사실은, AI 경쟁력이 결국 사람에게 달려 있음을 재확인시킨다. 이는 AI 스타트업과 2·3위 플레이어들에게 오히려 우수 인재를 유치할 기회가 열릴 수 있음을 시사한다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "빅테크발 인재 유동성 증가로 국내 AI 솔루션 시장에서도 외부 LLM·에이전트 기술의 품질 변동성이 커질 수 있다. 이수시스템의 RAG 기반 챗봇·HR AI Package는 특정 모델 의존도를 줄이고 멀티 LLM 구조로 전환하는 아키텍처 검토가 필요하다. 고객사 제안 시 '모델 독립적 설계'를 차별화 포인트로 활용할 수 있다.",
+      "source": "Tech Times / Memeburn",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQd3UzMkxFUTVLUVJnakl3OUxQdjhJQTNXM0oxamRqZ0poeVdRM3lBbHlXN01MMEZHenhnV2hkUnJ4cnE5QXdTMy1vREp3Q25wQ3hEeWZJSFI2NnRodlYyazlkR0NZQThTSXo0SEltTHNpMTFEMzNEUzJCLWx3am9UZXVLZFc1c2F6Rlp6ZnRKRDJEYXZVOHN5VGlvcksyQ1E1MFE2ZG9lZmhSWjFXbl84dmhxMExOejRVNDY1R0pQN2hhZlNac1E?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "산업 동향",
+      "title": "구글, Meta에 Gemini 용량 제한…AI 인프라 병목이 새 권력 지형 만든다",
+      "body": "파이낸셜타임스 보도에 따르면 구글이 Meta의 **Gemini AI 모델 접근량을 제한(ration)** 하기 시작했다. AI 데이터센터 인프라 용량 경색이 심화되면서 구글이 외부 파트너보다 자사 서비스를 우선 배정하는 방향으로 정책을 선회한 것이다. 이는 단순한 기업 간 갈등이 아니라, **AI 컴퓨팅 자원 자체가 전략적 무기**가 되고 있음을 보여주는 사례다.\n\nMeta는 자체 LLM(Llama 시리즈)을 보유하고 있음에도 특정 서비스에 Gemini를 활용해왔는데, 이번 제한으로 AI 서비스 연속성에 타격이 예상된다. 업계에서는 GPU·TPU 등 AI 칩 공급 부족이 2027년까지 이어질 것으로 전망하며, 인프라 확보 경쟁이 더욱 치열해질 것으로 보고 있다.",
+      "insight": "AI 모델 성능 경쟁에 이어 이제는 **컴퓨팅 인프라 접근권** 자체가 AI 서비스 경쟁력을 좌우하는 핵심 변수로 부상했다. 클라우드 제공자가 AI 자원을 선별적으로 배분하는 구조가 고착되면, 기업들은 단일 클라우드 의존 전략의 리스크를 재평가해야 한다. 멀티 클라우드·하이브리드 클라우드 전략의 중요성이 더욱 높아지는 계기가 될 것이다.",
+      "isu_area": "클라우드 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "AI 인프라 병목 현상이 가시화되면서 고객사들의 멀티 클라우드·인프라 다변화 수요가 증가할 전망이다. 네이버 클라우드 플랫폼(NCP) 공식 파트너인 이수시스템은 '국내 AI 인프라 안정성'을 강조하며 제조·건설·금융 고객사를 대상으로 NCP 기반 클라우드 마이그레이션 제안을 강화할 시점이다. 특히 해외 빅테크 의존 리스크를 부각하는 영업 시나리오가 설득력을 가진다.",
+      "source": "Seeking Alpha / Financial Times",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWVM0V1BZZlM0UWNYY0JWRUVWaEg4ZVJndE16ZWxlU1ZTWlhMSVJaT010cGdObWZFUXZtb253OUJUWU1zUU0xVjJlQU9TVG5ZendWZS03VWk2eDhtMmtQWEltQ2VmM0JROU1oWHROMVQzaUl5SXBUOUw4ZVR2SVdhTklLUmZMUnBOSDhPR29tREljWTluczVLVW5DOHhaNm9KdS1HUTJmMGw2eWNiNDBBZUV3?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "제품 업데이트",
+      "title": "Anthropic, Slack 상시 연동 'Claude Tag' 출시…업무용 AI 조용히 진화",
+      "body": "Anthropic이 기업 협업 플랫폼 Slack에 상시 연동되는 **'Claude Tag'** 를 공식 출시했다. 기존처럼 별도 앱을 열거나 명시적 호출 없이도, Slack 대화 흐름 속에서 Claude가 맥락을 파악해 자동 응답·요약·작업 지원을 제공하는 방식이다. '항상 켜져 있는(always-on) AI' 개념을 기업 메신저에 본격 도입한 첫 사례로 평가된다.\n\n이번 출시는 Anthropic이 소비자 시장보다 **B2B 엔터프라이즈 시장**에 집중하겠다는 전략을 구체화한 행보다. Slack을 통해 수백만 기업 사용자의 일상 업무에 직접 녹아드는 구조를 확보함으로써, OpenAI의 Microsoft 365 통합에 맞서는 포석으로 해석된다.",
+      "insight": "AI 어시스턴트가 '필요할 때 쓰는 도구'에서 **'업무 환경에 상시 내재화되는 인프라'** 로 전환되는 흐름이 가속화되고 있다. 기업용 메신저·협업툴을 AI의 주요 접점으로 삼는 전략은 사용자 유입 비용을 낮추면서 이탈률도 줄이는 효과적인 방식이다. 국내외 업무용 AI 솔루션 공급사들도 협업 플랫폼 연동을 핵심 기능으로 고려해야 할 시점이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "Anthropic의 'always-on AI' 개념은 이수시스템 RAG 기반 챗봇의 다음 진화 방향을 제시한다. 현재 챗봇이 사용자가 직접 질의하는 방식이라면, WORKUP·Smart HR 내에 상시 동작하는 HR 어시스턴트(예: 근태 이상 자동 알림, 급여 변동 요약 리포트 자동 생성)를 탑재하는 기능 로드맵 검토가 필요하다. 고객사 그룹웨어나 사내 메신저와의 연동 확장도 유효한 제안 포인트가 될 수 있다.",
+      "source": "MSN / Anthropic",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPa19mdGtYQ2NrTXFtQmgzeHpUWG81b3FpMUdpMGh0NmF0UlhVMTdpeVVHNnctQWtMWmdGanljYVU5SFVlZGRlQTBIN0k1bHdfbUtrVFBnZzh6bTVwLU1XdFpmLXhVQm5nX0NpOEpqZ2NCdHFWbzZXMUVTaEk2TGtkay02M2k0MlQ0YWdHQ05vb19BNmNpdVdhVVJtSjRlaUJPNF9BMmphSmlSaS1pTDdYclFFam14QmFCNkhMaVc4VE5wX09aVmVRVTRuT1JyYktsVndIUExUREFrNTBpcm01dTcyMkU3bm5HQlFB?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "모델 릴리스",
+      "title": "중국 Z.ai, 오픈웨이트 GLM-5.2로 사이버보안 영역서 미국 AI와 격차 좁혀",
+      "body": "중국 Zhipu AI(Z.ai)가 공개한 오픈웨이트 모델 **GLM-5.2**가 사이버보안 버그 탐지 벤치마크에서 미국의 Mythos 모델과 대등한 성능을 기록했다는 연구 결과가 나왔다. 일반 언어 이해·추론 등 범용 태스크에서는 Anthropic·OpenAI 모델에 뒤처지지만, **특정 도메인(사이버보안) 특화 성능**에서는 빠르게 미국과의 격차를 좁히고 있다는 점이 주목된다.\n\nDeepSeek의 등장 이후 중국 AI의 기술 수준에 대한 관심이 높아진 가운데, Z.ai의 GLM-5.2는 '오픈웨이트'로 공개되어 누구나 다운로드·활용할 수 있다. 보안 취약점 자동 탐지, 침투 테스트 자동화 등 실질적인 보안 업무에서의 활용 가능성이 부각되고 있다.",
+      "insight": "AI 모델 경쟁이 '범용 성능 1위'를 넘어 **도메인 특화 성능** 싸움으로 세분화되고 있음을 보여준다. 특히 사이버보안 특화 AI의 오픈웨이트 공개는 보안 도구의 진입 장벽을 크게 낮추는 동시에, AI를 활용한 공격 기법도 민주화될 수 있다는 이중적 함의를 가진다. 기업 보안 담당자들은 AI 기반 방어 체계 강화를 서둘러야 할 시점이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "사이버보안 특화 오픈웨이트 모델의 확산은 이수시스템 RAG 기반 챗봇 및 AI 플랫폼의 보안 강화 수요를 높이는 계기가 된다. 제조·건설 고객사의 산업 현장 데이터가 AI 시스템에 연동될수록 보안 취약점 노출 리스크도 커지므로, AI 플랫폼 제안 시 '기업 데이터 보안 아키텍처'를 함께 제시하는 것이 차별화 요소가 될 수 있다. LGU+ 'SafeAI' 같은 국내 보안 AI 제품과의 연계 가능성도 검토할 만하다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/958804/chinas-z-ai-glm-52-mythos-cybersecurity"
+    },
+    {
+      "number": 5,
+      "category": "산업 동향",
+      "title": "국내 보험사 AI 언더라이팅 본격화…'속도'보다 '통제' 경쟁으로 전환",
+      "body": "국내 보험업계에서 AI 기반 언더라이팅(보험 심사)이 급속도로 확산되는 가운데, 경쟁의 축이 '얼마나 빨리 도입하느냐'에서 **'얼마나 잘 통제·설명하느냐'** 로 이동하고 있다는 분석이 나왔다. AI가 자동으로 처리하는 심사 영역과 인간 심사역이 개입하는 영역 사이의 경계를 명확히 설정하고, AI 판단에 대한 **설명 가능성(Explainability)** 을 확보하는 것이 핵심 과제로 떠올랐다.\n\n금융당국의 AI 활용 가이드라인 강화와 맞물려, 보험사들은 단순 자동화 솔루션보다 **감사 추적·이의 제기 프로세스**가 내재된 AI 플랫폼을 우선 도입하는 추세다. 이는 금융권 전반으로 확산될 AI 거버넌스 표준화 흐름의 전조로 읽힌다.",
+      "insight": "금융권 AI 도입이 성숙 단계에 접어들면서 **AI 거버넌스·설명가능 AI(XAI)** 가 단순한 기술 요소를 넘어 필수 조달 기준으로 자리잡고 있다. 이는 AI 솔루션 공급사에게 '성능'뿐 아니라 '통제 가능성 증명'을 요구하는 시장의 성숙을 의미한다. 규제 대응 기능이 내재된 AI 솔루션이 향후 금융·공공 시장에서 결정적 경쟁 우위가 될 것이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "보험·금융권의 'AI 통제 경쟁'은 이수시스템 AI 플랫폼에 감사 로그·판단 근거 추적 기능을 강화할 명확한 방향을 제시한다. 현재 HR AI Package의 이력서 분석·자동화 기능도 동일한 맥락에서 '왜 이 후보자를 필터링했는가'를 설명하는 XAI 기능 추가가 금융·공공 고객사 도입 장벽을 낮추는 데 기여할 수 있다. 특히 공공기관 고객사 대상 제안 시 AI 윤리·설명가능성 준수를 핵심 셀링포인트로 활용할 것을 권장한다.",
+      "source": "한국보험신문",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5CV0FiMmJkOG4xZDloSlltc3NqSnNxZmxySjNTaHJ5Rm4tS2ItQ250YkRBSndIdmZKUS1xWkpQMGl4S05UV1BJdG5reEJwMmh0aUNMZV9wNmZMZ21Mc21nNFZjYms2U0t5ZXdJ0gFvQVVfeXFMUFo3RVRjZVZDa0tWYmpfWXkzYVBqYnlpOVotbTFHcUlfNndSVC1OSFN2YnV1aHZLY2ZDMHdPRkdob052c0Vtd2Vtbm5XeFdUZXBJMUc1N0NLRkpwYm1wd2hMZkVUTzREODd2dTdZVkhF?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**구글 DeepMind 인재 이탈과 Gemini 용량 제한**은 AI 패권이 단일 기업에 고착되지 않는다는 신호이며, 멀티 LLM·멀티 클라우드 전략의 필요성을 재확인시킨다.",
+    "Anthropic의 'Claude Tag(always-on AI)' 출시는 AI가 도구에서 **업무 인프라로 내재화**되는 전환점으로, 기업용 솔루션 전반의 AI 상시 연동이 표준이 될 것을 예고한다.",
+    "국내 보험·금융권의 AI 거버넌스 강화 흐름은 **설명가능 AI·감사 추적 기능**이 향후 모든 산업군 AI 조달의 필수 요건이 될 것임을 시사한다."
+  ],
+  "isu_summary": "오늘 뉴스의 공통 키워드는 'AI 인프라 안정성'과 'AI 통제 가능성'이다. 구글의 Gemini 용량 제한 사태는 NCP 파트너인 이수시스템이 국내 클라우드 인프라 안정성을 강조하는 영업 기회로 활용할 수 있으며, 보험·금융권의 AI 거버넌스 수요 증가는 HR AI Package와 RAG 챗봇에 설명가능성·감사 추적 기능을 추가하는 제품 로드맵의 근거가 된다. Anthropic의 always-on AI 방향성은 WORKUP·Smart HR의 AI 어시스턴트 상시화로 연결되는 중기 제품 강화 과제로 검토할 시점이다."
+}
