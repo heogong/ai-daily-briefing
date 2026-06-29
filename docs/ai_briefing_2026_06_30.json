@@ -1,0 +1,72 @@
+{
+  "date": "2026.06.30 (화)",
+  "one_liner": "국내 AI 시장은 '클로드가 GPT 첫 추월'로 다극화 전환, 글로벌은 Google DeepMind 인재 유출·Anthropic 급성장으로 판도 재편 중",
+  "news": [
+    {
+      "number": 1,
+      "category": "산업 동향",
+      "title": "클로드, 국내서 처음으로 GPT 사용률 추월 — 단일 AI 시대 끝났다",
+      "body": "국내 AI 리터러시가 성숙하면서 사용자들이 특정 LLM에 종속되지 않고 용도에 따라 골라 쓰는 '다각화' 행동이 뚜렷해지고 있다. 특히 **Anthropic Claude**가 국내 AI 챗봇 이용률에서 처음으로 **ChatGPT를 추월**한 것으로 나타났으며, 스스로 판단하고 실행하는 **'슈퍼 에이전트'** 이용률도 급증 추세다. 단순 질의응답형 사용을 넘어 복잡한 업무를 자율적으로 처리하는 에이전트 방식이 국내 직장인들 사이에서도 빠르게 확산되고 있음을 보여준다.",
+      "insight": "단일 모델 종속에서 멀티 LLM 병행 사용으로의 전환은 기업 AI 도입 전략에 중요한 시사점을 준다. 특정 벤더에 락인되지 않는 **모델 중립적(agnostic) 아키텍처**가 기업 AI 구축의 표준이 될 가능성이 높아졌으며, 에이전트형 AI 수요 급증은 단순 챗봇을 넘어 실질적 업무 자동화 솔루션에 대한 시장 기대치가 높아졌음을 의미한다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "이수시스템의 RAG 기반 챗봇과 HR AI Package는 특정 LLM에 종속되지 않고 Claude·GPT·엑사원 등 여러 모델을 선택적으로 탑재할 수 있다는 점을 고객사에 차별점으로 강조할 수 있다. 제조·금융 고객사들이 '골라 쓰는' 멀티 LLM 전략을 도입할 때, WORKUP이나 AI 플랫폼 위에서 용도별 모델을 유연하게 연결해 주는 모델 라우팅 기능 추가를 제품 로드맵에 반영할 시점이다.",
+      "source": "뉴시스 / AI넷",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9GZGZmX2hGS2VVZXBnWVc0RldISWVwRllVdjdMc1lPWldsNE4zbTZjblZTelMzTDlpekR4a1A3TGdoWDRzMlpRWWgwQTlZTmNWdVhjVWdsQ2doZzAyeVFCX9IBeEFVX3lxTE94TWNwanhvVjNsdlJCQjBHVXpzX0lRZnV6QzZOUm5WcHBCczBCYk1xM3Y4R3lZS2UwMzZUeElVYUdyTVFNck9RaDNJLTJUWjFESnBEaFU2aEpRUUNPbmN6UkVWc1pIbU9uMHZ4WGJEQ2hXZnJ3LW9TLQ?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "산업 동향",
+      "title": "Google DeepMind 인재 5명, 1주일 만에 Anthropic으로 — $185B TPU 투자도 흔들",
+      "body": "**Google DeepMind**의 핵심 AI 연구진 **5명이 단 7일 사이에 경쟁사 Anthropic으로 이직**했다고 복수 매체가 보도했다. 이는 Gemini 모델 경쟁력에 대한 시장의 우려를 키우고 있으며, Alphabet 주가는 다우존스 편입 첫날 4% 상승했음에도 AI 전략에 대한 의문이 잦아들지 않고 있다. Alphabet이 TPU 인프라에 **1,850억 달러** 규모의 베팅을 이어가고 있는 상황에서 인재 유출이 기술 우위를 갉아먹을 수 있다는 우려가 커지고 있다.",
+      "insight": "빅테크 AI 경쟁에서 **인재가 모델 경쟁력을 좌우**한다는 사실이 다시 확인됐다. Anthropic은 자금력·연구 인재·엔터프라이즈 매출 성장 모두에서 구글을 압박하는 상황으로, 'AI 2강'이 OpenAI와 Anthropic으로 재편될 가능성이 높아졌다. 국내 기업들도 도입할 AI 솔루션의 벤더 지속가능성을 검토할 필요가 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "이수시스템이 챗봇·AI 플랫폼 제품에 외부 LLM API를 연동할 때 Anthropic Claude 비중이 높아질 가능성을 고려해 Claude API 파트너십 또는 연동 검증을 선제적으로 준비할 필요가 있다. 엔터프라이즈 AI 시장에서 Anthropic의 성장세는 곧 국내 법인 영업 강화로 이어질 수 있어, WORKUP·AI 플랫폼의 Claude 연동 레퍼런스를 미리 확보해두면 경쟁 우위로 활용할 수 있다.",
+      "source": "Los Angeles Times / Analytics Insight",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNOGZpS2czQnZ1Qkk2VDhNaEtKeVNhbk91MnNhZmZUS3hFdFNlMVdyVFNnNjE5Q0xrNnNGOTJwdy1yZlFNTGxBR2ZpakxBdlhkb0I4c0w0dHlwWTA2VEF0U1JfMERXVFE2T1d4MmVGLTljLXFPZ0NQOGxOMU96a1JwMHpFMDdVSUhGLXh6Rll0MFJ3bmdKRGFZWDdyMS1xX3k1dG1JMHNLaGh4N1I0Qi1xVE1R?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "모델 릴리스",
+      "title": "Anthropic, 차세대 모델 'Mythos' 개발자 버전 공개 — Claude 4.6 Sonnet도 출시",
+      "body": "**Anthropic**이 그간 베일에 싸여 있던 차세대 플래그십 모델 **'Mythos'의 개발자 프리뷰 버전**을 공개했다. 동시에 **Claude Sonnet 4.6**도 함께 릴리스됐으며, 이는 Google Gemini 3.5 Pro의 7월 출시, GPT-5.6 등 주요 모델 릴리스가 줄줄이 예고된 상황에서 나온 선제적 행보다. 업계에서는 Anthropic이 엔터프라이즈 매출 성장에서 OpenAI를 앞서고 있다는 분석도 나오면서, Mythos가 기업 시장 공략의 핵심 카드가 될 것으로 전망된다.",
+      "insight": "**Anthropic·Google·OpenAI 3사가 동시에 신모델을 쏟아내는 '릴리스 전쟁'** 국면에 진입했다. 모델 성능 격차가 빠르게 좁혀지는 가운데 기업 고객 확보가 관건이 되면서, 단순 벤치마크보다 기업 워크플로우 통합 편의성과 가격 정책이 경쟁의 축이 되고 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "Anthropic Mythos·Claude Sonnet 4.6 출시로 AI API 성능이 또 한 단계 올라간다. 이수시스템의 HR AI Package와 AI 이력서 분석 솔루션에 최신 Claude 모델을 적용하면 자연어 이해 정확도를 체감 가능한 수준으로 높일 수 있다. 특히 보험·금융 고객사(DB생명 등 유사 사례 증가)처럼 규정 준수가 중요한 고객군에게는 Anthropic의 안전성 중심 모델을 탑재한 AI 상담 솔루션이 차별화 포인트가 될 수 있다.",
+      "source": "Fast Company Middle East / streamlinefeed.co.ke",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPOUZpTzN4ZEgwVWVNd0JXNTl6T2UyLUQ1X25qUTVJUWpwVUVjYURnckhSS2NYM29ZUmJBNWFLSzFPZG5rY1J4RndpOEhhRDlOWGNmajY4SFVSVW11OXlTbWxMZDkxNXkzNUY4TXFESVpoaHNtZGVvcGQ0YlBNNjY5U2Nxbmt2WmZ6Rk1tRTF5UzNrNVdZMXNaSWFDMnJ5TDVEMXBHSmhHa1ZmNHdu?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "글로벌 이슈",
+      "title": "미 의회, AI 챗봇에 공유한 건강 데이터 판매 금지 법안 추진",
+      "body": "미국 상원 의원 **엘리자베스 워런**과 하원 의원 **메리 게이 스캔런**이 ChatGPT·Claude 같은 **AI 챗봇에 입력한 건강 및 위치 정보를 데이터 브로커에게 판매하는 행위를 금지**하는 법안을 수주 내 발의할 예정이다. 이는 기존 의료정보보호법(HIPAA)이 AI 챗봇을 통해 공유되는 민감 정보를 충분히 커버하지 못한다는 문제의식에서 출발했다. AI 챗봇 이용이 일상화되면서 **의도치 않은 민감정보 노출과 상업적 활용**에 대한 규제 요구가 본격화되는 신호탄으로 해석된다.",
+      "insight": "AI 서비스에 입력되는 개인 민감정보에 대한 규제가 미국에서 구체화되면 **글로벌 AI 서비스 제공 기업의 데이터 거버넌스 기준이 상향**될 수밖에 없다. 의료·금융·HR 등 민감 데이터를 다루는 기업용 AI 솔루션 시장에서 '데이터 반출 없는 온프레미스 또는 프라이빗 클라우드 AI'에 대한 수요가 더욱 커질 것으로 전망된다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "민감 개인정보 규제 강화는 이수시스템에게 직접적인 영업 기회다. HR 데이터(급여·근태·인사정보)를 외부 AI에 넘기지 않고 사내에서 처리하는 **온프레미스·프라이빗 환경 AI 솔루션**(Smart HR + RAG 챗봇 내재화 구조)을 원하는 제조·금융·공공 고객사에 '데이터 주권 보장형 AI HR'을 명시적 셀링 포인트로 내세울 수 있다. 특히 NCP 파트너 지위를 활용한 프라이빗 클라우드 구성과 결합하면 차별화된 제안이 가능하다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/959033/health-location-data-protection-act-ai-warren-scanlon"
+    },
+    {
+      "number": 5,
+      "category": "산업 동향",
+      "title": "포털 '줌', 국산 AI 'K-엑사원' 검색에 첫 상용화 — '독파모' 사업 결실",
+      "body": "국내 포털 **줌(zum.com)**이 LG AI연구원의 **'엑사원(EXAONE)'** 기반 국산 AI를 검색 서비스에 공식 적용했다. 이는 정부의 **'독자 파운데이션 모델(독파모)' 육성 사업**의 첫 상용화 사례로, 국산 LLM이 실제 서비스에 탑재된 이정표적 사건이다. 오픈AI·구글 등 해외 모델 의존도를 낮추고 국내 AI 생태계를 구축하려는 정부·산업계 공조의 첫 가시적 성과이며, 향후 공공·금융 분야 국산 AI 확산의 촉진제가 될 전망이다.",
+      "insight": "국산 LLM의 실서비스 상용화는 **공공기관과 규제 산업(금융·의료·국방)에서 '국산 AI 우선 채택' 요구가 강화**될 신호다. AI 조달 시장에서 '데이터 주권'과 '국산화'가 핵심 평가 항목으로 부상할 수 있으며, 이는 국내 AI 솔루션 공급사와 SI 업체 모두에 새로운 기회와 요건 변화를 동시에 가져온다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[정부 사업]",
+      "isu_insight": "K-엑사원의 상용화는 이수시스템 AI 사업에 두 가지 기회를 준다. 첫째, 공공기관 AI 도입 사업에서 '국산 LLM 기반 RAG 챗봇'을 제안할 때 엑사원을 백엔드 모델로 채택하면 정부 국산화 요건을 충족하는 차별화 제안이 가능하다. 둘째, 이수그룹 계열사 및 제조·건설 고객사를 대상으로 '국산 AI + 자체 HR 데이터 RAG' 조합을 어필하면 데이터 국내 보관 및 규정 준수 측면에서 설득력이 높아진다.",
+      "source": "서울경제 / 한국경제",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5WMms2c3dWMFRvaS01cWhYeV9xcnJUazE0TEFGMVNwbTdsQVpRampBOTN4TElFZ0o1dm1HLW5hZU1FbkMyY1ZZRWc1QTBIM3VDczFF0gFTQVVfeXFMTlYyazZzd1YwVG9pLTVxaFh5X3FyclRrMTRMQUYxU3BtN2xBWlFqakE5M3hMSUVnSjV2bUctbmFlTUVuQzJjVllFZzVBMEgzdUNzMUU?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**클로드가 국내서 처음으로 GPT를 추월** — 단일 LLM 시대가 끝나고 용도별로 AI를 골라 쓰는 '멀티 LLM 시대'가 본격화됐다.",
+    "**Google DeepMind에서 Anthropic으로 핵심 인재 5명이 1주일 만에 이탈** — AI 패권 경쟁의 축이 OpenAI vs Google에서 Anthropic의 3강 구도로 재편되고 있다.",
+    "**AI 챗봇 건강데이터 판매 금지 법안·국산 AI 상용화** — 규제와 국산화 두 흐름이 동시에 가속화되며, '데이터 주권 보장형 온프레미스 AI' 수요가 커질 전망이다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심 키워드는 **멀티 LLM 다각화, 데이터 주권, 국산 AI 상용화**다. 국내 사용자들이 GPT 단일 의존에서 벗어나 Claude·엑사원 등을 병행 사용하는 흐름은 이수시스템 AI 플랫폼이 특정 모델에 종속되지 않는 '모델 중립 아키텍처'를 강점으로 내세울 수 있는 근거가 된다. 여기에 미국발 AI 건강데이터 규제 법안과 국산 AI 상용화 흐름이 맞물리면서, HR·금융·공공 고객사를 대상으로 '온프레미스 또는 프라이빗 클라우드 기반 국산 LLM 연동 AI 솔루션'을 제안하는 영업 시나리오의 설득력이 그 어느 때보다 높아졌다."
+}
