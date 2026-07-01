@@ -1,0 +1,72 @@
+{
+  "date": "2026.07.02 (목)",
+  "one_liner": "Anthropic이 수출 규제 해제로 Claude Fable 5를 전 세계에 재출시하고, 국내에선 공공·포털 전반에 AI가 빠르게 스며들고 있다.",
+  "news": [
+    {
+      "number": 1,
+      "category": "모델 릴리스",
+      "title": "Anthropic, 수출 규제 풀리자마자 Claude Fable 5 전 세계 재출시",
+      "body": "Anthropic이 미국 정부의 수출 통제 해제 이후 **Claude Fable 5**를 7월 1일부로 전 세계 사용자에게 복구한다고 발표했다. AWS Bedrock, Google Cloud, Microsoft Azure 등 주요 클라우드 플랫폼을 통해 기업 고객도 즉시 접근 가능하다. 아울러 새로운 **사이버보안 분류기(Cybersecurity Classifier)**가 추가돼 악의적 사용 차단 기능이 강화됐다.\n\n같은 날 Anthropic은 **Claude Sonnet 5**도 기본 모델로 정식 출시했다. Sonnet 5는 Opus급 성능에 가격은 대폭 낮춰 '고성능·저비용' 포지셔닝으로 기업 시장 공략에 나섰으며, AI 에이전트 가격 경쟁을 본격화할 것으로 보인다.",
+      "insight": "주요 AI 모델이 특정 국가 정책에 따라 언제든 접근이 차단될 수 있다는 사실이 재확인됐다. 기업들은 단일 AI 모델 의존도를 낮추고 멀티모델 전략을 검토해야 할 시점이다. 동시에 Sonnet 5의 저가 출시는 AI 에이전트 도입 비용 장벽을 낮춰 중소기업 시장까지 확대되는 신호탄이 될 수 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "이수시스템의 RAG 기반 챗봇 및 AI 플랫폼은 현재 특정 LLM에 의존하는 구조일 수 있다. Claude Fable 5·Sonnet 5의 AWS Bedrock 복귀로 API 접근성이 회복된 만큼, 기업용 챗봇 제품에 Claude 계열을 선택지로 추가하거나 멀티LLM 전환 기능을 WORKUP·HR AI Package에 탑재하는 방향으로 제품 경쟁력을 높일 수 있다.",
+      "source": "VentureBeat",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPYktUSUZTeUJ2c1ZEZnhRN0dRd1NnY3JfWHpSVFlSQjhVMGNvaTNSSjFDSFRzREU5MUxiOU1XNTN6Z204LWE2TWtjdGRVSzRXN2h1MHpON09MRnRIRjFheUFBdzBqR0lreFlFQzlkWTlVMURLcXhvVzY5QTdwS3ByTDFkWjgyYzhWNEIxZk51dy1CaHllM1ZQN1hFb1R5OGxIV0pXc3cxX1FPaXltbmF2S0xXZ3JYRTV5OFJRY2RmQzZ4aWxuZG4wd2VCUXBjMHNRdUJSbHpjN0NZWklfcnlqdnJiVnV5NFVI?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "제품 업데이트",
+      "title": "포털 다음, 국산 LLM '솔라' 탑재해 AI 검색 요약 베타 서비스 시작",
+      "body": "카카오가 운영하는 포털 **다음(Daum)**이 국내 AI 스타트업 **업스테이지(Upstage)**의 솔라(Solar) LLM을 적용한 'AI 요약' 베타 서비스를 7월 1일부터 시작했다. 검색 결과 상단에 AI가 요약한 답변을 노출하는 방식으로, 구글의 AI Overview와 유사한 형태다.\n\n이번 협업은 국산 LLM이 실제 대형 포털의 핵심 기능으로 채택됐다는 점에서 의미가 크다. 업스테이지 Solar LLM은 한국어 처리 성능과 비용 효율로 국내 B2B 시장에서 존재감을 키우고 있으며, 다음의 베타 도입으로 국산 AI 모델의 레퍼런스가 한층 강화됐다.",
+      "insight": "글로벌 빅테크가 아닌 국산 LLM이 포털 검색 핵심 기능에 채택된 것은, 한국 기업들이 언어·규제·비용 측면에서 국내산 AI 모델을 선택할 충분한 이유가 있음을 보여준다. 국산 LLM 생태계가 실사용 레퍼런스를 확보할수록 B2B 도입 문턱이 낮아지고, 기업용 AI 솔루션 시장에서 국내 모델 활용이 가속화될 전망이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "업스테이지 Solar LLM이 다음 포털에 채택되며 국산 LLM의 B2B 레퍼런스가 급격히 강화됐다. 이수시스템의 RAG 챗봇·HR AI Package에 Solar LLM을 백엔드 옵션으로 추가하면, 데이터 국내 보관을 요구하는 금융·공공 고객사 대상 영업에서 차별화 포인트로 활용할 수 있다.",
+      "source": "아이뉴스24",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9KZGNwWW8zeFA1ZnIxWXUybG5XV1BSeE9Ra0gtMTFFd0hXOTMzdUVzbWxCVm9YVzRYaHBRbVRjRTZpc3JUdXhha3NCU3Q?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "글로벌 이슈",
+      "title": "공무원 징계 회의록도 AI가 쓴다…정부, 인사행정 특화 LLM 개발 착수",
+      "body": "정부가 공무원 **징계 회의록 작성에 AI를 도입**하고, 인사행정 업무에 특화된 LLM 개발에도 착수한다는 단독 보도가 나왔다. 반복적이고 정형화된 행정 문서 작성 업무에 AI를 우선 적용하는 방식으로, 인사혁신처가 주도하는 것으로 알려졌다.\n\n같은 날 수원시도 **LLM·RAG를 적용한 시정 안내 챗봇** 구축에 착수했다. 지방정부 차원에서도 생성형 AI를 공식 행정 서비스에 편입하는 움직임이 빠르게 확산되고 있으며, 이는 공공 부문 AI 도입의 본격적인 시작을 알리는 신호다.",
+      "insight": "공공 부문의 AI 도입이 단순 시범사업을 넘어 핵심 행정 업무(인사, 민원 응대)에 직접 적용되는 단계로 진입하고 있다. 정부 특화 LLM 개발은 공공 데이터 주권 확보와 보안 요건을 충족하는 방향으로 진행될 가능성이 높아, 민간 AI 솔루션 기업에게는 공공 시장 진입의 기준이 한층 높아지는 동시에 협력 기회도 생기는 상황이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[정부 사업]",
+      "isu_insight": "인사행정 특화 LLM 개발 및 공공 챗봇 수요 확대는 이수시스템의 RAG 챗봇과 HR AI Package에 직접적인 공공 영업 기회다. 특히 수원시 RAG 챗봇 구축 사례처럼 지방자치단체들이 발주를 시작하는 시점에, 이수시스템의 LLM·RAG 기반 챗봇 솔루션을 공공 레퍼런스 확보용으로 적극 제안할 수 있다. HR 솔루션 500+ 레퍼런스를 활용해 인사행정 특화 AI 시범사업 참여도 검토할 만하다.",
+      "source": "네이트",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5sRlNyNzMtR01BN3RMREQ0SG0xMFUyTVZkU21UcXk3TUlRSWZiYlo5ZGh1clFhZjBSNFdDZFgyel93VDRXc202N1ZkdTREcEZoNk5V?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "산업 동향",
+      "title": "JP모건, AI를 핵심 인프라로 재분류…198억 달러 기술 예산 투입",
+      "body": "**JP모건 체이스**가 AI를 선택 사항이 아닌 핵심 인프라(Core Infrastructure)로 공식 재분류하고, **198억 달러(약 27조 원)** 규모의 기술 예산 개편을 단행했다. 이는 AI를 클라우드·네트워크와 동일한 필수 인프라 레이어로 취급하겠다는 선언으로, 금융권 AI 투자의 패러다임 전환을 상징한다.\n\n금융 분야에서 AI가 코어 인프라로 편입되면, 도입 여부를 검토하는 단계가 아니라 얼마나 빠르게 내재화하느냐의 경쟁으로 바뀐다. 이미 보험사 **Travelers**도 보험 특화 LLM을 자체 구축했다는 소식이 같은 날 전해졌다.",
+      "insight": "글로벌 대형 금융사들이 AI를 인프라로 재정의하는 흐름은 산업 전반으로 빠르게 확산될 전망이다. AI 도입을 미루던 기업들에게는 경쟁 뒤처짐 리스크가 현실화되고 있으며, AI 솔루션 공급사 입장에서는 '시범 도입'이 아닌 '운영 내재화' 수준의 솔루션 품질과 안정성이 요구되는 시장으로 빠르게 이동 중이다.",
+      "isu_area": "디지털서비스 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "금융권의 AI 인프라화 선언은 이수시스템 고객군인 제조·금융·유통 기업들의 AI 솔루션 도입 속도를 압박하는 외부 요인이 된다. ERP(SAP) 고객사들에게 AI 연계 자동화(RPA+AI) 업그레이드를 제안하거나, WORKUP에 AI 기반 인사분석 기능을 추가해 '인프라급 HR AI'로 포지셔닝하는 영업 논리로 활용할 수 있다.",
+      "source": "streamlinefeed.co.ke",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNTkpZMmFsb0NqRmpKSDZBcG1Kd25VR0hEUXBKMW1FOGRmSzVGUEdfUU9mRm0tYkU3clBIc3NXb2lFZ2pFUmp3SVdiRnNEWG82bzNmaWxId2pMYnF5UTdMNW1NSkVLWDBEOXVJUjU3dGFfbkpPSFZWQVJYYVRQNlRZcWpFUENIa3FyQVNGdUp1RzFKcVNWU2Y2X0k4bk52RVRrZEpnMmRyMWxTQ0lubTBR?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "일자리·사회",
+      "title": "Cisco, AI 에이전트에 전사 베팅하며 대규모 인력 감축 단행",
+      "body": "네트워크 장비 기업 **Cisco**가 전 직원의 업무 방식을 AI 에이전트 중심으로 전면 재편하겠다고 선언하면서 동시에 **대규모 감원**을 단행했다. 이는 'AI가 사람을 대체한다'는 명제를 빅테크가 공개적으로 실행에 옮긴 사례로, 업계 전반의 충격파가 크다.\n\n같은 맥락에서 국내에서도 AI 에이전트의 **토큰 사용량 폭증** 문제가 부각됐다. AI 에이전트가 사람보다 훨씬 많은 토큰을 소비하면서 SW 기업들의 운영 비용이 급격히 늘어나는 '토큰 청구서 폭탄' 현상이 현실화되고 있다는 보도가 나왔다.",
+      "insight": "AI 에이전트 도입이 단순한 효율화를 넘어 조직 구조 자체를 바꾸는 수준으로 진화하고 있다. 기업들은 AI 에이전트 활용에 따른 비용 구조(토큰 비용) 변화와 인력 재배치 계획을 동시에 수립해야 하며, AI 솔루션 공급사들도 토큰 비용 최적화 기능을 제품에 반영하지 않으면 고객사의 TCO 부담으로 이어질 수 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "AI 에이전트의 토큰 비용 폭증 이슈는 이수시스템 챗봇·HR AI Package 도입을 검토하는 고객사의 실질적 우려 사항이 될 수 있다. 제안 단계에서 RAG 기반으로 불필요한 토큰 소비를 줄이는 아키텍처 최적화 방안을 구체적으로 제시하면 경쟁 차별화 포인트가 된다. 또한 Cisco 사례처럼 AI 도입과 함께 조직 재편을 고민하는 제조·건설 고객사에게는 WORKUP의 AI 기반 인력 재배치 분석 기능을 추가 제안 아이템으로 활용할 수 있다.",
+      "source": "디지털데일리",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9NTVVBb24xd1o0N2Rta0dSbk5FY2kwYlFoT0hlRXJodnJwQXFxbjNKTmJwcFBjMnBtX3RPUHludnRmbTVBWTlCdVV5MkQ5bTZLWG41enZmRTczUlZJMi02UEN3?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**Claude Fable 5 전 세계 복귀**는 AI 모델의 지정학적 리스크를 재확인시켰다. 기업 AI 전략에 멀티LLM 유연성은 선택이 아닌 필수다.",
+    "한국 공공 부문이 **인사행정 특화 LLM·RAG 챗봇** 도입을 공식화하며 공공 AI 시장이 본격 개화 중이다.",
+    "JP모건의 **AI 인프라 재분류**와 Cisco의 에이전트 전환 선언은 AI가 '실험'에서 '운영 핵심'으로 이동했음을 의미한다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심은 공공·금융·포털 전반에 걸쳐 AI 도입이 '시범'에서 '운영 내재화'로 전환되고 있다는 점이다. 수원시 RAG 챗봇, 정부 인사행정 특화 LLM 등 공공 발주가 시작된 만큼 이수시스템은 기존 HR 솔루션 레퍼런스와 RAG 챗봇 역량을 결합해 공공 인사·민원 AI 시장을 우선 공략할 타이밍이다. 동시에 Claude Fable 5·Sonnet 5 복귀와 국산 Solar LLM의 포털 채택으로 멀티LLM 선택지가 넓어진 만큼, AI 플랫폼 제품에 복수의 LLM을 유연하게 연동하는 구조를 갖추는 것이 고객사 신뢰 확보의 핵심이 될 것이다."
+}
