@@ -1,0 +1,72 @@
+{
+  "date": "2026.07.07 (화)",
+  "one_liner": "한국 AI 스타트업 지원금이 해외 AI 구매 대행 창구로 전락하고, 마이크로소프트는 4,800명을 추가 감원하며 AI 전환 칼날을 세웠다.",
+  "news": [
+    {
+      "number": 1,
+      "category": "글로벌 이슈",
+      "title": "'모두의 창업' 지원금, 해외 AI 구매 대행 창구로 변질…중소벤처부 실태 점검 착수",
+      "body": "정부의 스타트업 지원 프로그램 '모두의 창업'에서 지원금을 활용해 **클로드·ChatGPT 등 해외 AI 서비스를 구매 대행**해주는 업체까지 등장한 사실이 단독 보도됐다. 국내 카드 결제가 불가능한 해외 AI 서비스에 대해 제3자 대행 결제 구조가 형성된 것으로, **중소벤처기업부(MSS)가 실태 점검에 나섰다**. 이 프로그램은 예비 창업자에게 최대 수백만 원의 사업화 지원금을 제공하는데, 지원 목적과 다르게 단순 AI 구독료 대납에 쓰이는 사례가 다수 확인됐다.",
+      "insight": "공공 스타트업 지원 예산이 해외 AI 서비스 소비로 유출되는 구조적 문제가 드러났다. 향후 정부 지원 프로그램에서 '국산 AI 또는 국내 솔루션 우선 활용' 요건이 강화될 가능성이 높으며, 이는 국내 AI·SaaS 기업에 직접적인 수혜 조건이 될 수 있다. 정책 집행 단계에서 AI 도구 사용 내역에 대한 투명성 요구도 높아질 전망이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "정부가 해외 AI 구독 지원에 제동을 걸수록 '국산 검증 솔루션' 수요가 커진다. 이수시스템의 RAG 기반 챗봇과 HR AI Package는 GS인증·국내 보안 요건을 충족하는 솔루션으로, 스타트업·중소기업 대상 정부 지원 사업 연계 영업 시 '국내 AI 솔루션 대체재'로 적극 포지셔닝할 수 있다.",
+      "source": "네이트 / Chosunbiz",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4yLUFlOUhtSkxtNVVJNFg1bXByV2hTeWRaOVZEWTVTMFVraGRtTVhQSXJseEhPU08wTDRHdFJaSWxrQUVvZHk0ZjBVM21qRjJrMHppaWZmWEtGdnVFUXNUWA?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "산업 동향",
+      "title": "마이크로소프트, 또 4,800명 감원…AI 전환 가속에 영업·Xbox 부문 직격",
+      "body": "마이크로소프트가 신규 회계연도 시작과 함께 전 직원의 약 **2.1%에 해당하는 4,800명을 추가 감원**한다고 밝혔다. 지난해 약 9,100명 감원에 이은 두 번째 대규모 구조조정으로, 이번에는 **상업 영업(Commercial Sales) 부문과 Xbox 사업부**가 주로 타격을 받았다. 마이크로소프트는 AI Copilot 중심의 사업 재편을 가속화하면서 전통적인 대면 영업 인력을 AI 자동화로 대체하는 방향을 명확히 하고 있다.",
+      "insight": "빅테크의 AI 전환이 단순한 기술 도입을 넘어 '전통 영업 인력 감축'으로 이어지고 있음을 보여주는 사례다. AI가 영업·마케팅 자동화에 본격 투입되면서, 기업들은 대규모 판매 조직 대신 AI 도구에 의존하는 구조로 전환 중이다. 이러한 흐름은 중견·중소기업 고객사들이 자사 내부 영업·관리 인력 효율화를 위해 AI 솔루션 도입을 검토하는 계기로 작용할 수 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "마이크로소프트가 영업 인력을 AI로 대체하는 흐름은 국내 제조·건설 고객사에도 '우리도 인력 효율화가 필요하다'는 인식을 자극한다. WORKUP의 조직·인력 관리 기능과 이수시스템 챗봇을 연계한 'HR 업무 자동화 패키지'를 공동 제안하면 인력 재배치 이슈를 겪는 대기업 계열 고객사에 실질적인 영업 접점을 만들 수 있다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/news/961528/microsoft-layoffs-july-2026-sales-xbox"
+    },
+    {
+      "number": 3,
+      "category": "모델 릴리스",
+      "title": "구글 Gemini 3.5 Pro, 7월 17일 출시 임박…200만 컨텍스트 창·수학 성능 대폭 강화",
+      "body": "구글의 차세대 모델 **Gemini 3.5 Pro**가 7월 17일 공식 출시될 것으로 유력하게 알려졌다. 리크된 사양에 따르면 **컨텍스트 윈도우 200만 토큰**을 지원하며, 수학 추론 능력 업그레이드를 위해 출시가 소폭 지연됐다. 일부 벤치마크에서는 경쟁 모델 대비 프론트엔드 성능에서 우위를 보이는 것으로 전해지며, OpenAI·Anthropic과의 플래그십 모델 경쟁이 한층 치열해질 전망이다.",
+      "insight": "200만 토큰 컨텍스트는 방대한 기업 문서·계약서·매뉴얼 전체를 단일 프롬프트로 처리할 수 있는 수준으로, 기업용 RAG 시스템의 설계 방식 자체를 바꿀 수 있다. 모델 간 경쟁이 격화될수록 API 단가는 낮아지고 성능은 높아져, 기업용 AI 솔루션 개발사들이 활용할 수 있는 기반 기술의 질이 빠르게 향상된다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "Gemini 3.5 Pro의 200만 토큰 컨텍스트는 이수시스템 RAG 챗봇의 문서 처리 범위를 대폭 확장할 수 있는 기반이 된다. 현재 취업규칙·사규·매뉴얼 단위로 분절 처리하던 HR 챗봇을 '전사 문서 통합 검색' 수준으로 고도화하는 로드맵을 검토할 시점이며, Gemini API 연동 옵션을 고객사에 제시하는 것도 가능하다.",
+      "source": "Geeky Gadgets",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBvb2YxTEs4SG1QaUNxek5xLXYxVUdENGQ0M3QwbEpyUjltVzJFV1hHRk1YTFhITDF4aUJucDlYQ1owcmNlUXNEeVpNYk5LUkZNQlBLMVlsbVJKODFYMklwTUJMbTNVQ2N5bFE?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "글로벌 이슈",
+      "title": "중국 빅테크, AI 에이전트 개인화 서비스 줄줄이 중단…규제·보안·수익성 '삼중고'",
+      "body": "바이트댄스(더우바오)와 알리바바(첸원)가 **개인화 AI 에이전트 서비스를 잇따라 중단**했다. 중국 당국의 AI 규제 강화, 개인정보 보안 이슈, 그리고 수익 모델 불확실성이 동시에 작용한 결과다. 이 서비스들은 사용자 데이터를 학습해 맞춤형 자율 행동을 수행하는 형태였으나, **당국이 AI 에이전트의 자율적 의사결정 범위에 제동**을 걸면서 서비스 지속이 어려워졌다.",
+      "insight": "AI 에이전트의 개인화·자율화에 대한 규제 리스크가 중국에서 현실화됐다. 이는 AI 에이전트 서비스를 설계할 때 규제 준수(컴플라이언스) 아키텍처를 초기부터 내재화해야 한다는 신호다. 한국을 포함한 각국에서도 유사한 규제 논의가 진행 중이므로, 기업용 AI 에이전트 도입 시 데이터 거버넌스와 감사 추적 기능의 중요성이 더욱 부각될 전망이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "중국의 AI 에이전트 규제 사례는 국내 기업 고객사들이 AI 도입 시 '규제 안전성'을 구매 기준으로 삼을 가능성을 높인다. 이수시스템 챗봇과 HR AI Package를 '온프레미스 또는 프라이빗 클라우드 기반, 사내 데이터 외부 미전송' 구조로 강조하는 영업 메시지가 더 설득력을 가질 수 있으며, NCP 파트너십을 활용한 국내 클라우드 기반 배포가 차별점이 된다.",
+      "source": "IT조선 / Chosunbiz",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB2ek0wY1RxWHVwaEV0YkxzdXdTLTNHTWtJSlRUTWtZOFNJY1YyVDA0ODhlNTdkWEhfdmpnZFFpdWpvVzg0d3lxcGRoaVlpYVBjUjl6RUZfOWdNY3JPVUJDNFJyZG5DVkYwczNGVi1IeWHSAXRBVV95cUxPLURUMWF1T2ItSlNJbDZlSWQ4TEtKZjEzcThKSGZHTVFSX3hqYUdQd0hzdmprNXEzQ0x0NFpIOE4zUnNnckxiclVQalVhUDY0WER1MWZ4aDFrNTVubG1qR1VBUm1rdUlMaklaeUs0RTJua3RfRQ?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "산업 동향",
+      "title": "AI 에이전트, 일반 챗봇보다 에너지 136배 더 먹는다…전력 문제 현실로",
+      "body": "최신 연구에 따르면 **AI 에이전트는 기존 챗봇 대비 에너지 효율이 최대 136.5배 낮은** 것으로 나타났다. 에이전트가 여러 단계의 추론·도구 호출·반복 실행을 수행하는 과정에서 전력 소비가 기하급수적으로 증가하기 때문이다. Gizmodo 등 복수 매체가 같은 연구를 인용하며 **AI 에이전트 확산이 데이터센터 전력 수요를 폭발적으로 키울 것**이라고 경고했고, 국내에서도 동일한 우려가 제기되고 있다.",
+      "insight": "AI 에이전트의 실용화가 빨라질수록 전력·냉각 인프라 비용이 AI 서비스 원가의 핵심 변수로 부상한다. 기업이 AI 에이전트를 도입할 때 단순 라이선스 비용 외에 인프라 운영비까지 고려해야 하며, 에너지 효율적인 경량 모델·온디바이스 AI에 대한 수요가 높아질 수 있다. 동시에 ESG 관점에서 AI 사용에 따른 탄소 배출량 관리 이슈도 기업 의사결정에 영향을 미칠 전망이다.",
+      "isu_area": "ESG 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "AI 에이전트의 높은 에너지 소비는 기업의 Scope 2(전력 사용 간접 배출) 증가로 직결된다. ESGable을 도입한 고객사 또는 도입 검토 중인 제조·금융 고객사에게 'AI 도입에 따른 탄소 배출 증가분을 ESGable로 자동 추적·보고할 수 있다'는 구체적인 사용 시나리오를 영업 제안에 포함시키면 ESG 공시 의무 강화 흐름과 맞물려 실질적인 차별화 포인트가 된다.",
+      "source": "The Engineer / MSN",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOTW1SYms2dFRIYWRZemxwMGJkT3dBYWpvbGZsZk1ZN0JvdFJuMkQ4b1ZMek9taU51UE5OVS0yY0U2Yl83VXpDMXhaTmxHQW9qU1NmQ1BCMVhNUXhhYlNpd1d2R19LU3laNS0wcGdIN0NibHQ0R1pZbjRsaGd4U29vN0Z1T3pONE9DaGZXWXkxYnR0X0NHbHZtTklCN2k0dmJq?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**정부 AI 지원금의 해외 구독 대납 논란**은 국내 AI 솔루션 기업에 '국산 인증 솔루션 우선 요건' 강화라는 정책 수혜 기회를 예고한다.",
+    "마이크로소프트의 **4,800명 추가 감원**은 AI가 영업·관리 인력을 실제로 대체하고 있음을 증명하며, 국내 기업들의 AI 기반 업무 자동화 투자를 자극하는 신호다.",
+    "**AI 에이전트의 에너지 소비(136배)와 중국의 에이전트 규제**는 AI 확산의 두 가지 현실적 제약을 동시에 보여주며, 규제 대응·비용 효율성을 갖춘 기업용 솔루션의 가치를 높인다."
+  ],
+  "isu_summary": "오늘 뉴스는 이수시스템에 단기 영업 기회와 중장기 제품 방향 두 가지 메시지를 동시에 던진다. 국내 정부가 해외 AI 구독 지원에 제동을 걸고, 중국은 개인화 에이전트 서비스를 규제로 차단하면서 '국내 인증·보안 준수 AI 솔루션'의 경쟁력이 부각되는 시점이다. RAG 챗봇·HR AI Package를 NCP 기반 프라이빗 환경으로 제공할 수 있다는 점을 전면에 내세우고, AI 사용 증가로 커지는 Scope 2 배출 추적 수요를 ESGable 영업에 연결하는 투트랙 접근이 유효하다."
+}
