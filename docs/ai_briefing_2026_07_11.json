@@ -1,0 +1,72 @@
+{
+  "date": "2026.07.11 (토)",
+  "one_liner": "Apple이 OpenAI를 영업비밀 도용으로 제소하고, Anthropic이 매출 역전으로 OpenAI를 앞지르는 등 AI 빅플레이어 간 전선이 법정과 시장 양쪽에서 동시에 격화되고 있다.",
+  "news": [
+    {
+      "number": 1,
+      "category": "글로벌 이슈",
+      "title": "Apple, OpenAI 상대로 영업비밀 도용 소송 제기…전직 직원들 핵심 타깃",
+      "body": "Apple이 OpenAI를 상대로 소송을 제기했다. 핵심 주장은 **OpenAI에 재직 중인 전직 Apple 직원들이 Apple의 기술 영업비밀을 조직적으로 유출했다**는 것이다. Apple은 소장에서 'IO Products' 관련 직원들을 포함해 '패턴적 절도'가 있었다고 적시했다. 이번 소송은 AI 하드웨어 영역에서 양사 간 긴장이 표면화된 것으로, Apple이 자체 AI 인프라 전략을 가속화하는 과정에서 인재 유출 문제가 법적 분쟁으로 비화한 형국이다. 소송 결과에 따라 AI 업계 전반의 인재 이동 관행과 영업비밀 보호 기준에 상당한 파장이 예상된다.",
+      "insight": "빅테크 간 AI 인재 쟁탈전이 이제 법정 공방으로 이어지고 있다는 점이 핵심이다. 전직 직원이 경쟁사로 이직하며 기술을 유출했다는 주장은 AI 업계에서 드물지 않은 갈등이지만, Apple처럼 대형사가 공개 소송으로 대응한 것은 이례적이다. 이는 AI 하드웨어·소프트웨어 융합 영역의 기술 가치가 얼마나 높아졌는지를 방증하며, 향후 AI 스타트업의 채용 리스크와 전직 금지 조항 강화로 이어질 가능성이 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "이수시스템이 외부 LLM API(OpenAI, Anthropic 등)를 RAG 챗봇이나 HR AI 패키지에 연동해 사용하는 구조에서, 빅테크 간 법적 분쟁이 API 정책·서비스 연속성에 영향을 줄 수 있다. 특정 파트너사에 대한 의존도를 낮추고, 복수 LLM 공급사를 병행 검토하는 멀티 LLM 전략을 AI 플랫폼 로드맵에 반영해 두는 것이 안전하다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/964350/apple-openai-lawsuit-trade-secrets"
+    },
+    {
+      "number": 2,
+      "category": "산업 동향",
+      "title": "Anthropic, 연 매출 470억 달러로 OpenAI 역전…AI 왕좌 교체 신호탄",
+      "body": "Anthropic의 연간 반복 매출(ARR)이 **470억 달러**에 달해 OpenAI의 250~330억 달러를 크게 앞질렀다는 보도가 나왔다. 불과 1~2년 전만 해도 OpenAI가 압도적 1위였던 생성형 AI 유료 시장에서 역전이 일어난 것이다. Anthropic의 Claude 시리즈가 기업 시장에서 '덜 아첨하고 더 정확하다'는 평가를 받으며 엔터프라이즈 계약을 대거 확보한 것이 주효했다. 동시에 **Meta의 Muse Spark 1.1**은 저비용 전략으로 ChatGPT·Gemini 대항마를 자처하며 AI 모델 가격 경쟁을 한층 심화시키고 있다.",
+      "insight": "생성형 AI 시장이 '누가 더 스마트한가'에서 '누가 더 신뢰할 수 있고 비용 효율적인가'로 경쟁 축이 이동하고 있음을 보여준다. 기업 고객들이 모델 선택 기준으로 성능 벤치마크보다 환각 억제, 응답 일관성, TCO(총 소유 비용)를 중시하기 시작했다는 뜻이다. 저가 모델의 확산은 AI 도입 문턱을 낮춰 중견·중소기업의 AI 전환을 가속화할 것이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "기업용 AI 모델 가격이 지속 하락하면서 RAG 기반 챗봇 및 HR AI 패키지의 API 비용 부담이 줄어든다. 이수시스템은 Anthropic Claude나 Meta Muse Spark 계열의 저비용 API를 WORKUP·Smart HR 백엔드에 연동해 '가성비 HR AI' 포지셔닝을 강화할 수 있다. 특히 중견 제조·건설사 고객에게 '대기업 수준 AI 기능을 합리적 비용으로'라는 영업 메시지가 유효해지는 시점이다.",
+      "source": "iNews Zoombangla",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1WbkczdkpxNE03VS1DRFkzWEVGb0JyTHF6TjNSdVA2ZE5zQThDY25QZ3lqc0N2VHp1a1hkTXJITVMyOGZWODNiTWdNbnZKSmNNajlEWGpEdXZvbkVQeTZjQWtiZ3lrdVdCM1JsMWhaYmxwTlhPaEUyaFMwZ3ZkRlU?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "모델 릴리스",
+      "title": "OpenAI, GPT-5.6 출시·ChatGPT Work 공개…업무용 AI 시장 정면 승부",
+      "body": "OpenAI가 **GPT-5.6** 모델을 출시하고, 기업 협업 특화 서비스인 **ChatGPT Work**를 공개했다. ChatGPT Work는 Microsoft Copilot, Anthropic의 Claude Cowork와 직접 경쟁하는 포지셔닝으로, 팀 단위 문서 작업·회의 요약·프로젝트 관리 등 업무 전반을 AI로 통합하겠다는 전략이다. OpenAI는 동시에 가장 강력한 모델에 대한 접근 권한을 더 많은 사용자에게 확대하겠다고 밝혔다. 이는 Anthropic에 빼앗긴 기업 시장 점유율을 탈환하기 위한 전방위 공세로 풀이된다.",
+      "insight": "AI가 개인 생산성 도구를 넘어 팀·조직 단위의 업무 플랫폼으로 진화하고 있다. 기업 IT 구매자 입장에서는 기존 SaaS(협업툴, HR, ERP 등)와 AI를 별도로 구매하는 시대가 끝나고, AI 통합 플랫폼 하나로 수렴될 가능성이 높아졌다. 이는 기존 업무용 소프트웨어 공급사들에게 AI 내재화를 더 이상 미룰 수 없는 사업 존폐의 문제로 만들고 있다.",
+      "isu_area": "HR 사업",
+      "isu_tag": "[리스크]",
+      "isu_insight": "ChatGPT Work처럼 업무 전반을 커버하는 AI 통합 플랫폼이 확산되면, 독립형 HR SaaS(WORKUP)의 차별성이 희석될 수 있다. 이수시스템은 국내 노무·급여·근태 규정의 복잡성(최저임금법, 52시간제, 포괄임금제 등)을 AI가 쉽게 대체할 수 없는 영역으로 특화해, WORKUP의 '한국 HR 규정 준수 자동화' 기능을 전면에 내세우는 차별화 전략이 필요하다.",
+      "source": "Inc42",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPQ3A0a1RYbUsyanBFTEIyc09SZGwxSHlVYjZMbzJpcVVSdHNDc3BvUTN3ZHFtc01SZVFpUi1hczBKbVQxVzhjaEFOX25jSktfenFoU19hak9ublBwYzI5WUNMX1BtYWpIc2FEVzU3ZzVrOTBZWHFFdks5ckd3YnBaMTJGQlJMT0p1Y0ppRUtrREkxSVNDWVZXX2tYeDVvaUZRMzU4a0tR?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "글로벌 이슈",
+      "title": "중국 AI 모델, OpenRouter 상위 10위 싹쓸이…미국산은 Anthropic만 생존",
+      "body": "글로벌 AI 모델 트래픽 집계 플랫폼 OpenRouter의 상위 10개 모델 중 **미국산은 Anthropic의 Claude 단 1개**만 남고, 나머지는 모두 중국산 모델이 차지했다는 보고가 나왔다. DeepSeek의 DSpark 기술이 LLM 추론 속도를 **85% 향상**시키는 등 중국 AI의 기술 격차 추격이 가시화되고 있다. 미국이 AI 칩 수출 규제를 강화하는 상황에서도 중국 모델들이 오픈소스 생태계를 통해 글로벌 시장 점유율을 높이는 역설적 상황이 전개되고 있다. 오픈소스 모델 개발사 **MiniMax는 20억 달러(약 2.7조 원)** 투자 유치에 성공하며 이 흐름을 증명했다.",
+      "insight": "오픈소스 전략을 통한 중국 AI의 글로벌 확산은 단순한 기술 경쟁을 넘어 AI 생태계의 지정학적 재편을 의미한다. 비용 효율적인 중국산 오픈소스 모델이 기업들의 실질적 선택지로 부상함에 따라, 기존 유료 API 중심의 미국 AI 기업들은 가격·성능 전략을 재검토해야 하는 압박에 직면했다. 국내 기업들도 모델 선택 시 공급망 리스크(제재, 데이터 주권, 보안 규정)를 함께 고려해야 한다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "DeepSeek 계열 등 고성능 오픈소스 중국 모델의 비용 경쟁력이 높아졌지만, 국내 공공·금융 고객사는 데이터 주권과 보안 규정상 중국산 모델 사용에 제약이 크다. 이수시스템은 이 점을 역으로 활용해, RAG 챗봇과 HR AI 패키지를 구축할 때 '국산 LLM(HyperCLOVA X, EXAONE 등) 또는 검증된 글로벌 API 기반의 규정 준수형 AI'임을 강조하면 공공·금융 고객 대상 영업에서 확실한 차별점이 된다.",
+      "source": "finance.biggo.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5rQmZmRWZiWndQd3R6SzJ2MlRIdVRySURIb1dRcGNTc1VhejJud19NaXlWZHRBbUhfb1llZG53eGhYTVpBV0J1dHVES3FHUkZ4RzJWMl93d2wwWlFLSnhJS2JoMXlKTU4xUzl0bDJtNjRpOXNQeVE?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "산업 동향",
+      "title": "크래프톤, ICML 메인트랙 논문 10편 채택…국내 게임사가 AI 연구 강자로 부상",
+      "body": "국내 게임 기업 **크래프톤**이 세계 최고 권위 AI 학회인 **ICML(국제 머신러닝 학회) 2026 메인트랙에 논문 10편을 채택**받았다고 밝혔다. 이는 크래프톤 역대 최대 성과로, 단순 게임 개발사를 넘어 AI 기초 연구 역량을 갖춘 테크 기업으로의 전환을 공식화한 것이다. 게임 AI(NPC 행동, 절차적 콘텐츠 생성, 강화학습 등)에서 축적한 연구 역량이 범용 AI로 확장되는 양상이며, 국내 비IT 주력 기업이 AI 연구 생태계의 실질적 플레이어로 진입했음을 보여주는 사례다.",
+      "insight": "제조·게임·유통 등 전통 산업 기업들이 AI 연구 내재화를 통해 기술 기업으로 변신하는 흐름이 국내에서도 본격화되고 있다. 기업들이 외부 AI 모델을 단순 구매하는 것을 넘어 자체 연구 역량을 축적하기 시작하면서, AI 솔루션 공급사들은 '우리보다 고객사가 더 잘 아는 영역'이 늘어나는 환경에 대비해야 한다. 반면 자체 AI 연구가 어려운 중견 기업들에게는 전문 AI 솔루션 파트너의 가치가 더욱 높아지는 양면성도 존재한다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "크래프톤처럼 AI 연구를 내재화하는 대기업은 이수시스템의 직접 고객보다는 경쟁 환경 변수에 가깝다. 하지만 이 뉴스의 진짜 시사점은 반대편에 있다. AI 연구 내재화가 어려운 국내 중견 제조·건설·유통 기업들은 AI 전환에 대한 필요성을 느끼면서도 자체 역량이 없어 전문 파트너를 찾는다. 이수시스템의 HR AI 패키지·RAG 챗봇을 '당장 도입 가능한 AI 전환의 첫 걸음'으로 포지셔닝해 이들 중견 기업을 적극 공략할 타이밍이다.",
+      "source": "한국경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9lXzl6bktjUGxKdDF0VTVGbVRvbG9MRVJ6OUIyNFlfVjVNWlVIdW54enlld0dQUTJYUmJkM19jNXBGRmJnLTZjX0MxSXlhYjZ3TG45SXpxSnJNZ9IBVEFVX3lxTFBuZXFPN1RhaldQVHk5WVFNeTB5V0VWTWdrUkhITVdBM3lOZEoxRGVXMmFTdlp1UkJHaVd4QjRsZ0JyTWQtRno2NXN4WXRURk9jSHVhZQ?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**Apple vs OpenAI 소송**은 AI 인재 이동이 법적 리스크로 비화한 첫 대형 사례로, AI 업계 전반의 고용 관행과 영업비밀 보호 기준을 재편할 수 있다.",
+    "**Anthropic의 매출 역전**과 중국 오픈소스 모델의 부상이 동시에 일어나면서, 기업용 AI 선택 기준이 '최고 성능'에서 '신뢰성·비용·공급망 안전성'으로 이동하고 있다.",
+    "국내에서는 **크래프톤의 ICML 10편 채택**처럼 비IT 주력 기업들도 AI 연구를 내재화하는 추세인 반면, 대다수 중견 기업들은 여전히 전문 AI 파트너가 절실한 양극화 구도가 뚜렷해지고 있다."
+  ],
+  "isu_summary": "이번 주 AI 뉴스는 이수시스템에 단기 영업 기회와 중장기 포지셔닝 모두에서 신호를 보내고 있다. 기업용 AI 모델 가격 하락(Anthropic 역전, Meta 저가 모델)은 WORKUP·HR AI 패키지의 API 연동 비용 부담을 낮춰 '가성비 HR AI' 영업을 가속화할 수 있는 환경을 만든다. 동시에 ChatGPT Work 등 올인원 AI 업무 플랫폼의 확산은 독립형 HR SaaS의 차별화 압박으로 작용하므로, 국내 노무·급여 규정 준수 자동화처럼 외산 AI가 쉽게 대체할 수 없는 영역에서의 기능 강화가 시급하다. 공공·금융 고객 대상으로는 중국 오픈소스 모델의 보안 우려를 역활용해 '규정 준수형 국내 AI 솔루션' 포지셔닝을 명확히 하는 것이 경쟁 우위 확보의 핵심이다."
+}
