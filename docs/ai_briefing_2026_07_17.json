@@ -1,0 +1,72 @@
+{
+  "date": "2026.07.17 (금)",
+  "one_liner": "구글 Gemini 3.5 Pro 출시 지연 충격파 속, 한국은 사우디와 AI 협력으로 반격 준비",
+  "news": [
+    {
+      "number": 1,
+      "category": "모델 릴리스",
+      "title": "구글 Gemini 3.5 Pro, 내부 목표 미달로 출시 수개월 지연 — 주가 5% 급락",
+      "body": "블룸버그 보도에 따르면 구글의 차세대 플래그십 모델 **Gemini 3.5 Pro**가 내부 성능 목표를 충족하지 못해 수개월째 출시가 지연되고 있다. 특히 **코딩 기능** 개선을 위한 전면 재설계가 진행 중인 것으로 알려졌으며, 이 소식이 전해지자 알파벳 주가는 **5% 이상 하락**했다. 당초 2M 토큰 컨텍스트 윈도우 등 강력한 사양이 유출된 바 있어 기대감이 높았던 만큼 시장 충격이 컸다.\n\nOpenAI·Anthropic과의 AI 모델 경쟁이 격화되는 시점에서 구글의 개발 일정 차질은 단순한 지연 이상의 의미를 지닌다. 내부 관료주의와 기술적 난제가 복합적으로 작용한 결과로, 구글은 같은 날 NotebookLM을 **Gemini Notebook**으로 리브랜딩하며 Gemini 생태계 확장을 이어가려 했으나 주요 모델 지연 이슈가 부각됐다.",
+      "insight": "최전선 AI 모델 개발에서도 성능 목표 달성이 얼마나 어려운지를 보여주는 사례다. 빅테크조차 릴리스 일정을 맞추지 못하는 상황은 AI 모델 경쟁이 '속도'보다 '품질과 안정성' 중심으로 재편되고 있음을 의미한다. 기업 고객 입장에서는 특정 모델에 의존하는 전략보다 멀티 LLM 아키텍처를 고려해야 할 이유가 늘어난다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "이수시스템 RAG 기반 챗봇·AI 플랫폼은 특정 LLM에 종속되지 않는 멀티 모델 구조를 강점으로 영업에 활용할 수 있다. 구글 Gemini 지연으로 기업 고객의 LLM 선택 불확실성이 높아진 지금, '모델 교체가 자유로운 기업용 AI 플랫폼'이라는 메시지가 설득력을 가진다.",
+      "source": "Bloomberg / Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPSlZfZWZLYTc0S3BpZ0hmcWNfSnNXQnJObDJWMFRLM2Nyb2hEX3FSVFZoTU1CTEp2WGVjREVoSGN1NmM3Wlo2RkZ5V3o0TUNocS1lcDktTlBLQ3ZHUS1DclV4eGgzUzgta29RY3NNY2hRdWdkVWVhdWVvOGJoWlM3eDhoc1ViQTgxQkRHc1FwTWg3OHlpQ0pYWG8yWFZ1NEltdUdieFdhcFJKNXNHVk1VZGRKY3dHcFN0?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "글로벌 이슈",
+      "title": "EU, 구글에 안드로이드·검색 경쟁자 개방 명령 — AI 어시스턴트 시장 판도 흔든다",
+      "body": "유럽연합(EU)이 구글에 **안드로이드**와 **구글 검색** 플랫폼을 경쟁 AI 어시스턴트 및 검색 엔진에 개방하라는 두 건의 명령을 동시에 내렸다. 이는 EU 디지털시장법(DMA) 이행 조치로, 구글이 Gemini를 안드로이드 기기에 기본 탑재하는 방식으로 시장 지배력을 강화하는 것을 제한하는 것이 핵심이다. 사실상 **OpenAI·Anthropic·삼성 가우스** 등 경쟁 AI 어시스턴트가 안드로이드 기기에서 동등한 접근권을 얻을 수 있게 된다.\n\n이번 결정은 모바일 AI 어시스턴트 시장의 생태계 구조를 근본적으로 바꿀 수 있는 선례가 된다. 구글은 항소 의사를 밝혔으나, 규정 위반 시 전 세계 매출의 최대 **10%** 에 달하는 과징금이 부과될 수 있어 사실상 개방을 거부하기 어렵다.",
+      "insight": "플랫폼 기본 탑재를 통한 AI 어시스턴트 독점 구조가 규제로 해체되기 시작했다. 이는 AI 어시스턴트 시장에서 '기본값 선점'이라는 절대적 우위가 약화됨을 의미하며, 기능과 특화성으로 경쟁하는 버티컬 AI 솔루션에 기회 공간이 넓어지는 신호다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "안드로이드 기기에서 AI 어시스턴트 선택권이 넓어지면 HR·현장 업무에 특화된 버티컬 챗봇의 차별성이 부각된다. 이수시스템의 HR AI 패키지나 BizPTT 연동 챗봇처럼 특정 업무 도메인에 최적화된 솔루션이 '범용 Gemini보다 우리 업무에 맞는 AI'로 포지셔닝될 수 있는 환경이 조성된다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/policy/966438/eu-google-android-ai-interoperability-search-data-dma"
+    },
+    {
+      "number": 3,
+      "category": "산업 동향",
+      "title": "삼성전자, 메모리 설계에 AI 에이전트 도입 — '사람은 목표, AI는 실행' 시대 개막",
+      "body": "삼성전자가 **메모리 반도체 설계 과정**에 AI 에이전트를 본격 투입한다고 밝혔다. 설계 엔지니어가 목표 스펙을 제시하면 AI 에이전트가 회로 설계·검증·최적화를 자율 수행하는 방식으로, 반도체 설계 사이클 단축과 인력 효율화를 동시에 노린다. 이는 단순한 보조 툴을 넘어 **자율 실행 에이전트**를 핵심 설계 인프라로 격상시키는 것이다.\n\n제조업 내 AI 에이전트 도입이 연구개발(R&D) 최전선까지 확장되는 흐름을 보여주는 사례로, 국내 대기업이 'AI 에이전트 = 실무 실행자'로 정의하기 시작했다는 점에서 국내 산업 전반의 AI 도입 속도를 가늠할 수 있다.",
+      "insight": "제조 대기업의 R&D 핵심 공정에 AI 에이전트가 투입되는 것은 AI가 보조 툴에서 핵심 업무 실행자로 역할이 전환됐음을 의미한다. 이 흐름은 제조·건설·금융 등 전 산업군으로 확산될 것이며, 기업들은 어떤 업무에 어떤 수준의 에이전트를 도입할지 구체적인 로드맵 수립을 서둘러야 한다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "삼성전자 사례는 제조·건설 업종 고객사에 대한 AI 에이전트 영업의 강력한 레퍼런스가 된다. 이수시스템의 HR AI 패키지에 에이전트 개념을 접목해 '채용 공고 작성 → 이력서 분석 → 1차 합격자 통보'까지 자율 실행하는 HR 에이전트 시나리오를 제조업 고객사에 제안하는 영업 포인트로 활용할 수 있다.",
+      "source": "네이트 / 경제투데이",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFA1MFptSjRxRXE0bThhOWhuZTFFenJONEdKcGxLRUJqczFnS2xmMXdaWUs5MEsxMV9HTkFOS3ZEOTJOQTZKaE1CT1huTEhBUS01OU1j?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "글로벌 이슈",
+      "title": "한국, 사우디와 '한국형 풀스택 AI' 협력 추진 — KOSA 장관급 회담",
+      "body": "과학기술정보통신부 장관(배경훈)과 한국소프트웨어산업협회(KOSA)가 사우디아라비아 대표단·장관과 잇따라 회동을 갖고 **한국형 풀스택 AI** 협력 방안을 논의했다. 풀스택 AI는 데이터센터 인프라·반도체·LLM·응용 소프트웨어까지 수직 계열화된 AI 역량을 의미하며, 한국의 반도체·통신·SW 강점을 사우디의 **AI 투자 자본 및 데이터 주권 수요**와 결합하는 전략이다.\n\n사우디는 비전 2030 프레임 아래 국가 AI 역량 내재화에 수백억 달러를 투자하고 있으며, 미국·중국 의존도를 낮추기 위한 **제3의 AI 파트너** 확보에 적극적이다. 이번 협력 논의는 한국 AI 기업의 중동 진출 가시성을 높이는 계기로 평가된다.",
+      "insight": "국가 단위의 AI 풀스택 역량 구축 경쟁이 외교·경제 협력의 핵심 의제로 부상했다. 사우디 사례처럼 자국 데이터 주권과 AI 자립을 원하는 국가가 늘어날수록, 특정 빅테크 종속 없이 구축 가능한 국산 AI 솔루션 생태계의 전략적 가치가 높아진다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "한국-사우디 AI 협력이 정부 주도로 가시화되면, NCP 공식 파트너인 이수시스템은 공공·정부 대상 클라우드 인프라 및 AI 솔루션 패키지 수출 기회를 모니터링할 필요가 있다. 특히 KOSA 회원사 자격을 활용해 정부 주도 해외 AI 사업 참여 채널을 점검하는 것이 유효하다.",
+      "source": "경제투데이 / edaily",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFA4dmdPSUIxVzVPUWgySV80T3h0TWZLaDVzR2FYX3M3Vmo3ei1RaEpLVmhlSmJoMVU0WEhBZEQtaU1SR1BHZlU3UWdVM294dVd3QUtsclV6NU96Z3lZSXpGck9WdGxHSjhvU2Zj0gFrQVVfeXFMUDh2Z09JQjFXNU9RaDJJXzRPeHRNZktoNXNHYVhfczdWajd6LVFoSktWaGVKYmgxVTRYSEFkRC1pTVJHUEdmVTdRZ1Uzb3h1V3dBS2xyVXo1T3pneVlJekZyT1Z0bEdKOG9TZmM?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "일자리·사회",
+      "title": "경기도일자리재단 보고서 '일자리보다 직무가 바뀐다' — AI 시대 인력 재편 공식화",
+      "body": "경기도일자리재단이 발간한 정책 보고서는 AI가 일자리를 없애는 것보다 **직무 내용 자체를 재편**하는 효과가 더 크다고 분석했다. AI가 반복·정형 업무를 대체함에 따라 같은 직군 내에서도 요구 역량과 업무 범위가 빠르게 변화하며, 기업과 개인 모두 **직무 재설계**와 **재숙련(Reskilling)** 에 선제적으로 대응해야 한다는 것이 핵심 메시지다.\n\n보고서는 특히 사무·관리직의 직무 변화 속도가 가장 빠르며, 기업 HR 부서가 AI 기반 역량 분석 도구를 도입해 직무 변화를 실시간으로 추적해야 한다고 권고했다. 이는 공공 영역에서도 **AI 기반 HR 시스템 수요**가 본격화됨을 시사한다.",
+      "insight": "AI에 의한 고용 영향이 '일자리 소멸'에서 '직무 재편'으로 초점이 이동하고 있다. 기업은 채용 인원을 줄이는 것보다 기존 인력의 역할을 재정의하고 재교육하는 데 더 많은 투자가 필요해졌으며, 이는 HR 시스템에 직무 분석·역량 관리·학습 추적 기능이 필수적으로 포함돼야 함을 의미한다.",
+      "isu_area": "HR 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "직무 재편 수요는 WORKUP 및 Smart HR의 신규 기능 확장 근거가 된다. 기존 근태·급여 중심에서 벗어나 'AI 기반 직무역량 분석 → 재숙련 추천 → 성과 추적'을 하나의 플로우로 묶는 HR AI 패키지를 공공기관 및 경기도 산하 기업 대상으로 제안하면, 정책 보고서를 직접 영업 레퍼런스로 활용할 수 있다.",
+      "source": "위클리오늘",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBlLXE0MFByUDVVX3JqejlvWFp1bjNYYWRLbmxHRzdhMFo3eFg1M0hjSTY2VDI4T0JMTlRGcS1rbDg0STVmMzNTYkZQWWozZWZNTUtMckxTWGR6WGxURkZGUWZSVWs0S1prWFlWSXRDYw?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**구글 Gemini 3.5 Pro 지연**은 최고 수준의 AI 모델도 성능 목표 달성이 어렵다는 현실을 드러냈고, 기업은 단일 LLM 의존 대신 멀티 모델 전략을 고려해야 한다.",
+    "**EU의 안드로이드 개방 명령**과 **한국-사우디 AI 협력** 추진은 AI 시장의 플랫폼 독점 시대가 저물고, 특화형·국산 AI 솔루션의 기회 공간이 넓어지고 있음을 보여준다.",
+    "삼성전자 AI 에이전트 도입과 경기도 정책 보고서가 동시에 가리키는 방향은 하나다 — **AI는 이제 도구가 아니라 업무 실행자**이며, HR 시스템을 포함한 모든 기업 SW가 이 변화에 맞게 재설계되어야 한다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심 흐름은 'AI 플랫폼 독점 균열 + 버티컬 특화 솔루션 부상'으로 요약된다. 구글 Gemini 지연과 EU 개방 명령은 범용 빅테크 AI에 대한 기업 고객의 의존도를 낮추는 방향으로 작용하며, 이수시스템의 HR·현장 특화 AI 솔루션 포지셔닝에 유리한 환경을 만들고 있다. 특히 경기도 보고서의 직무 재편 이슈와 삼성전자 AI 에이전트 사례는 WORKUP·HR AI 패키지의 기능 고도화 및 제조·공공 고객 영업 시나리오를 구체화할 타이밍임을 시사한다."
+}
