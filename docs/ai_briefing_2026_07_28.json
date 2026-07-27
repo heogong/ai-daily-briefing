@@ -1,0 +1,72 @@
+{
+  "date": "2026.07.28 (화)",
+  "one_liner": "AI 보안 동맹 결성·Claude 개인정보 노출·중국 AI 굴기 가속화까지, 기술 경쟁과 신뢰 위기가 동시에 달아오른 하루",
+  "news": [
+    {
+      "number": 1,
+      "category": "산업 동향",
+      "title": "엔비디아·MS 주도 'AI 보안 동맹' 출범…OpenAI·Google·Anthropic은 불참",
+      "body": "엔비디아와 마이크로소프트가 IBM, SpaceX 등 **30개 이상의 기업**과 함께 'Open Secure AI Alliance(OSAIA)'를 출범했다. 이 연합은 AI 에이전트 보안을 위한 **오픈소스 방어 도구**를 공동 개발·공유하는 것을 목표로 한다. 주목할 점은 OpenAI 에이전트 침해 사건을 직접적 계기로 삼으면서도, 정작 **OpenAI·Google·Anthropic 세 곳은 불참**했다는 것이다. 한국 기업으로는 네이버와 SK텔레콤이 합류하며 국내 AI 보안 생태계도 글로벌 연대에 편입됐다.",
+      "insight": "AI 에이전트가 기업 내부 시스템에 깊이 연결될수록 보안 취약점은 곧 비즈니스 위기로 직결된다. 빅3 AI 기업이 불참한 채 하드웨어·인프라 진영이 보안 표준을 선점하려는 구도는, 향후 기업용 AI 도입 시 '어느 진영의 보안 프레임워크를 따를 것인가'라는 새로운 선택지를 만들어낸다. 오픈소스 기반 보안 표준이 자리 잡으면 클로즈드 AI 플랫폼 의존도를 낮추는 데 기여할 수 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "이수시스템의 RAG 기반 챗봇 및 AI 플랫폼은 기업 내부 데이터와 연동되는 구조이므로, OSAIA가 제정할 오픈소스 AI 보안 가이드라인을 제품 설계에 선제적으로 반영하면 고객사(특히 금융·공공) 납품 시 보안 적합성 입증에 유리하다. 네이버·SK텔레콤의 합류를 모니터링하며 NCP 파트너사로서 연계 가능성도 검토할 만하다.",
+      "source": "The Verge, 네이트",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity"
+    },
+    {
+      "number": 2,
+      "category": "글로벌 이슈",
+      "title": "Claude 대화 내용, 구글·빙 검색에 무방비 노출…Anthropic 개인정보 침해 논란",
+      "body": "Anthropic의 AI 서비스 Claude에서 사용자가 공유한 대화 링크가 **구글과 빙 검색 결과에 그대로 노출**되는 개인정보 침해 사태가 발생했다. 사용자가 '공유' 기능을 사용하면 URL이 생성되는데, 이 링크가 검색 엔진에 색인되어 제3자가 대화 내용을 열람할 수 있게 된 것이다. 민감한 업무 정보나 개인적 고민을 AI와 나눈 내용이 공개 검색에 노출될 수 있다는 점에서 **기업 도입 현장의 보안 우려**가 커지고 있다.",
+      "insight": "이번 사태는 AI 챗봇의 '공유 기능'이 단순한 편의 기능이 아니라 심각한 보안 취약점이 될 수 있음을 보여준다. 기업 환경에서 외부 AI 서비스를 도입할 때 데이터 거버넌스와 접근 권한 설계가 얼마나 중요한지를 환기시키며, 온프레미스 또는 프라이빗 클라우드 기반 AI 솔루션에 대한 수요를 자극할 수 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "퍼블릭 AI 서비스의 데이터 유출 우려가 커질수록, 기업 내부 데이터를 외부로 내보내지 않는 온프레미스·프라이빗 환경의 RAG 챗봇에 대한 고객 관심이 높아진다. 이수시스템의 기업용 AI 챗봇이 '내부망 전용 배포'와 '데이터 비유출' 구조임을 영업 메시지로 강조하면, 보안에 민감한 금융·공공 고객사 공략에 효과적이다.",
+      "source": "The Tech Buzz",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSWVRUUZjYjg1bmpMS1k5SUwyLV9FTzJzSVpkcWpfb2tWeTluMTlWd21uQ1hSckxhNjZ3ME1qakxvYVBaMm05WnVYRXZwNjBsc21WdDBwcENGV2g2X0NGNzZqZGQwd0pMYkxqVXBRVGUzcmZiZ2pzWHVnNnUtVEFOM2hhLWhxVDJ6QTQtQlVwOEwwQmdBZ3RtR2tDNA?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "모델 릴리스",
+      "title": "마이크로소프트, 첫 사이버보안 전용 AI 모델 'MAI-Cyber-1-Flash' 공개",
+      "body": "마이크로소프트가 자체 개발한 **첫 번째 사이버보안 전용 AI 모델 'MAI-Cyber-1-Flash'**와 에이전틱 보안 플랫폼 'Perception'을 동시 발표했다. 이 모델은 위협 탐지·분석·대응 속도를 대폭 높이는 데 특화돼 있으며, 기존 범용 LLM과 달리 **보안 도메인 특화 훈련**을 거쳤다. Perception 플랫폼은 AI 에이전트가 위협을 자율적으로 분석하고 대응 시나리오를 제안하는 기능을 제공한다.",
+      "insight": "범용 AI가 아닌 '도메인 특화 AI 모델'의 시대가 본격화되고 있음을 보여주는 사례다. 사이버보안처럼 전문성과 신뢰도가 핵심인 분야에서는 일반 LLM보다 특화 모델이 빠르게 채택될 가능성이 높다. MS가 보안 모델을 자체 출시함으로써 클라우드·보안 시장 내 수직 통합 전략을 강화하는 흐름으로 읽힌다.",
+      "isu_area": "클라우드 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "도메인 특화 AI 모델 트렌드는 이수시스템의 HR AI Package처럼 특정 업무에 최적화된 AI 솔루션의 시장 유효성을 뒷받침한다. 또한 NCP 파트너사로서 네이버 클라우드 기반의 보안 강화 인프라를 고객사에 제안할 때, 이번 MS 사례를 레퍼런스로 활용해 '보안 특화 AI 인프라 구축' 필요성을 설득하는 영업 논거로 쓸 수 있다.",
+      "source": "The Eastern Herald, NewsBytes",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQeEFYbTVJSU9KQ3QtNnoxNUFiSmlqX3RJclhCSUU2S1M4ODFCYXNsYzFkczQ1WXQzWGJHUjU0d2NQdC1pNW1rTU55eDVqenEybS1LOWZ4czMzTnZaMDllMjluT0xtNDJ2enNWVzdETnczLUlKbndlZTM2QjVURDhwbXJITQ?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "글로벌 이슈",
+      "title": "네이버, 젠슨 황의 '소버린 AI' 선봉장으로 낙점…한국 AI 주권 전략 가속",
+      "body": "엔비디아 CEO 젠슨 황이 **네이버를 HW·SW를 모두 갖춘 소버린 AI 구현의 핵심 파트너**로 공개 지목했다. 네이버는 자체 데이터센터, 클라우드 인프라(NCP), 한국어 특화 LLM 'HyperCLOVA X'를 보유해 국가·기업 단위의 AI 자주권 실현에 적합한 스택을 갖췄다는 평가다. 같은 날 **한·미 빅테크 협력 9,500억 달러 규모** 협약 소식과 맞물리며 국내 AI 관련주가 일제히 급등했다.",
+      "insight": "소버린 AI는 데이터 주권과 국가 안보를 이유로 자국 AI 인프라를 구축하려는 글로벌 트렌드다. 글로벌 빅테크가 특정 국가의 로컬 파트너를 통해 시장에 진입하는 구조가 정착되면, 국내 클라우드·AI 인프라 기업의 수혜가 집중될 수 있다. 이는 공공·금융 등 데이터 국내 보관 의무가 있는 산업의 AI 전환 속도를 높이는 촉매가 된다.",
+      "isu_area": "클라우드 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "이수시스템은 NCP 공식 파트너사로서, 네이버의 소버린 AI 파트너 지위 상승은 곧 NCP 수요 확대로 이어질 수 있다. 제조·건설·공공 고객사를 대상으로 'NCP 기반 소버린 AI 인프라 구축 + 이수시스템 AI 솔루션(챗봇·HR AI)' 패키지를 제안하는 번들 영업 전략이 현실적인 기회다.",
+      "source": "한국경제",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4xWmc1aURZVjVBdnhTVUZlY045dmNSc1locW4zSlFKbExFcnp2X1VlQXFqMnhCQ09Iejh4bDRLcElicEhSQ2NKeV9uWnRWMEFyUEdKTzR5THU1Zw?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "산업 동향",
+      "title": "中 AI 굴기, 시진핑까지 직접 나섰다…'미국과 격차 2~3개월' 자신감",
+      "body": "중국이 자국 AI 기술 수준이 미국과 **불과 2~3개월 차이**에 불과하다고 공언하며 국가 차원의 AI 전략을 강화하고 있다. 시진핑 주석이 직접 AI 굴기를 진두지휘하는 가운데, Moonshot AI의 **Kimi K3**가 실리콘밸리를 긴장시키는 성능을 훨씬 낮은 비용으로 구현하며 전 세계 이목을 집중시켰다. 중국 AI 모델들이 오픈웨이트 전략으로 글로벌 시장 점유를 노리는 것도 주목할 흐름이다.",
+      "insight": "중국 AI 모델의 오픈웨이트 무료 공개 전략은 단순한 기술 경쟁을 넘어 글로벌 AI 생태계 표준을 선점하려는 지정학적 포석이다. 저비용 고성능 모델이 확산되면 AI 도입 장벽이 낮아져 중소·중견 기업의 도입 속도가 빨라지는 한편, 특정 벤더 종속 위험도 커진다. 국내 기업 입장에서는 모델 선택지가 다양해지는 기회와, 공급망 보안 리스크라는 위협이 공존한다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "Kimi K3 같은 저비용 오픈웨이트 모델이 확산되면 이수시스템의 기업용 AI 솔루션 구축 시 모델 라이선스 비용을 절감할 수 있어 가격 경쟁력 확보에 유리하다. 다만 고객사가 직접 오픈소스 모델을 도입하려 할 경우 SI·컨설팅 역할을 강화해 '모델 선택·파인튜닝·RAG 구축·운영 관리'를 패키지로 제공하는 부가가치 서비스 전략이 필요하다.",
+      "source": "매일경제, The Verge",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFAyUk1Qc0o0TFo2WDVyaVgwQ2N2M2UyRGFhNmxDM0I4LWNSYXh6cUp6VktzcEhmREJWYjgzcmhsVHpCdmg3ejJFeURDUHJyUlg4Umc?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**AI 보안이 산업 의제로 격상**: 엔비디아·MS 주도 OSAIA 출범과 Claude 개인정보 노출 사태가 겹치며, 기업용 AI 도입 시 보안 설계는 선택이 아닌 필수가 됐다.",
+    "**소버린 AI 수혜로 국내 AI 인프라 주목**: 젠슨 황의 네이버 낙점과 한·미 9,500억 달러 빅테크 협력이 맞물리며 NCP 등 국내 클라우드·AI 인프라 기업에 실질적 기회가 열리고 있다.",
+    "**중국 오픈웨이트 모델의 역습**: Kimi K3로 대표되는 저비용 고성능 중국 AI 모델의 공세는 글로벌 AI 비용 구조를 뒤흔들며, 국내 기업에는 도입 비용 절감 기회와 공급망 보안 리스크를 동시에 안겨준다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심은 'AI 보안'과 '국내 AI 인프라 수혜'로 압축된다. Claude 개인정보 노출 사태와 OSAIA 출범은 기업용 AI 솔루션에서 온프레미스·프라이빗 배포와 데이터 비유출 구조의 가치를 부각시키며, 이수시스템의 RAG 챗봇과 HR AI 패키지를 금융·공공 고객사에 영업할 수 있는 명분을 강화한다. 네이버의 소버린 AI 파트너 지위 상승은 NCP 파트너사인 이수시스템에 클라우드 마이그레이션 및 AI 인프라 구축 수주 기회를 확대할 수 있으며, 중국 오픈웨이트 모델 확산에 대응해 모델 구축부터 운영까지 원스톱으로 제공하는 SI 역량을 차별화 포인트로 적극 알릴 시점이다."
+}
