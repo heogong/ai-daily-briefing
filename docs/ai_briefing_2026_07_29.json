@@ -1,0 +1,72 @@
+{
+  "date": "2026.07.29 (수)",
+  "one_liner": "구글은 AI 비용 폭증에 시달리고, 카카오는 국산 LLM을 오픈소스로 풀었다 — AI 패권 경쟁이 비용 전쟁으로 전환 중",
+  "news": [
+    {
+      "number": 1,
+      "category": "산업 동향",
+      "title": "구글, AI 투자비 205조 원 돌파 — 월가가 드디어 긴장하기 시작했다",
+      "body": "구글이 2026년 AI 인프라 투자 상한 추정치를 기존 **1,900억 달러(약 266조 원)**에서 **2,050억 달러(약 287조 원)**로 상향 조정했다. 어닝 시즌에 발표된 이 수치는 하한선조차 이전 상한선을 넘어서며 월가 투자자들에게 충격을 줬다. AI 인프라 비용이 빅테크의 수익성을 압박하는 수준에 도달했다는 우려가 커지면서, '과연 이 투자가 수익으로 돌아오는가'라는 근본적인 질문이 시장에서 제기되고 있다.",
+      "insight": "빅테크의 AI 인프라 투자가 '성장 스토리'에서 '비용 리스크'로 시장의 시각이 바뀌는 변곡점이다. GPU·데이터센터 수요는 지속되겠지만, 투자 대비 수익(ROI)을 증명하지 못하는 AI 프로젝트는 내부에서부터 구조조정 압력을 받게 된다. 기업들이 AI 도입 시 '비용 예측 가능성'을 핵심 구매 기준으로 삼는 흐름이 빨라질 것이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "빅테크 AI 비용 폭증 이슈는 역설적으로 '비용 효율적인 기업용 AI' 수요를 자극한다. 이수시스템의 RAG 기반 챗봇과 HR AI Package는 자체 LLM 없이 외부 모델을 경량 활용하는 구조로, 고객사에 '예측 가능한 AI 도입 비용'을 강점으로 내세울 수 있다. 제조·건설 고객사 영업 시 '빅테크 수준의 AI를 합리적 비용으로'라는 메시지가 유효하다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/972119/ai-stock-fall-google-capex"
+    },
+    {
+      "number": 2,
+      "category": "모델 릴리스",
+      "title": "카카오, 국산 경량 LLM '카나나' 4종 오픈소스 전격 공개",
+      "body": "카카오가 자체 개발한 한국어 특화 경량 언어모델 **'카나나(Kanana)'** 4종을 오픈소스로 공개했다. 글로벌 빅테크 모델에 맞서 국내 기업이 직접 한국어 LLM을 공개 배포하는 것은 이례적 행보로, 국내 AI 생태계 저변 확대를 노린 전략적 결정으로 평가된다. 카카오는 AI 기술 공개와 함께 펫레터 등 일상 밀착 서비스에도 AI를 적용하며 생태계 입지를 다각도로 강화하고 있다.",
+      "insight": "국내 대형 플랫폼 기업이 경량 LLM을 오픈소스로 공개하면 국내 AI 솔루션 시장의 '모델 선택지'가 다양해진다. 한국어 성능·데이터 주권·비용 측면에서 해외 모델 대비 경쟁력 있는 국산 베이스 모델이 등장함에 따라, 이를 활용한 B2B AI 애플리케이션 개발 진입 장벽이 낮아진다. 동시에 기존 글로벌 모델 의존도를 줄이려는 국내 기업들의 수요도 자극할 수 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "카카오 카나나 오픈소스 공개는 이수시스템 RAG 챗봇 및 HR AI Package의 베이스 모델 옵션이 늘어나는 것을 의미한다. 현재 OpenAI·Claude 등 해외 API에 의존하는 구조에서, 한국어 최적화된 경량 모델을 온프레미스 또는 하이브리드로 연동하면 금융·공공 고객사의 데이터 외부 유출 우려를 해소하는 차별화 포인트가 된다. WORKUP 챗봇 기능에 카나나 모델 접목 가능성을 검토할 시점이다.",
+      "source": "더팩트",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB0Ty1FX1hoLTlLX0pxZ284Y2NqaWJpV1BZbmgyOTJXMzJDZDJnTnJ4NzM1dmFUR3h1ZnFPclBxaG85WGVWQzY5LWU3ZkthYkU0OWJvWngzWDBiUdIBVEFVX3lxTFA0VFhEYlF6OWZEUnJMLUdoRWtNNlczTW5ZR2pYc0QzTGdheXNjQWJTbXlrNU90RWFuaEJzcEE4ZEdtaWNsVGs1cTBZT0hSdmJQaEd1eA?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "제품 업데이트",
+      "title": "마이크로소프트, 사이버보안 특화 AI 모델 'MAI-Cyber-1-Flash' 출시 — Gemini·GPT도 제쳤다",
+      "body": "마이크로소프트가 사이버보안 전용 AI 모델 **MAI-Cyber-1-Flash**와 에이전틱 보안 플랫폼 **'Perception'**을 공개했다. 이 모델은 보안 벤치마크에서 Mythos, Gemini, GPT를 모두 앞섰으며, Microsoft-Wiz 협력 AI 에이전트가 소프트웨어 취약점의 **90% 이상**을 탐지하는 성과도 함께 발표됐다. NVIDIA와 함께 AI 보안 얼라이언스도 결성하며, 사이버보안 AI 분야에서 OpenAI·Anthropic·Google과의 정면 경쟁을 선언했다.",
+      "insight": "AI가 사이버보안 자체를 수행하는 '에이전틱 보안' 시대가 본격화되고 있다. 기존 보안 툴이 탐지 규칙 기반이었다면, AI 에이전트는 알려지지 않은 취약점까지 자율적으로 찾아낸다. 기업 보안팀의 역할이 '직접 탐지'에서 'AI 감독'으로 전환되며, 보안 솔루션 업계 전반의 제품 재편이 불가피해질 전망이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "이수시스템의 AI 챗봇·플랫폼이 기업 내부 시스템과 연동되는 구조상, 고객사의 보안 심사 기준이 강화될 가능성이 높다. MAI-Cyber-1-Flash 같은 AI 보안 모델 도입이 확산되면 이수시스템도 RAG 챗봇·AI 플랫폼의 보안 인증 강화(ISO27001 기보유)를 영업 전면에 내세우는 전략이 필요하다. 특히 금융·공공 고객사 대상으로 'AI 도입 + 보안 컴플라이언스' 패키지 제안이 차별화 포인트가 될 수 있다.",
+      "source": "ExtremeTech",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbXpXd3VFeEMxMkM5S1pwZ181bVdUZzluZGdtTHR0bTlRMlBfeUNCUEl0eVpsdTI5QUFUM2EzUmpIZ20yc196bURLZmZtb01ZZjFnVmlOQlZuek9OWElYVXhhZUU5OFZiTTdMOFdnM1RZS0d6X2MwbGNsbGptU21wMGFrYmhfSy0zZThvN3BiTkNXSjRjd01hZWdfOGpXOGNwZDBiTVFhLWFDX0E?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "글로벌 이슈",
+      "title": "OpenAI·Anthropic·Google 직원들, AI 속도 조절 공동 성명 — 정부 개입 요청",
+      "body": "OpenAI, Anthropic, Google, Meta, Microsoft, Mistral 등 주요 AI 랩 직원들이 **미국 정부에 AI 거버넌스 강화를 요청하는 공동 성명**을 발표했다. 성명은 프론티어 AI 개발의 '속도 조절' 또는 글로벌 협력 거버넌스 가속화를 촉구하며, AI가 '극적으로 더 나은 세상'을 만들 수 있지만 그만큼 위험도 크다는 점을 명시했다. AI 개발 당사자들이 스스로 규제를 요청한다는 점에서 이례적인 사건으로 평가된다.",
+      "insight": "AI 개발 최전선 종사자들이 자체적으로 거버넌스를 요청한다는 것은 기술 발전 속도가 안전 검증 속도를 이미 앞질렀다는 내부 인식의 반영이다. 각국 정부의 AI 규제 입법이 가속화될 명분이 생겼으며, 기업 AI 도입 시 '안전성·투명성 인증' 요구가 조달·구매 기준에 포함될 가능성이 높아졌다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "AI 거버넌스 강화 흐름은 공공·금융 부문 고객사의 AI 도입 기준을 더 까다롭게 만든다. 이수시스템은 ISO27001 인증 SaaS HR(WORKUP)을 보유하고 있어, AI 기능 추가 시 '거버넌스 준수 AI'로 포지셔닝하는 것이 유효하다. 정부 사업 입찰 시 AI 안전성·투명성 요건이 추가될 경우 인증 보유 여부가 수주 변수가 될 수 있으므로 사전 대응이 필요하다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/972161/ai-leaders-us-government-openai-anthropic-google-meta"
+    },
+    {
+      "number": 5,
+      "category": "산업 동향",
+      "title": "아모레퍼시픽, 70년 연구 자산 기반 AI 특화 플랫폼 구축 — 제조 대기업 AI 내재화 가속",
+      "body": "아모레퍼시픽이 **70년간 축적한 연구 데이터**를 기반으로 자체 AI 특화 플랫폼 구축에 나섰다. 단순한 외부 AI 툴 도입을 넘어, 내부 도메인 지식을 학습시킨 기업 전용 AI 시스템을 만드는 것이 핵심이다. 이는 국내 제조·소비재 대기업들이 AI를 일회성 파일럿이 아닌 **핵심 경쟁력 인프라**로 내재화하는 흐름을 보여주는 사례다.",
+      "insight": "대기업이 자사 도메인 지식 기반 AI 플랫폼을 직접 구축하는 흐름은 AI 솔루션 시장의 경쟁 구도를 바꾼다. '범용 AI 툴 도입'에서 '자사 데이터 연동 특화 AI'로 수요가 이동하면, 도메인 데이터 통합·RAG 구조 설계·내부 시스템 연동 역량을 가진 SI 파트너의 역할이 커진다. 중견기업들도 유사한 움직임을 보일 가능성이 높다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "아모레퍼시픽 사례는 이수시스템의 주요 고객군인 제조·건설 중견기업에도 동일한 수요가 전파될 신호다. 이수시스템의 RAG 기반 챗봇 및 AI 플랫폼은 고객사의 사내 문서(인사규정·공정 매뉴얼·안전지침 등)를 학습시켜 '도메인 특화 AI'를 구현하는 데 적합하다. HR 레퍼런스 500개 이상의 고객사 데이터베이스를 활용해 기존 Smart HR·WORKUP 고객에게 'AI 고도화 패키지' 업셀링 영업을 선제적으로 전개할 타이밍이다.",
+      "source": "직썰",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE11MFNHdU1McGE1WDJPQlJBOG15cHRIcHU1MGJFcDNfdHhGNnZKaUFqZmtGMmhYUS1ScDZBRU0zY3luSDBVT2RHVnZEQk1wSTBWaXZYWDQ2QTJrM1l6ZkFiQlM4V25BX2dV0gFsQVVfeXFMTVE1djUwaFlmbW1Iel9iN01qS1FMNWYxYjRmTy11QTRTS0dRZDJqTHQ5ODNGbFVEM2VDWFlQc2NTZ0gzQjM2QW5KQTEtRk1YNjFhaUxxQVlMckNWaFpVamFUN01Wc1Y2dmxiRWtG?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**AI 투자 비용이 수익성 우려로 전환**되는 변곡점 — 기업 AI 도입의 판단 기준이 '기능'에서 '비용 대비 ROI'로 이동 중",
+    "카카오 카나나 오픈소스 공개로 **국산 한국어 LLM 생태계**가 본격화 — 데이터 주권·비용 효율을 중시하는 국내 B2B 시장 공략 기회",
+    "제조 대기업의 **AI 내재화 플랫폼 구축** 수요가 국내 중견 IT 솔루션 업체에 도메인 특화 AI 구축 파트너 기회를 만들고 있다"
+  ],
+  "isu_summary": "오늘 뉴스의 핵심 흐름은 'AI 비용 효율화'와 '도메인 특화 AI 내재화' 두 축으로 요약된다. 빅테크의 AI 투자 비용 폭증 우려로 기업 고객들은 ROI가 검증된 실용적 AI 솔루션을 원하고, 아모레퍼시픽 같은 제조 대기업은 자사 데이터 기반 특화 AI 플랫폼 구축에 나서고 있다. 이수시스템은 RAG 챗봇·HR AI Package를 기존 500개 이상 HR 레퍼런스 고객사의 도메인 데이터와 연동한 '비용 예측 가능한 도메인 특화 AI' 패키지로 포지셔닝해 업셀링 및 신규 수주를 동시에 공략할 적기다."
+}
