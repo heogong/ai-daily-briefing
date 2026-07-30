@@ -1,0 +1,72 @@
+{
+  "date": "2026.07.31 (금)",
+  "one_liner": "OpenAI 가격 80% 인하, Google Gemini 3.6·로보틱스 2.0 출시, Microsoft Copilot 슈퍼앱 예고까지 — AI 경쟁이 '성능'에서 '가격·통합'으로 축이 이동하는 하루",
+  "news": [
+    {
+      "number": 1,
+      "category": "모델 릴리스",
+      "title": "OpenAI, GPT-5.6 Luna 가격 80% 인하 — AI 가격 전쟁 본격화",
+      "body": "OpenAI가 **GPT-5.6 Luna** 모델의 API 사용 가격을 **80%** 대폭 인하하고, GPT-5.6 Terra도 20%, 전사 음성 전사 서비스도 25% 내렸다. 단기간 내 복수 모델의 가격을 동시에 낮춘 것은 이례적으로, Google Gemini 3.6 Flash 출시 및 Meta Muse Spark 1.1(Claude 대비 최대 83% 저렴) 등 경쟁사의 저가 공세에 대한 직접적인 반응으로 풀이된다. AI 모델 시장의 경쟁 축이 '성능 벤치마크'에서 '비용 효율성'으로 빠르게 이동하고 있음을 보여주는 신호탄이다.",
+      "insight": "빅테크 간 AI API 가격 경쟁이 격화되면서 기업의 AI 도입 비용 장벽이 빠르게 낮아지고 있다. 스타트업과 중견기업도 고성능 LLM을 저비용으로 활용할 수 있는 환경이 조성됨에 따라, '어떤 모델을 쓰느냐'보다 '어떻게 잘 쓰느냐'가 기업의 AI 경쟁력을 가르는 핵심 변수가 될 전망이다. 특정 벤더에 종속되지 않는 멀티-LLM 아키텍처의 중요성도 동시에 부각되고 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "GPT-5.6 Luna 80% 인하로 이수시스템의 RAG 기반 챗봇·HR AI Package의 API 운영 비용이 실질적으로 절감된다. 기존 고객사에 'AI 도입 비용 부담 대폭 감소'를 영업 포인트로 내세울 수 있으며, WORKUP·Smart HR에 연동된 AI 이력서 분석 기능의 단가 경쟁력도 높아진다. 가격 인하분을 고객 제안서에 즉시 반영해 아직 AI 도입을 망설이는 제조·건설 고객사를 공략할 적기다.",
+      "source": "VentureBeat",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQZ2hVQW43d3QzOWlhMnMta2dhbDFTSDFSWC1Ua01fb09wcGFvR1d4M2dPcWlnTlRTdFBqVzVZT202dVpfV2FOYkpncmxlSnRhSUVZZ0Z0TDBiYXhmejBTVkRPRmhENHlMME1HOHQ3NU5BeTV1OVR3d2E4amRjRnZ6VV9TQXotcjRXVUpSTWU3UWxJTlVOZFNLWGUzY0dMVnhGZUNVakFPTFBwY1ZiU2wwNDVoSDk0dG9LR1NpZDdndEFsbWVW?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "모델 릴리스",
+      "title": "Google, Gemini 3.6 Flash 출시·Gemini 4 훈련 중 — 로보틱스 2.0까지 동시 공개",
+      "body": "Google이 **Gemini 3.6 Flash**를 출시하고 동시에 **Gemini 4** 훈련에 착수했다고 밝혔다. 같은 날 **Gemini Robotics 2.0**도 공개했는데, 이 모델은 휴머노이드 로봇의 전신 제어(full-body control)와 다수 로봇 간 협업 기능을 처음으로 지원한다. 손재주(dexterity)와 안전성이 크게 강화됐으며, 기존 Gemini Robotics 대비 복잡한 물리적 작업 수행 능력이 눈에 띄게 향상됐다고 구글 측은 설명했다. Google이 AI 소프트웨어와 피지컬 AI를 동시에 밀어붙이는 '투 트랙 전략'을 가속화하는 모습이다.",
+      "insight": "소프트웨어 LLM과 피지컬 AI(로보틱스)를 동시에 업그레이드하는 Google의 행보는 AI 경쟁이 데이터센터 밖 현실 세계로 확장되고 있음을 보여준다. 제조·물류·건설 등 현장 산업에서 AI 로봇 도입 논의가 빨라질 것이며, 기업들은 소프트웨어 AI와 현장 자동화를 연결하는 통합 전략을 조기에 수립할 필요가 생겼다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "Gemini Robotics 2.0의 현장 자동화 기능이 고도화될수록, 이수시스템의 Smart & Safety나 BizPTT가 연동 가능한 시나리오(현장 로봇과 안전관리 솔루션의 데이터 연계)를 중장기 로드맵으로 검토할 수 있다. 단기적으로는 Gemini 3.6 Flash를 RAG 챗봇 엔진 옵션으로 추가해 고객에게 멀티-LLM 선택권을 제공하는 방향이 현실적이다.",
+      "source": "explosion.com / Crypto Briefing",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNYXBrMGx6S0dNWHFBQ0RhY0pyLWtGbmdSRG92Z2pOQk5LT3BTdnhGZkJXLTdoMlhob2hHT3RiaGhQQThHV1oxVkQ3R3NXcml2aG1hOW91dXlwM0NIeVQ3alRDMHV0S0MwclliSXVnZlliV3dtY0tFTktGSjl5WWdCYkl5dFNrNGZfTkFtZHl0YWxDWV9yQlUw?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "제품 업데이트",
+      "title": "Microsoft, Copilot '슈퍼앱' 올해 출시 확정 — 채팅·코딩·에이전트 하나로",
+      "body": "Microsoft CEO **사티아 나델라**가 실적 발표 콘퍼런스콜에서 Copilot을 채팅·협업(Cowork)·자율 에이전트(Autopilot) 기능을 하나로 묶은 **'슈퍼앱'** 형태로 올해 중 출시하겠다고 확인했다. 소비자와 기업용 경험을 모두 아우르는 단일 플랫폼으로, 단순 대화형 AI를 넘어 업무 흐름 전반을 자율적으로 처리하는 방향으로 진화한다. 이 발표 직후 MS 주가는 강세를 보였고, Nasdaq 지수는 600포인트 이상 상승했다.",
+      "insight": "Microsoft가 Copilot을 업무용 올인원 AI 플랫폼으로 진화시키는 것은 기업 IT 시장 구도를 바꿀 수 있는 움직임이다. Office 365 생태계와 결합된 슈퍼앱이 현실화되면, 독립형 AI 솔루션보다 MS 통합 환경을 선호하는 기업이 늘어날 수 있어 HR·ERP·챗봇 등 전문 솔루션 업체들은 차별화 포인트를 더욱 명확히 해야 하는 압력을 받게 된다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[리스크]",
+      "isu_insight": "Copilot 슈퍼앱이 HR·ERP 연동 기능을 강화할 경우, WORKUP·Smart HR의 일부 기능과 경쟁 구도가 형성될 수 있다. 반면 이수시스템은 국내 대기업·공공기관의 On-premise 환경과 500개 이상의 HR 레퍼런스를 보유하고 있어, 데이터 보안·컴플라이언스가 중요한 고객군에서는 MS 슈퍼앱이 직접 대체재가 되기 어렵다. SAP 파트너로서 ERP-HR-AI 통합 시나리오를 선제적으로 구성해 차별화 제안서를 준비하는 것이 적합하다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/972927/microsoft-copilot-super-app-confirmed"
+    },
+    {
+      "number": 4,
+      "category": "산업 동향",
+      "title": "삼성SDS, 'AI 풀스택·멀티 LLM' 전략 선언 — 한국 엔터프라이즈 AI 경쟁 가열",
+      "body": "삼성SDS가 2분기 실적 컨퍼런스콜에서 **'AI 풀스택 전략 가속'**과 **'멀티 LLM 경쟁력 강화'** 방침을 공식화했다. 특정 LLM 벤더에 의존하지 않고 복수의 모델을 상황에 맞게 선택·조합하는 멀티 LLM 아키텍처를 기업 AI 플랫폼의 핵심으로 내세운 것이다. 이는 국내 대형 SI 업체들이 기업용 AI 시장에서 본격적인 플랫폼 경쟁에 나서겠다는 신호로, 중견 IT 솔루션 기업들과의 시장 경계가 빠르게 좁아지고 있다.",
+      "insight": "삼성SDS의 멀티 LLM 전략 선언은 국내 엔터프라이즈 AI 시장에서 대형 SI와 전문 솔루션 업체 간 경쟁이 본격화됐음을 의미한다. 기업 고객 입장에서는 단일 AI 플랫폼으로 모든 업무를 통합하려는 수요가 커지는 반면, 인사·안전·ESG 등 도메인 특화 요구사항은 여전히 전문 솔루션이 유리한 영역으로 남는다. 전문성과 통합성을 동시에 어필할 수 있는 포지셔닝이 중소·중견 IT 기업의 생존 열쇠가 될 전망이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[리스크]",
+      "isu_insight": "삼성SDS가 멀티 LLM 기반 AI 풀스택을 강화하면 대기업 계열사 중심의 HR·ERP 레퍼런스 일부가 내재화될 리스크가 있다. 이수시스템은 이수그룹 계열사 외 독립 기업 고객 500개 이상의 HR 레퍼런스와 NCP·SAP 파트너십을 강점으로, 삼성SDS 생태계 밖의 중견·중소기업 및 공공 시장을 집중 공략하는 투 트랙 전략이 필요하다. WORKUP의 SaaS HR에 멀티 LLM 기반 AI 기능을 빠르게 탑재해 '전문성+AI' 차별화를 부각시켜야 한다.",
+      "source": "한국아이닷컴",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE0zX2htdFl5VTB4d29VT1lQWi1iM0M1RHJsS3pYS1VUNHdlUVpNcVkwRWpxQUx3ZzhTb1gzT01FUk1vbUliRkplVTlscXExZTZKanFMdXI1Q2xLc0tnLWQ2VmJZd0drdlIxSkh3Y3VwSdIBb0FVX3lxTE0zX2htdFl5VTB4d29VT1lQWi1iM0M1RHJsS3pYS1VUNHdlUVpNcVkwRWpxQUx3ZzhTb1gzT01FUk1vbUliRkplVTlscXExZTZKanFMdXI1Q2xLc0tnLWQ2VmJZd0drdlIxSkh3Y3VwSQ?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "글로벌 이슈",
+      "title": "KAIST, AI 스스로 약점 찾는 '레드팀 기술' 개발 — 한국 AI 안전성 연구 성과",
+      "body": "KAIST 연구팀이 AI 모델이 **스스로 자신의 취약점을 탐지·검증**하는 자동화 레드팀(Red-teaming) 기술을 개발했다고 발표했다. 이 기술은 생성형 AI 서비스의 안전성 평가를 자동화해 기존 수동 검사 대비 시간과 비용을 크게 줄일 수 있다. 같은 날 국내 AI 보안 기업 **S2W**도 기업 대상 AI 레드팀·취약점 진단 라인업을 강화해 B2B 시장 공략을 선언, 국내에서 AI 안전성 검증 시장이 본격적으로 형성되고 있음을 보여준다.",
+      "insight": "생성형 AI 서비스가 기업·공공 영역에 빠르게 확산되면서 AI 안전성·취약점 진단 수요가 새로운 시장으로 부상하고 있다. 정부·공공기관 발주 AI 사업에서 보안 인증과 취약점 점검이 필수 요건으로 자리잡는 추세이며, 이는 AI 도입 기업뿐 아니라 솔루션 공급업체도 자사 AI 제품의 안전성을 증명해야 하는 시대가 됐음을 의미한다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "공공기관 및 금융권 고객을 대상으로 AI 챗봇·HR AI 패키지를 공급할 때, AI 취약점 진단 결과를 사전에 제출하거나 KAIST형 자동 검증 프로세스를 제품 QA에 도입하면 신뢰도 차별화가 가능하다. S2W 등 전문 AI 보안사와의 파트너십을 통해 이수시스템 AI 제품군의 취약점 진단 보고서를 공공·금융 제안서에 첨부하는 방식으로 영업 경쟁력을 높일 수 있다.",
+      "source": "동아사이언스",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1wcktkcHNGVE1oZGFyOGxDaVVCcmU1dWprWlJDUmh5N3I0Rlg5Ny0tdDEzb2Zob0oya21KMURzeVltNDdTdnNQZlJaME8weFB2OUtBbg?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**AI 가격 전쟁 본격화**: OpenAI GPT-5.6 Luna 80% 인하, Meta·Google도 저가 모델 공세 — 기업의 AI 도입 비용 장벽이 빠르게 무너지고 있다.",
+    "**플랫폼 통합 경쟁 격화**: Microsoft Copilot 슈퍼앱·삼성SDS 풀스택 AI 선언 — 전문 솔루션 업체는 도메인 특화 차별화 전략을 더욱 선명히 해야 할 시점이다.",
+    "**AI 안전성이 새 시장으로**: KAIST 레드팀 기술·S2W 취약점 진단 사업 확대 — AI 도입 기업과 솔루션 공급사 모두 '안전성 증명'이 필수 경쟁력이 되고 있다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심은 AI 가격 급락과 플랫폼 통합 경쟁의 동시 가속화다. OpenAI 80% 인하로 이수시스템 RAG 챗봇·HR AI 패키지의 API 비용이 줄어드는 단기 기회가 생긴 반면, Microsoft Copilot 슈퍼앱과 삼성SDS 풀스택 전략은 HR·ERP 특화 솔루션 시장을 위협하는 중장기 리스크로 작용할 수 있다. 이수시스템은 500개 이상 HR 레퍼런스와 SAP·NCP 파트너십을 바탕으로 '도메인 전문성 + AI 안전성 검증'을 영업 핵심 메시지로 삼아 대형 SI 생태계 밖의 중견·공공 고객을 집중 공략해야 한다."
+}
