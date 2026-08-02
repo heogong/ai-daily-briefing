@@ -1,0 +1,72 @@
+{
+  "date": "2026.08.03 (월)",
+  "one_liner": "AI 에이전트가 로봇·자동차로 영역을 넓히고, 국내 AI 스타트업은 코스닥 입성으로 시장 신뢰를 얻다",
+  "news": [
+    {
+      "number": 1,
+      "category": "제품 업데이트",
+      "title": "구글 Gemini, 챗봇을 넘어 로봇·자동차 대시보드까지 확장",
+      "body": "구글 Gemini가 텍스트 기반 챗봇의 경계를 허물고 **로봇 제어**와 **차량 인포테인먼트 시스템**으로 적용 범위를 빠르게 확장하고 있다. 구글은 Gemini 모델을 물리적 환경과 연결하는 멀티모달 에이전트 전략을 가속화하며, 안드로이드 오토 및 로보틱스 파트너십을 통해 실세계 데이터를 모델 학습에 재투입하는 선순환 구조를 구축 중이다.\n\n인도에서 먼저 출시된 **Gemini Spark** AI 에이전트는 사용자의 노트북 없이도 클라우드 기반으로 독립 작동하며, Claude Code 대비 비용·접근성 면에서 경쟁력을 내세우고 있다. 이는 단순 보조 도구에서 '항상 켜진 업무 자율 에이전트'로의 패러다임 전환을 시사한다.",
+      "insight": "AI 경쟁의 축이 '얼마나 똑똑한 언어 모델인가'에서 '얼마나 넓은 물리·디지털 환경에 연결되는가'로 이동하고 있다. 로봇·자동차·스마트홈을 아우르는 에이전트 플랫폼을 먼저 장악하는 기업이 하드웨어 생태계까지 종속시킬 수 있어, AI 에이전트의 산업 침투 속도는 예상보다 훨씬 빨라질 전망이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "Gemini Spark처럼 '노트북 없이 독립 작동'하는 에이전트 모델은 RAG 기반 챗봇을 고도화할 레퍼런스가 된다. 이수시스템의 기업용 챗봇과 HR AI Package를 설계할 때, 사용자가 별도 클라이언트 설치 없이 모바일·웹에서 즉시 사용하는 경량 에이전트 구조를 검토할 수 있다. 특히 제조·건설 현장 고객사에 BizPTT와 연동된 음성 기반 AI 에이전트로 확장하는 시나리오도 실현 가능성이 높아진다.",
+      "source": "JournalArta / WION",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPOHJRZ3NORVlEa2Rra053dHk0NVJVbnZWN2hzeHg3RnVCdDRXekxjVWx3a1NvLTJxaVpfRjBYSlJlbmlPLTAxaU4tNXNxbHVmUVpPZ3FyVDBVYzdNdkdIQjM3MFNIZGszMUNSRFhCR1hDQXBoRDl3M1NMR01MbnRFdkN3?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "산업 동향",
+      "title": "'토큰맥시밍' 시대의 종말…AI 패러다임이 효율로 전환된다",
+      "body": "AI 업계 전문가들 사이에서 **'토큰맥시밍(Tokenmaxxing)'** — 더 많은 토큰, 더 긴 컨텍스트, 더 큰 모델을 무조건 투입하는 전략 — 이 한계에 도달했다는 진단이 나오고 있다. 엔비디아, OpenAI, Anthropic 등 GPU 수요와 대형 모델 경쟁에 기반을 둔 기업들의 성장 스토리에 균열이 생길 수 있다는 신호다.\n\n전문가들은 향후 AI 경쟁력이 **모델 크기보다 추론 효율·비용 최적화·특정 도메인 특화**로 이동할 것으로 전망한다. 실제로 소형 고효율 모델(SLM)과 온디바이스 AI에 대한 관심이 급증하고 있으며, 이는 AI 투자 포트폴리오와 인프라 전략 전반에 영향을 미칠 것으로 보인다.",
+      "insight": "대형 모델 중심의 AI 군비 경쟁이 꺾이면, 도메인 특화 중소형 모델을 채택하는 기업들의 비용 부담이 낮아지고 AI 도입 문턱이 낮아진다. 이는 오히려 HR·ERP·안전 등 특정 산업 업무에 집중하는 버티컬 AI 솔루션 시장의 성장을 가속화할 수 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "대형 범용 LLM 비용이 줄고 특화 모델 수요가 늘어나는 흐름은 이수시스템 HR AI Package와 AI 이력서 분석 솔루션에 유리하다. 인사 업무 특화 소형 모델을 외부 LLM API와 연동하는 RAG 아키텍처를 강화하면, 고객사가 GPT·Gemini 등 범용 모델 비용 절감을 체감하면서도 HR 도메인 정확도를 높일 수 있는 차별화 포인트가 된다. 영업 시 '비용 효율적인 HR 전용 AI'를 전면에 내세울 수 있다.",
+      "source": "Stocktwits",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNZGRhR2M3cDE4eW03TGhyZlZnZkJfUGpfdlRzRXloUnZXWGNMd2g0SG9FaUR1Sy1NeGdwUXFyWlJMMUs0RmQySTF6QVd2a24wVk9LS1c4aWdhZElQdDZ4Q3ZpX0lzSTk4NlZ1Sld0UElNTG5LRERZVnQ0T1lRT2FBSGZTRnRKMm40UHZ6TVNGMmEwT0JaaWRoSVZoM0NvOWtTY1J0NGNmNlBSQWplSW9QaXBMdUFYcHhkZXQxMkdjRWF5RUk?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "산업 동향",
+      "title": "Forbes 선정 2026 AI 50 — 지금 가장 주목받는 AI 기업은 어디?",
+      "body": "Forbes가 **2026 AI 50 리스트**를 발표했다. 생성형 AI 붐이 3년차에 접어든 가운데, 이번 리스트는 단순 기술력보다 **실제 매출·고객 수·산업 적용 깊이**를 기준으로 선별됐다는 점에서 주목된다. OpenAI, Anthropic, Google DeepMind 외에도 헬스케어·법률·제조 등 버티컬 AI 기업들이 다수 포함됐다.\n\n특히 에이전틱 AI(자율 실행 에이전트), 멀티모달 추론, 온프레미스 기업용 AI 솔루션 분야 기업들이 눈에 띄게 증가했다. 이는 AI가 '실험 단계'를 넘어 **비즈니스 성과를 증명하는 단계**로 진입했음을 반증한다.",
+      "insight": "AI 산업이 '기술 데모' 국면에서 '검증된 ROI' 국면으로 이행하고 있음을 Forbes 리스트가 공식 확인한 셈이다. 이제 고객사들은 AI 도입 시 '얼마나 혁신적인가'보다 '얼마나 빨리 비용 절감·생산성 향상이 측정되는가'를 먼저 묻는다. 버티컬 AI 솔루션 공급사에게는 레퍼런스와 수치화된 성과가 가장 강력한 영업 무기가 된다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "Forbes AI 50에 이름을 올린 버티컬 AI 기업들의 솔루션 구조와 고객 사례를 분석하면, WORKUP·Smart HR·ESGable의 AI 기능 고도화 방향을 구체화하는 데 활용할 수 있다. 특히 HR·ERP 인접 버티컬 AI 기업들이 어떤 방식으로 ROI를 수치화하는지 벤치마킹하면, 고객사 제안 시 설득력 있는 비즈니스 케이스 작성에 직접 도움이 된다.",
+      "source": "Forbes",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5uUGIzcFRTdFZwdkxZTnpHdUpfVmhCQ21iczlSQjJrMnlSa19sYzB4S2JuVC1wSWo1UFhRWnlpVWtrb0NIN1RmS2Nn?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "글로벌 이슈",
+      "title": "공공기관 AI 업무 활용, 정보 유출 우려로 골머리 앓는 한국",
+      "body": "국내 공공기관들이 업무 효율화를 위해 AI 도구를 도입하면서 **개인정보·기밀정보 유출 우려**가 동시에 커지고 있다. 공공기관 특성상 민감한 민원 데이터, 내부 정책 문서 등이 외부 LLM 서버로 전송될 경우 보안·법적 리스크가 발생한다는 지적이 잇따르고 있다.\n\n현장에서는 AI 사용을 전면 차단하기도, 그렇다고 허용하기도 애매한 상황이 지속되고 있다. 행정안전부 등 관계 부처는 **공공용 AI 가이드라인** 마련에 착수했으나, 구체적인 기술 표준과 보안 요건은 아직 정비 중이다. 민간 클라우드 기반 AI 대신 **온프레미스 또는 프라이빗 클라우드 배포 AI** 수요가 높아지는 배경이다.",
+      "insight": "공공기관의 AI 도입 딜레마는 전 세계 공통 이슈지만, 한국은 공공 클라우드 보안 인증(CSAP) 체계가 있어 규제 기반 솔루션 수요가 명확하다. 정보 유출 우려를 해소하는 '보안 내재화 AI'가 공공 시장의 핵심 선택 기준이 될 것이며, 이는 온프레미스·프라이빗 환경 구축 역량을 가진 솔루션 공급사에게 직접적인 기회다.",
+      "isu_area": "클라우드 사업",
+      "isu_tag": "[정부 사업]",
+      "isu_insight": "공공기관이 외부 AI 서비스 대신 보안이 검증된 내부 배포 AI를 원하는 수요는 이수시스템의 NCP 파트너 역량과 직접 연결된다. 네이버 클라우드 기반 프라이빗 환경에 RAG 챗봇을 구축하는 패키지를 공공 고객사에 제안하면, 보안 우려를 해소하면서 AI 도입도 실현하는 솔루션이 된다. 기존 Smart HR·WORKUP을 사용하는 공공 레퍼런스 고객사를 대상으로 'AI 기능 온프레미스 추가' 형태의 크로스셀 영업도 현실적이다.",
+      "source": "기호일보",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBfMXdHcW5uWHNxSmlsS2NFMkhIM2p6emJ4dU5iY19uVkFNTkFVSk5vMTNtY2U4NXBET1lkYlhvNTlfQWJVQ0ROZTNDNWV2aTFvdmc2V1Exd0plQUxPYjNWTFAwYk5uckFvSGhEQnNraw?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "산업 동향",
+      "title": "'AI에 진심' 래블업, 코스닥 최단 승인 기록…한국 AI 인프라 스타트업 상장 시대 열려",
+      "body": "국내 AI 인프라 전문 스타트업 **래블업(Lablup)**이 코스닥 상장 예비심사를 통과하며 일반기업 기준 **역대 최단 승인** 기록을 세웠다. 래블업은 MLOps 플랫폼 'Backend.AI'를 주력으로 기업·연구기관의 GPU 자원 관리와 AI 모델 학습·배포 인프라를 제공한다.\n\n이번 상장은 단순한 기업 공개를 넘어 한국 AI 인프라 생태계가 자본시장의 공식 인정을 받은 신호탄으로 해석된다. AI 모델 개발보다 **학습·서빙 인프라**에 집중하는 기업도 충분한 시장 가치를 인정받을 수 있다는 점에서, 국내 AI 투자 트렌드의 다양화를 보여준다.",
+      "insight": "AI 생태계에서 '모델'보다 '인프라'가 수익화하기 쉽다는 인식이 자본시장에서도 자리 잡고 있다. MLOps·GPU 오케스트레이션 같은 AI 인프라 솔루션이 공공·대기업 수요를 기반으로 안정적 매출을 만들어 낼 수 있다는 사실이 코스닥 승인으로 입증됐다. 이는 AI 솔루션 기업들에게 '기술 증명'과 함께 '비즈니스 모델 증명'이 함께 중요해졌음을 뜻한다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "래블업의 코스닥 상장은 국내 AI 솔루션 기업의 기업 가치 평가 기준이 높아지고 있다는 신호다. 이수시스템 AI 사업부도 RAG 챗봇·HR AI Package 등의 실 고객사 적용 사례와 수치화된 성과(처리 건수, 응답시간 단축률 등)를 체계적으로 축적해 두어야, 향후 사업부 가치 입증과 대형 고객사 제안 경쟁에서 유리한 위치를 점할 수 있다.",
+      "source": "전자신문",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9lUW8zSlJGSDNWcjJEVmd5WEMxT2ZaYnF6SHFCVGg3LXdiVWxXVmx5UlpCUk1kcWhIUTdRQ1VabVI1MUlKNkUzZ2pxWmU?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**AI 에이전트 전쟁터가 로봇·자동차로 확장**되고 있다. Gemini Spark처럼 '항상 켜진 자율 에이전트'가 표준이 되면, 기업용 AI 솔루션도 단순 질의응답을 넘어 업무 자동 실행 기능을 갖춰야 경쟁력을 유지할 수 있다.",
+    "**'토큰 많을수록 좋다'는 시대가 저물고 있다.** 도메인 특화 소형 모델이 부상하면서, HR·ERP·안전 등 버티컬 AI 솔루션의 비용 효율성과 정확도가 동시에 올라갈 환경이 조성된다.",
+    "한국 공공기관의 AI 도입은 **'보안 없이는 도입도 없다'** 는 원칙으로 수렴 중이다. 온프레미스·프라이빗 클라우드 기반 AI 패키지를 선제적으로 갖춘 공급사가 공공 시장을 선점할 것이다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심은 세 가지 기회 신호다. 첫째, AI 에이전트의 물리 환경 확장과 경량 특화 모델 부상은 이수시스템 RAG 챗봇·HR AI Package를 업무 자동 실행 에이전트로 진화시킬 제품 로드맵 방향을 제시한다. 둘째, 국내 공공기관의 정보 유출 우려는 NCP 파트너 역량을 활용한 '보안 내재화 AI 패키지' 영업의 타이밍이 지금임을 알린다. 셋째, 래블업의 코스닥 최단 승인은 AI 솔루션 기업도 실적 수치와 레퍼런스가 쌓이면 시장 신뢰를 얻을 수 있다는 증거로, 이수시스템 AI 사업부의 고객 성과 사례 문서화를 서둘러야 할 시점이다."
+}
