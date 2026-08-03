@@ -1,0 +1,72 @@
+{
+  "date": "2026.08.04 (화)",
+  "one_liner": "DeepSeek 초저가 공세·알리바바 최대 모델 출시로 중국 AI가 글로벌 판도를 흔드는 가운데, 신한은행은 AI 에이전트로 업무 시간 70%를 줄이고 EU는 AI 투명성 규제를 전격 발효했다.",
+  "news": [
+    {
+      "number": 1,
+      "category": "산업 동향",
+      "title": "신한은행, AI 에이전트로 부동산 감정평가 업무시간 70% 단축… 금융권 첫 사례",
+      "body": "신한은행이 금융권 최초로 '**감정평가서 AI 점검 에이전트**'를 도입하며 담보대출 심사 프로세스를 혁신했다. 기존 수작업으로 진행되던 감정평가서 검토 업무를 AI가 자동 처리해 **처리 시간을 70% 단축**, 업무 효율은 3배 향상됐다고 밝혔다. 신한투자증권도 같은 날 'AI에이전트부'를 신설하며 신한금융그룹 전반이 AI 에이전트 내재화에 속도를 내는 모양새다.",
+      "insight": "국내 1금융권이 단순 챗봇 수준을 넘어 실제 심사·검토 업무를 자동화하는 'AI 에이전트' 단계로 진입했음을 보여주는 첫 공식 사례다. 업무 효율 3배·시간 70% 단축이라는 구체적 수치는 AI 도입 ROI를 의심하던 다른 금융기관과 산업군에 강력한 레퍼런스가 된다. 앞으로 금융·제조·공공 등 문서 검토 업무가 많은 조직에서 AI 에이전트 도입 경쟁이 본격화될 전망이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "신한은행 사례는 RAG 기반 문서 검토 AI 에이전트가 금융권에서 실증된 첫 사례다. 이수시스템의 RAG 기반 챗봇·AI 플랫폼 제품을 금융·제조 고객사에 영업할 때 '처리시간 70% 단축'이라는 수치를 레퍼런스로 활용해 도입 설득력을 높일 수 있다. 특히 500개 이상 HR 구축 고객사 중 금융·제조업 담당자에게 문서 자동 점검 에이전트 PoC 제안을 선제적으로 추진할 시점이다.",
+      "source": "경인미래신문 / Korea IT Times",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBuRjVRdGE5eGtkdUlabVFwX0RoTFh4UnBwX3I0VGRYWkxEcl9zUmlpV1RzYjc0ckVXbmJLNzVtTzAyZXVYbEtuRHlpanZmWU16LVBCNU03Rk9LemJXcEFZYlBn?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "모델 릴리스",
+      "title": "DeepSeek V4-Flash, Anthropic 대비 100배 저렴… 중국 AI 가격 파괴 본격화",
+      "body": "중국 AI 스타트업 DeepSeek이 신모델 **V4-Flash**를 공개하며 글로벌 AI 시장에 또 한 번 충격을 줬다. 조사기관에 따르면 이 모델의 API 가격은 Anthropic 대비 **약 100배 저렴**하면서도 성능은 Google·OpenAI 주요 모델에 필적한다. 알리바바 역시 같은 시기 최대 규모 모델 **Qwen3.8-Max**를 출시해 'Anthropic·OpenAI에 맞먹는다'고 주장하며 중국발 AI 경쟁이 동시다발적으로 격화되고 있다.",
+      "insight": "단순한 가격 경쟁이 아니라 '충분히 좋은 성능+극단적 저가'라는 공식이 안착되고 있음을 의미한다. 글로벌 AI API 시장의 가격 기준점이 빠르게 낮아지면서 OpenAI·Anthropic 등 서방 빅랩들도 프라이싱 전략 수정이 불가피해질 전망이다. 기업 입장에서는 AI 솔루션 도입 비용 부담이 줄어드는 반면, AI 서비스를 판매하는 SI·솔루션 업체는 API 원가 하락을 서비스 경쟁력 강화에 활용할 기회를 맞이하고 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "DeepSeek V4-Flash 등 초저가 오픈소스 모델의 부상은 이수시스템이 자체 AI 솔루션(챗봇·HR AI Package·AI 이력서 분석)의 LLM 백엔드를 저비용 고성능 모델로 교체해 서비스 마진을 높이거나 고객사 라이선스 비용을 낮출 수 있는 기회다. 특히 WORKUP·Smart HR 연계 AI 기능을 확장할 때 비용 장벽이 낮아지므로 중견·중소 고객사를 대상으로 한 AI 기능 번들 제안이 현실화될 수 있다.",
+      "source": "TipRanks / NDTV Profit",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSExnZ1JxYUVaUTdwczVRX19ra2hGS1ItMXFDSGwwSUF5WG93TTlEUV81RU1Zd0ZPUGczamtud1dTeHZXSzZuczMzeURCVl8yNTZHNHVpblVLdlpRUi1mR1cxcXhrcm52S1Bud3JXeWw0bHoxVDFRXy1KTlVaN0ZMRWNRME1sY2x0d3R3WEt3cW9BMkJOaERLSFZKWnVxUHFaZFVQX2ltS3B3ZzRLUXhFV2FMb0JmMXM?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "글로벌 이슈",
+      "title": "EU AI법 투명성 조항 전격 발효… AI 챗봇·딥페이크 '신분 공개' 의무화",
+      "body": "유럽연합(EU)의 **AI법(AI Act) 투명성 조항**이 8월 2일부로 공식 발효됐다. 이에 따라 기업들은 사용자가 AI 모델과 대화하고 있음을 반드시 고지해야 하며, AI로 생성된 콘텐츠에는 **워터마크** 등 식별 표시를 의무적으로 삽입해야 한다. 위반 시 최대 **약 590억 원(3,500만 유로)** 상당의 과징금이 부과되며, 빅테크와 대형 언론사에 대한 첫 점검이 즉시 착수됐다.",
+      "insight": "EU AI법은 미국·아시아 각국 AI 규제 논의의 사실상 기준점 역할을 해왔다. 투명성 조항 발효로 챗봇·생성형 AI 서비스를 운영하는 모든 기업은 UI·UX 설계와 콘텐츠 생성 파이프라인을 수정해야 하며, 글로벌 서비스를 운영하는 기업의 컴플라이언스 비용이 증가할 전망이다. 한국 기업도 EU 시장 진출 시 동일 규정을 적용받으므로 AI 서비스 설계 단계부터 투명성 요건을 내재화해야 한다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "이수시스템의 RAG 기반 챗봇 제품은 기업 내부 업무용으로 주로 활용되지만, 고객사가 외부 사용자 대상 서비스에 적용하거나 EU 시장과 연계될 경우 'AI 사용 고지' 기능을 솔루션 스펙에 추가해야 할 수 있다. 국내에서도 유사 규제 도입이 예상되므로, 챗봇 제품에 AI 신원 고지 및 대화 로그 관리 기능을 선제적으로 탑재하면 규제 대응 솔루션으로 차별화 포인트가 될 수 있다.",
+      "source": "The Verge / 한국일보",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/974571/eu-ai-act-transparency-labels-rules-deepfakes"
+    },
+    {
+      "number": 4,
+      "category": "산업 동향",
+      "title": "보험업 AI 잠재력 50% vs 실제 활용 8개 업무… '실행 격차' 경고",
+      "body": "국내 보험업계의 AI 적용 잠재력이 전체 업무의 **50% 이상**으로 평가되지만, 실제 AI가 활용되는 영역은 **8개 업무**에 불과하다는 진단이 나왔다. 전략·기획, 언더라이팅, 클레임 처리 등 핵심 업무는 여전히 AI 전환이 더딘 반면, 고객 응대와 단순 문서 처리에만 AI가 집중된 상태다. 전문가들은 이 '실행 격차(Execution Gap)'를 해소하지 못하면 해외 경쟁사에 뒤처질 수 있다고 경고했다.",
+      "insight": "이는 보험업뿐 아니라 금융·제조·공공 등 국내 전통 산업 전반의 공통 과제를 압축적으로 보여준다. AI 도입을 '선언'한 기업과 실제로 핵심 업무 프로세스에 AI를 '내재화'한 기업 간 격차가 빠르게 벌어지는 시점이며, 단순 챗봇·RPA 수준을 넘어 판단·분석이 필요한 업무까지 AI를 확장하는 전략적 실행력이 요구된다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "보험·금융사의 AI 실행 격차는 이수시스템의 'HR AI Package', 'AI 이력서 분석', 'RAG 챗봇' 등의 영업 기회와 직결된다. 특히 보험사 고객사의 언더라이팅·계약 심사 등 문서 집약적 업무에 RAG 기반 에이전트를 접목하는 PoC 제안이 설득력을 가질 수 있다. 신한은행 감정평가 사례를 레퍼런스로 활용해 금융 고객사 대상 영업 접점을 확대할 시점이다.",
+      "source": "아웃소싱타임스",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1ZMUtHbTZ5VThDXzFJaE80MTg5RkdOUmpXazdhaU84SGJsSmRTTS1XMWFnZl9hOVZZMHVvUTlieEU3eXROWndlNVRGRHd6UlNfblJhejhTNm4xSENHYWo4Rm1lYmlLSGZMUUt4dVRneURTUQ?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "모델 릴리스",
+      "title": "한국 독자 AI 모델 'Motif 3', 중간 평가 긍정적… K-AI 자립 가능성 확인",
+      "body": "한국이 자체 개발한 독립 AI 모델 **Motif 3**가 중간 성능 평가에서 긍정적인 결과를 받았다고 The Herald Insight가 보도했다. 글로벌 빅랩 모델에 의존하지 않는 국산 LLM 생태계 구축을 목표로 한 이 모델은 한국어 특화 성능과 온프레미스 배포 가능성 측면에서 주목받고 있다. 중국의 DeepSeek·Qwen 시리즈가 미국 모델 대비 비용 우위를 입증한 상황에서 한국도 독자 모델 경쟁력 확보에 속도를 내는 모양새다.",
+      "insight": "DeepSeek·Qwen 등 중국 오픈소스 모델이 글로벌 시장을 빠르게 잠식하는 가운데, 한국어 데이터 주권과 보안 규제를 고려한 국산 LLM의 존재감이 부각되고 있다. 공공·금융·의료 등 데이터 국내 보관 의무가 강한 산업군에서는 글로벌 API 대신 국산 온프레미스 모델 수요가 높아질 전망이며, 이는 국내 AI 솔루션 생태계 전반에 새로운 기회를 만들 수 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "Motif 3 같은 국산 LLM이 성능을 검증받을 경우, 이수시스템의 RAG 기반 챗봇과 HR AI Package의 백엔드 모델 옵션으로 도입을 검토할 수 있다. 특히 공공기관·금융 고객사는 해외 API 사용에 보안·규제 부담이 있어 '국산 LLM + 이수 RAG 플랫폼' 조합이 차별화된 제안 포인트가 될 수 있다. 모델 성능 추이를 지속 모니터링해 파트너십 또는 기술 연계 가능성을 타진하는 것이 바람직하다.",
+      "source": "The Herald Insight",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBxNnhYekJadmdJaUhpVWs5WnRpc05tRUhlSEJRZm9fazFzSGYyUXh0NDF4azg2M3l3bC15ckVKcURJM282QkxhZkVLVGV4bWM0VTQ1NEo2S2s5Q2RxNU81Z25YWWh5c3FFUDNreUd5WThXTXVj?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**DeepSeek V4-Flash(Anthropic 대비 100배 저렴)**와 알리바바 Qwen3.8-Max 동시 출시로 AI API 가격 기준점이 급격히 낮아지고 있다. 솔루션 기업은 이를 원가 절감 기회로 활용해야 한다.",
+    "신한은행 감정평가 AI 에이전트(업무시간 **70% 단축**)는 국내 금융·제조·공공 전 산업의 AI 에이전트 도입 논의를 가속화할 강력한 레퍼런스가 됐다.",
+    "EU AI법 투명성 조항 발효로 AI 챗봇·생성형 콘텐츠에 대한 신분 고지·워터마크가 의무화됐다. 국내 AI 서비스 설계 단계부터 규제 대응 기능을 내재화하는 것이 필수가 됐다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심은 AI가 '도입 선언' 단계를 넘어 실제 업무 프로세스를 대체하는 '실행' 단계로 전환되고 있다는 점이다. 신한은행의 감정평가 에이전트(처리시간 70% 단축)는 이수시스템의 RAG 챗봇·AI 플랫폼을 금융·제조 고객사에 영업할 때 직접 활용 가능한 레퍼런스이며, DeepSeek의 초저가 모델 출시는 WORKUP·Smart HR 연계 AI 기능 확장 시 LLM 비용 부담을 줄이는 구조적 기회다. EU AI법 투명성 조항 발효는 당장 이수시스템 제품에 직접 적용되지는 않지만, 국내 유사 규제 도입에 대비해 챗봇 제품에 AI 신원 고지 기능을 선제적으로 추가하면 규제 대응형 솔루션으로 차별화할 수 있다."
+}
