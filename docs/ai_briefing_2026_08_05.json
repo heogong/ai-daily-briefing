@@ -1,0 +1,72 @@
+{
+  "date": "2026.08.05 (수)",
+  "one_liner": "AI 인프라 수요 폭증 속 빅테크 안전 규제 논의 본격화, 중국 AI의 가격 전쟁이 시장 판도를 흔들다",
+  "news": [
+    {
+      "number": 1,
+      "category": "산업 동향",
+      "title": "AMD, AI 데이터센터 매출 107% 폭증…게이밍은 뒷전",
+      "body": "AMD의 2026년 2분기 데이터센터 매출이 **67억 달러**를 기록하며 전년 동기 대비 **107% 급증**했다. 직전 분기(58억 달러) 대비로도 15% 성장하며 AI 컴퓨팅 수요가 분기를 거듭할수록 가팔라지고 있음을 보여줬다. 반면 게임 부문 매출은 **31% 감소**하며 회사의 무게중심이 완전히 AI 인프라로 이동했음을 확인시켰다. AMD는 NVIDIA의 독주를 견제하는 AI 칩 대안으로 하이퍼스케일러들의 러브콜을 받고 있으며, MI300X 후속 시리즈에 대한 기대감도 높다.",
+      "insight": "AMD 실적은 AI 인프라 투자 사이클이 일시적 붐이 아닌 구조적 성장임을 수치로 증명한다. GPU 시장에서 NVIDIA 외 대안이 실제로 성장하고 있다는 점은 AI 컴퓨팅 공급망의 다변화가 진행 중임을 의미하며, 데이터센터 투자가 2026년에도 전혀 꺾이지 않고 있음을 확인시켜 준다.",
+      "isu_area": "클라우드 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "AI 인프라 투자 사이클이 장기화됨에 따라 국내 기업들의 클라우드 마이그레이션 및 AI 컴퓨팅 인프라 확충 수요도 동반 증가할 가능성이 높다. NCP 공식 파트너사로서 제조·건설·금융 고객사의 AI 워크로드 이전 및 인프라 컨설팅 영업을 강화할 적기다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/975381/amd-q2-2026-earnings-ai-gaming-ryzen"
+    },
+    {
+      "number": 2,
+      "category": "글로벌 이슈",
+      "title": "트럼프, 구글·OpenAI·Meta·Anthropic 백악관 소집…'AI 안전 테스트' 논의 본격화",
+      "body": "트럼프 행정부가 Google, OpenAI, Meta, Anthropic 등 미국 주요 AI 기업 수장들을 백악관으로 소집해 **AI 에이전트 안전성 및 의무 테스트 방안**을 논의한다. 자율적으로 행동하는 'AI 에이전트'가 예측 불가능한 방식으로 작동할 수 있다는 우려가 이번 소집의 배경으로, 규제보다는 산업계 자율 안전 기준 마련에 방점이 찍힐 것으로 보인다. 미국은 EU식 강제 규제와 달리 빅테크와의 협력 기반 거버넌스를 선호하는 방향을 유지하고 있다.",
+      "insight": "미국 정부가 AI 에이전트 안전을 공식 의제로 올렸다는 점에서 글로벌 AI 거버넌스의 분수령이 될 수 있다. 자율 규제 기반이라도 대형 AI 기업에 안전 테스트 의무가 부과되면, 기업용 AI 도입 시 안전성 인증·감사 수요가 늘어나는 등 B2B AI 시장 전반에 영향을 미칠 수 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "기업용 AI 에이전트 안전성 규제 논의가 본격화되면, 이수시스템이 공급하는 RAG 기반 챗봇 및 HR AI Package에도 '안전성 검증' 기능이나 감사 로그 제공이 고객 요구사항으로 부상할 수 있다. 중장기적으로 AI 거버넌스 컴플라이언스 기능을 제품 로드맵에 반영할 필요가 있다.",
+      "source": "The News International",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPTmUtdEFzalJxMFRoRjlDdTFWTjNIVDFhQTZMVWd5Qy1yLWZUcjJ3WU1QZmdPQ2hTdVNlUHpEc2VZemFKYTNuUElfUXhmTDc1Y21ON2RhWVNiT2tKMThHVEllOFlRajE5ZkRvSks4b2pVLVpIWFhUMXQ5UDZuZEpYVHNqME1iWmtaeTEwS3diQk01SWlFYzVPbUJHZVFjX3A1RlZrQzBjNzF4Y1dIOURmQUdTbw?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "글로벌 이슈",
+      "title": "DeepSeek, Gemini 3.6 Flash와 동등 성능…벤치마크당 단 3센트로 가격 전쟁 선언",
+      "body": "중국 알리바바 계열 AI가 Google의 **Gemini 3.6 Flash**와 동등한 벤치마크 성능을 **벤치마크 테스트당 3센트**라는 파격적 가격에 제공하며 글로벌 AI 가격 전쟁을 촉발하고 있다. DeepSeek를 앞세운 중국 AI 모델들은 '가성비'를 넘어 '퍼포먼스'에서도 프론티어 모델을 추격 중이며, 투자자 '빅 쇼트' 스티브 아이스먼은 '싼 중국 AI 모델이 OpenAI·Anthropic의 밸류에이션을 박살낼 수 있다'고 경고했다. 오픈소스·저가 모델의 약진은 프리미엄 AI 구독 모델 전반에 압박을 가하고 있다.",
+      "insight": "중국 AI 모델의 가격 경쟁력이 단순 저가 전략을 넘어 성능 동등성으로 확장되면서, 기업용 AI 도입 비용 자체가 급격히 낮아지는 구조적 전환점이 가까워지고 있다. 기업 AI 구매자들의 협상력이 강화되고, 모델 제공사보다 '적용·통합 역량'을 가진 솔루션 기업의 가치가 상대적으로 부각될 수 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "저비용 고성능 LLM의 확산은 이수시스템의 RAG 기반 챗봇 및 HR AI Package 구축 비용을 낮춰 중견·중소기업 고객군으로 영업 범위를 확장할 기회다. DeepSeek 등 오픈소스 모델을 백엔드로 활용하는 WORKUP 내 AI 어시스턴트 기능 추가 시 경쟁력 있는 가격으로 제안이 가능하다.",
+      "source": "Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPX2x2RXdNamNzbGdZWjU2R0NxRUtSRzZ5QWFXTzdzQm1mOEV0R2dud1FULXpadjl4MVd5VWt5Qy1ycVpxaGNxaGZHQm1yc3BXRUl4T21DaE5EUkxvWXNRSlBpaGNITHpHQkRYaFViSmEtSDFJQmZqRFdycDVqVWxNYXZR?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "산업 동향",
+      "title": "팔란티어, 美 상업 매출 149% 급증…'토큰 장사' AI와 선 긋고 실적으로 증명",
+      "body": "팔란티어(Palantir)가 2분기 미국 상업 부문 매출 **149% 급증**을 기록하며 빅테크 AI 기업들을 제치고 실질적 AI 가치 창출 기업으로 주목받고 있다. 팔란티어는 경쟁사들의 'API 토큰 판매' 비즈니스 모델을 공개 비판하며, 자사의 AIP(Artificial Intelligence Platform) 플랫폼이 실제 기업 운영에 내재화된 AI 활용을 가능하게 한다고 강조했다. 이번 실적은 AI가 '실험'에서 '운영 내재화' 단계로 넘어가는 기업 수요가 폭발하고 있음을 보여준다.",
+      "insight": "팔란티어의 성장은 LLM API 접근 자체보다 기업 데이터·프로세스와 AI를 통합하는 '플랫폼 내재화' 역량이 진짜 경쟁력임을 시장이 인정하기 시작했다는 신호다. AI 도입 2단계 수요, 즉 '쓰는 AI'에서 '비즈니스에 녹아드는 AI'로의 전환이 빨라지고 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "팔란티어 사례는 AI를 업무 프로세스에 깊이 연동한 솔루션이 시장에서 프리미엄을 받는다는 것을 보여준다. 이수시스템도 단순 챗봇 제공을 넘어 WORKUP·Smart HR의 인사 데이터와 AI를 결합한 'HR AI 내재화 패키지' 형태로 고도화하면, 팔란티어와 유사한 차별화 포지셔닝이 가능하다.",
+      "source": "네이트",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4tODB3OElTTHp6QlhFamgzb2VaODZMYmVNc2tOVEEzcUlRTmNjSkVQOWVKMTFDUVlOUjdXSHJLeUhSNmNJVTdwY1A3bUpLaGhKUHdiVUZ6amFBQnJVOFV0VA?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "글로벌 이슈",
+      "title": "한국 정부, AI로 공공데이터 맞춤 추천 서비스 도입…데이터 접근성 혁신",
+      "body": "대한민국 정부가 **공공데이터 포털에 AI 기반 맞춤형 추천 시스템**을 도입한다고 밝혔다. 기존에는 키워드 검색에 의존했던 공공데이터 탐색 방식이, AI에게 필요한 정보를 자연어로 물으면 관련 데이터셋을 자동으로 추천해주는 방식으로 전환된다. 이 서비스는 기업과 연구자가 공공데이터를 활용한 서비스 개발에 드는 시간을 대폭 단축할 것으로 기대되며, 공공 AI 서비스 고도화의 일환으로 추진된다.",
+      "insight": "공공데이터에 AI 추천 기술이 접목되면 민간 기업의 데이터 기반 서비스 개발 비용과 진입 장벽이 낮아진다. 정부가 AI를 공공 서비스 혁신 도구로 본격 활용하기 시작했다는 점에서, 공공 부문 AI 전환 사업이 빠르게 늘어날 전환점이 될 수 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[정부 사업]",
+      "isu_insight": "공공 AI 서비스 도입 확대 기조는 이수시스템의 RAG 기반 챗봇 및 AI 플랫폼 솔루션의 공공 부문 영업 기회를 확대한다. 특히 공공기관 내부 문서·데이터 검색에 특화된 RAG 챗봇을 공공데이터 활용 인터페이스로 패키징하여 제안하는 시나리오를 검토할 만하다.",
+      "source": "Naver Blog (공공데이터 관련 기사)",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQR3NuVms5VWJyWFhmVVF0UTIwTU1BeU9kdzE2ZTNOQ21nMFZuLUp6anRwS0s1RW5oZW0yNnJjRS1fS1pxbHZRMXpHSVBoMUdGQklmREJ1elpyY2wyUHh4VVhDRHgwOFVJNlJYQkl6MTRMbmp4SV90a0RtTWJvV0RlQnB1QzU2d0xsRzZOR1BXZw?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**AI 인프라 투자 사이클은 2026년에도 꺾이지 않는다**: AMD 데이터센터 매출 107% 성장이 증명하듯, GPU 수요와 클라우드 인프라 확충은 구조적 장기 트렌드다.",
+    "**'싼 AI'의 역습**: DeepSeek·알리바바 AI가 Gemini급 성능을 3센트에 제공하며 AI 모델 가격 하락을 가속화하고 있다. 모델 자체보다 '통합·적용 역량'이 기업 AI의 진짜 경쟁력이 되는 시대가 온다.",
+    "**AI 규제·거버넌스의 원년**: 미국 백악관이 빅테크를 소집해 AI 에이전트 안전 테스트를 논의하기 시작했다. **기업용 AI 도입 시 안전성·감사 가능성이 새로운 구매 기준**으로 부상할 것이다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심은 'AI 비용 하락 + 내재화 수요 증가 + 정부 AI 확산'이라는 세 흐름이 동시에 진행된다는 점이다. 저가 고성능 LLM 확산은 이수시스템이 WORKUP·Smart HR에 AI 기능을 경쟁력 있는 가격으로 탑재할 수 있는 환경을 만들어주며, 팔란티어 사례는 HR 데이터와 AI를 깊이 결합한 솔루션이 시장에서 프리미엄을 받는다는 것을 보여준다. 공공 부문 AI 추천 서비스 도입과 같은 정부 AI 확대 정책은 RAG 챗봇 및 AI 플랫폼의 공공 영업 기회를 직접적으로 확장시키는 신호로 읽어야 한다."
+}
