@@ -1,0 +1,72 @@
+{
+  "date": "2026.08.10 (월)",
+  "one_liner": "Meta 코딩 에이전트가 Gemini를 꺾고, Google DeepMind는 수장을 교체하며 AI 패권 경쟁이 새 국면으로 진입했다.",
+  "news": [
+    {
+      "number": 1,
+      "category": "모델 릴리스",
+      "title": "Meta, Gemini·Grok 꺾는 코딩 에이전트 출시…오픈소스 진영 반격 시작",
+      "body": "Meta가 자체 코딩 에이전트를 출시하며 Google Gemini와 xAI의 Grok을 벤치마크 성능에서 앞질렀다고 WION이 보도했다. 이 에이전트는 코드 작성·디버깅·리팩토링 등 개발 전반을 자동화하는 기능을 갖추고 있으며, Meta 특유의 **오픈소스 전략**을 기반으로 개발자 생태계 확장을 노린다. 빅테크 간 코딩 AI 경쟁이 GPT 계열 외 진영으로도 본격 확대되는 신호탄으로 읽힌다.",
+      "insight": "코딩 에이전트 시장은 이제 OpenAI 독주에서 Meta·Google·xAI의 3각 경쟁 구도로 재편되고 있다. 특히 Meta의 오픈소스 기반 접근은 기업 내 자체 배포 수요를 자극하며, 폐쇄형 API 의존도를 낮추려는 기업들에게 유력한 대안이 될 수 있다. 소프트웨어 개발 자동화가 가속화될수록, IT 인력 운용 방식과 아웃소싱 구조 전반에 변화 압력이 커진다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "Meta의 오픈소스 코딩 에이전트는 이수시스템이 RAG 기반 챗봇이나 HR AI 패키지 내 코드 자동화 기능을 외부 LLM API 비용 없이 내재화하는 데 활용 가능하다. 특히 WORKUP이나 Smart HR의 커스텀 스크립트·자동화 로직 개발 속도를 높이는 내부 도구로 검토할 수 있다.",
+      "source": "WION",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWjdpUEo4Y1hGd0F6N0x2MlVhX0hER2p4VDJpc29xaGQ5cU0xVUJHejQ4ZERVOGd2bWZjdXZZYUtvaWhoVl9qcFBxdFJzWHRsTl9IUE5tUE04V3NtQnowd1lQTldxaGprdXJjdlh6d1pfWUo4UVpOY2t3RkZNMXZnUW5Ddm11UGxJaFlhcDN5dzdOSEh4OFJVNUhFQkZPOS1rOE5HZ3VaaFpabzTSAasBQVVfeXFMUFo3aVBKOGNYRndBejdMdjJVYV9IREdqeFQyaXNvcWhkOXFNMVVCR3o0OGREVThndm1mY3V2WWFLb2loaFZfanBQcXRSc1h0bE5fSFBObVBNOFdzbUJ6MHdZUE5XcWhqa3VyY3ZYendaX1lKOFFaTmNrd0ZGTTF2Z1FuQ3ZtdVBsSWhZYXAzeXc3TkhIeDhSVTVIRUJGTzktazhOR2d1WmhaWm80?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "산업 동향",
+      "title": "Demis Hassabis, Google DeepMind CEO서 물러나 '수석 과학자'로…구글 AI 리더십 전면 개편",
+      "body": "Alphabet이 Google DeepMind 창립자이자 CEO인 **Demis Hassabis**를 최고과학자(Chief Scientist) 역할로 이동시키며 AI 리더십 구조를 대폭 재편했다. Hassabis는 연구 전략과 장기 비전에 집중하게 되며, DeepMind의 실질적 운영은 새 체제로 넘어간다. 이번 개편은 Google이 AI 연구와 상업화 사이에서 속도를 높이기 위한 조직 효율화 의도로 해석된다.",
+      "insight": "빅테크의 AI 리더십 개편은 단순한 인사 이동이 아니라 전략적 우선순위 변화를 반영한다. Hassabis의 역할 전환은 구글이 장기 기초 연구보다 **단기 상업화 실행력**에 무게를 두기 시작했음을 시사한다. AI 경쟁이 연구 단계를 넘어 제품·수익화 단계로 전환되고 있으며, 이는 업계 전반의 AI 조직 운영 방식에도 영향을 줄 것이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "Google DeepMind의 리더십 재편으로 Gemini 계열 API의 기능 업데이트 주기나 가격 정책이 바뀔 수 있다. 이수시스템이 현재 혹은 향후 Gemini API를 챗봇·HR AI 패키지에 연동하는 경우, 파트너 정책 변화를 주시하고 멀티 LLM 전략(OpenAI + Gemini + 오픈소스 병행)을 검토해 두는 것이 리스크 대응에 유리하다.",
+      "source": "BW Businessworld",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNdEZUdEZJWENxTzBKN3hQWnktaElqTEtTXzRnNEdZb1FSV3lmbThjS0xQeE8tM3ZIblU1c2QyQUtwVGhhd0hMYWVJakFVLWlNLWNGREVNeFFackFEUmkxbEhvelBBNmZfQVY4MExhR2I2WDFOZjRoM0k5dzV1RDA0bWh3WHJaWjFkV3ZtM1VpY1djNnNvLTlLZmUtbWhCZlN6TmlycHpYYi1MQmV3b3g1d1lDMA?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "글로벌 이슈",
+      "title": "ICML 연구 '충격 경고': LLM 보안 결함, 근본적 해결 불가능할 수도",
+      "body": "국제 머신러닝 학술대회 ICML에서 발표된 연구에 따르면 LLM의 보안 취약점(프롬프트 인젝션, 탈옥 등)은 **모델 아키텍처 상 근본 해결이 불가능**할 가능성이 있다는 주장이 제기됐다. 연구진은 LLM이 데이터와 명령을 구조적으로 분리하지 못하는 한계를 핵심 원인으로 지목했다. 이는 기업들이 AI를 내부 시스템에 도입할 때 보안 아키텍처 설계를 별도로 강구해야 함을 의미한다.",
+      "insight": "AI를 엔터프라이즈 환경에 도입하는 기업들에게 이 연구는 중요한 경고다. LLM 자체의 패치나 파인튜닝만으로는 보안 문제가 해결되지 않을 수 있으며, **외부 가드레일·접근권한 제어·출력 검증 레이어**를 별도로 설계하는 것이 필수가 되고 있다. AI 도입 속도에 비해 보안 투자가 뒤처지는 기업들의 리스크가 구조적으로 커질 수 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[리스크]",
+      "isu_insight": "이수시스템의 RAG 기반 챗봇과 HR AI 패키지는 인사 데이터·급여 정보 등 민감 데이터를 다루는 만큼, 이번 ICML 경고는 직접적 리스크다. 고객사에 제안 시 'AI 보안 아키텍처 설계'를 별도 제공 항목으로 포함시키고, 프롬프트 인젝션 방어 레이어와 역할 기반 접근 제어(RBAC) 적용을 제품 차별화 포인트로 강조할 수 있다.",
+      "source": "뉴스N연합",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE11cFp2WXVENHc2UVgyUnVZZlctMUEwblZQQ2VKMjZaWjE3aWhTN2RDamNSY3VmeTV4NGpDNk43U2VPbkhMQUt6ZHJR?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "글로벌 이슈",
+      "title": "딥시크, 가격 인상하고 투자 재개…중국 AI, '저가 출혈' 끝내고 수익화 전환",
+      "body": "딥시크(DeepSeek)가 API 가격을 인상하고 외부 투자 유치를 재개했다고 Smartkarma가 전했다. 중국 유니트리 로봇의 IPO에도 딥시크가 투자자로 참여하는 등, 중국 AI 생태계가 단순 가격 경쟁을 넘어 **AI Economy(AI 경제)** 구축 단계로 이동하고 있다는 분석이다. 동시에 중국 저가 AI 모델이 미국 실리콘밸리에도 제번스 역설(Jevons Paradox) 효과를 낳고 있다는 논의도 활발하다.",
+      "insight": "딥시크의 가격 인상은 중국 AI 모델이 '기술 덤핑' 단계에서 **지속 가능한 사업 모델** 단계로 전환하고 있음을 보여준다. 이는 글로벌 LLM 가격 경쟁이 바닥을 쳤을 수 있다는 신호이기도 하며, AI API를 활용하는 기업들은 비용 구조를 재검토해야 할 시점이다. 중국 AI의 수익화 전환은 미중 AI 패권 경쟁을 연구·개발에서 상업·투자 영역으로까지 확대시킨다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "딥시크 API 가격 인상으로 국내 기업들의 저비용 LLM 도입 기대치가 조정될 수 있다. 이수시스템이 챗봇·HR AI 패키지의 LLM 레이어를 설계할 때, 특정 단일 모델 의존보다 국산 LLM(HyperCLOVA X 등)이나 오픈소스 모델을 포함한 멀티 공급자 전략을 고객사에 제안하면 가격 변동 리스크를 완충하는 강점이 된다.",
+      "source": "Smartkarma",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNYzRCNUNhZUpmUkVxV2wxNDBzNmZkVVFJYS1kZVpiNlRxSGVMUVEzWF9TQ3ZWdm5obHR5MUNuUUNBWUExOTVoYU8yaXNiR2hFU19vMTZ1TW4xYVJnRlc1TmVwdXlPem85MlpnTlhadWtSWTgwcWstREprVDd4TFoyS1NXQTQ5aFBDN2xQLWtGSXBuUVVXZ1I3ZTMzekw1M1Q0WUQzYXhab0NRX2xFNWhjRWstSXJFcWFEQlU2Z0dqWl9nRW8?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "산업 동향",
+      "title": "한국, 피지컬 AI 시대 '제조강국' 강점 살린 로봇 승부수 띄운다",
+      "body": "전자신문 ET시론에 따르면 한국이 피지컬 AI(Physical AI) 시대를 맞아 강점인 **제조업 인프라와 부품 생태계**를 기반으로 로봇 분야에서 국가 경쟁력을 확보해야 한다는 전략적 논의가 본격화되고 있다. 중국 유니트리의 부상과 미국 보스턴 다이나믹스의 도전 속에서 한국은 반도체·배터리·정밀 부품 분야의 제조 역량을 AI 로봇과 결합하는 차별화 전략이 필요하다는 진단이다. 정부와 산업계의 로봇·AI 융합 투자 확대 요구가 높아지고 있다.",
+      "insight": "피지컬 AI는 소프트웨어 중심 AI 경쟁과 달리 **제조·하드웨어 역량이 핵심 변수**가 된다. 한국은 반도체·배터리·정밀 부품 등 강점을 보유하고 있어 소프트웨어 AI 경쟁에서보다 상대적으로 유리한 위치를 점할 수 있다. 다만 이를 현실화하려면 AI 소프트웨어와 제조 하드웨어를 연결하는 산업용 AI 플랫폼 생태계 구축이 선행되어야 한다.",
+      "isu_area": "안전 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "피지컬 AI·로봇 확산은 제조·플랜트 현장의 스마트 안전관리 수요를 키운다. 이수시스템의 Smart Plant(레이저 스캔 기반 플랜트 관리)와 Smart & Safety(현장 안전관리)는 로봇·자동화가 확대되는 제조 고객사에 현장 데이터 통합 관제 솔루션으로 제안할 수 있다. 특히 정부의 제조 로봇 투자 확대 기조에 맞춰 중견·대형 제조사 대상 스마트 안전 솔루션 영업 타이밍으로 활용 가능하다.",
+      "source": "전자신문",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5HaHZ5X3p5OHFhaEJkeGpoVUdyaXFveTdsLWdGUnY5Z2kwQ3RIN0hITm9fTU5jU0tJSTIwNkxrNDhtcFd2eFdzNkxUN3VCdw?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**Meta의 오픈소스 코딩 에이전트**가 Gemini·Grok을 벤치마크에서 꺾으며, AI 도구 경쟁이 특정 기업 독주 구도에서 다자 경쟁으로 빠르게 전환되고 있다.",
+    "ICML 연구가 제기한 **LLM 보안 취약점의 구조적 한계**는 기업 AI 도입 시 별도 보안 레이어 설계를 필수 조건으로 만들고 있다.",
+    "딥시크 가격 인상과 구글 DeepMind 리더십 재편은 AI 업계 전반이 **연구·저가 경쟁 단계에서 수익화·상업화 실행 단계**로 이동하고 있음을 동시에 보여준다."
+  ],
+  "isu_summary": "이번 주 AI 흐름의 핵심은 '보안'과 '수익화'다. ICML의 LLM 보안 경고는 이수시스템이 HR AI 패키지와 RAG 챗봇에 보안 설계 레이어를 강점으로 내세울 수 있는 명분을 만들어 주며, 딥시크 가격 인상은 단일 LLM 의존 전략의 리스크를 부각시켜 멀티 LLM 설계 역량이 고객 제안의 차별점이 될 수 있음을 시사한다. 또한 한국 피지컬 AI·로봇 논의는 제조·플랜트 현장을 주요 고객군으로 삼는 이수시스템의 Smart Plant·Smart Safety 솔루션을 위한 중장기 영업 기회가 열리고 있음을 의미한다."
+}
