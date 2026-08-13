@@ -1,0 +1,72 @@
+{
+  "date": "2026.08.14 (금)",
+  "one_liner": "구글 Gemini 3.7 Flash 반값 출시·조직 개편 속, 한국 제조사들은 자체 챗봇 대신 외부 AI 에이전트로 전환 중",
+  "news": [
+    {
+      "number": 1,
+      "category": "모델 릴리스",
+      "title": "구글, Gemini 3.7 Flash 반값 공개…Claude 누르고 비즈니스 워크플로 1위 주장",
+      "body": "구글이 **Gemini 3.7 Flash**를 공식 출시하며 연말까지 기존 대비 **50% 할인된 가격**을 제공한다고 밝혔다. 이 모델은 코딩과 AI 에이전트 워크플로에 특화되어 있으며, 구글은 비즈니스 업무 처리 벤치마크에서 Anthropic의 Claude를 앞섰다고 주장했다. 다만 Gemini 3.5 Pro 등 상위 모델 출시가 계속 지연되는 상황에서, Flash 계열로 시장 점유율 방어에 나선 것이라는 분석도 나온다.\n\n출시 배경에는 구글 내부의 위기감도 작용했다. 공동창업자 **세르게이 브린**이 직접 DeepMind 팀에 속도를 높이라고 압박하고 있으며, 대규모 AI 리더십 재편이 동시에 진행 중이다. Gemini는 월간 **10억 명**의 사용자를 돌파했지만 벤치마크 순위에서는 경쟁사에 뒤처지는 모순적 상황에 놓여 있다.",
+      "insight": "최상위 모델 경쟁이 치열해지는 가운데, 구글이 택한 전략은 '가격 파괴'다. Flash 계열의 반값 출시는 API 비용에 민감한 스타트업과 기업 개발자들에게 즉각적인 매력으로 작용한다. 모델 성능보다 가격·속도·통합 편의성이 기업 AI 도입의 실질적 결정 요인임을 보여주는 사례로, AI 모델 시장 전반의 상품화(commoditization) 흐름을 가속화할 전망이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "Gemini 3.7 Flash의 저렴한 API 가격은 이수시스템 RAG 기반 챗봇 및 AI 플랫폼의 LLM 백엔드 비용 절감 기회다. 현재 OpenAI 또는 타 모델을 사용 중이라면 Gemini Flash로의 전환을 검토해 솔루션 원가 경쟁력을 높일 수 있으며, 고객사에 '동일 성능·낮은 비용'을 어필하는 영업 포인트로 활용 가능하다.",
+      "source": "Tech Times",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNVEZITl9BRzV3SUlIeEtBNDd4dXBNQ3d3R0VCaEllRGJfU1dEWDZMbTBiOUNubjFiTUZrYU51cnRwSWlnNXFRVUlDTWg0YVh3SEJLQTcxNFVTZ1pyWG1VUDJuNkhPZHcyWF95SWVzd19BZGlrdDZkT09WbmdERGNGeXFUMlItWnFLM25YTW5LNWprZWM1YzFyNEliYkQ2TzZjWUkxeS1rWklSYTFRN1RMRmdIMENzUy1PMDhiejA0NTluNU53TlpST2hwX2ZFdw?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "산업 동향",
+      "title": "한국 제조사, 자체 챗봇 한계 인정…GPT·Claude 수준 외부 AI 에이전트로 전환",
+      "body": "조선비즈 보도에 따르면, 삼성·현대·LG 등 **한국 주요 제조사**들이 내부 개발한 사내 챗봇의 성능 한계를 인정하고, **OpenAI·Anthropic 등 최상위 AI 에이전트**로 업무 자동화를 재편하는 움직임이 가시화되고 있다. 보안과 데이터 주권을 이유로 자체 구축을 고집하던 기업들이 생산성 격차를 체감하면서 방향을 바꾸고 있는 것이다.\n\n특히 **설계·품질검사·공급망 관리** 등 복잡한 판단이 필요한 영역에서 외부 최상위 모델의 우위가 두드러지는 것으로 알려졌다. 이는 국내 기업들이 'AI 자급자족'에서 '최적 AI 선택·통합'으로 전략을 전환하는 신호탄으로 해석된다.",
+      "insight": "자체 AI 구축 실패 경험은 국내 제조 대기업에만 국한되지 않는다. 중견·중소 제조사들도 동일한 딜레마에 직면할 가능성이 높다. 이 흐름은 'AI를 직접 만드는 시대'에서 '최적의 AI를 조합하고 통합하는 시대'로의 전환을 의미하며, AI 통합 플랫폼·RAG 기반 커스터마이징·업종 특화 AI 에이전트 구축 역량을 보유한 SI·솔루션 기업에게 새로운 영업 기회가 열리고 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "이수시스템의 주요 고객군인 제조·건설사들이 외부 AI 에이전트 통합 수요를 키우고 있다. 이수시스템의 RAG 기반 챗봇과 AI 플랫폼은 최상위 LLM(GPT-4o, Claude 등)을 백엔드로 연결하면서 사내 데이터(HR, ERP, 안전 매뉴얼 등)를 결합하는 '기업 특화 AI 에이전트'로 포지셔닝할 수 있다. 특히 500개 이상 HR 레퍼런스와 SAP 파트너 이력을 활용해 제조 고객사에 '검증된 통합 AI' 제안이 가능하다.",
+      "source": "CHOSUNBIZ",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBzMzlzTlgyeG9ObTNjLUwyaGRCOEFJUGZCUXNOamgwWFlMSUxIUHNwQTQ2SHVweGRnMEhKWi1QazF5VGszZzFrMTl6TVoxQTJPeTdQT3hRUkhfZGtrNGxzNGt6TjY0cy1VZy1kaUxUZGNqLUtwb0VBOTB30gGOAUFVX3lxTE5hYlZfSjdzRl9rNUFmZzVia2lTeDhfUmh1OFk3aEt3d3VvVXNxVkt0OUJJZTNPSlplQktmXzBvYTlndGx3WjhuUUlKNm15WXBoaU1OMkFxVnlpOEo1d2ZFa2N5UjZ1OUM4a01taERYNW5ZTTNtQ2phYl9QWFBaTnlPOG4wUTNIeU9JdU9hUFE?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "제품 업데이트",
+      "title": "Microsoft, Copilot 앱 통합해 'AI 슈퍼앱' 전략 본격화",
+      "body": "마이크로소프트가 개인용 Copilot과 업무용 Microsoft 365 Copilot을 **단일 앱**으로 통합하는 작업을 시작했다. 통합 앱은 'Microsoft Copilot'이라는 이름을 유지하되 새 아이콘과 UI로 개편되며, 개인·업무 계정을 하나의 인터페이스에서 관리할 수 있게 된다. 이는 MS가 AI 어시스턴트를 일상과 업무를 아우르는 **'슈퍼앱'**으로 만들겠다는 장기 전략의 첫 단추다.\n\n동시에 Copilot의 감성 캐릭터 'Mico'는 챗봇 메인 화면에서 퇴장해 교육 플랫폼 Learn Live로 이동한다. 이는 Copilot이 캐릭터 중심의 친근한 이미지보다 **생산성 도구**로서의 정체성을 강화하겠다는 방향 전환으로 읽힌다.",
+      "insight": "MS의 Copilot 슈퍼앱 전략은 개인과 기업 업무의 경계를 AI가 허무는 방향으로 나아가고 있음을 보여준다. 단일 앱에서 개인 일정·이메일·업무 문서를 AI가 통합 관리하는 시대가 가까워지면서, 기존 기업용 협업 도구(그룹웨어, HR 시스템 등)와의 경쟁 구도가 심화될 수 있다. 기업 IT 담당자 입장에서는 MS 365 생태계 의존도가 더욱 높아지는 점을 주목해야 한다.",
+      "isu_area": "HR 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "MS Copilot이 HR·업무 관리 기능까지 통합할 경우, WORKUP이나 Smart HR과 같은 독립형 HR SaaS의 차별화 압박이 커질 수 있다. 단기적으로는 위협보다 공존 가능성이 높지만, MS 365 연동 API를 활용해 WORKUP과 Copilot을 연결하는 '통합 시나리오'를 선제적으로 준비해두면 고객 이탈을 방어하는 동시에 부가 서비스 기회로 전환할 수 있다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/979466/microsoft-copilot-365-app-unified-experience"
+    },
+    {
+      "number": 4,
+      "category": "글로벌 이슈",
+      "title": "OpenAI 임원 연쇄 이탈…이번 주에만 두 번째, 최고수익책임자도 퇴사",
+      "body": "OpenAI의 **최고수익책임자(CRO) 데니스 드레서**가 '수 주 내' 퇴사한다고 밝혔다. 드레서는 2025년 12월 Slack CEO 출신으로 영입됐으나 채 1년을 채우지 못하고 떠나게 됐다. 후임으로는 사이버보안 유니콘 Wiz의 사장 겸 COO였던 **달리 라직**이 합류한다. 이번 주에만 두 번째 고위 임원 교체로, OpenAI 내부의 조직 불안정성에 대한 우려가 커지고 있다.\n\n이는 OpenAI가 **기업용 시장 수익화**를 본격화하는 시점에 발생한 인사 공백이라는 점에서 더욱 주목된다. Wiz 출신 라직은 클라우드·엔터프라이즈 영업에 강점이 있어, OpenAI의 B2B 확장 전략에 변화가 생길 수 있다는 분석이 나온다.",
+      "insight": "AI 선두 기업의 잦은 경영진 교체는 기술 우위만으로는 조직을 유지하기 어렵다는 현실을 보여준다. 특히 CRO의 연속 교체는 OpenAI가 수익 모델 다각화와 기업 시장 공략 방식을 아직 확정하지 못했음을 시사한다. 기업 고객 입장에서는 OpenAI 의존도를 높이기 전에 파트너십 안정성을 재점검할 필요가 있으며, 멀티 LLM 전략의 중요성이 다시 부각된다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "이수시스템 AI 플랫폼이 OpenAI API에 의존하는 비중이 크다면, 이번 OpenAI의 잦은 경영진 교체와 전략 변동성은 리스크 요인이다. Gemini Flash 등 대안 모델과의 멀티 LLM 구조를 AI 플랫폼에 반영해두면, 특정 벤더 리스크를 줄이고 고객사에 '안정적 AI 공급망'을 보장하는 차별점으로 활용할 수 있다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/979815/openai-denise-dresser-leaving-executive-departure"
+    },
+    {
+      "number": 5,
+      "category": "산업 동향",
+      "title": "한국 후발 AI 스타트업 '모티프', SKT·LG·업스테이지 제치고 국내 AI 평가 1위",
+      "body": "국내 AI 평가에서 **모티프(Motif)**가 SKT·LG AI Research·업스테이지 등 대형 플레이어를 제치고 **국내 LLM 성능 평가 1위**를 기록했다고 쿠키뉴스가 보도했다. 모티프는 '독립형 파운데이션 모델(독파모)' 노선의 후발주자임에도 불구하고 한국어 이해력과 추론 능력에서 두각을 나타내며 업계를 놀라게 했다.\n\n이 결과는 국내 AI 생태계에서 대기업 자본력보다 **모델 아키텍처 최적화와 한국어 특화 학습 전략**이 성능을 좌우할 수 있음을 보여준다. 동시에 국산 LLM 시장 경쟁이 한층 치열해지면서, 기업 AI 솔루션 공급자들의 '어떤 모델을 쓰느냐'에 대한 선택지도 더욱 다양해졌다.",
+      "insight": "국내 LLM 시장에서 대형사 독식 구도가 무너지고 있다. 소형·특화 모델이 한국어 벤치마크에서 대형사를 이기는 사례가 등장하면서, 기업용 AI 솔루션 구축 시 '국산 경량 모델 + 특화 파인튜닝' 전략이 현실적 대안으로 부상하고 있다. 특히 보안·온프레미스 요구가 강한 공공·금융·제조 고객사에게는 국산 소형 모델이 더욱 매력적인 선택지가 될 수 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "이수시스템의 RAG 챗봇 및 HR AI Package에 국산 LLM(모티프 등)을 백엔드로 연동하면, 공공기관과 보안 민감 고객사(금융, 방산 등)에 '국산 AI 기반 솔루션'으로 차별화된 제안이 가능하다. 특히 정부 조달 시장에서 국산 AI 활용 가점 등 정책 혜택이 강화되는 추세를 고려하면, 모티프 같은 국내 LLM 파트너십을 선제 검토할 시점이다.",
+      "source": "쿠키뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBGcnJBZjQzd0JxeGVGeC1KOTJ0eUE1MWxzaEdaUENHMUNYNHgxOVpJcURSa2dYTVRENVlBSXVkRlVBSDZKRDd5QmtDNmVScVJfbExnY0N5UTZ6YmYtZXpwSEVmVQ?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**구글 Gemini 3.7 Flash의 반값 출시**는 AI 모델 상품화를 가속화하며, 기업 AI 도입의 핵심 변수가 '성능'에서 '가격·통합 편의성'으로 이동하고 있음을 알린다.",
+    "한국 제조 대기업들이 자체 챗봇의 한계를 인정하고 **외부 최상위 AI 에이전트로 전환**하는 흐름은, AI 통합·커스터마이징 역량을 가진 국내 IT 솔루션 기업에게 새로운 수주 기회가 열리고 있음을 의미한다.",
+    "국내 후발 LLM 스타트업 모티프의 평가 1위 달성은 **국산 경량 모델 생태계**가 성숙하고 있다는 신호로, 공공·금융·제조 분야 AI 솔루션의 '국산화' 요구에 대응할 현실적 옵션이 생겨나고 있다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심은 '어떤 AI를 쓰느냐'보다 '어떻게 연결하고 통합하느냐'가 기업 AI 경쟁력의 본질이 되고 있다는 점이다. 한국 제조사들의 외부 AI 에이전트 전환 수요, Gemini Flash의 API 가격 인하, 국산 LLM 모티프의 성능 부상은 모두 이수시스템의 AI 플랫폼·RAG 챗봇·HR AI Package의 영업 무대를 넓혀주는 신호다. 특히 500개 이상 HR 구축 레퍼런스와 SAP·NCP 파트너 지위를 결합해, 제조·건설·공공 고객사에 '검증된 기업 특화 AI 통합 파트너'로 포지셔닝하는 전략을 지금 구체화할 필요가 있다."
+}
