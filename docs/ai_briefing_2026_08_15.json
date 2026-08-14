@@ -1,0 +1,72 @@
+{
+  "date": "2026.08.15 (토)",
+  "one_liner": "구글 Gemini 3.7 Flash 출시·가격 50% 인하로 AI 모델 가격전쟁이 본격화되는 가운데, 중국 Z.ai·Apple-Alibaba 협력 등 글로벌 AI 패권 경쟁이 새 국면에 진입했다.",
+  "news": [
+    {
+      "number": 1,
+      "category": "모델 릴리스",
+      "title": "구글, Gemini 3.7 Flash 출시…출시가 50% 인하로 가격전쟁 선제 공격",
+      "body": "구글이 코딩·AI 에이전트 특화 모델 **Gemini 3.7 Flash**를 공개하며 출시 가격을 기존 대비 **50% 인하**했다. 코딩 벤치마크 DeepSWE에서 **65.3%** 점수를 기록하며 경쟁 모델 대비 뛰어난 성능을 입증했고, 개발자·스타트업 고객을 적극 공략하는 전략이 두드러진다. 이번 출시는 구글 AI 조직 리더십 개편과 맞물려 진행됐으며, Gemini 3.5 Pro 출시에 앞서 Flash 계열을 먼저 내놓는 '속도 우선' 전략의 일환이다.\n\nOpenAI와 Anthropic이 중국 AI 경쟁자들의 저가 공세에 맞서 자체 가격 인하를 검토 중인 가운데, 구글의 이번 행보는 **AI 모델 가격전쟁**을 사실상 공식화한 것으로 평가된다. 개발자 생태계 선점이 장기 구독·엔터프라이즈 수익으로 직결되는 구조상, 출시가 인하는 단기 매출 희생을 감수한 시장 점유율 확보 전략이다.",
+      "insight": "빅테크 AI 모델의 가격이 빠르게 하락하면서 API 기반 AI 서비스의 진입 장벽이 낮아지고 있다. 이는 기업용 AI 솔루션 시장에서 '모델 원가'보다 '도메인 특화 구현력'과 '통합 편의성'이 차별화 포인트가 됨을 의미한다. 모델 가격 하락은 AI 도입을 검토 중인 중견·중소기업의 PoC 실행 속도를 높이는 촉매제가 될 것이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "Gemini 3.7 Flash의 가격 인하로 RAG 기반 챗봇·HR AI Package의 백엔드 API 비용이 절감된다. 현재 WORKUP·Smart HR 고객사를 대상으로 'Gemini Flash 기반 인사 Q&A 챗봇' PoC 제안 시 고객 부담 비용이 낮아져 영업 전환율 향상을 기대할 수 있다. 특히 예산이 민감한 중견 제조·건설사 고객군에 '저비용 AI 도입' 메시지로 접근하기 좋은 타이밍이다.",
+      "source": "Northeast Times / Axios / Yellow.com",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQTjhUaG5yRHBmUVFjSDRoWjNSS3JoSFJfQl94cmVNX3dfMnNkTUgyTUM0dVdQV3AxRF9FeFJFazhrNFBlY1R5cGxLcWpFRVkxcUtsd2swUFNxMHVoUFc4V2w0TU5uUW1IVjBIVkhUOV94RUVvblg4Smloek9aeTNVaVBRM0ZOWloybnFESHRyeUZjY2xaQlJYeE9PVURiSUE?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "글로벌 이슈",
+      "title": "Apple, 알리바바와 손잡고 中 전용 AI 모델 독자 훈련…미중 AI 패권 전쟁 새 국면",
+      "body": "Apple이 중국 시장 전용 **대형언어모델(LLM)**을 알리바바와 공동으로 훈련했다고 로이터가 복수의 내부 소식통을 인용해 보도했다. Apple Intelligence의 중국 출시를 앞두고 현지 규제·데이터 주권 요건을 충족하기 위한 불가피한 선택으로, 미중 갈등 고조 속에서도 양사가 **교차 협력**에 나선 이례적 사례다. 중국 시장에서 Baidu·Huawei 등 현지 AI와 경쟁해야 하는 Apple 입장에서 알리바바의 클라우드 인프라와 중국어 데이터 역량은 핵심 자산이다.\n\n이번 협력은 글로벌 AI 기업들이 각국의 규제·데이터 주권 장벽을 넘기 위해 **현지 파트너십 모델**을 채택하는 흐름을 상징한다. 단일 글로벌 모델이 아닌 지역별 맞춤 모델 전략이 AI 시장의 표준이 될 수 있음을 시사한다.",
+      "insight": "글로벌 AI 기업조차 특정 시장 진입을 위해 현지 파트너와 모델을 공동 개발하는 '로컬라이즈드 AI' 전략이 부상하고 있다. 이는 데이터 주권·AI 규제가 강화되는 각국에서 범용 모델보다 도메인·지역 특화 모델의 경쟁력이 높아짐을 의미한다. 기업 AI 도입 시 '어떤 데이터로 훈련됐는가'가 중요한 선택 기준이 될 전망이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "Apple-알리바바 사례는 '한국어·국내 업무 데이터 특화 AI'의 차별성을 부각시키는 맥락으로 활용 가능하다. 이수시스템의 RAG 기반 챗봇이 국내 고객사의 내부 문서(취업규칙, 복무규정, 업무 매뉴얼)로 훈련된다는 점을 영업 시 '로컬 특화 AI'로 포지셔닝하면 글로벌 범용 모델 대비 신뢰도 소구가 가능하다.",
+      "source": "The Verge / The News International",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/980160/apple-intelligence-china-custom-ai-model-alibaba"
+    },
+    {
+      "number": 3,
+      "category": "모델 릴리스",
+      "title": "中 Z.ai, GLM-5.3 공개…장기 코딩·사이버보안 성능으로 OpenAI·Anthropic에 정면 도전",
+      "body": "중국 스타트업 **Z.ai(즈푸AI)**가 장기 코딩(long-horizon coding)과 사이버보안 취약점 탐지 능력을 강화한 **GLM-5.3**을 공개했다. 기존 GLM 시리즈 대비 코딩 벤치마크에서 유의미한 성능 향상을 기록했으며, AI 보안 분야까지 역량을 확장했다는 점에서 OpenAI Codex, Anthropic Claude의 코딩 특화 포지션에 직접 도전장을 내밀었다. Z.ai는 중국 내 규제 압박에도 불구하고 글로벌 개발자 시장을 적극 공략 중이다.\n\nDeepSeek 이후 중국 AI 모델들이 잇따라 글로벌 경쟁력을 갖추면서 **AI 모델 공급 과잉·가격 하락** 압력이 가속화되고 있다. 특히 코딩·보안 특화 모델의 등장은 소프트웨어 개발 자동화 시장의 경쟁 구도를 빠르게 재편하고 있다.",
+      "insight": "중국 AI 모델의 글로벌 품질이 빠르게 상향 평준화되면서 서구 AI 기업들의 프리미엄 가격 전략이 흔들리고 있다. 코딩·보안 특화 모델의 확산은 소프트웨어 개발 생산성 향상뿐 아니라 AI 시스템 자체의 보안 취약성을 점검하는 새로운 위협 벡터가 될 수 있어, 기업의 AI 도입 시 보안 검토가 필수화되는 흐름이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "GLM-5.3의 사이버보안 기능 강화는 이수시스템이 기업용 AI 챗봇·AI 플랫폼 구축 시 보안 취약점 점검 체계를 함께 제안해야 한다는 시사점을 준다. 특히 공공·금융 고객사 납품 시 'AI 모델 보안 검토 프로세스 포함' 형태로 차별화된 제안서 구성이 가능하며, 현재 BizPTT 등 보안 민감 제품군과 연계한 AI 보안 컨설팅 영역으로 확장을 검토할 수 있다.",
+      "source": "IT조선 / SiliconANGLE",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE43eGtaUjhZRHBRaWxrX2hmeUI1bG5PTTNQRm9IenRQQm1oaGhCazdwSzhCY3RwOUVUMlNabGdOSUxxb3JGX3p6Xy1xU09kU2paQU9td2ZUaV9GY0xVRXRvRGh5TXhLRmpZaThNZ283dEtLSnNY0gF0QVVfeXFMTjd4a1pSOFlEcFFpbGtfaGZ5QjVsbk9NM1BGb0h6dFBCbWhoaEJrN3BLOEJjdHA5RVQyU1psZ05JTHFvckZfenpfLXFTT2RTalpBT213ZlRpX0ZjTFVFdG9EaHlNeEtGallpOE1nbzd0S0tKc1g?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "산업 동향",
+      "title": "OpenAI·Anthropic, 중국 AI에 밀려 '가격 전쟁' 돌입…AI 모델 수익성 경고등",
+      "body": "파이낸셜타임스(FT) 보도에 따르면 **OpenAI와 Anthropic**이 DeepSeek·Z.ai 등 중국 AI 경쟁자들의 저가 공세에 맞서 API 가격을 추가 인하하는 방안을 검토 중이다. Databricks는 기업가치 **1,900억 달러** 평가를 받으며 AI 인프라 시장의 과열을 보여주는 동시에, Anthropic은 IPO 초기 협의에 나선 것으로 알려져 투자자들의 관심이 집중되고 있다. AMD는 AI 인프라 투자 재원 마련을 위해 **47억 5,000만 달러** 규모의 채권을 발행했다.\n\n빅테크 AI 기업들이 천문학적 인프라 투자를 이어가면서도 모델 가격은 하락하는 '**고비용·저마진 구조**'가 AI 산업 전반의 수익성 과제로 부상하고 있다. 이 구조적 압박은 역설적으로 API를 활용하는 AI 솔루션 기업들에게는 원가 절감 기회가 된다.",
+      "insight": "AI 모델 가격의 지속적 하락은 모델 자체보다 '응용 레이어(Application Layer)'의 가치가 높아짐을 의미한다. 즉, 누가 더 좋은 모델을 만드느냐보다 누가 특정 산업에 더 잘 접목하느냐가 경쟁력의 핵심이 되고 있으며, 버티컬 AI 솔루션 기업들에게 유리한 환경이 조성되고 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "LLM API 단가 하락은 이수시스템의 HR AI Package·RAG 챗봇 솔루션의 운영 원가를 낮춰 고객 제안 시 ROI 계산이 더 유리해진다. 동시에 '우리가 직접 모델을 만드는 것이 아니라 최적의 외부 모델을 HR·ERP 도메인에 연결하는 전문 파트너'라는 포지셔닝으로 영업 차별화가 가능하다. HR 레퍼런스 500+ 고객 데이터를 기반으로 한 파인튜닝 역량을 부각하면 경쟁 우위 확보에 유리하다.",
+      "source": "FT / LinkedIn",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQenJmNmtJVlBpd3MxYW1iN0hVSmlsT19lbHBQbTE1SnlsNG1zSm9QX2dFVWdKVnlKakE0SDVnQnRwYWxrdnd2UzJIZS12U0FMdlJYVEpab3NLNS03YzZweEI1Wkpmb1NxVVJYNXdGaDB6U0ZSTkxscm5ScURqeXlDZ0dGYlM?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "산업 동향",
+      "title": "국내 AI 스타트업 솔트룩스, 2분기 매출 115억·전년比 64% 급성장…적자는 계속",
+      "body": "국내 AI 전문기업 **솔트룩스**가 2026년 2분기 매출 **115억 원**을 기록해 전년 동기 대비 **64% 성장**했다고 발표했다. 다만 영업손실은 지속되고 있으며, 회사 측은 '하반기 수주 성과가 실적에 반영될 것'이라고 밝혔다. 한국어 특화 LLM과 공공·기업 AI 솔루션을 양축으로 삼은 전략이 매출 성장을 견인하고 있으나, AI 인프라·R&D 투자 부담으로 수익성 달성은 미뤄지고 있는 상황이다.\n\n국내 AI 솔루션 시장이 빠르게 성장하고 있음을 실적으로 확인한 사례로, 특히 **공공기관 AI 도입 수요**가 하반기 성수기에 집중되는 패턴이 다시 확인됐다. 국내 중견 AI 기업들의 매출 급성장세는 기업용 AI 시장의 파이가 커지고 있음을 보여준다.",
+      "insight": "국내 AI 솔루션 시장이 '개념 검토' 단계를 넘어 '실제 예산 집행' 단계로 진입하고 있다. 매출 성장률 64%는 시장 자체가 폭발적으로 확대되고 있음을 의미하며, 공공·기업 AI 도입 수요가 하반기에 집중되는 계절성도 확인됐다. 이 시장에서 레퍼런스와 도메인 전문성을 갖춘 솔루션 기업이 빠르게 점유율을 확보할 수 있는 골든타임이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "솔트룩스의 64% 매출 성장은 국내 기업용 AI 솔루션 시장이 실제 예산으로 움직이고 있음을 입증한다. 이수시스템은 솔트룩스와 달리 HR·ERP 레퍼런스 500+를 보유한 '업무 도메인 특화 AI 파트너' 포지션으로, 단순 AI 솔루션이 아닌 기존 WORKUP·Smart HR 시스템과 AI를 결합한 패키지 제안이 가능하다. 하반기 공공기관 AI 예산 집행 시즌에 맞춰 AI 이력서 분석·HR AI Package 영업을 집중 강화해야 할 시점이다.",
+      "source": "디지털데일리",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE03TmxmWnVzUVFzMm4tR3JKX1ZTWEhQaDNZUUx3cUdQYXdSRnFiMTUwOGJFblBYM3Vsb2c5aFNjQUc3Y0pzRHl0WWxVRFIzcHoyd2t4WS1xOWxqX0E4ei1fT3VuS3E?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**AI 모델 가격전쟁이 공식화됐다.** Google Gemini 3.7 Flash 50% 인하, OpenAI·Anthropic 추가 인하 검토로 API 원가가 빠르게 낮아지고 있어, AI 응용 솔루션 기업에겐 원가 절감 기회다.",
+    "중국 AI(Z.ai GLM-5.3, DeepSeek 등)의 글로벌 품질 상향 평준화로 '누가 만든 모델이냐'보다 **'어떤 도메인에 얼마나 잘 접목했느냐'가 기업용 AI의 핵심 경쟁력**이 되고 있다.",
+    "국내 AI 솔루션 시장은 솔트룩스 사례처럼 이미 **실제 예산 집행 단계에 진입**했다. 하반기 공공·기업 AI 도입 시즌을 앞두고 HR·ERP 도메인 특화 레퍼런스를 가진 기업에 영업 골든타임이 열리고 있다."
+  ],
+  "isu_summary": "오늘 AI 뉴스의 핵심은 모델 가격 하락과 응용 레이어 경쟁력 부상이다. Gemini 3.7 Flash 50% 인하로 RAG 챗봇·HR AI Package의 운영 원가가 낮아지고, 국내 AI 솔루션 시장이 실제 예산 집행 단계에 진입한 것이 솔트룩스 실적으로 확인됐다. 이수시스템은 HR 레퍼런스 500+와 WORKUP·Smart HR 기존 고객 기반을 활용해, 하반기 공공·제조·건설사 대상 'AI 연동 HR 패키지' 영업을 집중 강화하는 것이 가장 현실적인 수익 기회다."
+}
