@@ -1,0 +1,72 @@
+{
+  "date": "2026.08.18 (화)",
+  "one_liner": "AI 모델 경쟁이 '성능'에서 '가격'으로 이동하는 사이, Anthropic은 워터마크·안전팀 해산·70억 달러 인수로 동시에 헤드라인을 장식했다.",
+  "news": [
+    {
+      "number": 1,
+      "category": "산업 동향",
+      "title": "AI 경쟁, 이제는 '얼마나 똑똑한가'보다 '얼마나 싼가'",
+      "body": "OpenAI·Anthropic·Google 등 주요 AI 랩들이 모델 성능 경쟁에서 **가격 경쟁**으로 전략 축을 이동하고 있다. Stripe가 AI 모델 라우팅 플랫폼 OpenRouter를 **70억 달러**에 인수하며 '가장 저렴하고 적합한 모델을 실시간으로 선택하는' 인프라가 핵심 전장으로 부상했다. 이는 기업이 특정 모델에 종속되지 않고 비용 효율을 극대화하는 멀티 모델 전략이 표준이 되고 있음을 보여준다.",
+      "insight": "AI 모델의 상품화(commoditization)가 가속화되면서 '어떤 모델을 쓰느냐'보다 '언제 어떤 모델을 얼마에 쓰느냐'를 결정하는 오케스트레이션 레이어가 새로운 권력이 되고 있다. 기업 입장에서는 단일 AI 벤더 의존 리스크를 줄이고 비용을 통제하는 멀티 모델 전략이 필수가 됐다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "AI 모델 가격 경쟁이 심화될수록 이수시스템의 기업용 AI 플랫폼은 특정 LLM에 고정하지 않고 비용·성능 기준으로 모델을 교체할 수 있는 멀티 LLM 아키텍처로 설계해야 한다. RAG 기반 챗봇과 HR AI Package 구축 시, OpenRouter 방식처럼 고객사가 Claude·GPT·국산 LLM 중 최적을 선택할 수 있는 유연한 구조를 영업 차별점으로 제시할 수 있다.",
+      "source": "tbreak.com / PYMNTS.com",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1MbGpxNXdlb2RiMXR6N3I4NnM3NUE0eG44cElWOEhfSTk3TVhfNG9kT0pSbUg2SndUbEVuRGNRMlFnUGRmZU5rbWVJQUdtWGducnFUeWRhQUkzQnh6U1E?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "글로벌 이슈",
+      "title": "OpenAI, AI 안전 평가 전담팀 조용히 해산…'누가 위험을 막나'",
+      "body": "OpenAI가 지난달 말 **안전 준비팀(Preparedness Team)**을 전격 해산한 것으로 파이낸셜타임스가 보도했다. 이 팀은 모델이 해킹·자율 탈출 등 심각한 위험을 초래할 가능성을 사전에 평가하고 완화책을 개발하는 역할을 맡았다. 책임은 다른 부서로 분산됐으나, 안전 전문 조직의 해체는 **리더십 이탈·수익화 압력**과 맞물려 업계 우려를 키우고 있다.",
+      "insight": "GPT 계열 모델이 기업 핵심 업무에 깊이 침투한 시점에, 안전 평가 전담 조직이 사라진다는 것은 규제 당국과 기업 고객 모두에게 신뢰 리스크 신호로 작용할 수 있다. AI 안전 거버넌스 공백은 EU AI Act 등 각국 규제 강화의 직접적 빌미가 될 수 있으며, 기업들은 AI 벤더 선택 시 안전 체계를 주요 기준으로 고려해야 한다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "고객사에 RAG 기반 챗봇·HR AI Package를 납품하는 이수시스템 입장에서, OpenAI 안전팀 해체는 GPT 계열 모델 단독 의존 구성의 리스크를 환기시킨다. 제안서 작성 시 '특정 벤더 안전 이슈에도 대응 가능한 멀티 LLM 구조'를 명시하고, 기업 고객의 AI 거버넌스 문서화 지원 서비스를 부가 메뉴로 검토할 만하다.",
+      "source": "The Verge / Financial Times",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team"
+    },
+    {
+      "number": 3,
+      "category": "모델 릴리스",
+      "title": "Anthropic, Claude 텍스트에 '보이지 않는 워터마크' 적용…EU AI법 준수 첫걸음",
+      "body": "Anthropic이 Claude가 생성한 텍스트에 **보이지 않는 워터마크**를 삽입하는 기술을 공개했다. Google DeepMind의 오픈소스 기술 **SynthID-Text**를 기반으로, 단어 선택 확률 패턴을 조작해 사람 눈에는 보이지 않지만 기계로 탐지 가능한 식별자를 심는다. 이는 EU AI Act의 AI 생성 콘텐츠 **투명성 표시 의무**를 충족하기 위한 조치다.",
+      "insight": "AI 생성 콘텐츠 식별 의무가 규제로 확산되면서 워터마킹은 선택이 아닌 필수 기술이 되고 있다. 기업이 AI를 보고서·이메일·계약서 작성에 활용할수록, '이 문서가 AI가 썼는가'를 증명하거나 부인하는 능력이 법적·윤리적 기준이 된다. AI를 업무에 도입하는 조직은 출력물 출처 관리 정책을 지금부터 마련해야 한다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "이수시스템의 기업용 RAG 챗봇·HR AI Package가 생성하는 인사 문서(채용 평가, 급여 통지 등)에도 향후 AI 생성 표시 의무가 적용될 수 있다. 현재 구축 중이거나 신규 제안 단계의 AI 솔루션에 SynthID-Text 방식의 워터마크 로깅 기능을 검토함으로써, EU 규제 대응이 필요한 외국계·수출기업 고객사에 차별화 포인트로 제시할 수 있다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/980869/anthropic-claude-watermarks-synthid-text-system"
+    },
+    {
+      "number": 4,
+      "category": "모델 릴리스",
+      "title": "Gemini 월간 활성 사용자 **10억 명** 돌파…Google의 조용한 AI 역전",
+      "body": "Google의 AI 어시스턴트 Gemini가 월간 활성 사용자 **10억 명**을 돌파했다는 분석이 나왔다. Android 기본 탑재, Google Workspace 연동, 검색 통합 등 **플랫폼 번들링 전략**이 폭발적 성장의 핵심 동력으로 꼽힌다. ChatGPT가 브랜드 인지도에서 앞서지만, 실제 일상 사용 규모에서는 Google의 생태계 장악력이 우위를 점하고 있다는 평가다.",
+      "insight": "AI 어시스턴트 경쟁에서 순수 성능보다 배포 채널과 생태계 통합이 사용자 규모를 결정하는 핵심 변수임이 다시 확인됐다. 기업용 AI 도입 시 단순히 '어떤 모델이 가장 똑똑한가'가 아니라, 기존에 쓰는 업무 도구(Gmail·Docs·Drive 등)와 얼마나 자연스럽게 연결되는지가 선택 기준이 된다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "Gemini가 Google Workspace와 깊이 통합되면서, 고객사 직원들이 HR·ERP 시스템 밖에서 Gemini로 인사 문의를 해결하는 경우가 늘 수 있다. 이수시스템의 WORKUP·Smart HR 챗봇은 Gemini가 대답할 수 없는 '우리 회사 규정 기반 개인화 답변'에 집중하는 RAG 기반 차별화를 강화해야 고객 이탈을 막을 수 있다.",
+      "source": "24/7 Wall St.",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNTlVVRGN5eGZkYUJXc3BJeDRWUElVY0xkcWwtY1pIbGFNalhMdkh1cVdBNk1QT0c5dnRJd2xBRVBBa2Ezb3RGdzFHcWg3c29JVHI0RnQ1LVYyRURjSEJFenAzbU0wVERrMWhnR3RVR3pSdTZjX3pTek1OaUtOZVlwQnIxa2tzTGdPSUc2djVTT3RuQ0JtY2R6WVJSbGRFTEFuWlFlUWNrdWNqSlZfcXFzR3dCUXhzVkpteWF0SzdFTDBpX19lVC1kdzM4cXBhRVp6X3kxUg?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "산업 동향",
+      "title": "대기업 AX 총력전 속 '기밀 유출 우려'는 현재진행형—한국 기업의 딜레마",
+      "body": "국내 대기업들이 AI 전환(AX)에 인력과 자본을 집중 투입하고 있지만, 사내 AI 도구 사용 과정에서의 **기업 기밀 유출 위험**이 해소되지 않은 채 확산되고 있다. 직원들이 업무 데이터를 외부 AI 서비스에 입력하는 행위가 일상화되면서, 보안 정책과 AI 활용 사이의 **제도적 공백**이 현장에서 충돌하고 있다. 삼성전자의 ChatGPT 유출 사태 이후에도 근본적 해결책 없이 우려가 반복되는 상황이다.",
+      "insight": "AI 도입 속도가 기업 보안 체계의 대응 속도를 압도하는 구조적 문제가 한국 대기업에서 본격화되고 있다. '쓰지 말라'는 금지령보다 '안전하게 쓸 수 있는 사내 AI 환경' 구축이 실질적 해법으로 부상하며, 온프레미스·프라이빗 클라우드 기반 기업용 AI 솔루션 수요가 증가할 전망이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "기밀 유출 우려는 이수시스템 RAG 기반 챗봇의 핵심 영업 논리다. 외부 AI 서비스 대신 고객사 내부 데이터만 학습하는 온프레미스·프라이빗 환경 구축을 전면에 내세우면, 보안에 민감한 제조·건설·금융 고객사에 즉각적인 구매 명분을 제공할 수 있다. HR AI Package의 경우 급여·인사 데이터가 포함되므로 '데이터 외부 미전송 보장' 문구를 제안서 첫 페이지에 배치하는 전략이 유효하다.",
+      "source": "news1.kr",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBEc3JMeGNCakV4SkxNeXRiY3hINjM1RVg4WW5BLWdlcEhlN1JzaVpGa0FweGNCNWRnRHFFRTRHTEdyRUNFbmN3Wkd2aVdXUG1CSE5PNW5DZnpETDBsMjJzemtsYmnSAWpBVV95cUxOU0VCOHJTdHVlWnhXdV9ieG12aHdweFo5aTR0T0pjWlYtdXcwREZnVkpNbWlTZ2YwOFlfdUxqSkw5VURZeFhRQnNwQnNpV2ZmOGVTUVNudWFrNFhQQ3dGY3U1ZDUySmdHUzNn?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**AI 경쟁의 무게중심이 '성능'에서 '가격·통합'으로** 이동 중—Stripe의 70억 달러 OpenRouter 인수가 '모델 라우팅'을 새 핵심 인프라로 확정했다.",
+    "OpenAI 안전팀 해산과 Anthropic 워터마크 도입은 같은 맥락—**AI 신뢰성과 투명성 규제**가 빠르게 현실화되고 있어 기업의 AI 거버넌스 정책 수립이 시급하다.",
+    "한국 대기업 AX 투자 열풍 속 **기밀 유출 딜레마**가 현재진행형—'안전한 사내 AI' 수요가 온프레미스·프라이빗 AI 솔루션 시장을 키우는 결정적 동력이 될 것이다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심 키워드는 '보안'과 '비용 효율'이며, 두 가지 모두 이수시스템 AI 사업의 직접적 영업 레버다. 국내 대기업 AX 가속화와 기밀 유출 우려의 공존은 외부 AI 서비스를 대체할 사내 전용 RAG 챗봇·HR AI Package 수요를 자극하고 있으며, AI 모델 가격 하락 트렌드는 이수시스템이 고객사에 제시하는 솔루션 구축 비용 부담도 낮춰준다. Anthropic의 워터마크 기술 공개는 향후 AI 생성 문서 관리 기능을 WORKUP 등 HR 솔루션에 선제적으로 탑재할 시 규제 대응형 제품으로 차별화할 수 있는 실마리를 제공한다."
+}
