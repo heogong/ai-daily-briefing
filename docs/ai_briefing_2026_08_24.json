@@ -1,0 +1,72 @@
+{
+  "date": "2026.08.24 (월)",
+  "one_liner": "주간 10억 명이 쓰는 ChatGPT, OpenAI는 여전히 적자—그래도 AI 경쟁은 오픈소스·음성·추천까지 전선이 넓어지고 있다.",
+  "news": [
+    {
+      "number": 1,
+      "category": "산업 동향",
+      "title": "주당 10억 명 쓰는 ChatGPT, 근데 OpenAI는 한 명 한 명마다 돈을 잃는다",
+      "body": "ChatGPT의 주간 활성 사용자가 **10억 명**을 돌파했지만, OpenAI는 현재 사용자 1인당 손실을 내는 구조에서 벗어나지 못하고 있다. 추론 비용(inference cost)이 수익보다 빠르게 늘어나는 것이 핵심 원인이며, 이는 GPT-5급 대형 모델 운영의 근본적 딜레마를 보여준다. 업계에서는 OpenAI가 '스케일 = 수익'이 아닌 '스케일 = 더 큰 적자'라는 역설을 어떻게 풀어낼지 주목하고 있다.",
+      "insight": "AI 산업 전반에서 '사용자 수 = 성공'이라는 공식이 흔들리고 있다. 추론 비용 절감 없이는 초대형 AI 서비스의 수익화가 구조적으로 어렵다는 신호이며, 이는 향후 유료화 전략 강화, 경량 모델 병행, API 과금 체계 개편 등을 촉진할 것이다. B2B 기업용 AI 시장에서는 '비용 예측 가능성'이 차별화 포인트로 부상할 전망이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "OpenAI의 구조적 적자 문제는 기업 고객들이 '비용 통제 가능한 사내 AI'로 눈을 돌리는 계기가 된다. 이수시스템의 RAG 기반 챗봇은 외부 API 호출을 최소화하고 사내 문서 기반으로 동작하는 구조라, '예측 가능한 AI 운영 비용'을 원하는 제조·건설·금융 고객사에 비용 효율성을 핵심 세일즈 포인트로 내세울 수 있다.",
+      "source": "qrcodepress.com",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1BMnFsMGlHbC1nR3gyVTFFZFZTci1lZjFuR09ZUl9DVlJpeGdveFNYSTJEbU1JQjdWOFlxV0k2aGZPeW44QzRoQWgtRnF2MDAzSS1IUUpTcE1nbDVYZS11R2pueDliOFNudWE5cGpRcWh3UTRBcTlpbHBJMkxJdUk?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "모델 릴리스",
+      "title": "OpenAI, 실시간 음성 대화 특화 'GPT-Live' 공개—AI가 전화를 받는 시대 본격화",
+      "body": "OpenAI가 실시간 음성 대화에 최적화된 **GPT-Live**를 공개했다. 기존 음성 모드보다 응답 지연(latency)을 대폭 줄이고 자연스러운 대화 흐름을 구현한 것이 특징으로, 고객 응대·콜센터·음성 비서 등 B2B 음성 AI 시장을 직접 겨냥한 것으로 분석된다. 출시와 함께 기업용 API도 함께 제공될 것으로 알려져, 기존 ARS·콜센터 솔루션과의 경쟁이 불가피해졌다.",
+      "insight": "음성 AI의 실시간화는 콜센터, 고객 상담, 의료 접수, 현장 보고 등 '사람이 전화를 받던' 모든 영역을 자동화 대상으로 만든다. 단순 텍스트 챗봇을 넘어 음성 인터페이스가 기업 AI의 주요 접점으로 자리잡는 분기점이 될 수 있으며, 음성 데이터 보안·온프레미스 처리 수요도 함께 커질 전망이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "GPT-Live의 등장은 이수시스템 챗봇 제품의 '텍스트 한계'를 상기시키는 동시에 음성 인터페이스 확장 필요성을 부각한다. 단기적으로는 HR AI Package에 음성 기반 인사 문의(급여·연차 조회) 기능을 외부 음성 API와 연동하는 형태로 고도화하는 방향을 검토할 수 있다. BizPTT(스마트 무전기)와의 시너지도 중장기 로드맵으로 고려 가능하다.",
+      "source": "scanx.trade",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQYmlvREJQejBhVVZXUVRlelN5cWZuTzVDbDVvNFRYNlNYaXBsb3o4TTd1WDJzS00tY2d3a29Ublc2UnREMlh0RkxMWXdZdkJuQno0TVU0Vmk4S0trem1iUUMzRVNyR0VnaFFSeGZ3QUdXU3FHc2JDMUF2aXNqQ3RrSUZsTGRaajk0NXlaclZHQk02M3RyOXo2SEFoaUNpYlNFeE11bmdyekVGX1Z5dnlKWFFNVGxFUQ?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "모델 릴리스",
+      "title": "중국 Z.AI, 오픈소스 모델 GLM-5.3 출시—'Gemini 3.5 Pro로 오해받을 만큼' 성능 충격",
+      "body": "중국 Z.AI가 공개한 **GLM-5.3**이 주요 벤치마크에서 오픈소스 AI 모델 최상위권을 기록했다. 실제로 일부 사용자들이 구글 Gemini 3.5 Pro로 오인할 정도의 성능이라는 평가가 나왔으며, Moonshot의 **Kimi K3**도 같은 날 오픈웨이트 AI 최전선을 밀어붙이는 모델로 주목받았다. 두 모델 모두 가중치를 공개해 기업이 자체 서버에서 구동할 수 있다는 점이 차별화 포인트다.",
+      "insight": "중국발 오픈소스 모델의 품질이 미국 상용 최전선 모델과 격차를 빠르게 좁히고 있다. 이는 기업이 외부 API에 의존하지 않고 자체 인프라에서 프런티어급 AI를 구동할 수 있는 '온프레미스 AI' 시대를 앞당긴다. 동시에 AI 공급망에서 중국산 모델의 신뢰성·보안 이슈가 글로벌 규제 논의와 맞물릴 가능성도 높아지고 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "오픈소스 고성능 모델의 등장은 이수시스템 RAG 챗봇의 기반 LLM을 유료 API 없이 구성할 수 있는 선택지를 넓혀준다. 특히 보안 민감도가 높은 공공·금융 고객사에 'GLM-5.3 같은 오픈소스 모델 + 이수시스템 RAG 레이어' 조합으로 폐쇄망 AI 구축을 제안하는 영업 시나리오가 현실적으로 가능해진다.",
+      "source": "Yicai Global",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPdWZHZ09tcnFYb2M4NXZQa2hoT1VOODQxRk1GVHMxRVVBS1lCT1FCYkh0NVVZTzJGQzFKV0tDNDZOelZzWGZOLUFJVGppTjJSU0xOY3A3d2pFNjd0V185aG54Vjc2V21DS0Q0VEptczdVUkxfS2NBRlJ6T3M0ZDh4MHhYbFNFczhWTVhZNWlUTkRWTFo0ZFNXN09QZlh0N0dmVWY1Um00Y2FkVjNjR2dUY3Bn?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "산업 동향",
+      "title": "Netflix, LLM이 자체 추천 엔진 꺾었다—AI가 '피처 엔지니어링 20년'을 이겼다",
+      "body": "Netflix가 수십 년간 쌓아온 피처 엔지니어링(feature-engineered) 기반 추천 시스템과 LLM 기반 추천을 직접 대결시킨 결과, **LLM이 승리**했다고 밝혔다. 사용자 시청 이력, 메타데이터, 텍스트 맥락을 결합한 LLM 방식이 기존 협업 필터링을 성능 면에서 앞선 것으로, 추천 시스템 분야에서 LLM의 실무 적용 가능성을 증명한 첫 대형 레퍼런스로 평가받는다.",
+      "insight": "전통적인 룰 기반·통계 기반 시스템이 LLM에 역전되는 패턴이 추천 엔진에서 공식화됐다. 이는 HR 매칭, 공급망 예측, 금융 심사 등 '데이터 기반 판단' 영역 전반에서 LLM 전환 논의를 가속할 것이다. 단, 추론 비용과 설명 가능성(explainability) 이슈는 기업 도입의 현실적 장벽으로 남아있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "Netflix 사례는 이수시스템 'AI 이력서 분석' 제품의 고도화 방향에 직접적인 시사점을 준다. 기존 키워드 매칭·점수 기반 채용 스크리닝을 LLM 기반 맥락 이해형으로 전환하면 직무 적합도 판단의 정확도를 높일 수 있다. HR 솔루션 500+ 레퍼런스 고객사에 '이력서 분석 AI 업그레이드'를 추가 구독 옵션으로 제안할 수 있는 근거 사례가 생겼다.",
+      "source": "eGamers.io",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPR0xoTXJQWkFhSzQyUEszRTJPMVZ4aVhJdTdQa3A1Vk40NDUxaXJBR3pNYmRlSmpvMlpDTnpjbl9jbUIxM09mdkd4UldNSVBRVHJrMzJVeHh4QU1HTk1NY3hxOXlINldjQ2dwc0ZqTEhOazVQdUtJdFlabXZLT3NNVzFQTUNFR3dkOXNHSXhLaGtibTVYZ19vaGRXTm9CYXJQaDc5dWZabw?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "산업 동향",
+      "title": "삼양그룹 회장 'AX로 생산성 혁신'—대기업 오너가 직접 AI 전환 선언하는 시대",
+      "body": "김윤 삼양그룹 회장이 **AX(AI 전환)**를 바탕으로 한 생산성 향상과 스페셜티 소재 중심의 사업 재편을 공식 선언했다. 단순 디지털화를 넘어 AI를 그룹 전략의 핵심 축으로 내세운 것으로, 제조·화학 업종의 대기업이 AX를 최고 경영진 의제로 끌어올렸다는 점에서 업계 주목을 받고 있다. 이는 삼양 내부의 ERP·HR 등 기간 시스템과 AI 접목 수요로 이어질 가능성이 높다.",
+      "insight": "오너 경영진이 직접 AX를 선언하는 패턴이 국내 대기업 전반으로 확산되고 있다. 이는 IT 부서 주도의 파일럿 실험 단계를 넘어, AI 투자가 경영 계획에 명시적으로 반영되는 단계로의 전환을 의미한다. 제조·화학·건설 등 전통 산업군의 AI 도입 예산이 실질적으로 집행되는 시기가 임박했다는 신호로 읽힌다.",
+      "isu_area": "디지털서비스 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "삼양그룹처럼 AX를 오너 과제로 설정한 제조·화학 그룹사들은 ERP(SAP) 고도화, HR 시스템 AI 연동, 업무 자동화(RPA) 수요를 한꺼번에 발생시킨다. 이수시스템은 SAP 파트너사이자 HR 솔루션·RPA 공급사로서, AX 전환을 선언한 유사 중견·대기업 그룹사를 타깃으로 'ERP+HR+AI 패키지' 제안 영업을 강화할 적기다. 이수그룹 계열사 레퍼런스를 활용한 동종 업종 확장이 유효하다.",
+      "source": "세계일보",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9OU1NOOTNkNzRMWExULTN5dUtsOTJJVERpazk0SXZudk1mSGVvRmQ5WDRVc0JkdjQ1Z2lLVWJCU0lnWjNodnFXdnJUTU5Oc0VjTlJ2NjRrbjZSdW5rUjY3eXJ6OGlBM0RFQ0RV0gFUQVVfeXFMT3JfLUJXN25SRXJiNS01Q3BocTFiYjJ4WG9tQnhPMU9JVHhaUlp6amRvc0JwX3hQVkhrSXhCQXBBU2w3TkZWeVptQjF5WWJPY3hMYlJH?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**ChatGPT 주간 사용자 10억 명 돌파**에도 OpenAI는 적자—AI 대중화와 수익화는 아직 별개의 문제이며, B2B 시장에서 '비용 예측 가능한 AI'가 차별화 포인트로 부상한다.",
+    "중국 오픈소스 모델(GLM-5.3, Kimi K3)이 프런티어 수준에 도달하면서, **폐쇄망·온프레미스 AI 구축**이 보안 민감 기업의 현실적 선택지로 떠오르고 있다.",
+    "Netflix LLM 추천 승리, 삼양그룹 AX 선언—**AI가 파일럿을 넘어 핵심 운영 시스템으로 진입**하는 변곡점이 제조·미디어 등 전통 산업 전반에서 동시에 포착되고 있다."
+  ],
+  "isu_summary": "오늘 뉴스의 공통 흐름은 'AI 도입의 실행 단계 진입'이다. 삼양그룹 AX 선언처럼 오너 과제화된 AI 전환 수요는 이수시스템의 SAP ERP·RPA·HR AI 패키지를 묶은 통합 제안의 영업 기회를 키운다. 동시에 GLM-5.3 같은 오픈소스 고성능 모델의 등장은 보안이 중요한 공공·금융 고객사에 '폐쇄망 RAG 챗봇' 구성 비용을 낮춰, AI 사업 수주 문턱을 낮추는 긍정적 환경이 조성되고 있다. OpenAI의 구조적 적자 이슈는 역설적으로 외부 API 의존도를 줄인 이수시스템형 사내 AI 솔루션의 경쟁력을 부각시키는 맥락으로 활용할 수 있다."
+}
