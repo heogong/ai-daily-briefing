@@ -1,0 +1,72 @@
+{
+  "date": "2026.08.28 (금)",
+  "one_liner": "AI 사이버 위협 공동 경보부터 Alphabet 시총 700조 증발까지, AI 산업의 명암이 동시에 드러난 하루",
+  "news": [
+    {
+      "number": 1,
+      "category": "글로벌 이슈",
+      "title": "OpenAI·Anthropic·Google 등 130개사 '긴급 성명': AI 사이버공격 막을 골든타임 얼마 없다",
+      "body": "OpenAI, Anthropic, Google, Microsoft, AWS를 포함한 **130개 이상의 기업**이 공동 성명을 발표하며 AI 기반 사이버공격에 맞서 '글로벌 집단 행동'을 촉구했다. 성명은 '준비할 수 있는 창(window)이 제한되어 있다'고 경고하며, AI가 해킹·피싱·악성코드 자동화에 악용되는 사례가 급증하고 있다고 밝혔다. 실제로 카스퍼스키 보고서에 따르면 **2026년 상반기 AI 서비스 취약점이 전년 대비 10배** 급증했으며, AI 서버를 노린 API 키 탈취 공격도 잇따르고 있다.",
+      "insight": "빅테크가 경쟁을 뛰어넘어 공동 대응을 선언할 만큼 AI 사이버위협이 산업 전체의 실존적 리스크로 부상했다는 신호다. 기업들이 AI 솔루션 도입 시 보안 검증을 필수 요건으로 요구하는 흐름이 강화될 것이며, AI 보안 감사·컴플라이언스 수요가 단기간에 급증할 가능성이 높다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "이수시스템의 RAG 기반 챗봇·AI 플랫폼을 고객사에 제안할 때, AI 보안 취약점 이슈를 역으로 활용할 수 있다. '검증된 온프레미스·프라이빗 환경 기반 AI'라는 점을 강조해 제조·건설·공공 고객사의 보안 우려를 해소하는 영업 논리로 활용하고, 기존 NCP 클라우드 파트너 역량과 결합해 보안 아키텍처 컨설팅으로 확장 가능하다.",
+      "source": "TechCrunch",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPWml1Y29PMkd5TmJVMk1wWTZEYnd6THNkcEFBNWdMWGhfei1SbG1xWkN5NkU4RERwc3hVX0U1dl80NWI5WUR4NnJFTzRYZVlJTXlSUnd1aU9YQ1lWVHJDNmFRblc1aDdSVXg5ZDZzcE11N1Z2Y0FhVTZWdU5jbzVXUFVTbGI5TWI5NmdsdEZZMHFpMEFiTWJPczBXTDdIbzJSYjBOdlR1LTZITU85OHJCV2ZsNm5xbkh1eWR0WWJRckk5dkk?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "산업 동향",
+      "title": "구글 Alphabet, 3개월 만에 시총 700조 원 증발…인재 유출·모델 지연 이중고",
+      "body": "Alphabet의 시가총액이 최근 3개월 사이 **약 6,920억 달러(약 950조 원)**가 증발하며 투자자들의 우려가 커지고 있다. 핵심 원인은 두 가지다. 첫째, 핵심 AI 연구 인력이 Anthropic 등 경쟁사로 잇따라 이탈하고 있으며, 둘째, 차세대 Gemini 모델 출시가 지연되며 AI 경쟁력에 의문이 제기되고 있다. 반면 Google DeepMind는 전 OpenAI 임원 출신인 **Barret Zoph를 리서치 VP로 영입**하며 반격을 준비 중이다.",
+      "insight": "한때 AI 패권을 쥔 것처럼 보였던 Alphabet조차 인재 이탈과 모델 지연으로 시장 신뢰를 잃을 수 있다는 점은 AI 산업 전반에 중요한 교훈이다. AI 역량의 지속성은 모델 성능만큼이나 인재 확보와 실제 제품 출시 속도에 달려 있으며, 후발 주자와의 격차가 예상보다 빠르게 좁혀질 수 있음을 시사한다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "Google의 AI 경쟁력 약화는 단기적으로 이수시스템의 AI 솔루션 고객사들이 특정 빅테크 플랫폼에 과도하게 의존하는 전략을 재검토할 계기가 된다. 이수시스템의 AI 플랫폼이 특정 LLM에 종속되지 않는 멀티모델 구조임을 어필하면, 고객사의 벤더 리스크 분산 수요를 공략하는 차별화 포인트가 될 수 있다.",
+      "source": "헤럴드경제",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5SWU1SYjhyUW9Qd1YzMmVDTEswSXFPSEhxM1BDdk1BN0Vqc3RjYlNVeUVrNEVnaDFoUkV5eUs5OE1QUUlCVTRITlV3YXI1cVYyWGhBQkZTdw?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "모델 릴리스",
+      "title": "실리콘밸리 뒤흔든 'Ox Alpha', 알고 보니 中 즈푸AI 모델…글로벌 AI 판세 재편",
+      "body": "최근 실리콘밸리에서 화제가 된 고성능 AI 모델 **'Ox Alpha'가 중국 즈푸AI(Zhipu AI)의 작품**으로 확인되며 업계에 충격을 줬다. 서구 기술 커뮤니티에서 출처를 모르고 극찬하던 모델이 중국산으로 밝혀진 것이다. 이 사건은 중국 AI 모델의 실력이 이미 미국 최고 수준에 근접했음을 보여주는 동시에, AI 모델의 국적·출처 식별이 점점 어려워지고 있는 현실을 드러냈다.",
+      "insight": "중국 AI 모델이 성능 면에서 글로벌 최상위권에 진입했다는 것은, AI 기술 패권이 미국의 독점 영역이 아님을 의미한다. 기업들이 AI 솔루션을 도입할 때 모델의 국적·데이터 관할권·보안 이슈를 더욱 면밀히 검토해야 하는 시대가 됐으며, 규제 당국의 AI 수출통제 논의도 더욱 복잡해질 전망이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "중국산 고성능 모델의 등장은 이수시스템 AI 솔루션 고객사(특히 방산·공공·금융)의 데이터 주권 우려를 자극할 수 있다. WORKUP·Smart HR 등에 AI를 접목할 때 '국내 모델 또는 검증된 공급망 기반 LLM 사용'이라는 점을 명시적으로 어필하면, 공공기관 및 보안 민감 고객사 공략에 유효한 차별화 포인트가 된다.",
+      "source": "조선일보",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTWxaT3B0RnlxNG45N3BBNTNVbEo2cWRFdU10bDJUeWZMMjd1ZXVJMV9LM2dXdDkxQ2Y1WTFxdHEtQ3F1ZDYyREI4elA3b3BDcGowdHRYbFVmWGVOYjZGaFpMelZXTENnWWY5S1FmWV9naHl1TEZpUXFjWFU5WURyelpsZUhYUlMz?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "일자리·사회",
+      "title": "HP, AI 도입 가속화로 최대 6,000명 감원…퇴직 비용만 2.8억 달러",
+      "body": "HP가 **AI 도입 가속화를 이유로 4,000~6,000명을 감원**한다고 발표했다. 퇴직 인센티브 등으로 발생하는 비용은 **2억 8,000만 달러**에 달한다. 이번 조치는 AI가 실제로 기업 내 인력 구조를 바꾸고 있는 구체적 사례로, 미국 직장인들이 AI를 필수 스펙으로 인식해 과거 경력까지 수정하는 현상이 동반되고 있다. 글로벌 기업들의 AI 기반 구조조정은 2026년 들어 뚜렷한 트렌드로 자리 잡고 있다.",
+      "insight": "AI로 인한 인력 감축이 더 이상 미래 예측이 아니라 현실로 진행되고 있다. 기업들이 AI 투자를 단순한 생산성 향상 수단이 아닌 비용 절감·인력 재편의 수단으로 활용하는 흐름이 명확해지면서, HR 시스템의 역할 변화(대규모 인력 변동 관리, 리스킬링 지원 등)에 대한 요구도 함께 커질 것이다.",
+      "isu_area": "HR 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "AI 도입에 따른 대규모 인력 재편은 WORKUP·Smart HR의 영업 기회다. 제조·건설 고객사가 AI 자동화로 조직 구조를 바꿀 때 인력 재배치, 퇴직 관리, 리스킬링 이력 추적 등의 기능 수요가 급증한다. 특히 WORKUP의 클라우드 HR 기능에 AI 기반 인력 시뮬레이션 또는 퇴직금 자동 산정 기능을 강조하면 구조조정을 준비 중인 고객사에 즉각적인 영업 포인트가 된다.",
+      "source": "데이터투자",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9ZTVk3UlJoSy1hU0gtaTVpMERWcTN5TDBVYlZ6bTI5Ty1xQ0R6ajh5bTV6d1hmU0dicm9PVEl1dFgtQ09acWxRUkxWcG05VnpCOWhkSlBkNFpUNUM3bHJtT0I5WTczT0EyT1RZLURrQk9JVFk?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "산업 동향",
+      "title": "정부 공식 K-LLM 평가 2회차 발표…SK텔레콤 1위, 한국형 AI 경쟁 본격화",
+      "body": "한국 정부가 **K-LLM(한국형 대형언어모델) 2차 평가 결과를 공식 발표**했으며, **SK텔레콤이 1위**를 차지했다. 이번 평가는 국산 LLM의 성능을 정부 주도로 객관적으로 검증하는 체계로, 공공기관·기업의 AI 도입 시 모델 선정 기준으로 활용될 가능성이 높다. K-LLM 생태계가 형성되면 국내 기업용 AI 솔루션 시장에서 '검증된 국산 모델 기반 솔루션' 수요가 빠르게 확대될 것으로 전망된다.",
+      "insight": "정부 주도의 K-LLM 평가 체계가 자리를 잡으면 공공·금융·의료 등 규제 산업에서 '정부 검증 모델 사용'이 조달 요건으로 자리 잡을 가능성이 있다. 이는 국산 LLM을 백본으로 활용하는 기업용 AI 솔루션 사업자에게 진입 장벽이자 차별화 기준이 되며, 한국 AI 솔루션 시장의 판도를 바꿀 중요한 정책적 흐름이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[정부 사업]",
+      "isu_insight": "K-LLM 2차 평가 결과 공개는 이수시스템의 RAG 챗봇 및 AI 플랫폼 영업에 직접적인 기회다. 공공기관·금융사 고객이 'K-LLM 검증 모델 기반 솔루션'을 요구할 경우, 이수시스템이 SK텔레콤 등 1위 모델과의 연동을 선제적으로 준비해두면 공공 AI 사업 입찰에서 경쟁력을 확보할 수 있다. 특히 정부 조달 채널을 통한 HR AI Package 공급 시나리오를 검토할 시점이다.",
+      "source": "매일경제",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBvdnhPdjM2clBTTnBrRmZ6aWlvV2N4ZFRYdVkyWG8xbjdWdDBOaW1CQzNBS29EY2Q0anQ4OTlGLXliZGRDaVhhR2VnSWczdUJHTlJj?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**130개 이상의 글로벌 빅테크가 AI 사이버위협 공동 경보**를 발령했다. AI 취약점이 1년 새 10배 급증한 만큼, AI 도입 기업이라면 보안 아키텍처 점검이 시급하다.",
+    "**HP의 최대 6,000명 감원**에서 보듯, AI로 인한 인력 재편은 이미 현실이다. HR 시스템의 역할이 '관리'에서 '조직 변화 대응'으로 빠르게 확장되고 있다.",
+    "한국 정부의 **K-LLM 2차 평가 결과 발표**는 국내 기업용 AI 솔루션 시장에 '검증된 국산 모델 기반'이라는 새로운 선택 기준을 만들고 있다. 공공 AI 사업 준비를 서두를 필요가 있다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심은 세 가지다. 첫째, AI 사이버위협 급증과 K-LLM 정부 평가 체계 정착은 이수시스템의 AI 플랫폼·챗봇 솔루션에 '보안성'과 '국산 모델 연동'이라는 두 가지 새로운 영업 무기를 제공한다. 둘째, HP 등 글로벌 기업의 AI 기반 대규모 구조조정 트렌드는 WORKUP·Smart HR의 인력 재편 지원 기능 수요를 국내 제조·건설 고객사에서 자극할 수 있는 실질적인 영업 기회다. 셋째, 중국산 Ox Alpha의 등장으로 데이터 주권과 모델 출처에 대한 고객 민감도가 높아질 것이므로, 이수시스템은 자사 AI 솔루션의 데이터 처리 환경과 모델 공급망을 명확히 문서화해 공공·금융 고객사 제안 시 신뢰 자료로 활용할 것을 권장한다."
+}
