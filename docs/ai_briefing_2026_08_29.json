@@ -1,0 +1,72 @@
+{
+  "date": "2026.08.29 (토)",
+  "one_liner": "K-AI가 챗GPT를 정확도로 제치며 500억 투자 유치, AI 사이버 위협은 전방위로 확산",
+  "news": [
+    {
+      "number": 1,
+      "category": "모델 릴리스",
+      "title": "챗GPT 정확도 넘은 K-AI, 1400만 연구자 사로잡고 500억 뭉칫돈 유치",
+      "body": "국내 AI 스타트업이 개발한 연구 특화 AI가 챗GPT를 정확도에서 앞서며 전 세계 **1400만 명**의 연구자들 사이에서 빠르게 확산되고 있다. 해당 기업은 이번 성과를 발판으로 **500억 원** 규모의 투자 유치에 성공했다. 특정 도메인에 집중한 버티컬 AI 전략이 글로벌 빅테크의 범용 모델을 상대로 유효하다는 것을 입증한 사례로 주목받고 있다. 이 AI는 RAG(검색 증강 생성) 기반으로 학술 논문 및 연구 데이터를 고정밀로 처리하는 데 강점을 보이며, 국내외 대학·연구기관의 채택이 빠르게 늘고 있다.",
+      "insight": "범용 LLM과의 정면 경쟁 대신 **도메인 특화** 전략이 글로벌 시장에서도 통한다는 것을 보여준 의미 있는 사례다. 연구·의료·법률·금융 등 전문 지식이 필요한 영역에서 버티컬 AI의 정확도가 범용 모델을 앞설 수 있으며, 이는 국내 AI 스타트업의 글로벌 진출 가능성을 높이는 동시에 대형 플랫폼 기업들에게도 도메인 특화 파트너십 전략을 재검토하게 만드는 신호다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "HR·인사 도메인에 특화된 이수시스템의 AI 접근 방식이 이번 사례와 같은 맥락이다. WORKUP·Smart HR 고객 데이터를 활용한 RAG 기반 HR AI Package의 정확도 고도화가 경쟁 우위 확보의 핵심이 될 수 있으며, '인사 도메인 특화 AI'라는 포지셔닝을 영업 현장에서 적극 활용할 시점이다.",
+      "source": "머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE53TnRGLVhrSHR6OHJpYVY5MlJrTDZ5TEhBT3V0aWxfc3lmU3FQNFRENHVicndNUDJiaUlJVmdmRXdPbUdmVGFub0dqTnhzVVdSU3RxSnJWZ3pXd04zV3RFZWZoU0x3VGJWTlJRUVJtNNIBb0FVX3lxTE53TnRGLVhrSHR6OHJpYVY5MlJrTDZ5TEhBT3V0aWxfc3lmU3FQNFRENHVicndNUDJiaUlJVmdmRXdPbUdmVGFub0dqTnhzVVdSU3RxSnJWZ3pXd04zV3RFZWZoU0x3VGJWTlJRUVJtNA?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "글로벌 이슈",
+      "title": "OpenAI·Google·MS 포함 100개사 공동 경고: AI 사이버 공격 쓰나미가 온다",
+      "body": "OpenAI, Google, Microsoft, Anthropic을 포함한 **100개 이상**의 기술 기업들이 에너지·의료·금융 등 핵심 산업을 대상으로 한 AI 기반 사이버 공격이 급격히 증가하고 있다며 공동 서한을 발표했다. 주목할 점은 Meta, Nvidia, Apple은 이 서명에 참여하지 않았다는 것이다. Kaspersky 보고서에 따르면 **2026년 상반기 AI 서비스 취약점 건수는 전년 동기 대비 10배** 급증했으며, AI 랜섬웨어가 인간 개입 없이 공격의 상당 부분을 자율 수행하는 단계에 이르렀다. MCP(모델 컨텍스트 프로토콜) 원격 코드 실행, 블라인드 프롬프트 인젝션 등 AI 인프라를 직접 겨냥한 신종 공격 벡터도 확인됐다.",
+      "insight": "AI가 공격 도구이자 공격 대상이 되는 **이중 위협 시대**가 본격화됐다. 기업들이 AI를 업무에 도입할수록 AI 시스템 자체의 보안 취약점이 새로운 리스크가 되며, 사이버 보안 솔루션 시장에서 'AI 보안' 특화 수요가 폭발적으로 증가할 전망이다. 100개 이상 빅테크의 공동 경고는 이 문제가 개별 기업 차원을 넘어 산업 전반의 의제가 됐음을 의미한다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[리스크]",
+      "isu_insight": "이수시스템이 운영 중인 RAG 기반 챗봇·AI 플랫폼 및 WORKUP SaaS 서비스도 프롬프트 인젝션·API 취약점 점검이 시급하다. 고객사에 AI 솔루션을 납품할 때 보안 취약점 관리 방안을 함께 제시하면 신뢰도 제고와 함께 추가 SI 기회로 연결될 수 있다. SK텔레콤 중심 AI 보안 컨소시엄([57]) 동향도 참고해 협력 가능성을 검토할 필요가 있다.",
+      "source": "The News International / H2S Media / Kaspersky",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOb1VYV0VnWFRiTDI2NTBWWG9xTVQ4VEdnc1Z2X3NZdUpIRFdQZE5panN1MjBrSUk0bkhMclYxVmlRVk9PZkNDMjNocGRKSE9xRFI2UEFBelJEZ0ZpMVhMM2NNOHRJa3hhLVJFWklyekU1bUkwaHl0MmNndllsZzZRNVY3ZjdwckZIYkpHRXozZkrSAZABQVVfeXFMTm9VWFdFZ1hUYkwyNjUwVlhvcU1UOFRHZ3NWdl9zWXVKSERXUGROaWpzdTIwa0lJNG5ITHJWMVZpUVZPT2ZDQzIzaHBkSkhPcURSNlBBQXpSRGdGaTFYTDNjTTh0SWt4YS1SRVpJcnpFNW1JMGh5dDJjZ3ZZbGc2UTVWN2Y3cHJGSGJKR0V6M2ZK?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "산업 동향",
+      "title": "SKT·KT·카카오 컨소시엄, 국가 'AI for All' 프로젝트 선정",
+      "body": "한국 정부가 추진하는 국가 AI 보급 사업 **'AI for All'** 프로젝트에 SK텔레콤, KT, 카카오가 각각 이끄는 컨소시엄이 선정됐다. 이 사업은 중소기업·공공기관·일반 국민 등 폭넓은 계층에 AI 기술 접근성을 확대하는 것이 목적이다. 같은 기간 SK텔레콤은 업스테이지·SK쉴더스 등을 포함한 **AI 보안 컨소시엄**도 별도로 구성하며, AI 확산과 보안을 동시에 챙기는 투트랙 전략을 전개하고 있다. 이 프로젝트들은 공공 및 산업 전반의 AI 인프라 저변 확대를 목표로 정부 예산이 투입되는 대규모 정책 사업이다.",
+      "insight": "정부 주도 **'AI 전국민 확산'** 정책이 본격 실행 단계에 진입하면서, AI 솔루션·인프라·교육 분야 전반에 걸쳐 공공 발주 시장이 열리고 있다. 대형 통신사 중심 컨소시엄 구조는 협력사와 파트너사에게도 간접 사업 기회를 제공하며, 특히 AI 보안·AI 플랫폼·AI 교육 영역의 중견 솔루션 기업들에게 수혜가 예상된다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[정부 사업]",
+      "isu_insight": "국가 'AI for All' 사업은 이수시스템이 보유한 HR AI Package, RAG 기반 챗봇, RPA 솔루션의 공공 납품 기회와 직결된다. SKT·KT 컨소시엄의 서브 파트너로 참여하거나, 제조·건설·공공 분야 고객사를 대상으로 AI 도입 컨설팅 서비스를 묶어 정부 보조 사업과 연계하는 영업 시나리오를 선제적으로 준비해야 한다.",
+      "source": "Telecompaper / 리버티코리아포스트",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxORmxqc3I4SDFWaWYzQnhhSHBzN0tnZUlXMHFja1k3OHg2WTFNRGZiOHV3OTkxLUx4TDRGbXZMbmxJT3VBT1pGdjJjMUg3a0JFVlRzUXRITzJ3MnJ3cVpDZEFVR2FTWmtOcUhQaFljS3RaTlNNV2hLa0dvS2g2d20xR2NHZzVXWU55R2l2NzE3T2Zqdi1sbjhmeXVRZjN3WVpDTVVVR3U3WEYwRHd0V2JRVVN1dEJMQQ?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "모델 릴리스",
+      "title": "구글, 직원들 사이에서 Gemini 3.8 Flash 내부 테스트 시작… 출시 임박 신호",
+      "body": "구글 직원들이 내부적으로 **Gemini 3.8 Flash** 모델을 테스트 중인 것으로 확인됐다. 직전 버전 출시로부터 불과 몇 주 만에 후속 버전 테스트가 시작된 것으로, AI 모델 릴리스 사이클이 극도로 빨라지고 있음을 보여준다. 배경으로는 AI 연산 비용 절감 압박이 지목된다. 또한 구글은 Gemini의 **법률·금융 특화 플랜**을 2026년 내 공식 출시할 예정이라고 밝혀, 기업용 버티컬 시장 공략도 본격화하고 있다. 한편 Google DeepMind는 경쟁사들의 공격적인 인재 영입으로 엘리트 AI 연구 인력 비중이 감소하고 있다는 분석도 나왔다.",
+      "insight": "AI 모델 릴리스 주기가 **월 단위 이하**로 단축되면서, 기업 AI 도입 담당자들은 어떤 버전을 기반으로 제품을 구축할지 결정하기가 더 어려워졌다. 동시에 구글의 법률·금융 특화 플랜 출시는 범용 AI 플랫폼이 버티컬 시장까지 직접 진출한다는 의미로, 도메인 특화 AI 솔루션 기업들에게 경쟁 압력으로 작용할 수 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "구글 Gemini의 법률·금융 플랜 출시는 향후 HR·인사 도메인 특화 플랜으로의 확장 가능성을 시사한다. 이수시스템은 구글·OpenAI 등 빅테크 모델을 API로 연동하는 현재 구조를 유지하면서, HR 도메인 데이터와 프로세스에 대한 이해도를 핵심 차별점으로 강화해야 한다. 모델 자체보다 '인사 업무 컨텍스트를 얼마나 잘 아는가'가 경쟁력의 본질임을 고객사에 지속적으로 어필할 필요가 있다.",
+      "source": "finance.biggo.com / Cryptopolitan / TechnoSports",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBSUmJkQTBOLXdRZy1SRnR2dkFrM1dNbWxHT3c4LU40T2NLbWhOY2pPaDRUU3JKZUtrWWJmaVJWYmJ6NDdLVHVVYzFqUkdTWVVVMU1NVi14T1Rmc3lFaW5pQ3p4UGlXTFJwSjZOTFpIbGxva0MtclE?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "글로벌 이슈",
+      "title": "법원 '앤트로픽 블랙리스트는 위헌'… 트럼프 행정부의 AI 기업 제재 제동",
+      "body": "미국 연방법원이 트럼프 행정부가 올해 초 **Anthropic을 국방부 입찰에서 배제**한 조치가 위헌이라고 판결했다. 법원은 행정부가 Anthropic의 **'AI 안전 기준 설정'**에 대한 보복으로 불법적으로 블랙리스트에 올렸다고 판단했다. 이 사건은 3월 캘리포니아 연방지방법원에 제기된 소송으로, AI 기업의 표현·정책 활동이 정부 조달 시장 참여 자격에 영향을 미칠 수 없다는 원칙을 재확인했다. 한편 Anthropic은 70억 달러 규모의 MatX 인수 대신 칩 설계 파트너십으로 전략을 선회하고 있으며, **초대형 IPO** 준비도 병행 중인 것으로 알려졌다.",
+      "insight": "AI 기업의 안전·윤리 정책 수립 활동이 정부 제재의 빌미가 될 수 없다는 법적 선례가 만들어졌다. 이는 AI 기업들이 안전 기준을 자체적으로 설정하고 공론화하는 활동을 위축 없이 지속할 수 있는 기반이 된다. Anthropic의 IPO가 현실화될 경우 AI 업계 전반의 기업가치 재평가와 투자 심리 회복에 중요한 기준점이 될 전망이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "Anthropic의 IPO 추진과 법적 승소는 Claude API 기반 서비스의 공급 안정성과 기업 신뢰도에 긍정적 신호다. 이수시스템이 RAG 챗봇·HR AI Package에 Claude를 활용하고 있다면 Anthropic의 사업 지속성 리스크가 낮아진 것으로 판단할 수 있으며, 고객사에 '안정적 AI 파트너사 기반의 솔루션'이라는 점을 어필하는 데 활용 가능하다.",
+      "source": "The Verge / 한국일보",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/985947/anthropic-supply-chain-risk-lawsuit-judge-ruling"
+    }
+  ],
+  "takeaways": [
+    "**도메인 특화 AI**가 범용 LLM을 이기는 시대: K-AI의 챗GPT 정확도 초과는 버티컬 전략의 유효성을 증명했다.",
+    "AI 사이버 위협이 **10배 급증**하며 AI 보안이 새로운 필수 인프라로 부상, 공공·기업 모두 대응 예산 확보에 나설 것이다.",
+    "한국 정부의 **'AI for All'** 사업 선정으로 공공 AI 시장이 본격 개화, 국내 중견 IT 솔루션 기업에게도 협력 기회의 문이 열렸다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심은 세 가지로 압축된다. 첫째, K-AI의 챗GPT 정확도 초과 사례는 이수시스템의 HR 도메인 특화 AI 전략이 올바른 방향임을 확인시켜 주며, HR AI Package의 정밀도 고도화를 가속화해야 할 시점임을 시사한다. 둘째, 국가 'AI for All' 사업에 SKT·KT·카카오 컨소시엄이 선정된 만큼, 이수시스템은 이들 대형사의 서브 파트너 혹은 공공 고객사의 AI 도입 파트너로 연계되는 영업 경로를 즉시 탐색해야 한다. 셋째, AI 서비스 취약점이 1년 새 10배 급증한 환경에서 WORKUP SaaS 및 RAG 챗봇의 보안 점검·인증 강화는 고객 신뢰 확보와 직결되는 선제적 과제다."
+}
