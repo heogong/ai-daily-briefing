@@ -1,0 +1,72 @@
+{
+  "date": "2026.08.31 (월)",
+  "one_liner": "OpenAI-Cursor 결별·Anthropic 저작권 소송·Google 가격 인하로 AI 플랫폼 판이 빠르게 재편되는 하루",
+  "news": [
+    {
+      "number": 1,
+      "category": "산업 동향",
+      "title": "OpenAI, SpaceX 인수 후 Cursor에 GPT 모델 공급 중단…Anthropic이 반사이익",
+      "body": "OpenAI가 코딩 AI 도구 **Cursor**에 GPT 모델 제공을 중단하기로 결정했다. 이는 OpenAI의 **SpaceX 인수** 이후 전략적 방향 재조정의 일환으로 해석되며, 코딩 AI 시장에서 직접 경쟁 관계에 있는 Cursor와의 파트너십을 끊은 것이다. 빈자리를 노린 **Anthropic은 즉각 Claude 사용 한도를 대폭 상향**하며 Cursor 사용자 유치에 나섰고, 업계는 이를 AI 개발 도구 시장의 본격적인 플랫폼 전쟁 신호탄으로 보고 있다.",
+      "insight": "AI 모델 공급사와 개발 도구 업체 간 협력이 언제든 경쟁 관계로 전환될 수 있음을 보여주는 사례다. 기업들이 특정 AI 플랫폼에 종속될 경우 공급 중단 리스크에 노출될 수 있으며, **멀티 모델·멀티 벤더 전략**의 중요성이 부각된다. 코딩 AI 시장에서 모델 공급자 간 사용자 쟁탈전이 본격화되는 신호다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "이수시스템이 RAG 기반 챗봇·AI 플랫폼 구축 시 OpenAI·Anthropic 등 특정 모델에 단독 의존하는 구조는 위험하다. 고객사에 멀티 LLM 전환 가능한 아키텍처를 제안하는 것이 차별화 포인트가 될 수 있으며, Anthropic Claude 한도 상향은 이수시스템 AI 플랫폼에서 Claude API 적용 비용 부담을 낮추는 기회로 검토할 만하다.",
+      "source": "International Business Times / Digital Trends",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNUDdZN1FhcGdJd042RmlXUzdSRzJURnNkS0pyT2lISTNTM3FETTJzYWc0OEJvNzVFaTdoNlNyWVlwSEtJVlljcGNZWjZENzBNM216WkJtS2hBeC1QTXBOcGcwTGlWUEphQkJtdUlmcTdyeEtMTVQxeEdha1hVdURuMEpkQzRsUQ?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "글로벌 이슈",
+      "title": "Sony·Warner, Anthropic에 저작권 침해 소송…테일러 스위프트 곡도 무단 학습 주장",
+      "body": "Sony Music, Warner Music 등 주요 음반사들이 **Anthropic**을 상대로 저작권 침해 소송을 제기했다. 테일러 스위프트를 비롯한 수많은 아티스트의 곡이 Claude 학습에 무단 사용됐다는 것이 핵심 주장으로, **학습 데이터 저작권** 문제가 다시 한번 법정으로 향했다. 이미 OpenAI·Meta 등도 유사 소송에 직면한 가운데, AI 기업들의 학습 데이터 조달 방식 전반에 대한 법적 리스크가 급속히 커지고 있다.",
+      "insight": "생성형 AI의 학습 데이터 저작권 문제는 이제 산발적 분쟁을 넘어 업계 전체의 구조적 리스크로 자리 잡았다. 판결 결과에 따라 AI 기업들의 **학습 비용이 급등**하거나 모델 성능에 영향을 줄 수 있으며, 기업 고객 입장에서도 사용하는 AI 서비스의 법적 안전성을 점검해야 하는 시대가 됐다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[리스크]",
+      "isu_insight": "이수시스템이 외부 LLM API를 활용해 HR AI Package나 RAG 챗봇을 구축할 때, 해당 모델의 학습 데이터 적법성 문제가 고객사 컴플라이언스 리스크로 연결될 수 있다. 고객사(특히 금융·공공) 제안 시 '사용 LLM의 저작권 리스크 현황'을 사전 안내하는 투명한 커뮤니케이션 전략이 필요하다.",
+      "source": "StartupHub.ai / 네이트",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPZEFrd1B4X3F2R09xc1Itd1NMWERtblhzd21NcFFEZERRTHJSLWJrRTB3VUQyVTduVVpmeGxvRC1wamFXazNIMWdBcWVfRldidjVTaFJtbG1sVHFuUHRTUDN5STB6dGxBQTBNRXRrdDdZQWZ0ckN3WlBBSm1iUXJmT0FrS21ySUdzM1ZUaVY2YWh3MHFENjUzdnloQ0ZmQ2Q5TzRBX0prb004YVhpZGowUDY4YUZONEtzWTAzaXhub2Q5M3Z0Q3c?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "제품 업데이트",
+      "title": "Google, Gemini 3.7 Flash 가격 50% 인하…AI 추론 비용 전쟁 격화",
+      "body": "Google이 **Gemini 3.7 Flash** 모델의 API 가격을 기존 대비 **50% 인하**했다. 이는 OpenAI, Anthropic과의 시장 점유율 경쟁에서 가격을 무기로 삼겠다는 전략으로, 기업 고객의 AI 도입 비용 장벽을 낮추는 효과가 있다. 이미 AI 추론 비용은 지난 2년간 급격히 하락했으며, 이번 인하로 중소기업과 스타트업의 고성능 AI 활용 접근성이 한층 높아질 전망이다.",
+      "insight": "AI 모델의 상품화(commoditization)가 가속화되고 있다는 명확한 신호다. 모델 자체보다는 **어떻게 활용하느냐**(RAG 설계, 도메인 특화, UI/UX)가 경쟁력의 핵심이 되는 시대로 빠르게 전환되고 있으며, 이는 AI 애플리케이션 레이어 기업들에게 오히려 기회다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "Gemini Flash 가격 인하는 이수시스템이 RAG 챗봇·HR AI Package에 Google 모델을 활용할 때의 운영비용을 직접 절감시킨다. 특히 고객사 PoC(개념 검증) 단계에서 비용 부담 없이 고성능 모델을 시연할 수 있어 영업 전환율 제고에 활용 가능하다. WORKUP·Smart HR 연동 AI 기능을 제안할 때 'Gemini 기반 저비용 AI 인사 어시스턴트'를 구체적인 도입 시나리오로 제시할 수 있다.",
+      "source": "tech-insider.org",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5nNDBxeUgzQlJSQl9lMmpvdEtEUlRqSjNWa29xUFRpM0VLUzVVVWxBUEtlZHRUaGhhWThERFNjOVpWcVRfc053Z0RaVUhPajZBd0FUc2U4NHMycThtTmVRRERPeXp1d1lIejNRZjBiTDJZUE1u?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "일자리·사회",
+      "title": "직원들의 AI 피로감 급증…'AI 강제 도입'에 대한 반감 현실화",
+      "body": "최신 리뷰 데이터 분석 결과, **직장인들의 AI에 대한 감정이 급격히 부정적으로** 변하고 있다는 보고서가 발표됐다. AI 도입을 강요받는다는 느낌, 기대에 못 미치는 실제 업무 효용, 일자리 불안 등이 복합적으로 작용해 직원들의 불만이 누적되고 있다. 단순히 AI 툴을 도입하는 것만으로는 부족하며, **변화 관리(change management)** 와 교육 프로그램 없이는 조직 내 AI 도입이 역효과를 낼 수 있다는 경고가 이어지고 있다.",
+      "insight": "AI 기술 자체보다 **조직 내 수용성**이 도입 성패를 가르는 핵심 변수로 부상하고 있다. 기업들이 AI 솔루션 구매 시 기술 스펙뿐 아니라 직원 교육·온보딩·변화 관리 지원 여부를 중요하게 따지기 시작했으며, AI 솔루션 공급사들도 단순 납품을 넘어 도입 후 활용률을 높이는 서비스를 함께 제공해야 하는 압력을 받게 됐다.",
+      "isu_area": "HR 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "AI 피로감 문제는 이수시스템 HR 솔루션 영업에서 오히려 차별화 포인트가 될 수 있다. WORKUP·Smart HR 도입 시 'AI 기능이 직원 업무를 돕는 방식'을 전면에 내세우고, AI 이력서 분석·HR AI Package 제안 때 관리자·HR 담당자 대상 교육 프로그램을 패키지로 포함시키면 경쟁사 대비 실제 활용률과 고객 만족도를 높이는 전략이 된다.",
+      "source": "the-decoder.com",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQUThOd29jNUpmNGY2YXQ3bmsyaGZkQ21vaWtqSUQwZWFyamxTLUh0U0R0Nm41ejd4SnY4RDVYbzZoenF2UUJia0lDUzR6ejVGYWVlWGdpUXU0ejVtUS1wMjRIYlZuYWMzZVc5M1pGV2dRSHZjajdNWUlrTlN5MjgzbmdzTUt2a0FlOWdrZ1MzeE9tSFBwZEdkd0VjZXJzOEJEQ1Y2VnBhcFlZTzdiVHZwa2xJdlp2Q0NKaXhBRXNn?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "산업 동향",
+      "title": "KT, 서울대·KAIST와 에이전틱·피지컬 AI 공동연구 본격화…한국 AI 생태계 가속",
+      "body": "KT가 **서울대학교·KAIST**와 AI 공동연구 협력을 대폭 확대하며 **에이전틱 AI(자율 판단·행동 AI)** 및 **피지컬 AI(로봇·현실 세계 연동 AI)** 분야에 집중 투자한다. 이번 협력은 단순 기술 연구를 넘어 실제 사업화까지 연결하는 구조로, KT는 통신 인프라와 AI를 결합한 서비스 경쟁력 확보를 목표로 하고 있다. 국내 빅테크-대학 간 AI 연구 협력이 확대되면서 한국 AI 생태계 전반의 기술 수준 향상이 기대된다.",
+      "insight": "한국에서도 통신·IT 대기업과 최상위 연구기관의 AI 협력이 본격화되고 있으며, 특히 **에이전틱 AI**는 단순 질의응답을 넘어 스스로 계획하고 실행하는 AI로 기업 업무 자동화의 다음 단계를 의미한다. 국내 AI 기술 수준이 빠르게 높아지면서 글로벌 빅테크 의존도를 줄이고 국산 AI 솔루션 생태계가 강화되는 흐름이 이어질 전망이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "에이전틱 AI 기술이 성숙해질수록 이수시스템의 RAG 챗봇도 단순 Q&A를 넘어 인사 프로세스 자동 실행(휴가 신청 처리, 급여 조회, 온보딩 태스크 실행 등)이 가능한 방향으로 발전시킬 수 있다. KT-서울대-KAIST 협력 성과물이 오픈소스화되거나 API 형태로 제공될 경우, 이수시스템 AI 플랫폼에 접목해 HR 에이전트 기능을 강화하는 로드맵 검토가 필요하다.",
+      "source": "뉴스핌 / AP신문",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5JdzNydk1reXlXVFIwaFI4Vms4eXU3VmFKdjdJbXNCZWpOd083c0tlSHpQb3F3ZDlBekhfd0hyLWxnSWp5SzFRYVB3ZmFyU3U0Wlh3V3hUMWNWUUhC?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**OpenAI-Cursor 결별**은 AI 플랫폼 생태계가 언제든 재편될 수 있음을 보여준다. 특정 AI 공급사에 단독 의존하는 기업은 공급 중단 리스크에 노출된다.",
+    "**Anthropic 저작권 소송·AI 감시 카메라 규제** 등 AI 법적 리스크가 동시다발로 터지고 있다. AI 솔루션을 도입·운영하는 기업은 사용 중인 AI의 법적 안전성을 점검해야 한다.",
+    "**Gemini 3.7 Flash 50% 가격 인하**로 AI 추론 비용이 급락하고 있다. 모델 자체 경쟁력보다 도메인 특화 활용력이 기업의 AI 경쟁력을 결정하는 시대가 가속화되고 있다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심은 AI 플랫폼 재편(OpenAI-Cursor 결별)과 비용 인하(Gemini 50% 할인)가 동시에 진행되며 AI 활용 레이어 기업에게 기회가 열리고 있다는 점이다. 이수시스템은 Gemini Flash 등 저비용 고성능 모델을 WORKUP·Smart HR·RAG 챗봇에 접목하는 PoC를 고객사에 빠르게 제안할 수 있는 시점이며, 동시에 AI 저작권·공급 중단 리스크를 인지한 멀티 LLM 아키텍처 설계를 영업 차별화 포인트로 활용해야 한다. AI 피로감 확산 트렌드를 고려해 HR AI Package 제안 시 교육·변화 관리 지원을 패키지화하면 고객 신뢰도와 실제 활용률을 동시에 높일 수 있다."
+}
