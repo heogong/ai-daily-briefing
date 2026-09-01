@@ -1,0 +1,72 @@
+{
+  "date": "2026.09.02 (수)",
+  "one_liner": "Claude 비용 45% 절감·AI 토큰 가격 사상 최저·KT 은행 AICC 전환까지, AI 도입 비용 장벽이 무너지고 있다",
+  "news": [
+    {
+      "number": 1,
+      "category": "모델 릴리스",
+      "title": "Anthropic, Claude Fable 5.1 출시…에이전트 비용 최대 45% 절감",
+      "body": "Anthropic이 신규 AI 모델 **Claude Fable 5.1**과 Mythos 5.1을 공식 출시했다. Fable 5.1은 전작 Fable 5 대비 일반 사용 시 약 **25% 저렴**하고, 복잡한 에이전틱 작업에서는 최대 **45%까지 비용이 절감**된다. 성능 벤치마크에서는 Artificial Analysis Intelligence Index 기준 **66점**을 기록해 상위 모델인 Opus 5(63점)를 3점 차이로 앞질렀다.\n\n이번 업데이트에는 가격 인하 외에도 고객사가 지속적으로 제기해온 데이터 보존 정책과 과도한 안전장치 문제도 함께 개선됐다. Anthropic은 기업 고객의 실제 프로덕션 환경 피드백을 반영해 모델을 다듬었다고 밝혔다.",
+      "insight": "성능은 유지하거나 높이면서 비용을 40% 이상 낮추는 흐름은 AI 에이전트의 기업 도입 문턱을 크게 낮춘다. 이는 단순 챗봇을 넘어 멀티스텝 자동화 워크플로우를 실제 업무에 적용하려는 기업들에게 결정적 트리거가 될 수 있으며, AI 에이전트 시장의 경쟁이 이제 '성능'에서 '가격 대비 성능'으로 무게 중심이 이동했음을 시사한다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "Claude Fable 5.1의 에이전트 비용 45% 절감은 이수시스템의 RAG 기반 챗봇 및 HR AI Package에 핵심 인프라로 활용 가능성이 높다. 특히 기업 고객의 반복 HR 업무(급여 문의, 근태 조회 등)를 처리하는 에이전틱 워크플로우 구축 시 API 비용 부담이 크게 줄어들어, WORKUP·Smart HR 연계 AI 자동화 기능의 수익성이 개선될 수 있다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1"
+    },
+    {
+      "number": 2,
+      "category": "산업 동향",
+      "title": "AI 토큰 가격 사상 최저…중국발 가격 경쟁에 여름 고점 대비 '반토막'",
+      "body": "AI API 토큰 가격이 사상 최저치를 경신했다. 알리클라우드가 자사 AI 모델 가격을 최대 **72% 인하**했으며, 중국 AI 업체들의 잇따른 가격 인하 공세로 글로벌 토큰 가격이 **올여름 고점 대비 약 절반 수준**으로 떨어졌다. CNBC 등 주요 외신은 이를 '새로운 기록적 저점'으로 표현했다.\n\n이 같은 가격 경쟁은 DeepSeek을 시작으로 중국 AI 업체들이 촉발한 구조적 흐름으로, 글로벌 AI 서비스 기업들도 잇달아 가격 인하에 동참하고 있다. 기업 입장에서는 AI 도입 비용 부담이 빠르게 낮아지고 있어 도입 검토가 더욱 활발해질 전망이다.",
+      "insight": "AI 토큰 가격의 급락은 단순히 비용 절감을 넘어 AI 서비스의 상품화(commoditization)를 가속화한다. 이는 모델 자체보다 해당 모델을 어떻게 기업 업무에 통합하느냐, 즉 솔루션 레이어의 가치가 더 중요해짐을 의미한다. 동시에 저가 경쟁에 직접 노출된 AI API 의존 스타트업들에게는 차별화 압박이 커지는 신호이기도 하다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "토큰 비용 하락은 이수시스템의 RAG 챗봇·HR AI Package 운영 원가를 낮춰 솔루션 마진 개선 또는 고객사 제공 가격 경쟁력 강화로 이어질 수 있다. 특히 AI 도입을 비용 이유로 보류하던 중견 제조·건설사 고객을 대상으로 'AI 도입 비용이 이제 현실적'이라는 메시지로 영업 접점을 확대할 수 있는 시점이다.",
+      "source": "news1.kr / CNBC",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE50aDRXUXRyczZtZlkwQVJGYXNtY1M3Ti1USkh2WGVQd0RDQ0pxVFUyU0Y4Y0VNX09UOVdtcGs4d3RKaG02Vmt2TWdNRzB0VlhTSGRhUnM1UWtOUU1MR1lVRjBNUEEyOUnSAWxBVV95cUxNdnE0bEVXRk02akxUb2VUeGo0VjdENWhydnB2VVhlSnkwb3R5bzRHc2tGazNmNUxlZTE5TVBxNTFoUlNTNGFWdW5SajNzTmdHN0t3ZTVFck5naGEzdmtEd09QUXViT2NMRjloMUU?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "제품 업데이트",
+      "title": "구글, 코딩 특화 Gemini 3.8 Flash 이번 주 출시 임박…GOOGL 주가 장 후 상승",
+      "body": "WSJ 단독 보도에 따르면 구글이 **Gemini 3.8 Flash** 신규 AI 모델을 이르면 이번 주 수요일(9월 2일) 출시할 예정이다. 이 모델은 특히 **코딩 능력에서 경쟁 모델과의 격차를 크게 좁혔다**는 평가를 받고 있으며, 출시 소식만으로 GOOGL 주가가 장 후 시간외 거래에서 상승했다. Flash 시리즈는 구글의 '비용 효율 중심' 라인업으로, 빠른 응답 속도와 낮은 비용을 강점으로 한다.\n\n구글은 Workspace 사용자 대상 이미지 생성·편집 도구 **Google Pics**도 함께 공개했다. Gemini와 Nano Banana 생성형 AI 모델을 기반으로 하며, Canva에 대응하는 기업용 비주얼 크리에이티브 도구를 표방한다.",
+      "insight": "구글이 코딩 벤치마크에서 경쟁력을 강화한 Flash급 모델을 빠르게 출시하는 것은 OpenAI·Anthropic과의 개발자 생태계 경쟁에서 속도전을 택했음을 보여준다. Flash 라인업의 성능 향상은 기업용 AI 코파일럿, 코드 자동화 도구 시장에서 구글의 점유율 확대로 이어질 수 있으며, Workspace 생태계 내 AI 통합이 더욱 깊어질 전망이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "Gemini 3.8 Flash의 코딩 성능 강화는 이수시스템이 SAP ERP 구축·RPA 개발 등 디지털 서비스 영역에서 AI 코드 보조 도구를 선택할 때 고려할 옵션이 늘어남을 의미한다. Google Workspace와 연동된 AI 이미지·문서 자동화 기능은 향후 고객사 업무 자동화 제안 시 활용 가능한 레퍼런스로 모니터링할 필요가 있다.",
+      "source": "WSJ / finance.yahoo.com",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNUHpMaWo2Zmt5TFAwZVhnQ2pFcWpueHkyWk1Yb0dfS1ZsNmVPV3FMSzJPUW1Wb1Bfakx6aHZpTmtFSjFuaGhXdVFKYkRYWVZMZi1WNVlXa1o4eFdvOEt1NWcxVzRBM3dKMjdvVmJuYW9nWEt0VnM0allpbXRGSUZzNFNod19YWUNiUFp4bUZJTUF4dw?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "일자리·사회",
+      "title": "KT, 우리은행 콜센터를 'AI 에이전트'로 전환…업무 커버리지 60% 목표",
+      "body": "KT가 우리은행의 고객 응대 콜센터(AICC)를 **에이전틱 AI** 기반으로 전면 전환하는 프로젝트를 추진한다. 목표 업무 커버리지는 **60%**로, 기존 단순 FAQ 응답 수준을 넘어 복잡한 금융 업무 처리까지 AI 에이전트가 자율적으로 수행하는 구조다. 국내 주요 통신사와 대형 시중은행이 손잡은 이번 프로젝트는 **에이전틱 AI의 금융권 실전 도입** 사례로 주목받는다.\n\n이 같은 흐름은 금융권을 시작으로 제조·유통·공공 분야로 확산될 가능성이 높다. AI 에이전트가 단순 안내를 넘어 실제 업무를 처리하는 수준으로 올라서면서, 기업들의 인력 운영 방식과 콜센터 구조에 근본적 변화가 예상된다.",
+      "insight": "금융권의 AICC 에이전틱 전환은 AI가 '보조 도구'에서 '업무 처리 주체'로 역할이 격상되는 전환점이다. 업무 커버리지 60% 달성이 현실화되면 콜센터 인력 구조 변화는 물론, 에이전트 오류·책임 소재 등 거버넌스 이슈도 함께 부상할 것이다. 금융을 시작으로 각 산업군의 AICC 에이전틱 전환이 도미노처럼 확산될 가능성이 높다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "KT·우리은행 AICC 사례는 이수시스템의 RAG 챗봇 솔루션을 제조·건설·금융 고객사의 내부 업무 지원 에이전트로 고도화할 수 있는 레퍼런스 모델이다. 특히 500개 이상 HR 구축 레퍼런스를 보유한 이수시스템은 인사·복지 문의를 처리하는 사내 AICC(직원 대상 HR 챗봇)를 WORKUP과 연계해 제안할 수 있으며, 이는 기존 고객사 대상 업셀링 기회로 직결된다.",
+      "source": "Naver Blog (원문: 네이버 블로그)",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQOEpCUUsyOFVZYk5OUDdWcDZXYzE0ZlBrOTd2T1VRZmdPejNSRkl3d005angtVHFsQkpTUHRVbmlQQkRnYlBvTkJzQ1RjUEdGTXJOUWhKZnktcVJ0NXdwTjAzZDFCNkR6a3FpT0doR050dFVxamFkQ0hzUi1kakhEZDNWV2JrQWZmNlEyand4NA?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "일자리·사회",
+      "title": "롯데이노베이트, 롯데백화점에 '브랜드 AI' 구축…MD 의사결정 AI 시대 개막",
+      "body": "롯데이노베이트가 롯데백화점의 **MD(상품기획) 의사결정을 지원하는 브랜드 AI**를 구축했다. 이 AI는 브랜드 트렌드, 매출 데이터, 고객 반응 등을 종합 분석해 바이어와 MD 담당자의 상품 구성·입점 결정을 보조한다. 대형 유통 기업이 핵심 비즈니스 의사결정 영역에 AI를 직접 접목한 국내 선도 사례로 평가된다.\n\n이번 프로젝트는 단순 업무 자동화를 넘어 **고부가가치 지식 노동 영역**인 MD 기획까지 AI가 진입했다는 점에서 의미가 크다. 국내 대기업 계열 IT 기업들이 자사 그룹의 핵심 업무에 AI를 내재화하는 모델이 본격화되고 있다.",
+      "insight": "유통업의 MD 의사결정에 AI가 개입하는 것은 AI가 창의적·전략적 업무 영역으로 확장되는 상징적 사례다. 이 같은 '도메인 특화 AI' 모델은 각 산업군의 핵심 업무 데이터를 보유한 기업이 경쟁 우위를 갖는 구조를 만들며, 향후 인사·구매·재무 등 다른 고부가가치 업무 영역으로도 AI 적용이 가속화될 것임을 예고한다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "롯데이노베이트가 자사 그룹 내 핵심 업무에 AI를 내재화한 것처럼, 이수시스템도 이수그룹 계열사(이수화학·이수페타시스 등)를 대상으로 HR 데이터 기반 의사결정 AI 솔루션을 레퍼런스로 먼저 구축할 수 있다. 인사 AI Package를 활용해 이수그룹 내 인력 배치·성과 분석 자동화를 선도적으로 적용하면, 외부 고객사 영업 시 구체적인 국내 그룹사 내재화 사례로 활용 가능하다.",
+      "source": "SR타임스 / Chosunbiz",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5zT0NHZGExSTlINUhXMTFJOFhLVDE2dUw5WUdicUdvbGNGdmtFeW9vczRxMlUxQXFuc1hEcG1hWkRuaU9uYWVkd25mdmtrdGpZX1NGRVhtdFluWTdDNVFjRURDU1ZTNEk5Zjhj0gFrQVVfeXFMTnNPQ0dkYTFJOUg1SFcxMUk4WEtUMTZ1TDlZR2JxR29sY0Z2a0V5b29zNHEyVTFBcW5zWERwbWFaRG5pT25hZWR3bmZ2a2t0allfU0ZFWG10WW5ZN0M1UWNFRENTVlM0STlmOGM?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**AI 도입 비용 장벽이 빠르게 무너지고 있다.** Claude Fable 5.1의 에이전트 비용 45% 절감, 알리클라우드의 72% 가격 인하, 글로벌 토큰 가격 사상 최저 등 3중 압력으로 '비용 때문에 AI 못 쓴다'는 변명이 더 이상 통하지 않는 시대가 됐다.",
+    "**AI 에이전트가 실제 업무 처리 주체로 격상되고 있다.** KT·우리은행 AICC 60% 커버리지 목표, 롯데백화점 MD 의사결정 AI 등 국내 대기업들이 AI를 보조 도구가 아닌 핵심 업무 실행자로 도입하기 시작했다.",
+    "**모델 성능 경쟁이 '가격 대비 성능' 경쟁으로 전환됐다.** 구글 Gemini 3.8 Flash, Claude Fable 5.1 모두 비용 효율을 전면에 내세우며 경쟁 중이다. 앞으로는 가장 강력한 모델이 아니라 가장 실용적인 모델이 기업 시장을 장악할 것이다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심은 AI 도입 비용의 급격한 하락과 에이전틱 AI의 실전 확산이다. 이수시스템 입장에서는 Claude Fable 5.1·토큰 가격 하락으로 RAG 챗봇과 HR AI Package의 운영 원가가 낮아져 솔루션 경쟁력이 높아지는 직접적 수혜 구간이다. 동시에 KT·우리은행 AICC 에이전틱 전환과 롯데이노베이트 브랜드 AI 사례는 이수시스템이 WORKUP·Smart HR과 연계된 사내 HR 에이전트를 기존 500개 이상 고객사에 제안할 수 있는 강력한 영업 레퍼런스로 활용해야 할 시점임을 알려준다."
+}
