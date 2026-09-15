@@ -1,0 +1,72 @@
+{
+  "date": "2026.09.16 (수)",
+  "one_liner": "AI 3대 빅테크가 안전 기구 공동 설립을 논의하고, 구글은 Gemini 3.8 Live로 음성 AI 시대를 앞당기다",
+  "news": [
+    {
+      "number": 1,
+      "category": "글로벌 이슈",
+      "title": "OpenAI·Anthropic·Google, AI 위험 감독할 공동 안전 기구 설립 논의",
+      "body": "**OpenAI, Anthropic, Google DeepMind** 세 회사가 수 주째 비공개 논의를 거쳐 AI 위험을 감독할 **독립적인 공동 표준 기구** 설립을 검토 중이라고 Bloomberg가 보도했다. AI의 '인류 멸종 위협'에 대한 경고가 잇따르는 가운데, 경쟁사 간 반독점 우려에도 불구하고 협력 논의가 진행되고 있다는 점이 주목된다. 이 기구는 업계 자율 규제 형태로 AI 개발 기준과 안전 프로토콜을 설정하는 역할을 맡을 것으로 전해졌다.",
+      "insight": "빅테크 3사의 자율 규제 기구 논의는 각국 정부 주도의 강제적 AI 규제에 앞서 업계가 선제적으로 기준을 선점하려는 전략적 행보다. 표준이 선점되면 후발 주자와 비회원 기업은 해당 기준을 따를 수밖에 없어, AI 거버넌스의 주도권이 사실상 이 세 회사에 집중될 수 있다. 한국 기업들도 해당 기준이 국내 AI 규제 및 조달 요건에 반영될 경우에 대비해 동향을 면밀히 주시할 필요가 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "글로벌 AI 안전 기준이 정립될 경우 국내 공공·금융 고객사를 대상으로 하는 이수시스템의 RAG 기반 챗봇 및 AI 플랫폼도 해당 기준 충족 여부를 선제적으로 검토해야 한다. 특히 공공기관 납품 시 AI 거버넌스 인증·컴플라이언스 요건이 강화될 수 있으므로, 현재 개발 중인 AI 플랫폼에 감사 로그·설명 가능성(XAI) 기능을 조기에 탑재하는 것이 향후 정부 사업 수주에 유리하게 작용할 수 있다.",
+      "source": "Tech Xplore / Bloomberg",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPbm1qLTQ5bHR3RldxbHVYeWlJZ0lwX2lNM0R3NmJPNHpfNzdwWDFJZjhLblJmcWJna01tYlUtVERzMW9XaWlsMk5aNFVTU1cyWm9YQlJaaWY3OHRsVGNDYnNGc3JRSmhDZkw3RDY0OWxUMDdGOHgtWi1TQUtOUjNPQTF2VQ?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "모델 릴리스",
+      "title": "구글, 음성 AI 특화 'Gemini 3.8 Live' 공개…대화형 에이전트 성능 대폭 강화",
+      "body": "**Google DeepMind**가 음성 AI 에이전트의 대화 능력을 전면 강화한 **Gemini 3.8 Live** 및 **Gemini 3.8 Live Extended Thinking** 모델을 새롭게 출시했다. 이번 모델은 실시간 음성 대화에 최적화되어 있으며, 복잡한 질문에 단계적으로 추론하는 '확장 사고(Extended Thinking)' 기능을 음성 인터페이스에 결합한 것이 핵심이다. 기존 텍스트 중심 LLM과 달리 **음성 에이전트 상용화**를 직접 겨냥한 모델로, 콜센터·교육·의료 등 산업 적용이 빨라질 전망이다.",
+      "insight": "텍스트에서 음성으로의 AI 인터페이스 전환이 본격화되고 있음을 보여주는 신호탄이다. 음성 기반 추론 모델은 콜센터 자동화, 현장 작업자 지원, 의료·교육 분야 AI 튜터 등 기존 텍스트 챗봇이 침투하지 못했던 영역까지 확장할 수 있다. API 형태로 제공될 경우 중소 솔루션 기업들도 음성 AI를 자사 제품에 빠르게 접목할 수 있어, 음성 인터페이스 기반 B2B 제품 경쟁이 향후 12개월 내 본격화될 가능성이 높다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "Gemini 3.8 Live API를 이수시스템의 RAG 기반 챗봇에 접목하면 현재 텍스트 중심의 HR 챗봇(WORKUP 연동)을 음성 인터페이스로 확장할 수 있다. 예를 들어 현장 근로자가 음성으로 근태 확인·연차 신청을 처리하거나, BizPTT 무전기 솔루션과 연동해 현장 안전 지시를 음성 AI가 보조하는 시나리오가 실현 가능해진다. 단기적으로는 Gemini Live API 파일럿 검토를 통해 기존 제품 고도화 로드맵에 반영하는 것이 유효하다.",
+      "source": "TipRanks / Crypto Briefing",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNcEwxYzFYQTBkUC12bV9ra1VyZkNkcThzWjF2enVSTm83NDFtOU9nWjFYb2tvMDVBQTdhRnQ2NHpSSTJTRl9IV2pkQTBPMEdaVWNEWmRFWE5sM241UGFLUTZQTEhtci12WkVITFhWOEkwV3hpZ2czYzJnTzNMckhJb3o1MFJ4QzJKVURQeWFFRWtYc05qSDZ5QXV1MW9CMXU5a2Zjd3F3YS01N0ZiaFNR?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "산업 동향",
+      "title": "Salesforce·NVIDIA, CRM 특화 추론 AI 'Koa' 공개…엔터프라이즈 AI 경쟁 격화",
+      "body": "**Salesforce와 NVIDIA**가 CRM 업무에 특화된 추론 모델 **'Koa'**를 공동 발표했다. Koa는 NVIDIA의 **Nemotron** 아키텍처 위에 구축되며, 영업·고객 서비스·마케팅 워크플로우에 최적화된 추론 기능을 제공한다. Salesforce는 동시에 AWS, Google Cloud와의 **Agentforce 에코시스템 확장** 파트너십도 체결하며 엔터프라이즈 AI 에이전트 시장의 주도권을 빠르게 확보하고 있다. 이는 범용 LLM보다 특정 비즈니스 도메인에 최적화된 버티컬 AI 모델이 기업 시장을 빠르게 잠식할 수 있음을 보여준다.",
+      "insight": "범용 LLM 경쟁에서 도메인 특화 AI 모델 경쟁으로 무게중심이 이동하고 있다. CRM, HR, ERP 등 기업 핵심 업무 시스템에 AI 추론 기능이 직접 내장되기 시작하면서, 별도의 AI 레이어를 추가하는 방식보다 워크플로우 내재화 방식이 시장 표준이 될 가능성이 높아졌다. 국내 엔터프라이즈 솔루션 기업들도 단순 챗봇 연동을 넘어 핵심 업무 프로세스에 추론 AI를 직접 결합하는 제품 전략 전환이 시급하다.",
+      "isu_area": "HR 사업",
+      "isu_tag": "[리스크]",
+      "isu_insight": "Salesforce·NVIDIA의 CRM 특화 AI 모델 출시는 글로벌 SaaS 기업들이 HR·ERP 등 기업 솔루션 전반에 도메인 AI를 내재화하는 속도를 보여준다. 이수시스템의 WORKUP과 Smart HR도 단순 UI 개선이 아닌, 급여 이상 탐지·퇴직 예측·성과 패턴 분석 등 HR 도메인 특화 추론 기능을 탑재하지 않으면 글로벌 SaaS 대비 기능 격차가 빠르게 확대될 수 있다. 기존 HR 레퍼런스 500+ 고객사 데이터를 활용한 도메인 파인튜닝 가능성을 중장기 로드맵에 반영할 필요가 있다.",
+      "source": "NewsCord / MarTech",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOT2c3aUtYRUlMNndBUUdUanJPTUJUeERNM0JwNjkwZW9seFlob0R5cXhPVnFDWkFHT2s2MFRQTHpNV2pTeHlTdWJwa3JScnhsODEzYXd6YnFjSlN5djBPOXR1UVBoNzJaZENLMVBqUE93SnQ5ejBRdzQyU2NPZkxGLTRzcy1iX0tNV1JCUTVIdkdqLTlmc1pidW10MG9lZ2EtMUtncmxvVU5xTUpwSE00bUN3M1prdzJMcC1UblkyR3g3QTZoa2UxNHZEZng1M0NzaUx1NlFvRWg5aEFZ?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "산업 동향",
+      "title": "국산 LLM으로 공교육 AI 고도화…베스핀글로벌·업스테이지, 울산교육청 서비스 업그레이드",
+      "body": "**베스핀글로벌**과 **업스테이지**가 울산교육청의 학생 맞춤형 AI 서비스 '우리 아이'를 국산 LLM 기반으로 고도화했다. 업스테이지의 **Solar LLM**을 핵심 엔진으로 채택해 한국어 교육 콘텐츠 이해도와 응답 정확성을 높인 것이 핵심이다. 이번 사례는 공교육 분야에서 해외 빅테크 LLM 의존도를 낮추고 국산 LLM을 실제 서비스에 적용한 첫 지자체급 레퍼런스로, 향후 **정부·공공 AI 사업에서 국산 LLM 우선 검토** 흐름을 가속화할 신호탄이 될 수 있다.",
+      "insight": "공공 교육 서비스에 국산 LLM이 실제 적용된 사례는 데이터 주권·보안 우려가 높은 공공 분야에서 국산 AI 생태계가 실질적인 경쟁력을 갖추기 시작했음을 의미한다. 정부 조달 및 공공기관 AI 서비스에서 국산 LLM 채택 요건이 강화될 경우, 해외 모델 의존 솔루션은 납품 자격 자체가 제한될 수 있다. 국내 AI 솔루션 기업들은 지금부터 국산 LLM 파트너십과 API 연동 경험을 축적해두는 것이 공공 시장 진입 장벽을 낮추는 핵심 전략이 된다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[정부 사업]",
+      "isu_insight": "공공기관 AI 서비스에 국산 LLM 적용이 확산되는 흐름은 이수시스템의 RAG 챗봇 및 HR AI Package 영업에 직접적인 기회다. 현재 이수시스템의 챗봇 솔루션이 해외 LLM(OpenAI 등) 기반이라면, 업스테이지 Solar나 CLOVA X 등 국산 LLM과의 연동 옵션을 공식 제품 스펙에 추가함으로써 공공기관·지자체 AI 서비스 입찰에서 차별점을 확보할 수 있다. 특히 교육청·지방 공기업 등 이수그룹의 기존 고객 네트워크를 활용한 공공 AI 레퍼런스 확보 전략을 검토할 시점이다.",
+      "source": "서울경제 / IT조선 / 아이뉴스24",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFAtSmhnMVRKbFAzY2o1bk1YV283U1p1WkdSNDZBSkJLNTB4V2tBX2RTYmNuTXpBLUQ4WnRPQWVqUDRJdHNFb2VFZ2xZUW9jM2xkU3fSAVNBVV95cUxPNmJfNmhpZEVpT1h6VUdNeVB4UWZvZzVOQUNkWTVfZGhjOWZ6cHQ3VTNabkJkeHNIbThOeUdoN2o5NkI2VENaemo4T1JjMGxyOG1UMA?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "제품 업데이트",
+      "title": "라이너, LLM 토큰 비용 50% 이상 절감 'API' 출시…AI 도입 비용 장벽 낮춘다",
+      "body": "국내 AI 스타트업 **라이너(LINER)**가 기존 LLM API 대비 **토큰 비용을 50% 이상 절감**할 수 있는 '라이너 모델 API'를 공식 출시했다. 라이너는 자체 개발한 경량화·최적화 모델을 통해 동일한 추론 성능을 훨씬 낮은 비용에 제공한다고 밝혔으며, 기업의 AI 도입 초기 비용 부담을 실질적으로 줄일 수 있다는 점을 핵심 차별점으로 내세웠다. LLM API 비용이 기업 AI 전환의 주요 병목으로 지적돼 온 가운데, 이번 출시는 **중소·중견 기업의 AI 도입 가속화**에 기여할 것으로 주목받고 있다.",
+      "insight": "LLM API 비용 절감은 AI 도입의 ROI를 가시화하기 어렵던 중소·중견 기업에게 실질적인 진입 장벽 완화 신호다. 토큰 단가가 낮아질수록 챗봇·문서 분석·자동화 등 AI 기능을 제품에 내재화하려는 솔루션 기업들의 실험 속도가 빨라지고, 결과적으로 AI 기능 탑재 제품이 시장 표준이 되는 시점이 앞당겨진다. 비용 효율적인 LLM API의 등장은 AI를 '대기업만의 것'에서 '모든 기업의 것'으로 전환하는 중요한 변곡점이 될 수 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "라이너 모델 API처럼 저비용 국산 LLM API가 등장하면, 이수시스템이 중소·중견 고객사에 제안하는 RAG 챗봇 및 HR AI Package의 운영 비용(월 토큰 사용료)을 50% 이상 낮출 수 있어 가격 경쟁력이 크게 향상된다. 기존에 비용 부담으로 AI 도입을 망설이던 이수그룹 계열사 및 제조·건설 중견 고객사를 대상으로, '라이너 API + 이수시스템 AI 플랫폼' 조합의 파일럿 제안을 단기 영업 카드로 활용할 수 있다.",
+      "source": "beSUCCESS / 아이뉴스24",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9sSnZnRDFfcVYydExMRUxWOXBMbTJ3V0I5OGFFNlpacXM1S3VlMkFmeDRtOTkxSFVuRGdtakJPYzllRk02Y3c?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**OpenAI·Anthropic·Google** 3사의 공동 AI 안전 기구 설립 논의는 업계 자율 규제 시대의 개막을 예고하며, 국내 공공·기업 AI 도입 요건에도 영향을 미칠 수 있다.",
+    "도메인 특화 AI(Salesforce Koa, 음성 AI Gemini 3.8 Live)의 등장으로 범용 LLM 연동을 넘어 **업무 프로세스 내재화형 AI 제품**이 엔터프라이즈 시장의 새 기준이 되고 있다.",
+    "국내에서는 **국산 LLM의 공공 서비스 적용**(울산교육청)과 **LLM 비용 50% 절감 API**(라이너) 출시가 맞물리며, AI 도입의 현실적 장벽이 빠르게 낮아지고 있다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심은 AI 비용 장벽 완화와 도메인 특화 AI의 부상이다. 라이너의 저비용 LLM API와 국산 LLM 공공 적용 확산은 이수시스템이 WORKUP·HR AI Package 등 기존 제품에 AI를 접목해 중소·중견 고객사에 제안할 수 있는 실질적인 영업 타이밍이 도래했음을 의미한다. 동시에 Salesforce·Google의 도메인 AI 내재화 속도를 감안하면, RAG 챗봇의 단순 연동 수준을 넘어 HR·안전·ESG 각 솔루션에 추론 기능을 직접 탑재하는 중기 로드맵 수립이 시급하다."
+}
