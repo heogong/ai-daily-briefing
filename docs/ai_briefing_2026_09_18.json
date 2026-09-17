@@ -1,0 +1,72 @@
+{
+  "date": "2026.09.18 (금)",
+  "one_liner": "AI 에이전트 보안 취약점 경보 속, OpenAI는 법률·정부 시장을, Anthropic은 금융·클로드 멀티에이전트 관리로 B2B 영토 확장",
+  "news": [
+    {
+      "number": 1,
+      "category": "제품 업데이트",
+      "title": "OpenAI, 최신 GPT-6 Astra로 법률 전문 AI 플랫폼 출시…로펌 시장 쟁탈전 점화",
+      "body": "OpenAI가 최신 LLM인 **GPT-6 Astra**의 법률 특화 구성(legal-specific configuration)을 탑재한 전문가용 플랫폼을 공식 출시했다. 계약서 검토, 판례 분석, 규정 준수 확인 등 로펌 핵심 업무를 타깃으로 하며, Google Gemini Legal과 Harvey AI 등 기존 경쟁자들과 본격적인 로펌 고객 확보 경쟁이 시작됐다. 법률 AI 시장은 2026년 기준 글로벌 수십억 달러 규모로 성장 중이며, 빅테크의 직접 참전으로 전문 AI 스타트업들의 입지가 흔들리고 있다.",
+      "insight": "빅테크가 수직 산업(법률·의료·금융)에 특화된 LLM 설정을 직접 출시하는 흐름은 범용 AI를 업종별로 세분화하는 '버티컬 AI' 시대를 알리는 신호다. 로펌뿐 아니라 회계·의료·금융 등 전문직 전반에서 유사한 특화 플랫폼 경쟁이 가속화될 것이며, 도메인 데이터와 규정 준수(Compliance) 역량이 차별화 핵심 요소가 된다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "버티컬 AI 트렌드는 이수시스템의 HR AI Package에도 시사점이 크다. OpenAI가 법률 특화 구성을 출시하듯, WORKUP·Smart HR에 인사·노무 규정 특화 RAG를 강화해 '인사 전문 AI'로 포지셔닝하면 범용 AI 대비 차별화된 가치를 어필할 수 있다. 특히 제조·건설 고객사의 노무관리·산업안전 규정 질의응답 챗봇으로 연계 영업이 가능하다.",
+      "source": "Law.com",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQbVJUdm8wVUxfRkQxSmsxZGRNbHY0Y0hLOWU1blFuc1pTeGc3X2Q2OTUxTXZOZGE0YWJKa19ma1gyZldMdXdSNHVrVUpvTHVITWdDTTZ3Zmt0NEQ5ajBybHp3X0huOTAzWm1WUS1Mc1dqb0FGaXl3Z3dPZkQxY1pScVQ0UFU3YW4wV0VUUEwyRVBlWC1wMWRndmloSDl0blVEMllLSm5SY0RtQnQ2bGl2ZE9BMGszZ1lpamZfQ1NB?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "제품 업데이트",
+      "title": "Claude Code, 멀티 AI 에이전트 클라우드 관리 기능 'Projects' 재출시",
+      "body": "Anthropic이 **Claude Code**에 'Projects' 기능을 대폭 개편해 재출시했다. 여러 AI 에이전트를 하나의 프로젝트 아래 묶어 **공유 메모리·목표·파일 라이브러리**를 함께 사용하고, '코디네이터' 에이전트가 병렬로 실행되는 각 스레드를 총괄하는 구조다. Grok Bot 등 유사 멀티에이전트 관리 도구와 경쟁하는 이 기능은 복잡한 소프트웨어 개발 파이프라인을 자동화하려는 기업 개발팀을 주요 타깃으로 한다. 코딩 에이전트 시장에서 오케스트레이션 레이어 확보가 핵심 경쟁 축으로 부상하고 있다.",
+      "insight": "단일 AI 에이전트에서 '에이전트 군단(swarm)'을 조율하는 오케스트레이션 플랫폼으로의 진화는 AI 개발 생산성의 새로운 단계를 의미한다. 기업들은 이제 AI 에이전트 하나를 쓰는 것이 아니라, 여러 에이전트가 협업하는 자동화 파이프라인을 구축하게 되며, 이를 통제·관리하는 거버넌스 도구의 중요성도 함께 높아진다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "Claude Code의 멀티에이전트 오케스트레이션은 이수시스템 AI 플랫폼 로드맵에 참고할 레퍼런스다. 현재 RAG 기반 챗봇 중심의 AI 사업을 고도화할 때, 복수의 AI 에이전트가 HR 업무(채용→온보딩→급여→퇴직)를 단계별로 연계 처리하는 워크플로우 자동화 구조를 중장기 제품 방향으로 검토할 수 있다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects"
+    },
+    {
+      "number": 3,
+      "category": "일자리·사회",
+      "title": "퓨리서치 글로벌 조사: 37개국 과반수 'AI가 일자리 파괴할 것' 두렵다",
+      "body": "Pew Research Center가 **37개국 4만 2,151명**을 대상으로 실시한 글로벌 조사에서, 과반수 이상이 AI를 '일자리 파괴자'로 두려워한다는 결과가 나왔다. 응답자들은 AI가 소득 불평등을 심화하고 일상 전반에 부정적 영향을 미칠 것이라는 우려를 공통적으로 나타냈다. 특히 이 조사는 최근 AI 에이전트의 오작동 사례나 안전 경보가 쏟아지기 이전인 2~5월에 실시된 것이어서, 현재 체감 불안은 더욱 높을 것으로 예상된다.",
+      "insight": "AI에 대한 글로벌 불안 여론이 구체적 수치로 확인됐다는 점이 중요하다. 기업들이 AI 도입 시 직원 설득과 변화 관리(Change Management)에 더 많은 자원을 투입해야 하며, 정부 차원의 AI 재교육·사회 안전망 정책 요구도 거세질 것이다. AI 공급 기업들도 '효율화' 메시지만으로는 시장 신뢰를 얻기 어렵고, 인간 역할 보완을 강조하는 커뮤니케이션 전략이 필요해진다.",
+      "isu_area": "HR 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "AI 도입에 대한 직원 불안이 전 세계적으로 높다는 사실은, WORKUP·Smart HR 영업 시 'AI가 HR 담당자를 대체하는 것이 아니라 반복 업무를 줄여 전략 업무에 집중하게 한다'는 메시지를 전면에 내세울 근거가 된다. 제조·건설 고객사의 HR 팀장급을 대상으로 AI 도입 저항을 낮추는 '변화 관리 지원 패키지'를 함께 제안하면 차별화 포인트가 될 수 있다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/996775/ai-is-feared-globally-as-the-destroyer-of-jobs"
+    },
+    {
+      "number": 4,
+      "category": "글로벌 이슈",
+      "title": "AI 코딩 에이전트 전체 관통하는 '0클릭 RCE' 취약점 발견…Claude·Codex·Gemini 모두 영향",
+      "body": "The Register와 The Information의 보도에 따르면, **Claude Code·OpenAI Codex·Gemini CLI·GitHub Copilot** 등 주요 AI 코딩 에이전트 전반에서 동일한 **'0클릭 원격 코드 실행(RCE)'** 취약점이 발견됐다. 사용자가 별도 조작을 하지 않아도 공격자가 원격으로 시스템 전체 권한을 획득할 수 있는 치명적 결함이다. 이 취약점은 AI 에이전트가 외부 코드나 파일을 자율적으로 실행하는 구조에서 비롯되며, 기업 개발 환경에 AI 에이전트를 도입한 곳이라면 즉각적인 패치 및 접근 권한 점검이 요구된다.",
+      "insight": "AI 에이전트의 자율성이 높아질수록 보안 취약점의 파급력도 함께 커진다는 것이 이번 사례로 입증됐다. 특히 여러 AI 툴에서 동일한 결함이 발견됐다는 점은 업계 공통의 아키텍처 설계 문제를 시사하며, 기업 AI 도입 시 보안 검증 프로세스와 AI 거버넌스 체계 구축이 선택이 아닌 필수임을 재확인시킨다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[리스크]",
+      "isu_insight": "이수시스템이 RAG 기반 챗봇과 AI 플랫폼을 고객사에 납품할 때, 외부 LLM API 연동 구간의 보안 취약점 점검 프로세스를 표준 납품 절차에 포함시키는 것이 시급하다. 특히 공공·금융 고객사는 보안 인증 요구가 높으므로, AI 솔루션에 대한 자체 보안 검증 리포트를 영업 자료에 포함하면 신뢰도 제고와 함께 경쟁 우위를 확보할 수 있다.",
+      "source": "The Register",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOejdTRy1OOEdRNFA0ZGMyejRfcnktazVIMy1LQXhGbGVwb2RscE41MEdkOUZ5NFNGTjR3bmx1OGlqRjhVcXFTcE9FUm1EcXNqc2N6R0RHeTNPNEFPeGNvd3pkWFdPVVNtX1dFQlB3RFdZTTBLTWNtcnR4Z0V1RnlQUmZlN3N0bHZtUkdvS3ZyQ0ZyWTJ3dGRpZnJjT0FRQU9qLUhVTFlWbVJpYVIwSjJNMlJWU21VeWpnNXdIWWF2dkl5dkhzSDNXVFdR?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "산업 동향",
+      "title": "JB금융, 업스테이지와 손잡고 '금융 특화 AI' 개발…국내 버티컬 AI 경쟁 본격화",
+      "body": "JB금융그룹이 국내 AI 스타트업 **업스테이지**와 협력해 금융 업무에 특화된 LLM 기반 AI를 공동 개발한다고 밝혔다. 같은 날 중앙대의료원은 AI 스타트업 **(주)마디**와 의료 특화 LLM 공동연구 MOU를 체결했다. 한국에서 금융·의료 등 규제 산업을 중심으로 도메인 데이터와 규정 준수 역량을 갖춘 **국내 버티컬 AI 파트너십**이 빠르게 늘고 있으며, 글로벌 빅테크 범용 모델 대신 한국어·국내 규제 최적화 모델을 선택하는 기업이 증가하는 추세다.",
+      "insight": "금융·의료처럼 규제가 강하고 한국어 도메인 데이터가 중요한 산업에서는 글로벌 범용 LLM보다 국내 전문 파트너와 협력해 특화 모델을 구축하는 전략이 현실적 선택지로 자리잡고 있다. 이는 국내 AI 스타트업과 IT 서비스 기업들에게 특정 산업의 규정·데이터·워크플로우를 깊이 이해하는 것이 최대 경쟁 우위임을 보여준다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "JB금융-업스테이지 사례는 이수시스템에게 직접적인 벤치마크다. 이수시스템은 HR 레퍼런스 500개 이상, SAP/Oracle 파트너 역량을 보유하고 있으므로, '인사·노무 특화 LLM 파트너십'을 제조·건설 대기업 HR팀에 제안할 수 있다. 특히 산업안전보건법, 근로기준법 등 국내 노무 규정 데이터를 기반으로 한 HR AI는 글로벌 범용 모델이 대체하기 어려운 영역으로, WORKUP의 핵심 차별화 축이 될 수 있다.",
+      "source": "에너지경제신문",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9yT2hZMEVfa21KLTZJc1dlVzVwSkhKSUNobDh1bFR2QlVMaHJWd1lDeXhyZ05UdVVTbm1TVzEzSVEyWm80b1Q2R0dmRzNILW40RzBDbkV2NC1FeFU?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**버티컬 AI 전쟁 개막**: OpenAI의 법률 특화 GPT-6 Astra, JB금융의 금융 특화 AI 등 범용 LLM을 특정 산업에 맞춤화하는 경쟁이 글로벌·국내 동시에 격화되고 있다.",
+    "**AI 에이전트 보안이 최대 리스크**: Claude·Codex·Gemini CLI 등 주요 코딩 에이전트 전반의 0클릭 RCE 취약점은 AI 자율성 확대에 비례해 보안 거버넌스 체계 구축이 시급함을 경고한다.",
+    "**37개국 과반이 AI를 두려워한다**: Pew Research 조사는 AI 도입 기업들이 효율화 메시지만으로는 부족하며, 직원·고객의 신뢰 형성과 변화 관리 전략을 병행해야 함을 수치로 증명했다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심은 '버티컬 AI'와 '보안'이다. JB금융-업스테이지 사례처럼 국내에서도 산업 특화 AI 파트너십이 빠르게 확산되고 있어, HR 레퍼런스 500개 이상을 보유한 이수시스템이 WORKUP·Smart HR에 인사·노무 특화 RAG를 강화해 '인사 버티컬 AI' 포지션을 선점할 적기다. 동시에 Claude·Gemini 등 주요 AI 에이전트의 RCE 취약점 발견은 이수시스템이 고객사에 AI 솔루션을 납품할 때 보안 검증 프로세스를 표준화함으로써 공공·금융 고객사의 신뢰를 선제적으로 확보하는 기회가 된다."
+}
