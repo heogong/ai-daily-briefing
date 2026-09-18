@@ -65,7 +65,7 @@ GCP 콘솔 → APIs & Services → Credentials → API Key 발급 후 Cloud Text
 
 ## GitHub Actions 자동화
 
-매일 UTC 22:00 (KST 07:00)에 실행. 저장소 Secrets에 등록 필요:
+매일 UTC 21:00 (KST 06:00)에 실행. 저장소 Secrets에 등록 필요:
 
 | Secret | 설명 |
 |--------|------|
