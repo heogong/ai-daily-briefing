@@ -1,0 +1,72 @@
+{
+  "date": "2026.10.07 (수)",
+  "one_liner": "AI 가격은 분기마다 47% 하락하고, 구글은 무료 Gemini를 축소하며, KT는 기업용 에이전틱 AI를 공개했다 — 오늘 AI 판도가 세 방향으로 움직였습니다.",
+  "news": [
+    {
+      "number": 1,
+      "category": "산업 동향",
+      "title": "AI 가격, 분기마다 47% 폭락 중…'비용 경쟁' 시대 본격화",
+      "body": "Epoch AI 분석에 따르면 동일 성능 기준 AI 서비스 가격이 **분기당 47%씩** 하락하고 있습니다. 이는 연간 환산 시 약 90% 이상의 가격 하락을 의미하며, AI 도입 장벽이 빠르게 낮아지고 있음을 보여줍니다.\n\n마이크로소프트가 Anthropic Claude 의존도를 줄이고 자체·대안 모델로 전환을 모색하는 움직임([7])도 같은 맥락입니다. 성능 경쟁에서 **비용·효율 경쟁**으로 패러다임이 이동하면서, AI를 도입하는 기업들은 더 낮은 비용으로 더 많은 선택지를 갖게 됩니다.",
+      "insight": "AI 가격의 급격한 하락은 엔터프라이즈 AI 도입 문턱을 낮추는 동시에, AI 서비스 공급사들의 수익성 압박을 심화시킵니다. 특정 모델 벤더 의존도를 줄이고 비용 효율이 높은 모델을 유연하게 교체할 수 있는 멀티모델 아키텍처가 기업 전략의 핵심이 될 전망입니다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "AI 가격 하락은 이수시스템 RAG 기반 챗봇과 HR AI Package의 도입 비용 구조를 개선시켜 중견·중소 고객사 대상 영업 단가를 낮추는 기회입니다. 특정 LLM에 종속되지 않는 멀티모델 지원 구조를 WORKUP·Smart HR AI 기능에 반영하면, 고객사가 비용 대비 최적 모델을 선택할 수 있다는 차별점으로 영업에 활용할 수 있습니다.",
+      "source": "Pasquale Pillitteri (Epoch AI 인용)",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQR0tQQ2Z3VUdvMlFCcFlBSVpPTlNrVkdabXFlNEpEc19mREpNTWVVVGVaWmRrRkgxNTVxWWVJUHpTa3I0elc1dUI0OEpGRlZ0emxQckJtZ0dWMFJUcWc5SF9tZFhyZUtoblZybENwTTRNQzZ5QjNjZ1BTY2NQTC1hZElORWxHNzdsc1JNTEhNbw?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "제품 업데이트",
+      "title": "구글, 무료 Gemini Flash·Pro 10월 9일부터 유료 전환…AI 무료 시대 저무나",
+      "body": "구글이 **10월 9일**부터 Gemini 무료 플랜을 'Flash Lite' 모델로만 제한합니다. 기존 무료 사용자가 이용하던 Flash 및 Pro 모델은 **월 4.99달러** Google AI Plus 구독 이상에서만 접근 가능하게 됩니다.\n\n이는 OpenAI, Anthropic에 이어 구글까지 AI 무료 제공 범위를 축소하는 업계 전반의 흐름입니다. AI 서비스 가격은 인프라 단에서는 하락하지만, 최종 소비자 요금제는 오히려 세분화·유료화되는 이중 구조가 굳어지고 있습니다.",
+      "insight": "빅테크의 AI 무료 플랜 축소는 소비자와 기업 모두에게 '어떤 AI에 얼마를 지불할 것인가'를 고민하게 만듭니다. 무료로 쓰던 AI를 유료 전환해야 하는 기업들은 사내 전용 AI 도입이나 온프레미스 모델 검토를 서두를 가능성이 높아집니다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "외부 AI 서비스 유료화 흐름은 기업들이 사내 전용 RAG 챗봇이나 HR AI Package 같은 구축형 솔루션을 재검토하는 계기가 됩니다. 이수시스템의 On-premise 또는 프라이빗 클라우드 기반 AI 챗봇 제안이 '외부 SaaS 대비 보안+비용 통제' 관점에서 설득력을 가질 수 있으며, 기존 WORKUP 고객사에 AI 부가 모듈 업셀링 시 이 맥락을 적극 활용할 수 있습니다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1005451/google-gemini-free-flash-lite-only"
+    },
+    {
+      "number": 3,
+      "category": "모델 릴리스",
+      "title": "KT, 기업용 에이전틱 AI 플랫폼 '에이전틱 온' 첫 공개…국내 AX 경쟁 가열",
+      "body": "KT가 **'AI 페스타 2026'**에서 기업용 에이전틱 AI 플랫폼 **'Agentic On'**을 처음 공개했습니다. 단순 질의응답을 넘어 업무 흐름을 자율적으로 실행하는 AI 에이전트 기술로, KT는 '성능보다 자주 쓰는 AI'를 AX 전략의 핵심으로 내세웠습니다.\n\n같은 행사에서 업스테이지(Solar·문서 AI), 솔트룩스(군사 에이전트), 포티투마루(공공·방산 특화 AI) 등 국내 주요 AI 기업들이 산업별 에이전트 솔루션을 대거 공개했습니다. 국내 B2B AI 시장이 범용 LLM에서 **산업 특화 에이전틱 AI**로 급격히 이동하고 있음을 보여줍니다.",
+      "insight": "국내 AI 시장은 단순 챗봇·LLM 제공을 넘어 특정 업무 도메인에서 자율적으로 행동하는 에이전틱 AI 경쟁으로 진입했습니다. 통신사, 스타트업, 전통 SI 기업 모두 에이전트 플랫폼을 내세우면서, 기업 고객의 선택 기준이 '어떤 LLM을 쓰느냐'에서 '어느 도메인 에이전트가 우리 업무에 맞느냐'로 바뀌고 있습니다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "에이전틱 AI 경쟁에서 이수시스템의 강점은 HR 도메인 500+ 레퍼런스입니다. 채용 검토, 근태 이상 감지, 급여 정산 자동화 등 HR 업무 흐름을 자율 실행하는 'HR 에이전트' 개념을 WORKUP에 접목하면, KT·업스테이지 등 범용 에이전트 플랫폼과 차별화된 포지셔닝이 가능합니다. 특히 제조·건설 고객사의 현장 HR 업무 자동화 수요를 타깃으로 한 영업 시나리오를 준비할 시점입니다.",
+      "source": "매일일보 / 뉴스핌",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9aU1ExaGpBR2JkWlp5Z3lZZHlwV0JKU0kwNTk5UkJHM2xKUElwNm9WbFBCVmZUWGp5dEJFSXd2TDI0Zzd6MU9fWjdIazhBZzFxVC05TVpHb19zeFFFeGlGNEI4ZVY?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "글로벌 이슈",
+      "title": "OpenAI 미공개 모델, 수학 난제 722편 동시 해결…AI 연구 윤리 논란도 점화",
+      "body": "OpenAI가 아직 공개하지 않은 프런티어 모델이 생성한 **722편의 수학 논문 묶음**을 공개했습니다. 이 논문들은 **372개 결과 패밀리**로 분류되며, 수십 년간 풀리지 않았던 난제들을 포함합니다.\n\n수학계 일부에서는 AI가 생성한 결과물의 연구 기여 인정 범위와 **연구 윤리** 문제를 제기하고 있습니다. AI가 인간 연구자 수준을 넘어서는 영역이 점차 확대되면서, 학술·R&D 분야의 AI 활용 기준과 규범 마련이 시급한 과제로 부상하고 있습니다.",
+      "insight": "AI가 수학·과학 연구의 생산 주체로 부상함에 따라 기존 학술 검증 체계와 지식재산권 귀속 문제가 근본적으로 흔들리고 있습니다. 이는 AI를 도구로 보던 시각에서 AI를 공동 창작자로 인정해야 하는 시각으로 전환을 요구하며, 연구·법률·특허 영역의 제도적 정비를 앞당길 것입니다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "AI의 고도 추론 능력이 수학 연구 수준에 도달한다는 것은, RAG를 넘어 복잡한 비즈니스 규칙 추론이 필요한 HR·ESG 분야에도 고성능 AI 적용이 빨라질 수 있음을 의미합니다. 이수시스템은 HR AI Package의 추론 기능(예: 복잡한 급여 규정 자동 해석, 근로기준법 위반 사전 감지)을 강화하는 방향으로 차세대 모델 활용 로드맵을 검토할 필요가 있습니다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github"
+    },
+    {
+      "number": 5,
+      "category": "글로벌 이슈",
+      "title": "중국 AI 에이전트, 한국 은행 해킹에 활용…AI 기반 사이버 범죄 현실화",
+      "body": "보고서에 따르면 해커들이 **중국산 AI 에이전트**를 활용해 한국 주요 은행 시스템을 침해했습니다. 같은 기간 **'LLM재킹(LLM-jacking)'** — 기업 LLM API 계정을 탈취해 무단 사용하는 사이버 범죄 — 의 지하 거래 가격이 **2026년 들어 2배 이상** 상승하며 조직적 범죄 생태계가 형성되고 있습니다.\n\nJPMorgan CEO 제이미 다이먼도 Anthropic의 고급 AI 모델이 **사이버보안 리스크를 크게 높인다**고 경고한 상황입니다. AI가 공격 수단으로 활용되는 속도가 방어 기술의 발전을 앞지르는 구도가 뚜렷해지고 있습니다.",
+      "insight": "AI 에이전트가 사이버 공격 도구로 실제 활용된 사례는 기업 보안 담당자들에게 경각심을 높입니다. AI 도입을 검토 중인 기업들은 외부 AI API 연동 시 접근 권한 관리와 이상 탐지 체계를 동시에 구축해야 하며, AI 보안 감사(AI Security Audit) 수요가 새로운 사업 영역으로 부상할 것입니다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[리스크]",
+      "isu_insight": "한국 금융사 대상 AI 에이전트 해킹 사례는 이수시스템 고객사(금융·제조·공공)의 보안 우려를 높입니다. RAG 챗봇·HR AI Package 제안 시 LLM API 키 보호, 접근 권한 최소화, 이상 호출 탐지 기능을 함께 설명하는 것이 영업 신뢰도를 높이는 포인트가 됩니다. 또한 클라우드 사업(NCP 파트너) 관점에서 AI 워크로드 보안 컨설팅을 번들로 제공하는 패키지 구성도 검토할 만합니다.",
+      "source": "Breitbart News / Digital Watch Observatory",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxORzJkU2NBVnB3VF92amJtMHl6cG51Q0NfVTdrMm90YVRCU2hDMUhNM1NXQTBoWXlqeWQzMTZmY19UODVtRkxqNjk2MG5yTGJvb3lMRmNDbmxtam1Oci1BNWtPcmxvMU9Jc1FFR0t4dDdxT3A5OGJGUjg3Sks1SFRqT1VMb0RYRU1HQ3o5blRlS1Fzc2s5MGtHZmFyaE5pNTBEVU5jOUxLQmx2VTBKcjVNcGln0gGyAUFVX3lxTE5HMmRTY0FWcHdUX3ZqYm0weXpwbnVDQ19VN2syb3RhVEJTaEMxSE0zU1dBMGhZeWp5ZDMxNmZjX1Q4NW1GTGo2OTYwbnJMYm9veUxGY0NubG1qbU5yLUE1a09ybG8xT0lzUUVHS3h0N3FPcDk4YkZSODdKSzVIVGpPVUxvRFhFTUdDejluVGVLUXNzazkwa0dmYXJoTmk1MERVTmM5TEtCbHZVMEpyNU1waWc?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**AI 가격은 분기마다 47% 하락** 중이지만, 구글·OpenAI 등 소비자 요금제는 오히려 유료화·세분화되는 이중 구조가 굳어지고 있습니다.",
+    "국내 B2B AI 시장은 범용 LLM을 넘어 **산업 특화 에이전틱 AI** 경쟁으로 진입했으며, KT·업스테이지·솔트룩스 등이 도메인 에이전트를 대거 공개했습니다.",
+    "AI 에이전트가 **실제 한국 은행 해킹에 활용**되는 등 AI 기반 사이버 범죄가 현실화되면서, AI 도입과 보안 강화를 동시에 고려해야 하는 시대가 왔습니다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심은 세 가지입니다. 첫째, AI 도입 비용 하락과 외부 AI 유료화가 동시에 진행되면서 이수시스템 구축형 AI 솔루션(RAG 챗봇, HR AI Package)의 가격 경쟁력이 높아지고 있습니다. 둘째, 국내 에이전틱 AI 경쟁이 본격화된 만큼 WORKUP·Smart HR에 HR 도메인 특화 에이전트 기능을 접목한 차별화 전략이 시급합니다. 셋째, AI 기반 사이버 공격이 국내 금융사를 실제 타격하면서 AI 솔루션 제안 시 보안 아키텍처를 함께 설명하는 것이 영업 신뢰도의 핵심 요소가 될 것입니다."
+}
