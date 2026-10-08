@@ -1,0 +1,72 @@
+{
+  "date": "2026.10.08 (목)",
+  "one_liner": "AI 가격 전쟁이 격화되는 사이, 한국 금융권은 딥시크 연동 AI 해킹 도구 '아르텍스'의 공격을 받았다.",
+  "news": [
+    {
+      "number": 1,
+      "category": "글로벌 이슈",
+      "title": "한국 금융권 해킹한 'AI 에이전트 아르텍스'…딥시크 연동에 한국어판까지 등장",
+      "body": "중국인 개발자가 제작한 것으로 추정되는 **AI 기반 해킹 도구 '아르텍스(ARTEX)'**가 국내 금융기관 공격에 사용된 것으로 확인됐다. 공격자 서버에서는 딥시크(DeepSeek) AI와의 대화 기록이 발견됐으며, 해커가 탈취한 정보의 판매처를 AI에게 문의하는 내용도 포함돼 있어 충격을 주고 있다. 특히 **아르텍스 한국어판**이 별도로 등장했고 탐지 회피를 위한 규칙까지 공개되는 등, 국내 금융권을 겨냥한 조직적 공격 정황이 뚜렷하다.\n\n보안 전문가들은 이번 사건이 단순 해킹을 넘어 **생성형 AI를 침투 도구로 활용하는 새로운 사이버 위협 패러다임**을 보여준다고 경고한다. AI가 공격 계획 수립, 정보 판매처 탐색, 탐지 규칙 우회 등 공격의 전 단계에 걸쳐 활용되고 있는 것이다.",
+      "insight": "AI가 사이버 공격의 '두뇌' 역할을 하는 시대가 본격화되고 있음을 알리는 사건이다. 특히 오픈소스·저비용 AI(딥시크 등)가 고도화된 해킹 도구에 쉽게 결합될 수 있다는 점은 금융·공공·제조 전 산업 영역의 보안 담당자들이 AI 기반 위협 탐지 체계를 조속히 갖춰야 함을 의미한다. 기존 시그니처 기반 탐지로는 대응이 어려워지고 있어, AI 행위 분석 기반의 보안 솔루션 수요가 급증할 전망이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "한국 금융권을 겨냥한 AI 해킹 도구 등장은 이수시스템의 기업용 AI 챗봇·RAG 플랫폼 고객사(금융·제조·공공)에게 AI 도입 시 보안 거버넌스의 중요성을 부각시킨다. WORKUP, Smart HR 등 사내 시스템에 연동된 챗봇이 내부 데이터를 다루는 만큼, 고객사 대상 영업 시 'AI 보안 거버넌스 내재화'를 차별화 포인트로 제시할 수 있다. 또한 AI 플랫폼 제안 시 접근 제어·감사 로그 기능을 패키지로 묶는 구성을 검토할 필요가 있다.",
+      "source": "매일경제, 데일리시큐, 파이낸셜뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE12a1NwSHloeGFRY2hJTV9UbW5EUEJRMVd6QVktRmpYZGpQQVRGMGREUl93czhXa3lsRUFrbDdKUFJTNTFyVE1iVFF6aVg4LWRvV0U5NG1R?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "모델 릴리스",
+      "title": "Anthropic, Claude Haiku 5.5 출시하며 API 가격 최대 90% 인하…GPT-6 Luna와 정면 승부",
+      "body": "Anthropic이 경량 모델 **Claude Haiku 5.5**를 출시하면서 API 가격을 기존 대비 **최대 90% 인하**했다. 이는 OpenAI의 GPT-6 Luna와의 가격 경쟁을 의식한 조치로, 2026년 10월 현재 AI API 출력 토큰 가격대는 100만 토큰당 $0.50~$50 수준으로 급격히 낮아지고 있다. Artificial Analysis Index에서 Haiku 5.5는 43점을 기록하며 GPT-6 Luna를 상회하고 Kimi K3에 근접한 성능을 보여줬다.\n\n이번 가격 인하는 단순한 프로모션이 아니라, **AI API 시장 전반의 구조적 가격 하락**을 가속화하는 신호탄으로 해석된다. Claude는 Google Docs, Sheets, Slides와의 사이드바 직접 연동 기능도 함께 공개하며 업무 생산성 도구로의 영역 확장에도 속도를 내고 있다.",
+      "insight": "AI API 가격이 수개월 만에 90% 가까이 하락하는 현상은 기업의 AI 도입 장벽을 획기적으로 낮춰준다. 중소·중견 기업도 이제 비용 부담 없이 LLM 기반 서비스를 내재화할 수 있는 환경이 조성되고 있으며, 이는 AI 솔루션을 자체 개발하기보다 검증된 API를 활용하는 방향으로 시장의 무게중심이 이동하고 있음을 의미한다. 솔루션 공급사들은 어떤 API를 어떻게 조합하느냐의 '통합 역량'이 핵심 경쟁력이 되는 시대에 접어들고 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "Claude Haiku 5.5의 90% 가격 인하는 이수시스템의 RAG 기반 챗봇 및 HR AI Package의 운영 원가를 크게 낮출 수 있는 기회다. 현재 고객사에 제안 중인 AI 챗봇 솔루션의 월 운영 비용을 재산정해 가격 경쟁력을 높이고, 기존에 비용 문제로 도입을 망설이던 중견 제조·건설 고객사를 대상으로 재접촉하는 영업 시나리오가 유효하다. 또한 Claude의 Google Workspace 연동 기능은 WORKUP 사용 고객사의 업무 환경과 연계한 AI 어시스턴트 확장 제안에도 참고할 수 있다.",
+      "source": "VentureBeat",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOTFMTVFQOTJ2SmdCSGdjR2Z4Q2ZYMF9ncldZM3NUNTlEWUVOUERVUVVpdHdfQno4c3F3aWJ1WnIybnpYNGxnMmk5d3FCaUlkdkhCeHpPMENmRG81MEpBcGx5Y1kxY25GY3oxb3gzNGk1bDdOS0JwMkxFZ1hkUFI2M21GMWowTzc4VVJaLUNaajc5MGJrMTdtcXNJem93Q2lpSGFvYXJCbEFwN2hMTnY4bzcxdEswa29DWFE?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "제품 업데이트",
+      "title": "ChatGPT, 'Intelligent UI'로 진화…그림·차트·버튼이 답변 안으로 들어온다",
+      "body": "OpenAI가 **GPT-6** 출시와 함께 'Intelligent UI' 기능을 모든 ChatGPT 사용자에게 순차 배포한다. 이제 ChatGPT는 텍스트 답변 안에 **인터랙티브 다이어그램, 차트, 폼, 탭 가능한 버튼** 등을 직접 삽입해 보여줄 수 있다. 단순한 텍스트 Q&A를 넘어, 사용자가 결과물을 그 자리에서 조작하고 활용할 수 있는 '업무 도구'로서의 성격이 강화된다.\n\n같은 날 ChatGPT에는 대학 입시 준비를 위한 **College Planner** 기능도 추가됐으며, 청소년 대상 'ChatGPT for Teens' 모드에 대해서는 Common Sense Media가 '수용 불가능한 리스크'라고 경고하는 등 확장과 규제 논란이 동시에 진행되고 있다.",
+      "insight": "ChatGPT가 단순 대화 인터페이스를 벗어나 시각화·인터랙션이 내장된 업무 도구로 진화함으로써, 기존 엔터프라이즈 소프트웨어(BI, ERP 대시보드, HR 리포트)의 역할 일부를 대체할 가능성이 높아지고 있다. 사용자는 별도 툴 없이 AI 대화 안에서 데이터를 시각화하고 폼을 작성할 수 있게 되는 만큼, 기업용 솔루션 공급사들은 자사 제품이 AI 인터페이스와 어떻게 공존·연동될 수 있는지를 고민해야 할 시점이다.",
+      "isu_area": "HR 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "ChatGPT의 Intelligent UI는 HR 담당자가 AI 대화만으로 근태 현황 차트, 급여 명세 폼 등을 바로 생성·확인하는 시나리오를 가능하게 한다. WORKUP이나 Smart HR에서도 유사한 'AI 대화형 HR 리포트' 기능을 로드맵에 반영할 필요가 있다. 단기적으로는 고객사 데모 시 ChatGPT Intelligent UI를 활용해 HR 데이터 시각화 사례를 보여주는 방식으로 AI 도입 필요성을 설득하는 데 활용할 수 있다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6"
+    },
+    {
+      "number": 4,
+      "category": "산업 동향",
+      "title": "카카오, LLM 학습 비용 줄이고 모델 경량화…국내 AI 연구 경쟁력 가시화",
+      "body": "카카오가 **LLM 학습 비용을 절감**하고 모델 경량화를 달성한 연구 성과를 공개했다. 대규모 GPU 클러스터 없이도 고품질 언어 모델을 훈련할 수 있는 방법론을 제시함으로써, 국내 AI 연구의 효율성을 한 단계 높인 것으로 평가받고 있다. 같은 시기 퓨리오사AI는 자사 칩에 **HBF(High Bandwidth Fabric)** 기술을 적용했을 때 LLM 작업 시간과 에너지 효율이 모두 개선된다는 검증 결과를 헤럴드경제를 통해 공개했다.\n\n이 두 가지 한국발 성과는 미국·중국 중심의 AI 패권 경쟁 속에서 **국내 AI 생태계가 독자적인 효율화 기술**을 확보해가고 있음을 보여준다. 특히 학습 비용 절감은 중소 규모 기업이나 스타트업도 자체 모델을 보유할 가능성을 열어준다는 점에서 산업 전반에 의미가 크다.",
+      "insight": "LLM 학습·추론 비용의 구조적 하락은 AI 모델을 외부 API에만 의존하지 않고 자체 파인튜닝하거나 온프레미스로 운용하는 기업 수요를 촉진한다. 특히 데이터 보안이 중요한 금융·공공 고객사를 중심으로 '경량 내부 모델' 전략이 확산될 수 있으며, 국내 AI 칩·소프트웨어 생태계의 성숙은 공공 조달 시장에서 국산 AI 솔루션 우대 정책과 맞물려 새로운 사업 기회를 만들어낼 것이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "카카오의 경량 LLM 연구 성과는 이수시스템이 RAG 기반 챗봇 및 HR AI Package를 구성할 때 외부 대형 API 의존도를 낮추고 경량 모델을 선택적으로 결합하는 아키텍처 설계에 참고할 수 있다. 특히 보안상 외부 API 사용이 제한되는 공공·금융 고객사 제안 시, 국산 경량 LLM과의 연동 가능성을 강조하면 차별화된 설득 포인트가 된다.",
+      "source": "전자신문",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5mWmRnaV9qRUdlVVcwbVlWRnVNZkRSeXZZZE9NR0lmeTZFdWNWQ0ZrTDhHWEE0YjQyNGM4bF9Ja19QWkl1TmZadUViSU5sZw?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "산업 동향",
+      "title": "Mistral, 1조 파라미터 'Le Chonk' 공개…미·중 외 유럽발 초거대 모델 등장",
+      "body": "프랑스 AI 스타트업 Mistral이 **1조(1 trillion) 파라미터** 규모의 오픈 웨이트 모델 **'Mistral Large 4'(별칭 Le Chonk)**를 공개했다. 이는 미국과 중국 외 국가에서 나온 가장 강력한 AI 모델로 평가받으며, 오픈 웨이트(공개 가중치) 방식으로 배포돼 기업과 연구자들이 자유롭게 활용할 수 있다. AI API 가격이 100만 토큰 출력 기준 **$0.50~$50** 수준으로 광범위하게 분포한 가운데, 오픈 웨이트 초대형 모델의 등장은 자체 인프라를 보유한 기업의 운용 선택지를 넓혀준다.\n\nMistral의 행보는 AI 모델 공급이 소수 빅테크 독점에서 다극 체제로 재편되고 있음을 상징한다. 유럽 AI 규제(EU AI Act)의 영향을 받는 기업들이 컴플라이언스 측면에서 유럽산 모델을 선호할 가능성도 있어, **AI 공급망 다변화** 흐름이 가속화될 전망이다.",
+      "insight": "초거대 오픈 웨이트 모델의 확산은 AI 솔루션 시장의 진입 장벽을 낮추는 동시에, 모델 자체보다 '어떻게 기업 데이터와 결합해 실제 업무에 적용하느냐'는 통합·구현 역량이 더 중요해지는 시대를 앞당긴다. 글로벌 AI 모델 공급이 다양화될수록 국내 기업들은 특정 벤더에 종속되지 않고 최적 모델을 선택·교체할 수 있는 유연한 AI 플랫폼 아키텍처를 갖추는 것이 전략적으로 유리해진다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "Mistral Large 4처럼 오픈 웨이트 초거대 모델이 늘어날수록, 이수시스템의 AI 플랫폼이 다양한 LLM 백엔드를 교체·조합할 수 있는 '멀티 모델 지원' 구조를 갖추는 것이 고객 설득력을 높이는 데 유리하다. 현재 RAG 기반 챗봇 제안 시 특정 API(OpenAI 등) 의존도를 묻는 고객사가 많은 만큼, 오픈 웨이트 모델 연동 옵션을 제시함으로써 보안·비용·컴플라이언스 우려를 동시에 해소할 수 있다.",
+      "source": "news.lavx.hu, Mezha",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPeFVhTTk3b05tMjdrMDdhNDZKVDkwVTNqN2owQ0YwcTAtZElrYXo0Zkp1R25iOVNUMktjOTE0TjlxWlFmMERHRF8ySkpCTjh5V1V4QWtsdmNUaHVHdXpGLXdtbHZBZHlreTRCQ1plbkQwejFvbElMdGtHdmpZVGNrRDhucUdRRWxvQXFodmt2cXFtYWtS?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**AI 해킹 도구 '아르텍스'**가 딥시크와 연동돼 한국 금융권을 공격했다. AI가 공격자의 손에서도 고도화 도구로 쓰이고 있어, 기업 AI 도입 시 보안 거버넌스 설계가 선택이 아닌 필수가 됐다.",
+    "**Claude Haiku 5.5의 90% 가격 인하**로 AI API 비용 장벽이 사실상 붕괴됐다. 중견·중소 기업도 LLM 기반 서비스를 경제적으로 내재화할 수 있는 환경이 열렸다.",
+    "카카오(경량 LLM)·퓨리오사AI(AI 칩 효율화)·Mistral(1조 파라미터 오픈 모델)이 동시에 등장하며 **AI 모델 공급의 다극화**가 가속화되고 있다. 특정 빅테크에 종속되지 않는 멀티 모델 전략이 기업의 핵심 IT 과제로 부상 중이다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심은 AI 비용의 급격한 하락과 AI 기반 사이버 위협의 동시 부상이다. Claude Haiku 5.5의 90% 가격 인하는 이수시스템의 RAG 챗봇·HR AI Package 운영 원가를 낮추고 신규 고객 영업의 진입 장벽을 줄이는 직접적 기회로 작용한다. 반면 딥시크 연동 AI 해킹 도구 아르텍스의 국내 금융권 공격은, WORKUP·Smart HR 등 민감한 인사 데이터를 다루는 이수시스템 솔루션의 보안 거버넌스 기능을 고객사에 적극 어필해야 할 근거를 제공한다."
+}
