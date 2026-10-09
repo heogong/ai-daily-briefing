@@ -1,0 +1,72 @@
+{
+  "date": "2026.10.09 (금)",
+  "one_liner": "Google이 범용 AI 에이전트로 기업 시장 정조준, 한국 금융기관은 AI 해킹 피해로 보안 경고등",
+  "news": [
+    {
+      "number": 1,
+      "category": "제품 업데이트",
+      "title": "Google, 직장인 모든 업무 대신하는 '범용 Gemini 에이전트' 출시",
+      "body": "Google이 'Gemini at Work' 이벤트에서 **범용 Gemini AI 에이전트**를 공개했다. 이 에이전트는 Gmail, Calendar, Drive 등 구글 워크스페이스 전반에 걸쳐 백그라운드에서 장기 작업을 자율 수행하며, Anthropic의 Claude 모델도 라우팅해 활용할 수 있다. 코딩, 콘텐츠 작성, 일정 관리 등 멀티태스킹이 가능한 **'디지털 동료' 수준의 자율 에이전트**로, Gemini Enterprise 앱 내 단일 인터페이스에서 모든 작업을 지시할 수 있다. 주목할 점은 에이전트가 자체 Gmail·Calendar·Drive 저장소를 보유해 독립적으로 작동한다는 것이다.",
+      "insight": "단순 챗봇을 넘어 실제 업무 프로세스에 자율적으로 개입하는 '에이전트' 시대가 본격화됐음을 의미한다. 특히 Google이 경쟁사(Anthropic) 모델까지 플랫폼에 통합한 것은 AI 생태계의 주도권을 플랫폼 레이어에서 확보하려는 전략이다. 기업 SaaS 시장에서 AI 에이전트가 기존 업무 자동화(RPA) 툴을 대체하는 속도가 빨라질 수 있다.",
+      "isu_area": "디지털서비스 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "Google의 범용 에이전트는 이수시스템이 제공하는 RPA 솔루션의 주요 경쟁 환경을 바꿀 수 있다. 정형화된 반복 업무를 처리하는 RPA와 달리 Gemini 에이전트는 비정형 업무까지 커버하므로, 향후 RPA 수요가 에이전트형 AI로 이동할 가능성을 대비해 이수시스템 RPA 제품의 AI 에이전트 연계 전략을 중기 로드맵에 반영할 필요가 있다.",
+      "source": "The Verge / VentureBeat",
+      "url": "https://www.theverge.com/tech/1007904/google-gemini-ai-agent-enterprise"
+    },
+    {
+      "number": 2,
+      "category": "모델 릴리스",
+      "title": "OpenAI GPT-6 API 가격 50% 인하·Anthropic Claude Haiku 5.5 최대 90% 절감…AI 비용 전쟁 점화",
+      "body": "**OpenAI가 GPT-6 API 가격을 50% 인하**하며 기업 도입 장벽을 크게 낮췄고, Anthropic도 경량 모델 **Claude Haiku 5.5의 API 비용을 최대 90% 절감**하겠다고 발표했다. 두 회사가 거의 동시에 대폭 가격 인하를 단행한 것은 기업 AI 구독 시장 점유율 확보를 위한 경쟁이 본격화됐음을 보여준다. Claude Opus 4.8은 뛰어난 프로그래밍 능력과 '전례 없는 정직성'을 내세우며 함께 출시됐다.",
+      "insight": "AI 모델 API 가격의 급락은 기업들이 AI를 실험적 파일럿이 아닌 실제 제품에 대규모 통합하는 전환점을 앞당긴다. 동시에 AI 모델 자체는 빠르게 '범용재(commodity)'화되고 있으며, 차별화 경쟁은 가격·속도·특화 기능으로 옮겨가고 있다. 스타트업부터 중견 기업까지 AI 도입 비용 부담이 줄어 솔루션 레이어의 시장이 더욱 커질 전망이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "API 비용 급락은 이수시스템 AI 사업에 직접적 기회다. RAG 기반 챗봇·HR AI 패키지·AI 이력서 분석 솔루션에 Claude Haiku 5.5나 GPT-6 API를 백엔드로 활용할 때 운영 비용이 크게 줄어, 기존에 비용 부담으로 도입을 망설이던 중견 제조·건설 고객사에 대한 영업 설득력이 높아진다. 특히 WORKUP AI 기능 확장이나 AI 이력서 분석 서비스의 단가 경쟁력 개선에 즉시 적용 가능하다.",
+      "source": "tech-insider.org / National Technology News",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBZbkpBSUtid1JUUmtjcE9CRWp6RFdVUDE0bE0ycllqZ2Rpb05FbXlQSkljLWtWemEteTZ1bE5FRUFLZVg4cF9EczVSbm1LaFdkR2drNnFrZzAybUVGSFVLeG81MUdxd1c3UFVVVDZnMHZ3RmNEbGIxSm1pRFo?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "글로벌 이슈",
+      "title": "AI 해킹 도구 'ARTEX', 한국 금융사 공격…개인정보 6만 8천 명 유출",
+      "body": "중국 연계 위협 행위자가 **AI 기반 침투 테스트 도구 'ARTEX'**를 활용해 국내 금융기관 다수를 공격, **6만 8,000명의 개인정보를 탈취**한 사실이 확인됐다. ARTEX는 LLM을 활용해 취약점 스캔·익스플로잇 코드 생성을 자동화하는 AI 펜테스팅 도구로, 공격자가 기술 역량에 관계없이 고도의 사이버 공격을 수행할 수 있게 한다. 이번 사건은 AI가 사이버 공격의 '민주화'를 가속하고 있음을 보여주는 실증 사례다.",
+      "insight": "생성형 AI 기술이 방어자뿐 아니라 공격자에게도 동등하게 활용되며, **AI 기반 사이버 공격의 임계점이 급격히 낮아지고** 있다. 금융·공공·제조 등 민감 데이터를 보유한 모든 산업군이 AI 자동화 해킹의 대상이 될 수 있으며, 기존 보안 체계만으로는 대응이 어려워 AI 보안 솔루션 도입이 시급하다는 인식이 확산될 것이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "국내 금융기관 대상 AI 해킹 피해 사례는 이수시스템의 주요 고객군(금융·제조·공공)에 직접적 보안 경각심을 심어준다. 이수시스템 AI 챗봇·HR AI 솔루션을 도입 중이거나 검토 중인 고객사에 'AI 도입 시 보안 설계 포함 제안'을 차별점으로 내세울 수 있다. Anthropic OSS Scanner(기사 9번) 등 외부 보안 스캔 서비스와 연계해 이수시스템 AI 솔루션의 보안 신뢰성을 강조하는 영업 자료로 활용 가능하다.",
+      "source": "토큰포스트 / The Hacker News",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5Scnc5Wm1yb2dfb1lIOWhCQlhjSlZBaDBsdUlEWThfLVh5ZE1fWTF4MDh1aUxkcl9Ra0FNM2RnV3dZV2VDdXNmb1BuLUN5WHpfYVo5WVdvR1A?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "글로벌 이슈",
+      "title": "정부 '공무원용 AI' LLM 공개…삼성SDS 5종·네이버클라우드 6종 채택",
+      "body": "대한민국 정부가 공무원 업무에 활용할 **공공용 AI LLM 모델 목록**을 공개했다. **삼성SDS 5종, 네이버클라우드 6종**이 공식 채택됐으며, 정부는 공무원의 행정 업무 효율화를 위해 검증된 국내 LLM을 우선 도입하는 방향을 택했다. 이는 보안·데이터 주권 이슈로 인해 해외 모델 대신 국내 기업 LLM을 선택한 것으로, 공공 AI 시장에서 국내 기업 중심의 생태계가 형성되고 있음을 보여준다.",
+      "insight": "정부가 공공 AI 도입 기준으로 '국내 LLM 우선'을 명확히 함에 따라, 공공 시장을 겨냥한 AI 솔루션은 삼성SDS·네이버클라우드 등 공인 LLM과의 연계 여부가 핵심 경쟁 요소가 된다. 이는 공공 AI 시장에서 외산 모델을 쓰는 기업이 불리해지는 구조이며, 국내 클라우드·LLM 파트너십이 중요한 레버리지가 될 것이다.",
+      "isu_area": "클라우드 사업",
+      "isu_tag": "[정부 사업]",
+      "isu_insight": "이수시스템은 네이버 클라우드 플랫폼(NCP) 공식 파트너사로, 정부 공무원용 AI에 채택된 **네이버클라우드 LLM 6종**과의 연계 솔루션을 개발·제안할 수 있는 유리한 위치에 있다. 공공기관 대상 RAG 기반 챗봇이나 HR AI 패키지를 NCP 기반으로 구성해 정부 조달 사업에 진입하는 시나리오를 구체화할 필요가 있다. 특히 공공 HR 시스템(인사·급여·근태)과 AI를 결합한 제안이 공공 고객에게 설득력이 높다.",
+      "source": "아이뉴스24",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBuSTVOWHlKc1FyeDE1NkI2MllrcnN5WG9zb1FKbnhHbE5HaUVOb0tQbzhMenREaXdILVYwRVdMak9JSUVlY1ZxNUsxMA?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "산업 동향",
+      "title": "LLM API 비용 폭증 시대, 기업이 지출 통제하는 5가지 실전 전략",
+      "body": "생성형 AI 도입이 확산되면서 **LLM API 비용이 기업의 새로운 IT 지출 항목**으로 급부상하고 있다. 국내 전문가들은 ▲모델 티어 분리 사용 ▲캐싱 전략 ▲입력 토큰 최적화 ▲온프레미스 모델 혼합 ▲사용량 모니터링 대시보드 구축 등 **5가지 실전 설계 전략**을 핵심 절감 방안으로 제시한다. 특히 모든 요청에 고성능 모델을 쓰는 대신, 업무 복잡도에 따라 경량 모델과 고성능 모델을 자동 분기하는 '모델 라우팅' 전략이 주목받고 있다.",
+      "insight": "AI를 실제 서비스에 통합한 기업들이 '비용 최적화' 단계로 진입하고 있음을 보여준다. 이는 AI 도입이 실험 단계를 지나 운영 단계로 성숙했다는 신호이며, AI 솔루션 공급자에게는 '비용 효율성'이 핵심 셀링 포인트가 되고 있다. LLM 비용 관리 도구·컨설팅 역량이 AI 솔루션 경쟁력의 새로운 축이 될 것이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "이수시스템이 고객사에 AI 챗봇이나 HR AI 패키지를 제안할 때, LLM 비용 최적화 설계(모델 라우팅·캐싱·토큰 최적화)를 솔루션에 포함해 '총소유비용(TCO) 절감'을 전면에 내세우는 차별화 전략이 유효하다. 특히 대기업보다 비용 민감도가 높은 중견 제조·건설 고객사에 '저비용 고효율 AI 도입' 패키지로 포지셔닝하면 영업 전환율을 높일 수 있다.",
+      "source": "한국공공정책신문",
+      "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTFBVVWpXMTdtSkhZUFIwT0hxUlFma3J2SWpMT3g2QmcyU2FseHFBODVXUjNvTTRaX0JNeWFNQWI4MUZTdTA?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**Google의 범용 Gemini 에이전트 출시**는 AI가 챗봇 수준을 넘어 실제 업무 프로세스를 자율 수행하는 '에이전트 시대'의 개막을 알린다.",
+    "**GPT-6 50% 인하·Claude Haiku 5.5 90% 절감** 등 AI API 가격 급락이 동시다발적으로 진행되며, 기업 AI 도입 비용 장벽이 빠르게 낮아지고 있다.",
+    "**국내 금융기관 AI 해킹(6만 8천 명 피해)과 정부 공무원용 LLM 채택**은 한국이 AI 기회와 위협을 동시에 맞닥뜨린 현실을 보여준다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심은 세 가지다. 첫째, AI API 비용 급락으로 이수시스템의 RAG 챗봇·HR AI·AI 이력서 분석 솔루션의 운영 원가가 낮아져 중견 고객사 대상 가격 경쟁력이 개선된다. 둘째, 정부가 네이버클라우드 LLM을 공무원용으로 공식 채택함에 따라, NCP 파트너인 이수시스템은 공공 AI 솔루션 제안에서 유리한 고지를 점할 수 있다. 셋째, AI 도구를 활용한 국내 금융기관 해킹 사례는 이수시스템 AI 솔루션에 보안 설계를 차별점으로 강조하는 영업 기회로 전환 가능하다."
+}
