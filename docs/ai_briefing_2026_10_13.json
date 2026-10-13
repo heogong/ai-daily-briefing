@@ -1,0 +1,72 @@
+{
+  "date": "2026.10.13 (화)",
+  "one_liner": "Meta가 프런티어 AI 경쟁에 본격 합류하고, 중국 AI가 글로벌 사용량을 석권하는 사이, 현대차·기아는 자율주행 데이터 인프라에 베팅했다.",
+  "news": [
+    {
+      "number": 1,
+      "category": "모델 릴리스",
+      "title": "Meta, 'Muse Wonder' 출시로 OpenAI·Anthropic 정면 도전",
+      "body": "Meta가 **Muse Wonder**와 **Muse Wonder Full** 두 가지 신규 AI 모델을 공개하며 프런티어 AI 경쟁에 본격 합류했다. 벤치마크 결과 GPT-6, Gemini 4를 앞서는 성능을 기록했으며, 일부 평가에서 Muse Wonder Full이 현존 최고 수준 모델과 동등하거나 능가하는 결과를 보였다. 요금제는 **월 $4~$200** 구간으로 책정됐으며, 현재 API는 상위 모델(Wonder Full)이 아닌 기본 모델(Wonder)로만 제공된다. Meta는 앞서 Muse Spark와 AI 에이전트 Muse를 출시한 데 이어, 이번 릴리스로 Superintelligence Labs 체제 하의 AI 라인업을 빠르게 완성하고 있다.",
+      "insight": "오픈소스 전략으로 시장 접근성을 높여온 Meta가 이제 클로즈드 프런티어 모델로도 승부수를 던졌다. 이는 AI 모델 시장의 경쟁 축이 '성능'에서 '성능+생태계+가격'으로 재편되고 있음을 의미한다. API 제공 범위를 제한한 점은 기업 고객 확보와 수익화 전략을 동시에 노리는 포석으로 읽힌다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "Meta Muse Wonder의 API 공개로 RAG 기반 챗봇 구축 시 활용 가능한 프런티어급 모델 선택지가 늘어났다. 이수시스템의 기업용 AI 플랫폼과 HR AI Package에 Muse Wonder API를 연동하는 방향을 검토할 수 있으며, 특히 월 $4 수준의 저가 요금제는 중소 고객사 대상 AI 도입 제안 시 비용 허들을 낮추는 데 활용 가능하다.",
+      "source": "The Verge / VentureBeat / Mashable",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model"
+    },
+    {
+      "number": 2,
+      "category": "글로벌 이슈",
+      "title": "중국 AI, 글로벌 토큰 사용량 1~5위 독식…딥시크가 선두",
+      "body": "**딥시크(DeepSeek)**를 필두로 한 중국 AI 모델들이 글로벌 주간 토큰 사용량 기준 **1위부터 5위까지 전 순위를 석권**했다. 이는 단순한 기술 경쟁을 넘어 실제 사용자 채택 지표에서도 중국 AI가 미국 빅테크를 추월했음을 시사한다. 오픈소스 중심의 저비용 전략과 빠른 배포 사이클이 글로벌 개발자·기업 고객을 끌어들인 주요 요인으로 분석된다.",
+      "insight": "토큰 사용량은 실제 시장 점유율의 선행 지표다. 중국 AI 모델의 글로벌 1~5위 석권은 미국 중심의 AI 패권 구도에 균열이 생기고 있음을 보여주며, 특히 오픈소스 생태계를 통한 빠른 확산이 서구 클로즈드 모델의 수익 모델을 위협하는 구조적 변화를 의미한다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "딥시크 등 중국 오픈소스 모델의 글로벌 확산은 이수시스템의 RAG 챗봇 및 AI 플랫폼 구축 비용을 낮출 수 있는 기회다. 다만 공공·금융 고객사의 경우 중국산 모델 사용에 대한 보안·규정 이슈가 있으므로, 국내 온프레미스 환경에서의 오픈소스 모델 활용 가능성을 고객별로 구분해 제안 전략을 수립해야 한다.",
+      "source": "아주경제 / Global Times",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBZQ0kyaDVScUg4QTZIZnh5TmRQLTJaaS1xMWRCc1d6MjNjSTFldW9ENnRkX3RnazY4OUotVFM5aV9lVHZLYThxM1hGendUV1UybFp0UHBHRVLSAVhBVV95cUxQWUNJMmg1UnFIOEE2SGZ4eU5kUC0yWmktcTFkQnNXejIzY0kxZXVvRDZ0ZF90Z2s2ODlKLVRTOWlfZVR2S2E4cTNYRnp3VFdVMmxadFBwR0VS?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "제품 업데이트",
+      "title": "Microsoft, 자체 AI 칩 'Maia 300' 공개…엔비디아 의존 탈피 가속",
+      "body": "Microsoft가 3세대 자체 AI 칩 **Maia 300**을 공개했다. 이 칩은 Microsoft 제품·서비스의 '**1차 AI 추론 시스템**'으로 설계됐으며, 클라우드에서 AI 워크로드를 실행하는 비용과 효율을 개선하면서 최신 추론 모델과 에이전트 작업도 처리할 수 있다. Maia 300은 엔비디아 GPU 의존도를 낮추는 핵심 전략 자산으로, Azure 데이터센터에 순차 배포될 예정이다.",
+      "insight": "빅테크의 자체 AI 칩 개발 가속화는 AI 인프라 주도권이 GPU 벤더에서 클라우드 기업으로 이동하고 있음을 뜻한다. 이는 장기적으로 AI 추론 단가를 낮추고 클라우드 AI 서비스의 가격 경쟁력을 높이는 방향으로 작용해, AI 도입 장벽을 낮추는 데 기여할 전망이다.",
+      "isu_area": "클라우드 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "Microsoft Azure의 자체 칩 탑재로 Azure 기반 AI 서비스 단가가 중장기적으로 낮아질 가능성이 있다. 이수시스템은 NCP(네이버 클라우드) 공식 파트너이므로 직접 영향은 제한적이나, 고객사가 멀티 클라우드 환경에서 Azure를 병행 사용하는 경우 AI 추론 비용 절감 시나리오를 컨설팅 카드로 활용할 수 있다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout"
+    },
+    {
+      "number": 4,
+      "category": "산업 동향",
+      "title": "현대차·기아, 美 '바스트 데이터'에 전략적 투자…자율주행·로보틱스 AI 데이터 병목 해결",
+      "body": "현대차·기아가 미국 AI 데이터 인프라 기업 **바스트 데이터(Vast Data)**에 전략적 투자를 단행했다. 바스트 데이터는 대규모 비정형 데이터를 고속 처리하는 스토리지 플랫폼으로, 자율주행과 로보틱스 개발에 필수적인 방대한 센서·영상 데이터의 병목 문제를 해결하는 데 특화돼 있다. 이번 투자는 현대차그룹이 **피지컬 AI(Physical AI)** 역량 내재화를 위해 데이터 인프라부터 직접 장악하려는 전략으로 해석된다.",
+      "insight": "완성차 기업이 AI 모델이 아닌 '데이터 인프라'에 직접 투자한다는 점이 주목된다. 자율주행과 로보틱스 AI 개발에서 데이터 처리 속도와 용량이 핵심 병목으로 부상하면서, 제조업 AI 전환의 경쟁 포인트가 알고리즘에서 데이터 파이프라인으로 확장되고 있다는 신호다.",
+      "isu_area": "디지털서비스 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "현대차·기아 같은 대형 제조사들이 AI 데이터 인프라 구축에 본격 투자하면서, 제조업 고객사의 AI·데이터 관련 IT 프로젝트 예산이 확대되는 흐름이 예상된다. 이수시스템은 SAP 파트너로서 제조·건설 고객사에 ERP와 연계된 AI 데이터 활용 시나리오(예: 생산 데이터 기반 이상감지 챗봇, AI 기반 구매·재고 예측)를 패키지 형태로 제안하는 영업 기회를 노릴 수 있다.",
+      "source": "인공지능신문 / 지디넷코리아 / 데이터넷",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE41TkF5dzc2N25lcmt6TEpqWlAwMV9IZDFMb2F0MEhyck5JSGlRc01TQWVxTFJaaDJtV0Nac3F4TDluOWhQRlBrRVVRTWxrUjJWb1p5eVVZa0xQc3VhQzl6LWdPZDB3UEU?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "제품 업데이트",
+      "title": "챗GPT·클로드, 이제 협업툴까지 넘본다…AI 에이전트 업무 자동화 본격화",
+      "body": "챗GPT와 클로드 등 주요 AI 서비스가 단순 질의응답을 넘어 **파일 관리, 일정 조율, 코드 실행, 외부 앱 연동** 등 실제 업무를 직접 수행하는 에이전트 기능을 고도화하고 있다. 이에 따라 기존 협업툴(슬랙, 노션 등)의 기능 영역과 AI 어시스턴트 간 경계가 빠르게 허물어지고 있다. 업무 자동화 범위가 '정보 검색'에서 '실행'으로 넘어오면서, 기업 내 SaaS 도구의 구조조정 가능성도 제기된다.",
+      "insight": "AI 에이전트가 협업툴의 영역을 침범하는 것은 기업 소프트웨어 시장의 지각변동을 예고한다. HR, ERP, 안전관리 등 전통적 엔터프라이즈 솔루션도 AI 에이전트와의 연동 혹은 자체 에이전트 내재화 없이는 경쟁력을 유지하기 어려운 환경이 도래하고 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "AI 에이전트가 업무 실행 단계까지 확장되면서, WORKUP과 Smart HR 같은 HR SaaS 제품에도 에이전트 연동 기능이 요구될 가능성이 높아졌다. 예를 들어 직원이 챗봇에 '다음 달 연차 신청해줘'라고 입력하면 HR 시스템에서 자동 처리되는 시나리오가 현실화되고 있다. RAG 기반 챗봇에 HR 시스템 연동 API를 추가하는 방식으로 WORKUP의 에이전트 기능을 단기 로드맵에 반영할 것을 검토할 필요가 있다.",
+      "source": "연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA4SmIxRnk1ZHhfM0ZYeElocGxJY2dUTlN0cU95WTJDUHdUa2NkV3o3OHp6ZjJBRUxTVUkxemsyWU1OU3JyZEw5U1BKMWpFNUUtSlVqY2Fab2FRYkVYcmp4Z9IBYEFVX3lxTFA4SmIxRnk1ZHhfM0ZYeElocGxJY2dUTlN0cU95WTJDUHdUa2NkV3o3OHp6ZjJBRUxTVUkxemsyWU1OU3JyZEw5U1BKMWpFNUUtSlVqY2Fab2FRYkVYcmp4Zw?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**Meta Muse Wonder 출시**로 프런티어 AI 3강 구도(OpenAI·Google·Anthropic)가 4강으로 재편됐다. 모델 선택지가 넓어진 만큼 기업 AI 도입의 '비용 협상력'도 높아진다.",
+    "**중국 AI 모델이 글로벌 토큰 사용량 1~5위 전부 차지** — 성능 벤치마크가 아닌 실제 사용 지표에서의 역전은 AI 패권 경쟁의 새 국면을 의미한다.",
+    "AI는 이제 '답해주는 도구'에서 **'직접 실행하는 에이전트'**로 진화 중이다. 협업툴·HR·ERP 등 모든 엔터프라이즈 소프트웨어가 에이전트 통합을 고민해야 할 시점이다."
+  ],
+  "isu_summary": "오늘 뉴스에서 이수시스템에 가장 직접적인 시사점은 AI 에이전트의 업무 실행 영역 확장이다. WORKUP과 Smart HR에 에이전트 연동 기능을 추가하는 것이 단기 제품 강화 과제로 부상하며, Meta Muse Wonder 등 다양한 API 선택지를 활용해 RAG 챗봇의 성능과 비용 경쟁력을 동시에 높일 수 있다. 또한 현대차·기아 같은 제조업 대기업의 AI 인프라 투자 확대는 SAP 파트너인 이수시스템이 제조 고객사에 ERP 연계 AI 솔루션을 제안할 영업 타이밍이 무르익고 있음을 의미한다."
+}
