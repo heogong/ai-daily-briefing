@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Daily Briefing — 2026.10.16 (금)</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:title" content="AI Daily Briefing — 2026.10.16 (금)">
+<meta property="og:description" content="바쁜 사람을 위한 3분 AI 뉴스">
+<meta property="og:image" content="og-image.png">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #12121a;
+    --surface-2: #1a1a26;
+    --accent: #00e5a0;
+    --accent-dim: rgba(0,229,160,0.12);
+    --accent-glow: rgba(0,229,160,0.25);
+    --text: #e8e8ed;
+    --text-dim: #8888a0;
+    --text-muted: #555568;
+    --orange: #ff8844;
+    --blue: #4488ff;
+    --pink: #ff4488;
+    --yellow: #ffcc00;
+    --border: rgba(255,255,255,0.06);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    min-height: 100vh;
+    padding-bottom: 0;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+  .header {
+    padding: 60px 0 40px;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: -100px; right: -100px;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+    pointer-events: none;
+    animation: pulse 4s ease-in-out infinite;
+  }
+  @keyframes pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.6; } }
+  .header-top { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+  .logo-mark {
+    width: 36px; height: 36px;
+    background: var(--accent);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500; font-size: 14px; color: var(--bg);
+  }
+  .brand-name {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; font-weight: 500;
+    color: var(--text-dim);
+    letter-spacing: 2px; text-transform: uppercase;
+  }
+  .header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px; font-weight: 900; line-height: 1.15;
+    margin-bottom: 12px;
+    background: linear-gradient(135deg, var(--text) 0%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .date-line {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; color: var(--text-muted);
+    display: flex; align-items: center; gap: 12px;
+  }
+  .date-line .dot {
+    width: 6px; height: 6px;
+    background: var(--accent); border-radius: 50%;
+    animation: blink 2s ease-in-out infinite;
+  }
+  @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+  .tldr { padding: 32px 0; border-bottom: 1px solid var(--border); }
+  .tldr-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; color: var(--accent);
+    letter-spacing: 3px; text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .tldr p { font-size: 17px; font-weight: 500; line-height: 1.8; }
+  .section { padding: 40px 0; border-bottom: 1px solid var(--border); }
+  .section:last-child { border-bottom: none; }
+  .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+  .section-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px; font-weight: 900; color: var(--accent); line-height: 1;
+  }
+  .section-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+    padding: 4px 10px; border-radius: 4px; font-weight: 500;
+  }
+  .tag-model { background: rgba(68,136,255,0.15); color: var(--blue); }
+  .tag-product { background: rgba(0,229,160,0.12); color: var(--accent); }
+  .tag-society { background: rgba(255,68,136,0.15); color: var(--pink); }
+  .tag-industry { background: rgba(255,136,68,0.15); color: var(--orange); }
+  .tag-insight { background: rgba(255,204,0,0.15); color: var(--yellow); }
+  .news-title { font-size: 22px; font-weight: 700; line-height: 1.4; margin-bottom: 16px; }
+  .news-body {
+    font-size: 15px; line-height: 1.85; margin-bottom: 16px; font-weight: 300;
+    overflow-wrap: break-word; word-break: break-word;
+  }
+  .news-body strong { color: var(--accent); font-weight: 500; }
+  .insight-box {
+    background: var(--surface-2);
+    border-left: 3px solid var(--accent);
+    padding: 16px 20px; border-radius: 0 8px 8px 0; margin-top: 16px;
+  }
+  .insight-box .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; color: var(--accent);
+    letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;
+  }
+  .insight-box p { font-size: 14px; line-height: 1.75; font-weight: 400; }
+  .isu-box {
+    background: rgba(255,136,68,0.08);
+    border-left: 3px solid var(--orange);
+    padding: 10px 14px; border-radius: 0 6px 6px 0; margin-top: 12px;
+  }
+  .isu-box .isu-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; color: var(--orange);
+    letter-spacing: 2px; text-transform: uppercase; margin-bottom: 6px;
+  }
+  .isu-area-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; padding: 2px 8px; border-radius: 3px;
+    background: rgba(255,136,68,0.15); color: var(--orange);
+    margin-right: 6px;
+  }
+  .isu-opp-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; padding: 2px 8px; border-radius: 3px;
+    background: rgba(255,204,0,0.15); color: var(--yellow);
+  }
+  .source-link { margin-top: 10px; text-align: right; }
+  .source-link a { font-size: 12px; color: var(--text-muted); text-decoration: none; }
+  .source-link a:hover { color: var(--text-dim); }
+  .isu-section {
+    padding: 40px 0; border-top: 2px solid var(--orange); margin-top: 20px;
+  }
+  .isu-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; font-weight: 700; margin-bottom: 16px; color: var(--orange);
+  }
+  .isu-section p { font-size: 15px; line-height: 1.85; font-weight: 300; }
+  .bottom-line {
+    padding: 40px 0; border-top: 2px solid var(--accent); margin-top: 20px;
+  }
+  .bottom-line h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; font-weight: 700; margin-bottom: 20px; color: var(--accent);
+  }
+  .bottom-line p { font-size: 15px; line-height: 1.85; font-weight: 300; margin-bottom: 12px; }
+  .action-list { list-style: none; margin-top: 20px; }
+  .action-list li {
+    position: relative; padding: 10px 0 10px 24px;
+    font-size: 14px; font-weight: 400; line-height: 1.7;
+  }
+  .action-list li::before {
+    content: '→'; position: absolute; left: 0;
+    color: var(--accent); font-family: 'JetBrains Mono', monospace; font-weight: 500;
+  }
+  .action-list li strong { color: var(--accent); font-weight: 500; }
+  .footer {
+    padding: 40px 0; text-align: center;
+    color: var(--text-muted); font-size: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    border-top: 1px solid var(--border);
+  }
+  .footer .accent { color: var(--accent); }
+  .tab-nav {
+    display: flex;
+    gap: 0;
+    border-bottom: 2px solid var(--border);
+    margin-top: 8px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--bg);
+  }
+  .tab-btn {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+    padding: 16px 20px;
+    background: none; border: none;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+    white-space: nowrap;
+  }
+  .tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .tab-btn:hover:not(.active) { color: var(--text-dim); }
+  .tab-pane { display: none; }
+  .tab-pane.active { display: block; }
+  .tab-empty {
+    padding: 80px 0; text-align: center;
+    color: var(--text-muted);
+    font-family: 'JetBrains Mono', monospace; font-size: 13px;
+  }
+  .tab-empty .empty-icon { font-size: 36px; margin-bottom: 16px; opacity: 0.3; }
+  .tab-empty p { line-height: 2; }
+  .tab-empty .coming { color: var(--accent); }
+  @media (max-width: 600px) {
+    .header h1 { font-size: 30px; }
+    .news-title { font-size: 19px; }
+    .container { padding: 0 16px; }
+    .header { padding: 40px 0 30px; }
+    .tab-btn { font-size: 10px; padding: 14px 14px; letter-spacing: 1px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <div class="header-top">
+      <div class="logo-mark">AI</div>
+      <span class="brand-name">Daily Briefing</span>
+    </div>
+    <h1 id="main-title">오늘의 AI, 3분 안에 끝내기</h1>
+    <div class="date-line">
+      <span class="dot"></span>
+      <span>2026.10.16 (금) — 바쁜 당신을 위한 AI 핵심 브리핑</span>
+    </div>
+  </header>
+
+  <nav class="tab-nav">
+    <button class="tab-btn active" onclick="switchTab(this,'tab-ai')">오늘의 AI 브리핑</button>
+    <button class="tab-btn" onclick="switchTab(this,'tab-it')">국내 IT 회사 동향</button>
+  </nav>
+
+  <div id="tab-ai" class="tab-pane active">
+  <div class="tldr">
+    <div class="tldr-label">오늘의 한 줄</div>
+    <p>Meta 오픈 AI 모델 공개부터 ChatGPT 브라우저 통합, 딥페이크 규제 압박까지 — AI가 일상 깊숙이 파고드는 한 주</p>
+  </div>
+
+  
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <span class="section-tag tag-model">모델 릴리스</span>
+    </div>
+    <h3 class="news-title">Meta, 애플 손잡고 '미국 최강 오픈소스 AI' 출시 — 맥 스튜디오 두 대면 돌아간다</h3>
+    <p class="news-body">Meta가 <strong>Muse Spark</strong>를 공개하며 '현재까지 가장 강력한 미국산 오픈 웨이트 모델'이라고 선언했다. 특히 이번 모델은 애플 <strong>M5 Ultra Mac Studio 두 대</strong>로 로컬 구동이 가능한 '같은 급 최초' 모델로, MLX 프레임워크를 통해 최적화됐다. Meta와 애플이 AI 협력 관계를 공식화한 것은 이례적이며, 클라우드 의존 없이 온디바이스에서 강력한 AI를 구동하려는 흐름을 가속화한다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>오픈 웨이트 대형 모델이 클라우드가 아닌 <strong>온디바이스·로컬 환경</strong>에서 구동 가능해지면서, 기업들의 AI 도입 비용 구조와 데이터 보안 선택지가 달라진다. 특히 폐쇄망이나 보안 민감 업종(금융·공공·제조)에서 온프레미스 AI 수요가 급증할 수 있으며, 오픈소스 기반의 기업용 AI 솔루션 경쟁이 한층 치열해질 전망이다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[핵심 기회]</span>
+      </div>
+      <p>Muse Spark 같은 오픈 웨이트 모델이 로컬 구동 가능해지면, 이수시스템의 RAG 기반 챗봇과 **HR AI Package**를 고객사 온프레미스 환경에 통합하는 제안이 설득력을 얻는다. 특히 외부 클라우드 연동을 꺼리는 공공기관·금융권 고객에게 '오픈소스 LLM + 이수 AI 패키지' 조합으로 영업 시나리오를 구성할 수 있다.</p>
+    </div>
+    <div class="source-link"><a href="https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx" target="_blank" rel="noopener noreferrer">출처: The Verge →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <span class="section-tag tag-product">제품 업데이트</span>
+    </div>
+    <h3 class="news-title">ChatGPT, 이제 내 크롬 탭까지 본다 — 브라우저 통합으로 업무 AI 완전체 노린다</h3>
+    <p class="news-body">OpenAI가 <strong>ChatGPT 크롬 익스텐션</strong>을 업그레이드해, 사용자가 현재 열어둔 브라우저 탭을 ChatGPT가 직접 참조할 수 있게 됐다. 별도의 Atlas 브라우저 없이도 '@Chrome' 태그만으로 탭 내용을 AI가 읽고 분석하는 방식이다. 이로써 ChatGPT는 단순 챗봇을 넘어 <strong>실시간 업무 맥락을 이해하는 AI 어시스턴트</strong>로 진화하고 있다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>AI가 사용자의 실시간 브라우징 컨텍스트를 파악하게 되면, 업무 중 정보 검색·요약·분석의 패턴이 근본적으로 바뀐다. 기업 입장에서는 직원 데이터가 외부 AI 서비스로 흘러들어가는 <strong>정보보안 리스크</strong>가 커지고, 이를 대체할 사내 AI 솔루션 수요가 높아질 수 있다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[영업 기회]</span>
+      </div>
+      <p>ChatGPT의 브라우저 탭 접근 기능은 편리하지만, 기업 내부 인사·급여·ERP 데이터가 외부로 노출될 위험이 커진다. 이수시스템의 RAG 기반 **사내 챗봇**을 'ChatGPT 대신 우리 데이터는 우리가 지킨다'는 메시지로 포지셔닝해, WORKUP·Smart HR 연동 AI 어시스턴트로 제안하는 영업 기회가 생긴다.</p>
+    </div>
+    <div class="source-link"><a href="https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs" target="_blank" rel="noopener noreferrer">출처: The Verge →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <span class="section-tag tag-society">일자리·사회</span>
+    </div>
+    <h3 class="news-title">셀럽도 못 피한 AI 딥페이크 — 피해 사례 급증에 규제 압박 거세진다</h3>
+    <p class="news-body">배우 <strong>미아 고스</strong>의 이혼 직후, 실제로 찍히지 않은 T셔츠 착용 사진이 인스타그램에 유포됐다. AI로 생성된 이 딥페이크 이미지는 수많은 팔로워에게 사실처럼 퍼졌고, 유명인·일반인 가리지 않고 피해가 확산 중임을 보여준다. 딥페이크 범죄 피해 건수는 2025년 대비 <strong>3배 이상 증가</strong>했다는 연구 결과도 속속 나오고 있다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>AI 생성 이미지·영상의 진위를 판별하는 기술 수요가 폭발적으로 증가하고 있으며, 각국 정부의 <strong>딥페이크 규제 입법</strong>도 빨라지고 있다. 플랫폼과 기업 모두 콘텐츠 진위 검증 및 AI 워터마킹 솔루션 도입 압박을 받게 될 전망이다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[모니터링]</span>
+      </div>
+      <p>딥페이크 피해가 채용 과정(AI 이력서 위조, 화상 면접 사칭)으로 번지는 트렌드를 주시해야 한다. 이수시스템의 **AI 이력서 분석** 솔루션에 지원자 진위 확인 기능(영상·문서 AI 검증)을 추가하면 차별화 포인트가 될 수 있다.</p>
+    </div>
+    <div class="source-link"><a href="https://www.theverge.com/report/1011927/instagram-celebrity-ai-slop-likeness-taylor-swift-mia-goth" target="_blank" rel="noopener noreferrer">출처: The Verge →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <span class="section-tag tag-insight">글로벌 이슈</span>
+    </div>
+    <h3 class="news-title">AI 찬양하던 실리콘밸리, 이제 극장서 악당으로 — 테크 백래시 문화 현상화</h3>
+    <p class="news-body">2026년 할리우드에서 실리콘밸리 빅테크를 비판하는 영화가 줄줄이 개봉 중이다. 저커버그를 '사회를 불안정하게 만드는 로봇 같은 악당'으로 그린 <strong>'The Social Reckoning'</strong> 등 기술 창업자를 주인공으로 한 비판적 시각의 영화들이 흥행하고 있다. 대중의 AI·빅테크에 대한 불신이 단순 여론을 넘어 <strong>문화 콘텐츠로 정착</strong>하는 단계에 접어들었다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>대중의 AI·빅테크 불신이 문화 현상으로 굳어지면, 기업들의 <strong>AI 도입 명분과 커뮤니케이션 전략</strong>이 달라져야 한다. '혁신'보다 '신뢰·투명성·책임'을 전면에 내세우는 AI 거버넌스 요구가 B2B 구매 과정에서도 강해질 것이며, AI 윤리·설명가능성(XAI) 기능이 솔루션 선택의 핵심 기준이 될 수 있다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[모니터링]</span>
+      </div>
+      <p>AI에 대한 대중 불신이 커질수록, 고객사 HR 담당자들은 AI 채용·인사 도구 도입 시 '설명 가능한가', '편향은 없는가'를 더 꼼꼼히 따진다. 이수시스템의 **AI 이력서 분석**과 HR AI Package 영업 시, 판단 근거를 사람이 확인할 수 있는 투명성 기능을 강조하는 방향으로 제안서를 보강할 필요가 있다.</p>
+    </div>
+    <div class="source-link"><a href="https://www.theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial" target="_blank" rel="noopener noreferrer">출처: The Verge →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">05</span>
+      <span class="section-tag tag-industry">산업 동향</span>
+    </div>
+    <h3 class="news-title">AI로 만든 리마스터 게임 판매 중단 — 품질 논란이 AI 활용 기준 논쟁으로 번진다</h3>
+    <p class="news-body">세가(Sega)가 <strong>Total War: Shogun 2 리마스터판</strong>을 출시 직후 판매 중단했다. 사용자들이 'AI 업스케일링으로 처리한 조악한 그래픽'과 다수 버그를 지적하며 강하게 반발했기 때문이다. 이번 사태는 비용 절감 목적으로 AI를 콘텐츠 제작에 무분별하게 투입했다가 <strong>품질 역풍</strong>을 맞은 대표 사례로 기록될 전망이다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>AI를 활용한 비용 절감이 오히려 브랜드 신뢰 손상과 매출 손실로 이어진 이 사례는, <strong>AI 도입의 품질 기준과 검증 프로세스</strong>가 얼마나 중요한지를 방증한다. 기업들이 AI 자동화를 도입할 때 '사람의 검수 단계'를 생략하면 안 된다는 경고이며, AI 솔루션 공급사에 대한 품질·책임 요구도 높아질 것이다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">디지털서비스 사업</span>
+        <span class="isu-opp-tag">[모니터링]</span>
+      </div>
+      <p>AI 자동화 솔루션(RPA·AI 패키지)을 고객사에 납품할 때 '자동화 결과를 사람이 검수하는 단계'를 프로세스에 명시하는 것이 중요해진다. 이수시스템의 **RPA** 및 HR AI 패키지 제안서에 'Human-in-the-loop' 검수 단계를 기본 포함시켜, 품질 사고를 예방하는 안전한 자동화 파트너임을 차별화 포인트로 삼을 수 있다.</p>
+    </div>
+    <div class="source-link"><a href="https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled" target="_blank" rel="noopener noreferrer">출처: The Verge →</a></div>
+  </section>
+  
+  <div class="isu-section">
+    <h2>이수시스템 인사이트</h2>
+    <p>이번 주 뉴스의 핵심 흐름은 'AI 성능 고도화'와 '불신·리스크 확대'의 동시 진행이다. Meta의 오픈소스 강화와 ChatGPT 브라우저 통합은 이수시스템이 RAG 챗봇·HR AI Package를 '보안이 검증된 사내 AI'로 포지셔닝할 수 있는 영업 기회를 만들어준다. 동시에 딥페이크 채용 사기, AI 품질 사고 등은 AI 이력서 분석 솔루션에 검증·투명성 기능을 강화하고, RPA·AI 자동화 제안서에 Human-in-the-loop 단계를 명시해 신뢰할 수 있는 자동화 파트너임을 차별화 포인트로 내세워야 할 시점임을 시사한다.</p>
+  </div>
+
+  <div class="bottom-line">
+    <h2>오늘의 핵심 테이크어웨이</h2>
+    <ul class="action-list">
+      <li><strong>Meta Muse Spark</strong>의 로컬 구동 가능성은 클라우드 의존 없이 기업 내부에서 강력한 AI를 쓸 수 있는 시대가 가까워졌음을 의미한다 — 보안 민감 업종의 온프레미스 AI 수요 급증 예고.</li>
+      <li>ChatGPT가 브라우저 탭을 읽고 딥페이크 피해가 급증하면서, <strong>'외부 AI에 데이터를 주지 않는' 사내 AI 솔루션</strong>의 가치가 역설적으로 높아지고 있다.</li>
+      <li>AI 자동화의 품질 논란(세가 사태)과 테크 백래시 문화 확산은 AI 도입 시 <strong>투명성·검수 프로세스·윤리</strong>를 전면에 내세워야 하는 시대가 됐음을 보여준다.</li>
+    </ul>
+  </div>
+  </div><!-- /tab-ai -->
+
+  <div id="tab-it" class="tab-pane">
+    <div class="tab-empty">
+      <div class="empty-icon">📊</div>
+      <p>국내 IT 회사 동향 <span class="coming">준비 중</span></p>
+      <p>M&amp;A · 투자 · 경영 · 경제 소식이 곧 업데이트됩니다</p>
+    </div>
+  </div><!-- /tab-it -->
+
+  <footer class="footer">
+    <p>AI Daily Briefing — <span class="accent">바쁜 사람을 위한 3분 AI 뉴스</span></p>
+    <p style="margin-top: 8px;">2026.10.16 (금) | 매일 아침 업데이트</p>
+    <p style="margin-top: 8px;">© keyboard@kakao.com</p>
+  </footer>
+</div>
+<audio src="ai_briefing_2026_10_16.mp3" controls style="position:fixed;bottom:20px;right:20px;z-index:100;width:260px;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.5);"></audio>
+<script>
+  const TAB_TITLES = {
+    'tab-ai': '오늘의 AI, 3분 안에 끝내기',
+    'tab-it': '국내 IT 회사 동향'
+  };
+  function switchTab(btn, id) {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(id).classList.add('active');
+    document.getElementById('main-title').textContent = TAB_TITLES[id];
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const audio = document.querySelector('audio');
+    if (audio) {
+      if (id === 'tab-it') {
+        audio.pause();
+        audio.style.display = 'none';
+      } else {
+        audio.style.display = '';
+      }
+    }
+  }
+</script>
+</body>
+</html>
