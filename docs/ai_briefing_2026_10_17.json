@@ -1,0 +1,72 @@
+{
+  "date": "2026.10.17 (토)",
+  "one_liner": "Google 신모델 출시·엔비디아 AI PC 상륙·EU 제재 규칙 확정까지, AI 생태계가 동시다발로 격변 중",
+  "news": [
+    {
+      "number": 1,
+      "category": "모델 릴리스",
+      "title": "구글, 차세대 프론티어 모델 'Gemini 4 Argon' 공개…벤치마크·가격·사용 방법은?",
+      "body": "구글이 최신 프론티어 AI 모델 **Gemini 4 Argon**을 공개했다. Mashable 등 주요 매체는 벤치마크 성능, 접근 방법, 가격 구조를 집중 분석했으며, 구글의 방대한 **TPU 인프라**에도 불구하고 사용량 제한(쿼터)이 엄격하게 설정돼 있다는 점이 화제가 됐다. AI Pro 구독자에게는 별도 쿼터로 우선 제공되며, 경쟁 모델인 GPT-6.1 Sol, Claude Sonnet 5.5와의 직접 비교 벤치마크도 속속 등장하고 있다.",
+      "insight": "프론티어 모델 출시 주기가 빨라지면서 GPT·Claude·Gemini 3파전이 사실상 분기 단위 경쟁으로 굳어지고 있다. 기업 입장에서는 특정 모델에 종속되기보다 멀티모델 전략이 필수가 됐으며, API 비용과 쿼터 구조를 면밀히 비교해 최적 모델을 선택하는 역량이 중요해졌다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "Gemini 4 Argon 출시로 고성능 멀티모달 LLM 선택지가 늘어났다. 이수시스템의 RAG 기반 챗봇 및 HR AI Package에 Gemini 4 Argon API를 추가 옵션으로 통합해, 고객사별 비용·성능 요구에 맞는 모델을 유연하게 제공하는 멀티모델 아키텍처 전략을 검토할 시점이다.",
+      "source": "Mashable",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE02ZGlQM0xOMUw2NkM5ZVBUb0UzeXVFZV9BcEp4cGY4RzdyVjNDRXVPM3pQdUp2UnladkZmeDRYZGVsdDF1VG9qekhNaU5xeXVYVkRQSjVZdnhvTjZmWUtYVi1tUzhwZTQ?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "제품 업데이트",
+      "title": "엔비디아 'RTX 스파크' 출시…클라우드 없이 AI를 내 PC에서 돌린다",
+      "body": "엔비디아가 Arm 기반 SoC **RTX Spark(N1X)** 탑재 AI 노트북을 정식 출시했다. 연합뉴스·이데일리·코인리더스 등 국내 주요 매체가 일제히 보도했으며, 젠슨 황이 예고했던 'PC 재발명' 비전이 현실화됐다는 평가다. RTX Spark는 Apple Silicon·Qualcomm·Intel·AMD와 직접 경쟁하며, 로컬에서 **LLM 추론**을 수행할 수 있어 클라우드 의존도를 낮춘다. The Verge는 일주일 사용기를 통해 실제 성능과 생산성 변화를 집중 검증했다.",
+      "insight": "엣지 AI 추론 성능이 클라우드 수준에 근접하면서 '온디바이스 AI'가 기업 환경에도 현실적 선택지가 됐다. 데이터 보안이 민감한 금융·공공·의료 분야에서 클라우드 전송 없이 내부망에서 AI를 구동하려는 수요가 크게 늘어날 전망이다.",
+      "isu_area": "디지털서비스 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "RTX Spark 같은 고성능 온디바이스 AI 하드웨어 확산은 이수시스템의 기업 고객(제조·건설·금융)이 클라우드 없이 사내 AI를 운용하려는 수요로 이어진다. 이수시스템의 RAG 챗봇 및 RPA 솔루션을 온프레미스·엣지 환경에서도 구동 가능하도록 경량화 패키지를 사전 준비해두면, 보안 민감 고객사 영업에서 차별화 포인트가 된다.",
+      "source": "연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1rUm5VaWM1V2JSWnFkTEVpWDh0ay1tWWdtLTVseVFyV1JsLVlZNllxUlU2Qm9vek9rUGJDX2NYNjduXzFiNUJyOWZGTGdocFpNS29uVjNodVNWQUE0NnJzWtIBYEFVX3lxTE1rUm5VaWM1V2JSWnFkTEVpWDh0ay1tWWdtLTVseVFyV1JsLVlZNllxUlU2Qm9vek9rUGJDX2NYNjduXzFiNUJyOWZGTGdocFpNS29uVjNodVNWQUE0NnJzWg?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "글로벌 이슈",
+      "title": "EU, ChatGPT·Gemini 제재 규칙 공개…AI법 위반 시 벌금 기준 확정",
+      "body": "유럽연합(EU)이 **AI Act** 위반에 따른 ChatGPT·Gemini 등 범용 AI 모델 제재 세부 규칙을 공개했다. 위반 유형별 벌금 기준이 명시되며, AI 제공사들은 투명성·안전성 요건을 갖추지 못할 경우 실질적인 **과징금 리스크**에 직면하게 됐다. AI Act는 단계적으로 시행 중이며, 이번 제재 규칙 공개는 기업들이 컴플라이언스 체계를 갖춰야 하는 데드라인이 가까워졌음을 의미한다.",
+      "insight": "EU AI Act 제재 규칙 구체화는 글로벌 AI 서비스 전반에 컴플라이언스 요건을 강화하는 기폭제가 된다. AI를 도입하는 기업들도 사용하는 AI 서비스가 규제를 준수하는지 점검해야 하며, AI 거버넌스·감사 기능이 솔루션 선택의 핵심 기준으로 부상할 전망이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "EU AI Act 제재 규칙이 구체화되면 국내 기업의 해외 수출 및 글로벌 고객사 대응 시에도 AI 컴플라이언스 요구가 높아진다. 이수시스템의 RAG 챗봇·HR AI Package에 AI 사용 이력 로깅, 모델 투명성 보고, 편향성 점검 기능을 선제적으로 추가하면 컴플라이언스 요건을 영업 차별화 포인트로 활용할 수 있다.",
+      "source": "Pasquale Pillitteri",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxObmQ4Tm5FTGZCcmN2M3hHRTA3ZG9QT1daMThlNGcwbkhLem1vbG9qU3NxdVl4Y3dfR0QtY2R5UE83N3F3YmJrYWJMdnU3ZS1YV0F5enBfc1BYUnV4WDJVOWtxQ2tsWUhGZUx4NFlUVkNHNWdjMzhqcnF4R0FCQ05zQWRFUElTUGNR?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "제품 업데이트",
+      "title": "ChatGPT, 열린 크롬 탭 읽고 답변에 활용…AI 에이전트의 브라우저 장악 가속",
+      "body": "OpenAI가 **ChatGPT**에 크롬 브라우저 탭 제어 기능을 도입했다. 현재 열려 있는 탭의 내용을 읽고 이를 응답에 반영하거나, 탭을 직접 조작하는 **컴퓨터 사용(Computer Use)** 기능이 크롬에 정식 적용됐다. 이는 AI가 단순 대화를 넘어 사용자의 실제 업무 흐름 속에 직접 개입하는 '에이전트 시대'가 일반 사용자 레벨까지 내려왔음을 보여준다.",
+      "insight": "AI 에이전트가 브라우저를 직접 제어하는 기능은 반복적인 웹 기반 업무(정보 수집·양식 작성·데이터 입력 등)를 AI가 대행하는 시대의 시작점이다. 이는 기존 RPA 솔루션 시장과 직접적으로 겹치며, AI 에이전트와 RPA의 경계가 허물어지는 속도가 예상보다 빠를 수 있다.",
+      "isu_area": "디지털서비스 사업",
+      "isu_tag": "[리스크]",
+      "isu_insight": "ChatGPT의 브라우저 탭 제어 기능은 이수시스템이 제공하는 **RPA 솔루션**과 직접 경쟁하는 영역이다. 단순 반복 웹 작업은 ChatGPT 에이전트로 대체될 수 있으므로, RPA 솔루션을 SAP ERP와의 심층 연동·복잡한 프로세스 자동화로 차별화하고, AI 에이전트와 RPA를 결합한 하이브리드 자동화 패키지로 포지셔닝 전환을 검토해야 한다.",
+      "source": "Innovation Village",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPMGJyaW1mcXdkNHozU0g1WFpUWDNRVlk4cElFNHRsZGlVRUVDdDFlZE1HRDd0WHhWdDM0YVFfTjlnLWtTVHFaUU56TjVYZXFlUkZvZTFZZnVscHd5M3hTRDlZLWFJaklKYWkydWN2cllmaWxmdURLOGJkdjZNMVh6VHhBQWRSYk1tUndSaS0zSzNwMFhuY18yT2Rn?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "산업 동향",
+      "title": "KAIST, 로봇 AI 4만 3,200회 실측…'LLM 서빙 방식은 로봇에 안 통한다'",
+      "body": "KAIST 연구진이 로봇 AI 성능을 **4만 3,200회** 실측한 결과, 클라우드 LLM 서빙 방식이 로봇의 실시간 제어에는 적합하지 않다는 실증 데이터를 제시했다. 네트워크 지연·추론 속도 등의 한계로 인해 로봇 환경에서는 특화된 경량 모델이나 온디바이스 추론 방식이 필요하다는 결론이다. 이 연구는 AI의 '현장 적용 가능성'에 근본적인 질문을 던지며 산업계의 주목을 받고 있다.",
+      "insight": "클라우드 LLM이 만능이 아니라는 실증 연구는 AI 적용 분야별로 최적 아키텍처가 다름을 시사한다. 제조·물류·안전 등 실시간성이 중요한 현장에서는 온디바이스 경량 AI나 엣지 추론이 표준이 될 가능성이 높으며, 산업용 AI 솔루션 설계 시 반드시 고려해야 할 선택 기준이다.",
+      "isu_area": "안전 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "KAIST 연구 결과는 이수시스템의 **Smart Plant·Smart & Safety** 같은 현장 안전 솔루션에 직접적인 시사점을 준다. 클라우드 LLM 기반 실시간 위험 감지는 지연 문제로 한계가 있으므로, 현장 센서 데이터를 엣지에서 처리하는 경량 AI 모델 적용 방안을 기술 로드맵에 반영하고, 이를 영업 과정에서 '현장 실증 기반 안전 AI' 로 차별화 포인트로 제시할 수 있다.",
+      "source": "이포커스",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5wcFdEbFFRdWZlTzJrVlY3Tnlkd01GS2owVkUwS3E0TzdyaXg3UVhBQkFIbkFja0VDeGR6N0FMOWRFSDU0RG5sOHJGSG1EVEkza2wwTkhjZjJiQzF3Nm9QcThjYjBNN1RqRGZvQzdn?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**Gemini 4 Argon·RTX Spark 동시 등장**: 프론티어 모델과 온디바이스 AI 하드웨어가 함께 진화하며, 기업은 클라우드와 엣지를 넘나드는 멀티모델 전략이 필수가 됐다.",
+    "**AI 에이전트의 업무 침투 가속**: ChatGPT의 크롬 탭 제어 기능은 AI가 단순 대화를 넘어 실제 업무 프로세스를 직접 수행하는 시대가 일반 사용자에게도 열렸음을 의미한다.",
+    "**규제와 실증의 시대**: EU AI Act 제재 규칙 구체화와 KAIST의 로봇 AI 실측 연구는 AI가 '작동한다'는 것만으로 부족하고, **안전·컴플라이언스·현장 적합성**까지 입증해야 경쟁력이 된다는 것을 보여준다."
+  ],
+  "isu_summary": "이번 주 AI 뉴스의 핵심은 '적용 가능성의 검증'이다. Gemini 4 Argon·RTX Spark 출시로 고성능 AI 선택지가 늘어난 만큼, 이수시스템은 RAG 챗봇·HR AI Package에 멀티모델 옵션을 추가해 고객 맞춤형 제안력을 높여야 한다. EU AI Act 제재 규칙 확정과 KAIST의 현장 실측 연구는 각각 컴플라이언스 기능과 엣지 추론 기반 현장 AI의 중요성을 부각시키며, 이수시스템의 안전 솔루션(Smart Plant·Smart & Safety)과 RPA 포트폴리오 차별화 방향을 구체화하는 데 직접 활용할 수 있다."
+}

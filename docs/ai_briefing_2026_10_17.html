@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Daily Briefing — 2026.10.17 (토)</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:title" content="AI Daily Briefing — 2026.10.17 (토)">
+<meta property="og:description" content="바쁜 사람을 위한 3분 AI 뉴스">
+<meta property="og:image" content="og-image.png">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #12121a;
+    --surface-2: #1a1a26;
+    --accent: #00e5a0;
+    --accent-dim: rgba(0,229,160,0.12);
+    --accent-glow: rgba(0,229,160,0.25);
+    --text: #e8e8ed;
+    --text-dim: #8888a0;
+    --text-muted: #555568;
+    --orange: #ff8844;
+    --blue: #4488ff;
+    --pink: #ff4488;
+    --yellow: #ffcc00;
+    --border: rgba(255,255,255,0.06);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    min-height: 100vh;
+    padding-bottom: 0;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+  .header {
+    padding: 60px 0 40px;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: -100px; right: -100px;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+    pointer-events: none;
+    animation: pulse 4s ease-in-out infinite;
+  }
+  @keyframes pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.6; } }
+  .header-top { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+  .logo-mark {
+    width: 36px; height: 36px;
+    background: var(--accent);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500; font-size: 14px; color: var(--bg);
+  }
+  .brand-name {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; font-weight: 500;
+    color: var(--text-dim);
+    letter-spacing: 2px; text-transform: uppercase;
+  }
+  .header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px; font-weight: 900; line-height: 1.15;
+    margin-bottom: 12px;
+    background: linear-gradient(135deg, var(--text) 0%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .date-line {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; color: var(--text-muted);
+    display: flex; align-items: center; gap: 12px;
+  }
+  .date-line .dot {
+    width: 6px; height: 6px;
+    background: var(--accent); border-radius: 50%;
+    animation: blink 2s ease-in-out infinite;
+  }
+  @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+  .tldr { padding: 32px 0; border-bottom: 1px solid var(--border); }
+  .tldr-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; color: var(--accent);
+    letter-spacing: 3px; text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .tldr p { font-size: 17px; font-weight: 500; line-height: 1.8; }
+  .section { padding: 40px 0; border-bottom: 1px solid var(--border); }
+  .section:last-child { border-bottom: none; }
+  .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+  .section-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px; font-weight: 900; color: var(--accent); line-height: 1;
+  }
+  .section-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+    padding: 4px 10px; border-radius: 4px; font-weight: 500;
+  }
+  .tag-model { background: rgba(68,136,255,0.15); color: var(--blue); }
+  .tag-product { background: rgba(0,229,160,0.12); color: var(--accent); }
+  .tag-society { background: rgba(255,68,136,0.15); color: var(--pink); }
+  .tag-industry { background: rgba(255,136,68,0.15); color: var(--orange); }
+  .tag-insight { background: rgba(255,204,0,0.15); color: var(--yellow); }
+  .news-title { font-size: 22px; font-weight: 700; line-height: 1.4; margin-bottom: 16px; }
+  .news-body {
+    font-size: 15px; line-height: 1.85; margin-bottom: 16px; font-weight: 300;
+    overflow-wrap: break-word; word-break: break-word;
+  }
+  .news-body strong { color: var(--accent); font-weight: 500; }
+  .insight-box {
+    background: var(--surface-2);
+    border-left: 3px solid var(--accent);
+    padding: 16px 20px; border-radius: 0 8px 8px 0; margin-top: 16px;
+  }
+  .insight-box .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; color: var(--accent);
+    letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;
+  }
+  .insight-box p { font-size: 14px; line-height: 1.75; font-weight: 400; }
+  .isu-box {
+    background: rgba(255,136,68,0.08);
+    border-left: 3px solid var(--orange);
+    padding: 10px 14px; border-radius: 0 6px 6px 0; margin-top: 12px;
+  }
+  .isu-box .isu-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; color: var(--orange);
+    letter-spacing: 2px; text-transform: uppercase; margin-bottom: 6px;
+  }
+  .isu-area-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; padding: 2px 8px; border-radius: 3px;
+    background: rgba(255,136,68,0.15); color: var(--orange);
+    margin-right: 6px;
+  }
+  .isu-opp-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; padding: 2px 8px; border-radius: 3px;
+    background: rgba(255,204,0,0.15); color: var(--yellow);
+  }
+  .source-link { margin-top: 10px; text-align: right; }
+  .source-link a { font-size: 12px; color: var(--text-muted); text-decoration: none; }
+  .source-link a:hover { color: var(--text-dim); }
+  .isu-section {
+    padding: 40px 0; border-top: 2px solid var(--orange); margin-top: 20px;
+  }
+  .isu-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; font-weight: 700; margin-bottom: 16px; color: var(--orange);
+  }
+  .isu-section p { font-size: 15px; line-height: 1.85; font-weight: 300; }
+  .bottom-line {
+    padding: 40px 0; border-top: 2px solid var(--accent); margin-top: 20px;
+  }
+  .bottom-line h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; font-weight: 700; margin-bottom: 20px; color: var(--accent);
+  }
+  .bottom-line p { font-size: 15px; line-height: 1.85; font-weight: 300; margin-bottom: 12px; }
+  .action-list { list-style: none; margin-top: 20px; }
+  .action-list li {
+    position: relative; padding: 10px 0 10px 24px;
+    font-size: 14px; font-weight: 400; line-height: 1.7;
+  }
+  .action-list li::before {
+    content: '→'; position: absolute; left: 0;
+    color: var(--accent); font-family: 'JetBrains Mono', monospace; font-weight: 500;
+  }
+  .action-list li strong { color: var(--accent); font-weight: 500; }
+  .footer {
+    padding: 40px 0; text-align: center;
+    color: var(--text-muted); font-size: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    border-top: 1px solid var(--border);
+  }
+  .footer .accent { color: var(--accent); }
+  .tab-nav {
+    display: flex;
+    gap: 0;
+    border-bottom: 2px solid var(--border);
+    margin-top: 8px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--bg);
+  }
+  .tab-btn {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+    padding: 16px 20px;
+    background: none; border: none;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+    white-space: nowrap;
+  }
+  .tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .tab-btn:hover:not(.active) { color: var(--text-dim); }
+  .tab-pane { display: none; }
+  .tab-pane.active { display: block; }
+  .tab-empty {
+    padding: 80px 0; text-align: center;
+    color: var(--text-muted);
+    font-family: 'JetBrains Mono', monospace; font-size: 13px;
+  }
+  .tab-empty .empty-icon { font-size: 36px; margin-bottom: 16px; opacity: 0.3; }
+  .tab-empty p { line-height: 2; }
+  .tab-empty .coming { color: var(--accent); }
+  @media (max-width: 600px) {
+    .header h1 { font-size: 30px; }
+    .news-title { font-size: 19px; }
+    .container { padding: 0 16px; }
+    .header { padding: 40px 0 30px; }
+    .tab-btn { font-size: 10px; padding: 14px 14px; letter-spacing: 1px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <div class="header-top">
+      <div class="logo-mark">AI</div>
+      <span class="brand-name">Daily Briefing</span>
+    </div>
+    <h1 id="main-title">오늘의 AI, 3분 안에 끝내기</h1>
+    <div class="date-line">
+      <span class="dot"></span>
+      <span>2026.10.17 (토) — 바쁜 당신을 위한 AI 핵심 브리핑</span>
+    </div>
+  </header>
+
+  <nav class="tab-nav">
+    <button class="tab-btn active" onclick="switchTab(this,'tab-ai')">오늘의 AI 브리핑</button>
+    <button class="tab-btn" onclick="switchTab(this,'tab-it')">국내 IT 회사 동향</button>
+  </nav>
+
+  <div id="tab-ai" class="tab-pane active">
+  <div class="tldr">
+    <div class="tldr-label">오늘의 한 줄</div>
+    <p>Google 신모델 출시·엔비디아 AI PC 상륙·EU 제재 규칙 확정까지, AI 생태계가 동시다발로 격변 중</p>
+  </div>
+
+  
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <span class="section-tag tag-model">모델 릴리스</span>
+    </div>
+    <h3 class="news-title">구글, 차세대 프론티어 모델 'Gemini 4 Argon' 공개…벤치마크·가격·사용 방법은?</h3>
+    <p class="news-body">구글이 최신 프론티어 AI 모델 <strong>Gemini 4 Argon</strong>을 공개했다. Mashable 등 주요 매체는 벤치마크 성능, 접근 방법, 가격 구조를 집중 분석했으며, 구글의 방대한 <strong>TPU 인프라</strong>에도 불구하고 사용량 제한(쿼터)이 엄격하게 설정돼 있다는 점이 화제가 됐다. AI Pro 구독자에게는 별도 쿼터로 우선 제공되며, 경쟁 모델인 GPT-6.1 Sol, Claude Sonnet 5.5와의 직접 비교 벤치마크도 속속 등장하고 있다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>프론티어 모델 출시 주기가 빨라지면서 GPT·Claude·Gemini 3파전이 사실상 분기 단위 경쟁으로 굳어지고 있다. 기업 입장에서는 특정 모델에 종속되기보다 멀티모델 전략이 필수가 됐으며, API 비용과 쿼터 구조를 면밀히 비교해 최적 모델을 선택하는 역량이 중요해졌다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[제품 강화]</span>
+      </div>
+      <p>Gemini 4 Argon 출시로 고성능 멀티모달 LLM 선택지가 늘어났다. 이수시스템의 RAG 기반 챗봇 및 HR AI Package에 Gemini 4 Argon API를 추가 옵션으로 통합해, 고객사별 비용·성능 요구에 맞는 모델을 유연하게 제공하는 멀티모델 아키텍처 전략을 검토할 시점이다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE02ZGlQM0xOMUw2NkM5ZVBUb0UzeXVFZV9BcEp4cGY4RzdyVjNDRXVPM3pQdUp2UnladkZmeDRYZGVsdDF1VG9qekhNaU5xeXVYVkRQSjVZdnhvTjZmWUtYVi1tUzhwZTQ?oc=5" target="_blank" rel="noopener noreferrer">출처: Mashable →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <span class="section-tag tag-product">제품 업데이트</span>
+    </div>
+    <h3 class="news-title">엔비디아 'RTX 스파크' 출시…클라우드 없이 AI를 내 PC에서 돌린다</h3>
+    <p class="news-body">엔비디아가 Arm 기반 SoC <strong>RTX Spark(N1X)</strong> 탑재 AI 노트북을 정식 출시했다. 연합뉴스·이데일리·코인리더스 등 국내 주요 매체가 일제히 보도했으며, 젠슨 황이 예고했던 'PC 재발명' 비전이 현실화됐다는 평가다. RTX Spark는 Apple Silicon·Qualcomm·Intel·AMD와 직접 경쟁하며, 로컬에서 <strong>LLM 추론</strong>을 수행할 수 있어 클라우드 의존도를 낮춘다. The Verge는 일주일 사용기를 통해 실제 성능과 생산성 변화를 집중 검증했다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>엣지 AI 추론 성능이 클라우드 수준에 근접하면서 '온디바이스 AI'가 기업 환경에도 현실적 선택지가 됐다. 데이터 보안이 민감한 금융·공공·의료 분야에서 클라우드 전송 없이 내부망에서 AI를 구동하려는 수요가 크게 늘어날 전망이다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">디지털서비스 사업</span>
+        <span class="isu-opp-tag">[영업 기회]</span>
+      </div>
+      <p>RTX Spark 같은 고성능 온디바이스 AI 하드웨어 확산은 이수시스템의 기업 고객(제조·건설·금융)이 클라우드 없이 사내 AI를 운용하려는 수요로 이어진다. 이수시스템의 RAG 챗봇 및 RPA 솔루션을 온프레미스·엣지 환경에서도 구동 가능하도록 경량화 패키지를 사전 준비해두면, 보안 민감 고객사 영업에서 차별화 포인트가 된다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE1rUm5VaWM1V2JSWnFkTEVpWDh0ay1tWWdtLTVseVFyV1JsLVlZNllxUlU2Qm9vek9rUGJDX2NYNjduXzFiNUJyOWZGTGdocFpNS29uVjNodVNWQUE0NnJzWtIBYEFVX3lxTE1rUm5VaWM1V2JSWnFkTEVpWDh0ay1tWWdtLTVseVFyV1JsLVlZNllxUlU2Qm9vek9rUGJDX2NYNjduXzFiNUJyOWZGTGdocFpNS29uVjNodVNWQUE0NnJzWg?oc=5" target="_blank" rel="noopener noreferrer">출처: 연합뉴스 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <span class="section-tag tag-insight">글로벌 이슈</span>
+    </div>
+    <h3 class="news-title">EU, ChatGPT·Gemini 제재 규칙 공개…AI법 위반 시 벌금 기준 확정</h3>
+    <p class="news-body">유럽연합(EU)이 <strong>AI Act</strong> 위반에 따른 ChatGPT·Gemini 등 범용 AI 모델 제재 세부 규칙을 공개했다. 위반 유형별 벌금 기준이 명시되며, AI 제공사들은 투명성·안전성 요건을 갖추지 못할 경우 실질적인 <strong>과징금 리스크</strong>에 직면하게 됐다. AI Act는 단계적으로 시행 중이며, 이번 제재 규칙 공개는 기업들이 컴플라이언스 체계를 갖춰야 하는 데드라인이 가까워졌음을 의미한다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>EU AI Act 제재 규칙 구체화는 글로벌 AI 서비스 전반에 컴플라이언스 요건을 강화하는 기폭제가 된다. AI를 도입하는 기업들도 사용하는 AI 서비스가 규제를 준수하는지 점검해야 하며, AI 거버넌스·감사 기능이 솔루션 선택의 핵심 기준으로 부상할 전망이다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[모니터링]</span>
+      </div>
+      <p>EU AI Act 제재 규칙이 구체화되면 국내 기업의 해외 수출 및 글로벌 고객사 대응 시에도 AI 컴플라이언스 요구가 높아진다. 이수시스템의 RAG 챗봇·HR AI Package에 AI 사용 이력 로깅, 모델 투명성 보고, 편향성 점검 기능을 선제적으로 추가하면 컴플라이언스 요건을 영업 차별화 포인트로 활용할 수 있다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxObmQ4Tm5FTGZCcmN2M3hHRTA3ZG9QT1daMThlNGcwbkhLem1vbG9qU3NxdVl4Y3dfR0QtY2R5UE83N3F3YmJrYWJMdnU3ZS1YV0F5enBfc1BYUnV4WDJVOWtxQ2tsWUhGZUx4NFlUVkNHNWdjMzhqcnF4R0FCQ05zQWRFUElTUGNR?oc=5" target="_blank" rel="noopener noreferrer">출처: Pasquale Pillitteri →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <span class="section-tag tag-product">제품 업데이트</span>
+    </div>
+    <h3 class="news-title">ChatGPT, 열린 크롬 탭 읽고 답변에 활용…AI 에이전트의 브라우저 장악 가속</h3>
+    <p class="news-body">OpenAI가 <strong>ChatGPT</strong>에 크롬 브라우저 탭 제어 기능을 도입했다. 현재 열려 있는 탭의 내용을 읽고 이를 응답에 반영하거나, 탭을 직접 조작하는 <strong>컴퓨터 사용(Computer Use)</strong> 기능이 크롬에 정식 적용됐다. 이는 AI가 단순 대화를 넘어 사용자의 실제 업무 흐름 속에 직접 개입하는 '에이전트 시대'가 일반 사용자 레벨까지 내려왔음을 보여준다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>AI 에이전트가 브라우저를 직접 제어하는 기능은 반복적인 웹 기반 업무(정보 수집·양식 작성·데이터 입력 등)를 AI가 대행하는 시대의 시작점이다. 이는 기존 RPA 솔루션 시장과 직접적으로 겹치며, AI 에이전트와 RPA의 경계가 허물어지는 속도가 예상보다 빠를 수 있다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">디지털서비스 사업</span>
+        <span class="isu-opp-tag">[리스크]</span>
+      </div>
+      <p>ChatGPT의 브라우저 탭 제어 기능은 이수시스템이 제공하는 **RPA 솔루션**과 직접 경쟁하는 영역이다. 단순 반복 웹 작업은 ChatGPT 에이전트로 대체될 수 있으므로, RPA 솔루션을 SAP ERP와의 심층 연동·복잡한 프로세스 자동화로 차별화하고, AI 에이전트와 RPA를 결합한 하이브리드 자동화 패키지로 포지셔닝 전환을 검토해야 한다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxPMGJyaW1mcXdkNHozU0g1WFpUWDNRVlk4cElFNHRsZGlVRUVDdDFlZE1HRDd0WHhWdDM0YVFfTjlnLWtTVHFaUU56TjVYZXFlUkZvZTFZZnVscHd5M3hTRDlZLWFJaklKYWkydWN2cllmaWxmdURLOGJkdjZNMVh6VHhBQWRSYk1tUndSaS0zSzNwMFhuY18yT2Rn?oc=5" target="_blank" rel="noopener noreferrer">출처: Innovation Village →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">05</span>
+      <span class="section-tag tag-industry">산업 동향</span>
+    </div>
+    <h3 class="news-title">KAIST, 로봇 AI 4만 3,200회 실측…'LLM 서빙 방식은 로봇에 안 통한다'</h3>
+    <p class="news-body">KAIST 연구진이 로봇 AI 성능을 <strong>4만 3,200회</strong> 실측한 결과, 클라우드 LLM 서빙 방식이 로봇의 실시간 제어에는 적합하지 않다는 실증 데이터를 제시했다. 네트워크 지연·추론 속도 등의 한계로 인해 로봇 환경에서는 특화된 경량 모델이나 온디바이스 추론 방식이 필요하다는 결론이다. 이 연구는 AI의 '현장 적용 가능성'에 근본적인 질문을 던지며 산업계의 주목을 받고 있다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>클라우드 LLM이 만능이 아니라는 실증 연구는 AI 적용 분야별로 최적 아키텍처가 다름을 시사한다. 제조·물류·안전 등 실시간성이 중요한 현장에서는 온디바이스 경량 AI나 엣지 추론이 표준이 될 가능성이 높으며, 산업용 AI 솔루션 설계 시 반드시 고려해야 할 선택 기준이다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">안전 사업</span>
+        <span class="isu-opp-tag">[제품 강화]</span>
+      </div>
+      <p>KAIST 연구 결과는 이수시스템의 **Smart Plant·Smart & Safety** 같은 현장 안전 솔루션에 직접적인 시사점을 준다. 클라우드 LLM 기반 실시간 위험 감지는 지연 문제로 한계가 있으므로, 현장 센서 데이터를 엣지에서 처리하는 경량 AI 모델 적용 방안을 기술 로드맵에 반영하고, 이를 영업 과정에서 '현장 실증 기반 안전 AI' 로 차별화 포인트로 제시할 수 있다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE5wcFdEbFFRdWZlTzJrVlY3Tnlkd01GS2owVkUwS3E0TzdyaXg3UVhBQkFIbkFja0VDeGR6N0FMOWRFSDU0RG5sOHJGSG1EVEkza2wwTkhjZjJiQzF3Nm9QcThjYjBNN1RqRGZvQzdn?oc=5" target="_blank" rel="noopener noreferrer">출처: 이포커스 →</a></div>
+  </section>
+  
+  <div class="isu-section">
+    <h2>이수시스템 인사이트</h2>
+    <p>이번 주 AI 뉴스의 핵심은 '적용 가능성의 검증'이다. Gemini 4 Argon·RTX Spark 출시로 고성능 AI 선택지가 늘어난 만큼, 이수시스템은 RAG 챗봇·HR AI Package에 멀티모델 옵션을 추가해 고객 맞춤형 제안력을 높여야 한다. EU AI Act 제재 규칙 확정과 KAIST의 현장 실측 연구는 각각 컴플라이언스 기능과 엣지 추론 기반 현장 AI의 중요성을 부각시키며, 이수시스템의 안전 솔루션(Smart Plant·Smart & Safety)과 RPA 포트폴리오 차별화 방향을 구체화하는 데 직접 활용할 수 있다.</p>
+  </div>
+
+  <div class="bottom-line">
+    <h2>오늘의 핵심 테이크어웨이</h2>
+    <ul class="action-list">
+      <li><strong>Gemini 4 Argon·RTX Spark 동시 등장</strong>: 프론티어 모델과 온디바이스 AI 하드웨어가 함께 진화하며, 기업은 클라우드와 엣지를 넘나드는 멀티모델 전략이 필수가 됐다.</li>
+      <li><strong>AI 에이전트의 업무 침투 가속</strong>: ChatGPT의 크롬 탭 제어 기능은 AI가 단순 대화를 넘어 실제 업무 프로세스를 직접 수행하는 시대가 일반 사용자에게도 열렸음을 의미한다.</li>
+      <li><strong>규제와 실증의 시대</strong>: EU AI Act 제재 규칙 구체화와 KAIST의 로봇 AI 실측 연구는 AI가 '작동한다'는 것만으로 부족하고, <strong>안전·컴플라이언스·현장 적합성</strong>까지 입증해야 경쟁력이 된다는 것을 보여준다.</li>
+    </ul>
+  </div>
+  </div><!-- /tab-ai -->
+
+  <div id="tab-it" class="tab-pane">
+  <div class="tldr">
+    <div class="tldr-label">오늘의 한 줄</div>
+    <p>코스피 20% 급락 충격 속 두산그룹 CFO 라인 부회장 승진·스톤브릿지의 2000억 포이스 인수 등 기업별 움직임은 지속</p>
+  </div>
+
+  
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <span class="section-tag tag-product">시장 동향</span>
+    </div>
+    <h3 class="news-title">코스피 20% 급락…정부 '시장 교란 엄정 대응' 긴급 점검</h3>
+    <p class="news-body">국내 증시가 단기간 <strong>20% 급락</strong>하는 충격적인 하락세를 기록하며 정부가 긴급 금융시장 점검에 나섰다. 기획재정부와 금융당국은 '경제·증시 기초여건은 견조하다'는 입장을 유지하면서도 채권·외환시장으로 불안이 확산되는 것을 경계하고 있다.
+
+정부는 시장 교란 행위에 대해 엄정 대응하겠다고 밝혔으며, 외국인 투자자들이 <strong>삼성전자·SK하이닉스</strong> 등 반도체 대형주를 대거 매도하고 있는 점도 주요 불안 요인으로 지목됐다. 외국인의 이탈 배경으로는 반도체 실적 자체보다 빅테크 고객사들의 과도한 부채 리스크가 거론된다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>코스피 20% 급락은 국내 IT·반도체 기업의 밸류에이션 전반에 직접적인 타격을 준다. 외국인의 반도체 대형주 매도세가 이어질 경우 삼성전자·SK하이닉스의 투자·R&D 여력 축소로 이어질 수 있으며, 스타트업 생태계의 후속 투자 심리도 냉각될 가능성이 높다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBuU2tHTWgzVVNpNnZOR0pRdmRTT3NZbXlBX0JqNmlJRWVXbTRKaEhxYVlqOUl2bnZ4dksyZW5pc3hiekFwVnFLUzE0UnVxZ2ZXV2x0cG0tamtaWm1MMnpB?oc=5" target="_blank" rel="noopener noreferrer">출처: MTN 머니투데이방송 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <span class="section-tag tag-industry">M&A·인수합병</span>
+    </div>
+    <h3 class="news-title">스톤브릿지PE, 삼성전자·SK하이닉스 공급사 '포이스' 2000억에 인수</h3>
+    <p class="news-body">사모펀드 <strong>스톤브릿지캐피탈</strong>이 삼성전자·SK하이닉스(닉스)에 부품을 공급하는 <strong>포이스</strong>를 약 <strong>2000억 원</strong>에 인수했다. 포이스는 반도체 공정용 부품 및 소재를 납품하는 회사로, 주요 고객사가 국내 반도체 빅2라는 점에서 안정적인 수익 기반을 갖췄다는 평가다.
+
+이번 딜은 증시 급락과 투자 심리 위축 속에서도 반도체 공급망 핵심 기업에 대한 사모펀드의 베팅이 이어지고 있음을 보여준다. 스톤브릿지는 기존 제조·IT 부품 포트폴리오와의 시너지를 통해 기업 가치 제고 후 엑시트를 노릴 것으로 전망된다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>반도체 공급망 소부장(소재·부품·장비) 기업에 대한 PE의 2000억 원대 인수는 해당 섹터의 전략적 가치가 여전히 높게 평가되고 있음을 시사한다. 증시 변동성이 커진 시기일수록 PE의 바이아웃 기회는 늘어날 수 있어, 유사한 딜이 추가로 등장할 가능성이 있다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE0wbldqVkdnNmVtNjB1RUJlcmdMY3VBSGc4NENUVllJNHlpRzdrRTJfalJjaWJYYWtpak94cFZfN2ZwUW96SlZ5aW13d1Z3MmJxeFFYYtIBVEFVX3lxTE0wbldqVkdnNmVtNjB1RUJlcmdMY3VBSGc4NENUVllJNHlpRzdrRTJfalJjaWJYYWtpak94cFZfN2ZwUW96SlZ5aW13d1Z3MmJxeFFYYg?oc=5" target="_blank" rel="noopener noreferrer">출처: 더팩트 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <span class="section-tag tag-society">경영·인사</span>
+    </div>
+    <h3 class="news-title">두산그룹 CFO 라인 대약진…김민철·박상현 동반 부회장 승진</h3>
+    <p class="news-body"><strong>두산그룹</strong>이 정기 임원 인사를 통해 CFO(최고재무책임자) 출신 <strong>김민철</strong>·<strong>박상현</strong> 두 명을 동시에 부회장으로 승진시켰다. 재무 전문가의 최고위직 동반 승진은 그룹 차원에서 재무 건전성 및 자본 효율화를 최우선 과제로 삼겠다는 신호로 읽힌다.
+
+두산은 최근 두산에너빌리티, 두산로보틱스 등 핵심 계열사의 사업 재편을 이어가고 있으며, IT·로봇·에너지 분야에 대한 투자 포트폴리오 관리가 복잡해진 상황이다. CFO 라인의 약진은 향후 M&A·투자 결정에서 재무 리스크 관리가 더욱 중심이 될 것임을 예고한다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>재무통의 부회장 동반 승진은 국내 대기업 그룹에서 이례적인 행보다. 증시 급락과 금융시장 불안 국면에서 CFO 라인을 전면에 배치한 것은 그룹 전반의 자산 건전성·현금흐름 관리를 강화하겠다는 의지로, 두산 계열 IT·로봇 사업에 대한 투자 속도 조절 가능성도 시사한다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE9LWmtoT3RoOUlENUJkM0J1bzBQNkd1NGhIdEVEQWJHdTdMelA2NmVnaDQxZUVjWWxfbmJDeWZ6QzVYNW1yTTBmWE9hVTRIOWo2ZjVDUGlmZVFMVWVXYWdpcUIyMWduLTZM0gFsQVVfeXFMTXNPT2hyazlZMjYyQ0h3b3JCQk1PYUczdjc3amVNTUdzYXVXNWdaZDZqcWpLcjdSa1BOZ3VKNFZ3cWFvdE5lYXdWQ0M0M3lob216a3ZfdUdnZzRCNW5MTUZhSVQ5LWJ5dlhJSXlG?oc=5" target="_blank" rel="noopener noreferrer">출처: 블로터 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <span class="section-tag tag-insight">사업 전략</span>
+    </div>
+    <h3 class="news-title">아이티센그룹, 금·교육·스포츠로 신사업 다각화…IT 울타리 넘는다</h3>
+    <p class="news-body">국내 IT서비스 기업 <strong>아이티센그룹</strong>이 기존 IT 인프라 사업을 넘어 <strong>금(Gold) 거래·교육·스포츠</strong> 분야로 사업 영역을 대폭 확장하고 있다. 같은 맥락에서 계열사 <strong>아이티센씨티에스</strong>는 <strong>롯데이노베이트</strong>와 손잡고 안산 <strong>GCC(글로벌컨택센터)</strong> 운영 협력 계약을 체결, 운영 내실화와 센터 확장을 동시에 추구하는 '투트랙' 전략을 가동했다.
+
+아이티센그룹은 IT 서비스에서 창출한 현금을 기반으로 고마진·고성장 신산업에 포트폴리오를 분산하는 전략을 취하는 것으로 보인다. GCC 협력을 통해 롯데이노베이트와의 전략적 파트너십도 강화되는 양상이다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>전통 IT서비스 기업이 이종 산업(금·스포츠·교육)으로 빠르게 보폭을 넓히는 것은 IT 서비스 업계의 마진 압박과 성장 한계를 보여주는 동시에, 그룹사 레벨의 복합 기업화 트렌드를 반영한다. 롯데이노베이트와의 GCC 협력은 양사 모두에 레퍼런스가 되어 향후 공공·민간 수주 경쟁에서 유리하게 작용할 수 있다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE8yc0FQSU50MHRBYndBOTg0VHRIU0dXMFpUSXh5TVF4a2NrV201UDFWXzZmN2Z3TS1Ub3UzOFlrZVRZWnpuOVJJVU00OTVuWmNNblJUdmV2QlNtVFFReW1XZDBqelN3aDFYWGRz0gFvQVVfeXFMT1FzQTJvNzJ1dDVtREp1cnRWaTdGMFhDU2czVUEwa0I4cFZsQlg5TGQzczdELXBZRFJNVFdaaWM0RWFWQmYzZ2VMN3p4R2FIUHBPTmY3WEgzTEQ2dG5HQTF3ZFYxWDRrMnVyWHhUT21V?oc=5" target="_blank" rel="noopener noreferrer">출처: 한국아이닷컴 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">05</span>
+      <span class="section-tag tag-society">경영·인사</span>
+    </div>
+    <h3 class="news-title">엔젤로보틱스, 창업자 공경철 대표 전격 복귀…피지컬 AI로 승부수</h3>
+    <p class="news-body">웨어러블 로봇 기업 <strong>엔젤로보틱스</strong>의 창업자 <strong>공경철</strong> 대표가 경영 일선에 복귀했다. 회사는 기존 웨어러블 로봇 사업을 넘어 <strong>피지컬 AI</strong>(물리 세계와 결합된 인공지능) 분야로의 사업 전환을 공식화하며 새로운 성장 동력을 선언했다.
+
+엔젤로보틱스는 재활·의료용 웨어러블 로봇으로 국내외에서 인지도를 쌓아온 기업으로, 창업자 복귀 후 피지컬 AI라는 화두를 전면에 내세운 것은 로봇에 AI를 결합한 차세대 플랫폼 경쟁에 본격 참전하겠다는 의미다. 글로벌 빅테크들이 피지컬 AI·휴머노이드 로봇에 막대한 투자를 쏟아붓는 흐름과 맞닿아 있다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>창업자의 복귀는 스타트업·중소기업에서 경영 쇄신과 투자 유치의 신호탄으로 작용하는 경우가 많다. 피지컬 AI로의 피벗은 재활 로봇이라는 니치 시장에 머무르지 않고 글로벌 AI 로봇 경쟁에 직접 뛰어들겠다는 선언으로, 향후 대규모 투자 유치나 전략적 파트너십 소식이 이어질 가능성이 높다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1kSWw0Sl94anpFU2NjVXIzLWFlSmY5VGI4Mi1sUHFGbGE0Q01aaWtfRFpIRWt0eFh5cmFKTnZ6VE50ay1MNzFHbF9GS3RLNEFSY0JHWmY4Z3JtMXZrOC1yb2pQUmhqYTg?oc=5" target="_blank" rel="noopener noreferrer">출처: 인공지능신문 →</a></div>
+  </section>
+
+  <div class="bottom-line">
+    <h2>오늘의 핵심 테이크어웨이</h2>
+    <ul class="action-list">
+      <li><strong>코스피 20% 급락</strong>이라는 충격적 시장 환경 속에서도 스톤브릿지의 2000억 포이스 인수처럼 반도체 공급망 소부장 기업에 대한 PE 딜은 멈추지 않았다—위기는 곧 바이아웃 기회다.</li>
+      <li>두산 CFO 라인 부회장 승진, 엔젤로보틱스 창업자 복귀 등 <strong>경영 쇄신 인사</strong>가 잇따르는 것은 연말 인사 시즌과 맞물려 IT·제조 대기업들이 불확실한 시장에 대비한 리더십 재편에 들어갔음을 시사한다.</li>
+      <li>아이티센의 이종 산업 확장, 엔젤로보틱스의 <strong>피지컬 AI</strong> 피벗처럼 전통 IT·로봇 기업들이 기존 사업 경계를 허물고 새로운 카테고리로 진입하는 속도가 빨라지고 있다—단순 IT서비스에서 복합 플랫폼으로의 전환이 생존 전략이 되고 있다.</li>
+    </ul>
+  </div>
+  </div><!-- /tab-it -->
+
+  <footer class="footer">
+    <p>AI Daily Briefing — <span class="accent">바쁜 사람을 위한 3분 AI 뉴스</span></p>
+    <p style="margin-top: 8px;">2026.10.17 (토) | 매일 아침 업데이트</p>
+    <p style="margin-top: 8px;">© keyboard@kakao.com</p>
+  </footer>
+</div>
+<audio src="ai_briefing_2026_10_17.mp3" controls style="position:fixed;bottom:20px;right:20px;z-index:100;width:260px;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.5);"></audio>
+<script>
+  const TAB_TITLES = {
+    'tab-ai': '오늘의 AI, 3분 안에 끝내기',
+    'tab-it': '국내 IT 회사 동향'
+  };
+  function switchTab(btn, id) {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(id).classList.add('active');
+    document.getElementById('main-title').textContent = TAB_TITLES[id];
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const audio = document.querySelector('audio');
+    if (audio) {
+      if (id === 'tab-it') {
+        audio.pause();
+        audio.style.display = 'none';
+      } else {
+        audio.style.display = '';
+      }
+    }
+  }
+</script>
+</body>
+</html>
