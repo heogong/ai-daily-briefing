@@ -1,0 +1,72 @@
+{
+  "date": "2026.10.21 (수)",
+  "one_liner": "OpenAI 차세대 모델 준비·미국 DeepSeek 금지·한국 AI 일자리 경보까지, AI 패권 경쟁이 일상 깊숙이 파고드는 하루",
+  "news": [
+    {
+      "number": 1,
+      "category": "모델 릴리스",
+      "title": "OpenAI, GPT-6.1 Terra 출시 임박 — 비용 대폭 절감 목표",
+      "body": "OpenAI가 **GPT-6.1 Terra** 모델을 준비 중이라고 복수의 외신이 보도했다. 이 모델은 기존 GPT 시리즈 대비 **AI 추론 비용을 전반적으로 낮추는 것**이 핵심 목표로, 엔터프라이즈 고객의 도입 장벽을 낮추기 위한 전략적 포지셔닝으로 분석된다. 현재 Claude vs ChatGPT vs Gemini 간 API 가격 격차가 최대 **20배**에 달하는 상황에서, 비용 경쟁력이 시장 점유율의 핵심 변수로 부상하고 있다.",
+      "insight": "AI 모델 간 성능 격차가 좁혀지면서 이제 경쟁의 축이 '성능'에서 '비용'으로 이동하고 있다. GPT-6.1 Terra처럼 저비용 고성능 모델이 잇따라 출시될 경우, 기업용 AI 도입의 ROI 계산이 훨씬 유리해져 중소·중견 기업의 AI 전환 속도가 빨라질 전망이다. API 가격 20배 격차는 도입 기업이 모델을 바꿀 때마다 비용 구조 자체를 재설계해야 한다는 의미이기도 하다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "AI 추론 비용 인하 트렌드는 이수시스템의 RAG 기반 챗봇·HR AI Package 운영 비용 절감으로 직결된다. GPT-6.1 Terra 출시 시점에 맞춰 WORKUP 및 기업용 챗봇의 백엔드 모델을 교체 검토함으로써, 고객사에 동일 품질을 더 낮은 비용으로 제공하는 제안서 경쟁력을 높일 수 있다.",
+      "source": "Android Headlines / TestingCatalog AI News",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxObi1YLV9sRHpsak9wajJ3RVJoMDhFM0xBVTBTNTJBdzVkTXBMWFpaMl9KWkw3aXkxX3FVZmg1aFJGbTVDUlRKVzlhZExyN3UzZnpyOENiWEdURzhCZFRuclFsRmkwcTJvZDV4ODZLZkczcHczcGRNeENwd2xMTmVGS3ZwV3EwSlZSUmtr?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "글로벌 이슈",
+      "title": "미국, 정부 시스템에서 DeepSeek 전면 금지 — AI 패권 전쟁 새 국면",
+      "body": "미국 정부가 중국산 AI 모델 **DeepSeek**을 민간 정부 기관 시스템에서 공식 금지했다. 국가 안보와 데이터 주권 우려가 주된 이유로, 이미 군·정보기관에 적용된 금지 조치가 **전 행정 부처로 확대**된 것이다. 이번 조치는 미중 AI 패권 경쟁이 모델 성능 경쟁을 넘어 **정책·규제 영역**으로 번지고 있음을 보여주는 신호탄이다.",
+      "insight": "정부의 특정 AI 모델 금지 조치는 단순한 보안 이슈를 넘어 'AI 공급망 국산화' 요구로 이어질 수 있다. 한국을 포함한 동맹국들도 유사한 정책을 검토할 가능성이 높아지며, 공공 부문 AI 도입 시 '원산지'와 '데이터 저장 위치'가 핵심 선정 기준이 될 전망이다. 민간 기업도 사내 AI 도구 사용 정책을 재점검해야 하는 시점이 됐다.",
+      "isu_area": "클라우드 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "공공기관의 외산 AI 모델 배제 흐름은 네이버 클라우드(NCP) 파트너사인 이수시스템에 직접적인 영업 기회다. 공공 고객사 대상으로 'NCP 기반 국산 클라우드 + 국내 LLM 연동 AI 솔루션' 패키지를 제안할 때, 데이터 주권·보안 규정 준수를 핵심 차별점으로 내세울 수 있다.",
+      "source": "Dataconomy / Yahoo",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9EekJRV3Fwb0loWGdsSVRwdnpxQ1c1b21UZjNtYUxHZjNsRFZlWUVkNGkzUFlWVEdfQnRpSkxjZHBjR1licm9ybWNDcUM0N2lFSF9EV2hCRk9MRlN4TFlpYVVtQVh3Z2p2?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "일자리·사회",
+      "title": "한국에 덮친 'AI 일자리 경보' — 대체 위기 현실화 진단",
+      "body": "국내 언론이 **AI로 인한 일자리 소멸 위기**가 한국 사회에 본격 도래했다는 진단을 집중 보도했다. 제조·금융·유통 등 주요 산업군에서 반복적 화이트칼라 업무를 중심으로 AI 대체 속도가 빨라지고 있으며, 전문가들은 **단순 사무직의 20~30%**가 5년 내 자동화 영향권에 들 것으로 전망했다. 재교육·전직 지원 정책이 현실 속도를 따라가지 못한다는 비판도 제기됐다.",
+      "insight": "AI발 일자리 위기 담론이 한국 사회의 주류 의제로 자리잡으면서, 기업 HR 부서는 '인력 구조 재편'과 'AI 협업 인재 육성'이라는 이중 과제에 직면하게 됐다. 이는 HR 시스템의 역할이 단순 급여·근태 관리를 넘어 **인력 역량 분석, 리스킬링 추적, 조직 시뮬레이션** 기능으로 확장되어야 한다는 시장 신호다.",
+      "isu_area": "HR 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "AI 일자리 재편 이슈는 WORKUP과 Smart HR의 기능 고도화 명분을 강화한다. 고객사 HR 담당자들이 '어떤 직무가 AI에 취약한가'를 분석하고 싶어할 때, AI 이력서 분석 솔루션과 연계하여 내부 인력 역량 맵핑·리스킬링 로드맵 기능을 WORKUP에 추가 제안하는 영업 시나리오가 유효하다. 특히 제조·건설 고객사는 현장직과 사무직 혼재 구조이므로 직무별 AI 대체 리스크 진단 기능이 차별점이 될 수 있다.",
+      "source": "TradingView (헬로티)",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5NUXZEOGxKMk1FYzBlak5hUFdBZzlCcHMyaGxtU1p5SUZka0NYZ1pycWRzajd2UG5odVhLSElNWTBrSVNPWGJueFJtTDBWZFJoSXhZdlEyZ1BXLW1rZFBndHNnT2o3N0Ew?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "산업 동향",
+      "title": "현대·기아·제네시스, 차량용 AI 비서에 '브랜드 전용 페르소나' 구축",
+      "body": "머니투데이 단독 보도에 따르면 **현대자동차·기아·제네시스**가 차량 내 AI 비서에 브랜드별 고유 페르소나를 개발 중이다. 동일한 AI 엔진을 사용하더라도 브랜드 정체성에 맞는 **목소리·어조·응답 스타일**을 차별화하는 것이 핵심으로, AI가 단순 기능 도구를 넘어 **브랜드 경험의 핵심 접점**으로 진화하고 있음을 보여준다. 이는 글로벌 완성차 업계의 AI 차별화 경쟁이 '스펙'이 아닌 '브랜드 정체성'으로 이동하는 신호다.",
+      "insight": "완성차 업계의 브랜드별 AI 페르소나 전략은 B2C 영역에서 AI가 '백엔드 기술'에서 '프런트엔드 경험'으로 전환하는 대표 사례다. 이 흐름은 제조·서비스 전 산업으로 확산될 가능성이 높으며, 기업들이 외부 AI 모델을 그대로 쓰는 대신 자사 브랜드·문화에 맞는 AI 커스터마이징에 투자하기 시작했음을 의미한다. 엔터프라이즈 AI 솔루션 시장에서도 '화이트라벨·커스터마이징 역량'이 핵심 경쟁력으로 부상할 전망이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "브랜드 전용 AI 페르소나 트렌드는 이수시스템의 RAG 기반 챗봇 사업과 직결된다. 제조·건설 고객사가 자사 내부 업무 프로세스와 기업 문화를 반영한 '맞춤형 AI 비서'를 도입하려 할 때, 이수시스템의 기업용 챗봇 솔루션을 고객사 브랜드·업무 특성에 맞게 커스터마이징해주는 구축 역량을 영업 포인트로 강조할 수 있다.",
+      "source": "머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE96WFlCZ2dmYU9DVzQzWHQyOFRjZFd6UzJpaEpuczM0UnNvZXpLVlp3UVB5R2hOeFhwdGZfeTdNbFM2eFJDQXBpRWJpZ0o0cWNJVFBXRERxNG5Eam5VVU1UWEJyNUJhaURpcmxKZy1DUHJRd9IBckFVX3lxTE96WFlCZ2dmYU9DVzQzWHQyOFRjZFd6UzJpaEpuczM0UnNvZXpLVlp3UVB5R2hOeFhwdGZfeTdNbFM2eFJDQXBpRWJpZ0o0cWNJVFBXRERxNG5Eam5VVU1UWEJyNUJhaURpcmxKZy1DUHJRdw?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "산업 동향",
+      "title": "AI 추론 비용 10분의 1로 — 오픈소스 'llm-d 1.0' 공개, 기업 AI 대량 운영 시대 열린다",
+      "body": "레드햇·IBM·구글·엔비디아가 공동 참여한 CNCF 프로젝트 **llm-d 1.0**이 PyTorch 콘퍼런스에서 공식 공개됐다. 오픈소스 AI 추론 프레임워크로, **AI 추론 비용을 최대 10분의 1**까지 절감할 수 있다고 주장한다. 분산 추론·KV 캐시 공유 등 프로덕션 환경 최적화 기능을 갖추고 있어, 자체 인프라에서 LLM을 운영하려는 기업들의 온프레미스·프라이빗 클라우드 AI 배포를 현실화할 도구로 주목받고 있다.",
+      "insight": "llm-d 1.0의 등장은 AI 추론 비용이라는 그동안 기업들의 가장 큰 도입 장벽을 정면 돌파하는 시도다. 빅테크 4사가 공동 개발한 오픈소스 스택이 산업 표준으로 자리잡을 경우, AI 모델을 클라우드에서만 쓰는 것이 아니라 **사내 서버에 직접 배포하는 온프레미스 AI** 수요가 폭발적으로 늘어날 수 있다. 특히 데이터 보안이 민감한 금융·공공 부문의 프라이빗 AI 전환 속도를 크게 앞당길 것으로 전망된다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "llm-d 1.0 기반의 저비용 온프레미스 LLM 운영이 가능해지면, 이수시스템의 RAG 챗봇 및 HR AI Package를 고객사 내부 서버에 배포하는 구축형 상품 라인업을 강화할 수 있다. 특히 데이터 외부 반출이 불가한 금융·공공 고객사에 '완전 내부 운영 AI' 솔루션을 제안할 때 llm-d 스택을 인프라 기반으로 활용하는 기술 파트너십을 검토할 필요가 있다.",
+      "source": "인공지능신문 / IBM Newsroom",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5nYy1GT3VBVllKTHhlLTh1YU5CdUpMQ2hQMnVXeWdTbHZIMmtabHhBcUo1TTJRejZTdmJYRnZPaU81QVc2UHl6blhmNEFDajB0djVPRFU2ekRCTS1NVGFPQzltaXJtRlE?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**AI 모델 비용 전쟁 본격화** — OpenAI GPT-6.1 Terra, llm-d 1.0 등 추론 비용 절감 기술이 쏟아지며, 기업 AI 도입의 최대 장벽이 무너지기 시작했다.",
+    "**AI 패권이 규제로 번진다** — 미국의 DeepSeek 정부 금지는 AI 선택 기준에 '보안·원산지'가 추가됐음을 의미하며, 국내 공공 조달 시장에도 유사한 흐름이 예고된다.",
+    "**한국 기업 HR의 새 숙제** — AI 일자리 대체 공포가 사회 의제로 부상하면서, HR 시스템은 근태·급여 관리를 넘어 **인력 리스킬링 추적과 조직 재편 시뮬레이션** 기능을 요구받게 됐다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심은 '비용 장벽 붕괴'와 '규제·보안 강화'라는 두 흐름이 동시에 가속화되고 있다는 점이다. llm-d 1.0과 GPT-6.1 Terra로 AI 운영 비용이 낮아지면 이수시스템의 챗봇·HR AI Package 제안 단가와 고객사 설득 난도가 함께 낮아지는 기회가 생긴다. 동시에 DeepSeek 금지·AI 일자리 이슈는 공공·금융 고객사 대상 'NCP 기반 국산 AI 솔루션'과 'WORKUP 리스킬링 기능 강화' 두 가지 영업 카드를 꺼낼 최적의 타이밍임을 시사한다."
+}
