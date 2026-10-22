@@ -1,0 +1,72 @@
+{
+  "date": "2026.10.23 (금)",
+  "one_liner": "Claude는 자는 동안 내 일을 대신 하고, OpenAI 모델은 Google 클라우드에 올라타다 — AI 에이전트 시대가 본격화되는 한 주",
+  "news": [
+    {
+      "number": 1,
+      "category": "제품 업데이트",
+      "title": "Anthropic, 자는 동안도 일하는 AI 비서 'Claude Duet' 출시",
+      "body": "Anthropic이 **Claude Duet**을 공식 출시했다. 단순 질답을 넘어 사용자가 오프라인인 동안에도 자율적으로 업무를 처리하는 **'프로액티브 AI 에이전트'** 개념을 도입한 것이 핵심이다. 매일 아침 사용자에게 필요한 브리핑을 제공하고, 구독 쿼터 공유와 직접 메모리 상속 기능도 함께 지원한다. 단, TechTarget은 '기업들이 아직 준비가 안 됐다'는 현실적인 한계도 지적했다 — 보안 정책, 데이터 거버넌스, 승인 프로세스 등 엔터프라이즈 도입을 위한 인프라가 뒤따라야 한다는 것이다.",
+      "insight": "AI 어시스턴트가 '질문에 답하는 도구'에서 '스스로 행동하는 에이전트'로 진화하는 변곡점을 보여주는 사례다. 사용자의 개입 없이 백그라운드에서 업무를 실행한다는 개념은 기업 워크플로우 전반을 재설계하게 만들 수 있다. 다만 에이전트의 자율성이 높아질수록 보안·통제·책임 소재 문제가 동시에 부상하며, 엔터프라이즈 채택 속도는 기술 성숙도만큼 조직 준비도에 달려 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "Claude Duet의 '프로액티브 에이전트' 개념은 이수시스템 RAG 기반 챗봇의 다음 진화 방향을 시사한다. 현재 챗봇이 질문에 응답하는 수준이라면, WORKUP이나 Smart HR에 연동된 HR AI Package를 '매일 아침 근태 이상 알림, 승인 대기 처리 요약, 채용 진행 현황 브리핑'을 자동으로 제공하는 에이전트형으로 고도화하는 로드맵을 검토할 시점이다.",
+      "source": "TechTarget / Anthropic",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNR05JZHN0U2d5RHE1MWUyUXVaeGhoX3E1dTRyNzNLd3JndmVGa0U2RGE2bFIzZ1ZHUUhTMVZ4Nzg3QmFTb2FMUENXSDR2a0Z5c3h3amx2YXFMY3E3SkFlN09PT1hLS1RjUHQzeGhuVm10TnBlMjlIcVpfdm1aSW95T2V1eFJpeWwwMDJmcnJmUWhxYVdvb2hYQUpUcjFld2VqM3YzcjFaYw?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "산업 동향",
+      "title": "OpenAI GPT-6, Google Cloud에 입성 — 경쟁사 플랫폼 위에 올라탄 파격 행보",
+      "body": "OpenAI가 **GPT-6 및 Codex 모델**을 Google Cloud의 **Model Garden**에 공급하기로 했다. Microsoft Azure를 주 파트너로 두면서도 Google Cloud에 모델을 제공하는 '멀티 클라우드 유통' 전략을 택한 것이다. 이로 인해 Alphabet 주가는 소폭 하락했는데, 자사 클라우드에 경쟁 AI 모델이 올라오는 것이 오히려 Gemini의 입지를 약화시킬 수 있다는 우려가 반영됐다. 동시에 Anthropic의 Claude 역시 Google Cloud 가용성 확대를 발표하며, Google Cloud는 하루 사이 주요 AI 모델 3종(Gemini, GPT-6, Claude)을 모두 탑재한 '멀티 AI 허브'가 됐다.",
+      "insight": "AI 모델 유통 구조가 '독점 플랫폼'에서 '오픈 마켓플레이스' 방향으로 빠르게 이동하고 있음을 보여준다. 클라우드 사업자는 자체 AI 모델 경쟁력보다 '얼마나 많은 선택지를 제공하느냐'로 고객을 락인하는 전략으로 전환 중이다. 기업 고객 입장에서는 클라우드를 바꾸지 않고도 다양한 LLM을 비교·조합해 사용할 수 있는 환경이 조성된다는 의미다.",
+      "isu_area": "클라우드 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "이수시스템이 NCP(네이버 클라우드) 파트너사로서, 국내 고객사에 AI 모델 선택지를 넓혀주는 컨설팅 역량이 중요해진다. GPT-6·Claude·Gemini가 단일 클라우드에서 공존하는 구조는 고객이 '어떤 모델을 어떤 업무에 쓸지'를 결정하는 데 도움을 줄 파트너 수요를 높인다. NCP 위에서도 멀티 LLM 연동을 고려한 AI 사업 제안서 작성을 검토할 필요가 있다.",
+      "source": "Marketing4eCommerce / Techiexpert.com",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPa21EcE1vSXVleGFyWmk2RVZqcEJZbnc5M0VWOTdmdk1qanpGRlBDM204TnpPWm4xYlg4WENwQlMtTTZ6aW9lUU5GaXM1NlVVWHNJZC1URElLT01scVF0MG5FM2UzcFpyakRSS2tBZXpLUGRjRzdmam1zTjQyYm1LaFNiSDdLVmlkMlhVbEZZOHZfUUYy?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "제품 업데이트",
+      "title": "MS, AI 진단 도구 '의사보다 4배 정확' 선언 — 헬스케어 AI 시대 본격 개막",
+      "body": "Microsoft AI CEO **무스타파 술레이만**이 The Verge와의 인터뷰에서 자사 AI 의료 진단 도구가 인간 의사 대비 **최대 4배 높은 진단 정확도**를 달성했다고 밝혔다. 그는 '헬스케어 AI가 마침내 현실이 됐다'고 선언하며, 수년간 '곧 온다'고만 했던 의료 AI가 실제 임상 수준에 도달했음을 주장했다. 구체적인 임상시험 규모나 적용 질환명 등 세부 사항은 공개되지 않았으나, Microsoft가 공격적인 헬스케어 AI 행보를 본격화하는 신호탄으로 해석된다.",
+      "insight": "헬스케어는 AI가 가장 극적인 ROI를 보여줄 수 있는 분야로 꼽혀왔지만, 규제·책임·신뢰 문제로 도입이 지연돼 왔다. Microsoft의 이번 발표는 '진단 보조 AI'가 실질적 임상 도구로 진입하는 단계임을 시사하며, 의료 기관의 AI 도입 검토를 가속화할 수 있다. 다만 '4배 정확'이라는 주장은 독립적 검증이 선행돼야 하며, 규제 당국의 승인 여부가 실질적 확산의 관건이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "직접 연관성은 낮으나, AI가 전문 영역(의료·법률·재무)에서 인간 전문가 수준을 초과한다는 서사가 확산될수록 기업 고객의 HR AI·채용 AI에 대한 신뢰도도 함께 높아지는 효과가 있다. 이수시스템의 AI 이력서 분석 솔루션을 '전문가 수준의 판단을 보조하는 도구'로 포지셔닝하는 영업 메시지를 강화하는 데 이 흐름을 활용할 수 있다.",
+      "source": "The Verge / Microsoft",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence"
+    },
+    {
+      "number": 4,
+      "category": "모델 릴리스",
+      "title": "크래프톤, 자체 LLM '라온-1 미니' 공개 — 게임사가 AI 퍼스트 기업으로 변신",
+      "body": "국내 게임사 크래프톤이 독자 개발 LLM **'라온-1 미니'**를 공개했다. 300억 파라미터급 규모에 효율성을 더한 모델로, 크래프톤은 LLM·월드모델·로봇 개발을 동시에 추진하는 **'AI 퍼스트'** 전략 전환을 가속화하고 있다. 김창한 대표가 직접 전략 전환을 진두지휘하며, 게임 콘텐츠 AI를 넘어 범용 AI 기업으로의 도약을 선언한 것으로 풀이된다. 국내 기업이 자체 LLM을 공개하는 사례가 늘어나고 있어, 한국 AI 생태계의 저변 확대로도 주목받는다.",
+      "insight": "게임사·제조사·금융사 등 비IT 전통 기업들이 자체 LLM 또는 특화 AI 모델 개발에 뛰어드는 흐름이 국내에서도 본격화되고 있다. 이는 범용 LLM을 그대로 쓰는 것보다 자사 데이터로 파인튜닝한 도메인 특화 모델이 실무 성능에서 유리하다는 판단에서 비롯된다. 기업용 AI 솔루션 시장에서 '자체 모델 보유 기업 vs 외부 LLM 의존 기업' 간의 경쟁 구도가 형성될 수 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "크래프톤처럼 자체 LLM을 개발하는 국내 대기업은 극소수다. 대부분의 국내 중견·대기업은 외부 LLM을 기반으로 한 기업용 AI 솔루션을 필요로 한다. 이수시스템의 RAG 기반 챗봇과 HR AI Package는 고객사가 자체 데이터를 활용해 도메인 특화 AI를 구축하도록 돕는 솔루션으로, 'AI 퍼스트'를 선언하고 싶지만 자체 개발 여력이 없는 제조·건설·금융 고객사를 대상으로 한 적극적인 영업이 유효하다.",
+      "source": "블로터 / 신아일보",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9wa2s0MVlxbEVHSl9HR1lFTGNKblpTdVpCVFpzOWlCX2ZNcmV2el9TcG9OckhMUVhWU0lLc19BUVVFbTl3YUNnR1BHN3JYcXlsTGRnUVFqaW5oSXR2OU5TUXA2MXZtSF9nQzU3QdIBbEFVX3lxTE9wa2s0MVlxbEVHSl9HR1lFTGNKblpTdVpCVFpzOWlCX2ZNcmV2el9TcG9OckhMUVhWU0lLc19BUVVFbTl3YUNnR1BHN3JYcXlsTGRnUVFqaW5oSXR2OU5TUXA2MXZtSF9nQzU3QQ?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "글로벌 이슈",
+      "title": "AI가 웹 70%의 보안 구멍 찾아냈다 — PHP 취약점 발견이 열어젖힌 판도라의 상자",
+      "body": "AI가 웹 전체의 **약 70%에서 보안 취약점**을 발견했다는 보고가 나왔다. PHP 기반의 심각한 버그가 발견됐고, Fortune은 OpenAI가 이 상황을 '수익화할 준비가 돼 있다'고 분석했다. 별도로 AI 코딩 도구 OpenCode에서는 **API 키 탈취 공격(디스틸레이션 어택)**이 발생해 미승인 과금 피해가 보고됐으며, LiteLLM 라이브러리에서도 악성 공급망 공격으로 클라우드 크리덴셜과 AI API 키가 유출되는 사고가 잇따랐다. AI가 보안 방어와 공격 양쪽에 동시에 활용되는 **'초지능 해킹 전쟁'** 시대가 현실화되고 있다.",
+      "insight": "AI 도구의 확산이 사이버 보안 리스크를 동시에 폭발적으로 키우고 있다. 기업이 AI 코딩 도구·API·LLM 라이브러리를 도입할수록 공격 표면(attack surface)이 넓어지며, 기존 보안 프레임워크로는 대응이 어려운 신종 위협이 등장하고 있다. 특히 AI API 키와 클라우드 크리덴셜은 새로운 핵심 공격 표적이 됐으며, 기업의 AI 거버넌스 체계 구축이 선택이 아닌 필수가 되고 있다.",
+      "isu_area": "클라우드 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "이수시스템이 NCP 파트너로서 클라우드 마이그레이션·보안 컨설팅을 제공하는 사업 영역에서, AI 도입에 따른 보안 리스크 점검 서비스를 패키지화할 수 있다. 특히 WORKUP·ESGable 등 SaaS 제품을 사용하는 고객사에 'AI 연동 시 API 키 관리 가이드'와 클라우드 보안 감사를 번들로 제안하는 영업 시나리오가 현실적이다. AI 보안 이슈는 공공·금융 고객사의 도입 검토에서 가장 민감하게 다뤄지는 항목이므로 신뢰 차별화 포인트로 활용 가능하다.",
+      "source": "The Rundown AI / Fortune / CPO Magazine",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOZ3loQnd0S2ZXM3pTRlNRczNwR2lDelNSN0UzOFZwOG1kNjdZa05CUm0zdENHbWx4dkJ5ZHp4VnlYbkh5Q0hJeUVIcF9hQW5IcW5VcDRYWWx3cUdwdFdzYkQzeVdzMEpkMTFnbGZjQVo1M1U4SnJmOTRqX0Rfb3VaTG1R?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**AI 에이전트 시대 본격화**: Claude Duet처럼 '사용자가 자는 동안 일하는 AI'가 현실 제품으로 등장 — 기업은 에이전트를 받아들일 조직·보안 체계를 갖춰야 할 시점이다.",
+    "**AI 모델 유통의 탈경계화**: OpenAI가 Google Cloud에, Claude도 Google Cloud에 — 특정 클라우드·모델에 종속되지 않는 멀티 LLM 전략이 기업 AI 구매의 새 기준이 되고 있다.",
+    "**AI 보안은 이제 별도 예산이 필요한 영역**: AI 도구 확산과 함께 API 키 탈취·공급망 공격 등 신종 위협이 급증하고 있으며, AI 거버넌스 없이 AI를 도입하는 것은 보안 사고를 예약하는 것과 같다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심은 AI가 '사용하는 도구'에서 '스스로 일하는 에이전트'로 전환되고 있다는 점이다. 이수시스템의 HR AI Package와 RAG 챗봇은 이 흐름에서 에이전트형 기능 고도화(자동 브리핑·승인 처리·이상 알림)를 로드맵에 반영할 필요가 있다. 동시에 국내 기업들의 'AI 퍼스트' 선언이 늘어나는 만큼, 자체 LLM 개발 여력이 없는 제조·건설·공공 고객사를 대상으로 '도메인 특화 AI 구축 파트너'로서의 영업을 강화하고, NCP 파트너 역량을 활용해 클라우드 AI 보안 컨설팅을 차별화 서비스로 제안하는 것이 단기 기회로 유효하다."
+}
