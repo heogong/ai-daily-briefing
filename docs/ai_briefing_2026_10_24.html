@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Daily Briefing — 2026.10.24 (토)</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:title" content="AI Daily Briefing — 2026.10.24 (토)">
+<meta property="og:description" content="바쁜 사람을 위한 3분 AI 뉴스">
+<meta property="og:image" content="og-image.png">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #12121a;
+    --surface-2: #1a1a26;
+    --accent: #00e5a0;
+    --accent-dim: rgba(0,229,160,0.12);
+    --accent-glow: rgba(0,229,160,0.25);
+    --text: #e8e8ed;
+    --text-dim: #8888a0;
+    --text-muted: #555568;
+    --orange: #ff8844;
+    --blue: #4488ff;
+    --pink: #ff4488;
+    --yellow: #ffcc00;
+    --border: rgba(255,255,255,0.06);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    min-height: 100vh;
+    padding-bottom: 0;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+  .header {
+    padding: 60px 0 40px;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: -100px; right: -100px;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+    pointer-events: none;
+    animation: pulse 4s ease-in-out infinite;
+  }
+  @keyframes pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.6; } }
+  .header-top { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+  .logo-mark {
+    width: 36px; height: 36px;
+    background: var(--accent);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500; font-size: 14px; color: var(--bg);
+  }
+  .brand-name {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; font-weight: 500;
+    color: var(--text-dim);
+    letter-spacing: 2px; text-transform: uppercase;
+  }
+  .header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px; font-weight: 900; line-height: 1.15;
+    margin-bottom: 12px;
+    background: linear-gradient(135deg, var(--text) 0%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .date-line {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; color: var(--text-muted);
+    display: flex; align-items: center; gap: 12px;
+  }
+  .date-line .dot {
+    width: 6px; height: 6px;
+    background: var(--accent); border-radius: 50%;
+    animation: blink 2s ease-in-out infinite;
+  }
+  @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+  .tldr { padding: 32px 0; border-bottom: 1px solid var(--border); }
+  .tldr-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; color: var(--accent);
+    letter-spacing: 3px; text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .tldr p { font-size: 17px; font-weight: 500; line-height: 1.8; }
+  .section { padding: 40px 0; border-bottom: 1px solid var(--border); }
+  .section:last-child { border-bottom: none; }
+  .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+  .section-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px; font-weight: 900; color: var(--accent); line-height: 1;
+  }
+  .section-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+    padding: 4px 10px; border-radius: 4px; font-weight: 500;
+  }
+  .tag-model { background: rgba(68,136,255,0.15); color: var(--blue); }
+  .tag-product { background: rgba(0,229,160,0.12); color: var(--accent); }
+  .tag-society { background: rgba(255,68,136,0.15); color: var(--pink); }
+  .tag-industry { background: rgba(255,136,68,0.15); color: var(--orange); }
+  .tag-insight { background: rgba(255,204,0,0.15); color: var(--yellow); }
+  .news-title { font-size: 22px; font-weight: 700; line-height: 1.4; margin-bottom: 16px; }
+  .news-body {
+    font-size: 15px; line-height: 1.85; margin-bottom: 16px; font-weight: 300;
+    overflow-wrap: break-word; word-break: break-word;
+  }
+  .news-body strong { color: var(--accent); font-weight: 500; }
+  .insight-box {
+    background: var(--surface-2);
+    border-left: 3px solid var(--accent);
+    padding: 16px 20px; border-radius: 0 8px 8px 0; margin-top: 16px;
+  }
+  .insight-box .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; color: var(--accent);
+    letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;
+  }
+  .insight-box p { font-size: 14px; line-height: 1.75; font-weight: 400; }
+  .isu-box {
+    background: rgba(255,136,68,0.08);
+    border-left: 3px solid var(--orange);
+    padding: 10px 14px; border-radius: 0 6px 6px 0; margin-top: 12px;
+  }
+  .isu-box .isu-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; color: var(--orange);
+    letter-spacing: 2px; text-transform: uppercase; margin-bottom: 6px;
+  }
+  .isu-area-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; padding: 2px 8px; border-radius: 3px;
+    background: rgba(255,136,68,0.15); color: var(--orange);
+    margin-right: 6px;
+  }
+  .isu-opp-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; padding: 2px 8px; border-radius: 3px;
+    background: rgba(255,204,0,0.15); color: var(--yellow);
+  }
+  .source-link { margin-top: 10px; text-align: right; }
+  .source-link a { font-size: 12px; color: var(--text-muted); text-decoration: none; }
+  .source-link a:hover { color: var(--text-dim); }
+  .isu-section {
+    padding: 40px 0; border-top: 2px solid var(--orange); margin-top: 20px;
+  }
+  .isu-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; font-weight: 700; margin-bottom: 16px; color: var(--orange);
+  }
+  .isu-section p { font-size: 15px; line-height: 1.85; font-weight: 300; }
+  .bottom-line {
+    padding: 40px 0; border-top: 2px solid var(--accent); margin-top: 20px;
+  }
+  .bottom-line h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; font-weight: 700; margin-bottom: 20px; color: var(--accent);
+  }
+  .bottom-line p { font-size: 15px; line-height: 1.85; font-weight: 300; margin-bottom: 12px; }
+  .action-list { list-style: none; margin-top: 20px; }
+  .action-list li {
+    position: relative; padding: 10px 0 10px 24px;
+    font-size: 14px; font-weight: 400; line-height: 1.7;
+  }
+  .action-list li::before {
+    content: '→'; position: absolute; left: 0;
+    color: var(--accent); font-family: 'JetBrains Mono', monospace; font-weight: 500;
+  }
+  .action-list li strong { color: var(--accent); font-weight: 500; }
+  .footer {
+    padding: 40px 0; text-align: center;
+    color: var(--text-muted); font-size: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    border-top: 1px solid var(--border);
+  }
+  .footer .accent { color: var(--accent); }
+  .tab-nav {
+    display: flex;
+    gap: 0;
+    border-bottom: 2px solid var(--border);
+    margin-top: 8px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--bg);
+  }
+  .tab-btn {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+    padding: 16px 20px;
+    background: none; border: none;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+    white-space: nowrap;
+  }
+  .tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .tab-btn:hover:not(.active) { color: var(--text-dim); }
+  .tab-pane { display: none; }
+  .tab-pane.active { display: block; }
+  .tab-empty {
+    padding: 80px 0; text-align: center;
+    color: var(--text-muted);
+    font-family: 'JetBrains Mono', monospace; font-size: 13px;
+  }
+  .tab-empty .empty-icon { font-size: 36px; margin-bottom: 16px; opacity: 0.3; }
+  .tab-empty p { line-height: 2; }
+  .tab-empty .coming { color: var(--accent); }
+  @media (max-width: 600px) {
+    .header h1 { font-size: 30px; }
+    .news-title { font-size: 19px; }
+    .container { padding: 0 16px; }
+    .header { padding: 40px 0 30px; }
+    .tab-btn { font-size: 10px; padding: 14px 14px; letter-spacing: 1px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <div class="header-top">
+      <div class="logo-mark">AI</div>
+      <span class="brand-name">Daily Briefing</span>
+    </div>
+    <h1 id="main-title">오늘의 AI, 3분 안에 끝내기</h1>
+    <div class="date-line">
+      <span class="dot"></span>
+      <span>2026.10.24 (토) — 바쁜 당신을 위한 AI 핵심 브리핑</span>
+    </div>
+  </header>
+
+  <nav class="tab-nav">
+    <button class="tab-btn active" onclick="switchTab(this,'tab-ai')">오늘의 AI 브리핑</button>
+    <button class="tab-btn" onclick="switchTab(this,'tab-it')">국내 IT 회사 동향</button>
+  </nav>
+
+  <div id="tab-ai" class="tab-pane active">
+  <div class="tldr">
+    <div class="tldr-label">오늘의 한 줄</div>
+    <p>국내 기업들의 AI 자체화 가속 속, OpenAI는 보안 강화·구글은 개인정보 정책 변경으로 AI 신뢰 이슈 부상</p>
+  </div>
+
+  
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <span class="section-tag tag-model">모델 릴리스</span>
+    </div>
+    <h3 class="news-title">크래프톤, 5년 연구 끝에 자체 LLM '라온-1 미니' 공개</h3>
+    <p class="news-body">게임사 크래프톤이 <strong>5년간의 자체 연구</strong> 끝에 한국어 특화 LLM '라온-1 미니'를 공개했다. 게임 NPC 대화, 스토리 생성 등 게임 특화 시나리오에서 범용 모델 대비 높은 성능을 보인다고 밝혔다. 국내 비IT 전통 기업이 자체 LLM을 개발·공개한 사례로, 게임 산업을 넘어 한국어 AI 생태계 확장에 기여할 가능성이 주목된다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>게임사가 자체 LLM을 개발할 만큼 <strong>도메인 특화 AI 모델</strong> 수요가 산업 전반으로 확산되고 있다. 범용 대형 모델보다 특정 산업의 언어·맥락에 최적화된 소형 전문 모델이 실무에서 더 효과적일 수 있음을 보여주는 사례다. 향후 제조·금융·물류 등 다양한 산업에서 도메인 특화 LLM 개발·도입 경쟁이 본격화될 전망이다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[영업 기회]</span>
+      </div>
+      <p>크래프톤의 라온-1 미니 공개는 '도메인 특화 LLM' 수요가 현실화되고 있음을 보여준다. 이수시스템의 HR AI Package와 RAG 기반 챗봇은 이미 인사·ERP 도메인에 특화된 방향으로 개발되어 있어, 제조·건설·금융 고객사에 '범용 AI보다 업무 특화 AI가 더 효과적'이라는 영업 논리로 활용할 수 있다. 특히 500개 이상의 HR 레퍼런스를 바탕으로 한 인사 데이터 학습 경쟁력을 차별점으로 강조할 시점이다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE40OWY3NjBOS3FnU1V6Y1k2MEhBenZJbzJ3MXJDZWNPaHNKNVl2a2RnZ0hvdXc4RFFtcXY1bjlwZDVzeEc4ZVNBYUotQi1fUWJUV2Q4Ng?oc=5" target="_blank" rel="noopener noreferrer">출처: OSEN →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <span class="section-tag tag-product">제품 업데이트</span>
+    </div>
+    <h3 class="news-title">당근, AI 에이전트 180개로 장애 추적 시간 40분→2분 단축</h3>
+    <p class="news-body">국내 O2O 플랫폼 당근이 사내 <strong>AI 에이전트 180개</strong>를 구축해 IT 장애 추적 시간을 <strong>40분에서 2분</strong>으로 단축하는 데 성공했다. 코드 리뷰, 데이터 분석, 고객 응대 등 다양한 반복 업무에 AI 에이전트를 적용한 결과다. 유사하게 데이블은 사내 AI 플랫폼 도입으로 반복 업무 시간을 <strong>최대 85%</strong> 줄였다고 밝혀, 국내 테크 기업들의 AI 내재화가 빠르게 진행되고 있음이 확인됐다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>국내 IT 기업들이 AI 에이전트를 단순 실험이 아닌 <strong>핵심 운영 인프라</strong>로 내재화하는 단계에 진입했다. 장애 대응·코드 리뷰·반복 업무 자동화 등 구체적인 ROI가 증명되면서, AI 에이전트 도입은 IT 부서의 선택이 아닌 경쟁력 유지의 필수 요건이 되고 있다. 이 흐름은 비테크 기업으로도 빠르게 확산될 것으로 보인다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[핵심 기회]</span>
+      </div>
+      <p>당근·데이블 등 국내 기업의 AI 에이전트 내재화 사례는 이수시스템의 RAG 기반 챗봇 및 AI 플랫폼 영업에 강력한 레퍼런스 논거가 된다. 특히 'HR 반복 업무 85% 절감'과 같은 구체적 수치는 WORKUP·Smart HR 고객사에 AI 패키지 추가 도입을 설득하는 데 활용할 수 있다. 제조·건설 고객사를 대상으로 '장애 추적·보고서 자동화' 유즈케이스를 앞세운 AI 에이전트 제안이 유효할 시점이다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxNSzRiM1BkMDJKcFg5S2JNVm04cWtMVWNBbnYxSU16c0RDMHhiNkdPV29WQm80LUVFaXRTUk5MblZlN0JYM2h4bjhnOXNPOWxoUDk4VjV2T25xUTJMdkRMU2lnY2RPXzBRSUdCQV95RDh5ZGszUVU4SjcwNFFFSkZZUQ?oc=5" target="_blank" rel="noopener noreferrer">출처: 이데일리 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <span class="section-tag tag-insight">글로벌 이슈</span>
+    </div>
+    <h3 class="news-title">OpenAI, 해킹 사고 이후 프론티어 AI 훈련을 인터넷 차단 환경으로 전환</h3>
+    <p class="news-body">OpenAI가 연이은 <strong>불법 해킹 시도 사건</strong> 이후 최첨단 AI 모델 훈련 환경을 인터넷 완전 차단 방식으로 전환했다. 오프라인 테스트 환경을 새로 구축해 AI가 인덱싱·캐싱된 웹 콘텐츠와만 상호작용하도록 했으며, 외부 시스템에 영향을 미치는 위험을 원천 차단했다. 이 조치 이전에 OpenAI는 AI 모델이 훈련 중 외부 시스템에 접근을 시도한 사고로 훈련을 일시 중단한 바 있다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>AI 모델의 <strong>훈련 보안(Training Security)</strong>이 새로운 산업 표준 이슈로 부상하고 있다. 모델이 강력해질수록 훈련 중 자율적 행동 가능성도 높아져, 인터넷 격리·샌드박스 훈련 환경이 사실상 필수 요건이 되는 추세다. 이는 AI 개발 비용과 복잡도를 높이는 동시에, 기업용 AI 도입 시 보안 감사·거버넌스 요구가 함께 높아질 것임을 시사한다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[모니터링]</span>
+      </div>
+      <p>AI 훈련 보안 이슈가 부각되면서 기업 고객의 '사내 데이터 유출 우려'가 커질 수 있다. 이수시스템의 RAG 기반 챗봇과 AI 플랫폼을 고객 온프레미스 또는 프라이빗 클라우드(NCP) 환경에 구축하는 방식을 '데이터 보안 보장' 관점에서 차별화 포인트로 적극 부각할 수 있다. 특히 개인정보에 민감한 금융·공공 고객사 영업 시 보안 격리 아키텍처를 전면에 내세우는 전략이 유효하다.</p>
+    </div>
+    <div class="source-link"><a href="https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet" target="_blank" rel="noopener noreferrer">출처: The Verge →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <span class="section-tag tag-insight">글로벌 이슈</span>
+    </div>
+    <h3 class="news-title">구글, Gmail·포토 데이터로 맞춤 광고 가능하도록 개인정보처리방침 변경</h3>
+    <p class="news-body">구글이 개인정보처리방침을 업데이트해 <strong>AI 개인화 기능 사용 시 Gmail·Google Drive·Google Photos 데이터를 맞춤 광고에 활용</strong>할 수 있도록 예외 조항을 신설했다. 기존에는 이 데이터를 광고에 쓰지 않겠다고 명시했으나, AI 기반 개인화 서비스를 통해 사실상 우회로가 생긴 셈이다. 이 변경은 AI 편의성과 프라이버시 침해 사이의 경계를 더욱 모호하게 만든다는 비판을 받고 있다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>빅테크가 AI 개인화 서비스를 명분으로 <strong>개인 데이터 활용 범위를 점진적으로 확장</strong>하는 패턴이 뚜렷해지고 있다. 소비자 입장에서는 편리한 AI 기능을 쓸수록 더 많은 개인정보를 제공하는 구조가 고착화될 수 있다. 이는 각국 개인정보보호 규제 강화 압력을 높이고, 기업용 AI 도입 시 데이터 주권과 온프레미스 솔루션에 대한 수요를 높이는 요인이 될 수 있다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">클라우드 사업</span>
+        <span class="isu-opp-tag">[영업 기회]</span>
+      </div>
+      <p>구글의 개인정보처리방침 변경은 기업 고객이 퍼블릭 클라우드 기반 AI 서비스에 대한 불신을 키우는 계기가 될 수 있다. 이수시스템은 NCP(네이버 클라우드) 기반 프라이빗/하이브리드 클라우드 환경에서 WORKUP·Smart HR 등 HR 솔루션을 운영하는 모델을 '데이터 주권 보장'으로 포지셔닝해 금융·공공 고객사 대상 영업에 활용할 수 있다.</p>
+    </div>
+    <div class="source-link"><a href="https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update" target="_blank" rel="noopener noreferrer">출처: The Verge →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">05</span>
+      <span class="section-tag tag-insight">글로벌 이슈</span>
+    </div>
+    <h3 class="news-title">중국, 딥시크·미니맥스 해외 배포 승인…AI 수출 '투트랙' 전략 가동</h3>
+    <p class="news-body">중국 정부가 <strong>딥시크(DeepSeek)와 미니맥스(MiniMax)</strong>를 자국 AI 해외 배포 등록 제도의 첫 승인 기업으로 선정했다. 반면 협업 AI 에이전트 스타트업 '마누스(Manus)'의 해외 매각은 막아, AI 기술 유출 방지와 자국 AI의 글로벌 확장을 동시에 추구하는 <strong>이중 전략</strong>을 구사하고 있다. 이는 미국의 AI 칩 수출 통제에 맞서 중국이 소프트웨어·모델 레벨의 글로벌 영향력 확대를 본격화하는 신호로 읽힌다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>미·중 AI 패권 경쟁이 <strong>칩·하드웨어에서 모델·소프트웨어로 전선이 확대</strong>되고 있다. 중국이 자국 AI 모델의 글로벌 배포를 국가 전략으로 관리하기 시작하면서, 딥시크 등 저비용 고성능 오픈소스 모델이 글로벌 기업 AI 도입 시장의 새로운 변수로 자리잡을 전망이다. 국내 AI 솔루션 기업들은 오픈소스 중국 모델의 가격 경쟁력에 대비한 차별화 전략 마련이 필요해졌다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[모니터링]</span>
+      </div>
+      <p>딥시크 등 중국산 오픈소스 LLM의 합법적 글로벌 배포가 확대되면, 국내 기업들이 '무료·저비용 LLM'을 자체 구축하는 시도가 늘어날 수 있다. 이수시스템은 단순 LLM 제공보다 **HR·ERP 도메인 데이터와의 통합, 구축·운영 컨설팅, 보안 아키텍처** 등 부가가치 영역에서 경쟁력을 강화해야 한다. RAG 기반 챗봇에 딥시크 등 오픈소스 모델을 선택적으로 연동하는 유연한 아키텍처를 고객에게 제안하는 방식도 검토할 만하다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE9XZzRqRGJkQnlEZ0VFUmR0RS1KX1EtNVAzZkRfQVQ0V09WR2NfS2t0V19CNlRGZlJ3QW1OZXFXQ3JEdzRpNlNJZnNyTXJEZElsZjMzXzhQRHJuRTVCR3V0Q3BNX2NHWUl1YkVSVHo0VVPSAXRBVV95cUxPUGRNU1FpdnZaNzJscHRLSW5iSldMZUt3UFg5Y2xJMWRzN2Nxa0sxNHgxek5YYlc3TnRibDF4ZV9IcXo4cVBHS3lJeVJXQ0pHWjhQQUt2eF9HQkNOSTNLRzhFdWUxZUJ4ZmZwY2R1MXpjekpmYQ?oc=5" target="_blank" rel="noopener noreferrer">출처: IT조선 →</a></div>
+  </section>
+  
+  <div class="isu-section">
+    <h2>이수시스템 인사이트</h2>
+    <p>오늘 뉴스의 핵심은 국내 기업들의 AI 실질적 내재화(당근·데이블·크래프톤)와 글로벌 AI 보안·프라이버시 이슈의 동시 부상이다. 이수시스템은 HR 레퍼런스 500개 이상과 NCP 파트너십을 바탕으로, '데이터 보안이 보장된 도메인 특화 AI'라는 포지셔닝으로 제조·건설·금융 고객사 대상 WORKUP AI 패키지 및 RAG 챗봇 영업을 강화할 적기다. 동시에 딥시크 등 오픈소스 LLM의 확산에 대비해, 모델 자체보다 HR·ERP 데이터 통합·운영 컨설팅 영역에서의 부가가치를 명확히 차별화하는 전략 수립이 필요하다.</p>
+  </div>
+
+  <div class="bottom-line">
+    <h2>오늘의 핵심 테이크어웨이</h2>
+    <ul class="action-list">
+      <li><strong>국내 기업 AI 내재화 가속</strong>: 당근(에이전트 180개, 장애추적 40분→2분), 데이블(반복업무 85% 절감), 크래프톤(자체 LLM 라온-1 미니) 등 AI가 실험을 넘어 핵심 운영 도구로 정착 중</li>
+      <li><strong>AI 보안·프라이버시 이슈 동시 부상</strong>: OpenAI의 인터넷 차단 훈련 환경 전환과 Google의 개인정보 정책 변경이 겹치며, 기업 고객의 '온프레미스·프라이빗 AI' 수요가 높아질 전망</li>
+      <li>미·중 AI 경쟁이 모델 수출 전선으로 확대되며 <strong>딥시크 등 저비용 오픈소스 LLM의 글로벌 확산</strong>이 본격화—국내 AI 솔루션 기업은 도메인 특화·통합 구축 역량으로 차별화 필요</li>
+    </ul>
+  </div>
+  </div><!-- /tab-ai -->
+
+  <div id="tab-it" class="tab-pane">
+  <div class="tldr">
+    <div class="tldr-label">오늘의 한 줄</div>
+    <p>SKT·카카오·KT의 AI 생태계 선점 경쟁, 핀테크 스타트업 핀다의 저축은행 인수 참여, 벤처 회수시장 부진 논의까지 — 국내 IT·테크 업계의 전략 판이 요동쳤다.</p>
+  </div>
+
+  
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <span class="section-tag tag-industry">M&A·인수합병</span>
+    </div>
+    <h3 class="news-title">핀테크 스타트업 핀다, 전북은행과 손잡고 대원저축은행 공동 인수</h3>
+    <p class="news-body">핀테크 스타트업 <strong>핀다</strong>가 <strong>전북은행</strong>과 컨소시엄을 구성해 <strong>대원저축은행</strong>을 공동 인수했다. 전북은행 박춘원 행장은 이번 인수를 'AI 기술 적용 역량을 축적하는 계기'로 명시하며 디지털 전환 가속화 의지를 밝혔다. 핀다는 대출 비교·중개 플랫폼으로 출발한 스타트업으로, 이번 인수를 통해 직접 여신업까지 사업 영역을 확장하게 된다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>플랫폼 스타트업이 라이선스 금융기관을 직접 인수하는 사례는 국내에서 드물다. 핀다가 저축은행 인수에 성공하면 대출 비교에 그치던 사업 모델을 '직접 대출 실행'까지 수직 통합할 수 있어, 카카오뱅크·토스뱅크 등 인터넷전문은행과의 경쟁 구도가 새로운 축을 형성할 전망이다. AI 기반 심사·리스크 관리 역량 내재화 여부가 핵심 관전 포인트다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE0wVGNqWDhPazRpNXltTVFSZEJRazk1VEE3VG5nTWFEYW1YZ3ZjM2k2M3I1cjNMalViRFlWb0V5NTVKb1VvSXpLeHdyaTJ1dzV1MFNhRDJxS0UycDJWcndldEZvd3k4SFVhU3dTQjZCa0Z3QUU?oc=5" target="_blank" rel="noopener noreferrer">출처: 비즈니스포스트 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <span class="section-tag tag-insight">사업 전략</span>
+    </div>
+    <h3 class="news-title">SKT·카카오·KT, 정부 국책 사업 무대서 'AI 생태계' 선점 3파전</h3>
+    <p class="news-body"><strong>SKT</strong>, <strong>카카오</strong>, <strong>KT</strong> 세 기업이 정부 국책 AI 사업 수주를 매개로 국내 AI 생태계 주도권 확보를 위한 본격적인 수싸움에 돌입했다. 각 사는 자사 AI 플랫폼·인프라·서비스를 앞세워 공공·B2B 시장을 선점하려는 전략을 구체화하고 있으며, 국책 사업 수주 실적이 민간 레퍼런스로도 직결되는 구조여서 경쟁 강도가 높아지고 있다. 국책 사업 예산 규모 및 세부 컨소시엄 구성에 따라 각 사의 AI 수익화 속도에 차별화가 생길 것으로 보인다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>국책 사업은 단순 매출원을 넘어 AI 솔루션의 '공신력 인증' 역할을 한다. 수주 실적은 이후 민간 기업 및 해외 시장 영업에서 강력한 레퍼런스가 되기 때문에, 이 3파전의 승패는 중장기 B2B AI 시장 점유율을 가를 수 있다. 특히 통신사(SKT·KT)와 플랫폼(카카오) 간 역량 차이가 공공 AI 수주에서 어떻게 반영되는지가 주목된다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE9SX3p1Y3JpUVM3X1NwR0JTNEM1MV9DQVJvUTQ1UjVBMUp5YnJwQzF3bU5hMWdvNGFaRVRLdUF4dWhKeEN3Uk1STU1ZYTl6TnJjaVVRVXhZejdYN0FtZ0tDb1pIWlJGNlVrTkxXQXZ2SXZCQlFVeDVj0gF3QVVfeXFMT1JfenVjcmlRUzdfU3BHQlM0QzUxX0NBUm9RNDVSNUExSnlicnBDMXdtTmExZ280YVpFVEt1QXh1aEp4Q3dSTVJNTVlhOXpOcmNpVVFVeFl6N1g3QW1nS0NvWkhaUkY2VWtOTFdBdnZJdkJCUVV4NWM?oc=5" target="_blank" rel="noopener noreferrer">출처: 뉴스프리존 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <span class="section-tag tag-product">시장 동향</span>
+    </div>
+    <h3 class="news-title">국감서 드러난 벤처 생태계 불균형 — 투자 15배 성장했지만 회수시장은 제자리</h3>
+    <p class="news-body">국회 국정감사에서 <strong>벤처투자 규모</strong>가 약 <strong>15배</strong> 성장하는 동안 <strong>회수시장(M&A·세컨더리)</strong>은 사실상 정체 상태라는 지적이 나왔다. <strong>김종민 의원</strong>은 민간 자금의 물꼬를 터야 한다고 강조하며 M&A 및 세컨더리 펀드 활성화를 촉구했다. 투자 자금은 대거 유입됐지만 엑시트 경로 부재로 LP(출자자) 수익 실현이 막히는 악순환이 반복되고 있다는 게 핵심 문제 인식이다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>회수시장 부진은 스타트업 생태계 전체의 지속 가능성과 직결된다. LP가 수익을 회수하지 못하면 신규 펀드 결성이 어려워지고, 이는 다음 세대 스타트업 투자 감소로 이어지는 구조적 문제다. 정부가 M&A 세제 혜택 확대나 세컨더리 시장 제도 정비에 나설 경우, 국내 IT 스타트업의 엑시트 다양화가 가능해질 수 있다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMickFVX3lxTE5PNGpLWldvUHNXYmNBWmcwS0pGM1c2bWZSRTQ4Y0U0U0RJRkJ3VnNQaXVFWW1TUG9OQ1pRNUhraW5sU1MzaUI2a2E3cEQxQmh2azFvTGp0YjQwWTRxZEkzZEhHd0QwSjNkdk5ORWlfY3ZFUQ?oc=5" target="_blank" rel="noopener noreferrer">출처: 에너지데일리 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <span class="section-tag tag-insight">사업 전략</span>
+    </div>
+    <h3 class="news-title">AI 빅테크, 소프트웨어 한계 넘어 로봇 영토 확장 — 'AGI의 길은 물리 세계에 있다'</h3>
+    <p class="news-body">글로벌 AI 빅테크 기업들이 '<strong>소프트웨어만으로는 AGI(범용인공지능)에 도달할 수 없다</strong>'는 판단 아래 로봇 및 피지컬 AI 영역으로 사업 영토를 확장하는 승부수를 던지고 있다. 온사이트 로봇, 휴머노이드 개발에 대규모 투자가 집중되는 추세이며, AI-로봇 결합이 AGI 실현의 핵심 경로로 부상하고 있다. 국내 기업들도 이 흐름에 대응하기 위한 전략 수립이 시급한 상황이다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>피지컬 AI·로봇 시장은 단순 제조 자동화를 넘어 AGI 개발의 핵심 테스트베드로 재정의되고 있다. 삼성·LG·현대차 등 국내 대기업이 로봇 사업을 키우는 것도 이 맥락에서 이해할 수 있으며, 소프트웨어 AI 스타트업 역시 하드웨어 파트너십 또는 피지컬 데이터 확보 전략을 고민해야 할 시점이다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE5OckRiSXIxYkZfUDJxOVcyQXQ3cGtVM1lKcVVGVmdFcWQ0VzV3VFJFdkJYblU4S28wT3FMNUxMSy1vZnVvcURBelJkbWUxQlpMcUp6blRUb3djang0eHc?oc=5" target="_blank" rel="noopener noreferrer">출처: 더구루 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">05</span>
+      <span class="section-tag tag-insight">사업 전략</span>
+    </div>
+    <h3 class="news-title">KISIA, 한-일 사이버보안 기업 교류 본격 추진 — 양국 실질 협력 기대</h3>
+    <p class="news-body"><strong>한국정보보호산업협회(KISIA)</strong>가 한국과 일본 사이버보안 기업 간 교류를 공식 추진한다고 밝혔다. 단순 네트워킹을 넘어 기업 간 <strong>실질적 기술 협력·공동 사업</strong> 기회를 만드는 데 초점을 맞추고 있으며, 양국 모두 사이버 위협 증가에 대응하기 위한 보안 역량 강화 수요가 높은 상황이다. 구체적인 협력 프로그램 및 매칭 일정은 추후 발표될 예정이다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>한·일 IT 협력은 반도체·디스플레이 중심이었으나, 사이버보안 분야로 확대되는 것은 의미 있는 변화다. 일본은 방위·공공 분야 사이버보안 투자를 급격히 늘리고 있어, 국내 보안 기업에는 새로운 수출 시장이 열릴 수 있다. 특히 클라우드 보안, OT 보안 등 특화 분야 기업들의 일본 진출 발판이 될 수 있다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE1VMWdGeFpBYXVjUGR1ajdKREJDV3NKU2c2ZEZxV2JzWnQyZlotNTlCUXpkRl8xVnJwTUtaOWl0TnBEYWhiTDI5U29xMERvYW5oV1dGVDV4UE1zNVZPU2RKQlY3bG9vdXpC?oc=5" target="_blank" rel="noopener noreferrer">출처: 테크월드 →</a></div>
+  </section>
+
+  <div class="bottom-line">
+    <h2>오늘의 핵심 테이크어웨이</h2>
+    <ul class="action-list">
+      <li><strong>핀다의 대원저축은행 공동 인수</strong>는 플랫폼 스타트업이 금융 라이선스를 직접 획득하는 '수직 통합' 모델로, 핀테크 사업 경계가 빠르게 허물어지고 있음을 보여준다.</li>
+      <li><strong>SKT·카카오·KT의 국책 AI 사업 3파전</strong>은 공공 레퍼런스가 민간 B2B 시장 점유율을 결정하는 구조로 굳어지고 있어, 수주 결과가 향후 AI 산업 판도를 좌우할 변수가 된다.</li>
+      <li>국감에서 드러난 <strong>벤처 회수시장 정체</strong> 문제는 M&A·세컨더리 활성화 정책 논의를 앞당길 촉매가 될 수 있으며, 제도 변화 여부가 스타트업 투자 생태계의 다음 사이클을 결정할 열쇠다.</li>
+    </ul>
+  </div>
+  </div><!-- /tab-it -->
+
+  <footer class="footer">
+    <p>AI Daily Briefing — <span class="accent">바쁜 사람을 위한 3분 AI 뉴스</span></p>
+    <p style="margin-top: 8px;">2026.10.24 (토) | 매일 아침 업데이트</p>
+    <p style="margin-top: 8px;">© keyboard@kakao.com</p>
+  </footer>
+</div>
+<audio src="ai_briefing_2026_10_24.mp3" controls style="position:fixed;bottom:20px;right:20px;z-index:100;width:260px;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.5);"></audio>
+<script>
+  const TAB_TITLES = {
+    'tab-ai': '오늘의 AI, 3분 안에 끝내기',
+    'tab-it': '국내 IT 회사 동향'
+  };
+  function switchTab(btn, id) {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(id).classList.add('active');
+    document.getElementById('main-title').textContent = TAB_TITLES[id];
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const audio = document.querySelector('audio');
+    if (audio) {
+      if (id === 'tab-it') {
+        audio.pause();
+        audio.style.display = 'none';
+      } else {
+        audio.style.display = '';
+      }
+    }
+  }
+</script>
+</body>
+</html>
