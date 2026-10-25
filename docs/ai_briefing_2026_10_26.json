@@ -1,0 +1,72 @@
+{
+  "date": "2026.10.26 (월)",
+  "one_liner": "영국 AI 바이오보안 랩부터 구글 AI 검색의 미디어 충격까지, AI가 산업 질서를 재편하는 한 주가 시작된다.",
+  "news": [
+    {
+      "number": 1,
+      "category": "글로벌 이슈",
+      "title": "영국, 1천억 원 규모 AI 바이오보안 연구소 출범…구글·OpenAI·Anthropic 총출동",
+      "body": "영국 정부가 **1억 파운드(약 1,700억 원)** 규모의 AI 바이오보안 연구소를 공식 출범시켰다. 구글, OpenAI, Anthropic이 파트너로 참여하며, 생물학적 위협 탐지와 신약 개발 가속화를 핵심 목표로 내세웠다. 이는 AI를 국가 안보·공중보건 인프라에 직접 연결하는 최대 규모의 공공-민간 협력 사례 중 하나로 꼽힌다. 단순한 연구 지원을 넘어 빅테크가 정부 안보 체계 안으로 깊숙이 편입되는 구조적 변화를 상징한다.",
+      "insight": "국가 주도 AI 바이오보안 투자가 본격화되면서, AI 기술이 국방·공중보건·규제 영역과 결합하는 '임무형 AI(Mission AI)' 시장이 열리고 있다. 빅테크의 공공 계약 의존도가 높아지는 만큼, 각국 정부의 AI 거버넌스 요구 수준도 함께 상승할 전망이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "공공 AI 투자 확대 흐름은 국내 공공기관 고객사(정부·공기업)가 AI 기반 솔루션 도입 예산을 늘릴 근거가 된다. 이수시스템의 RAG 기반 챗봇·AI 플랫폼을 공공 HR·안전 분야에 패키지화하여 정부 사업 입찰 준비를 구체화할 시점이다.",
+      "source": "TipRanks",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNakItN3ZfRm8yQzZ1OEpfZ0RkRnBfY3U5ektYX19sVHhxNUl2MFNCcTV5QVh1dk81WmJNLWJxcFFDcUFwSU1wdmxHZjJacVB1RWw0a0xiOXpscmZqVzlWYUhXY3pteGlZeUhtMWpNbVJaaTRsR3daZlY3Z2E3V1JKVDdScENFRURtLUlpbkk2WVpNUUhvWjE1cjFBTXI3Zk96MnFWNDlMelc?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "산업 동향",
+      "title": "구글 AI 검색, 온라인 미디어 생태계를 뒤흔들다…퍼블리셔 트래픽 급감 현실화",
+      "body": "구글의 AI 개요(AI Overviews) 기능이 확산되면서 온라인 미디어·퍼블리셔의 검색 유입 트래픽이 구조적으로 감소하고 있다는 분석이 나왔다. 검색 결과 페이지에서 사용자가 외부 사이트로 이동하지 않고 AI 요약 답변만 소비하는 '제로 클릭 검색' 비율이 높아지면서, 광고 수익 기반의 디지털 퍼블리싱 모델 자체가 위협받고 있다. **광고 기반 미디어 수익 모델**의 붕괴가 현실화됨에 따라 구독·유료 콘텐츠 전환이 업계 생존 전략으로 부상하고 있다.",
+      "insight": "AI 검색의 확산은 정보 소비 패턴을 근본적으로 바꾸고 있다. 미디어뿐 아니라 기업 마케팅, SEO 전략, 콘텐츠 생산 방식 전반이 재설계돼야 하는 시대가 왔다. AI가 '중간 레이어'로 자리잡으면서 원본 정보 생산자와 최종 소비자 사이의 가치 배분 구조가 흔들리고 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "기업 고객사들이 기존 포털 광고·SEO 중심의 디지털 마케팅 전략을 재검토하는 시기다. 이수시스템이 제공하는 기업용 AI 플랫폼과 RAG 챗봇이 '내부 지식 기반 검색'으로 포지셔닝되면, 외부 검색 의존을 줄이려는 기업 니즈와 맞닿는 영업 기회가 생긴다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/column/1017983/google-ai-search-online-publishing"
+    },
+    {
+      "number": 3,
+      "category": "글로벌 이슈",
+      "title": "DeepSeek·MiniMax, 해외 진출 위한 LLM 등록 완료…오픈소스 AI 컴플라이언스 루트 구체화",
+      "body": "중국 AI 스타트업 **DeepSeek**과 MiniMax가 LLM 해외 사업 확장을 위한 공식 등록 절차를 마쳤다. 오픈소스 모델의 글로벌 배포에 적용되는 컴플라이언스 채널이 점차 제도화되면서, 중국발 AI 모델이 합법적 경로로 해외 시장에 진입하는 구조가 갖춰지고 있다. 이는 서방 AI 기업들이 독점해 온 글로벌 LLM 시장에 **저비용 고성능 중국 모델**이 본격 경쟁자로 등장함을 의미한다.",
+      "insight": "중국 오픈소스 LLM의 제도적 해외 진출은 글로벌 AI 모델 경쟁을 가격과 성능 양축에서 동시에 격화시킨다. 기업 AI 도입 비용이 낮아지는 긍정적 효과도 있지만, 데이터 주권·보안 우려를 둘러싼 각국의 규제 대응도 빨라질 전망이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "DeepSeek 등 오픈소스 LLM의 접근성이 높아지면, 이수시스템은 자체 AI 플랫폼·RAG 챗봇의 백엔드 모델로 비용 효율적인 오픈소스 LLM을 채택해 솔루션 원가를 낮추는 전략을 검토할 수 있다. 고객사에 '국산 데이터 보안+저비용 LLM' 조합의 엔터프라이즈 AI를 제안하는 차별화 포인트가 될 수 있다.",
+      "source": "finance.biggo.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9md2dLdFJ3TjlteV8tRThsLVk5N0RZbjh2MUpoV1J2c2xqbHVoWUUyVkhCNGNfZjItVEZ2QWo3M2RlMTFoZ3EzQm1wTmxGNXIwYndNRDVlb2dOLXViVUI3S2VJLXRQNVlGUkg3ZWU1WHBZRVN6aVE?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "글로벌 이슈",
+      "title": "구글, AI 개인화 위해 Gmail·Photos 데이터 광고에 활용…프라이버시 논란 재점화",
+      "body": "구글이 AI 기능 고도화 명목으로 사용자의 **Gmail 및 Google Photos 데이터**를 광고 타겟팅에 활용할 수 있다는 정책 변경을 공개했다. AI 개인화와 광고 수익이라는 두 마리 토끼를 잡으려는 전략이지만, 사용자 프라이버시 침해 우려가 즉각 제기되고 있다. 이는 AI 서비스 무료 제공의 '진짜 비용'이 개인 데이터라는 사실을 재확인시키며, 기업용 AI 솔루션에서 **데이터 주권과 보안**에 대한 수요를 더욱 높일 전망이다.",
+      "insight": "빅테크의 AI 개인화가 사용자 데이터 활용 범위를 확장할수록, 기업과 공공기관은 외부 AI 서비스에 민감 데이터를 맡기는 것에 대한 경계를 높이게 된다. 온프레미스 또는 프라이빗 클라우드 기반 AI 솔루션에 대한 수요가 구조적으로 커질 수 있는 환경이다.",
+      "isu_area": "클라우드 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "구글의 데이터 활용 논란은 '우리 데이터를 외부 빅테크에 맡겨도 되나'라는 고객사의 불안을 자극한다. 이수시스템은 NCP 파트너로서 국내 클라우드 기반의 프라이빗 AI 환경을 제안하고, WORKUP·Smart HR 등 HR 솔루션의 데이터가 외부로 나가지 않는 보안 아키텍처를 강조하는 영업 메시지를 강화할 시점이다.",
+      "source": "International Business Times",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQY0E1V0xyeWJxUHNNUEU5M2dVMnVobDI5OXJnU1hESFNwSE9saDFjVTk0WlRES1NrcDFKTjcxT1ptRGVSSGF4NTdzRERuc213Z21KTHRoaXBIXzRVcTBNYmNldFRhWC13RGtSRU1SY29hNzR6VUFxd0pISGZrWFB2SGRRZTM3Nlp3VDcyalBNRTJrMnZLYUpIUGdpWEJBSjM0b2hvTWgyUQ?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "산업 동향",
+      "title": "금감원, AI로 불법 사금융 조직 배후 추적…국내 공공기관 AI 실무 도입 가속",
+      "body": "금융감독원이 AI 기술을 활용해 불법 사금융 조직의 배후 인물과 자금 흐름을 추적하는 시스템을 가동했다. 기존에는 수작업으로 처리하던 방대한 데이터 분석을 AI가 대체하면서 적발 속도와 정확도가 크게 향상됐다. 이번 사례는 **금융 공공기관의 AI 실무 도입**이 시범 단계를 넘어 핵심 업무 영역으로 확장되고 있음을 보여주는 상징적 사례다.",
+      "insight": "국내 공공·금융기관이 AI를 규제·감독 업무의 실전 도구로 채택하는 속도가 빨라지고 있다. 단순 챗봇을 넘어 이상 패턴 탐지, 데이터 기반 의사결정 등 고도화된 AI 활용이 공공 부문 전반으로 확산될 전망이며, 관련 솔루션 수요도 함께 커질 것이다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "금감원의 AI 도입 사례는 금융·공공 고객사를 보유한 이수시스템에게 직접적인 레퍼런스 포인트가 된다. 이수시스템의 RAG 기반 챗봇과 AI 플랫폼을 금융기관의 내부 감사·컴플라이언스 문서 검색, 이상 보고서 자동 분류 등에 적용하는 PoC 제안이 실현 가능하다. 특히 500개 이상의 HR 레퍼런스를 보유한 기업 신뢰도를 공공 AI 사업 입찰에서 적극 활용할 시점이다.",
+      "source": "IT조선",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFAtMFJFRTgxZWk2WWhwWXJuQ05yakZqQ1g4NkN3NDZCV0JlLWRDVWxWaTBuVWxSVXFJSHBwSGx2U2JmdU83aWFuOW1nbHA1b1gtTW1IQzRtTXZYd2ZOcm1MeFVud0NENnptSFV3M1V5c1dudTAx0gF0QVVfeXFMUC0wUkVFODFlaTZZaHBZcm5DTnJqRmpDWDg2Q3c0NkJXQmUtZENVbFZpMG5VbFJVcUlIcHBIbHZTYmZ1TzdpYW45bWdscDVvWC1NbUhDNG1Ndlh3Zk5ybUx4VW53Q0Q2em1IVXczVXlzV251MDE?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**영국의 1억 파운드 AI 바이오보안 랩**은 AI가 국가 안보 인프라로 편입되는 새 시대의 신호탄이다. 공공 AI 예산이 글로벌·국내 모두 확대되는 흐름에 주목하라.",
+    "**구글 AI 검색과 Gmail 데이터 활용 논란**은 동전의 양면이다. AI 편의성 뒤에 숨은 데이터 주권 문제가 기업의 AI 솔루션 선택 기준을 '성능'에서 '보안+신뢰'로 이동시키고 있다.",
+    "**국내 금감원의 AI 실무 도입**은 공공·금융 기관의 AI 채택이 시범 단계를 졸업했음을 보여준다. 기업용 AI 솔루션 업체에게 레퍼런스 확장의 골든타임이 열리고 있다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심은 '공공·기업 AI 도입의 실전화'와 '데이터 보안 민감도 상승'이라는 두 축이다. 금감원 AI 도입 사례는 이수시스템이 금융·공공 고객사에 RAG 챗봇과 AI 플랫폼을 제안할 구체적 근거가 되며, 구글의 데이터 활용 논란은 국내 클라우드(NCP) 기반 프라이빗 AI 환경의 차별화 메시지를 강화할 기회다. DeepSeek 등 오픈소스 LLM 접근성 향상은 이수시스템 AI 솔루션의 원가 구조 개선에도 활용 가능하므로, 솔루션 경쟁력과 영업 타이밍을 동시에 점검해야 할 시점이다."
+}
