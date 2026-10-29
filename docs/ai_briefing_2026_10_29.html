@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Daily Briefing — 2026.10.29 (목)</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:title" content="AI Daily Briefing — 2026.10.29 (목)">
+<meta property="og:description" content="바쁜 사람을 위한 3분 AI 뉴스">
+<meta property="og:image" content="og-image.png">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #12121a;
+    --surface-2: #1a1a26;
+    --accent: #00e5a0;
+    --accent-dim: rgba(0,229,160,0.12);
+    --accent-glow: rgba(0,229,160,0.25);
+    --text: #e8e8ed;
+    --text-dim: #8888a0;
+    --text-muted: #555568;
+    --orange: #ff8844;
+    --blue: #4488ff;
+    --pink: #ff4488;
+    --yellow: #ffcc00;
+    --border: rgba(255,255,255,0.06);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    min-height: 100vh;
+    padding-bottom: 0;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+  .header {
+    padding: 60px 0 40px;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: -100px; right: -100px;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+    pointer-events: none;
+    animation: pulse 4s ease-in-out infinite;
+  }
+  @keyframes pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.6; } }
+  .header-top { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+  .logo-mark {
+    width: 36px; height: 36px;
+    background: var(--accent);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500; font-size: 14px; color: var(--bg);
+  }
+  .brand-name {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; font-weight: 500;
+    color: var(--text-dim);
+    letter-spacing: 2px; text-transform: uppercase;
+  }
+  .header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px; font-weight: 900; line-height: 1.15;
+    margin-bottom: 12px;
+    background: linear-gradient(135deg, var(--text) 0%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .date-line {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; color: var(--text-muted);
+    display: flex; align-items: center; gap: 12px;
+  }
+  .date-line .dot {
+    width: 6px; height: 6px;
+    background: var(--accent); border-radius: 50%;
+    animation: blink 2s ease-in-out infinite;
+  }
+  @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+  .tldr { padding: 32px 0; border-bottom: 1px solid var(--border); }
+  .tldr-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; color: var(--accent);
+    letter-spacing: 3px; text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .tldr p { font-size: 17px; font-weight: 500; line-height: 1.8; }
+  .section { padding: 40px 0; border-bottom: 1px solid var(--border); }
+  .section:last-child { border-bottom: none; }
+  .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+  .section-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px; font-weight: 900; color: var(--accent); line-height: 1;
+  }
+  .section-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+    padding: 4px 10px; border-radius: 4px; font-weight: 500;
+  }
+  .tag-model { background: rgba(68,136,255,0.15); color: var(--blue); }
+  .tag-product { background: rgba(0,229,160,0.12); color: var(--accent); }
+  .tag-society { background: rgba(255,68,136,0.15); color: var(--pink); }
+  .tag-industry { background: rgba(255,136,68,0.15); color: var(--orange); }
+  .tag-insight { background: rgba(255,204,0,0.15); color: var(--yellow); }
+  .news-title { font-size: 22px; font-weight: 700; line-height: 1.4; margin-bottom: 16px; }
+  .news-body {
+    font-size: 15px; line-height: 1.85; margin-bottom: 16px; font-weight: 300;
+    overflow-wrap: break-word; word-break: break-word;
+  }
+  .news-body strong { color: var(--accent); font-weight: 500; }
+  .insight-box {
+    background: var(--surface-2);
+    border-left: 3px solid var(--accent);
+    padding: 16px 20px; border-radius: 0 8px 8px 0; margin-top: 16px;
+  }
+  .insight-box .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; color: var(--accent);
+    letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;
+  }
+  .insight-box p { font-size: 14px; line-height: 1.75; font-weight: 400; }
+  .isu-box {
+    background: rgba(255,136,68,0.08);
+    border-left: 3px solid var(--orange);
+    padding: 10px 14px; border-radius: 0 6px 6px 0; margin-top: 12px;
+  }
+  .isu-box .isu-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; color: var(--orange);
+    letter-spacing: 2px; text-transform: uppercase; margin-bottom: 6px;
+  }
+  .isu-area-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; padding: 2px 8px; border-radius: 3px;
+    background: rgba(255,136,68,0.15); color: var(--orange);
+    margin-right: 6px;
+  }
+  .isu-opp-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; padding: 2px 8px; border-radius: 3px;
+    background: rgba(255,204,0,0.15); color: var(--yellow);
+  }
+  .source-link { margin-top: 10px; text-align: right; }
+  .source-link a { font-size: 12px; color: var(--text-muted); text-decoration: none; }
+  .source-link a:hover { color: var(--text-dim); }
+  .isu-section {
+    padding: 40px 0; border-top: 2px solid var(--orange); margin-top: 20px;
+  }
+  .isu-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; font-weight: 700; margin-bottom: 16px; color: var(--orange);
+  }
+  .isu-section p { font-size: 15px; line-height: 1.85; font-weight: 300; }
+  .bottom-line {
+    padding: 40px 0; border-top: 2px solid var(--accent); margin-top: 20px;
+  }
+  .bottom-line h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; font-weight: 700; margin-bottom: 20px; color: var(--accent);
+  }
+  .bottom-line p { font-size: 15px; line-height: 1.85; font-weight: 300; margin-bottom: 12px; }
+  .action-list { list-style: none; margin-top: 20px; }
+  .action-list li {
+    position: relative; padding: 10px 0 10px 24px;
+    font-size: 14px; font-weight: 400; line-height: 1.7;
+  }
+  .action-list li::before {
+    content: '→'; position: absolute; left: 0;
+    color: var(--accent); font-family: 'JetBrains Mono', monospace; font-weight: 500;
+  }
+  .action-list li strong { color: var(--accent); font-weight: 500; }
+  .footer {
+    padding: 40px 0; text-align: center;
+    color: var(--text-muted); font-size: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    border-top: 1px solid var(--border);
+  }
+  .footer .accent { color: var(--accent); }
+  .tab-nav {
+    display: flex;
+    gap: 0;
+    border-bottom: 2px solid var(--border);
+    margin-top: 8px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--bg);
+  }
+  .tab-btn {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+    padding: 16px 20px;
+    background: none; border: none;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+    white-space: nowrap;
+  }
+  .tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .tab-btn:hover:not(.active) { color: var(--text-dim); }
+  .tab-pane { display: none; }
+  .tab-pane.active { display: block; }
+  .tab-empty {
+    padding: 80px 0; text-align: center;
+    color: var(--text-muted);
+    font-family: 'JetBrains Mono', monospace; font-size: 13px;
+  }
+  .tab-empty .empty-icon { font-size: 36px; margin-bottom: 16px; opacity: 0.3; }
+  .tab-empty p { line-height: 2; }
+  .tab-empty .coming { color: var(--accent); }
+  @media (max-width: 600px) {
+    .header h1 { font-size: 30px; }
+    .news-title { font-size: 19px; }
+    .container { padding: 0 16px; }
+    .header { padding: 40px 0 30px; }
+    .tab-btn { font-size: 10px; padding: 14px 14px; letter-spacing: 1px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <div class="header-top">
+      <div class="logo-mark">AI</div>
+      <span class="brand-name">Daily Briefing</span>
+    </div>
+    <h1 id="main-title">오늘의 AI, 3분 안에 끝내기</h1>
+    <div class="date-line">
+      <span class="dot"></span>
+      <span>2026.10.29 (목) — 바쁜 당신을 위한 AI 핵심 브리핑</span>
+    </div>
+  </header>
+
+  <nav class="tab-nav">
+    <button class="tab-btn active" onclick="switchTab(this,'tab-ai')">오늘의 AI 브리핑</button>
+    <button class="tab-btn" onclick="switchTab(this,'tab-it')">국내 IT 회사 동향</button>
+  </nav>
+
+  <div id="tab-ai" class="tab-pane active">
+  <div class="tldr">
+    <div class="tldr-label">오늘의 한 줄</div>
+    <p>구글 Gemini 4 Carbon이 AI 벤치마크 1위를 탈환했고, KT는 AI 고객센터로 월 120만 건 상담을 자동화하며 실전 AI의 시대를 증명했다.</p>
+  </div>
+
+  
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <span class="section-tag tag-model">모델 릴리스</span>
+    </div>
+    <h3 class="news-title">구글 Gemini 4 Carbon, AI 벤치마크 1위 탈환…단, 사이버 보안 전문가만 먼저 쓴다</h3>
+    <p class="news-body">구글이 최신 플래그십 모델 <strong>Gemini 4 Carbon</strong>을 공개했다. 코딩, 에이전틱 작업, 사이버 보안 분야에서 '획기적 성능 향상'을 이뤘다고 밝혔으며, Artificial Analysis Intelligence Index(v5.0) 기준으로 Claude Opus 5.5와 GPT-6 Astra를 제치고 <strong>1위</strong>를 차지했다. 가격은 Claude Opus의 절반 수준으로 알려졌다.
+
+현재 일반 공개는 제한적이며, <strong>사이버 보안 방어자(cyber defender)</strong>를 우선 대상으로 접근 권한을 부여하고 있다. 구글은 동시에 Android 개발을 서드파티 AI 에이전트에 개방하고 새로운 Gemini API도 공개하는 등 생태계 확장에도 박차를 가했다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>최고 성능 AI 모델도 '모든 사람에게 즉시 공개'하는 방식에서 벗어나, <strong>특정 산업·전문 직군을 우선 타깃</strong>하는 단계적 출시 전략이 자리를 잡고 있다. 사이버 보안이라는 고위험·고가치 영역을 첫 번째 수문장으로 선택한 것은 AI 성능 검증과 브랜드 포지셔닝을 동시에 노리는 계산된 행보다. GPT-6, Claude와의 3파전이 사실상 본격화됨에 따라, 모델 선택 기준이 성능 단일 지표에서 <strong>가격 대비 성능(Price-to-Performance)</strong>과 도메인 특화 능력으로 이동하고 있다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[제품 강화]</span>
+      </div>
+      <p>Gemini 4 Carbon의 등장으로 RAG 기반 챗봇·AI 플랫폼 구축 시 활용 가능한 최상위 모델 선택지가 넓어졌다. 이수시스템의 기업용 AI 챗봇 및 HR AI Package에 Gemini API 연동을 검토할 시점이며, 특히 Claude Opus 대비 절반 수준의 가격은 고객사 도입 비용 부담을 낮춰 영업 경쟁력 확보에 유리하다.</p>
+    </div>
+    <div class="source-link"><a href="https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier" target="_blank" rel="noopener noreferrer">출처: The Verge →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <span class="section-tag tag-industry">산업 동향</span>
+    </div>
+    <h3 class="news-title">KT, AI 고객센터 월 120만 건 처리…상담 시간 11% 단축, 해결률 81% 달성</h3>
+    <p class="news-body">KT가 생성형 AI를 고객센터에 전면 도입해 <strong>월 120만 건</strong>의 상담을 처리하는 성과를 공개했다. AI 도입 후 상담 처리 시간은 <strong>11% 단축</strong>됐고, 상담완결률(한 번의 상담으로 문제 해결)은 <strong>81%</strong>까지 올랐다. 단순 FAQ 자동화 수준을 넘어, 고객 문의를 실시간으로 분석·처리하는 수준에 이른 것으로 평가된다.
+
+이는 통신 대기업이 생성형 AI를 실제 운영 환경에 안정적으로 정착시킨 대표 사례로, 콜센터 업계 전반의 AI 전환 속도를 가늠하는 기준점이 될 전망이다. 국내 AI 고객상담 시장에서 대규모 레퍼런스가 축적되면서 관련 솔루션 수요도 본격 확대될 것으로 보인다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>통신사 수준의 <strong>초대규모 상담 트래픽</strong>에서도 생성형 AI가 81% 해결률을 기록한 것은, AI 컨택센터(AICC)가 더 이상 파일럿이 아닌 <strong>운영 인프라</strong>로 자리매김했음을 뜻한다. 제조·금융·유통 등 대규모 고객접점을 보유한 산업군 전반에 걸쳐 유사 도입 압력이 높아질 것이며, AICC 시장은 단순 챗봇 공급에서 <strong>에이전틱 AI 기반 업무 자동화</strong> 솔루션 경쟁으로 빠르게 전환될 전망이다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[영업 기회]</span>
+      </div>
+      <p>KT 사례는 이수시스템 RAG 기반 챗봇 솔루션의 레퍼런스 확보 전략에 직접 연결된다. 제조·건설·금융 고객사의 사내 상담 자동화(사내 IT 헬프데스크, HR 문의 처리 등)를 WORKUP·Smart HR과 연동한 AI 챗봇 패키지로 제안할 수 있다. '상담완결률 80%+' 같은 구체적 KPI를 제시하면 고객사 의사결정자 설득에 효과적이다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1oWU1jRGgyVDBXVXFIMDA4UFNmX1ZlbU9PMFBaMm1HSGVpUDhWQ1U5VEpBSTR2LThpYjk0TnFqcm1yTUhVY2htT2toV3ZsS2EzR1lQUEhsaUNraFZBcVgzNXlENTEtaU0?oc=5" target="_blank" rel="noopener noreferrer">출처: 인공지능신문 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <span class="section-tag tag-insight">글로벌 이슈</span>
+    </div>
+    <h3 class="news-title">'공짜 중국 AI'에 속수무책…K-AI, 1위 자리 위협받는다</h3>
+    <p class="news-body">아시아경제가 'C쇼크(차이나 쇼크)' 시리즈를 통해 중국 AI의 한국 산업 잠식 실태를 조명했다. 중국 AI 기업들은 무료 또는 저가 모델 전략으로 시장을 공략하고 있으며, <strong>2030년까지 LLM·로봇·반도체 분야에서 세계 선두</strong>를 목표로 한다는 공식 로드맵까지 공개된 상태다. 국내 AI 스타트업과 중견 솔루션 기업들은 가격 경쟁력에서 밀리는 상황이다.
+
+한국 게임 회사들은 이에 대응해 자체 LLM 개발과 유료 AI 서비스 출시에 나서는 등 IT 업계 전반에서 독자 AI 역량 확보 움직임이 가속되고 있다. 정부 역시 구미 AI 혁신거점 육성에 <strong>25조 원 투자</strong>를 유치하는 등 제조 AI 생태계 강화에 나섰다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>중국 AI의 '무료 공세'는 단순 가격 경쟁을 넘어, 한국 기업들이 쌓아온 <strong>도메인 특화 AI 솔루션 경쟁력</strong>의 기반 자체를 흔드는 구조적 위협이다. 범용 LLM 시장에서 가격으로 싸우는 것은 한국 중견 AI 기업에게 불리하며, 특정 산업·업무에 깊이 파고든 <strong>버티컬 AI 솔루션</strong>으로 차별화하는 것이 생존 전략의 핵심이 될 전망이다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[리스크]</span>
+      </div>
+      <p>이수시스템에게 중국 AI 저가 공세는 범용 챗봇 경쟁보다, HR·ERP·안전 같은 국내 규제·컴플라이언스에 특화된 버티컬 솔루션으로 방어선을 구축하는 방향을 재확인시켜 준다. WORKUP·Smart HR에 내장된 AI 기능(이력서 분석, HR 챗봇 등)은 국내 노동법·급여 규정 맥락에서 중국 범용 AI가 쉽게 대체하기 어려운 영역이므로, 이 차별점을 영업 메시지로 명확히 전달해야 한다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxOOVE1M2dOR0dlLTNQV1dlcXEzT25rMnNPQW8yUmQ1dGpPUUJBaXlIWklrZjNEaHNKRFJ2TXYyRUpBRVJfTlBoNV9WQ1FVcXhKLXluUjN0ZE5wV01MYWNxaXQ0SlpNU0xQNnR1MFY0VGVMTzZUaXNOSzV6ZkFDRTAtRDZn?oc=5" target="_blank" rel="noopener noreferrer">출처: 아시아경제 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <span class="section-tag tag-product">제품 업데이트</span>
+    </div>
+    <h3 class="news-title">애플 M6 맥북 프로, AI 성능 최대 13배 향상…온디바이스에서 LLM 직접 실행</h3>
+    <p class="news-body">애플이 <strong>M6 칩</strong>을 탑재한 맥북 프로를 공개했다. AI 성능이 전 세대 대비 최대 <strong>13배</strong> 향상됐으며, 클라우드 연결 없이 기기 자체에서 LLM을 직접 실행하는 <strong>온디바이스 AI</strong> 능력이 대폭 강화됐다. 이는 민감한 기업 데이터를 외부 서버에 보내지 않고도 AI를 활용할 수 있게 해 기업 보안 요건을 충족하는 데 유리하다.
+
+온디바이스 AI 강화는 애플이 클라우드 AI 경쟁에서 한발 비켜서 '개인정보 보호·보안'을 무기로 기업 시장을 공략하는 전략의 연장선이다. 기업용 맥 도입을 고려하는 IT 부서에게는 별도 AI 서버 비용 없이 생산성 도구를 확충할 수 있다는 점이 매력적으로 작용할 전망이다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>온디바이스 LLM 실행이 노트북 수준에서 현실화되면, 기업 AI 도입의 <strong>데이터 보안 장벽</strong>이 크게 낮아진다. 클라우드 AI SaaS 솔루션이 규제나 보안 정책으로 도입이 막혔던 금융·공공·의료 분야에서 온디바이스 AI 솔루션 수요가 새롭게 형성될 수 있으며, AI 솔루션 공급자들은 온프레미스 및 온디바이스 배포 시나리오를 제품 로드맵에 반영해야 할 시점이다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[모니터링]</span>
+      </div>
+      <p>온디바이스 LLM 환경의 부상은 이수시스템 Smart HR(온프레미스 방식) 고객사에게 새로운 AI 기능 접목 경로가 열린다는 의미다. 클라우드 데이터 반출이 제한된 금융·공공 고객의 HR 시스템에 온디바이스 AI 기반 문서 분석·이력서 검토 기능 추가를 중기 로드맵으로 검토할 수 있다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5RcVA0Y2FuRXJhWExYa1lSSTV2VGIxaWwtamg3TmstS0tNS2ltTFVpOFJfUWpFLTgyV095ckZiRmQxbmZTaHJZRmVqVjRkMVUzdjhSTmFISWlDclQtNk96TlVhTUJPSU0?oc=5" target="_blank" rel="noopener noreferrer">출처: 인공지능신문 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">05</span>
+      <span class="section-tag tag-industry">산업 동향</span>
+    </div>
+    <h3 class="news-title">Alphabet, 핵심 사업 매출 기대 미달…구글 광고 왕국에 균열 신호</h3>
+    <p class="news-body">구글 모회사 <strong>Alphabet</strong>의 주가가 핵심 사업 부문 매출이 시장 전망치를 밑돌면서 급락했다. 광고 수익 성장 둔화가 주된 원인으로 지목됐으며, AI 투자에 따른 비용 증가도 수익성 압박을 가중시켰다. 구글은 Gemini 4 Carbon 출시 등으로 AI 리더십을 강조하고 있지만, 투자자들은 AI 투자 대비 수익화 속도에 의구심을 보내고 있다.
+
+이번 실적 실망은 AI 군비경쟁이 빅테크 기업들의 재무 체력을 시험하는 국면에 접어들었음을 보여준다. AI 모델 경쟁에서 앞서더라도, 이를 안정적인 <strong>수익 모델로 전환</strong>하지 못하면 시장의 신뢰를 잃을 수 있다는 경고 신호다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>빅테크의 AI 투자 사이클이 '성능 경쟁' 단계에서 <strong>'수익화 증명'</strong> 단계로 넘어가고 있다. Alphabet의 실적 부진은 광고 기반 수익 모델이 AI 비용을 감당하기 어렵다는 점을 노출시켰으며, 결국 AI 서비스의 <strong>B2B 유료화·구독 모델</strong> 확대가 빅테크 전략의 핵심 과제로 부상할 것임을 시사한다. 이는 기업용 AI 솔루션 시장의 가격 책정 구조와 SaaS 확산에도 영향을 줄 것이다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">디지털서비스 사업</span>
+        <span class="isu-opp-tag">[모니터링]</span>
+      </div>
+      <p>구글의 수익화 압박은 Google Cloud 및 Gemini API 가격 정책 변화로 이어질 수 있다. 이수시스템이 NCP(네이버 클라우드) 파트너로서 구글 대신 국내 클라우드 인프라를 제안하는 영업 시나리오에서, '특정 벤더 종속 없는 안정적 비용 구조'를 강조하는 메시지가 설득력을 가질 수 있다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxPNl94WE51TlQ2Q2dVVTBDNlZZbzF5Mk02UjZRaEJwQnhoM1lGX0dWODk3b1RwZDB1SDVHYmYtOUQzaWJyTEc0ZXlTNmpyQU50WVhaQUpJX3dyMkVFbmgyVXJFVy1fb21TQUxEOXFIWmtzdFEyYVk5SkU3ZGF4LTdnN0EyTlo1NklicFg4TzlpSHYwRE9VYzdUUTZ4N0ZLaG9XWUs1Nm5vM3FfSktn?oc=5" target="_blank" rel="noopener noreferrer">출처: Bloomberg →</a></div>
+  </section>
+  
+  <div class="isu-section">
+    <h2>이수시스템 인사이트</h2>
+    <p>오늘 뉴스의 핵심은 '범용 AI 전쟁'에서 '도메인 특화 AI 수익화'로의 전환이다. KT의 AICC 성공 사례는 이수시스템 RAG 챗봇 솔루션을 HR 문의·사내 헬프데스크 자동화 패키지로 제조·건설 고객사에 제안하는 구체적 영업 근거가 된다. 동시에 중국 저가 AI 공세에 맞서려면 WORKUP·Smart HR·ESGable 등 국내 규제·컴플라이언스에 깊이 맞닿은 버티컬 솔루션의 차별성을 영업 현장에서 더 선명하게 전달해야 한다.</p>
+  </div>
+
+  <div class="bottom-line">
+    <h2>오늘의 핵심 테이크어웨이</h2>
+    <ul class="action-list">
+      <li><strong>Gemini 4 Carbon</strong>이 벤치마크 1위를 탈환하며 GPT-6·Claude와의 3파전이 본격화됐다. 이제 모델 선택 기준은 최고 성능이 아닌 <strong>가격 대비 성능과 도메인 적합성</strong>으로 이동 중이다.</li>
+      <li>KT 사례가 증명한 것처럼, AI 고객센터는 파일럿을 졸업하고 <strong>월 120만 건 처리·해결률 81%</strong>라는 운영 인프라로 자리잡았다. 유사 도입 수요가 산업 전반으로 확산될 시점이다.</li>
+      <li>중국 AI의 <strong>무료 공세</strong>와 Alphabet의 실적 부진이 동시에 가리키는 방향은 하나다. 범용 AI 가격 경쟁에서 이기는 것보다, <strong>특정 산업·규제 환경에 특화된 버티컬 AI 솔루션</strong>으로 차별화하는 것이 살아남는 전략이다.</li>
+    </ul>
+  </div>
+  </div><!-- /tab-ai -->
+
+  <div id="tab-it" class="tab-pane">
+  <div class="tldr">
+    <div class="tldr-label">오늘의 한 줄</div>
+    <p>퓨리오사AI 8200억 메가 펀딩부터 미래에셋의 일본 증권사 인수까지, 국내 테크·금융 기업의 글로벌 확장이 동시에 터졌다.</p>
+  </div>
+
+  
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <span class="section-tag tag-model">투자·펀딩</span>
+    </div>
+    <h3 class="news-title">퓨리오사AI, 국내 스타트업 역대 최대 8200억 펀딩…기업가치 3.8조원 달성</h3>
+    <p class="news-body">국내 AI 반도체 설계 스타트업 <strong>퓨리오사AI</strong>가 <strong>8200억원</strong> 규모의 투자를 유치하며 국내 스타트업 사상 최대 단일 펀딩 기록을 경신했다. 이번 투자로 회사의 기업가치는 <strong>3.8조원</strong>으로 평가받아 유니콘을 훌쩍 넘는 '데카콘' 반열에 근접했다. 퓨리오사AI는 AI 추론용 NPU(신경망처리장치) 칩 개발을 핵심 사업으로 하며, 글로벌 빅테크 수요를 겨냥한 차세대 AI 반도체 양산에 속도를 낼 계획이다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>엔비디아 GPU 의존도를 낮추려는 글로벌 빅테크의 수요가 국내 팹리스 스타트업에 대한 대규모 투자로 이어진 상징적 사건이다. HBM 중심의 메모리 반도체에 편중된 한국 반도체 산업이 AI 추론 칩 설계 영역으로 다변화하는 신호탄으로 읽히며, 후속 AI 반도체 스타트업 투자 심리에도 긍정적 영향을 미칠 전망이다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE53WUZUemNEYWVrUlpNNmdBYnU4c1k0WkdaQl92c1RncDZaRXprc1NjT2IyZUtQVzdraVp1RmMyaTNEbE1ZNTN3cVM5LTU5V2RLSHBFQ1Zn?oc=5" target="_blank" rel="noopener noreferrer">출처: 지디넷코리아 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <span class="section-tag tag-industry">M&A·인수합병</span>
+    </div>
+    <h3 class="news-title">미래에셋증권, 日 산코증권 인수…일본 주식시장 첫 직접 진출</h3>
+    <p class="news-body"><strong>미래에셋증권</strong>이 일본 <strong>산코증권</strong>을 인수하며 일본 현지 주식 중개 시장에 처음으로 직접 진출한다고 2026년 10월 29일 공식 발표했다. 박현주 미래에셋그룹 회장이 직접 M&A 발표를 예고했을 만큼 그룹 차원의 전략적 결정으로, 일본의 개인 투자 활성화 정책인 <strong>NISA(소액투자비과세제도)</strong> 시장을 주요 타깃으로 삼은 것으로 분석된다. 미래에셋은 이번 인수를 발판으로 일본 리테일 금융 시장 공략과 디지털 금융 서비스 확장을 동시에 추진할 계획이다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>일본은 NISA 확대로 개인 투자자 유입이 급증하고 있어 증권사 성장 잠재력이 높은 시장이다. 국내 금융사가 일본 현지 증권사를 직접 인수한 것은 이례적으로, 단순 지분 투자가 아닌 운영권 확보를 통한 본격적인 현지화 전략을 택했다는 점에서 의미가 크다. 국내 금융 기업의 아시아 M&A 확장 트렌드를 주도하는 선례가 될 수 있다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMickFVX3lxTE5PRzhYNmZWb3NpV1gzZ05vVzRSVFlRcVZhX2tHRi1FLW5KVVZndm1jS0M2ZDBmdUdYU3RmSmFoMGh5Mkw5T3ZNQlpraG9HSUFXMWhxT3pNRFRZeW04QmFMQ2lMWk9KRHktVDNVaGkwdlpTdw?oc=5" target="_blank" rel="noopener noreferrer">출처: 인베스트조선 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <span class="section-tag tag-insight">사업 전략</span>
+    </div>
+    <h3 class="news-title">삼성SDS, 하와이서 美 연방정부·국방부 겨냥 모바일 보안 사업 본격 확장</h3>
+    <p class="news-body"><strong>삼성SDS</strong>가 하와이에서 열린 미국 연방정부·국방 관련 행사에 참가해 <strong>모바일 보안 솔루션</strong> 사업의 미국 공공·국방 시장 공략을 본격화했다. 삼성SDS는 자사의 기업 모바일 관리(EMM) 및 보안 플랫폼을 미국 연방정부 규격에 맞춰 제공하는 방안을 추진 중이며, 미국 국방부 산하 조달 채널 확보를 목표로 현지 파트너십 협상을 진행하고 있다. 미국 연방정부의 IT 보안 예산이 지속 확대되는 가운데 삼성SDS의 선제적 포지셔닝으로 풀이된다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>미국 공공·국방 IT 시장은 진입 장벽이 높은 대신 한번 자리를 잡으면 장기 계약으로 이어지는 구조다. 삼성SDS가 삼성전자의 갤럭시 디바이스 생태계와 연계한 보안 솔루션을 앞세워 이 시장을 노린다는 점은 하드웨어-소프트웨어 통합 전략의 연장선으로 볼 수 있다. 국내 IT 서비스 기업의 미국 공공 시장 진출 성공 여부에 업계의 이목이 집중될 것이다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE14dDdRSHp6UGlsNnl6TUZ1a1dnU1pjOEVCb2Fhak8zLXpVN2ZqWm1JTjd6WlNqTENwc25HOWJJdW1qb0JSY0kzSTBrY1J4T0drNWVmT3ViSjBSQ3RCQWYwOUpDRQ?oc=5" target="_blank" rel="noopener noreferrer">출처: 더구루 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <span class="section-tag tag-insight">사업 전략</span>
+    </div>
+    <h3 class="news-title">가온전선, 美 빅테크에 배전케이블 1200억원 공급…AI 데이터센터 수혜 본격화</h3>
+    <p class="news-body"><strong>가온전선</strong>이 미국 빅테크 기업에 <strong>배전케이블 1200억원</strong> 규모의 공급 계약을 체결했다. AI 데이터센터 급증으로 인한 전력 인프라 수요 폭발이 국내 전선 기업에게 직접적인 수혜로 돌아온 것으로, 가온전선은 고압·배전용 특수케이블 분야에서 글로벌 경쟁력을 인정받았다는 평가다. 이번 계약은 단일 고객 기준 대형 수주로, 가온전선의 연간 매출에 유의미한 기여가 예상된다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>AI 인프라 투자 확대가 반도체·서버를 넘어 전력·배선 등 물리적 인프라 기업까지 수혜를 확산시키고 있음을 보여주는 사례다. 국내 전선 업계가 미국 빅테크의 글로벌 공급망에 편입되는 흐름이 가속화되고 있으며, 이는 데이터센터 전력 인프라 관련 국내 기업 전반에 대한 관심을 높일 것으로 보인다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiTkFVX3lxTE0yajhKcFlqSWR6VE1uYS04SExhUG5VM1VCX0NrQW9jdGx1R3c5Q016TDMtdXZtcFFpdzFoWGEwZWtkcVhYQW5UTTdxdE1jdw?oc=5" target="_blank" rel="noopener noreferrer">출처: 전자신문 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">05</span>
+      <span class="section-tag tag-product">시장 동향</span>
+    </div>
+    <h3 class="news-title">HBM만으론 부족…AI 반도체 경쟁 격화 속 한국 기업 생존 전략 화두</h3>
+    <p class="news-body">AI 반도체 시장 경쟁이 심화되면서 <strong>HBM(고대역폭메모리)</strong> 중심의 한국 반도체 전략만으로는 장기 경쟁력 확보가 어렵다는 업계 진단이 나왔다. 삼정KPMG 보고서는 HBM, 미중 기술 패권 경쟁, 엣지 AI, 전력 효율, 파운드리 경쟁 구도 등 <strong>반도체 6대 변수</strong>를 제시하며 국내 기업이 메모리 초격차를 넘어 시스템반도체·패키징·소프트웨어 스택 전반으로 역량을 확장해야 한다고 강조했다. AI 추론 수요 다변화로 NPU·PIM 등 신규 아키텍처 수요가 급부상하는 상황이다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>퓨리오사AI의 8200억 대형 펀딩과 맞물려, 한국 반도체 산업이 메모리 일변도에서 벗어나 AI 시스템반도체로 무게 중심을 이동해야 한다는 시장의 압력이 가시화되고 있다. HBM 수요 사이클에 의존한 실적 구조를 가진 삼성전자·SK하이닉스 등 대형사뿐 아니라 팹리스·OSAT 생태계 전반의 전략 전환이 시급한 시점이다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE5uUy1VUmJ3Y2RYaVl3STd1NkVsbTNyTk1leXY1NEZLRkptX3J5Q1ZtZm11OXNUN28xWTlNR0k3YmRBVjFMT2QxYUpCdHpDRXVzckhkOEhB?oc=5" target="_blank" rel="noopener noreferrer">출처: 지디넷코리아 →</a></div>
+  </section>
+
+  <div class="bottom-line">
+    <h2>오늘의 핵심 테이크어웨이</h2>
+    <ul class="action-list">
+      <li><strong>퓨리오사AI의 8200억 펀딩</strong>은 국내 AI 반도체 팹리스 생태계가 글로벌 투자자의 레이더에 본격 포착됐음을 알리는 이정표로, 후속 투자 붐의 기폭제가 될 수 있다.</li>
+      <li><strong>미래에셋의 일본 산코증권 인수</strong>는 NISA 열풍을 탄 일본 리테일 금융 시장을 선점하려는 포석으로, 국내 금융사의 아시아 M&A 경쟁이 증권업으로 확산되는 신호다.</li>
+      <li>AI 데이터센터 투자 확대의 수혜가 반도체를 넘어 <strong>전선·전력 인프라</strong> 기업까지 확산되고 있으며, 가온전선의 1200억 공급 계약은 국내 인프라 기업의 글로벌 공급망 편입 가속화를 보여준다.</li>
+    </ul>
+  </div>
+  </div><!-- /tab-it -->
+
+  <footer class="footer">
+    <p>AI Daily Briefing — <span class="accent">바쁜 사람을 위한 3분 AI 뉴스</span></p>
+    <p style="margin-top: 8px;">2026.10.29 (목) | 매일 아침 업데이트</p>
+    <p style="margin-top: 8px;">© keyboard@kakao.com</p>
+  </footer>
+</div>
+<audio src="ai_briefing_2026_10_29.mp3" controls style="position:fixed;bottom:20px;right:20px;z-index:100;width:260px;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.5);"></audio>
+<script>
+  const TAB_TITLES = {
+    'tab-ai': '오늘의 AI, 3분 안에 끝내기',
+    'tab-it': '국내 IT 회사 동향'
+  };
+  function switchTab(btn, id) {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(id).classList.add('active');
+    document.getElementById('main-title').textContent = TAB_TITLES[id];
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const audio = document.querySelector('audio');
+    if (audio) {
+      if (id === 'tab-it') {
+        audio.pause();
+        audio.style.display = 'none';
+      } else {
+        audio.style.display = '';
+      }
+    }
+  }
+</script>
+</body>
+</html>
