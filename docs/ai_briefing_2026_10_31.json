@@ -1,0 +1,72 @@
+{
+  "date": "2026.10.31 (토)",
+  "one_liner": "구글 주가 쇼크·AI 크롤링 공동 옵트아웃·우주 AI 서버까지, AI가 비즈니스 판도를 흔든 하루",
+  "news": [
+    {
+      "number": 1,
+      "category": "산업 동향",
+      "title": "구글, AI 투자 과잉에 주가 13% 폭락…'AI가 검색을 잡아먹는다'",
+      "body": "알파벳(구글 모회사)이 3분기 실적 발표 후 주가가 **13% 급락**하며 시가총액 **5,000억 달러** 이상이 증발했다. 광고 기반 검색 매출이 AI 챗봇 서비스에 잠식되고 있다는 우려가 반영된 결과다. 반면 구글 클라우드 부문은 전년 대비 **103% 성장**하며 선전했으나, AI 인프라에 쏟아붓는 막대한 자본 지출이 전체 수익성을 압박하고 있다는 평가다.\n\n시장은 구글이 AI 전환 비용을 얼마나 감당할 수 있을지에 대한 의구심을 드러냈다. 경쟁사인 OpenAI·Anthropic 등에 검색 트래픽을 빼앗기는 흐름이 실제 재무지표에 반영되기 시작한 것으로, AI 시대의 '승자독식' 구도가 빅테크 내에서도 재편되고 있음을 보여준다.",
+      "insight": "광고 기반 검색 수익 모델을 근간으로 삼아온 구글의 실적 쇼크는 AI 챗봇이 전통적인 검색 패러다임을 실질적으로 대체하기 시작했다는 신호다. 클라우드 부문의 고성장은 AI 인프라 수요가 폭발적임을 재확인시키지만, 기존 광고 수익의 잠식 속도가 클라우드 성장보다 빠를 수 있다는 리스크가 부각되고 있다. AI 전환 비용과 수익화 타이밍의 간극은 빅테크 전반의 공통 과제로 부상하고 있다.",
+      "isu_area": "클라우드 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "구글 클라우드의 103% 성장은 NCP 파트너사인 이수시스템에도 긍정적 신호다. 고객사들이 AI 워크로드를 클라우드로 이전하는 속도가 빨라지고 있어, 클라우드 마이그레이션 컨설팅 영업 기회가 확대될 수 있다. 특히 제조·건설 고객사 대상으로 'AI 운영을 위한 클라우드 이전' 패키지 제안 시 구글 클라우드 성장세를 레퍼런스로 활용할 수 있다.",
+      "source": "Jefferson City News Tribune / TradingView",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxONFpNTVh2U2R2U25UUGRXMy0zU0VQZmZpWnU0eVpSVjJZTmNfRko0dWhfMzRnSEZJSlhsbi1tdTJZd014MnBhdU1IcG5WcHE0ZEVXZllGYzlNNllmNElyR2p6WjUzNVFsZkV1NW9MVW9ZY0otOVpZM2dJN1ZNaEt3RmtpMDRuUzV3NHFZcUk3Qm5pWWNNWjVIeQ?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "글로벌 이슈",
+      "title": "OpenAI·Google·MS·Anthropic, 'AI 학습 거부' 공동 표준 채택…콘텐츠 저작권 전쟁 새 국면",
+      "body": "OpenAI, 구글, 마이크로소프트, Anthropic 4대 AI 기업이 웹사이트 운영자가 단 한 번의 설정으로 자신의 콘텐츠가 **AI 학습 데이터로 수집되는 것을 거부**할 수 있는 공통 '정책 토큰(Policy Token)' 표준을 채택하기로 합의했다. 기존에는 각 AI 기업에 개별적으로 크롤링 차단을 요청해야 했으나, 이 표준이 도입되면 한 번의 설정이 주요 AI 기업 전체에 적용된다.\n\n이번 합의는 AI 학습 데이터를 둘러싼 저작권 분쟁이 법정 밖에서 자율 규제로 해소될 가능성을 열었다. 동시에 위키미디어 재단이 OpenAI 저작권 소송에서 '법정 조언자' 의견서 제출을 신청하는 등 AI 학습 데이터의 법적 경계선을 둘러싼 논의가 입체적으로 전개되고 있다.",
+      "insight": "주요 AI 기업들이 콘텐츠 옵트아웃 표준에 자발적으로 합의한 것은 규제 압박에 앞서 선제적 자율 규제를 택했다는 점에서 의미가 있다. 이는 곧 AI 학습 데이터의 '동의 기반 수집' 시대가 열림을 예고하며, 기업들이 사내 지식베이스나 문서를 AI 학습에 활용하는 방식에도 영향을 미칠 것이다. 향후 기업용 AI 도입 시 데이터 거버넌스 설계가 필수 전제조건이 될 가능성이 높다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "이수시스템이 제공하는 RAG 기반 챗봇과 AI 플랫폼은 고객사 내부 데이터를 학습·활용하는 구조다. 이번 옵트아웃 표준 합의는 외부 데이터 수집 이슈이지만, 고객사들이 '내 데이터가 외부 AI에 노출되지 않는가'를 더 민감하게 묻게 되는 계기가 된다. 이수시스템의 온프레미스·프라이빗 클라우드 기반 AI 구축 역량을 '데이터 주권 보장형 AI'로 포지셔닝하는 영업 메시지로 활용할 수 있다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out"
+    },
+    {
+      "number": 3,
+      "category": "모델 릴리스",
+      "title": "구글, 코딩·사이버보안 특화 'Gemini 4 Carbon' 공개…Google Cloud 전용 출시",
+      "body": "구글이 코드 생성과 사이버보안 분야에 특화된 신규 모델 **Gemini 4 Carbon**을 공개했다. 이 모델은 일반에 개방되지 않고 **Google Cloud 플랫폼을 통해서만 접근**할 수 있어, 기업 고객 확보와 클라우드 매출 확대를 동시에 노리는 전략으로 풀이된다. 코딩 벤치마크와 사이버 위협 탐지 성능에서 기존 모델 대비 유의미한 향상을 보인 것으로 알려졌다.\n\n또한 같은 날 구글은 AI 칩(TPU)을 탑재한 위성이 우주에서 **Gemma 4 모델**을 구동해 지구로 첫 응답을 전송하는 데 성공했다고 발표했다. 에지 AI와 위성 AI 인프라를 동시에 선보이며 구글의 AI 기술 스펙트럼이 클라우드를 넘어 우주로까지 확장되고 있음을 과시했다.",
+      "insight": "Gemini 4 Carbon을 Google Cloud 전용으로 출시한 것은 AI 모델 자체보다 클라우드 플랫폼 락인(lock-in) 전략을 강화하겠다는 신호다. 최고 성능 모델을 특정 인프라에 묶어두는 방식은 AWS·Azure도 유사하게 활용하는 전략으로, 기업 AI 도입 시 클라우드 선택이 곧 AI 모델 접근성을 결정하는 시대가 가속화되고 있다. 코딩·보안 특화 모델의 등장은 소프트웨어 개발·보안 인력 시장에도 직접적 영향을 미칠 것으로 보인다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "Gemini 4 Carbon이 Google Cloud 전용으로 제공된다는 점은 이수시스템의 클라우드 사업(NCP 파트너)과 AI 사업 간 시너지 측면에서 주목할 만하다. 고객사에 클라우드 마이그레이션을 제안할 때 '특정 클라우드에서만 쓸 수 있는 최상위 AI 모델'을 부가가치로 제시하는 세일즈 전략이 가능하다. 또한 코딩 자동화·보안 탐지 AI를 이수시스템 자체 AI 플랫폼에 API 형태로 연동하는 제품 강화 방향도 검토할 수 있다.",
+      "source": "Root-Nation.com / The Verge",
+      "url": "https://news.google.com/rss/articles/CBMi0gJBVV95cUxPeTl6TDVYYmZwMk96enc3U3paMUZrQmZOZW1kMW5VSllaY3dBNUM5TnNzYWRleEUwaThmT01aRnpwRFV1SWtVd2lZeThHNlNYYUZ5S3k1Z3ExYjBScjZmMWRzMDRiTFNpNlFNNlNVNlQwbGREWko2SVlCc3pUR1daLU00NXRxamFaNE4wVlRKWmp4VHBOTHVrNm50ZTlkQ015bGkxaUNuM0pwc1ZkZmdjakx3VHpjWTFLdWxJRkNsYlJCQnRFRUZPNzhSbnpsQTZrVExXRUJURWR4VnNaM1E2X1pzXzBvdVVYdDdWT3pkaXliU25fMFlXTC1KOFhMVUhOSURyZnFEaHJZUEtVWFM2d01MR01aNjU1TnVCN1VVejM5ZDhLeWduUE43VlZ5N0tHenZVSnBDUl8taERDb25tVTR1Z1ZwbnF2SEYzdWcxdHdrdw?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "산업 동향",
+      "title": "글로벌 IT 기업 Cognizant, OpenAI 전담 조직에 **2만 5천 명** 배치…AI 인력 전쟁 본격화",
+      "body": "글로벌 IT 서비스 기업 Cognizant가 OpenAI 기술을 전문으로 다루는 **'OpenAI 프런티어 캐퍼빌리티 그룹'**을 신설하고, 여기에 **2만 5천 명 이상의 전문 인력**을 배치했다. 이는 IT 서비스 기업이 특정 AI 파트너사의 기술 스택에 대규모 인력을 집중 투자하는 사례로, 기업 고객의 AI 전환 수요를 선점하기 위한 포석이다.\n\n단순 개발 용역이 아닌 AI 전략 컨설팅부터 구현·운영까지 풀스택 지원을 표방하는 것으로, 글로벌 SI·IT 서비스 기업들이 AI를 핵심 사업 축으로 재편하는 속도가 빨라지고 있음을 보여준다. 국내 IT 서비스 기업들도 유사한 방향으로의 전환 압박을 받을 것으로 예상된다.",
+      "insight": "2만 5천 명 규모의 AI 전담 조직 신설은 IT 서비스 산업 전반이 'AI 퍼스트' 체제로 급속히 재편되고 있음을 상징적으로 보여준다. 전통적인 SI·아웃소싱 모델은 AI 구현·운영 역량을 보유한 기업에 유리하게 재편될 것이며, AI 전문 인력 확보가 IT 서비스 기업의 수주 경쟁력을 좌우하는 핵심 변수로 부상하고 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "글로벌 대형 IT 기업이 AI 전담 조직에 수만 명을 투입하는 흐름은 국내 중견 IT 기업에게도 전문화·차별화 압박으로 작용한다. 이수시스템은 HR·ERP·ESG 등 버티컬 도메인에서의 AI 적용 전문성을 내세워 '범용 AI'가 아닌 '업무 특화 AI' 포지션으로 차별화할 수 있다. WORKUP, Smart HR 등 HR 솔루션에 AI를 선제적으로 탑재해 'HR AI 전문 파트너'로 포지셔닝하는 것이 경쟁력 유지의 핵심 전략이 될 것이다.",
+      "source": "Unite.AI",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxONGxPNHFlYV9qOG5HOFIxMGtsWmhxMWgyR0x4RXZoa3N0bElUUUxrVXNSNVY4c1BSYnRhVTZfU1g2YVdaWmtBbGtPa2R3RHVuM1NzYTV0YWxaOW5rRWIzT0pZT2UwOXNVQlJwSV9yZC1TTlpDOVoxSGNudElVbE1DVmNVZDRyNWNieWFzdVFOVkFSQTVDdDA3ZGNSbFZYZTBV?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "산업 동향",
+      "title": "충남연구원, AI 기반 '스마트 시티즌 플랫폼' 추진…지방정부 AI 도입 가속화",
+      "body": "충남연구원이 AI 기술을 활용해 도민의 정책 참여를 혁신하는 **'스마트 시티즌 플랫폼'** 구축 방안을 논의했다. 지방자치단체가 주민 의견 수렴, 공공 서비스 안내, 민원 응대 등에 AI를 도입하는 모델로, 중앙정부에 이어 지방정부 차원에서도 생성형 AI 기반 행정 혁신이 구체화되고 있다.\n\n이처럼 공공 부문의 AI 플랫폼 발주가 지방으로 확산되는 흐름은, 단순 챗봇을 넘어 주민 참여·데이터 분석·민원 자동화를 통합하는 플랫폼 수요가 커지고 있음을 의미한다. 공공 AI 사업은 보안·데이터 주권 요건이 엄격해 국내 전문 기업에 유리한 환경이 형성되고 있다.",
+      "insight": "지방정부의 AI 플랫폼 도입은 공공 AI 시장이 중앙부처에서 지자체 단위로 빠르게 저변을 넓히고 있음을 보여준다. 공공 AI 사업은 보안 인증, 데이터 주권, 국내법 준수 요건이 까다로워 글로벌 빅테크보다 국내 IT 기업이 유리한 영역이다. 지자체의 예산 규모는 크지 않지만, 표준 모델을 선점하면 전국 확산 레퍼런스로 활용할 수 있어 전략적 가치가 높다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[정부 사업]",
+      "isu_insight": "충남연구원의 스마트 시티즌 플랫폼은 이수시스템의 RAG 기반 챗봇과 AI 플랫폼이 직접 적용될 수 있는 공공 영역이다. 이수시스템은 이수그룹 계열사 및 500개 이상 기업 레퍼런스를 보유하고 있지만, 공공 부문으로의 AI 사업 확장을 위해 지자체 AI 플랫폼 RFP에 선제적으로 대응하는 전략이 필요하다. 특히 민원 응대 챗봇과 주민 참여 데이터 수집·분석 기능을 패키지화해 지자체 표준 솔루션으로 포지셔닝할 수 있다.",
+      "source": "충청메시지",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBDcVhld0N1LXh4Y3EyMGpjVEJkY3FEOFNNSUtmN3Jqbzk0c0NVMEU2bGlWN1RtRHJIVFZ2WnA2RHNsNmZXaW11WjQwSV9wQThkSTFQWHVJaGNXcDRwdGlQNUJVbUtGWF94S3Zj?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**구글 주가 13% 폭락**은 AI 투자 비용과 수익화 속도의 괴리가 빅테크 실적에도 나타나기 시작했다는 경고 신호다.",
+    "OpenAI·구글·MS·Anthropic의 **AI 크롤링 옵트아웃 공동 표준** 채택으로, 기업 AI 도입 시 데이터 거버넌스 설계가 필수 전제조건이 되고 있다.",
+    "공공·지자체 AI 플랫폼 수요가 확산되면서, **보안·데이터 주권** 요건을 충족하는 국내 특화 AI 솔루션 기업의 경쟁 우위가 높아지고 있다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심 흐름은 AI 도입 '속도'에서 '신뢰와 거버넌스'로의 무게중심 이동이다. 데이터 옵트아웃 표준, 공공 AI 확산, 버티컬 특화 AI 조직 구성이 동시에 진행되는 가운데, 이수시스템은 HR·ERP·공공 도메인에서의 검증된 레퍼런스와 프라이빗 환경 구축 역량을 '데이터 주권 보장형 AI' 메시지로 결합해 차별화할 수 있다. 단기적으로는 지자체 스마트 시티즌 플랫폼 RFP 대응과 고객사 AI 플랫폼 마이그레이션 컨설팅이 실질적인 영업 기회로 부상하고 있다."
+}
