@@ -1,0 +1,72 @@
+{
+  "date": "2026.11.01 (일)",
+  "one_liner": "AI 스크래핑 통제 공통 표준 등장, 구글 검색 위기, 한국선 AI가 변호사 업무를 오히려 늘리다",
+  "news": [
+    {
+      "number": 1,
+      "category": "글로벌 이슈",
+      "title": "구글·오픈AI·앤트로픽·MS, AI 학습 데이터 수집 거부 공통 표준 채택",
+      "body": "구글, 오픈AI, 앤트로픽, 마이크로소프트 4개사가 웹사이트 운영자가 **단 한 줄의 robots.txt 설정**으로 자사 콘텐츠의 AI 학습 데이터 활용을 일괄 거부·허용할 수 있는 공통 신호 체계를 공식 채택했다. 기존에는 각 AI 기업마다 다른 크롤러 정책이 적용돼 콘텐츠 제공자가 일일이 대응해야 했지만, 이번 합의로 하나의 설정이 주요 AI 플랫폼 전체에 적용된다.\n\n퍼블리셔와 언론사 등 콘텐츠 업계는 '선택이 아닌 강제'라는 비판도 제기했지만, AI 기업들이 자율 규제 차원에서 공통 표준을 만든 것은 이번이 처음이다. 구체적인 기술 표준 명세는 공개 협의체를 통해 이어질 예정이며, 실제 적용 시점은 2027년 상반기로 예상된다.",
+      "insight": "빅테크가 자율적으로 AI 데이터 수집 표준을 만들기 시작했다는 점은 향후 AI 규제 지형을 바꿀 신호다. 정부 규제 이전에 업계 자율 표준이 먼저 자리잡으면 나중에 나오는 법·제도가 이 표준을 기준선으로 삼을 가능성이 높다. 콘텐츠를 기반으로 AI 모델을 학습시키는 모든 기업과, 반대로 자사 데이터를 보호하려는 기업 모두에게 직접적인 영향을 미치는 변화다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "이수시스템의 RAG 기반 챗봇은 외부 웹 콘텐츠보다 고객사 내부 문서를 주로 활용하므로 직접 영향은 제한적이다. 다만 향후 외부 데이터 연동 기능 확장 시 이 표준 준수 여부가 고객사 컴플라이언스 요건이 될 수 있으므로, AI 플랫폼 로드맵에 데이터 출처 관리 기능을 선제적으로 검토해 두는 것이 유리하다.",
+      "source": "PPC Land / Engadget / 인공지능신문",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNN2ZKQ1Iyd1N3OGZ6eElDOUIzS2RzZUptb2Vjb290OFh3QlIyalluVi0yTE95UE81aHlBVzhURTRxRGRZUUx3WkxMY1BzQU9fTVZ5R0pMZFlLb3NTQkpucmFrOUJEd053S213ekxoa3lncXdLTkJJdE56MldYaEtyaHlSOUx2d0V0dXhSYw?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "산업 동향",
+      "title": "구글 알파벳, 매출 500B 달러 돌파했지만 '검색 붕괴'로 주가 12% 급락",
+      "body": "알파벳(구글 모기업)이 연간 **매출 5,000억 달러(약 700조 원)** 돌파라는 사상 최대 기록을 세웠음에도 불구하고, 핵심 사업인 검색 광고 매출이 AI 챗봇·에이전트의 직접 답변 확산으로 눈에 띄게 하락하며 주가가 하루 만에 **12% 급락**했다. 월가는 이를 '검색 비즈니스 모델의 구조적 위기'로 해석하고 있다.\n\n광고 기반 검색 수익이 줄어드는 반면 구글 클라우드·Gemini API 매출은 고속 성장 중이어서, 구글은 검색 회사에서 AI 인프라·모델 회사로의 전환을 가속하고 있다. 이번 주가 급락은 AI가 빅테크 내부에서도 '자기 잠식(cannibalization)'을 일으키고 있음을 시장이 처음으로 본격 반응한 사례다.",
+      "insight": "검색 광고라는 인터넷 경제의 근간이 AI에 의해 흔들리기 시작했다는 것은 단순한 구글의 위기가 아니다. 광고·미디어·콘텐츠 산업 전반의 트래픽과 수익 구조가 재편될 수 있으며, 기업 마케팅 예산 배분 방식도 변화할 것이다. AI가 '검색 대체제'로 기능하기 시작한 시점을 알리는 상징적 사건으로 기록될 가능성이 높다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "구글 클라우드·Gemini API가 성장하는 흐름은 이수시스템 AI 플랫폼의 외부 LLM 연동 선택지가 다양해짐을 의미한다. 현재 주로 활용하는 API 비용 구조가 경쟁 심화로 낮아질 수 있어, RAG 챗봇 및 HR AI 패키지의 운영 원가 절감 기회로 이어질 수 있다. Gemini 4 Argon 등 신모델의 코딩 성능 향상은 RPA 스크립트 자동 생성 기능 고도화에도 활용 검토가 가능하다.",
+      "source": "Foreign Policy Journal",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPWUFaUU96TG1LTVBFY2VBMzdWT1dPZTRQTmJmVElaVV9iY01RY2VGdjNqSWN4VTJGemkyX2Zyclp1TXhCSFNiMnllNU9jbUwwWktiUk11c20xMnJrbkROZHJKOWJzNTY4S0MzWGZvZ1d6ZmhiZW41N0NpZzJEakZVclFvTGFJUDZ5VE5ZUnY3OFhqSmlvTWFfTnFRalMxaWV2bUg5OWp3SDRoVXFzdU9jQktCUGM2UTRRUGlKbWdSYWtPUk9SZUNiSmFlQkJ6dFZ4a1o5Sw?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "제품 업데이트",
+      "title": "Gemini 4 Argon vs Claude Opus 5.5, '세계 최고 코더' 왕좌 대결",
+      "body": "구글이 **Gemini 4 Argon**을 '현존 최고의 코딩 AI'로 공식 선언하며 개발자 시장 공략에 나섰다. MakeUseOf 등 주요 미디어는 곧바로 Anthropic의 **Claude Opus 5.5**와 직접 비교 테스트를 진행했으며, 복잡한 알고리즘 구현과 디버깅 영역에서 두 모델이 박빙 승부를 펼치는 것으로 나타났다.\n\n코딩 AI 시장은 현재 Gemini, Claude, GPT-4o, GitHub Copilot이 각축을 벌이는 구도로, 성능 격차가 빠르게 좁혀지면서 가격·UX·생태계 연동이 실질적 차별화 요소로 부상하고 있다. Gemini 4 Argon은 구글 워크스페이스 및 클라우드와의 통합을 강점으로 내세우고 있다.",
+      "insight": "최상위 AI 모델들의 코딩 능력이 평준화되면서, 기업 고객이 모델을 선택하는 기준이 '성능'에서 '생태계 통합·비용·보안'으로 이동하고 있다. 이는 독립 AI 툴보다 기존 업무 시스템에 AI를 내재화한 솔루션이 더 경쟁력을 가질 수 있음을 시사한다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "Gemini 4 Argon과 Claude Opus 5.5의 코딩 성능 경쟁은 이수시스템 AI 플랫폼이 활용하는 외부 LLM 선택 폭을 넓혀준다. 특히 HR AI 패키지 내 자동화 로직 생성이나 ERP 연동 스크립트 작성 시 최신 코딩 특화 모델 API를 적용하면 개발 공수를 줄이고 솔루션 품질을 높이는 데 직결된다. 고객사에 제안 시 '최신 최고 성능 모델 기반'이라는 점을 세일즈 포인트로 활용 가능하다.",
+      "source": "MakeUseOf",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNanZvU21ubnJYUEtpR1JYZjVyclM1SmNGU3p6cnVyMjlJaHgwWEFiWWNET1BLdHJGREVXenR3dGxkbG9wS1h6THhwQ0MwaV9UcDNTMTZIUV85dEdENjlTdVJWa0R1YVB2bE5oNndzdDBUaVJJaDZDR2lVd2JwaHhCNnYxckhKMHFQSHZB?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "일자리·사회",
+      "title": "변호사 AI 활용률 55% 돌파했지만…'AI가 오히려 일을 늘린다'는 역설",
+      "body": "국내 변호사들의 **AI 활용률이 55%**로 급증했지만, 정작 현장에서는 'AI 때문에 업무량이 오히려 늘었다'는 역설적 반응이 나오고 있다. AI가 초안·리서치·계약서 검토를 빠르게 처리해주는 만큼, 클라이언트 기대 수준이 높아지고 검토·수정·확인 작업이 증가하는 'AI 품질 관리 부담'이 새로운 업무로 추가되고 있기 때문이다.\n\n이 현상은 법조계에 국한되지 않는다. AI를 도입한 전문직 전반에서 단순 업무 감소 대신 **AI 결과물 검증·고도화 업무**가 새로운 병목으로 등장하는 패턴이 반복되고 있다. 전문가들은 AI 도구 자체보다 워크플로 재설계가 선행되어야 실질적인 생산성 향상이 가능하다고 지적한다.",
+      "insight": "AI 도입이 자동으로 생산성 향상을 보장하지 않는다는 실증 사례가 국내에서도 확인됐다. 도구의 성능보다 조직의 업무 프로세스 재설계가 AI 효과를 결정하는 핵심 변수임이 드러났다. 이는 AI 솔루션을 도입하는 기업들이 단순 라이선스 구매를 넘어 변화관리(Change Management)와 프로세스 컨설팅에 투자해야 함을 의미한다.",
+      "isu_area": "HR 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "법조·금융·컨설팅 등 전문직 고객사에 WORKUP이나 Smart HR을 공급할 때, AI 활용 이후 증가하는 '검토·승인·확인' 업무를 HR 시스템 내 워크플로 자동화(결재선 설정, 알림, 업무 트래킹)로 흡수할 수 있다는 점을 제안 포인트로 활용할 수 있다. 또한 HR AI 패키지의 이력서 분석·채용 자동화 솔루션 제안 시, 단순 도구 소개가 아닌 '기존 채용 프로세스 재설계 컨설팅 포함' 형태로 차별화하면 고객 설득력이 높아진다.",
+      "source": "인공지능신문",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1mWmpmVnlfSDdrNmQ2Q0pHR3ZnakdIVlJRWEt3eDQySmpSNE8wVmpjYlEwUWlfaG9iZWJ1TVN4dENVZHAwcVJyTllMMTYyRmRwdjRrTkVnZTYxOWJkUmhoSGx1ZFdtNVU?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "글로벌 이슈",
+      "title": "샘 올트먼, 삼성 사장단 50명과 회동…'AI가 바꿀 10년' 미래 전략 논의",
+      "body": "오픈AI CEO **샘 올트먼**이 삼성전자 사장단 50여 명과 전격 회동을 가졌다. 회의에서는 AI가 향후 10년간 기업 경영과 산업 구조를 어떻게 바꿀지에 대한 거시적 전략 논의가 이뤄진 것으로 전해지며, 삼성의 **온디바이스 AI·AI 반도체·갤럭시 AI 생태계**와 오픈AI의 협력 가능성이 주요 의제였던 것으로 알려졌다.\n\n이번 회동은 오픈AI가 단순 소프트웨어 기업을 넘어 하드웨어·디바이스 파트너십을 적극 확장하는 전략의 일환으로 해석된다. 삼성 역시 자체 AI 생태계 구축을 위해 오픈AI와의 협력 심화를 검토 중인 것으로 보이며, 양사의 공식 협약 발표 가능성도 업계에서 거론되고 있다.",
+      "insight": "오픈AI-삼성 간 고위급 전략 대화는 AI 소프트웨어 생태계와 하드웨어 제조 강자 간 협력이 본격화되는 신호다. 이는 AI가 클라우드 서비스를 넘어 디바이스 레벨로 내려오는 '온디바이스 AI' 시대가 빠르게 다가오고 있음을 의미하며, 국내 대기업들이 AI 전략을 단순 도입에서 파트너십·공동개발로 격상시키고 있음을 보여준다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "삼성과 오픈AI의 협력이 가시화될 경우, 삼성 갤럭시 디바이스에 오픈AI 기반 온디바이스 AI가 탑재될 수 있다. 이수시스템의 HR-Tong(모바일 HR)이나 BizPTT 같은 모바일 기반 솔루션은 이런 온디바이스 AI 환경에서 음성·자연어 기반 HR 업무 처리 기능을 추가하는 방향으로 로드맵을 검토할 수 있다. 또한 삼성 계열 제조·전자 고객사에 대한 영업 시, 오픈AI 연동 기반 업무 자동화 제안이 고객사 내부 기술 방향과 정합성을 가질 수 있다.",
+      "source": "인공지능신문",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9TYks5YXNBSkVhaUhWejRTNTVLMG1TVGNOZ0xJbGQ1SkpleW93c1pxbkxEbDdDQXZsRG9tVk56NnFzX1NvTVdkMjRRdVlsU2g4V3VVMEFzS1dTVnlYeVloem91S1Z2Tlk?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**구글·오픈AI·MS·앤트로픽이 AI 데이터 수집 공통 표준을 채택**했다. 정부 규제 이전에 업계 자율 표준이 먼저 자리잡는 흐름으로, 2027년 적용 시 웹 콘텐츠 활용 방식 전반이 바뀐다.",
+    "구글 알파벳이 사상 최대 매출을 기록했음에도 **검색 광고 하락**으로 주가가 12% 급락했다. AI가 빅테크 내부에서도 자기 잠식을 시작했다는 시장의 첫 번째 본격 신호다.",
+    "국내 변호사 AI 활용률 55%에도 불구하고 **'AI가 일을 늘린다'는 역설**이 현장에서 확인됐다. AI 도입 효과는 도구 성능이 아닌 프로세스 재설계에 달려 있다."
+  ],
+  "isu_summary": "이번 주 AI 뉴스의 핵심은 '도구에서 생태계로'의 전환이다. 오픈AI-삼성 회동, Gemini vs Claude 코딩 대결, AI 데이터 수집 공통 표준 모두 AI가 개별 솔루션을 넘어 산업 인프라로 자리잡는 과정을 보여준다. 이수시스템 입장에서는 외부 최신 LLM(Gemini 4 Argon, Claude Opus 5.5)을 WORKUP·HR AI 패키지·RAG 챗봇에 선택적으로 연동하는 멀티 LLM 아키텍처를 준비하고, 국내 변호사·금융 등 전문직 고객사에는 'AI 도입 + 프로세스 재설계 컨설팅' 패키지를 번들로 제안하는 영업 전략이 즉시 실행 가능한 기회다."
+}
