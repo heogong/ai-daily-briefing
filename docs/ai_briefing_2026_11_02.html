@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Daily Briefing — 2026.11.02 (월)</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:title" content="AI Daily Briefing — 2026.11.02 (월)">
+<meta property="og:description" content="바쁜 사람을 위한 3분 AI 뉴스">
+<meta property="og:image" content="og-image.png">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #12121a;
+    --surface-2: #1a1a26;
+    --accent: #00e5a0;
+    --accent-dim: rgba(0,229,160,0.12);
+    --accent-glow: rgba(0,229,160,0.25);
+    --text: #e8e8ed;
+    --text-dim: #8888a0;
+    --text-muted: #555568;
+    --orange: #ff8844;
+    --blue: #4488ff;
+    --pink: #ff4488;
+    --yellow: #ffcc00;
+    --border: rgba(255,255,255,0.06);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    min-height: 100vh;
+    padding-bottom: 0;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+  .header {
+    padding: 60px 0 40px;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: -100px; right: -100px;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+    pointer-events: none;
+    animation: pulse 4s ease-in-out infinite;
+  }
+  @keyframes pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.6; } }
+  .header-top { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+  .logo-mark {
+    width: 36px; height: 36px;
+    background: var(--accent);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500; font-size: 14px; color: var(--bg);
+  }
+  .brand-name {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; font-weight: 500;
+    color: var(--text-dim);
+    letter-spacing: 2px; text-transform: uppercase;
+  }
+  .header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px; font-weight: 900; line-height: 1.15;
+    margin-bottom: 12px;
+    background: linear-gradient(135deg, var(--text) 0%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .date-line {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; color: var(--text-muted);
+    display: flex; align-items: center; gap: 12px;
+  }
+  .date-line .dot {
+    width: 6px; height: 6px;
+    background: var(--accent); border-radius: 50%;
+    animation: blink 2s ease-in-out infinite;
+  }
+  @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+  .tldr { padding: 32px 0; border-bottom: 1px solid var(--border); }
+  .tldr-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; color: var(--accent);
+    letter-spacing: 3px; text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .tldr p { font-size: 17px; font-weight: 500; line-height: 1.8; }
+  .section { padding: 40px 0; border-bottom: 1px solid var(--border); }
+  .section:last-child { border-bottom: none; }
+  .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+  .section-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px; font-weight: 900; color: var(--accent); line-height: 1;
+  }
+  .section-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+    padding: 4px 10px; border-radius: 4px; font-weight: 500;
+  }
+  .tag-model { background: rgba(68,136,255,0.15); color: var(--blue); }
+  .tag-product { background: rgba(0,229,160,0.12); color: var(--accent); }
+  .tag-society { background: rgba(255,68,136,0.15); color: var(--pink); }
+  .tag-industry { background: rgba(255,136,68,0.15); color: var(--orange); }
+  .tag-insight { background: rgba(255,204,0,0.15); color: var(--yellow); }
+  .news-title { font-size: 22px; font-weight: 700; line-height: 1.4; margin-bottom: 16px; }
+  .news-body {
+    font-size: 15px; line-height: 1.85; margin-bottom: 16px; font-weight: 300;
+    overflow-wrap: break-word; word-break: break-word;
+  }
+  .news-body strong { color: var(--accent); font-weight: 500; }
+  .insight-box {
+    background: var(--surface-2);
+    border-left: 3px solid var(--accent);
+    padding: 16px 20px; border-radius: 0 8px 8px 0; margin-top: 16px;
+  }
+  .insight-box .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; color: var(--accent);
+    letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;
+  }
+  .insight-box p { font-size: 14px; line-height: 1.75; font-weight: 400; }
+  .isu-box {
+    background: rgba(255,136,68,0.08);
+    border-left: 3px solid var(--orange);
+    padding: 10px 14px; border-radius: 0 6px 6px 0; margin-top: 12px;
+  }
+  .isu-box .isu-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; color: var(--orange);
+    letter-spacing: 2px; text-transform: uppercase; margin-bottom: 6px;
+  }
+  .isu-area-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; padding: 2px 8px; border-radius: 3px;
+    background: rgba(255,136,68,0.15); color: var(--orange);
+    margin-right: 6px;
+  }
+  .isu-opp-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; padding: 2px 8px; border-radius: 3px;
+    background: rgba(255,204,0,0.15); color: var(--yellow);
+  }
+  .source-link { margin-top: 10px; text-align: right; }
+  .source-link a { font-size: 12px; color: var(--text-muted); text-decoration: none; }
+  .source-link a:hover { color: var(--text-dim); }
+  .isu-section {
+    padding: 40px 0; border-top: 2px solid var(--orange); margin-top: 20px;
+  }
+  .isu-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; font-weight: 700; margin-bottom: 16px; color: var(--orange);
+  }
+  .isu-section p { font-size: 15px; line-height: 1.85; font-weight: 300; }
+  .bottom-line {
+    padding: 40px 0; border-top: 2px solid var(--accent); margin-top: 20px;
+  }
+  .bottom-line h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; font-weight: 700; margin-bottom: 20px; color: var(--accent);
+  }
+  .bottom-line p { font-size: 15px; line-height: 1.85; font-weight: 300; margin-bottom: 12px; }
+  .action-list { list-style: none; margin-top: 20px; }
+  .action-list li {
+    position: relative; padding: 10px 0 10px 24px;
+    font-size: 14px; font-weight: 400; line-height: 1.7;
+  }
+  .action-list li::before {
+    content: '→'; position: absolute; left: 0;
+    color: var(--accent); font-family: 'JetBrains Mono', monospace; font-weight: 500;
+  }
+  .action-list li strong { color: var(--accent); font-weight: 500; }
+  .footer {
+    padding: 40px 0; text-align: center;
+    color: var(--text-muted); font-size: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    border-top: 1px solid var(--border);
+  }
+  .footer .accent { color: var(--accent); }
+  .tab-nav {
+    display: flex;
+    gap: 0;
+    border-bottom: 2px solid var(--border);
+    margin-top: 8px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--bg);
+  }
+  .tab-btn {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+    padding: 16px 20px;
+    background: none; border: none;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+    white-space: nowrap;
+  }
+  .tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .tab-btn:hover:not(.active) { color: var(--text-dim); }
+  .tab-pane { display: none; }
+  .tab-pane.active { display: block; }
+  .tab-empty {
+    padding: 80px 0; text-align: center;
+    color: var(--text-muted);
+    font-family: 'JetBrains Mono', monospace; font-size: 13px;
+  }
+  .tab-empty .empty-icon { font-size: 36px; margin-bottom: 16px; opacity: 0.3; }
+  .tab-empty p { line-height: 2; }
+  .tab-empty .coming { color: var(--accent); }
+  @media (max-width: 600px) {
+    .header h1 { font-size: 30px; }
+    .news-title { font-size: 19px; }
+    .container { padding: 0 16px; }
+    .header { padding: 40px 0 30px; }
+    .tab-btn { font-size: 10px; padding: 14px 14px; letter-spacing: 1px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <div class="header-top">
+      <div class="logo-mark">AI</div>
+      <span class="brand-name">Daily Briefing</span>
+    </div>
+    <h1 id="main-title">오늘의 AI, 3분 안에 끝내기</h1>
+    <div class="date-line">
+      <span class="dot"></span>
+      <span>2026.11.02 (월) — 바쁜 당신을 위한 AI 핵심 브리핑</span>
+    </div>
+  </header>
+
+  <nav class="tab-nav">
+    <button class="tab-btn active" onclick="switchTab(this,'tab-ai')">오늘의 AI 브리핑</button>
+    <button class="tab-btn" onclick="switchTab(this,'tab-it')">국내 IT 회사 동향</button>
+  </nav>
+
+  <div id="tab-ai" class="tab-pane active">
+  <div class="tldr">
+    <div class="tldr-label">오늘의 한 줄</div>
+    <p>국내 AI 실용화 가속 속, OpenAI 자금조달 축소·빅테크 학습 데이터 자율규제 합의로 AI 생태계 재편 신호</p>
+  </div>
+
+  
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <span class="section-tag tag-industry">산업 동향</span>
+    </div>
+    <h3 class="news-title">OpenAI, 자금조달 목표 300억 달러→200억 달러로 전격 축소</h3>
+    <p class="news-body">OpenAI가 당초 <strong>300억 달러</strong> 규모로 설정했던 자금조달 목표를 <strong>200억 달러</strong>로 낮추고, 현재까지 <strong>110억 달러</strong>를 확보한 것으로 알려졌다. 목표 하향의 배경으로는 기업 가치 재산정 압력과 투자자들의 수익성 요구 증가가 거론된다. 이는 2025년 사상 최대 규모 투자 유치 이후 불과 1년여 만에 시장 분위기가 냉각되고 있음을 시사한다.
+
+한때 '무한 자금줄'처럼 보였던 생성형 AI 투자 열기가 수익 모델 검증 단계로 넘어가면서, 빅테크와의 직접 경쟁 부담이 커진 상황이다. 투자자들은 AGI 비전보다 <strong>단기 수익화 경로</strong>를 점점 더 중요하게 보고 있으며, 이번 목표 축소는 AI 스타트업 전반의 투자 심리에도 영향을 줄 것으로 전망된다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>AI 1세대 투자 붐이 '검증 국면'으로 전환되고 있다는 신호다. 자금력으로 승부하던 방식에서 실제 엔터프라이즈 수익 모델을 증명해야 하는 단계로 이동 중이며, 이는 기업용 AI 솔루션 시장에서 가격 경쟁력과 ROI 입증이 핵심 차별화 요소가 됨을 의미한다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[영업 기회]</span>
+      </div>
+      <p>글로벌 AI 투자 심리가 수익성 검증 쪽으로 무게중심을 옮기는 흐름은, 이수시스템처럼 '검증된 레퍼런스 500+'를 보유한 HR AI·챗봇 솔루션 기업에 유리하게 작용할 수 있다. 고객사 IR 및 영업 과정에서 'ROI가 증명된 국내 중견 AI 솔루션'이라는 포지셔닝을 강화할 적기다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxOaEJBSWpBaTcwdDlMWEZvcGcyZk9qRmJSMnNJd2c0X0pySjhzX0pEdjI0TVJHbHdaNTh3ZnJqV2NVQVpqTHJLM3Q2bUpkQkdWV2JNVS02cmpacDBaYlhDbXo0Z0pVdTFTbTVnOFNSN0tXWXhhRlpueFZua0FucHByYklKSWdJZ0V4N1ZSOF9CQ3JEVmdsSllwcHJ5M1ktOC1iUHVocEIzb1U?oc=5" target="_blank" rel="noopener noreferrer">출처: Pasquale Pillitteri →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <span class="section-tag tag-insight">글로벌 이슈</span>
+    </div>
+    <h3 class="news-title">Google·Microsoft·OpenAI, AI 학습 데이터 크롤링 자율규제 합의</h3>
+    <p class="news-body">Google, Microsoft, OpenAI 3사가 공동으로 <strong>robots.txt 기반 AI 학습 데이터 수집 거부 신호</strong>를 상호 준수하기로 합의했다. 웹사이트 운영자가 robots.txt에 특정 지시어를 추가하면 3사 모두 해당 콘텐츠를 AI 학습에 활용하지 않겠다는 것이 핵심이다. 이는 각국 규제 당국의 저작권·데이터 사용 압박에 대한 빅테크의 선제적 자율규제 조치로 해석된다.
+
+이번 합의는 법적 구속력은 없지만, <strong>업계 표준(de facto standard)</strong>으로 자리잡을 가능성이 높다. 미국·EU·한국 등 주요국이 AI 학습 데이터 투명성을 규제 의제로 다루는 시점에서, 콘텐츠 제공자와 AI 기업 간 데이터 권리 협상의 새로운 프레임을 만들 수 있다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>빅테크 주도의 자율규제 합의가 향후 AI 학습 데이터 관련 법제화의 기준선이 될 가능성이 크다. 기업·공공기관들이 자사 콘텐츠·데이터에 대한 AI 학습 통제권을 요구하는 흐름이 강해질 것이며, 이는 온프레미스 또는 프라이빗 클라우드 기반 AI 솔루션 수요를 촉진하는 요인이 된다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[영업 기회]</span>
+      </div>
+      <p>데이터 통제 이슈가 부각될수록 고객사들은 외부 클라우드 LLM보다 사내 데이터를 외부로 보내지 않는 **RAG 기반 온프레미스 챗봇** 솔루션을 선호하게 된다. 이수시스템의 RAG 기반 기업용 챗봇을 '데이터 유출 없는 안전한 AI'로 포지셔닝하는 영업 메시지 강화가 유효한 시점이다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxPZDJjcmgwOU5XQWxTcFY5UExVcVV6VVpXSFdlZ25MRjRTRUI1eHJmM0hyTHQ3OGprVDRZaDM5Y09neE1adFBjWEpmQzRseHFqZkV1bTJLeUE1azJnZ0d4QlFzMnZVVFFkYUg4WHc2eVNMalZpSlN3WnBMVXVES2o0VGhfaGRiSzRDY1llZXVNUWRFTzVRNExWcUpn?oc=5" target="_blank" rel="noopener noreferrer">출처: Search Engine Journal →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <span class="section-tag tag-product">제품 업데이트</span>
+    </div>
+    <h3 class="news-title">풀무원헬스케어, 구독 식품 서비스에 'AI 상담톡' 전면 도입</h3>
+    <p class="news-body">풀무원헬스케어가 자사 구독 식품 브랜드 '디자인밀'에 <strong>AI 상담톡</strong> 기능을 도입했다. 배송일 변경, 식단 추천, 상품 문의 등 반복적인 고객 상담을 AI가 자동으로 처리하는 방식으로, 기존 상담사 응대 대비 <strong>24시간 즉시 응답</strong>이 가능해졌다. AI가 개인 구독 이력과 건강 목표를 분석해 맞춤 식단까지 추천하는 기능이 포함됐다.
+
+이번 사례는 단순 FAQ 응답을 넘어 <strong>개인화 추천과 주문 관리를 결합한 AI 상담 고도화</strong> 사례로 주목된다. 헬스케어·식품·구독 커머스 등 반복 문의가 많은 산업군에서 AI 상담 자동화 도입이 본격화되고 있으며, 고객 경험(CX) 개선과 운영비 절감을 동시에 추구하는 전략이 확산 중이다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>B2C 구독 서비스를 중심으로 AI 챗봇이 단순 응답기에서 '개인화 추천 엔진'으로 진화하고 있다. 고객 데이터와 연동된 AI 상담 자동화는 CX 품질과 운영 효율을 동시에 높이는 수단으로, 헬스케어·유통·금융 등 고객 접점이 많은 산업 전반으로 빠르게 확산될 것으로 보인다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[영업 기회]</span>
+      </div>
+      <p>풀무원헬스케어 사례는 이수시스템 RAG 기반 챗봇 솔루션의 전형적인 영업 레퍼런스 시나리오다. 이수시스템의 기존 제조·유통·건설 고객사 중 반복 내부 문의(복리후생, 급여, 근태 등)가 많은 HR 담당자를 대상으로, **WORKUP 연동 AI 상담봇** 도입 제안으로 연결할 수 있다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE8yalVWQWpTRV9LZXltYy1YZFVLQ18tZUZ4MmJIV29wMUR1RThtTUQ5TkNGLXBGLVJDUDJuazY2X2VPbFhHNGFMYmJjZEF3MlNjNDYzSEJpOEJoR2lUOEpKc9IBeEFVX3lxTE1fTVZHS3BwU2FwbW5kdXRWd1JXUEpoWklKNDFfdWI2Y0JpaEVaOGlBMnN5bDd2N3NFa0w0OXc3T09KVGYtaF9SNVhBSGlHY2xhclp6b2JFUXlDU1RZMVRVYzFNTHRrLU9yQVUtZFN1eUZRZjZJWDU0cA?oc=5" target="_blank" rel="noopener noreferrer">출처: 뉴시스 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <span class="section-tag tag-model">모델 릴리스</span>
+    </div>
+    <h3 class="news-title">KAIST, AI 학습 데이터 69% 줄이고도 성능 유지…학습 시간 최대 69.6% 단축</h3>
+    <p class="news-body">KAIST 연구팀이 AI 모델 학습에 필요한 데이터를 <strong>69%까지 줄여도 기존 모델과 동등한 성능</strong>을 유지할 수 있는 기술을 개발했다. 학습 시간도 최대 <strong>69.6% 단축</strong>되는 것으로 나타났으며, 이는 AI 모델 훈련에 드는 컴퓨팅 비용과 에너지 소비를 크게 절감할 수 있음을 의미한다. 해당 연구는 데이터 효율적 학습(Data-Efficient Learning) 분야의 성과로, 국내외 학계의 주목을 받고 있다.
+
+현재 글로벌 AI 업계는 대규모 GPU 클러스터와 방대한 데이터셋 없이는 경쟁력 있는 모델을 만들기 어렵다는 인식이 강하다. 이번 연구는 <strong>'작은 데이터로도 강한 AI'</strong> 가능성을 열어, 중소 규모 기업과 연구기관도 자체 AI 모델 구축에 나설 수 있는 기술적 장벽을 낮출 수 있다는 점에서 의미가 크다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>데이터·컴퓨팅 자원이 부족한 중견·중소 기업도 자체 도메인 특화 AI 모델을 현실적인 비용으로 구축할 수 있는 가능성이 열리고 있다. AI 기술의 민주화 흐름이 가속화되면, 대기업·빅테크 중심의 AI 시장 구조가 다양한 플레이어가 참여하는 방향으로 재편될 수 있다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[모니터링]</span>
+      </div>
+      <p>학습 효율 기술이 성숙해질수록, 이수시스템이 고객사별로 도메인 특화 소형 모델(HR·ERP·안전 특화)을 파인튜닝해 제공하는 시나리오의 현실성이 높아진다. 현재 RAG 챗봇 솔루션의 답변 품질 향상에 이 같은 경량화 기술을 접목하는 방향으로 기술 파트너십을 모니터링할 필요가 있다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1kVUptZGZyNG5iWVVWZV9QWUxjSG1jZkloSHlSd1lCT21TNGt2Zkg5aGR1RlNFZ0pqNk1yUGRmWTVzM2dkUGNRN0p0MUdMcDJfNC13OGQ4eHlEdjFEVno2YmFEekplOE0?oc=5" target="_blank" rel="noopener noreferrer">출처: 인공지능신문 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">05</span>
+      <span class="section-tag tag-industry">산업 동향</span>
+    </div>
+    <h3 class="news-title">DeepSeek, 개발자 채팅 모니터링·코딩 오류 자동 제안 '슈퍼에이전트' 공개</h3>
+    <p class="news-body">중국 AI 기업 DeepSeek이 개발자의 코딩 채팅을 실시간으로 모니터링하고 버그 수정을 자동으로 제안하는 <strong>'슈퍼에이전트(Super-Agent)' 프로토타입</strong>을 공개했다. 이 에이전트는 개발 환경에 상주하며 대화 흐름을 분석해 문제를 선제적으로 감지하는 방식으로 작동한다. GitHub Copilot 등 기존 AI 코딩 보조 도구보다 한층 능동적인 '에이전틱(agentic)' 접근 방식이 특징이다.
+
+DeepSeek은 저비용 고성능 모델로 이미 글로벌 AI 업계에 충격을 준 바 있으며, 이번 슈퍼에이전트는 <strong>개발자 생산성 도구 시장</strong>에서의 본격적인 영역 확장을 시사한다. 미국 빅테크가 장악하던 AI 개발 도구 시장에 중국발 경쟁이 심화되면서, 코딩 에이전트 전쟁이 본격화되는 양상이다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>AI 코딩 도구가 '자동완성'에서 '능동적 오류 감지·수정 에이전트'로 진화하고 있다. 이는 소프트웨어 개발 방식 자체를 바꾸는 변화로, IT 서비스 기업들의 개발 생산성과 품질 관리 프로세스에 직접적인 영향을 미친다. 동시에, 개발 도구에 내장된 AI가 코드와 대화 내용을 수집한다는 점에서 <strong>보안·데이터 주권 이슈</strong>도 함께 부상할 전망이다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">디지털서비스 사업</span>
+        <span class="isu-opp-tag">[모니터링]</span>
+      </div>
+      <p>DeepSeek 슈퍼에이전트는 이수시스템 내부 개발팀의 생산성 향상 도구로 검토할 수 있지만, 코드 및 대화 내용이 외부로 유출될 수 있는 보안 리스크를 먼저 점검해야 한다. 고객사 대상 RPA·ERP 커스터마이징 프로젝트에 AI 코딩 에이전트를 시범 적용해 개발 기간 단축 효과를 측정해보는 것도 의미 있다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxNMERSM3lOb1VYNHp0aXB5N05KekFYQlRHNTJfUkNfdEo4QjlnLWJJLVh3TGppYU94QW1pQTNINFNIcTYyVkhaVlpyY1JjWUtIbFQtcEJGekJfYWR5V2I3aWRvNy1oZ192M3pEOVBFTTdKZzFRejlqTXV1SmVlUGkyUUhtRzFsV0xQLTJpVmVSSjd4YW1GVkRNQy1XRFpJS1NwTTk0MWtYUV81MmV5N1BwM2tLY0ZWakk2aktoQl9qNmZxZWk2aTlUQ3Jkb3dQR2RreVlJdFJhYktBanRTWFBZUWhEbUVRcWo4Y3c?oc=5" target="_blank" rel="noopener noreferrer">출처: NewsCord →</a></div>
+  </section>
+  
+  <div class="isu-section">
+    <h2>이수시스템 인사이트</h2>
+    <p>이번 주 AI 뉴스의 핵심 흐름은 '투자 열기 냉각 + 실용화 가속'의 공존이다. OpenAI 자금조달 축소는 ROI가 증명된 솔루션에 대한 수요를 높이며, 이수시스템의 HR AI 패키지·RAG 챗봇처럼 레퍼런스가 축적된 B2B AI 솔루션이 경쟁 우위를 가질 수 있는 환경이 만들어지고 있다. 특히 데이터 자율규제 합의와 풀무원헬스케어 도입 사례는 '내부 데이터를 외부로 보내지 않는 기업용 AI 챗봇'이라는 이수시스템의 RAG 솔루션 포지셔닝을 강화하는 영업 근거로 적극 활용할 필요가 있다.</p>
+  </div>
+
+  <div class="bottom-line">
+    <h2>오늘의 핵심 테이크어웨이</h2>
+    <ul class="action-list">
+      <li><strong>OpenAI의 자금조달 목표 축소</strong>는 'AI 투자 = 무한 성장'이라는 공식이 깨지고, 이제 수익 모델 검증이 AI 기업의 핵심 과제임을 알리는 신호다.</li>
+      <li>Google·Microsoft·OpenAI의 <strong>robots.txt 자율규제 합의</strong>로 데이터 주권 이슈가 본격화되며, 데이터를 외부로 보내지 않는 온프레미스·RAG 기반 AI 솔루션의 수요가 높아질 전망이다.</li>
+      <li>풀무원헬스케어 AI 상담톡, KAIST 데이터 효율화 기술 등 <strong>국내 AI 실용화 사례</strong>가 빠르게 늘어나며, B2B·공공 영역에서도 구체적인 AI 도입 요구가 증가하고 있다.</li>
+    </ul>
+  </div>
+  </div><!-- /tab-ai -->
+
+  <div id="tab-it" class="tab-pane">
+  <div class="tldr">
+    <div class="tldr-label">오늘의 한 줄</div>
+    <p>SK그룹·HL그룹 대규모 임원 인사로 IT·제조 업계 세대교체 바람이 불고, 퓨리오사AI는 매출 57억에 몸값 3.8조 논란을 낳으며 국내 AI 반도체 투자 열기를 실감케 했다.</p>
+  </div>
+
+  
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <span class="section-tag tag-society">경영·인사</span>
+    </div>
+    <h3 class="news-title">SK그룹, 사장단 인사로 HBM·전력사업 전진 배치…'실무형 리더' 중심 재편</h3>
+    <p class="news-body">SK그룹이 <strong>2026년 사장단 인사</strong>를 단행하며 '안정 속 에너지 쇄신'을 핵심 기조로 내세웠다. 주요 CEO는 대부분 유임시키면서도 <strong>HBM(고대역폭 메모리) 사업</strong>과 <strong>전력 인프라 사업</strong> 부문에 실무형 리더를 전진 배치해 두 축을 집중 강화하는 방향으로 조직을 재설계했다. 이번 인사는 AI 데이터센터 전력 수요 급증이라는 시장 환경 변화에 선제 대응하기 위한 포석으로 분석된다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>SK그룹이 HBM과 전력사업 두 축을 동시에 강화한 것은 AI 인프라 수요 사이클 장기화에 베팅한 전략적 신호다. 반도체·에너지 부문의 시너지를 내부 조직으로 구현하려는 시도로, 경쟁 그룹사들의 유사한 인사 재편을 자극할 가능성이 높다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE1aSEtiZGNQdHN2WE1UQlFQUEQ3NFZ1RjNVNGJ1dmlSbmo2d1ExUjlEa2laWUhoS3hKTi1tMTZrRGJyWkxqN0Q3aUd1VmNPckFQ0gFUQVVfeXFMTUtUMjJGODBWcWpPZmRhNmJVak5yLVhKeDFiMkNocUFPTFZ6TnNfeFFkNDF6RmRSLXgxbjhEcUVoVm1FVExvQUxLdkdXbUg3bE85STFu?oc=5" target="_blank" rel="noopener noreferrer">출처: 세계일보·중소기업투데이·소비자를 위한 신문 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <span class="section-tag tag-society">경영·인사</span>
+    </div>
+    <h3 class="news-title">HL그룹, HL만도 CEO에 박영문 사장 선임…지역 책임경영 체제로 대대적 조직 개편</h3>
+    <p class="news-body">HL그룹이 <strong>2026년 임원 인사</strong>를 단행하며 <strong>HL만도 신임 CEO 겸 오토섹터장에 박영문 사장</strong>을 선임했다. 동시에 HL만도의 조직 구조를 기존 기능 중심에서 <strong>지역(리전) 중심 책임경영 체제</strong>로 전면 재편해 현지 대응력을 강화하기로 했다. 이번 인사는 글로벌 완성차 공급망 재편과 전동화 전환 가속 속에서 지역별 자율 의사결정을 높이려는 의도로 풀이된다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>자동차 부품·자율주행 소프트웨어 영역에서 HL만도의 지역 분권형 조직 전환은 향후 북미·유럽 전기차 고객사 대응 속도를 높이는 데 유리하게 작용할 수 있다. IT·모빌리티 기술 융합이 가속되는 시점에 리더십 교체가 맞물린 만큼 사업 전략 방향 변화도 주목할 필요가 있다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxQSkdCeXZnS2IxdFdFZWl4WHR6LUR6UHRDZkdSenhTOXJhM0Ria2xSY2hqODd6WnVwSlZOOEU3S2w3Rm9lTHBoYVFMX1VRelR0WTNVdm5DMlpVTmJic2NGUHVfTlZYMWprY2oxaEUxay1jaUdTM3FqNlN5RzVvYjd3UQ?oc=5" target="_blank" rel="noopener noreferrer">출처: 이데일리·핀포인트뉴스·비즈니스플러스 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <span class="section-tag tag-model">투자·펀딩</span>
+    </div>
+    <h3 class="news-title">퓨리오사AI, 매출 57억에 몸값 3.8조…PSR 662배 '고밸류' 논란 점화</h3>
+    <p class="news-body">국내 AI 반도체 스타트업 <strong>퓨리오사AI</strong>가 정책자금 수혈을 통해 <strong>기업가치 약 3.8조 원</strong>으로 평가받은 사실이 알려지며 업계의 시선이 집중됐다. 현재 연매출은 <strong>57억 원</strong> 수준으로, 이를 기준으로 산출한 <strong>PSR(주가매출비율)이 662배</strong>에 달해 과도한 밸류에이션이라는 지적이 제기되고 있다. K-정책자금이 민간 투자 선순환의 마중물이 되기도 하지만, 수익성 검증 전 고밸류 투자가 거품 논란으로 이어질 수 있다는 우려도 나온다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>퓨리오사AI 사례는 국내 AI 반도체 섹터에 대한 '기대가치' 투자 문화의 단면을 보여준다. 정책자금이 민간 시장의 밸류에이션 기준점을 끌어올리는 역할을 하면서, 향후 해당 기업의 실적 달성 여부가 국내 AI 스타트업 전반의 투자 심리에 영향을 줄 수 있다. 수익 검증 압박이 커질 2027년이 중요한 분수령이 될 전망이다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxNVkUwTFNmdDl0R1FJRGMxWjNTaUp1RGZvTWE1SE80dHVXVUN1bTJJTXZtOHRSUHhDcXczWFI3QlBYMGFQbzJDYzRTZk5yWmV1TFFsS3BZVUlpOEhYdGdhdk1zZWduc2JFempleGFSLWhwZ1JVVk1jTnRNZ0lGLTZaQ0NQVFJKVVV1MEo5WTQxYjdrMGFjZ096UmtpcWJTOFVM?oc=5" target="_blank" rel="noopener noreferrer">출처: 사이언스모니터 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <span class="section-tag tag-product">시장 동향</span>
+    </div>
+    <h3 class="news-title">AI發 웹 비즈니스 모델 파괴 현실화…검색·광고 수익 구조 흔들린다</h3>
+    <p class="news-body">AI 에이전트와 생성형 AI의 빠른 확산으로 <strong>기존 웹 기반 비즈니스 모델이 실질적으로 붕괴되고 있다</strong>는 분석이 제기됐다. 사용자가 검색 엔진을 거치지 않고 AI를 통해 정보를 직접 소비하면서 <strong>배너 광고·SEO 기반 트래픽 수익 모델</strong>이 급격히 약화되고 있다. 국내 포털·미디어·광고테크 기업들도 이 충격에서 예외가 아니며, 구독·API 과금·AI 에이전트 연동 등 새로운 수익화 모델로의 전환이 시급한 상황이다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>AI 에이전트가 정보 소비의 '퍼스트 레이어'로 자리 잡을 경우 네이버·카카오 등 국내 포털의 검색 광고 매출에 직접적 타격이 예상된다. 콘텐츠 생태계 전반의 수익 구조 재설계가 필요하며, 이는 국내 광고테크·미디어테크 스타트업에는 신시장 기회가 될 수 있다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE5uTmdNTngtSzdQTzh3emlkazY1M1JKUS1PNHcxSzBXSDQzUTY0RDFLZnlRenZubXFDT3VmYTlpNlZUOVhxbE40YndKYzZRMUVYWmxRMHl6WVFPYVdWYzlIdVNkZURGa2RYX05rNE1UazJyVUk?oc=5" target="_blank" rel="noopener noreferrer">출처: 디지털투데이 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">05</span>
+      <span class="section-tag tag-product">시장 동향</span>
+    </div>
+    <h3 class="news-title">국내 AI 인프라·반도체에 자본 집중…해외 빅테크는 첫 M&A 신호탄</h3>
+    <p class="news-body">국내외 IT 투자 흐름을 분석한 위클리 리포트에 따르면, 국내 자본은 <strong>AI 인프라와 반도체 섹터</strong>에 집중 유입되는 반면 해외 빅테크는 <strong>첫 M&A 행보</strong>를 가시화하며 AI 생태계 선점 경쟁을 본격화하고 있다. 국내 시장에서는 GPU 클러스터·AI 데이터센터 관련 투자가 두드러지고, 글로벌 빅테크의 M&A 타깃에 국내 AI·반도체 기업들이 포함될 가능성도 거론된다. 이 같은 자본 흐름은 2026년 하반기 들어 뚜렷하게 가속화되는 추세다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>국내 AI 인프라 투자 집중과 글로벌 빅테크의 M&A 공세가 교차하는 지점에서 국내 AI·반도체 기업들의 몸값과 협상력이 높아질 수 있다. 동시에 기술 주권 차원의 정책적 개입 필요성도 커지며, 정부의 전략 투자 방향과 민간 자본 간의 공조 방식이 주요 변수로 부상할 전망이다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE1OSW9EMUxMeDZUNmp3a2NEMnEtaHY4aHg5akpwU09ROVY4LVBJZWtwamhzVFJ3SE5TQlNkYkV6eXJjWW5FemhGb2hEMndhQzg?oc=5" target="_blank" rel="noopener noreferrer">출처: 와우테일 →</a></div>
+  </section>
+
+  <div class="bottom-line">
+    <h2>오늘의 핵심 테이크어웨이</h2>
+    <ul class="action-list">
+      <li><strong>SK그룹과 HL그룹</strong>이 나란히 대규모 임원 인사를 단행하며 AI·전동화 시대를 겨냥한 리더십 재편을 가속화하고 있다.</li>
+      <li><strong>퓨리오사AI의 PSR 662배</strong> 사례는 국내 AI 반도체 스타트업 투자 열기가 과열 국면에 진입했음을 시사하며, 정책자금의 밸류에이션 견인 효과에 대한 재점검이 필요하다.</li>
+      <li>AI 에이전트 확산으로 <strong>웹 광고·검색 기반 수익 모델</strong>이 현실적 위협에 직면한 가운데, 국내 포털과 미디어 기업들의 비즈니스 모델 전환 속도가 경쟁력의 핵심 변수로 부상하고 있다.</li>
+    </ul>
+  </div>
+  </div><!-- /tab-it -->
+
+  <footer class="footer">
+    <p>AI Daily Briefing — <span class="accent">바쁜 사람을 위한 3분 AI 뉴스</span></p>
+    <p style="margin-top: 8px;">2026.11.02 (월) | 매일 아침 업데이트</p>
+    <p style="margin-top: 8px;">© keyboard@kakao.com</p>
+  </footer>
+</div>
+<audio src="ai_briefing_2026_11_02.mp3" controls style="position:fixed;bottom:20px;right:20px;z-index:100;width:260px;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.5);"></audio>
+<script>
+  const TAB_TITLES = {
+    'tab-ai': '오늘의 AI, 3분 안에 끝내기',
+    'tab-it': '국내 IT 회사 동향'
+  };
+  function switchTab(btn, id) {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(id).classList.add('active');
+    document.getElementById('main-title').textContent = TAB_TITLES[id];
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const audio = document.querySelector('audio');
+    if (audio) {
+      if (id === 'tab-it') {
+        audio.pause();
+        audio.style.display = 'none';
+      } else {
+        audio.style.display = '';
+      }
+    }
+  }
+</script>
+</body>
+</html>
