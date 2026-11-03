@@ -1,0 +1,72 @@
+{
+  "date": "2026.11.03 (화)",
+  "one_liner": "국산 AI가 정부 행정망을 뚫었고, 제약사도 해외 AI를 걷어내기 시작했다.",
+  "news": [
+    {
+      "number": 1,
+      "category": "글로벌 이슈",
+      "title": "국산 AI '솔라 프로 4', 드디어 공무원 책상 위에 올라갔다",
+      "body": "업스테이지의 **솔라 프로 4**가 대한민국 **범정부 AI 공통기반**에 공식 탑재됐다. 중앙부처와 지방자치단체 공무원들이 행정망 안에서 법령 검토, 민원 답변 초안 작성 등 실무 업무에 직접 활용할 수 있게 된 것이다. 특히 이번 도입의 핵심은 보안성으로, **공공데이터가 외부 서버로 전송되지 않는 폐쇄망 구조**를 채택해 민감한 행정 정보 유출 우려를 차단했다. 국산 LLM이 공공 행정망에 공식 채택된 것은 사실상 처음으로, 해외 빅테크 모델이 독점하던 공공 AI 시장에 균열이 생기기 시작했다는 신호로 읽힌다.",
+      "insight": "공공 AI 시장에서 국산 LLM이 공식 채택된 것은 단순한 기술 도입을 넘어 **AI 주권** 논의가 실제 조달 결정으로 이어지는 첫 사례다. 폐쇄망·보안 요건을 충족한 온프레미스형 국산 모델에 대한 수요가 공공을 시작으로 금융·의료 등 규제 산업 전반으로 확산될 수 있으며, AI 공급사들의 공공 시장 진입 장벽과 보안 인증 기준이 새롭게 재편될 가능성이 높다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[정부 사업]",
+      "isu_insight": "정부 행정망에 국산 AI가 탑재되면서 공공기관향 AI 솔루션 수요가 본격화되고 있다. 이수시스템은 NCP 공식 파트너사로서 폐쇄망 기반 클라우드 구축 경험을 보유하고 있으며, RAG 기반 챗봇 솔루션과 결합해 중앙부처·지자체 산하 공공기관 대상 행정 AI 어시스턴트 구축 제안이 가능하다. 특히 기존 HR 솔루션(Smart HR, WORKUP) 레퍼런스 500개 이상을 보유한 공공·준공공 고객군을 활용해 행정 AI 도입 컨설팅 영업으로 연결하는 시나리오를 검토할 시점이다.",
+      "source": "연합뉴스",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5GMG8xb2tXLWZ0SkE5TWN2dWtCYUZFQkdOV1NXS3huOHctZ3oxckNlYkVGTElqVHQ2blY1cDJoZDd3Vk9XUGNnWW1LQVBqV0Uxd2lBU251TUFSUjQ4RUFMeNIBYEFVX3lxTE5GMG8xb2tXLWZ0SkE5TWN2dWtCYUZFQkdOV1NXS3huOHctZ3oxckNlYkVGTElqVHQ2blY1cDJoZDd3Vk9XUGNnWW1LQVBqV0Uxd2lBU251TUFSUjQ4RUFMeA?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "산업 동향",
+      "title": "한미약품, 해외 AI 걷어내고 국산 AI로 헬스케어 플랫폼 재건한다",
+      "body": "한미약품이 헬스케어 AI 챗봇 플랫폼 **'에피데이(Epiday)'**의 인프라를 해외 기반에서 **국산 AI로 전면 전환**하는 작업에 착수했다. 이를 위해 AI 반도체 스타트업 **퓨리오사AI**, AI 솔루션 기업 엑스페릭스, 데이터 플랫폼 기업 베이글랩스 등 3개사와 MOU를 체결했다. 에피데이는 한미약품이 운영 중인 헬스케어 정보 제공 챗봇으로, 이번 전환의 목표는 민감한 건강 정보를 국내 서버 안에서 처리하는 **소버린 AI(Sovereign AI)** 체계 구축이다. 제약·바이오 업계에서 환자 데이터 보안과 AI 자주권을 동시에 확보하려는 움직임이 본격화되는 신호로 주목된다.",
+      "insight": "제약·헬스케어 분야는 민감 개인정보(환자 데이터, 임상정보) 처리 특성상 AI 도입 시 데이터 주권과 보안이 핵심 조건이다. 한미약품의 이번 국산 AI 전환은 산업계에서 '비용·성능' 중심의 AI 선택 기준이 '보안·규제 적합성'으로 이동하고 있음을 보여주며, 국산 AI 생태계(반도체-모델-플랫폼 수직 통합) 구축을 향한 기업 주도형 소버린 AI 모델이 등장하고 있다는 점에서 산업 전반의 레퍼런스가 될 수 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "제약·바이오 기업들이 해외 AI 인프라를 국산으로 교체하는 흐름은 이수시스템의 RAG 기반 챗봇과 AI 플랫폼에 직접적인 영업 기회다. 특히 이수시스템의 HR AI Package와 챗봇 솔루션은 이미 제조·건설 고객군에 레퍼런스가 있어, 헬스케어·제약 업종으로의 산업 확장 영업 시 '국내 서버 운영 + 폐쇄망 RAG 챗봇' 구성을 패키지로 제안하는 전략이 유효하다. NCP 파트너 역량을 결합해 온프레미스 또는 프라이빗 클라우드 기반 제안으로 차별화할 수 있다.",
+      "source": "전자신문",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE83WUZBbWV1T3NjV1pnd3BnUkZmX2FJTTZMTnRrYWt3b0xoTXFlci1hRzdIRHdXREVycDRYN2VWRmNRaW1qMmdkVDM2Q0hHZw?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "모델 릴리스",
+      "title": "MIT, GPT-6으로 오픈소스 AI 가중치 직접 수술…'신경망 유전자 편집' 시대 열렸다",
+      "body": "MIT 연구팀이 **GPT-6 Astra**를 활용해 오픈소스 모델 **Qwen의 가중치(weights)를 직접 편집**하는 실험에 성공했다. 연구팀은 이를 '신경망의 유전자 편집'에 비유했으며, 수학 성능이 눈에 띄게 향상되는 결과를 확인했다. 기존에는 모델 성능을 높이려면 대규모 데이터로 재훈련(fine-tuning)하거나 처음부터 다시 학습시켜야 했지만, 이 방법은 **모델 내부 파라미터를 정밀 타깃팅해 특정 능력만 강화**할 수 있다는 점에서 패러다임 전환이다. 완성된 모델을 해체하지 않고도 원하는 기능을 추가하거나 교정하는 방식으로, AI 커스터마이징 비용과 시간이 획기적으로 줄어들 수 있다.",
+      "insight": "이 연구는 LLM의 '재훈련 없는 능력 편집'이 현실화되고 있음을 보여주는 브레이크스루다. 기업들이 범용 오픈소스 모델을 자사 도메인에 맞게 저비용으로 커스터마이징할 수 있는 시대가 앞당겨지고 있으며, 특정 산업(의료·법률·금융 등) 특화 AI를 만드는 진입 장벽이 대폭 낮아질 전망이다. 동시에 악의적인 모델 조작(안전장치 제거, 편향 주입 등) 위험도 함께 커지므로 AI 거버넌스 논의가 기술 발전 속도를 따라가야 한다는 과제도 부각된다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "오픈소스 모델의 가중치 편집 기술이 성숙하면, 이수시스템이 RAG 챗봇 및 HR AI Package에 사용하는 기반 모델을 재훈련 없이 특정 도메인(인사, ESG, 안전 등)에 맞게 정밀 조정하는 것이 가능해진다. 단기 적용보다는 기술 동향 모니터링 수준에서 추적하되, 외부 AI 파트너(예: 업스테이지, 베이글랩스 등)와 협업 시 이 방법론의 적용 가능성을 함께 검토하는 것이 실용적이다.",
+      "source": "VentureBeat",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNVE9yblFoMWhHbklPREJlcjM5SjJ1UDNDQkdXOE1UUUR6MVFvaWNtamE4M1ZCMmhrSFZPeHNOcmRuNXh3LWNHREpzSnVGRlJTdmJVWWZrSDdkZXp0cUVTMDdMZzJnaTZwTW4zRHBDNVB1R2tLdTdKbWFQV3pSa2Z2SVpiTHJnZFR3UVdNX2VWNHIwQ2xxZ2ZnT0lURWVzQXNjWnNMLVZVM09Wd2p5ZVRTLVpRT2FiWmc5d2xNX0lqLUg3aWxic2ExSWlRTFVzTjVxX0tjampCWEVkaE1jaDctbkRYb0Vka1UzQjRRREh6REYybUtBekxHNm82Zw?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "글로벌 이슈",
+      "title": "NYT, AI 학습용 무단 스크래핑으로 Brave 브라우저 제소…콘텐츠 전쟁 2라운드",
+      "body": "**뉴욕타임스(NYT)**를 비롯해 뉴욕데일리뉴스, 시카고트리뷴 등 주요 미국 언론사들이 **Brave 웹브라우저** 운영사를 상대로 소송을 제기했다. 혐의는 AI 학습을 위한 **불법 콘텐츠 스크래핑**과 **페이월 우회 기능 제공**이다. 같은 날 캐나다 언론사들은 Anthropic을 상대로 유사한 소송을 제기한 것으로도 알려졌다. 이와 동시에 **OpenAI와 Google은 새로운 robots.txt 태그를 통해 웹사이트가 AI 학습에 콘텐츠 사용을 거부할 수 있는 표준**을 지지하겠다고 발표해, 자율 규제와 법적 분쟁이 동시에 전개되는 복잡한 국면이 펼쳐지고 있다.",
+      "insight": "AI 학습 데이터를 둘러싼 법적 분쟁이 미국을 넘어 캐나다로 확산되고, 브라우저·AI 어시스턴트 등 다양한 접점으로 피고 범위도 넓어지고 있다. OpenAI·Google의 robots.txt 자율 규제 지지는 소송 리스크를 선제 관리하려는 포석으로 읽힌다. 콘텐츠 저작권과 AI 학습 데이터의 경계가 법원에서 그어지기 시작하면, AI 기업들의 데이터 수집 전략과 비용 구조가 근본적으로 바뀔 수 있으며 이는 전체 AI 산업의 지속가능성에 영향을 미친다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "이수시스템이 RAG 기반 챗봇 솔루션을 고객사에 구축할 때, 외부 웹 콘텐츠를 학습 데이터로 활용하는 구조는 저작권 리스크에 노출될 수 있다. 고객사 내부 문서(사내 규정, 매뉴얼, 계약서 등)만을 RAG 소스로 활용하는 '폐쇄형 지식베이스 구조'를 기본 아키텍처로 제안하고, 이를 보안·법적 안전성의 세일즈 포인트로 활용하는 전략이 유효하다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times"
+    },
+    {
+      "number": 5,
+      "category": "글로벌 이슈",
+      "title": "AI 해킹 도구 'CyberStrikeAI', 교육기관 실제 공격에 투입…오픈소스 AI 보안 경보",
+      "body": "오픈소스 AI 해킹 프레임워크 **CyberStrikeAI**가 실제 사이버 공격에 활용되고 있다는 사실이 보안 전문기업 Kaspersky(Securelist)의 분석으로 드러났다. 이 도구는 네트워크 침입·취약점 탐색을 자동화하며, 교육기관을 주요 타깃으로 한 공격이 확인됐다. 국내에서도 오픈소스 AI 도구인 **LiteLLM(라이트LLM)이 악성코드 감염 경로로 지목**되며 'Claude Code' 연동 취약점 의혹이 제기됐다. AI 개발 도구가 공격 벡터로 악용되는 사례가 늘면서, **AI 공급망 보안(AI Supply Chain Security)**이 기업의 핵심 리스크로 부상하고 있다.",
+      "insight": "AI 개발 도구와 오픈소스 프레임워크가 해킹 경로로 직접 악용되는 사례는 'AI 보안'이 모델 결과물의 안전성을 넘어 개발 인프라 전체로 확대돼야 함을 의미한다. 기업이 외부 AI 도구를 업무에 도입할 때 해당 도구의 공급망 보안을 함께 검토해야 하며, AI 보안 컴플라이언스 수요가 새로운 시장으로 형성될 가능성이 높다. 특히 공공·금융·의료 등 규제 산업에서 AI 도구 도입 심사 기준이 강화될 것으로 예상된다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[리스크]",
+      "isu_insight": "이수시스템이 고객사에 AI 챗봇, HR AI Package, RPA 등을 구축할 때 활용하는 오픈소스 LLM 연동 도구(LiteLLM 등)가 보안 취약점으로 지목된 만큼, 납품 솔루션의 AI 공급망 보안 점검 프로세스를 내부적으로 수립할 필요가 있다. 고객사(특히 제조·공공 분야)에 AI 솔루션 제안 시 'ISO27001 인증 기반 보안 거버넌스'를 세일즈 포인트로 전면에 내세우고, 폐쇄망·온프레미스 구조의 보안 우위를 강조하는 전략이 신뢰도를 높이는 데 효과적이다.",
+      "source": "Securelist",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5CX2xzUEh4NkQtVVhhM2VHeEl1NFlzNkl2Rm5tV1VRVDg2OG01ckhOV0otUHhKUmtjMWVnb1p0UmJzVG1uSV9IcFZ4cGVSekFjVHE3bUxGbUxWd211Sy1tWk92NndFUQ?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**국산 AI의 공공 행정망 입성**은 단순 기술 도입이 아니라 조달 기준의 재편을 알리는 신호다. 보안·데이터 주권을 충족한 국산 모델이 공공을 시작으로 금융·의료로 확산될 가능성이 높다.",
+    "한미약품의 '에피데이' 사례처럼 **민감 데이터를 다루는 산업군에서 해외 AI → 국산 AI 전환 수요**가 실제 프로젝트로 가시화되고 있다. 이는 RAG·챗봇·온프레미스 AI 솔루션 공급사에게 구체적인 영업 기회다.",
+    "AI 학습 데이터 저작권 소송과 오픈소스 AI 해킹 도구 악용 사례가 동시에 터지면서, **'AI를 어떻게 쓰느냐'보다 'AI를 얼마나 안전하게 쓰느냐'**가 기업 AI 도입의 핵심 평가 기준으로 자리잡고 있다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심 키워드는 '국산 AI'와 '보안'이다. 업스테이지의 범정부 AI 탑재, 한미약품의 국산 AI 전환 모두 '데이터 주권과 보안'을 충족한 AI 솔루션에 대한 수요가 실제 프로젝트로 전환되고 있음을 보여준다. 이수시스템은 ISO27001 인증, NCP 파트너, 500개 이상 HR 레퍼런스라는 신뢰 자산을 바탕으로 RAG 챗봇과 AI 플랫폼을 '폐쇄망 기반 보안 AI' 패키지로 포지셔닝해 공공·제약·제조 고객군 대상 영업 기회를 선점해야 할 시점이다."
+}
