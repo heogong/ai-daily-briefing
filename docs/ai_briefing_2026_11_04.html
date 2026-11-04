@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Daily Briefing — 2026.11.04 (수)</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:title" content="AI Daily Briefing — 2026.11.04 (수)">
+<meta property="og:description" content="바쁜 사람을 위한 3분 AI 뉴스">
+<meta property="og:image" content="og-image.png">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #12121a;
+    --surface-2: #1a1a26;
+    --accent: #00e5a0;
+    --accent-dim: rgba(0,229,160,0.12);
+    --accent-glow: rgba(0,229,160,0.25);
+    --text: #e8e8ed;
+    --text-dim: #8888a0;
+    --text-muted: #555568;
+    --orange: #ff8844;
+    --blue: #4488ff;
+    --pink: #ff4488;
+    --yellow: #ffcc00;
+    --border: rgba(255,255,255,0.06);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    min-height: 100vh;
+    padding-bottom: 0;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+  .header {
+    padding: 60px 0 40px;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: -100px; right: -100px;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+    pointer-events: none;
+    animation: pulse 4s ease-in-out infinite;
+  }
+  @keyframes pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.6; } }
+  .header-top { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+  .logo-mark {
+    width: 36px; height: 36px;
+    background: var(--accent);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500; font-size: 14px; color: var(--bg);
+  }
+  .brand-name {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; font-weight: 500;
+    color: var(--text-dim);
+    letter-spacing: 2px; text-transform: uppercase;
+  }
+  .header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px; font-weight: 900; line-height: 1.15;
+    margin-bottom: 12px;
+    background: linear-gradient(135deg, var(--text) 0%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .date-line {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; color: var(--text-muted);
+    display: flex; align-items: center; gap: 12px;
+  }
+  .date-line .dot {
+    width: 6px; height: 6px;
+    background: var(--accent); border-radius: 50%;
+    animation: blink 2s ease-in-out infinite;
+  }
+  @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+  .tldr { padding: 32px 0; border-bottom: 1px solid var(--border); }
+  .tldr-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; color: var(--accent);
+    letter-spacing: 3px; text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .tldr p { font-size: 17px; font-weight: 500; line-height: 1.8; }
+  .section { padding: 40px 0; border-bottom: 1px solid var(--border); }
+  .section:last-child { border-bottom: none; }
+  .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+  .section-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px; font-weight: 900; color: var(--accent); line-height: 1;
+  }
+  .section-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+    padding: 4px 10px; border-radius: 4px; font-weight: 500;
+  }
+  .tag-model { background: rgba(68,136,255,0.15); color: var(--blue); }
+  .tag-product { background: rgba(0,229,160,0.12); color: var(--accent); }
+  .tag-society { background: rgba(255,68,136,0.15); color: var(--pink); }
+  .tag-industry { background: rgba(255,136,68,0.15); color: var(--orange); }
+  .tag-insight { background: rgba(255,204,0,0.15); color: var(--yellow); }
+  .news-title { font-size: 22px; font-weight: 700; line-height: 1.4; margin-bottom: 16px; }
+  .news-body {
+    font-size: 15px; line-height: 1.85; margin-bottom: 16px; font-weight: 300;
+    overflow-wrap: break-word; word-break: break-word;
+  }
+  .news-body strong { color: var(--accent); font-weight: 500; }
+  .insight-box {
+    background: var(--surface-2);
+    border-left: 3px solid var(--accent);
+    padding: 16px 20px; border-radius: 0 8px 8px 0; margin-top: 16px;
+  }
+  .insight-box .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; color: var(--accent);
+    letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;
+  }
+  .insight-box p { font-size: 14px; line-height: 1.75; font-weight: 400; }
+  .isu-box {
+    background: rgba(255,136,68,0.08);
+    border-left: 3px solid var(--orange);
+    padding: 10px 14px; border-radius: 0 6px 6px 0; margin-top: 12px;
+  }
+  .isu-box .isu-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; color: var(--orange);
+    letter-spacing: 2px; text-transform: uppercase; margin-bottom: 6px;
+  }
+  .isu-area-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; padding: 2px 8px; border-radius: 3px;
+    background: rgba(255,136,68,0.15); color: var(--orange);
+    margin-right: 6px;
+  }
+  .isu-opp-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; padding: 2px 8px; border-radius: 3px;
+    background: rgba(255,204,0,0.15); color: var(--yellow);
+  }
+  .source-link { margin-top: 10px; text-align: right; }
+  .source-link a { font-size: 12px; color: var(--text-muted); text-decoration: none; }
+  .source-link a:hover { color: var(--text-dim); }
+  .isu-section {
+    padding: 40px 0; border-top: 2px solid var(--orange); margin-top: 20px;
+  }
+  .isu-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; font-weight: 700; margin-bottom: 16px; color: var(--orange);
+  }
+  .isu-section p { font-size: 15px; line-height: 1.85; font-weight: 300; }
+  .bottom-line {
+    padding: 40px 0; border-top: 2px solid var(--accent); margin-top: 20px;
+  }
+  .bottom-line h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; font-weight: 700; margin-bottom: 20px; color: var(--accent);
+  }
+  .bottom-line p { font-size: 15px; line-height: 1.85; font-weight: 300; margin-bottom: 12px; }
+  .action-list { list-style: none; margin-top: 20px; }
+  .action-list li {
+    position: relative; padding: 10px 0 10px 24px;
+    font-size: 14px; font-weight: 400; line-height: 1.7;
+  }
+  .action-list li::before {
+    content: '→'; position: absolute; left: 0;
+    color: var(--accent); font-family: 'JetBrains Mono', monospace; font-weight: 500;
+  }
+  .action-list li strong { color: var(--accent); font-weight: 500; }
+  .footer {
+    padding: 40px 0; text-align: center;
+    color: var(--text-muted); font-size: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    border-top: 1px solid var(--border);
+  }
+  .footer .accent { color: var(--accent); }
+  .tab-nav {
+    display: flex;
+    gap: 0;
+    border-bottom: 2px solid var(--border);
+    margin-top: 8px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--bg);
+  }
+  .tab-btn {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+    padding: 16px 20px;
+    background: none; border: none;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+    white-space: nowrap;
+  }
+  .tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .tab-btn:hover:not(.active) { color: var(--text-dim); }
+  .tab-pane { display: none; }
+  .tab-pane.active { display: block; }
+  .tab-empty {
+    padding: 80px 0; text-align: center;
+    color: var(--text-muted);
+    font-family: 'JetBrains Mono', monospace; font-size: 13px;
+  }
+  .tab-empty .empty-icon { font-size: 36px; margin-bottom: 16px; opacity: 0.3; }
+  .tab-empty p { line-height: 2; }
+  .tab-empty .coming { color: var(--accent); }
+  @media (max-width: 600px) {
+    .header h1 { font-size: 30px; }
+    .news-title { font-size: 19px; }
+    .container { padding: 0 16px; }
+    .header { padding: 40px 0 30px; }
+    .tab-btn { font-size: 10px; padding: 14px 14px; letter-spacing: 1px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <div class="header-top">
+      <div class="logo-mark">AI</div>
+      <span class="brand-name">Daily Briefing</span>
+    </div>
+    <h1 id="main-title">오늘의 AI, 3분 안에 끝내기</h1>
+    <div class="date-line">
+      <span class="dot"></span>
+      <span>2026.11.04 (수) — 바쁜 당신을 위한 AI 핵심 브리핑</span>
+    </div>
+  </header>
+
+  <nav class="tab-nav">
+    <button class="tab-btn active" onclick="switchTab(this,'tab-ai')">오늘의 AI 브리핑</button>
+    <button class="tab-btn" onclick="switchTab(this,'tab-it')">국내 IT 회사 동향</button>
+  </nav>
+
+  <div id="tab-ai" class="tab-pane active">
+  <div class="tldr">
+    <div class="tldr-label">오늘의 한 줄</div>
+    <p>ChatGPT가 구글 검색의 20%를 위협하고, SK텔레콤은 AI 에이전트 5,000개를 돌파하며 기업 AI 전환이 현실이 됐다.</p>
+  </div>
+
+  
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <span class="section-tag tag-industry">산업 동향</span>
+    </div>
+    <h3 class="news-title">ChatGPT, 구글 검색량의 20% 돌파…'구글 대신 챗GPT'가 현실로</h3>
+    <p class="news-body">OpenAI의 소비자 제품 총괄 Adam Fry가 발표한 바에 따르면, <strong>ChatGPT의 검색 쿼리 처리량이 구글 검색량의 20%에 달하는 수준</strong>까지 성장했다. 불과 2년 전만 해도 상상하기 어려운 수치로, 직장인·학생·소비자 사이에서 '구글링' 대신 'AI에게 물어보는' 행동 패턴이 빠르게 자리잡고 있음을 보여준다.
+
+이 발표는 단순한 사용자 증가를 넘어, 검색 광고 시장 전체의 판도를 흔들 수 있는 신호탄으로 해석된다. 같은 날 구글이 Alphabet의 AI 투자를 <strong>15억 달러 추가 확대</strong>한다고 발표하면서 주가가 하락한 것도 이와 무관하지 않다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>검색 시장의 패권이 처음으로 흔들리고 있다는 명확한 신호다. 기업들이 광고·SEO·콘텐츠 전략을 AI 검색 환경에 맞게 재설계해야 할 시점이 왔으며, 정보 접근 방식의 변화는 모든 산업의 고객 접점 전략에 영향을 미친다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[핵심 기회]</span>
+      </div>
+      <p>검색 대신 AI 챗봇으로 업무 정보를 찾는 행동 패턴이 기업 내부에서도 확산 중이다. 이수시스템의 RAG 기반 사내 챗봇 솔루션은 '구글 대신 AI에 묻는' 직원들의 니즈를 내부 업무 지식베이스와 연결하는 핵심 제품으로 포지셔닝 가능하다. 특히 제조·건설 고객사에서 현장 매뉴얼, 인사 규정, 계약서 등을 RAG로 연결하는 영업 시나리오를 적극 활용해야 한다.</p>
+    </div>
+    <div class="source-link"><a href="https://www.theverge.com/ai-artificial-intelligence/1025482/openai-says-chatgpt-is-catching-up-to-google-in-search" target="_blank" rel="noopener noreferrer">출처: The Verge →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <span class="section-tag tag-industry">산업 동향</span>
+    </div>
+    <h3 class="news-title">SK텔레콤 임직원이 사용하는 AI 에이전트 5,000개 돌파…기업 AI 전환 속도전</h3>
+    <p class="news-body">SK텔레콤의 임직원들이 실무에 활용 중인 <strong>AI 에이전트 수가 5,000개를 넘어섰다</strong>고 조선일보가 보도했다. 단순 챗봇을 넘어 특정 업무를 자율적으로 수행하는 에이전트 형태로 AI가 기업 내부에 깊숙이 침투한 사례로, 국내 대기업의 AI 내재화 속도가 예상보다 빠름을 보여준다.
+
+에이전트 1개당 반복 업무 1건 이상을 대체한다고 가정하면 단순 계산으로도 수천 건의 업무 프로세스가 자동화된 셈이다. 이는 단순 파일럿을 넘어 <strong>전사적 AI 도입이 운영 단계로 진입</strong>했음을 의미한다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>대기업을 중심으로 AI 에이전트가 '도입 검토'에서 '실운영'으로 넘어가는 임계점에 도달했다. 중견·중소기업도 경쟁력 유지를 위해 AI 에이전트 도입 압박을 받을 것이며, 기업용 AI 플랫폼·에이전트 솔루션 시장의 본격 성장이 시작되는 신호다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[영업 기회]</span>
+      </div>
+      <p>SK텔레콤의 사례는 이수시스템이 기존 고객사(제조·건설·금융)에 AI 에이전트 도입 필요성을 설득하는 강력한 레퍼런스로 활용 가능하다. WORKUP·Smart HR에 AI 에이전트를 접목해 근태 이상 감지, 급여 오류 자동 체크 등 HR 특화 에이전트 패키지를 선제적으로 제안하는 영업 전략이 유효하다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxOc3U2UVdIZlhQWXgxTWpybUh5Q2taVlJCOUJOV1ZLV1JWTk1wUV9rZVhPN2tsamxlS1VtTkNhRlk5dlcwdWtVdVlUOW1BY1JfcVdyNHpTRDlTSUYwMGxvYjRYelpTVFAxTmRUSGticFJEM1VCSUdHbU5fVUpjWW52cl9Tc0M1RFdS?oc=5" target="_blank" rel="noopener noreferrer">출처: 조선일보 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <span class="section-tag tag-model">모델 릴리스</span>
+    </div>
+    <h3 class="news-title">구글 Gemini 4 Carbon 공개…Claude Opus 5.5를 1/3 가격에 거의 따라잡다</h3>
+    <p class="news-body">구글이 최신 프론티어 AI 모델 <strong>'Gemini 4 Carbon'</strong>을 공개했다. 벤치마크 기준 Claude Opus 5.5와 근접한 성능을 보이면서도 가격은 약 <strong>3분의 1 수준</strong>에 불과한 것으로 나타났다. 특히 환각(hallucination) 발생률이 현재 최신 모델 중 가장 낮다는 점이 부각됐다.
+
+Tom's Hardware 등의 보도에 따르면 엔지니어링 시험에서는 Claude가 <strong>48.3%</strong>로 선두를 유지했지만, 가성비 지표에서는 Gemini 4 Carbon이 압도적으로 유리하다. 기업 도입 비용 민감도가 높은 환경에서 Gemini의 채택률이 급등할 가능성이 높다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>최고 성능 모델과 비용 효율적 모델 간의 격차가 빠르게 좁혀지고 있다. 기업 입장에서 AI 모델 선택이 '성능'보다 '비용 대비 성능'으로 옮겨가는 추세가 가속화되며, 멀티 모델 전략과 모델 라우팅의 중요성이 커진다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[제품 강화]</span>
+      </div>
+      <p>Gemini 4 Carbon의 낮은 환각률과 가격 경쟁력은 이수시스템 RAG 챗봇의 백엔드 LLM 선택에 직접적 영향을 준다. 현재 OpenAI 기반으로 구축된 챗봇 솔루션에 Gemini를 추가 옵션으로 제공하거나, 고객사 예산에 따라 모델을 유연하게 교체할 수 있는 멀티 모델 아키텍처를 AI 플랫폼에 반영하면 운영 비용 절감을 원하는 고객사에 차별화된 제안이 가능하다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMivwJBVV95cUxOTWhTVENnM3JSMkhHSWh6bDNNcVh4Nk9PRXJsUkJKSG9rLTRmNTB4ZWRydEctZnJFWWJvVWpKOU40VkhhWkdVTTdXZHU3WmxCRmd4czZ2WDF5OE5NNXJvY0FIVl80S1BNWXh0SFBDNFpBT1FXWldXaTQ3NWM5aGN0VmR2Q3VKRWE4bHctVW9OODFxbGwtaDZ5ZFY3a21wZ1oxaHJpRDJrUW12Ykd0VkMzcy1MZmJoeFlRaHdscHhaak91SkhncnY1Z0tOVFRGWWFBMVlKSWM4TzQ1NjVMdzU4bjI2ajJ6YWY4c2tLZnZOa2ZkSmd4eWNUc2ZtQUxfZ2k0dk92eDEyLTJHU0tMRG9kVWhTOUZIYnJBLVZkZ0dyaWdWeUNVczF2SDhWWmZSSXZaMUNobE9xcmQ3cTJZdFZN?oc=5" target="_blank" rel="noopener noreferrer">출처: Tom's Hardware →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <span class="section-tag tag-insight">글로벌 이슈</span>
+    </div>
+    <h3 class="news-title">구글, AI 거부 학교엔 검색도 차단…'AI 묶음 판매' 논란 점화</h3>
+    <p class="news-body">구글이 K-12(초·중·고) 학생 계정에서 Gemini AI를 거부하는 학교에 <strong>Google 검색 자체를 완전히 비활성화</strong>하기로 결정해 논란이 커지고 있다. AI 선택권을 원하는 학교 입장에서는 검색이라는 핵심 교육 도구를 인질로 잡힌 셈이다.
+
+EU 법원 자문관도 같은 날 Gemini가 언론사 저작권을 침해할 소지가 있다는 의견을 제시하며, 구글의 AI 확장 전략에 규제 리스크가 동시에 부각됐다. 구글은 K-12 AI 교육을 위해 <strong>950만 달러</strong>를 별도 지원하겠다고 발표했지만, 강제성 논란은 가라앉지 않고 있다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>빅테크가 AI를 기존 핵심 서비스에 묶어 보급을 강제하는 번들링 전략의 첫 번째 대형 사례다. 교육·공공·기업 시장에서 플랫폼 종속성이 AI를 통해 더욱 심화될 수 있으며, 각국 규제 당국의 반독점 검토가 AI 묶음 판매로 확대될 가능성이 있다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">클라우드 사업</span>
+        <span class="isu-opp-tag">[모니터링]</span>
+      </div>
+      <p>구글의 AI 번들 강제 정책은 공공·교육 기관의 플랫폼 종속 우려를 자극한다. NCP(네이버 클라우드) 파트너인 이수시스템은 '국산 클라우드 + 국산 AI' 조합을 공공·교육 고객에게 대안으로 제시하는 영업 메시지를 강화할 시점이다. 특히 공무원용 AI에서 중국산을 배제하려는 정부 움직임([24])과 맞물려 국내 클라우드 인프라 수요 확대가 예상된다.</p>
+    </div>
+    <div class="source-link"><a href="https://www.theverge.com/tech/1025411/google-turn-off-search-ai-features" target="_blank" rel="noopener noreferrer">출처: The Verge →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">05</span>
+      <span class="section-tag tag-insight">글로벌 이슈</span>
+    </div>
+    <h3 class="news-title">KAIST, AI 학습 데이터 69% 줄여도 성능 유지…학습 시간 69.6% 단축 성공</h3>
+    <p class="news-body">KAIST 연구팀이 AI 모델 학습에 필요한 데이터를 <strong>69%까지 줄이면서도 동등한 성능을 유지</strong>하는 기술을 개발했다고 인공지능신문이 보도했다. 학습 시간도 최대 <strong>69.6% 단축</strong>되어, AI 도입의 가장 큰 장벽인 데이터 구축 비용과 컴퓨팅 비용을 동시에 낮출 수 있다는 점에서 주목받고 있다.
+
+이 연구는 데이터가 충분하지 않은 국내 중소기업이나 특수 도메인에서도 고품질 AI 모델을 구축할 수 있는 가능성을 열어준다. 특히 HR·제조·안전 등 도메인 특화 AI 모델 개발에 소요되는 비용을 획기적으로 낮출 수 있어 실용화 가능성이 높다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>AI 모델 학습의 진입장벽이 낮아지면 대형 AI 연구소가 아닌 중소 솔루션 기업과 도메인 전문 기업도 특화 모델을 직접 구축할 수 있는 시대가 앞당겨진다. 데이터 효율 기술은 AI 대중화의 핵심 촉진제로 작동할 것이며, 국내 연구기관의 경쟁력 강화 측면에서도 의미 있는 성과다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[제품 강화]</span>
+      </div>
+      <p>KAIST의 데이터 효율화 기술은 이수시스템이 HR AI Package나 AI 이력서 분석 솔루션의 도메인 특화 모델을 개선하는 데 적용 가능성이 있다. 500개 이상의 HR 구축 레퍼런스에서 축적된 인사 데이터를 69% 수준으로 압축해 파인튜닝하면, 고객사별 맞춤 HR AI 모델 구축 비용을 대폭 낮출 수 있어 중견기업 고객 확대에 실질적인 경쟁력으로 작용한다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1kVUptZGZyNG5iWVVWZV9QWUxjSG1jZkloSHlSd1lCT21TNGt2Zkg5aGR1RlNFZ0pqNk1yUGRmWTVzM2dkUGNRN0p0MUdMcDJfNC13OGQ4eHlEdjFEVno2YmFEekplOE0?oc=5" target="_blank" rel="noopener noreferrer">출처: 인공지능신문 →</a></div>
+  </section>
+  
+  <div class="isu-section">
+    <h2>이수시스템 인사이트</h2>
+    <p>오늘 뉴스의 핵심은 기업 AI 전환이 임계점을 넘었다는 신호다. SK텔레콤의 AI 에이전트 5,000개 사례는 이수시스템이 WORKUP·Smart HR에 HR 특화 AI 에이전트를 접목한 패키지를 제조·건설 고객에 선제 제안할 타이밍이 왔음을 뜻한다. 동시에 Gemini 4 Carbon의 가성비 등장과 KAIST의 데이터 효율화 연구는 AI 챗봇·HR AI Package의 운영 비용 절감과 도메인 특화 모델 고도화 경로를 모두 제시하고 있어, 단기 영업 기회와 중장기 제품 로드맵을 함께 점검해야 할 시점이다.</p>
+  </div>
+
+  <div class="bottom-line">
+    <h2>오늘의 핵심 테이크어웨이</h2>
+    <ul class="action-list">
+      <li><strong>ChatGPT 검색량이 구글의 20%</strong> 에 달하며 정보 탐색 패턴이 바뀌고 있다. 기업 내부 지식 검색도 AI 챗봇으로 대체되는 흐름은 이미 시작됐다.</li>
+      <li><strong>SK텔레콤 AI 에이전트 5,000개 돌파</strong>는 대기업 AI 전환이 '실험'에서 '운영'으로 넘어갔음을 의미한다. 중견·중소기업의 도입 압박도 곧 본격화된다.</li>
+      <li><strong>Gemini 4 Carbon의 1/3 가격·최저 환각률</strong>은 AI 모델 선택 기준을 성능에서 비용 대비 성능으로 이동시키고 있다. 기업 AI 솔루션의 LLM 전략도 멀티모델 유연성이 필수가 된다.</li>
+    </ul>
+  </div>
+  </div><!-- /tab-ai -->
+
+  <div id="tab-it" class="tab-pane">
+  <div class="tldr">
+    <div class="tldr-label">오늘의 한 줄</div>
+    <p>카카오가 AI 중심 사업구조 개편으로 수익화에 속도를 내는 가운데, 국내 로보틱스·스타트업 생태계의 글로벌 확장 움직임이 두드러진 하루.</p>
+  </div>
+
+  
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <span class="section-tag tag-insight">사업 전략</span>
+    </div>
+    <h3 class="news-title">카카오, AI 수익화·투자 효율화 위한 사업구조 전면 개편</h3>
+    <p class="news-body">카카오가 <strong>AI 수익화</strong>와 <strong>투자 효율성 제고</strong>를 핵심 목표로 사업구조 개편에 나선다고 밝혔다. 한국경제가 발간한 밸류업 리포트에 따르면, 카카오는 비핵심 사업을 정리하고 AI 관련 서비스에 역량을 집중하는 방향으로 포트폴리오를 재편할 계획이다. 이번 개편은 최근 수년간 계열사 난립과 거버넌스 이슈로 주가 부진을 겪어온 카카오가 주주가치 제고를 위해 꺼내든 구체적 행동 방안으로 해석된다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>카카오가 AI를 단순한 기술 투자가 아닌 '수익화 엔진'으로 명확히 포지셔닝했다는 점이 주목된다. 국내 플랫폼 대기업들이 AI 투자 대비 가시적 성과를 내지 못한다는 시장의 압박이 커지는 상황에서, 카카오의 구조 개편이 네이버·LG 등 경쟁사들의 AI 전략에도 영향을 미칠 수 있다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBhS05FZUFidmM0RWd2ZUl2YkYxQWg4N3lVOV9CRWdVS3IyWG5QTXhkY2EyTzIyeklVSUlVRDU0VzFpeVl3LTYxMmhRaVRTV0N5VExWOTJBM2tlUQ?oc=5" target="_blank" rel="noopener noreferrer">출처: 한국경제 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <span class="section-tag tag-insight">사업 전략</span>
+    </div>
+    <h3 class="news-title">LG, 엔비디아·MS와 손잡고 AI 사업 영토 본격 확장</h3>
+    <p class="news-body">구광모 LG그룹 회장 체제 하에서 LG가 <strong>엔비디아</strong>, <strong>마이크로소프트(MS)</strong>와의 전략적 파트너십을 통해 AI 사업 영역을 대폭 넓히고 있다. LG는 엔비디아의 GPU 인프라와 MS의 클라우드·AI 플랫폼을 결합해 B2B AI 솔루션과 스마트 가전·제조 분야에 AI를 접목하는 로드맵을 추진 중인 것으로 전해진다. 뉴스인사이드 보도에 따르면 구광모 시대의 LG는 전통 가전·화학 중심에서 벗어나 AI를 그룹 성장의 핵심 동력으로 삼는 전환을 가속화하고 있다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>글로벌 빅테크 2곳과 동시에 AI 협력을 추진한다는 점에서 LG의 행보는 단순한 기술 도입을 넘어 AI 생태계 내 전략적 포지셔닝을 겨냥한 것으로 볼 수 있다. 삼성과 함께 국내 대표 제조 대기업인 LG의 AI 가속화는 국내 AI 솔루션·클라우드 시장 판도에도 직접적인 영향을 줄 전망이다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE1LeFY0YTF3NGhOSlRlM0NjcmQwUGxQT05oQ0ExNnNJR19GeXNmWHA5eXJzQ21TQUNsYmM5dlhXYldfWmdQR3BiblBLRlRpMF9SWURLYjV6a2RFNFRIX25yWFUyTVZOSU9vN3l4RWNB?oc=5" target="_blank" rel="noopener noreferrer">출처: 뉴스인사이드 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <span class="section-tag tag-model">투자·펀딩</span>
+    </div>
+    <h3 class="news-title">소풍벤처스-한림대기술지주, 135억 규모 강원 전략산업 펀드 결성</h3>
+    <p class="news-body">임팩트 투자사 <strong>소풍벤처스</strong>와 <strong>한림대기술지주</strong>가 공동으로 <strong>135억 원</strong> 규모의 '강원 전략산업 펀드'를 결성했다. 이 펀드는 강원 지역 내 바이오·에너지·디지털 헬스 등 전략 산업 분야 스타트업에 집중 투자할 계획이다. 지역 VC와 대학 기술지주가 협력해 지방 스타트업 생태계를 육성하는 모델로, 수도권 편중 투자 환경에서 의미 있는 사례로 주목된다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>지방 소재 대학 기술지주와 임팩트 VC의 협업 펀드 결성은 정부의 지역 균형 발전 기조와 맞닿아 있다. 수도권 집중 현상이 뚜렷한 국내 VC 투자 시장에서, 지역 특화 펀드 모델이 확산될 경우 비수도권 딥테크·바이오 스타트업의 초기 자금 조달 환경이 개선될 수 있다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE5OeEY2U05hNU92YUU3X1pqTk1nUVpqbXNHcU1oN3lzOF9LR3pfamRlUy1henQwb1JuMGtvOGFiV2ZYQ01IaktaSDdZS3hCb2s?oc=5" target="_blank" rel="noopener noreferrer">출처: 와우테일 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <span class="section-tag tag-society">경영·인사</span>
+    </div>
+    <h3 class="news-title">빅웨이브로보틱스, 북미 총괄 영입하며 미국 시장 공략 본격화</h3>
+    <p class="news-body">국내 로보틱스 스타트업 <strong>빅웨이브로보틱스</strong>가 북미 사업 확장을 위해 <strong>하연흔</strong> 씨를 'Head of North America(북미 총괄)'로 영입했다. 하연흔 북미 총괄은 북미 현지 파트너십 구축과 고객사 확보를 주도할 예정이며, 이번 채용은 빅웨이브로보틱스가 국내를 넘어 본격적인 글로벌 시장 진출을 선언한 신호탄으로 해석된다. 로봇신문에 따르면 빅웨이브로보틱스는 물류·제조 현장 자동화 솔루션을 북미 시장에 맞게 현지화하는 작업도 병행할 계획이다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>최근 국내 로보틱스 기업들의 북미 시장 진출이 잇따르고 있는 가운데, 현지 전문 인력을 직접 고용해 거점을 마련하는 방식은 단순 수출·파트너십 모델보다 한 단계 높은 글로벌화 전략이다. 로봇 산업이 AI와 결합하며 급성장하는 북미 시장에서 한국 기업들의 경쟁력 입증 여부가 주목된다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE5HMkZSWHU0bURwR3VucUpUS3FVQ1I0R01tRER0LVJGU3BFbmF6ckwxeEg0UUlERFk3dFcwRVdhN09nX1U3SmhMdTZZTEFuWF9vVGVtUkdRSFp0SW5xQnRtS0lmd0ZsdXhvZHZjRw?oc=5" target="_blank" rel="noopener noreferrer">출처: 로봇신문 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">05</span>
+      <span class="section-tag tag-product">시장 동향</span>
+    </div>
+    <h3 class="news-title">고금리 장기화에 M&A 공식 변화…'차입 레버리지'에서 '현금 직매입'으로</h3>
+    <p class="news-body">고금리 기조가 장기화되면서 국내 M&A 시장의 구조가 바뀌고 있다. <strong>중순위 대출 금리가 9%대</strong>까지 오르자 차입(레버리지)을 활용한 전통적 M&A 방정식이 흔들리고 있으며, 현금 보유력이 충분한 대기업·전략적 투자자(SI) 위주로 거래가 재편되는 양상이다. 매일경제 마켓과 IB토마토 보도에 따르면 PEF(사모펀드)들은 수익률 목표 달성이 어려워지면서 딜 클로징을 미루거나 가격 협상에서 더욱 보수적인 입장을 취하고 있다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>고금리 환경은 M&A 시장의 '돈 있는 자'와 '없는 자'의 격차를 더욱 벌려놓는다. 현금 여력이 풍부한 삼성·카카오·네이버 등 대형 테크 기업에게는 오히려 저평가 자산을 현금 매입할 기회가 열리는 반면, 차입 의존도가 높은 PEF 주도 딜은 급감할 가능성이 크다. IT 섹터 M&A 활성화 여부는 금리 하락 시점이 관건이 될 전망이다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE5FT01zSkxMRWJQeVVYNGJWNUdDMHVNUzYyaFJnWmtsRW4xYnI2clRQQ1pVcEJuWHhKeXRLOEVXaDhxZzhpNGR3cGMtWkk5RVExY1E?oc=5" target="_blank" rel="noopener noreferrer">출처: 매일경제 마켓 →</a></div>
+  </section>
+
+  <div class="bottom-line">
+    <h2>오늘의 핵심 테이크어웨이</h2>
+    <ul class="action-list">
+      <li><strong>카카오·LG 등 국내 대형 테크·제조 기업들이 AI 수익화를 최우선 과제로 설정</strong>, 단순 투자 단계를 넘어 구체적 사업구조 개편과 글로벌 빅테크 파트너십으로 실행에 옮기고 있다.</li>
+      <li>빅웨이브로보틱스의 북미 총괄 영입 등 국내 로보틱스 스타트업의 미국 현지화 전략이 본격화되고 있으며, 이는 단순 제품 수출을 넘어 현지 거점 구축 단계로의 진화를 의미한다.</li>
+      <li><strong>중순위 금리 9%대의 고금리 환경이 M&A 시장 공식을 바꾸고 있다.</strong> 차입 레버리지 중심의 PEF 딜은 위축되고, 현금 동원력이 큰 전략적 투자자(SI) 주도의 M&A가 주류로 부상할 전망이다.</li>
+    </ul>
+  </div>
+  </div><!-- /tab-it -->
+
+  <footer class="footer">
+    <p>AI Daily Briefing — <span class="accent">바쁜 사람을 위한 3분 AI 뉴스</span></p>
+    <p style="margin-top: 8px;">2026.11.04 (수) | 매일 아침 업데이트</p>
+    <p style="margin-top: 8px;">© keyboard@kakao.com</p>
+  </footer>
+</div>
+<audio src="ai_briefing_2026_11_04.mp3" controls style="position:fixed;bottom:20px;right:20px;z-index:100;width:260px;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.5);"></audio>
+<script>
+  const TAB_TITLES = {
+    'tab-ai': '오늘의 AI, 3분 안에 끝내기',
+    'tab-it': '국내 IT 회사 동향'
+  };
+  function switchTab(btn, id) {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(id).classList.add('active');
+    document.getElementById('main-title').textContent = TAB_TITLES[id];
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const audio = document.querySelector('audio');
+    if (audio) {
+      if (id === 'tab-it') {
+        audio.pause();
+        audio.style.display = 'none';
+      } else {
+        audio.style.display = '';
+      }
+    }
+  }
+</script>
+</body>
+</html>
