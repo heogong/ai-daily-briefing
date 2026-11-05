@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Daily Briefing — 2026.11.05 (목)</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:title" content="AI Daily Briefing — 2026.11.05 (목)">
+<meta property="og:description" content="바쁜 사람을 위한 3분 AI 뉴스">
+<meta property="og:image" content="og-image.png">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #12121a;
+    --surface-2: #1a1a26;
+    --accent: #00e5a0;
+    --accent-dim: rgba(0,229,160,0.12);
+    --accent-glow: rgba(0,229,160,0.25);
+    --text: #e8e8ed;
+    --text-dim: #8888a0;
+    --text-muted: #555568;
+    --orange: #ff8844;
+    --blue: #4488ff;
+    --pink: #ff4488;
+    --yellow: #ffcc00;
+    --border: rgba(255,255,255,0.06);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    min-height: 100vh;
+    padding-bottom: 0;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+  .header {
+    padding: 60px 0 40px;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: -100px; right: -100px;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+    pointer-events: none;
+    animation: pulse 4s ease-in-out infinite;
+  }
+  @keyframes pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.6; } }
+  .header-top { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+  .logo-mark {
+    width: 36px; height: 36px;
+    background: var(--accent);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500; font-size: 14px; color: var(--bg);
+  }
+  .brand-name {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; font-weight: 500;
+    color: var(--text-dim);
+    letter-spacing: 2px; text-transform: uppercase;
+  }
+  .header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px; font-weight: 900; line-height: 1.15;
+    margin-bottom: 12px;
+    background: linear-gradient(135deg, var(--text) 0%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .date-line {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; color: var(--text-muted);
+    display: flex; align-items: center; gap: 12px;
+  }
+  .date-line .dot {
+    width: 6px; height: 6px;
+    background: var(--accent); border-radius: 50%;
+    animation: blink 2s ease-in-out infinite;
+  }
+  @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+  .tldr { padding: 32px 0; border-bottom: 1px solid var(--border); }
+  .tldr-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; color: var(--accent);
+    letter-spacing: 3px; text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .tldr p { font-size: 17px; font-weight: 500; line-height: 1.8; }
+  .section { padding: 40px 0; border-bottom: 1px solid var(--border); }
+  .section:last-child { border-bottom: none; }
+  .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+  .section-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px; font-weight: 900; color: var(--accent); line-height: 1;
+  }
+  .section-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+    padding: 4px 10px; border-radius: 4px; font-weight: 500;
+  }
+  .tag-model { background: rgba(68,136,255,0.15); color: var(--blue); }
+  .tag-product { background: rgba(0,229,160,0.12); color: var(--accent); }
+  .tag-society { background: rgba(255,68,136,0.15); color: var(--pink); }
+  .tag-industry { background: rgba(255,136,68,0.15); color: var(--orange); }
+  .tag-insight { background: rgba(255,204,0,0.15); color: var(--yellow); }
+  .news-title { font-size: 22px; font-weight: 700; line-height: 1.4; margin-bottom: 16px; }
+  .news-body {
+    font-size: 15px; line-height: 1.85; margin-bottom: 16px; font-weight: 300;
+    overflow-wrap: break-word; word-break: break-word;
+  }
+  .news-body strong { color: var(--accent); font-weight: 500; }
+  .insight-box {
+    background: var(--surface-2);
+    border-left: 3px solid var(--accent);
+    padding: 16px 20px; border-radius: 0 8px 8px 0; margin-top: 16px;
+  }
+  .insight-box .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; color: var(--accent);
+    letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;
+  }
+  .insight-box p { font-size: 14px; line-height: 1.75; font-weight: 400; }
+  .isu-box {
+    background: rgba(255,136,68,0.08);
+    border-left: 3px solid var(--orange);
+    padding: 10px 14px; border-radius: 0 6px 6px 0; margin-top: 12px;
+  }
+  .isu-box .isu-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; color: var(--orange);
+    letter-spacing: 2px; text-transform: uppercase; margin-bottom: 6px;
+  }
+  .isu-area-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; padding: 2px 8px; border-radius: 3px;
+    background: rgba(255,136,68,0.15); color: var(--orange);
+    margin-right: 6px;
+  }
+  .isu-opp-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; padding: 2px 8px; border-radius: 3px;
+    background: rgba(255,204,0,0.15); color: var(--yellow);
+  }
+  .source-link { margin-top: 10px; text-align: right; }
+  .source-link a { font-size: 12px; color: var(--text-muted); text-decoration: none; }
+  .source-link a:hover { color: var(--text-dim); }
+  .isu-section {
+    padding: 40px 0; border-top: 2px solid var(--orange); margin-top: 20px;
+  }
+  .isu-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; font-weight: 700; margin-bottom: 16px; color: var(--orange);
+  }
+  .isu-section p { font-size: 15px; line-height: 1.85; font-weight: 300; }
+  .bottom-line {
+    padding: 40px 0; border-top: 2px solid var(--accent); margin-top: 20px;
+  }
+  .bottom-line h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; font-weight: 700; margin-bottom: 20px; color: var(--accent);
+  }
+  .bottom-line p { font-size: 15px; line-height: 1.85; font-weight: 300; margin-bottom: 12px; }
+  .action-list { list-style: none; margin-top: 20px; }
+  .action-list li {
+    position: relative; padding: 10px 0 10px 24px;
+    font-size: 14px; font-weight: 400; line-height: 1.7;
+  }
+  .action-list li::before {
+    content: '→'; position: absolute; left: 0;
+    color: var(--accent); font-family: 'JetBrains Mono', monospace; font-weight: 500;
+  }
+  .action-list li strong { color: var(--accent); font-weight: 500; }
+  .footer {
+    padding: 40px 0; text-align: center;
+    color: var(--text-muted); font-size: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    border-top: 1px solid var(--border);
+  }
+  .footer .accent { color: var(--accent); }
+  .tab-nav {
+    display: flex;
+    gap: 0;
+    border-bottom: 2px solid var(--border);
+    margin-top: 8px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--bg);
+  }
+  .tab-btn {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+    padding: 16px 20px;
+    background: none; border: none;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+    white-space: nowrap;
+  }
+  .tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .tab-btn:hover:not(.active) { color: var(--text-dim); }
+  .tab-pane { display: none; }
+  .tab-pane.active { display: block; }
+  .tab-empty {
+    padding: 80px 0; text-align: center;
+    color: var(--text-muted);
+    font-family: 'JetBrains Mono', monospace; font-size: 13px;
+  }
+  .tab-empty .empty-icon { font-size: 36px; margin-bottom: 16px; opacity: 0.3; }
+  .tab-empty p { line-height: 2; }
+  .tab-empty .coming { color: var(--accent); }
+  @media (max-width: 600px) {
+    .header h1 { font-size: 30px; }
+    .news-title { font-size: 19px; }
+    .container { padding: 0 16px; }
+    .header { padding: 40px 0 30px; }
+    .tab-btn { font-size: 10px; padding: 14px 14px; letter-spacing: 1px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <div class="header-top">
+      <div class="logo-mark">AI</div>
+      <span class="brand-name">Daily Briefing</span>
+    </div>
+    <h1 id="main-title">오늘의 AI, 3분 안에 끝내기</h1>
+    <div class="date-line">
+      <span class="dot"></span>
+      <span>2026.11.05 (목) — 바쁜 당신을 위한 AI 핵심 브리핑</span>
+    </div>
+  </header>
+
+  <nav class="tab-nav">
+    <button class="tab-btn active" onclick="switchTab(this,'tab-ai')">오늘의 AI 브리핑</button>
+    <button class="tab-btn" onclick="switchTab(this,'tab-it')">국내 IT 회사 동향</button>
+  </nav>
+
+  <div id="tab-ai" class="tab-pane active">
+  <div class="tldr">
+    <div class="tldr-label">오늘의 한 줄</div>
+    <p>AI 보안 위협 'LLM재킹'이 하루 1억원 피해를 내는 사이, 미국 데이터센터는 선거에서 졌고 AI 에이전트는 아직 우버 4건밖에 못 잡았다.</p>
+  </div>
+
+  
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <span class="section-tag tag-insight">글로벌 이슈</span>
+    </div>
+    <h3 class="news-title">하루 1억원 AI 요금 폭탄 'LLM재킹' — 구글·맨디언트 긴급 경고</h3>
+    <p class="news-body">구글과 맨디언트가 <strong>LLM재킹(LLMjacking)</strong> 공격에 대한 공동 경고를 발령했다. 해커들이 기업의 클라우드 AI 접근 자격증명을 탈취한 뒤 직접 사용하거나 다크웹에서 되팔아, 피해 기업에 <strong>하루 최대 10만 달러(약 1억 3천만원) 이상</strong>의 클라우드 AI 사용 요금을 떠넘기는 수법이다. 한 사례에서는 단일 기업이 <strong>100만 달러(약 13억원)</strong> 규모의 피해를 입은 것으로 확인됐다.
+
+공격 경로로는 오픈소스 LLM 관리 도구의 취약점이 주로 활용되며, 국내 보안뉴스는 'Claude Code(클로드 코드)' 등 AI 개발 도구도 악성코드 유입 경로로 의심된다고 보도했다. 기업이 AI 인프라를 빠르게 도입하는 속도에 비해 보안 관리 체계가 따라가지 못하면서 이 같은 공격이 급증하고 있다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>LLM재킹은 기업이 AI를 도입할수록 새로운 공격 표면이 늘어난다는 것을 보여주는 사례다. 클라우드 AI API 키 관리, 접근 권한 최소화, 비정상 사용량 모니터링이 AI 운영의 필수 보안 항목으로 부상하고 있으며, AI 보안 솔루션 시장이 본격적으로 형성될 전망이다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[리스크]</span>
+      </div>
+      <p>이수시스템이 운영 중인 RAG 기반 챗봇·AI 플랫폼은 외부 LLM API(OpenAI, Claude 등)를 연동하는 구조가 많다. 고객사 납품 시 API 키 관리 정책, 사용량 이상 탐지 알림 등 보안 가이드라인을 제품 체크리스트에 반영할 필요가 있으며, 이를 차별화 포인트로 영업에 활용할 수 있다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTFA1dEFiNl82R3BySWNhVHp6akRjODhBbkFvOHpjcHQxRzdidjNSdEp4UWxkcEhXWlcwMlQ2Vnk2LUowdVBBdVVyNXZpVjJzMnRXMWZib0JOd0daVzZQVE45Y3FDWEdyTTRYMklRZw?oc=5" target="_blank" rel="noopener noreferrer">출처: IT비즈뉴스 / 한국클라우드신문 / 뉴시스 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <span class="section-tag tag-industry">산업 동향</span>
+    </div>
+    <h3 class="news-title">AI 에이전트, 우버 4건 잡았다 — '과장된 혁명'에 현실 성적표</h3>
+    <p class="news-body">우버가 2026년 3분기 실적 발표에서 충격적인 수치를 공개했다. 외부 AI 에이전트가 중개한 우버 라이드는 분기 전체에서 <strong>단 4건</strong>, 우버이츠 주문도 <strong>약 500건</strong>에 그쳤다. AI 에이전트가 여행·음식 예약 등 반복 업무를 자동 처리할 것이라는 기대와 달리, 실제 상용 트랜잭션에서의 비중은 아직 미미한 수준이다.
+
+이는 AI 에이전트 기술의 완성도보다 <strong>실제 사용자 신뢰와 결제 연동, 에러 복구</strong> 같은 현실적 장벽이 더 크다는 점을 시사한다. AI 에이전트 시장이 과열된 기대 속에 있지만, 엔터프라이즈 현장에서의 실제 도입 속도는 훨씬 완만하다는 것을 보여주는 데이터다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>AI 에이전트를 둘러싼 투자·마케팅 열풍과 실제 현장 도입 속도 사이의 간극이 데이터로 확인됐다. 기업들이 AI 에이전트를 도입할 때 기술 완성도보다 프로세스 적합성과 신뢰성 검증에 더 긴 시간이 필요하다는 점에서, 에이전트 기반 자동화 솔루션의 ROI를 명확히 제시할 수 있는 벤더가 경쟁에서 유리해질 전망이다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">디지털서비스 사업</span>
+        <span class="isu-opp-tag">[모니터링]</span>
+      </div>
+      <p>이수시스템의 RPA 사업은 AI 에이전트가 대체하기 어려운 '정형화된 반복 업무 자동화' 영역에서 여전히 경쟁력을 가진다. 우버 사례처럼 AI 에이전트의 현실 성과가 낮다는 점은, 고객사에 RPA의 안정성과 즉시 도입 가능성을 강조하는 영업 논거로 활용할 수 있다.</p>
+    </div>
+    <div class="source-link"><a href="https://www.theverge.com/transportation/1026306/uber-ai-agents-q3-earnings-disintermediation" target="_blank" rel="noopener noreferrer">출처: The Verge →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <span class="section-tag tag-insight">글로벌 이슈</span>
+    </div>
+    <h3 class="news-title">미국 중간선거, 데이터센터 확장에 제동 — AI 인프라 전쟁 새 변수</h3>
+    <p class="news-body">2026년 미국 중간선거 결과, 데이터센터 건설 모라토리엄을 지지하는 후보들이 대거 당선됐다. NBC 뉴스 출구조사에서 유권자의 <strong>76%</strong>가 AI 데이터센터 무제한 확장에 반대 의사를 표명했으며, 주요 경합 지역에서 데이터센터 규제 강화를 공약한 후보들이 승리했다.
+
+전력 소비, 소음, 지역 환경 훼손에 대한 주민 반발이 정치적 압력으로 전환된 것으로, <strong>AI 인프라 확장의 사회적 수용성</strong> 문제가 본격화되고 있다. 빅테크 기업들은 데이터센터 건설 계획을 재검토해야 할 상황에 놓였으며, AI 연산 용량 확보 경쟁에도 직접적인 영향이 예상된다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>AI 인프라 확장이 단순한 자본 투자 문제가 아니라 지역 정치·환경 규제와 맞닿은 사회적 의제로 부상했다. 데이터센터 입지 선정, 재생에너지 연계, 지역사회와의 협력 모델이 AI 기업의 중요한 리스크 관리 요소가 될 것이며, 클라우드 서비스 공급 안정성에도 중장기적 영향을 미칠 수 있다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">클라우드 사업</span>
+        <span class="isu-opp-tag">[모니터링]</span>
+      </div>
+      <p>이수시스템이 파트너인 네이버 클라우드(NCP)를 포함한 국내외 클라우드 인프라 공급망의 용량 계획에 간접적 영향이 생길 수 있다. 고객사의 클라우드 마이그레이션 컨설팅 시 멀티클라우드·국내 데이터센터 활용 전략을 강조하는 것이 차별화 포인트가 될 수 있다.</p>
+    </div>
+    <div class="source-link"><a href="https://www.theverge.com/policy/1026365/data-centers-midterms-results" target="_blank" rel="noopener noreferrer">출처: The Verge →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <span class="section-tag tag-product">제품 업데이트</span>
+    </div>
+    <h3 class="news-title">ChatGPT, 이제 움직이는 GIF도 만든다 — Images 2.6 모델 탑재</h3>
+    <p class="news-body">OpenAI가 새로운 이미지 생성 모델 <strong>Images 2.6</strong>을 출시하며, ChatGPT에서 GIF 애니메이션을 직접 생성할 수 있는 기능을 선보였다. 사용자는 텍스트 프롬프트 또는 업로드한 사진을 기반으로 GIF를 만들고, 애니메이션 속도 조절, 개별 프레임 편집, 공유까지 한 번에 처리할 수 있다.
+
+이전까지 ChatGPT는 정지 이미지만 생성 가능했으나, 이번 업데이트로 <strong>동적 콘텐츠 제작</strong> 영역으로 확장했다. 마케팅·SNS 콘텐츠 제작, 프레젠테이션 자료 등 실무 활용 범위가 넓어지면서, 별도 디자인 툴 없이도 간단한 모션 그래픽을 만들 수 있게 됐다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>텍스트→이미지를 넘어 텍스트→영상·애니메이션으로 AI 생성 콘텐츠의 범위가 빠르게 확장되고 있다. 콘텐츠 제작 도구로서 ChatGPT의 경쟁력이 강화되면서, 전문 디자인 소프트웨어와의 경계가 더욱 흐려질 전망이다. 기업 내 콘텐츠 제작 인력 구성과 외주 비용 구조에 변화가 예상된다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[모니터링]</span>
+      </div>
+      <p>이수시스템 AI 사업 내 챗봇·HR AI 패키지에 이미지·GIF 생성 기능을 연동하는 수요가 중장기적으로 생길 수 있다. 단기적으로는 사내 교육자료나 HR 공지 콘텐츠 제작 자동화에 ChatGPT Images 2.6을 활용하는 방식으로 고객사 워크숍 시연 소재로 쓸 수 있다.</p>
+    </div>
+    <div class="source-link"><a href="https://www.theverge.com/ai-artificial-intelligence/1026474/openai-chatgpt-animated-gifs-images-2-6" target="_blank" rel="noopener noreferrer">출처: The Verge →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">05</span>
+      <span class="section-tag tag-industry">산업 동향</span>
+    </div>
+    <h3 class="news-title">우리은행, AI로 해외송금 서류 자동 판독 — 금융권 AI 실무 도입 가속</h3>
+    <p class="news-body">우리은행이 해외송금 업무에 AI를 적용해 <strong>서류 자동 판독 및 지급사유코드 자동 추천</strong> 시스템을 도입했다. 기존에는 담당자가 수기로 서류를 확인하고 외환 규정에 맞는 코드를 직접 입력했으나, AI가 서류를 읽고 적합한 코드를 추천함으로써 처리 시간과 오류를 대폭 줄였다.
+
+이번 사례는 단순 챗봇 수준을 넘어 <strong>규정 준수(컴플라이언스) 업무에 AI를 직접 적용</strong>한 사례로, 국내 금융권의 AI 실무 활용이 고도화되고 있음을 보여준다. 금융사들이 반복적이고 규칙 기반의 백오피스 업무에 AI를 빠르게 접목하는 추세가 뚜렷해지고 있다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>금융권 AI 도입이 대고객 서비스 챗봇에서 내부 컴플라이언스·백오피스 자동화로 확대되고 있다. 규정 기반 문서 처리, 코드 추천 등 반복 판단 업무에 AI를 적용하는 사례가 늘어날수록, 도메인 특화 AI 솔루션의 수요도 함께 증가할 전망이다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[영업 기회]</span>
+      </div>
+      <p>우리은행 사례는 이수시스템의 RAG 기반 챗봇과 AI 플랫폼이 금융·공공 고객사의 백오피스 자동화 수요에 대응할 수 있음을 보여주는 레퍼런스 모델이다. 특히 HR AI 패키지의 'AI 이력서 분석' 기능처럼, 규칙 기반 판단이 필요한 인사 서류 검토·승인 프로세스에도 유사한 자동화 모듈을 개발해 금융·제조 고객사에 제안하는 영업 시나리오를 검토할 만하다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE1fZGZ2aFR2Um94UWJtalVrbzlueTZvS1A0YmhLX09tNnVyaGNiWEFkMFM0NzE4UTJiako3VVVQSDJuWWh1YnVYRDEwd29XSk96Nk0yVkZwdUZueFJFT0I5ZVZvS19ta2VkR3c2NDJqYw?oc=5" target="_blank" rel="noopener noreferrer">출처: 뉴스퀘스트 →</a></div>
+  </section>
+  
+  <div class="isu-section">
+    <h2>이수시스템 인사이트</h2>
+    <p>오늘 뉴스의 핵심은 AI 도입 가속화와 함께 부상하는 보안 리스크(LLM재킹)와 현실적 도입 속도 간의 간극이다. 이수시스템은 RAG 챗봇·AI 플랫폼 납품 시 API 보안 가이드라인을 차별화 포인트로 내세울 수 있으며, 우리은행형 백오피스 AI 자동화 수요가 확산되는 흐름에서 기존 HR·ERP 고객사(금융·제조·건설)를 대상으로 한 AI 모듈 추가 제안 기회를 선제적으로 발굴해야 한다. AI 에이전트의 현실 성과가 낮다는 데이터는 RPA 사업의 단기 경쟁력을 오히려 뒷받침하는 근거가 된다.</p>
+  </div>
+
+  <div class="bottom-line">
+    <h2>오늘의 핵심 테이크어웨이</h2>
+    <ul class="action-list">
+      <li><strong>LLM재킹</strong>이 하루 최대 1억원 이상의 클라우드 요금 피해를 낳고 있다 — AI 도입 기업이라면 API 키 보안 점검이 지금 당장 해야 할 일이다.</li>
+      <li>AI 에이전트가 우버 라이드 4건에 그쳤다는 데이터는, <strong>에이전트 혁명의 과장된 타임라인</strong>에 현실적 브레이크를 걸어준다. 지금 당장의 자동화는 여전히 RPA·특화 AI가 더 현실적이다.</li>
+      <li>미국 유권자 76%가 데이터센터 무제한 확장에 반대 — <strong>AI 인프라 전쟁은 이제 기술·자본 경쟁을 넘어 사회적 수용성 싸움</strong>으로 번졌다.</li>
+    </ul>
+  </div>
+  </div><!-- /tab-ai -->
+
+  <div id="tab-it" class="tab-pane">
+  <div class="tldr">
+    <div class="tldr-label">오늘의 한 줄</div>
+    <p>크레센도 4호 펀드 1차 클로징·글랜우드PE 1.8조 카리플렉스 인수 등 PE발 대형 딜이 국내 투자·M&A 시장을 견인한 하루</p>
+  </div>
+
+  
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <span class="section-tag tag-model">투자·펀딩</span>
+    </div>
+    <h3 class="news-title">크레센도, 해외서만 3.5억 달러 확보…'10억 달러 목표' 4호 블라인드펀드 1차 클로징</h3>
+    <p class="news-body">국내 사모펀드(PE) 운용사 <strong>크레센도에쿼티파트너스</strong>가 4호 블라인드펀드의 1차 클로징을 완료했다. 해외 LP(기관투자자)로부터만 <strong>3.5억 달러(약 4,900억 원)</strong>를 확보했으며, 최종 목표 규모는 <strong>10억 달러(약 1조 4,000억 원)</strong>로 국내 중견 PE 운용사 기준으로는 이례적인 대형 펀드다. 2차 클로징을 통해 추가 자금을 모집할 예정이며, 국내외 테크·소비재 기업 M&A를 주요 투자 대상으로 삼고 있다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>해외 LP가 국내 PE 펀드에 대거 참여했다는 점은 한국 PE 시장의 글로벌 신뢰도 상승을 방증한다. 10억 달러 규모 블라인드펀드 완성 시 국내 테크·소비재 섹터의 대형 M&A 딜 증가가 예상되며, 경쟁 PE들의 펀드레이징 압박도 높아질 전망이다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE9qUHpDNndEOUwxT0kxQW9uWnpQMDI4dW5FT255Sm1aZ2NOeXBuQUNndEpocUo0LXVGaU9RUW9ORWpVRUpubF9ieXNlZnJ6Vm5wbXfSAVNBVV95cUxNWU5iZnVfQVBXcUpvTGpYaE5oeTNKeUtpQUZnRkhPMUFETHpvZjFjc2oyeVBXRU9XWEVVMUhvMUlHUm85aVdwdnJmdDhzMmJ6RW0xNA?oc=5" target="_blank" rel="noopener noreferrer">출처: 서울경제·이투데이·Chosunbiz →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <span class="section-tag tag-industry">M&A·인수합병</span>
+    </div>
+    <h3 class="news-title">글랜우드PE, 카리플렉스 1.8조 원에 인수…국내 PE 대형 바이아웃 거래 성사</h3>
+    <p class="news-body">국내 사모펀드 <strong>글랜우드프라이빗에쿼티</strong>가 특수 합성고무 소재 기업 <strong>카리플렉스</strong>를 약 <strong>1조 8,000억 원</strong>에 인수하는 딜을 성사시켰다. 카리플렉스는 의료·산업용 고성능 고무 소재를 주력으로 하는 글로벌 기업으로, 글랜우드PE의 역대 최대 규모 단일 거래로 알려졌다. 인수 후 사업 고도화 및 아시아 시장 확장을 통한 밸류업 전략을 추진할 계획이다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>1.8조 원 규모의 바이아웃은 국내 PE 시장에서 손에 꼽히는 대형 거래다. 고성능 소재 분야에 대한 PE의 관심이 높아지는 가운데, 소재·부품 섹터가 새로운 PE 투자 격전지로 부상하고 있음을 보여준다. 향후 IPO 또는 전략적 매각을 통한 수익 실현 여부가 주목된다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE5YWC02WVVxbGZrTkhHLU1FbDBrX1Y1VDVZVjBnMzlkTVBFQXNBVkhrN3RRV0ZPSzVWSG1iNENBQlVGOXBQQmViUGJ6XzgxSXE1SU1v0gFTQVVfeXFMTlhYLTZZVXFsZmtOSEctTUVsMGtfVjVUNVlWMGczOWRNUEVBc0FWSGs3dFFXRk9LNVZIbWI0Q0FCVUY5cFBCZWJQYnpfODFJcTVJTW8?oc=5" target="_blank" rel="noopener noreferrer">출처: 서울경제 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <span class="section-tag tag-industry">M&A·인수합병</span>
+    </div>
+    <h3 class="news-title">론자, 머크 미국 CDMO 사업 전격 인수…삼성바이오로직스와 정면 경쟁 격화</h3>
+    <p class="news-body">글로벌 위탁개발생산(CDMO) 1위 기업 <strong>론자(Lonza)</strong>가 제약 대기업 <strong>머크(Merck)</strong>의 미국 CDMO 사업부를 인수한다고 밝혔다. 거래 규모와 세부 조건은 공개되지 않았으나, 론자는 이번 인수로 미국 내 생산 거점을 대폭 확대하게 된다. 이는 <strong>삼성바이오로직스</strong>가 공격적으로 미국 시장 진출을 추진하는 시점과 겹쳐, 글로벌 CDMO 패권 경쟁이 한층 치열해질 것으로 전망된다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>론자의 머크 CDMO 사업 인수는 삼성바이오로직스의 미국 현지화 전략에 직접적인 위협이다. 글로벌 빅파마들이 위탁 생산 파트너를 선별하는 과정에서 론자의 미국 내 입지 강화는 삼성바이오의 수주 경쟁력에 압박 요인으로 작용할 수 있으며, 국내 바이오 CDMO 업계 전반의 전략 재점검이 필요한 시점이다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE5zTjYzb0hTUkpWZXZCMHNhNWhEdmgycTM3YWdQOHZYR21mZFpoRV8yNHhJNEJwYnNWVVpTaEY1a1AxalBWLTJPNzd4UVUyOWFkVjk2VjRZalZpdVVSTDJxVNIBYEFVX3lxTE5zTjYzb0hTUkpWZXZCMHNhNWhEdmgycTM3YWdQOHZYR21mZFpoRV8yNHhJNEJwYnNWVVpTaEY1a1AxalBWLTJPNzd4UVUyOWFkVjk2VjRZalZpdVVSTDJxVA?oc=5" target="_blank" rel="noopener noreferrer">출처: 연합뉴스 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <span class="section-tag tag-society">경영·인사</span>
+    </div>
+    <h3 class="news-title">HP, 새 CEO에 에마 웜즐리 전 GSK 대표 선임…주가 6% 급등으로 시장 환호</h3>
+    <p class="news-body">글로벌 IT 기업 <strong>HP</strong>가 새 최고경영자(CEO)로 전 글락소스미스클라인(GSK) 대표 <strong>에마 웜즐리</strong>를 선임했다. 웜즐리는 소비재·제약 업계에서 쌓은 글로벌 경영 경험을 바탕으로 HP의 PC·프린팅 사업 재편을 이끌 예정이다. 선임 발표 직후 HP 주가는 <strong>6% 급등</strong>하며 시장의 긍정적 반응을 이끌었다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>IT 하드웨어 대기업이 이종 산업 출신 CEO를 영입한 것은 단순 기술 혁신을 넘어 사업 포트폴리오 다각화와 소비자 경험 중심 전략 전환을 예고하는 신호로 읽힌다. 국내 PC·프린터 시장에서 HP와 경쟁하는 삼성전자, LG전자 등도 HP의 전략 변화를 예의주시해야 할 상황이다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTFBqZ2VLMkRxZ0xidXlJX0pacURCOERIUXhJZnNOS1NDT0x6R3g1alhmd2N5a1NCbXlNRVNKWGhmdWx3VGpaZGxHcmdaWjhWREw2Skw5Z1JJSG5SYUx4Yk95d9IBYEFVX3lxTFBqZ2VLMkRxZ0xidXlJX0pacURCOERIUXhJZnNOS1NDT0x6R3g1alhmd2N5a1NCbXlNRVNKWGhmdWx3VGpaZGxHcmdaWjhWREw2Skw5Z1JJSG5SYUx4Yk95dw?oc=5" target="_blank" rel="noopener noreferrer">출처: 연합뉴스 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">05</span>
+      <span class="section-tag tag-product">시장 동향</span>
+    </div>
+    <h3 class="news-title">미 민주당 의회 장악…AI 규제 강화 현실화에 데이터센터·빅테크 희비 교차</h3>
+    <p class="news-body">미국 중간선거에서 <strong>민주당이 의회를 장악</strong>하면서 AI 규제 강화 법안 추진에 탄력이 붙을 전망이다. 데이터 프라이버시, AI 안전성, 빅테크 반독점 규제 등이 주요 의제로 부상하고 있으며, <strong>구글·메타·오픈AI</strong> 등 주요 AI 기업에 대한 규제 리스크가 커졌다. 반면 국내 데이터센터·AI 인프라 기업들은 미국의 규제 불확실성을 반사이익의 기회로 활용할 수 있다는 분석도 나온다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>미국의 AI 규제 강화는 국내 AI·클라우드 기업들에게 양면의 칼이다. 글로벌 빅테크와 협력 중인 국내 기업은 규제 여파를 간접적으로 받을 수 있는 반면, 독자적 AI 인프라를 구축 중인 네이버·카카오·KT 등은 차별화 기회를 모색할 수 있다. 국내 AI 거버넌스 논의도 미국의 움직임에 연동될 가능성이 높다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE9QbDBSNUljVUJ5T21IZ2M4MzdDX3VYVUd0UWpqR1pPY2I1b0lhYVFHczJVYzkzTGdwSnF6d2RTc2dycDI2UTJtdjNWSWdVd1h1bzhiZ2pkdmhxSENZdVJFWTJVdEQ5NXFpVzdHMGM0aFo1R1R2dGN1WUoyNA?oc=5" target="_blank" rel="noopener noreferrer">출처: 이데일리TV →</a></div>
+  </section>
+
+  <div class="bottom-line">
+    <h2>오늘의 핵심 테이크어웨이</h2>
+    <ul class="action-list">
+      <li><strong>크레센도 4호 펀드(목표 10억 달러)·글랜우드PE 1.8조 카리플렉스 인수</strong> 등 국내 PE발 대형 딜이 잇따르며 한국 사모펀드 시장의 글로벌 존재감이 커지고 있다.</li>
+      <li><strong>론자의 머크 CDMO 사업 인수</strong>로 글로벌 위탁생산 경쟁이 격화되면서 삼성바이오로직스의 미국 시장 전략에 새로운 변수가 등장했다.</li>
+      <li>미 민주당의 의회 장악으로 <strong>AI 규제 강화</strong>가 가시화되는 가운데, 국내 AI·데이터센터 기업들은 글로벌 규제 리스크를 역이용한 차별화 전략 수립이 시급하다.</li>
+    </ul>
+  </div>
+  </div><!-- /tab-it -->
+
+  <footer class="footer">
+    <p>AI Daily Briefing — <span class="accent">바쁜 사람을 위한 3분 AI 뉴스</span></p>
+    <p style="margin-top: 8px;">2026.11.05 (목) | 매일 아침 업데이트</p>
+    <p style="margin-top: 8px;">© keyboard@kakao.com</p>
+  </footer>
+</div>
+<audio src="ai_briefing_2026_11_05.mp3" controls style="position:fixed;bottom:20px;right:20px;z-index:100;width:260px;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.5);"></audio>
+<script>
+  const TAB_TITLES = {
+    'tab-ai': '오늘의 AI, 3분 안에 끝내기',
+    'tab-it': '국내 IT 회사 동향'
+  };
+  function switchTab(btn, id) {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(id).classList.add('active');
+    document.getElementById('main-title').textContent = TAB_TITLES[id];
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const audio = document.querySelector('audio');
+    if (audio) {
+      if (id === 'tab-it') {
+        audio.pause();
+        audio.style.display = 'none';
+      } else {
+        audio.style.display = '';
+      }
+    }
+  }
+</script>
+</body>
+</html>
