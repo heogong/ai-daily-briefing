@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Daily Briefing — 2026.11.08 (일)</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:title" content="AI Daily Briefing — 2026.11.08 (일)">
+<meta property="og:description" content="바쁜 사람을 위한 3분 AI 뉴스">
+<meta property="og:image" content="og-image.png">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #12121a;
+    --surface-2: #1a1a26;
+    --accent: #00e5a0;
+    --accent-dim: rgba(0,229,160,0.12);
+    --accent-glow: rgba(0,229,160,0.25);
+    --text: #e8e8ed;
+    --text-dim: #8888a0;
+    --text-muted: #555568;
+    --orange: #ff8844;
+    --blue: #4488ff;
+    --pink: #ff4488;
+    --yellow: #ffcc00;
+    --border: rgba(255,255,255,0.06);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    min-height: 100vh;
+    padding-bottom: 0;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+  .header {
+    padding: 60px 0 40px;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: -100px; right: -100px;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+    pointer-events: none;
+    animation: pulse 4s ease-in-out infinite;
+  }
+  @keyframes pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.6; } }
+  .header-top { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+  .logo-mark {
+    width: 36px; height: 36px;
+    background: var(--accent);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500; font-size: 14px; color: var(--bg);
+  }
+  .brand-name {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; font-weight: 500;
+    color: var(--text-dim);
+    letter-spacing: 2px; text-transform: uppercase;
+  }
+  .header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px; font-weight: 900; line-height: 1.15;
+    margin-bottom: 12px;
+    background: linear-gradient(135deg, var(--text) 0%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .date-line {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; color: var(--text-muted);
+    display: flex; align-items: center; gap: 12px;
+  }
+  .date-line .dot {
+    width: 6px; height: 6px;
+    background: var(--accent); border-radius: 50%;
+    animation: blink 2s ease-in-out infinite;
+  }
+  @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+  .tldr { padding: 32px 0; border-bottom: 1px solid var(--border); }
+  .tldr-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; color: var(--accent);
+    letter-spacing: 3px; text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .tldr p { font-size: 17px; font-weight: 500; line-height: 1.8; }
+  .section { padding: 40px 0; border-bottom: 1px solid var(--border); }
+  .section:last-child { border-bottom: none; }
+  .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+  .section-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px; font-weight: 900; color: var(--accent); line-height: 1;
+  }
+  .section-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+    padding: 4px 10px; border-radius: 4px; font-weight: 500;
+  }
+  .tag-model { background: rgba(68,136,255,0.15); color: var(--blue); }
+  .tag-product { background: rgba(0,229,160,0.12); color: var(--accent); }
+  .tag-society { background: rgba(255,68,136,0.15); color: var(--pink); }
+  .tag-industry { background: rgba(255,136,68,0.15); color: var(--orange); }
+  .tag-insight { background: rgba(255,204,0,0.15); color: var(--yellow); }
+  .news-title { font-size: 22px; font-weight: 700; line-height: 1.4; margin-bottom: 16px; }
+  .news-body {
+    font-size: 15px; line-height: 1.85; margin-bottom: 16px; font-weight: 300;
+    overflow-wrap: break-word; word-break: break-word;
+  }
+  .news-body strong { color: var(--accent); font-weight: 500; }
+  .insight-box {
+    background: var(--surface-2);
+    border-left: 3px solid var(--accent);
+    padding: 16px 20px; border-radius: 0 8px 8px 0; margin-top: 16px;
+  }
+  .insight-box .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; color: var(--accent);
+    letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;
+  }
+  .insight-box p { font-size: 14px; line-height: 1.75; font-weight: 400; }
+  .isu-box {
+    background: rgba(255,136,68,0.08);
+    border-left: 3px solid var(--orange);
+    padding: 10px 14px; border-radius: 0 6px 6px 0; margin-top: 12px;
+  }
+  .isu-box .isu-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; color: var(--orange);
+    letter-spacing: 2px; text-transform: uppercase; margin-bottom: 6px;
+  }
+  .isu-area-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; padding: 2px 8px; border-radius: 3px;
+    background: rgba(255,136,68,0.15); color: var(--orange);
+    margin-right: 6px;
+  }
+  .isu-opp-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; padding: 2px 8px; border-radius: 3px;
+    background: rgba(255,204,0,0.15); color: var(--yellow);
+  }
+  .source-link { margin-top: 10px; text-align: right; }
+  .source-link a { font-size: 12px; color: var(--text-muted); text-decoration: none; }
+  .source-link a:hover { color: var(--text-dim); }
+  .isu-section {
+    padding: 40px 0; border-top: 2px solid var(--orange); margin-top: 20px;
+  }
+  .isu-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; font-weight: 700; margin-bottom: 16px; color: var(--orange);
+  }
+  .isu-section p { font-size: 15px; line-height: 1.85; font-weight: 300; }
+  .bottom-line {
+    padding: 40px 0; border-top: 2px solid var(--accent); margin-top: 20px;
+  }
+  .bottom-line h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; font-weight: 700; margin-bottom: 20px; color: var(--accent);
+  }
+  .bottom-line p { font-size: 15px; line-height: 1.85; font-weight: 300; margin-bottom: 12px; }
+  .action-list { list-style: none; margin-top: 20px; }
+  .action-list li {
+    position: relative; padding: 10px 0 10px 24px;
+    font-size: 14px; font-weight: 400; line-height: 1.7;
+  }
+  .action-list li::before {
+    content: '→'; position: absolute; left: 0;
+    color: var(--accent); font-family: 'JetBrains Mono', monospace; font-weight: 500;
+  }
+  .action-list li strong { color: var(--accent); font-weight: 500; }
+  .footer {
+    padding: 40px 0; text-align: center;
+    color: var(--text-muted); font-size: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    border-top: 1px solid var(--border);
+  }
+  .footer .accent { color: var(--accent); }
+  .tab-nav {
+    display: flex;
+    gap: 0;
+    border-bottom: 2px solid var(--border);
+    margin-top: 8px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--bg);
+  }
+  .tab-btn {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+    padding: 16px 20px;
+    background: none; border: none;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+    white-space: nowrap;
+  }
+  .tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .tab-btn:hover:not(.active) { color: var(--text-dim); }
+  .tab-pane { display: none; }
+  .tab-pane.active { display: block; }
+  .tab-empty {
+    padding: 80px 0; text-align: center;
+    color: var(--text-muted);
+    font-family: 'JetBrains Mono', monospace; font-size: 13px;
+  }
+  .tab-empty .empty-icon { font-size: 36px; margin-bottom: 16px; opacity: 0.3; }
+  .tab-empty p { line-height: 2; }
+  .tab-empty .coming { color: var(--accent); }
+  @media (max-width: 600px) {
+    .header h1 { font-size: 30px; }
+    .news-title { font-size: 19px; }
+    .container { padding: 0 16px; }
+    .header { padding: 40px 0 30px; }
+    .tab-btn { font-size: 10px; padding: 14px 14px; letter-spacing: 1px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <div class="header-top">
+      <div class="logo-mark">AI</div>
+      <span class="brand-name">Daily Briefing</span>
+    </div>
+    <h1 id="main-title">오늘의 AI, 3분 안에 끝내기</h1>
+    <div class="date-line">
+      <span class="dot"></span>
+      <span>2026.11.08 (일) — 바쁜 당신을 위한 AI 핵심 브리핑</span>
+    </div>
+  </header>
+
+  <nav class="tab-nav">
+    <button class="tab-btn active" onclick="switchTab(this,'tab-ai')">오늘의 AI 브리핑</button>
+    <button class="tab-btn" onclick="switchTab(this,'tab-it')">국내 IT 회사 동향</button>
+  </nav>
+
+  <div id="tab-ai" class="tab-pane active">
+  <div class="tldr">
+    <div class="tldr-label">오늘의 한 줄</div>
+    <p>AI가 AI 연구 속도를 2배로 끌어올리는 시대, Anthropic IPO 기대감과 함께 기업 AI 채택률 79% 돌파</p>
+  </div>
+
+  
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <span class="section-tag tag-industry">산업 동향</span>
+    </div>
+    <h3 class="news-title">AI가 AI를 만든다: Anthropic 연구 속도 1년 만에 2배 빨라져</h3>
+    <p class="news-body">AI 안전 연구기관 METR이 11주간 조사 끝에 발표한 보고서에 따르면, Anthropic이 AI를 활용해 더 강력한 AI를 개발하는 이른바 '자동화된 AI 연구' 방식이 실질적인 성과를 내고 있다. 모델 개선 속도가 <strong>1년 전 대비 약 2배</strong> 빨라졌으며, 속도 둔화 조짐도 보이지 않는다고 한다. 이 보고서는 AI 연구자들 사이에서 경보 수준의 우려를 낳고 있다. AI가 스스로 연구 사이클을 가속화한다는 것은 인간의 개입·검토 속도가 기술 발전 속도를 따라가지 못할 수 있음을 의미하며, <strong>AI 안전성과 거버넌스</strong> 논의에 새로운 긴장감을 더하고 있다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>AI가 AI 연구를 자동화하는 'recursive self-improvement'에 가까운 흐름이 실제 산업 현장에서 가시화되고 있다. 기술 발전 주기가 인간의 검토·규제 속도를 앞지를 경우, 기업들은 도입한 AI 솔루션의 안전성·신뢰성 검증 체계를 별도로 마련해야 할 필요성이 커진다. 이는 AI 감사(audit)·거버넌스 솔루션 시장의 성장을 예고한다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[모니터링]</span>
+      </div>
+      <p>AI 자동화 연구 가속 흐름은 이수시스템의 RAG 기반 챗봇 및 HR AI Package에 활용되는 외부 LLM 모델의 성능이 단기간 내 급격히 향상될 수 있음을 의미한다. 단, 모델 버전 교체 주기가 빨라짐에 따라 고객사에 납품한 AI 솔루션의 호환성·안정성 점검 주기도 함께 단축해야 한다. 특히 금융·공공 고객군은 검증되지 않은 모델 업데이트에 민감하므로, 버전 고정 및 테스트 프로세스를 사전에 계약 조건으로 명문화하는 영업 전략이 필요하다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxNT2VaT3JlanFPVEllN1FBb3U1VGhYOXZITGxRTnExNG5XSnczeTRLeUJZY3I3UkFsSXZZOW00WDh6eE5UOEQ5REFFajdGUnFreFVKVVVKeWo2Tks4Z3JraURmTk9CcEo0V1pNdkxDdVFBZHRxUEtOclJ2LTRUd29Ud1lKaFR6MkVKLWZ3?oc=5" target="_blank" rel="noopener noreferrer">출처: Pasquale Pillitteri / The Verge →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <span class="section-tag tag-industry">산업 동향</span>
+    </div>
+    <h3 class="news-title">기업 AI 채택률 79% 돌파…그런데 왜 토큰 비용은 오히려 내려가나</h3>
+    <p class="news-body">2026년 기준 기업의 GenAI·LLM 도입률이 <strong>79%</strong> 에 달한다는 조사 결과가 나왔다(Supply & Demand Chain Executive). 반면 Ramp의 지출 데이터를 분석한 별도 보고서는 AI 사용량은 급증했음에도 불구하고 기업들의 AI 관련 지출은 비례해서 늘지 않는다는 역설적 현상을 포착했다. 이는 모델 경쟁 심화로 인해 <strong>토큰 단가가 급락</strong>, AI가 사실상 '범용 인프라(commodity)'로 전환되고 있음을 보여준다. AI 도입이 더 이상 차별화 요소가 아닌 '기본값'이 되는 시대가 가까워졌다는 신호다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>AI 도입률 79%는 조기 다수 채택(early majority) 단계가 종료되고 후기 다수(late majority) 채택이 본격화되는 변곡점이다. 토큰 단가 하락은 AI 도입 비용 장벽을 낮추지만, 동시에 AI 서비스 자체의 마진도 줄어든다는 의미다. 살아남으려면 AI 기술 자체보다 특정 도메인·업무에 얼마나 깊이 통합되어 있느냐가 경쟁력이 된다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[핵심 기회]</span>
+      </div>
+      <p>AI 도입률 79%는 이수시스템의 주요 고객군인 제조·건설·금융 기업들이 이제 'AI 솔루션 도입 여부'가 아닌 '어느 벤더의 솔루션을 고를 것인가'를 결정하는 단계에 접어들었음을 뜻한다. 토큰 단가 하락으로 RAG 챗봇·HR AI Package의 운영 비용이 낮아지는 만큼, WORKUP·Smart HR 고객사를 대상으로 AI 기능 번들 제안(업셀링)을 적극적으로 추진할 적기다. 특히 HR 도메인 특화 데이터와 500개 이상의 레퍼런스를 강점으로 내세운 패키지 제안이 범용 AI 대비 차별화 포인트가 될 수 있다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxPaGI3ZkVKWUJpcndYUUd6NzBhckp2Rzg5Njk1UHk5NnNPdFlSd1M5ZWRIV2t0Rmc0bXJCMTZRVnluMDQ0UTk5akhTM3pmWFNUVDFvZ19rc2ZvSlVyenNrWHVLNVl4MmdscTdnbXdwdHZDWk5hWFVkYVpNTFV2RHFlcy1RclBsV1VEa1lWRklHMGljZUhCSy1pRHVCOVV1ME9EYlU0LW1yYVpJbE5yV0RF?oc=5" target="_blank" rel="noopener noreferrer">출처: Supply & Demand Chain Executive / Wowtale (Ramp Data) →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <span class="section-tag tag-industry">산업 동향</span>
+    </div>
+    <h3 class="news-title">Anthropic IPO 기업가치 1.5조 달러에 투자자들 '글쎄'…시장의 냉정한 판단</h3>
+    <p class="news-body">Claude를 개발한 Anthropic이 IPO를 추진 중인 가운데, 제시된 기업가치 <strong>1조 5,000억 달러(약 2,100조 원)</strong> 에 대해 투자자 41명 중 40명이 부정적 반응을 보였다는 보고서가 나왔다. 현재 AI 기업 중 가장 높은 수준의 밸류에이션이지만, 수익성 경로와 경쟁 심화에 대한 우려가 크다는 분석이다. 한편 Anthropic 모델이 수학 난제인 <strong>Aaronson-Ambainis 추측의 증명</strong>에 활용됐다는 소식도 함께 전해지며, 기술력에 대한 신뢰는 유지되고 있다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>AI 선두 기업의 IPO 밸류에이션에 대한 시장의 회의적 시각은 AI 산업 전반에 대한 '버블' 논쟁을 재점화한다. 기술력과 시장 가치의 괴리가 커질수록, 실질 ROI를 입증할 수 있는 AI 솔루션 기업이 오히려 안정적인 평가를 받을 가능성이 높다. 순수 AI 연구 기업보다 특정 업무·산업에 AI를 적용해 명확한 비용 절감 효과를 보여주는 솔루션 기업의 경쟁력이 부각되는 국면이다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[모니터링]</span>
+      </div>
+      <p>Anthropic IPO 흥행 여부는 이수시스템이 AI 솔루션 개발에 활용하는 Claude API의 가격 정책 및 서비스 연속성에 영향을 미칠 수 있다. 단기적으로는 큰 영향이 없겠지만, Anthropic이 IPO 이후 수익성 개선을 위해 API 단가를 조정할 경우 RAG 챗봇·HR AI Package의 원가 구조 변동 가능성을 염두에 두고, 멀티 LLM 전략(예: OpenAI·Gemini 병행 지원) 검토가 필요하다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxPV2Zob3Etdmtfa1VRWGlsUWtNUmhTbVVsdWZBbHZkU3RubmtCUk1rWHgzb2h3QngwNERRTHRPdmlBRVRndzV2aFo5YTI4YkVnYWZGNU9yVjgzNHh2YWFFNldJUGFfN1ZIRFAzeUFyOGk0d3dWbW9LbFAwdHhGbnRfX1IyTHdhaGdnSGh4alBWRzlhbWpQZUpjcDF2WXo?oc=5" target="_blank" rel="noopener noreferrer">출처: Pasquale Pillitteri / shattered.io →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <span class="section-tag tag-insight">글로벌 이슈</span>
+    </div>
+    <h3 class="news-title">LLM 탑재 C2 서버, 교육 도메인 72시간 장악…AI가 사이버 공격 무기로</h3>
+    <p class="news-body">카스퍼스키 보안 연구팀이 발표한 보고서에 따르면, <strong>LLM을 탑재한 C2(Command & Control) 서버</strong>가 교육 기관 도메인을 최대 사흘(72시간) 이상 점령한 사례가 확인됐다. AI가 단순 보조 도구를 넘어 사이버 공격 인프라의 핵심으로 자리 잡고 있다는 경고다. LLM은 피싱 메시지 생성, 취약점 탐지, 공격 경로 최적화 등에 활용되며, 기존 보안 솔루션이 AI 기반 공격 패턴을 탐지하지 못하는 맹점이 드러났다. <strong>교육 도메인</strong>이 주요 타깃이 된 이유는 보안 투자 수준이 상대적으로 낮기 때문으로 분석된다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>AI가 공격자의 무기가 되는 속도가 방어 측의 AI 도입 속도를 앞지르고 있다. 기업 AI 솔루션 도입 시 사이버 보안 취약성 검토가 필수 항목으로 부상하고 있으며, 특히 외부 접점이 많은 챗봇·에이전트 시스템은 C2 서버 연결, 프롬프트 인젝션 등 AI 특화 보안 위협에 대한 별도 대응이 필요하다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[리스크]</span>
+      </div>
+      <p>이수시스템이 고객사에 납품하는 RAG 기반 챗봇은 외부 LLM API와 통신하는 구조상 프롬프트 인젝션·데이터 탈취 공격의 잠재적 취약점이 존재한다. 특히 금융·공공 고객군의 경우 보안 감사 요건이 엄격하므로, 챗봇 솔루션 제안 시 LLM 취약점 스캐닝(Garak 등 도구 활용) 및 입·출력 필터링 아키텍처를 패키지에 포함하는 것이 수주 경쟁력 강화로 이어질 수 있다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTFBHVi1Ba3kyQ20wcG04SUVaTV9OWHMtMW9fZWRENVl5VkVxVXNpU2Y4QVVMVVEzZDRJb0xQUm9FakxXbXl4YzFQSFpR?oc=5" target="_blank" rel="noopener noreferrer">출처: 얼리어답터뉴스 / 유스연합 (카스퍼스키 보고서) →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">05</span>
+      <span class="section-tag tag-industry">산업 동향</span>
+    </div>
+    <h3 class="news-title">한국 토지행정에 AI·드론 도입…공공 행정 디지털 전환 본격화</h3>
+    <p class="news-body">국내에서 <strong>AI와 드론을 결합한 토지행정 혁신</strong> 사업이 추진된다는 소식이 전해졌다(부동산신문). 기존에 수작업·현장 방문에 의존하던 토지 현황 조사, 불법 형질변경 모니터링 등의 업무에 AI 이미지 분석과 드론 촬영 데이터를 결합하는 방식이다. 이는 단순 디지털화를 넘어 AI가 공공행정 의사결정 과정에 직접 개입하는 사례로, 중앙·지방정부의 AI 행정 도입 사업이 <strong>구체적인 발주 단계</strong>로 진입하고 있음을 보여준다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>공공 토지행정에 AI·드론이 적용된다는 것은 단순 IT화(전산화)를 넘어 정부 기관이 AI 기반 의사결정 보조 시스템 조달에 본격적으로 나서고 있다는 신호다. 국내 공공 AI 수요가 확대될수록 GS인증·공공 레퍼런스를 보유한 국내 솔루션 기업에게 진입 기회가 생기며, 공공 클라우드·AI 인프라 구축 연계 사업도 함께 성장할 가능성이 크다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">디지털서비스 사업</span>
+        <span class="isu-opp-tag">[정부 사업]</span>
+      </div>
+      <p>공공 AI 행정 사업이 토지·부동산 분야로 확대되면서 이수시스템의 공공 클라우드 인프라 역량(NCP 파트너)과 AI 솔루션을 결합한 제안 기회가 열린다. 직접적으로는 Smart Plant의 레이저 스캔·공간 데이터 관리 역량을 토지행정 도메인으로 확장하는 사업 개발을 검토할 수 있으며, 행정기관 대상 RAG 챗봇(민원 응대 자동화)을 연계한 패키지 수주 가능성도 타진할 만하다. GS인증 보유는 공공 조달 입찰 시 가산점 요소로 적극 활용해야 한다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE5HT2FfSGdiZFU3MVh4MEN0UFVZY2RoTFlpTEhxY3B3Z204LXc4Y19jYmlnWEpBLXBKZ09tcHloQ09XdUtJVG9tSjNMUlNlNThsYndZOEVnSU1rVHAxOXdfZGg0NS1BM2Rk?oc=5" target="_blank" rel="noopener noreferrer">출처: 부동산신문 →</a></div>
+  </section>
+  
+  <div class="isu-section">
+    <h2>이수시스템 인사이트</h2>
+    <p>이번 주 AI 뉴스의 핵심은 'AI 보편화 + 속도 가속'이다. 기업 AI 채택률 79%와 토큰 단가 하락은 이수시스템의 AI 솔루션 번들 영업(WORKUP·Smart HR 고객 대상 AI 업셀링)에 유리한 환경을 조성하고 있으며, 국내 공공 AI 행정 사업 확대는 NCP 파트너십과 GS인증을 활용한 정부 사업 수주 기회로 이어진다. 단, Anthropic 등 기반 LLM의 버전 가속화와 사이버 보안 위협 고도화에 대응해 멀티 LLM 전략 및 보안 아키텍처 내재화를 선제적으로 준비하는 것이 중장기 리스크 관리의 핵심이다.</p>
+  </div>
+
+  <div class="bottom-line">
+    <h2>오늘의 핵심 테이크어웨이</h2>
+    <ul class="action-list">
+      <li><strong>AI가 AI를 가속화하는 시대</strong>: Anthropic의 사례처럼 AI 자동화 연구가 2배 속도로 진행되면서, 기업들은 도입한 AI 솔루션의 안정성 검증 주기를 함께 단축해야 한다.</li>
+      <li><strong>AI 도입률 79%는 '선택'이 아닌 '기본값'</strong> 시대의 도래를 의미한다. 차별화는 기술 도입 여부가 아닌 특정 도메인에 얼마나 깊이 통합했느냐에서 나온다.</li>
+      <li><strong>사이버 보안이 AI 솔루션의 필수 조건</strong>으로 부상했다. LLM 기반 C2 공격이 현실화된 만큼, AI 솔루션 도입 시 보안 아키텍처 설계를 패키지에 포함하는 것이 경쟁력이 된다.</li>
+    </ul>
+  </div>
+  </div><!-- /tab-ai -->
+
+  <div id="tab-it" class="tab-pane">
+  <div class="tldr">
+    <div class="tldr-label">오늘의 한 줄</div>
+    <p>불황기 M&A 선점 전략부터 AI 기업 IPO 준비까지, 글로벌 테크 자본 흐름이 국내외 업계에 시사점을 던지다.</p>
+  </div>
+
+  
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <span class="section-tag tag-industry">M&A·인수합병</span>
+    </div>
+    <h3 class="news-title">불황기 헐값 매물 선점 전략 — M&A로 미래 호황 과실 노린다</h3>
+    <p class="news-body">한겨레 보도에 따르면, 경기 불황 국면에서 자금력 있는 기업들이 <strong>저평가 매물을 선점</strong>하는 M&A 전략이 주목받고 있다. 불황기에 인수한 기업·자산이 경기 회복 후 높은 수익을 안겨주는 '역발상 M&A' 패턴이 반복되고 있으며, 국내 IT 업계에서도 유사한 움직임이 감지되고 있다. 구체적 거래 규모나 대상 기업명은 보도에서 특정되지 않았으나, 불황기를 기회로 삼는 <strong>공격적 자산 확보 기조</strong>가 확산되는 흐름을 조명했다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>고금리·경기 둔화 국면에서 현금 유동성이 풍부한 대형 IT 기업과 사모펀드(PE)가 스타트업·중소 테크기업을 저가 인수하는 사례가 늘고 있다. 국내 IT 업계에서도 자금난에 처한 스타트업 매물이 증가하는 만큼, 카카오·네이버·통신 3사 등 대형 플레이어의 선택적 M&A 가속화 가능성에 주목할 필요가 있다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMickFVX3lxTFA3aVRRdll3YmdXaEgzRE1FemtDNmN0dUUwSDFUVzB3V2oxQl80akFwUVdlRm4weUxhRVBFLXNCWkRFeVVoVVF5ZmhyX1FsR3ZFa1ROQmtWUnQzQmZHcjBpUUlMOHh4eHZ2TXZaMHl0WXhLUQ?oc=5" target="_blank" rel="noopener noreferrer">출처: 한겨레 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <span class="section-tag tag-society">경영·인사</span>
+    </div>
+    <h3 class="news-title">트럼프, AI 논란 속 빅테크 CEO 회담 전격 취소 — 업계 긴장감 고조</h3>
+    <p class="news-body">트럼프 미국 대통령이 인공지능 관련 논란이 불거진 가운데 주요 IT 기업 CEO들과의 회담을 <strong>예고 없이 취소</strong>한 것으로 전해졌다. Vietnam.vn 보도에 따르면, 이번 회담 취소는 AI 규제·정책 방향을 둘러싼 갈등이 배경으로 지목된다. 트럼프 행정부의 AI 정책 기조가 빅테크 친화적이면서도 <strong>국가 안보·데이터 주권 이슈</strong>와 충돌하는 복잡한 국면이 연출되고 있다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>미국 행정부와 빅테크 CEO 간의 갈등은 국내 IT 기업에도 간접적 영향을 미친다. 미국의 AI 규제 방향이 불확실해질수록 글로벌 AI 협력 및 클라우드·데이터 사업 전략 수립에 변수가 커지며, 국내 네이버·카카오·SKT 등 AI 사업 확장을 추진 중인 기업들의 대미 협력 전략에도 주의가 필요하다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxQQXRjSk5fV01aSUJtY1pXdy14Q09SVENFZV9icjAtR1ZYWXFHdVoxUVRCcHZtZmdsMHNwMFJTa3lmVTVBQXZyWlJ2MFYzSld6REdIN2EyZmlhTE1wNUJlSEJBZ21CSzZMM0dQSzFNYURkUlJSNEVabXUzM19JdHJTY1FOTHZZUHZmN0FWcmx3bnhlS3pw?oc=5" target="_blank" rel="noopener noreferrer">출처: Vietnam.vn →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <span class="section-tag tag-model">투자·펀딩</span>
+    </div>
+    <h3 class="news-title">Anthropic, IPO 준비 본격화 — '공공 신뢰'·데이터센터 인프라에 방점</h3>
+    <p class="news-body">AI 스타트업 <strong>Anthropic</strong>이 기업공개(IPO)를 계획 중이며, 핵심 전략으로 <strong>대중의 신뢰 확보</strong>와 대규모 데이터센터 인프라 구축을 전면에 내세우고 있다고 Unite.AI가 보도했다. Anthropic은 현재 기업 가치가 수백억 달러 규모로 평가받고 있으며, 안전성 중심의 AI 개발 철학을 IPO 핵심 메시지로 활용할 방침이다. 구체적인 IPO 시기와 공모 규모는 아직 공개되지 않았으나, <strong>데이터센터 투자 확대</strong>를 통해 클로드(Claude) 모델의 추론 역량을 강화하겠다는 계획이 함께 알려졌다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>Anthropic의 IPO 추진은 글로벌 AI 투자 시장에 대형 이벤트가 될 전망이다. 국내 관점에서는 삼성전자·SK하이닉스의 AI 반도체(HBM) 수요 확대로 이어질 수 있고, Anthropic과 협력 중인 국내 클라우드·AI 기업들의 사업 기회도 커질 수 있다. AI 안전성을 IPO 차별화 포인트로 삼는 전략은 국내 AI 기업들의 신뢰 구축 전략에도 시사점을 제공한다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxQWkxpenN2X3gzNUxTNHFPNkx5MDctUGc1NE5SQkNibFl5OG50RmNySTBJN3dFSDZSR3JJcnBfSDV5QWdGd1Jidkx4NWZMN2Q3SnI5Tl8zTnZWUnFxR2Zmcm5nY2pYR3NCb215bkFfQ19kRUpoajBQUTFfdkhRYXkwXzYtX2JKcWlyX1hFVkRsWlNPYXZpMXc?oc=5" target="_blank" rel="noopener noreferrer">출처: Unite.AI →</a></div>
+  </section>
+
+  <div class="bottom-line">
+    <h2>오늘의 핵심 테이크어웨이</h2>
+    <ul class="action-list">
+      <li><strong>불황기 M&A는 기회다</strong> — 경기 침체 국면에서 현금 여력 있는 기업은 저평가 테크 자산을 선점해 다음 호황의 과실을 가져가는 패턴이 반복되고 있다.</li>
+      <li><strong>트럼프發 AI 정책 불확실성</strong>이 글로벌 빅테크와 국내 AI 사업자 모두의 전략 변수로 부상 — 대미 협력 의존도가 높은 국내 기업은 리스크 시나리오를 점검해야 할 시점이다.</li>
+      <li>Anthropic IPO는 <strong>AI 인프라(데이터센터·반도체) 수요 확대</strong>의 신호탄 — 국내 반도체·클라우드 기업에 간접 수혜 가능성이 열려 있다.</li>
+    </ul>
+  </div>
+  </div><!-- /tab-it -->
+
+  <footer class="footer">
+    <p>AI Daily Briefing — <span class="accent">바쁜 사람을 위한 3분 AI 뉴스</span></p>
+    <p style="margin-top: 8px;">2026.11.08 (일) | 매일 아침 업데이트</p>
+    <p style="margin-top: 8px;">© keyboard@kakao.com</p>
+  </footer>
+</div>
+<audio src="ai_briefing_2026_11_08.mp3" controls style="position:fixed;bottom:20px;right:20px;z-index:100;width:260px;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.5);"></audio>
+<script>
+  const TAB_TITLES = {
+    'tab-ai': '오늘의 AI, 3분 안에 끝내기',
+    'tab-it': '국내 IT 회사 동향'
+  };
+  function switchTab(btn, id) {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(id).classList.add('active');
+    document.getElementById('main-title').textContent = TAB_TITLES[id];
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const audio = document.querySelector('audio');
+    if (audio) {
+      if (id === 'tab-it') {
+        audio.pause();
+        audio.style.display = 'none';
+      } else {
+        audio.style.display = '';
+      }
+    }
+  }
+</script>
+</body>
+</html>
