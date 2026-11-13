@@ -1,0 +1,72 @@
+{
+  "date": "2026.11.13 (금)",
+  "one_liner": "젠슨 황 CEO 사임, Google Gemini 4 Hydrogen 출시, Anthropic IPO 흥행까지 — AI 업계 권력 지형이 하루 만에 요동쳤다.",
+  "news": [
+    {
+      "number": 1,
+      "category": "산업 동향",
+      "title": "엔비디아 창업자 젠슨 황 CEO 전격 사임 — AI 반도체 왕국에 첫 균열",
+      "body": "엔비디아 공동창업자이자 유일한 CEO였던 **젠슨 황**이 2026년 11월 13일 사임했다. 직속 부하 직원과의 불륜, 그리고 중국 스파이 의혹을 받는 인물과의 두 번째 불륜이 뉴욕타임스를 통해 보도되면서 이사회가 조사를 개시했고, 이사회 긴급 회의 직후 사임이 확정됐다. 황은 1993년 엔비디아를 공동창업한 이후 단 한 번도 CEO 자리를 내놓지 않았으며, 공식적인 후계자 계획도 없었던 것으로 알려졌다.\n\n엔비디아 이사회는 사내 이메일을 통해 '극도로 어려운 시기'임을 인정하며 임시 경영 체제를 가동할 것이라고 밝혔다. AI 붐의 최대 수혜자이자 반도체 패권의 상징이었던 황의 갑작스러운 퇴장은 GPU 공급망 의존도가 높은 전 세계 AI 기업들에 즉각적인 불확실성을 야기하고 있다.",
+      "insight": "창업자가 곧 회사였던 엔비디아의 리더십 공백은 단순한 기업 스캔들을 넘어 AI 인프라 공급망 전체의 안정성 문제로 번질 수 있다. 엔비디아 GPU에 의존하는 클라우드·AI 기업들은 중장기 조달 전략을 재검토해야 할 시점이다. 중국 연루 의혹은 미국의 대중 반도체 수출 규제와 맞물려 지정학적 리스크를 한층 가중시킨다.",
+      "isu_area": "클라우드 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "엔비디아 리더십 불안정은 GPU 기반 AI 인프라 비용·공급 변동성으로 이어질 수 있다. 이수시스템이 NCP 파트너로서 클라우드 인프라를 고객사에 제안할 때, 특정 GPU 벤더 의존 리스크를 분산하는 멀티클라우드 아키텍처를 세일즈 포인트로 활용할 수 있다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang"
+    },
+    {
+      "number": 2,
+      "category": "모델 릴리스",
+      "title": "Google, Gemini 4 Hydrogen 출시 — 2.5배 빠른 속도로 Flash 왕좌 교체",
+      "body": "Google이 **Gemini 4 Hydrogen**을 공식 출시했다. 순다르 피차이는 직전 세대 모델 대비 **응답 속도 2.5배 향상**을 직접 강조했으며, 벤치마크 평가 플랫폼 Vals AI 기준 상위 6개 모델 중 가장 빠르고 가장 저렴한 모델로 등재됐다. 복잡한 다중 질의, 오타가 섞인 문장, 고도로 구체적인 요청을 세분화해 답변하는 능력이 강화됐고, 에이전트 코딩 작업에도 최적화됐다.\n\n가격은 Gemini 3.8 Flash 대비 **약 2배** 수준으로 올랐으나, GPT-6.1 Terra 등 경쟁 모델 대비로는 여전히 비용 경쟁력이 있다는 평가다. Google 검색, Gemini 앱, Google One 전 구독 등급에 오늘부터 순차 적용된다.",
+      "insight": "Flash급 모델의 성능이 고가 모델을 위협하는 수준으로 올라서면서, 기업들은 고비용 프리미엄 모델 대신 중간 티어 모델로 전환하는 '모델 스와핑' 전략을 더 적극적으로 채택하게 될 것이다. 속도와 비용 효율 개선은 RAG 기반 챗봇, AI 에이전트 등 대용량 추론이 필요한 기업용 AI 솔루션의 운영 비용 절감으로 직결된다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "Gemini 4 Hydrogen의 속도 향상과 비용 절감은 이수시스템 RAG 챗봇 및 HR AI Package의 백엔드 LLM 비용 구조 개선에 직접 활용 가능하다. 특히 대용량 인사 문서를 실시간 검색·답변해야 하는 WORKUP 연동 챗봇에서 응답 지연 개선 효과가 기대되며, 고객사 PoC 비용 부담도 낮아져 초기 영업 문턱을 낮출 수 있다.",
+      "source": "VentureBeat",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNUXRuQUZkeks1RVIwa2htVHJkZUlGby1iLTE5Wnh0UzZDSy1neDZyRU1WRkJRR1VnMzNLb0o3QzdmZkhmcTN0SnlGN09wU3BQVkJ1bk1oMFQwYk03eEsyQVhybEY5eE5RWllKTlhsblRTNms5MXFNSWF2UFFhSS05OWxuaTByM2dqSXY1LS1ncGlGTnFFQ2V0WnRRU3ZsWVVuSkJrZkVWWFprZW96TUE?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "산업 동향",
+      "title": "OpenAI, 챗GPT에 '기업 프로필' 도입 — 검색 광고 시장 본격 겨냥",
+      "body": "OpenAI가 ChatGPT 내에 **'기업 프로필(Business Profiles)'** 기능과 AI 에이전트 연동을 공식 추가한다고 발표했다. 기업들은 ChatGPT 내에서 공식 인증 프로필을 개설해 브랜드 정보, 제품, 서비스를 노출할 수 있게 된다. 이는 AI 기반 검색 최적화(GEO, Generative Engine Optimization) 시장에 직접적인 영향을 주는 행보로, 기존 SEO 중심의 디지털 마케팅 생태계를 뒤흔들 것이라는 분석이 나온다.\n\n아울러 OpenAI의 2026년 3분기 매출은 **100억 달러를 돌파**했지만, 같은 기간 순손실도 **109억 달러**에 달하는 것으로 알려져 고비용 구조가 여전히 해소되지 않고 있다는 점도 주목된다.",
+      "insight": "AI 챗봇이 기업 정보의 1차 창구로 자리잡으면서, 기존 구글 중심의 SEO 전략은 GEO로 급격히 재편될 것이다. 광고·마케팅 예산이 AI 플랫폼으로 이동하는 속도가 빨라지고, 기업들은 챗GPT 내 인지도 관리를 별도 디지털 마케팅 채널로 취급해야 하는 상황이 된다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "ChatGPT 기업 프로필이 활성화되면 이수시스템의 WORKUP, ESGable 등 B2B 솔루션도 AI 검색 환경에서의 브랜드 노출 전략을 새로 수립해야 한다. 단기적으로는 챗GPT 내 경쟁사 대비 솔루션 비교 노출 양상을 모니터링하고, 중기적으로는 GEO 최적화된 제품 소개 콘텐츠 준비가 필요하다.",
+      "source": "블로터",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4wZkVXbDVmR080dVZlSWR0NjA5OVl5aEd1a0lXTUxzWTUyU2FDazhBdDd0RzZOYko3QWNOSGY4S1dsSGdWOHVjRTYzdzB1b1VycDRBN0s4Tm11cVhXUk9BdUNJcFozNnM20gFsQVVfeXFMTlp5TXRPc3FXUWNXY3QyOVJWVHl4QWd2WUxqQnhMSkZ6aWxDcWtGNE9GaERLNVpqRGhGb3d6NFBLeE95UUJBNXNCR2c5aXVqM1hCb3NJSm5jVC1GRF9VcDlmdGRKNTRHeXZIM01M?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "글로벌 이슈",
+      "title": "Anthropic IPO 로드쇼 시작 — 복수 배 초과 청약으로 AI 투자 열기 증명",
+      "body": "Anthropic이 기업공개(IPO) 로드쇼를 시작했으며, **복수 배 초과 청약**이 이미 확인됐다는 소식이 전해졌다. Claude 모델이 주요 AI 벤치마크에서 상위권을 기록하고 있고, OpenAI의 사이버 보안 모델 접근 제한 이후 보안 분야 대안으로 주목받으면서 투자자 관심이 집중되고 있다. Anthropic은 아마존과 구글로부터 각각 대규모 전략 투자를 유치한 바 있으며, 기업 고객 기반도 빠르게 확장 중이다.\n\nIPO가 성사될 경우 Anthropic은 비상장 AI 기업 중 가장 높은 밸류에이션으로 공개 시장에 데뷔하는 사례가 될 가능성이 높다. 이는 AI 스타트업 생태계 전반의 투자 심리와 IPO 시장 재활성화에 긍정적 신호를 보내고 있다.",
+      "insight": "Anthropic의 IPO 흥행은 AI 인프라·모델 기업에 대한 공개 시장 투자자들의 신뢰가 여전히 높다는 것을 보여준다. 동시에 OpenAI와의 직접 경쟁 구도가 상장 이후 더욱 치열해질 전망이며, 기업용 AI 솔루션 시장에서 Claude 생태계의 파트너십 확대가 가속화될 수 있다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "Anthropic 상장 이후 Claude API 가격 정책과 엔터프라이즈 파트너 프로그램이 변화할 수 있다. 이수시스템의 RAG 챗봇 솔루션은 현재 사용 중인 LLM 벤더 외에 Claude를 대안 엔진으로 검토하여 다중 모델 지원 아키텍처를 갖추면, 고객사의 벤더 중립성 요구에 대응하고 경쟁력을 높일 수 있다.",
+      "source": "OpenTools",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRHhDX21uM0JWT2ctWjFNRHl3QnhlSWE3aWpMODZpOXJhX0lEREppUHZFMGRJSTU2SlFfdVBOMEU4WEVmZTZpVXJvUXNkWVdyNThGV0llSE5JbFgxa29nbXllQlNvSWhjTVI0QUhjNVU5UVpKdEE2MnhLeTRDdXBpUWh1SXQ?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "일자리·사회",
+      "title": "서울시 20억짜리 AI, 공무원 80%가 안 쓴다 — 공공 AI 도입의 민낯",
+      "body": "서울시의회 박계홍 시의원이 국정감사에서 서울시가 **약 20억 원**을 투자해 도입한 AI 솔루션의 실제 사용률이 **공무원의 20%에 불과**하다고 지적했다. 도입 초기 홍보에 비해 현장 활용도가 극히 낮은 이유로 사용자 교육 부재, 업무 연계성 미흡, 시스템 불편함 등이 꼽혔다. 단순히 AI를 도입하는 것만으로는 조직 내 실질적 변화를 이끌어 낼 수 없다는 점이 다시 한번 확인됐다.\n\n이 사례는 공공기관 AI 도입이 예산 집행과 실제 활용 사이의 괴리가 크다는 점을 보여주는 대표적 사례로, 향후 공공 AI 사업 발주 시 사용률과 성과 지표를 계약 조건에 포함하는 방향으로 정책이 강화될 가능성이 있다.",
+      "insight": "공공기관 AI 사업에서 '도입' 이후의 현장 안착과 사용자 교육, 업무 프로세스 연계가 사업 성패를 가르는 핵심 변수임이 재확인됐다. 단순 소프트웨어 납품형 계약보다 사용률·업무 효율 개선을 성과 지표로 연동한 구독·관리형 계약 모델이 공공 조달 시장에서 대두될 가능성이 높다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "서울시 사례는 이수시스템이 공공 AI 사업을 수주할 때 '도입 후 현장 안착 지원'을 차별점으로 내세울 수 있는 근거가 된다. WORKUP·Smart HR 등 HR 솔루션의 500개 이상 구축 레퍼런스와 현장 교육 노하우를 활용해, 공공기관 대상 AI 챗봇·HR AI Package 제안 시 단계별 사용자 온보딩 프로그램과 사용률 KPI를 포함한 패키지 제안을 차별화 전략으로 활용할 수 있다.",
+      "source": "뉴스핌",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBjVFB5bElSRE10dWpHSGtkOFdicWE3SnpYcXZKRmxXLVRCZjZPWTZ1OUhpZjhGYnkzclU3a1dET292ZldxZ2dSSEprSjJlMWZxZDAzeldMUEhTajFF?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**젠슨 황 사임**은 단순 스캔들을 넘어 AI 반도체 공급망 불확실성으로 번질 수 있어, GPU 의존 기업들의 조달 전략 재점검이 필요하다.",
+    "**Gemini 4 Hydrogen** 출시로 고성능 모델의 비용·속도 장벽이 낮아지며, 기업용 AI 솔루션의 운영 단가 절감이 현실화되고 있다.",
+    "서울시 AI 사용률 20% 사례가 보여주듯, **도입 이후 현장 안착 역량**이 공공·기업 AI 사업의 핵심 경쟁력으로 부상하고 있다."
+  ],
+  "isu_summary": "오늘 AI 시장은 Gemini 4 Hydrogen의 비용 효율 개선과 Anthropic IPO 흥행으로 기업용 AI 도입 여건이 더욱 성숙해지는 흐름을 보였다. 이수시스템은 RAG 챗봇과 HR AI Package에 Gemini 4 Hydrogen급 모델을 적극 적용해 고객사 PoC 비용을 낮추고, 서울시 사례에서 드러난 '공공 AI 현장 안착' 수요를 타깃으로 사용자 온보딩 패키지를 갖춘 공공기관 영업을 강화할 시점이다. 엔비디아 리더십 공백에 따른 GPU 비용 변동성은 NCP 파트너로서 멀티클라우드 인프라 제안의 설득력을 높이는 세일즈 기회로 활용할 수 있다."
+}
