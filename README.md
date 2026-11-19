@@ -9,6 +9,7 @@ GitHub Actions로 매일 아침 6시(KST)에 자동 실행되어 GitHub Pages에
 ai_daily_briefing/
 ├── ai_daily_briefing.py        # 메인 스크립트 (Anthropic Claude)
 ├── ai_daily_briefing_openai.py # OpenAI 버전
+├── briefing_core.py            # 공통 로직 (RSS, 프롬프트, 파싱, TTS, HTML)
 ├── send_email.py               # 구독자 이메일 발송
 ├── isu_context.md              # 회사 맞춤 인사이트 컨텍스트
 ├── .github/workflows/
@@ -51,13 +52,76 @@ GCP 콘솔 → APIs & Services → Credentials → API Key 발급 후 Cloud Text
 
 ## 작동 원리
 
-```
-[실행]
-  → Google RSS 피드 수집 (최근 24시간 기사)
-  → Claude API로 뉴스 5개 선별 + 분석 (JSON 출력)
-  → (선택) GCP TTS로 MP3 생성
-  → HTML 뉴스레터 렌더링
-  → output/ 저장
+```mermaid
+flowchart TD
+    CRON["⏰ GitHub Actions<br/>매일 UTC 21:00 / KST 06:00"] --> MAIN
+    DEV["develop 브랜치 push"] -.-> PREVIEW_WF["Preview 워크플로"]
+
+    subgraph MAIN["ai_daily_briefing.py"]
+        direction TB
+
+        subgraph S1["① AI 뉴스"]
+            RSS1["RSS 6개 수집<br/>Google News x3, TechCrunch,<br/>VentureBeat, The Verge"]
+            FILTER1{"기간 내 기사<br/>5개 이상?"}
+            EXPAND1["기간 2배 확장<br/>24h → 48h → 72h"]
+            PROMPT1["시스템 프롬프트 생성<br/>+ ISU_COMPANY.md"]
+            CLAUDE1["Claude API<br/>5개 선별 + 분석"]
+            RAW1[("raw.txt 저장")]
+            RSS1 --> FILTER1
+            FILTER1 -- 아니오 --> EXPAND1 --> RSS1
+            FILTER1 -- 예 --> PROMPT1 --> CLAUDE1 --> RAW1
+        end
+
+        subgraph PARSE["JSON 파싱 parse_news_json"]
+            EXTRACT["json 코드블록 추출<br/>또는 중괄호 매칭"]
+            FIXSTR["fix_json_string<br/>제어문자, 끝 쉼표 정리"]
+            LOAD{"json.loads<br/>성공?"}
+            FIXLLM["Claude에 JSON 수리 요청"]
+            INJECT["inject_article_urls<br/>article_ref → 원문 url"]
+            EXTRACT --> FIXSTR --> LOAD
+            LOAD -- 아니오 --> FIXLLM --> INJECT
+            LOAD -- 예 --> INJECT
+        end
+
+        FAIL["❌ 파싱 실패<br/>exit 1 → 워크플로 중단"]
+
+        subgraph S2["② TTS (선택)"]
+            TTSCHK{"GCP_TTS_KEY<br/>있음?"}
+            TTSTXT["낭독 원고 생성<br/>특수문자 제거, 발음 치환"]
+            TTSAPI["4900B 청크로 나눠<br/>GCP Wavenet-D 합성"]
+            MP3[("mp3 저장")]
+            TTSCHK -- 예 --> TTSTXT --> TTSAPI --> MP3
+        end
+
+        subgraph S3["③ 국내 IT 기업 동향 (실패해도 계속 진행)"]
+            RSS2["Google News KR 5개<br/>M&A, 투자, 인사, 전략, 실적"]
+            CLAUDE2["Claude API<br/>5개 선별 + 분석"]
+            PARSE2["JSON 파싱 + URL 주입"]
+            ITJSON[("it_company json 저장")]
+            RSS2 --> CLAUDE2 --> PARSE2 --> ITJSON
+        end
+
+        subgraph S4["④ 렌더링"]
+            HTML["generate_html<br/>탭1: AI 브리핑<br/>탭2: IT 동향 또는 빈 화면"]
+            OUT[("output/<br/>html, json, mp3")]
+            HTML --> OUT
+        end
+
+        RAW1 --> EXTRACT
+        PARSE -. 최종 실패 .-> FAIL
+        INJECT --> TTSCHK
+        TTSCHK -- 아니오 --> RSS2
+        MP3 --> RSS2
+        ITJSON --> HTML
+        RSS2 -. 예외 .-> HTML
+    end
+
+    OUT --> COPY["output → docs/ 복사<br/>최신본 → docs/index.html"]
+    COPY --> PUSH["git commit & push"]
+    PUSH --> PAGES["🌐 GitHub Pages"]
+    PUSH --> EMAIL["send_email.py<br/>메일용 HTML 변환 후<br/>subscribers.txt 전원 발송"]
+
+    PREVIEW_WF -.-> PREV_OUT["main의 docs/preview/에 배포"]
 ```
 
 - 별도의 뉴스 API 없이 Google RSS 피드로 수집
@@ -99,6 +163,6 @@ GCP 콘솔 → APIs & Services → Credentials → API Key 발급 후 Cloud Text
 - `ko-KR-Wavenet-A` ~ `ko-KR-Wavenet-D` (남/여 4종)
 
 ### 모델 변경
-- `claude-sonnet-4-6`: 기본 추천 (가성비)
-- `claude-opus-4-6`: 더 깊은 분석 (비용 ~5x)
+- `claude-sonnet-5-5`: 기본 추천 (가성비)
+- `claude-opus-5-5`: 더 깊은 분석 (비용 ~5x)
 - `claude-haiku-4-5`: 비용 최소화

@@ -22,6 +22,7 @@ from pathlib import Path
 # 설정
 # ============================================================
 MAX_TOKENS = 8192
+MAX_FETCH_HOURS = 72  # 기사 부족 시 수집 기간 확장 상한 (24h → 48h → 72h)
 OUTPUT_DIR = Path("output")
 ISU_CONTEXT_PATH = Path("ISU_COMPANY.md")
 KST = timezone(timedelta(hours=9))
@@ -125,13 +126,13 @@ def _fetch_from_feeds(feeds: list[str], max_hours: int, retry_fn) -> list:
                 published = _parse_entry_date(entry)
 
                 if published is None:
+                    # 발행일을 알 수 없으면 기간 필터를 적용할 수 없으므로 제외
                     no_date += 1
-                    pub_str = _kst_now().strftime('%Y-%m-%d %H:%M KST')
-                elif published < cutoff:
                     continue
-                else:
-                    within += 1
-                    pub_str = published.astimezone(KST).strftime('%Y-%m-%d %H:%M KST')
+                if published < cutoff:
+                    continue
+                within += 1
+                pub_str = published.astimezone(KST).strftime('%Y-%m-%d %H:%M KST')
 
                 title = entry.get('title', '').strip()
                 if not title or title in seen_titles:
@@ -156,8 +157,8 @@ def _fetch_from_feeds(feeds: list[str], max_hours: int, retry_fn) -> list:
 
     articles.sort(key=lambda x: x['published'], reverse=True)
 
-    if len(articles) < 5 and max_hours < 72:
-        extended = max_hours * 2
+    if len(articles) < 5 and max_hours < MAX_FETCH_HOURS:
+        extended = min(max_hours * 2, MAX_FETCH_HOURS)
         print(f"   ⚠️ 기사 부족 ({len(articles)}개) → {extended}시간으로 범위 확장 재시도")
         return retry_fn(max_hours=extended)
 

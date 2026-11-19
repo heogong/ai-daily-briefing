@@ -12,6 +12,7 @@ import openai
 import json
 import os
 import re
+import sys
 
 from briefing_core import (
     MAX_TOKENS, OUTPUT_DIR,
@@ -84,13 +85,12 @@ def analyze_it_company_news(client: openai.OpenAI, articles: list) -> tuple[str,
 def fix_json_with_openai(raw_text: str) -> dict:
     """파싱 실패 시 OpenAI에게 JSON 수정 요청 (fallback)"""
     client = openai.OpenAI()
-    truncated = raw_text[:8000]
     response = client.responses.create(
         model=MODEL,
         input=(
             "아래 텍스트에서 JSON 부분을 추출하고, 문법 오류를 수정해서 "
             "올바른 JSON만 출력해줘. 다른 설명 없이 JSON만 출력해.\n\n"
-            f"원본 텍스트:\n{truncated}"
+            f"원본 텍스트:\n{raw_text}"
         ),
         max_output_tokens=MAX_TOKENS,
     )
@@ -118,7 +118,7 @@ def main():
     if not api_key:
         print("\n❌ OPENAI_API_KEY 환경변수를 설정하세요.")
         print("   export OPENAI_API_KEY='your-api-key'")
-        return
+        sys.exit(1)
 
     client = openai.OpenAI(api_key=api_key)
 
@@ -139,7 +139,7 @@ def main():
     except (json.JSONDecodeError, ValueError) as e:
         print(f"\n❌ JSON 파싱 최종 실패: {e}")
         print(f"   원본 응답은 {raw_path} 에서 확인하세요.")
-        return
+        sys.exit(1)
     print(f"   ✅ {len(news_data.get('news', []))}개 뉴스 수집 완료")
 
     # Step 3: TTS 음성 생성 (선택적)

@@ -9,10 +9,35 @@ import smtplib
 import os
 import json
 import glob
+import re
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
+
+KST = timezone(timedelta(hours=9))
+
+
+def to_email_html(html: str) -> str:
+    """웹용 HTML을 메일 클라이언트용으로 변환.
+
+    메일 클라이언트는 <script>를 제거하므로 탭 전환이 동작하지 않는다.
+    탭 네비게이션/오디오/스크립트를 제거하고 두 탭을 모두 펼쳐서 보여준다.
+    """
+    html = re.sub(r'<nav class="tab-nav">.*?</nav>', '', html, flags=re.DOTALL)
+    html = re.sub(r'<script>.*?</script>', '', html, flags=re.DOTALL)
+    html = re.sub(r'<audio\b[^>]*>.*?</audio>', '', html, flags=re.DOTALL)
+    html = html.replace(
+        '<div id="tab-ai" class="tab-pane active">',
+        '<div id="tab-ai" class="tab-pane active" style="display:block;">',
+    )
+    html = html.replace(
+        '<div id="tab-it" class="tab-pane">',
+        '<div id="tab-it" class="tab-pane active" style="display:block;">'
+        '<h2 style="margin:48px 0 8px;padding-top:32px;border-top:1px solid #333;">'
+        '국내 IT 회사 동향</h2>',
+    )
+    return html
 
 
 def get_subscribers() -> list[str]:
@@ -40,7 +65,7 @@ def get_latest_briefing() -> tuple[str, str]:
     if not html_files:
         raise FileNotFoundError("output/ 폴더에 HTML 파일이 없습니다.")
 
-    html_content = Path(html_files[0]).read_text(encoding="utf-8")
+    html_content = to_email_html(Path(html_files[0]).read_text(encoding="utf-8"))
 
     one_liner = ""
     if json_files:
@@ -61,7 +86,8 @@ def send_emails(
     one_liner: str,
 ):
     """Gmail SMTP로 구독자 전원에게 발송"""
-    today = datetime.now().strftime("%Y.%m.%d")
+    # GitHub Actions 러너는 UTC이므로 KST 기준 날짜를 명시적으로 사용
+    today = datetime.now(tz=KST).strftime("%Y.%m.%d")
     subject = f"🤖 AI Daily Briefing — {today}"
 
     # SMTP 연결
