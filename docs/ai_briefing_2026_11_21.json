@@ -1,0 +1,72 @@
+{
+  "date": "2026.11.21 (토)",
+  "one_liner": "구글은 Gemini 4 Neon과 Mac 제어 에이전트를 내놓았고, 애플도 에이전트 개발에 뛰어들면서 AI는 이제 대답하는 도구에서 직접 일하는 도구로 넘어가고 있습니다.",
+  "news": [
+    {
+      "number": 1,
+      "category": "모델 릴리스",
+      "title": "구글, 100만 토큰 Gemini 4 Neon 공개... 코딩·리서치 겨냥",
+      "body": "구글이 신규 모델 **Gemini 4 Neon**을 출시했습니다. 핵심은 **100만 토큰 컨텍스트 윈도우**로, 긴 코드베이스나 방대한 문서를 한 번에 읽고 처리하는 **코딩·리서치** 용도를 앞세웠습니다.\n\n출시 직후 ANI 등 외신이 기능, 가격, 벤치마크, 이용 가능 범위를 정리한 해설 기사를 내놓았습니다. 또 다른 매체의 벤치마크 비교에서는 GPT-6.2 Astra가 3D 테스트에서, Gemini 4 Carbon이 평면도 테스트에서 각각 앞섰다고 합니다. 한 모델이 모든 영역을 독주하는 구도는 아니라는 뜻입니다.",
+      "insight": "긴 컨텍스트는 이제 모델 경쟁의 기본 스펙이 되어 가고 있습니다. 문서 수십 건이나 코드 저장소 전체를 한 번에 넣을 수 있으면 업무 활용 범위가 넓어집니다. 한편 영역별로 1위 모델이 갈리기 때문에, 기업은 한 모델에 올인하기보다 용도별로 모델을 골라 쓰는 방식을 점점 더 고민하게 될 것입니다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "인사 규정, 취업규칙, 급여 기준 같은 긴 문서를 다루는 RAG 챗봇과 HR AI Package에서 긴 컨텍스트 모델을 선택지로 검토해 볼 만합니다. 문서 분할과 검색 단계를 단순화해 답변 정확도를 높일 수 있는지 PoC로 확인하세요. 모델별 강점이 다르므로, 챗봇 백엔드를 특정 모델에 묶지 않고 교체 가능하게 설계하면 고객사 제안 때 유연성이 강점이 됩니다.",
+      "source": "Technology Org (Google News)",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOOFJmbHFFRi16RmNzZGFYQmxiZFJJNFc5MW1yVUhmT2ZZSDVMWDRjM2Z6cUlhU1FJdVRVaGh2T29PQzZuY3h1REthbEY2a0xNQlFFOEk0VmJ3SHFrRXVxSm1zWU1Tc1c4NVpXWDMzMEtZTEJUWDBmMndYMk5rX2MwQWhodzdQU0NncktjWURYMmVyRlR2a0lhdHIyRQ?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "제품 업데이트",
+      "title": "Gemini, 이제 Mac 앱을 직접 조작한다... 편리함 뒤에 보안 리스크",
+      "body": "구글이 **Gemini**가 **Mac 데스크톱 앱을 직접 제어**해 사용자 대신 작업을 완료하도록 하는 기능을 선보였습니다. 사용자가 말로 지시하면 AI가 앱을 열고 작업을 처리하는 **에이전트형 기능**입니다. Decrypt는 이 기능에 위험이 따른다고 지적했습니다.\n\n같은 날 메신저 Signal은 AI 에이전트가 화면 내용을 읽지 못하도록 Android와 iOS에서 **스크린샷 기능을 제한**하겠다고 밝혔습니다. OS에 내장된 에이전트가 화면 정보를 분석하는 것이 프라이버시 보장을 해친다는 이유입니다. 기능을 내놓는 쪽과 막는 쪽이 동시에 등장한 셈입니다.",
+      "insight": "AI가 PC 화면을 보고 앱을 직접 조작하기 시작하면서 편의성과 프라이버시·보안이 정면으로 부딪히고 있습니다. 기업 입장에서는 직원 PC에서 에이전트가 어떤 화면과 데이터에 접근하는지 통제하는 문제가 새 과제로 떠오릅니다. 앱 개발사와 OS 사업자 사이에서 에이전트 접근 범위를 둘러싼 갈등이 앞으로 늘어날 가능성이 큽니다.",
+      "isu_area": "디지털서비스 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "화면을 보고 앱을 조작하는 범용 에이전트는 장기적으로 PC 기반 정형 업무를 다루는 RPA와 겹칠 수 있습니다. 다만 기업 환경에서는 권한 통제, 감사 로그, 오류 책임 문제 때문에 당장 대체되기는 어렵습니다. 고객사의 SAP·인사 시스템 같은 핵심 업무는 검증된 RPA에 맡기고, 변동이 많은 업무에만 에이전트를 결합하는 하이브리드 제안을 준비해 두면 좋습니다. 에이전트의 화면 접근을 우려하는 고객에게는 접근 통제 논의가 상담 소재가 될 수 있습니다.",
+      "source": "Decrypt (Google News)",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPU0FDOEM2Z01QS21qdXpWS09JSlQ4VHA2STAzQV96dTJSRWc3bW5GUEZkSU93OEtVWTY5d2Rrb1JibVlGMXVtc3dxdU1IYU9YMFMzYTdiWUxMbVJYMFdBcTZWUkhUdmo5Uld2TGpoaWpsYlMyUjRKZDVab3FOQlBhQTdsMA?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "산업 동향",
+      "title": "애플도 AI 에이전트 만든다... 웹 브라우징·코딩·앱 간 작업까지",
+      "body": "애플이 웹 브라우징, 앱 간 작업, 코드 작성, 서비스 호출까지 수행하는 **자체 AI 에이전트** 개발에 나선 것으로 확인됐습니다. Bloomberg가 포착한 채용 공고에는 에이전트형 AI 개발을 이끌 엔지니어를 구한다는 내용이 담겼으며, 이 공고는 현재 삭제된 상태입니다.\n\n외신은 애플이 **Meta, OpenAI, Anthropic** 등과의 에이전트 경쟁에 합류하는 것이라고 해석합니다. 일부 매체는 애플이 AI에서 갈피를 못 잡고 있다고 혹평했습니다. 반면 Computerworld는 애플에 필요한 것은 가장 똑똑한 에이전트가 아니라 **가장 신뢰받는 에이전트**라고 짚었습니다.",
+      "insight": "스마트폰 OS를 쥔 애플이 에이전트 경쟁에 가세하면 AI 에이전트는 개별 앱이 아니라 OS 차원의 기본 기능으로 자리 잡을 가능성이 높아집니다. 사용자의 기기 접근 권한과 데이터를 쥔 사업자가 에이전트를 만들면, 서비스 기업은 앱 화면에 직접 들어오는 대신 에이전트가 호출하는 서비스가 되어야 할 수도 있습니다. 승부처는 성능보다 신뢰와 프라이버시가 될 가능성이 큽니다.",
+      "isu_area": "HR 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "OS 에이전트가 확산되면 직원이 앱을 열지 않고 말로 휴가 신청이나 근태 확인을 요청하는 흐름이 생길 수 있습니다. HR-Tong과 WORKUP이 외부 에이전트가 호출할 수 있는 API와 인증 구조를 갖추고 있는지 점검해 둘 필요가 있습니다. 당장 개발 과제는 아니고, 고객사가 모바일 HR 고도화를 문의할 때 음성·에이전트 연동 로드맵을 설명할 수 있도록 준비하는 수준의 모니터링이 적절합니다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing"
+    },
+    {
+      "number": 4,
+      "category": "산업 동향",
+      "title": "앤트로픽 상장, 韓 기업도 대박... SKT·LG 선제 투자 빛났다",
+      "body": "AI 기업 **앤트로픽의 상장**으로 일찍부터 지분을 확보한 한국 기업들이 수혜를 입었다는 보도가 나왔습니다. 그린포스트코리아는 **SKT**와 **LG**의 선제 투자가 빛을 발했다고 전했습니다.\n\n해외에서는 OpenAI가 앤트로픽의 IPO를 방해하려다 역풍을 맞았다는 분석이 나왔습니다. 한편 상장 열기가 지나간 뒤 엔비디아와 AMD 등 시장 전반은 차가운 현실을 마주했다는 평가도 있습니다. 실제로 엔비디아 주가는 10월 6일 고점 대비 약 40% 하락한 150달러 안팎에서 움직이고 있습니다.",
+      "insight": "앤트로픽 상장은 AI 모델 기업의 가치를 시장이 공개적으로 평가한 첫 사례로, AI 투자의 성과가 숫자로 확인되기 시작했다는 의미가 있습니다. 동시에 AI 반도체주가 크게 흔들리는 모습은 AI 투자 열기가 모든 곳에 똑같이 닿지 않는다는 점을 보여줍니다. 앞으로는 모델·플랫폼 기업과 인프라 기업 사이의 옥석 가리기가 더 뚜렷해질 수 있습니다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "국내 대기업이 AI 모델사 투자로 성과를 거뒀다는 소식은 고객사 경영진의 AI 도입 의지를 키우는 분위기를 만들 수 있습니다. 제조·금융·건설 고객사에 직접 모델을 만들자는 접근이 아니라, 검증된 외부 모델을 사내 문서와 연결하는 RAG 챗봇과 HR AI Package를 현실적인 첫 단계로 제안하는 것이 적합합니다. 이수그룹 계열사를 레퍼런스 파일럿으로 먼저 삼으면 외부 고객 영업 때 설득력이 높아집니다.",
+      "source": "그린포스트코리아 (Google 뉴스)",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5tTlpzc2pxb0RjSzhIT0IyU2JDZVhaRER0bnI5alBUUGNkNUhGSkFkR0tINkptaUV6RzV6a3htekdZX0dMcG83ekNoTmtURkp4WDNka1JuOUUtbW5TRGoyZ2JORmdrMVgxNlFaU0dWcVZ5dG9USjEtLVVB0gF6QVVfeXFMTm1OWnNzanFvRGNLOEhPQjJTYkNlWFpERHRucjlqUFRQY2Q1SEZKQWRHS0g2Sm1pRXpHNXpreG16R1lfR0xwbzd6Q2hOa1RGSnhYM2RrUm45RS1tblNEajJnYk5GZ2sxWDE2UVpTR1ZxVnl0b1RKMS0tVUE?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "글로벌 이슈",
+      "title": "앤트로픽 수학자, Claude로 리만 가설 증명 주장... 검증은 이제부터",
+      "body": "앤트로픽 소속 수학자 **레벤트 알푀게**가 **Claude**의 도움으로 수학계 최대 난제 중 하나인 **리만 가설**을 증명했다고 주장했습니다. 수십 년간 세계 최고 수학자들도 풀지 못한 문제입니다. Scientific American 등 주요 매체도 이 주장을 보도했습니다.\n\n다만 아직 **검증을 거치지 않은 주장**입니다. The Verge는 검증된다면 수학 분야에서 AI가 이룬 또 하나의 충격적 성과가 될 것이라고 전했습니다. 증명이 틀렸다고 밝혀질 가능성도 열려 있습니다.",
+      "insight": "이 주장이 맞든 틀리든 AI가 최상위 수학 연구의 도구로 쓰이는 단계에 들어섰다는 점은 분명합니다. 핵심 쟁점은 AI가 만든 긴 추론 결과를 누가, 어떻게 검증하느냐입니다. 기업 현장에서도 AI 결과물이 정교해질수록 검증 체계가 더 중요해진다는 교훈으로 읽을 수 있습니다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "수학 증명 자체는 사업과 직접 관련이 없지만, AI 추론 능력이 올라가면 인사 데이터 분석이나 급여·근태 이상 탐지 같은 복잡한 업무에도 AI 활용 폭이 넓어집니다. 한편 결과를 검증하는 절차가 중요해지므로, AI 챗봇 답변에 근거 문서 출처를 함께 보여주는 RAG 기능의 가치가 더 커집니다. 고객 제안 때 출처 표기와 검증 가능성을 차별점으로 강조하세요. 증명의 진위는 검증 결과가 나올 때까지 지켜봐야 합니다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem"
+    }
+  ],
+  "takeaways": [
+    "**Gemini 4 Neon**이 100만 토큰 컨텍스트를 앞세워 등장하면서, 긴 문서·코드를 한 번에 다루는 AI가 업무 도구의 기본값이 되어 갑니다.",
+    "구글의 Mac 제어 기능과 **애플의 에이전트 개발**로 AI가 직접 앱을 조작하는 시대가 열리고 있으며, 편의성과 **프라이버시·보안** 논쟁도 함께 커지고 있습니다.",
+    "**앤트로픽 상장**으로 AI 투자 성과가 숫자로 드러났고, 국내 기업들의 AI 투자와 도입 열기도 한층 커질 수 있습니다."
+  ],
+  "isu_summary": "오늘 뉴스의 핵심은 긴 컨텍스트 모델과 에이전트형 AI의 확산입니다. 기존 RAG 챗봇과 HR AI Package에 외부 모델을 유연하게 교체해 쓰는 구조를 갖추고, 근거 문서 출처 표시를 차별점으로 삼는 것이 현실적인 대응입니다. 한국 대기업의 앤트로픽 투자 성과로 고객사의 AI 도입 의지가 높아질 수 있으니, 이수그룹 계열사 파일럿을 레퍼런스로 삼아 제조·금융·건설 고객에 HR 중심 AI 제안을 먼저 시도해 보세요. OS 에이전트와 RPA의 경계 변화는 HR-Tong과 RPA 로드맵 관점에서 계속 지켜볼 필요가 있습니다."
+}

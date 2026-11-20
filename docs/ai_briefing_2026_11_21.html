@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Daily Briefing — 2026.11.21 (토)</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:title" content="AI Daily Briefing — 2026.11.21 (토)">
+<meta property="og:description" content="바쁜 사람을 위한 3분 AI 뉴스">
+<meta property="og:image" content="og-image.png">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #12121a;
+    --surface-2: #1a1a26;
+    --accent: #00e5a0;
+    --accent-dim: rgba(0,229,160,0.12);
+    --accent-glow: rgba(0,229,160,0.25);
+    --text: #e8e8ed;
+    --text-dim: #8888a0;
+    --text-muted: #555568;
+    --orange: #ff8844;
+    --blue: #4488ff;
+    --pink: #ff4488;
+    --yellow: #ffcc00;
+    --border: rgba(255,255,255,0.06);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    min-height: 100vh;
+    padding-bottom: 0;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+  .header {
+    padding: 60px 0 40px;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: -100px; right: -100px;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+    pointer-events: none;
+    animation: pulse 4s ease-in-out infinite;
+  }
+  @keyframes pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.6; } }
+  .header-top { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+  .logo-mark {
+    width: 36px; height: 36px;
+    background: var(--accent);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500; font-size: 14px; color: var(--bg);
+  }
+  .brand-name {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; font-weight: 500;
+    color: var(--text-dim);
+    letter-spacing: 2px; text-transform: uppercase;
+  }
+  .header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px; font-weight: 900; line-height: 1.15;
+    margin-bottom: 12px;
+    background: linear-gradient(135deg, var(--text) 0%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .date-line {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; color: var(--text-muted);
+    display: flex; align-items: center; gap: 12px;
+  }
+  .date-line .dot {
+    width: 6px; height: 6px;
+    background: var(--accent); border-radius: 50%;
+    animation: blink 2s ease-in-out infinite;
+  }
+  @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+  .tldr { padding: 32px 0; border-bottom: 1px solid var(--border); }
+  .tldr-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; color: var(--accent);
+    letter-spacing: 3px; text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .tldr p { font-size: 17px; font-weight: 500; line-height: 1.8; }
+  .section { padding: 40px 0; border-bottom: 1px solid var(--border); }
+  .section:last-child { border-bottom: none; }
+  .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+  .section-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px; font-weight: 900; color: var(--accent); line-height: 1;
+  }
+  .section-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+    padding: 4px 10px; border-radius: 4px; font-weight: 500;
+  }
+  .tag-model { background: rgba(68,136,255,0.15); color: var(--blue); }
+  .tag-product { background: rgba(0,229,160,0.12); color: var(--accent); }
+  .tag-society { background: rgba(255,68,136,0.15); color: var(--pink); }
+  .tag-industry { background: rgba(255,136,68,0.15); color: var(--orange); }
+  .tag-insight { background: rgba(255,204,0,0.15); color: var(--yellow); }
+  .news-title { font-size: 22px; font-weight: 700; line-height: 1.4; margin-bottom: 16px; }
+  .news-body {
+    font-size: 15px; line-height: 1.85; margin-bottom: 16px; font-weight: 300;
+    overflow-wrap: break-word; word-break: break-word;
+  }
+  .news-body strong { color: var(--accent); font-weight: 500; }
+  .insight-box {
+    background: var(--surface-2);
+    border-left: 3px solid var(--accent);
+    padding: 16px 20px; border-radius: 0 8px 8px 0; margin-top: 16px;
+  }
+  .insight-box .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; color: var(--accent);
+    letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;
+  }
+  .insight-box p { font-size: 14px; line-height: 1.75; font-weight: 400; }
+  .isu-box {
+    background: rgba(255,136,68,0.08);
+    border-left: 3px solid var(--orange);
+    padding: 10px 14px; border-radius: 0 6px 6px 0; margin-top: 12px;
+  }
+  .isu-box .isu-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; color: var(--orange);
+    letter-spacing: 2px; text-transform: uppercase; margin-bottom: 6px;
+  }
+  .isu-area-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; padding: 2px 8px; border-radius: 3px;
+    background: rgba(255,136,68,0.15); color: var(--orange);
+    margin-right: 6px;
+  }
+  .isu-opp-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; padding: 2px 8px; border-radius: 3px;
+    background: rgba(255,204,0,0.15); color: var(--yellow);
+  }
+  .source-link { margin-top: 10px; text-align: right; }
+  .source-link a { font-size: 12px; color: var(--text-muted); text-decoration: none; }
+  .source-link a:hover { color: var(--text-dim); }
+  .isu-section {
+    padding: 40px 0; border-top: 2px solid var(--orange); margin-top: 20px;
+  }
+  .isu-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; font-weight: 700; margin-bottom: 16px; color: var(--orange);
+  }
+  .isu-section p { font-size: 15px; line-height: 1.85; font-weight: 300; }
+  .bottom-line {
+    padding: 40px 0; border-top: 2px solid var(--accent); margin-top: 20px;
+  }
+  .bottom-line h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; font-weight: 700; margin-bottom: 20px; color: var(--accent);
+  }
+  .bottom-line p { font-size: 15px; line-height: 1.85; font-weight: 300; margin-bottom: 12px; }
+  .action-list { list-style: none; margin-top: 20px; }
+  .action-list li {
+    position: relative; padding: 10px 0 10px 24px;
+    font-size: 14px; font-weight: 400; line-height: 1.7;
+  }
+  .action-list li::before {
+    content: '→'; position: absolute; left: 0;
+    color: var(--accent); font-family: 'JetBrains Mono', monospace; font-weight: 500;
+  }
+  .action-list li strong { color: var(--accent); font-weight: 500; }
+  .footer {
+    padding: 40px 0; text-align: center;
+    color: var(--text-muted); font-size: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    border-top: 1px solid var(--border);
+  }
+  .footer .accent { color: var(--accent); }
+  .tab-nav {
+    display: flex;
+    gap: 0;
+    border-bottom: 2px solid var(--border);
+    margin-top: 8px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--bg);
+  }
+  .tab-btn {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+    padding: 16px 20px;
+    background: none; border: none;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+    white-space: nowrap;
+  }
+  .tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .tab-btn:hover:not(.active) { color: var(--text-dim); }
+  .tab-pane { display: none; }
+  .tab-pane.active { display: block; }
+  .tab-empty {
+    padding: 80px 0; text-align: center;
+    color: var(--text-muted);
+    font-family: 'JetBrains Mono', monospace; font-size: 13px;
+  }
+  .tab-empty .empty-icon { font-size: 36px; margin-bottom: 16px; opacity: 0.3; }
+  .tab-empty p { line-height: 2; }
+  .tab-empty .coming { color: var(--accent); }
+  @media (max-width: 600px) {
+    .header h1 { font-size: 30px; }
+    .news-title { font-size: 19px; }
+    .container { padding: 0 16px; }
+    .header { padding: 40px 0 30px; }
+    .tab-btn { font-size: 10px; padding: 14px 14px; letter-spacing: 1px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <div class="header-top">
+      <div class="logo-mark">AI</div>
+      <span class="brand-name">Daily Briefing</span>
+    </div>
+    <h1 id="main-title">오늘의 AI, 3분 안에 끝내기</h1>
+    <div class="date-line">
+      <span class="dot"></span>
+      <span>2026.11.21 (토) — 바쁜 당신을 위한 AI 핵심 브리핑</span>
+    </div>
+  </header>
+
+  <nav class="tab-nav">
+    <button class="tab-btn active" onclick="switchTab(this,'tab-ai')">오늘의 AI 브리핑</button>
+    <button class="tab-btn" onclick="switchTab(this,'tab-it')">국내 IT 회사 동향</button>
+  </nav>
+
+  <div id="tab-ai" class="tab-pane active">
+  <div class="tldr">
+    <div class="tldr-label">오늘의 한 줄</div>
+    <p>구글은 Gemini 4 Neon과 Mac 제어 에이전트를 내놓았고, 애플도 에이전트 개발에 뛰어들면서 AI는 이제 대답하는 도구에서 직접 일하는 도구로 넘어가고 있습니다.</p>
+  </div>
+
+  
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <span class="section-tag tag-model">모델 릴리스</span>
+    </div>
+    <h3 class="news-title">구글, 100만 토큰 Gemini 4 Neon 공개... 코딩·리서치 겨냥</h3>
+    <p class="news-body">구글이 신규 모델 <strong>Gemini 4 Neon</strong>을 출시했습니다. 핵심은 <strong>100만 토큰 컨텍스트 윈도우</strong>로, 긴 코드베이스나 방대한 문서를 한 번에 읽고 처리하는 <strong>코딩·리서치</strong> 용도를 앞세웠습니다.
+
+출시 직후 ANI 등 외신이 기능, 가격, 벤치마크, 이용 가능 범위를 정리한 해설 기사를 내놓았습니다. 또 다른 매체의 벤치마크 비교에서는 GPT-6.2 Astra가 3D 테스트에서, Gemini 4 Carbon이 평면도 테스트에서 각각 앞섰다고 합니다. 한 모델이 모든 영역을 독주하는 구도는 아니라는 뜻입니다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>긴 컨텍스트는 이제 모델 경쟁의 기본 스펙이 되어 가고 있습니다. 문서 수십 건이나 코드 저장소 전체를 한 번에 넣을 수 있으면 업무 활용 범위가 넓어집니다. 한편 영역별로 1위 모델이 갈리기 때문에, 기업은 한 모델에 올인하기보다 용도별로 모델을 골라 쓰는 방식을 점점 더 고민하게 될 것입니다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[제품 강화]</span>
+      </div>
+      <p>인사 규정, 취업규칙, 급여 기준 같은 긴 문서를 다루는 RAG 챗봇과 HR AI Package에서 긴 컨텍스트 모델을 선택지로 검토해 볼 만합니다. 문서 분할과 검색 단계를 단순화해 답변 정확도를 높일 수 있는지 PoC로 확인하세요. 모델별 강점이 다르므로, 챗봇 백엔드를 특정 모델에 묶지 않고 교체 가능하게 설계하면 고객사 제안 때 유연성이 강점이 됩니다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxOOFJmbHFFRi16RmNzZGFYQmxiZFJJNFc5MW1yVUhmT2ZZSDVMWDRjM2Z6cUlhU1FJdVRVaGh2T29PQzZuY3h1REthbEY2a0xNQlFFOEk0VmJ3SHFrRXVxSm1zWU1Tc1c4NVpXWDMzMEtZTEJUWDBmMndYMk5rX2MwQWhodzdQU0NncktjWURYMmVyRlR2a0lhdHIyRQ?oc=5" target="_blank" rel="noopener noreferrer">출처: Technology Org (Google News) →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <span class="section-tag tag-product">제품 업데이트</span>
+    </div>
+    <h3 class="news-title">Gemini, 이제 Mac 앱을 직접 조작한다... 편리함 뒤에 보안 리스크</h3>
+    <p class="news-body">구글이 <strong>Gemini</strong>가 <strong>Mac 데스크톱 앱을 직접 제어</strong>해 사용자 대신 작업을 완료하도록 하는 기능을 선보였습니다. 사용자가 말로 지시하면 AI가 앱을 열고 작업을 처리하는 <strong>에이전트형 기능</strong>입니다. Decrypt는 이 기능에 위험이 따른다고 지적했습니다.
+
+같은 날 메신저 Signal은 AI 에이전트가 화면 내용을 읽지 못하도록 Android와 iOS에서 <strong>스크린샷 기능을 제한</strong>하겠다고 밝혔습니다. OS에 내장된 에이전트가 화면 정보를 분석하는 것이 프라이버시 보장을 해친다는 이유입니다. 기능을 내놓는 쪽과 막는 쪽이 동시에 등장한 셈입니다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>AI가 PC 화면을 보고 앱을 직접 조작하기 시작하면서 편의성과 프라이버시·보안이 정면으로 부딪히고 있습니다. 기업 입장에서는 직원 PC에서 에이전트가 어떤 화면과 데이터에 접근하는지 통제하는 문제가 새 과제로 떠오릅니다. 앱 개발사와 OS 사업자 사이에서 에이전트 접근 범위를 둘러싼 갈등이 앞으로 늘어날 가능성이 큽니다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">디지털서비스 사업</span>
+        <span class="isu-opp-tag">[모니터링]</span>
+      </div>
+      <p>화면을 보고 앱을 조작하는 범용 에이전트는 장기적으로 PC 기반 정형 업무를 다루는 RPA와 겹칠 수 있습니다. 다만 기업 환경에서는 권한 통제, 감사 로그, 오류 책임 문제 때문에 당장 대체되기는 어렵습니다. 고객사의 SAP·인사 시스템 같은 핵심 업무는 검증된 RPA에 맡기고, 변동이 많은 업무에만 에이전트를 결합하는 하이브리드 제안을 준비해 두면 좋습니다. 에이전트의 화면 접근을 우려하는 고객에게는 접근 통제 논의가 상담 소재가 될 수 있습니다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxPU0FDOEM2Z01QS21qdXpWS09JSlQ4VHA2STAzQV96dTJSRWc3bW5GUEZkSU93OEtVWTY5d2Rrb1JibVlGMXVtc3dxdU1IYU9YMFMzYTdiWUxMbVJYMFdBcTZWUkhUdmo5Uld2TGpoaWpsYlMyUjRKZDVab3FOQlBhQTdsMA?oc=5" target="_blank" rel="noopener noreferrer">출처: Decrypt (Google News) →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <span class="section-tag tag-industry">산업 동향</span>
+    </div>
+    <h3 class="news-title">애플도 AI 에이전트 만든다... 웹 브라우징·코딩·앱 간 작업까지</h3>
+    <p class="news-body">애플이 웹 브라우징, 앱 간 작업, 코드 작성, 서비스 호출까지 수행하는 <strong>자체 AI 에이전트</strong> 개발에 나선 것으로 확인됐습니다. Bloomberg가 포착한 채용 공고에는 에이전트형 AI 개발을 이끌 엔지니어를 구한다는 내용이 담겼으며, 이 공고는 현재 삭제된 상태입니다.
+
+외신은 애플이 <strong>Meta, OpenAI, Anthropic</strong> 등과의 에이전트 경쟁에 합류하는 것이라고 해석합니다. 일부 매체는 애플이 AI에서 갈피를 못 잡고 있다고 혹평했습니다. 반면 Computerworld는 애플에 필요한 것은 가장 똑똑한 에이전트가 아니라 <strong>가장 신뢰받는 에이전트</strong>라고 짚었습니다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>스마트폰 OS를 쥔 애플이 에이전트 경쟁에 가세하면 AI 에이전트는 개별 앱이 아니라 OS 차원의 기본 기능으로 자리 잡을 가능성이 높아집니다. 사용자의 기기 접근 권한과 데이터를 쥔 사업자가 에이전트를 만들면, 서비스 기업은 앱 화면에 직접 들어오는 대신 에이전트가 호출하는 서비스가 되어야 할 수도 있습니다. 승부처는 성능보다 신뢰와 프라이버시가 될 가능성이 큽니다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">HR 사업</span>
+        <span class="isu-opp-tag">[모니터링]</span>
+      </div>
+      <p>OS 에이전트가 확산되면 직원이 앱을 열지 않고 말로 휴가 신청이나 근태 확인을 요청하는 흐름이 생길 수 있습니다. HR-Tong과 WORKUP이 외부 에이전트가 호출할 수 있는 API와 인증 구조를 갖추고 있는지 점검해 둘 필요가 있습니다. 당장 개발 과제는 아니고, 고객사가 모바일 HR 고도화를 문의할 때 음성·에이전트 연동 로드맵을 설명할 수 있도록 준비하는 수준의 모니터링이 적절합니다.</p>
+    </div>
+    <div class="source-link"><a href="https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing" target="_blank" rel="noopener noreferrer">출처: The Verge →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <span class="section-tag tag-industry">산업 동향</span>
+    </div>
+    <h3 class="news-title">앤트로픽 상장, 韓 기업도 대박... SKT·LG 선제 투자 빛났다</h3>
+    <p class="news-body">AI 기업 <strong>앤트로픽의 상장</strong>으로 일찍부터 지분을 확보한 한국 기업들이 수혜를 입었다는 보도가 나왔습니다. 그린포스트코리아는 <strong>SKT</strong>와 <strong>LG</strong>의 선제 투자가 빛을 발했다고 전했습니다.
+
+해외에서는 OpenAI가 앤트로픽의 IPO를 방해하려다 역풍을 맞았다는 분석이 나왔습니다. 한편 상장 열기가 지나간 뒤 엔비디아와 AMD 등 시장 전반은 차가운 현실을 마주했다는 평가도 있습니다. 실제로 엔비디아 주가는 10월 6일 고점 대비 약 40% 하락한 150달러 안팎에서 움직이고 있습니다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>앤트로픽 상장은 AI 모델 기업의 가치를 시장이 공개적으로 평가한 첫 사례로, AI 투자의 성과가 숫자로 확인되기 시작했다는 의미가 있습니다. 동시에 AI 반도체주가 크게 흔들리는 모습은 AI 투자 열기가 모든 곳에 똑같이 닿지 않는다는 점을 보여줍니다. 앞으로는 모델·플랫폼 기업과 인프라 기업 사이의 옥석 가리기가 더 뚜렷해질 수 있습니다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[영업 기회]</span>
+      </div>
+      <p>국내 대기업이 AI 모델사 투자로 성과를 거뒀다는 소식은 고객사 경영진의 AI 도입 의지를 키우는 분위기를 만들 수 있습니다. 제조·금융·건설 고객사에 직접 모델을 만들자는 접근이 아니라, 검증된 외부 모델을 사내 문서와 연결하는 RAG 챗봇과 HR AI Package를 현실적인 첫 단계로 제안하는 것이 적합합니다. 이수그룹 계열사를 레퍼런스 파일럿으로 먼저 삼으면 외부 고객 영업 때 설득력이 높아집니다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE5tTlpzc2pxb0RjSzhIT0IyU2JDZVhaRER0bnI5alBUUGNkNUhGSkFkR0tINkptaUV6RzV6a3htekdZX0dMcG83ekNoTmtURkp4WDNka1JuOUUtbW5TRGoyZ2JORmdrMVgxNlFaU0dWcVZ5dG9USjEtLVVB0gF6QVVfeXFMTm1OWnNzanFvRGNLOEhPQjJTYkNlWFpERHRucjlqUFRQY2Q1SEZKQWRHS0g2Sm1pRXpHNXpreG16R1lfR0xwbzd6Q2hOa1RGSnhYM2RrUm45RS1tblNEajJnYk5GZ2sxWDE2UVpTR1ZxVnl0b1RKMS0tVUE?oc=5" target="_blank" rel="noopener noreferrer">출처: 그린포스트코리아 (Google 뉴스) →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">05</span>
+      <span class="section-tag tag-insight">글로벌 이슈</span>
+    </div>
+    <h3 class="news-title">앤트로픽 수학자, Claude로 리만 가설 증명 주장... 검증은 이제부터</h3>
+    <p class="news-body">앤트로픽 소속 수학자 <strong>레벤트 알푀게</strong>가 <strong>Claude</strong>의 도움으로 수학계 최대 난제 중 하나인 <strong>리만 가설</strong>을 증명했다고 주장했습니다. 수십 년간 세계 최고 수학자들도 풀지 못한 문제입니다. Scientific American 등 주요 매체도 이 주장을 보도했습니다.
+
+다만 아직 <strong>검증을 거치지 않은 주장</strong>입니다. The Verge는 검증된다면 수학 분야에서 AI가 이룬 또 하나의 충격적 성과가 될 것이라고 전했습니다. 증명이 틀렸다고 밝혀질 가능성도 열려 있습니다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>이 주장이 맞든 틀리든 AI가 최상위 수학 연구의 도구로 쓰이는 단계에 들어섰다는 점은 분명합니다. 핵심 쟁점은 AI가 만든 긴 추론 결과를 누가, 어떻게 검증하느냐입니다. 기업 현장에서도 AI 결과물이 정교해질수록 검증 체계가 더 중요해진다는 교훈으로 읽을 수 있습니다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[모니터링]</span>
+      </div>
+      <p>수학 증명 자체는 사업과 직접 관련이 없지만, AI 추론 능력이 올라가면 인사 데이터 분석이나 급여·근태 이상 탐지 같은 복잡한 업무에도 AI 활용 폭이 넓어집니다. 한편 결과를 검증하는 절차가 중요해지므로, AI 챗봇 답변에 근거 문서 출처를 함께 보여주는 RAG 기능의 가치가 더 커집니다. 고객 제안 때 출처 표기와 검증 가능성을 차별점으로 강조하세요. 증명의 진위는 검증 결과가 나올 때까지 지켜봐야 합니다.</p>
+    </div>
+    <div class="source-link"><a href="https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem" target="_blank" rel="noopener noreferrer">출처: The Verge →</a></div>
+  </section>
+  
+  <div class="isu-section">
+    <h2>이수시스템 인사이트</h2>
+    <p>오늘 뉴스의 핵심은 긴 컨텍스트 모델과 에이전트형 AI의 확산입니다. 기존 RAG 챗봇과 HR AI Package에 외부 모델을 유연하게 교체해 쓰는 구조를 갖추고, 근거 문서 출처 표시를 차별점으로 삼는 것이 현실적인 대응입니다. 한국 대기업의 앤트로픽 투자 성과로 고객사의 AI 도입 의지가 높아질 수 있으니, 이수그룹 계열사 파일럿을 레퍼런스로 삼아 제조·금융·건설 고객에 HR 중심 AI 제안을 먼저 시도해 보세요. OS 에이전트와 RPA의 경계 변화는 HR-Tong과 RPA 로드맵 관점에서 계속 지켜볼 필요가 있습니다.</p>
+  </div>
+
+  <div class="bottom-line">
+    <h2>오늘의 핵심 테이크어웨이</h2>
+    <ul class="action-list">
+      <li><strong>Gemini 4 Neon</strong>이 100만 토큰 컨텍스트를 앞세워 등장하면서, 긴 문서·코드를 한 번에 다루는 AI가 업무 도구의 기본값이 되어 갑니다.</li>
+      <li>구글의 Mac 제어 기능과 <strong>애플의 에이전트 개발</strong>로 AI가 직접 앱을 조작하는 시대가 열리고 있으며, 편의성과 <strong>프라이버시·보안</strong> 논쟁도 함께 커지고 있습니다.</li>
+      <li><strong>앤트로픽 상장</strong>으로 AI 투자 성과가 숫자로 드러났고, 국내 기업들의 AI 투자와 도입 열기도 한층 커질 수 있습니다.</li>
+    </ul>
+  </div>
+  </div><!-- /tab-ai -->
+
+  <div id="tab-it" class="tab-pane">
+  <div class="tldr">
+    <div class="tldr-label">오늘의 한 줄</div>
+    <p>유럽 우주산업 3조 원 빅딜 시도, 에이피알의 브랜드 인수 검토, 테더의 결제망 투자, KB금융의 새 수장 체제까지 대형 거래와 리더십 변화가 이어진 하루였습니다.</p>
+  </div>
+
+  
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <span class="section-tag tag-industry">M&A·인수합병</span>
+    </div>
+    <h3 class="news-title">위성 스타트업, 로켓 기업 인수 승부수…유럽 우주산업 3조 원 빅딜 추진</h3>
+    <p class="news-body">머니투데이 보도에 따르면 <strong>위성 스타트업</strong>이 <strong>로켓 기업</strong>을 인수하는 거래가 유럽에서 추진되고 있습니다. 거래 규모는 <strong>약 3조 원</strong>으로 제시됐습니다. 신생 위성 기업이 발사체 기업을 사들이는 구도라는 점이 눈에 띕니다.
+
+수집된 정보는 기사 제목과 요약 수준이어서 인수 주체, 대상 기업, 거래 구조, 진행 단계 같은 세부 사항은 확인되지 않습니다. 원문 확인이 필요합니다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>위성 사업자가 발사체까지 확보하는 <strong>수직 계열화</strong> 흐름을 보여주는 사례로 읽힙니다. 우주산업이 개별 기술 경쟁에서 밸류체인 통합 경쟁으로 넘어가고 있다는 신호입니다. 국내 우주·위성 스타트업과 투자자도 비슷한 통합 전략과 대형 M&A 가능성을 염두에 둘 필요가 있습니다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE5UOXB5NlEzZkFUSkFlWUhGdjFJYkY5TFRUa2RIUjlONFgwbktlZ2pfYmhYdFYza2dWRTVaa0ppNWppT0VwUkpGUDI3dHBkM0RleENJQ2R6ZERmdWdYV2hCTW5CTEJFanZxZFHSAW9BVV95cUxQTC1qcmo1YXQ2WXJJck9lSW1rTWtoSVUyeHF0Z3l4QjVYbEJfOGlLSlA3NDAycVMtbmtuNEg0ZTlpR3dKQzNOaGw0Q2g4VWJ1TmY4Ri1sODdKazdwaHV1dFpFd2tHaTBlRmRvNzVCaGs?oc=5" target="_blank" rel="noopener noreferrer">출처: 머니투데이 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <span class="section-tag tag-industry">M&A·인수합병</span>
+    </div>
+    <h3 class="news-title">에이피알, '닥터멜락신' 인수 검토…메디큐브와 차별화가 관건</h3>
+    <p class="news-body">KPI뉴스에 따르면 <strong>에이피알</strong>이 <strong>'닥터멜락신'</strong> 브랜드 인수를 검토 중입니다. 에이피알은 <strong>메디큐브</strong>를 보유한 기업입니다.
+
+기사 제목은 인수 후 <strong>메디큐브와의 차별화</strong>를 과제로 짚었습니다. 인수 금액, 지분율, 일정 등은 수집된 정보에 포함되어 있지 않습니다. 검토 단계라 확정된 사안은 아닙니다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>단일 히트 브랜드에 의존하던 뷰티테크 기업이 <strong>브랜드 포트폴리오 확장</strong>을 위해 M&A를 활용하는 흐름으로 볼 수 있습니다. 기존 브랜드와 고객층이 겹치면 시너지보다 자기잠식이 우려되므로, 포지셔닝 설계가 성패를 좌우할 전망입니다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE5JbVRrNkY4X3lFN3owQmZVZDMzRC0wT0JPNnl6dWZsTFhYWVJpMHREWVlEWnZ3NjFhaEpSaC0zcnhBOUZqRGN2NkpYWmhkN05veGpF0gFTQVVfeXFMTkltVGs2RjhfeUU3ejBCZlVkMzNELTBPQk82eXp1ZmxMWFhZUmkwdERZWURadnc2MWFoSlJoLTNyeEE5RmpEY3Y2SlhaaGQ3Tm94akU?oc=5" target="_blank" rel="noopener noreferrer">출처: KPI뉴스 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <span class="section-tag tag-model">투자·펀딩</span>
+    </div>
+    <h3 class="news-title">테더, 스위스 SCRYPT에 투자…국제결제망으로 USDT 확장</h3>
+    <p class="news-body">Korea IT Times에 따르면 스테이블코인 <strong>USDT</strong> 발행사 <strong>테더</strong>가 스위스 업체 <strong>SCRYPT</strong>에 투자했습니다. 이번 투자는 <strong>국제결제망</strong>으로 USDT 활용 범위를 넓히려는 행보로 소개됐습니다.
+
+투자 금액과 지분 규모는 수집된 정보에 나와 있지 않습니다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>스테이블코인 발행사가 투자를 통해 <strong>결제·금융 인프라</strong>로 영역을 넓히는 전략을 보여줍니다. 국내에서도 스테이블코인 제도화와 결제 활용 논의가 이어지는 만큼, 핀테크·가상자산 기업은 글로벌 결제망 제휴 동향을 주시할 필요가 있습니다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE5WTWdtRGt4YTB1cFk5R2tIS0txNnE1Y0dpZks5V2xySExWYWhUWE8tSzh5aHRZNEVRM0x6bUltRmw5dXpGNU00RkpKSWNySGRjWmlXSkJIcENwVS13TjlFY3ZWbkVYbGhoeDdSeEJtVQ?oc=5" target="_blank" rel="noopener noreferrer">출처: Korea IT Times →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <span class="section-tag tag-society">경영·인사</span>
+    </div>
+    <h3 class="news-title">30년 'KB맨' 이재근호 출범…양종희 회장 'AI·전문성 강화' 당부</h3>
+    <p class="news-body">비즈워치에 따르면 <strong>30년 경력의 'KB맨' 이재근</strong> 체제가 공식 출범했습니다. <strong>양종희</strong> KB금융 회장은 출범에 맞춰 <strong>AI와 전문성 강화</strong>를 당부했습니다.
+
+수집된 정보에는 이재근 신임 대표의 구체적 직책과 세부 경영 과제가 담겨 있지 않습니다. 그룹 최고경영진이 AI를 핵심 메시지로 제시했다는 점이 확인되는 사실입니다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>금융권 CEO 교체기에 <strong>AI 전환</strong>이 핵심 경영 아젠다로 부상했음을 보여줍니다. 금융사의 AI 투자와 내부 역량 확보 경쟁이 커지면서 국내 IT 서비스·AI 솔루션 업계의 B2B 수요에도 영향을 줄 수 있습니다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE9aNUR5S3JzUENGeWdsSG03VFV3bV9xZmVtUkFLWmFGVWZ3bFdBNHlUWFhaS2JjT0dXYjkwMEY5VWgyMW5udjczUWhKcWdBdnB2NFFra3U0ZW8yTHBneUtaN2IzSG1UME1neEY0?oc=5" target="_blank" rel="noopener noreferrer">출처: 비즈워치 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">05</span>
+      <span class="section-tag tag-product">시장 동향</span>
+    </div>
+    <h3 class="news-title">수입 의존 100% 핵심 소재 국산화 견인…시노펙스 정민재 부사장, 대통령상 수상</h3>
+    <p class="news-body">지이코노미에 따르면 <strong>시노펙스</strong>의 <strong>정민재 부사장</strong>이 <strong>수입 의존도 100%</strong> 였던 핵심 소부장 품목의 국산화를 이끈 공로로 <strong>대통령상</strong>을 받았습니다. 머니투데이도 같은 내용을 보도했습니다.
+
+수집된 정보에는 구체적인 소재명, 수상 행사, 매출 성과가 나와 있지 않습니다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>공급망 불안이 이어지는 가운데 <strong>소부장 국산화</strong>의 정책적·산업적 중요성을 재확인시키는 소식입니다. 대통령상 수상은 국산화 성과에 대한 평가로 읽히며, 관련 기업의 투자와 협력 기회를 넓힐 수 있습니다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTFBCWGVTVG9DVkV2djA0SDlyemdtZldxQkdlY1lZN2dKUjkya1pPbDFfRXlzWGNXbElkbElYTHdiTDF1QzVQQy1SZXBwUlJrY3hIZ0pfWThPU1VOa1BOUndMMUlfbFQ?oc=5" target="_blank" rel="noopener noreferrer">출처: 지이코노미 →</a></div>
+  </section>
+
+  <div class="bottom-line">
+    <h2>오늘의 핵심 테이크어웨이</h2>
+    <ul class="action-list">
+      <li><strong>위성·발사체 통합</strong>을 노린 유럽 3조 원 규모 빅딜이 거론되며, 우주산업에서도 <strong>밸류체인 M&A</strong>가 본격화되는 흐름입니다.</li>
+      <li>에이피알의 <strong>닥터멜락신 인수 검토</strong>는 단일 브랜드 의존에서 벗어나려는 <strong>포트폴리오 확장</strong> 전략으로, 기존 브랜드와의 차별화가 관건입니다.</li>
+      <li>KB금융의 <strong>AI 강조</strong>와 테더의 <strong>결제망 투자</strong>, 소부장 <strong>국산화 성과</strong>는 각각 금융 AI 전환, 스테이블코인 인프라, 공급망 자립이라는 중장기 흐름을 보여줍니다.</li>
+    </ul>
+  </div>
+  </div><!-- /tab-it -->
+
+  <footer class="footer">
+    <p>AI Daily Briefing — <span class="accent">바쁜 사람을 위한 3분 AI 뉴스</span></p>
+    <p style="margin-top: 8px;">2026.11.21 (토) | 매일 아침 업데이트</p>
+    <p style="margin-top: 8px;">© keyboard@kakao.com</p>
+  </footer>
+</div>
+<audio src="ai_briefing_2026_11_21.mp3" controls style="position:fixed;bottom:20px;right:20px;z-index:100;width:260px;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.5);"></audio>
+<script>
+  const TAB_TITLES = {
+    'tab-ai': '오늘의 AI, 3분 안에 끝내기',
+    'tab-it': '국내 IT 회사 동향'
+  };
+  function switchTab(btn, id) {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(id).classList.add('active');
+    document.getElementById('main-title').textContent = TAB_TITLES[id];
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const audio = document.querySelector('audio');
+    if (audio) {
+      if (id === 'tab-it') {
+        audio.pause();
+        audio.style.display = 'none';
+      } else {
+        audio.style.display = '';
+      }
+    }
+  }
+</script>
+</body>
+</html>
