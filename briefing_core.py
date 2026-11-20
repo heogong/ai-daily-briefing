@@ -361,20 +361,81 @@ def parse_news_json(raw_text: str, fix_fn=None) -> dict:
 # ============================================================
 # Step 3: TTS 음성 생성
 # ============================================================
+# 영문 → 한글 발음 치환표. 긴 표현(복합어)을 먼저 둬야 부분 치환을 피한다.
+# 경계는 \b 대신 영숫자 lookaround로 판정한다: 한글도 \w라서 'OpenAI가'처럼
+# 조사가 붙으면 \b가 성립하지 않아 치환이 누락되기 때문.
 _TTS_WORD_MAP = {
-    r'\bWORKUP\b': '워크업',
-    r'\bRAG\b': '레그',
-    r'\bClaude\b': '클로드',
-    r'\bOpenAI\b': '오픈에이아이',
+    # 복합 표현
+    'Claude Code': '클로드 코드',
+    'Hugging Face': '허깅페이스',
+    'Google Cloud': '구글 클라우드',
+    'Sam Altman': '샘 올트먼',
+    # 기업·기관
+    'OpenAI': '오픈에이아이',
+    'Anthropic': '앤트로픽',
+    'DeepMind': '딥마인드',
+    'DeepSeek': '딥시크',
+    'Google': '구글',
+    'Alphabet': '알파벳',
+    'Microsoft': '마이크로소프트',
+    'Meta': '메타',
+    'Apple': '애플',
+    'Amazon': '아마존',
+    'Nvidia': '엔비디아',
+    'xAI': '엑스에이아이',
+    'SpaceX': '스페이스엑스',
+    'Mistral': '미스트랄',
+    'Moonshot': '문샷',
+    'OpenRouter': '오픈라우터',
+    'GitHub': '깃허브',
+    'Stripe': '스트라이프',
+    'Altman': '올트먼',
+    # 제품·모델
+    'ChatGPT': '챗지피티',
+    'Claude': '클로드',
+    'Gemini': '제미나이',
+    'Copilot': '코파일럿',
+    'Codex': '코덱스',
+    'Grok': '그록',
+    'Qwen': '큐원',
+    'Kimi': '키미',
+    'Cursor': '커서',
+    'Siri': '시리',
+    'Slack': '슬랙',
+    'Gmail': '지메일',
+    'Android': '안드로이드',
+    'Azure': '애저',
+    'Opus': '오퍼스',
+    'Sonnet': '소네트',
+    'Haiku': '하이쿠',
+    'Fable': '페이블',
+    'SaaS': '사스',
+    'WORKUP': '워크업',
+    'RAG': '레그',
 }
+_TTS_WORD_PATTERNS = [
+    (re.compile(rf'(?<![A-Za-z0-9]){re.escape(k)}(?![A-Za-z0-9])', re.IGNORECASE), v)
+    for k, v in _TTS_WORD_MAP.items()
+]
+
+
+_HANGUL_RE = re.compile(r'[가-힣]')
+
+
+def _drop_parenthetical(m: re.Match) -> str:
+    """괄호 안이 원어/약어 병기(한글 없음)면 통째로 제거해 중복 낭독을 막고,
+    '(약 1,380조 원)'처럼 한글 보충 설명이면 내용은 남긴다."""
+    inner = m.group(1)
+    return f' {inner} ' if _HANGUL_RE.search(inner) else ''
 
 
 def _strip_special(text: str) -> str:
     text = re.sub(r'\*+', '', text)
-    text = re.sub(r'[#\[\](){}<>|\\^~`]', '', text)
+    text = re.sub(r'[(（]([^()（）]*)[)）]', _drop_parenthetical, text)
+    text = re.sub(r'[#\[\](){}<>|\\^~`（）]', '', text)
     text = re.sub(r'https?://\S+', '', text)
-    for pattern, replacement in _TTS_WORD_MAP.items():
-        text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
+    for pattern, replacement in _TTS_WORD_PATTERNS:
+        text = pattern.sub(replacement, text)
     text = re.sub(r'\s+', ' ', text).strip()
     return text
 
