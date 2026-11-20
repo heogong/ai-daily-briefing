@@ -54,7 +54,7 @@ GCP 콘솔 → APIs & Services → Credentials → API Key 발급 후 Cloud Text
 
 ```mermaid
 flowchart TD
-    CRON["⏰ GitHub Actions<br/>매일 UTC 21:00 / KST 06:00"] --> MAIN
+    CRON["⏰ cron-job.org → GitHub Actions<br/>매일 KST 06:00"] --> MAIN
     DEV["develop 브랜치 push"] -.-> PREVIEW_WF["Preview 워크플로"]
 
     subgraph MAIN["ai_daily_briefing.py"]
@@ -129,7 +129,9 @@ flowchart TD
 
 ## GitHub Actions 자동화
 
-매일 UTC 21:00 (KST 06:00)에 실행. 저장소 Secrets에 등록 필요:
+매일 KST 06:00에 외부 스케줄러(cron-job.org)가 `workflow_dispatch` API를 호출해 실행합니다. 설정 방법은 [SCHEDULING.md](SCHEDULING.md) 참고.
+
+저장소 Secrets에 등록 필요:
 
 | Secret | 설명 |
 |--------|------|

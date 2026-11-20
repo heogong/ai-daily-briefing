@@ -1,10 +1,14 @@
 name: AI Daily Briefing
 
 on:
-  schedule:
-    # UTC 20:23 = KST 05:23 (정각 혼잡 회피 + 지연 감안해 일찍 시작)
-    - cron: '23 20 * * *'
-  workflow_dispatch:  # 수동 실행 버튼
+  # 스케줄은 외부(cron-job.org)에서 workflow_dispatch API를 호출해 실행 (SCHEDULING.md 참고)
+  # GitHub schedule 트리거는 지연/누락이 잦아 사용하지 않음 — 다시 추가하면 실행·메일이 중복됨
+  workflow_dispatch:
+
+# 중복 호출 시 동시 실행 방지 (실행 중인 작업은 취소하지 않고 다음 실행을 대기시킴)
+concurrency:
+  group: daily-briefing
+  cancel-in-progress: false
 
 permissions:
   contents: write
