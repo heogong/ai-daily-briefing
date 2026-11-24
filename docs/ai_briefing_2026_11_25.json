@@ -1,0 +1,72 @@
+{
+  "date": "2026.11.25 (수)",
+  "one_liner": "구글 Gemini 4 Neon이 모델 경쟁에 불을 붙이고, 업무 현장에서는 AI가 채용과 발전소 운영 방식까지 바꾸기 시작한 하루",
+  "news": [
+    {
+      "number": 1,
+      "category": "모델 릴리스",
+      "title": "구글 Gemini 4 Neon 공개, 'GPT-6.2 Sol·Claude Opus 5.5 대부분 넘었다'",
+      "body": "구글이 신규 AI 모델 **Gemini 4 Neon**을 공개했습니다. 구글은 이 모델이 OpenAI의 **GPT-6.2 Sol**과 Anthropic의 **Claude Opus 5.5**를 대부분의 벤치마크에서 앞선다고 주장합니다. 다만 이는 구글이 밝힌 수치이고, 독립적인 검증은 아직 나오지 않았습니다.\n\n시장 반응도 빠릅니다. Perplexity의 아라빈드 스리니바스 CEO는 Perplexity Computer에서 Gemini 4 Neon 사용량이 **하루 15%씩 증가**하고 있으며, 사용자들이 Opus 5.5와 Sol 6.2에서 갈아타고 있다고 밝혔습니다. 별도 보도에 따르면 구글은 AI 모델 중개 플랫폼 OpenRouter의 지출액에서도 한때 27% 저점을 찍은 뒤 **OpenAI를 근소하게 앞질렀습니다**.",
+      "insight": "최상위 모델의 우열이 몇 달 단위로 뒤바뀌는 국면입니다. 벤더 발표 수치보다 실제 사용량이 어디로 이동하는지가 더 믿을 만한 지표가 되고 있습니다. 기업 입장에서는 특정 모델에 올인하기보다 모델을 쉽게 교체할 수 있는 구조를 갖추는 것이 중요해졌습니다. 모델 성능이 평준화될수록 가격, 속도, 기존 업무 도구와의 연동성이 선택 기준이 됩니다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "HR AI Package와 RAG 챗봇이 특정 LLM에 묶이지 않도록 모델 교체형 구조로 설계해 두면, 신규 모델이 나올 때마다 고객사에 성능과 비용 개선안을 바로 제안할 수 있습니다. WORKUP 사내 문의 챗봇 같은 실제 고객 시나리오로 Gemini 계열과 기존 모델의 답변 품질과 비용을 비교하는 PoC를 준비해 볼 만합니다.",
+      "source": "Republic World, OfficeChai, FourWeekMBA",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOMl9zUFM2TFM1Z05hQW8tS0ZuZXE2WkZJby1ET242T2NyVE1XZkF1UW1JaTVpWm0wSTJHVmRJZkRPVDlLc2xqakVpSks4TkJvQXJtQXdLNldpcXhRNTc4dVJoT09zT0Z2cjJHbHBMTmRrRU9NeEFnaDRjOWp4MzBoLTJ5RTVUVWlESUdXbENSWmxvQXJ1Z2N2eURkTndPYmxlN1BQNzl1bkhYRzJKcGEzSUZCeUFxOWFodkphRVV0TXBNeHlULTN5a05jc2MzN3ZoNnphaTVpWkN4QTNfcEQ1c1JZRkRHN1ZWVnZqT1ZJV3lDZXR5bTFv0gH8AUFVX3lxTE9kWmotSnFKMmxPc1VPRmlMM0Rja2RRY01CLWZCYWk0dS05bGRMWkE5eWw3Sm1IT1dwdXV2TUx6Q1VFbWkwb3Rqb2FGbXd1cUFhNXJ3cWpma0ZzWjVVT3NIdkNsLTZRM2RVS3hPZkZoM3dvSlNySEREaVY0Xzdad2lmbDhZa21FbkU1OFU1VS1FVWhYSXVKREhmNVlUTXJqRnV0dmIwVWZsNkQzVl95djJ4Y2lqeHFFUTVhekhUS0hIMmFTMEdvaTVqc3kzNTdLZHd6aEVPUXRySWZjWUVvYUxVNXdsRVVMdmJxZS1aajJKcDZDZ3ZvZmxvVkR2MA?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "제품 업데이트",
+      "title": "Claude, MCP Tasks 정식 출시... 연결 가능한 커넥터 1만 개 돌파",
+      "body": "Anthropic이 Claude에서 **MCP Tasks** 기능을 정식 출시(GA)했습니다. 함께 전해진 소식으로, Claude와 연결할 수 있는 **커넥터가 1만 개**에 이르렀다고 합니다. MCP는 AI가 외부 업무 도구와 데이터에 접속하는 방식을 표준화한 규격입니다.\n\n베타를 벗어났다는 점이 핵심입니다. 기업이 실제 업무 시스템에 AI를 붙여도 될 만큼 안정화됐다는 신호로 읽힙니다. 다만 현재 확인되는 정보는 제목 수준이라 세부 기능과 요금은 추가 확인이 필요합니다.",
+      "insight": "AI 경쟁의 무게가 모델 성능에서 얼마나 많은 업무 시스템과 연결되느냐로 옮겨가고 있습니다. MCP 같은 공통 규격이 자리 잡으면 AI가 ERP, HR, 그룹웨어 같은 사내 시스템을 직접 조회하고 실행하는 사례가 빠르게 늘 것입니다. 반대로 외부 연결이 늘수록 접근 권한과 보안 통제가 도입의 핵심 과제가 됩니다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "WORKUP, Smart HR 같은 HR 시스템과 SAP 데이터를 MCP 방식으로 AI 챗봇에 연결하면, 'OO님 잔여 연차 알려줘' 같은 단순 조회를 넘어 휴가 신청까지 처리하는 HR AI Package를 만들 수 있습니다. 고객사는 보안과 권한 통제를 가장 우려할 가능성이 큽니다. ISO27001 인증과 500개 이상 HR 구축 레퍼런스를 내세워 권한 설계까지 포함한 구축 제안으로 차별화할 수 있습니다.",
+      "source": "FourWeekMBA",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQZkFtMDhEajFGTVRZbEpLTFpnVnJzazZZMUp6T0RjUDk0ME0yaEs4Tjh4T1dHSXpWWVhtaG9qZ2tZcUtva1l6a1lMdnFtYnh1OE1ETjZBbjItaFFMZ1IydXotTXdXb05Yd0d2XzdSWFkyRVhKNXo4cUM1M3JCV0FWdEl2MWVvcFhLYlNr?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "산업 동향",
+      "title": "상장한 Anthropic, 공모가 밑으로... CEO는 2억 8천만 달러어치 매각",
+      "body": "AI 기업 Anthropic의 주가가 **IPO 공모가 아래로 떨어졌습니다**. TheStreet은 CEO가 약 **2억 8천만 달러(약 4천억 원대)** 규모의 지분을 매각했다고 전했습니다. 별도로 Seeking Alpha는 Anthropic(나스닥: ANT)에 대해 'Sell' 의견으로 분석을 시작하며, 현재 밸류에이션이 요구하는 성장을 보지 못했다고 평가했습니다.\n\n국내에서는 Anthropic 등 LLM 기업을 담는 ETF가 잇따라 상장됐습니다. 미래에셋자산운용은 글로벌 LLM 액티브 ETF를 출시했는데, 자체 모델로 매출을 내는 기업으로 AI 투자의 중심이 옮겨간다는 취지입니다. AI 기업이 공개 시장의 평가를 받는 단계에 들어섰다는 뜻입니다.",
+      "insight": "AI 모델 기업이 상장사가 되면서 기술력만큼 수익성과 성장성을 시장에서 검증받게 됐습니다. 주가 하락과 경영진의 대규모 매각은 AI 기대감이 실적으로 이어질지에 대한 의문이 커졌음을 보여줍니다. 이런 압박은 AI 기업의 가격 정책, 신제품 출시 속도, 기업 고객 영업 방식에 영향을 줄 수 있습니다. AI를 도입하는 기업은 특정 벤더의 재무 상황과 가격 변동도 위험 요소로 챙겨야 합니다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "외부 LLM에 의존하는 제품일수록 벤더의 가격과 정책 변화가 고객 계약에 직접 영향을 줍니다. HR AI Package와 챗봇 제안서에는 모델 변경 조항과 비용 변동 시나리오를 미리 넣어 두면 고객 불안을 줄일 수 있습니다. 주요 모델 벤더의 요금 정책 변화는 분기마다 점검하는 것이 좋습니다.",
+      "source": "TheStreet, Seeking Alpha, 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQMnQyLWtHNDdIU2xKN2VZTFpya09BeDZDdTMwTGdLbThrdFlPc0s1SnNqQnF0WUJtYTlwUDRVa0lpaE8tMXRRRXBWY1NHQk9tZnA0YTRTUVFuNjNoNE9jUy0teDJnd1IzWk9uU2I0TEhuTUhGbll2NC15SkdFVDJxZTZVYlBTVnZ4MDRSRlgtUUc2WGs1dERkZ25xaVNwSU81c0hOX1gzeUVROU4tVUczcTJB?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "일자리·사회",
+      "title": "Anthropic 고객사 3분의 2 'AI 때문에 채용 줄였다'",
+      "body": "Anthropic은 자사 고객 기업을 인터뷰한 결과, **응답 기업의 3분의 2가 AI 때문에 채용을 줄였다**고 밝혔습니다. AI 도입이 일자리에 미치는 영향이 우려를 넘어 기업 현장의 실제 채용 결정에 나타나기 시작했다는 의미입니다.\n\n이번 수치는 AI 기업이 자사 고객을 대상으로 한 인터뷰 결과이므로, 전체 기업을 대표한다고 보기는 어렵습니다. 그럼에도 AI를 쓰는 기업들이 신규 채용 대신 AI로 업무를 처리하는 선택을 하고 있다는 점은 분명히 보여줍니다.",
+      "insight": "AI의 고용 영향이 직무 소멸보다 먼저 신규 채용 감소의 형태로 나타나고 있습니다. 이미 일하고 있는 사람보다 진입하려는 사람과 이직하려는 사람이 먼저 영향을 받는다는 뜻입니다. 기업의 HR 과제는 몇 명을 뽑느냐에서 기존 인력을 어떻게 재배치하고 재교육하느냐로 옮겨가고 있습니다. 직장인에게는 AI 활용 역량이 채용과 평가의 기본 조건이 될 가능성이 높아졌습니다.",
+      "isu_area": "HR 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "채용이 줄수록 고객사 인사팀은 인력 현황 분석, 직무 재배치, 스킬 관리 같은 기존 인력 운영에 관심이 커집니다. WORKUP과 Smart HR에 인력 현황과 직무·스킬 대시보드를 강화해 제안할 수 있습니다. 채용 규모가 줄어도 지원서 검토 부담은 유지되므로, AI 이력서 분석 솔루션도 채용 효율화 관점에서 다시 소구할 만합니다. 500개 이상 HR 고객 기반에 인력 계획 컨설팅을 묶은 영업이 가능합니다.",
+      "source": "Digg",
+      "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTFBOUTVBOGlqaENTbkswY1JvRlk5cjh1UHNvM21YTnFxdkM1RXdOelVCZTVIcFFELVppQkJ2dlM5d2VVYnVU?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "산업 동향",
+      "title": "한국동서발전, 예측기술·로봇·LLM까지 발전소 AI 성과 발표... 우수과제 6건 선정",
+      "body": "한국동서발전이 **발전운영 AI 추진실적 발표회**를 열고 우수과제 **6건**을 선정했습니다. 발표 내용은 **예측기술, 로봇, LLM**을 아우르는 것으로 전해졌습니다. 발전 설비 운영 현장 전반에 AI를 적용한 사례를 점검하는 자리였습니다.\n\n이번 발표회는 국내 에너지 공기업이 LLM을 포함한 AI를 현장 운영에 쓰고 있고, 성과를 과제 단위로 평가하는 체계까지 갖췄음을 보여줍니다. 현재 확인되는 정보는 제목 수준이라 개별 과제의 구체적 성과 수치는 확인이 필요합니다.",
+      "insight": "국내 AI 활용이 사무 자동화를 넘어 발전소 같은 핵심 인프라 운영으로 확대되고 있습니다. 설비 고장 예측, 점검 로봇, 현장 지식을 검색하는 LLM이 한 묶음으로 추진되는 점이 특징입니다. 공공·에너지 분야는 과제 단위로 성과를 평가하기 때문에 AI 도입이 시범 사업에서 지속 운영으로 넘어가는 경우가 많습니다. 현장 데이터를 얼마나 체계적으로 쌓아 두었는지가 AI 성과를 좌우합니다.",
+      "isu_area": "안전 사업",
+      "isu_tag": "[영업 기회]",
+      "isu_insight": "Smart Plant의 레이저 스캔 기반 설비 데이터와 Smart & Safety의 현장 안전 데이터는 설비 예측과 현장 지식 검색형 챗봇의 기초 자료가 될 수 있습니다. 플랜트를 운영하는 제조·에너지 고객사에는 기존 플랜트 포털에 RAG 챗봇을 붙여 점검 매뉴얼과 안전 규정을 검색하게 하는 제안이 현실적입니다. 공기업 AI 성과 평가가 확산되는 흐름이므로 공공 에너지 분야 고객 접점을 점검할 시점입니다.",
+      "source": "투어코리아, 에너지코리아뉴스",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9fdzVzUy04Y1RXRVg4Ml9kYlB6aDVTbTlwbTZhRm5pVmxvbG52eS1Ja0lzenI2THQ4b3hUc1NXNFVfUUxQRFRkNjZlMHloNkNKd0hTM3cwdVVPTWpiUUlDbHhzb1ZlR0RHd3dNMmN3?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**Gemini 4 Neon**이 GPT-6.2 Sol과 Claude Opus 5.5를 앞섰다는 구글의 주장에 사용량 증가 신호까지 더해지며 **모델 순위가 다시 흔들리고 있습니다**. 한 모델에 묶이지 않는 구조가 안전합니다.",
+    "**MCP Tasks 정식 출시와 커넥터 1만 개**는 AI 경쟁이 모델 성능에서 **업무 시스템 연결 능력**으로 옮겨가고 있음을 보여줍니다.",
+    "AI 도입 기업의 **3분의 2가 채용을 줄였다**는 Anthropic의 조사 결과가 나왔고, 국내에서도 **동서발전 같은 공기업이 현장 운영에 LLM을 적용**하고 있어 AI는 이미 일하는 방식을 바꾸는 단계에 들어섰습니다."
+  ],
+  "isu_summary": "오늘 뉴스의 공통점은 AI가 모델 성능 경쟁을 넘어 업무 시스템 연결과 현장 적용 단계로 이동했다는 점입니다. HR 분야에서는 WORKUP, Smart HR에 모델 교체형 HR AI Package와 인력 현황 분석 기능을 묶어 제안할 수 있습니다. 플랜트와 공공 분야에서는 Smart Plant 데이터에 RAG 챗봇을 연계하는 시나리오가 현실적인 영업 기회입니다."
+}
