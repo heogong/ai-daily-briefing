@@ -1,0 +1,72 @@
+{
+  "date": "2026.11.26 (목)",
+  "one_liner": "AI가 '물어보면 답하는 도구'에서 '내가 없어도 일하는 에이전트'로 넘어가고, 그 여파가 쇼핑 플랫폼, 웨어러블, 우주 데이터센터까지 번지고 있습니다.",
+  "news": [
+    {
+      "number": 1,
+      "category": "제품 업데이트",
+      "title": "Anthropic, 자리를 비워도 계속 일하는 'Claude Duet' 공개",
+      "body": "Anthropic이 **Claude Duet**를 공개했다고 Firstpost가 보도했습니다. 사용자가 자리를 비운 동안에도 **계속 작업을 이어가는 AI 어시스턴트**라는 점이 핵심입니다.\n\n수집된 기사 정보만으로는 세부 사양, 가격, 제공 범위가 확인되지 않습니다. 다만 대화창에서 질문하고 답을 기다리던 방식에서 **업무를 맡겨두고 결과만 받는 방식**으로 사용 패턴이 옮겨가고 있음을 보여주는 사례입니다.",
+      "insight": "AI 어시스턴트 경쟁이 답변 품질에서 **얼마나 오래, 얼마나 자율적으로 일을 대신하느냐**로 옮겨가고 있습니다. 직장인에게는 보고서 초안, 자료 조사, 반복 정리 같은 업무를 맡겨두고 퇴근하는 방식이 현실적인 선택지가 됩니다. 반면 AI가 자리를 비운 사이에 한 일을 사람이 검토하고 책임지는 체계가 새 과제가 됩니다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "RAG 챗봇과 HR AI Package에 '질문-답변'을 넘어 '업무 위임형' 시나리오를 붙일 근거가 됩니다. 예를 들어 채용 시즌에 AI 이력서 분석 결과를 밤사이 정리해 담당자에게 아침에 전달하는 기능을 검토할 수 있습니다. 자체 모델 개발이 아니라 외부 LLM의 에이전트 기능을 연동하는 방향이 현실적입니다. 다만 Claude Duet의 제공 형태와 기업용 API 지원 여부는 아직 확인되지 않았으므로 후속 보도를 지켜봐야 합니다.",
+      "source": "Firstpost (Google News)",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOWEZndjM2TTJidTJkRzVsQy0zUzE2M1hDZkFEbHZBSXR1cWFkaHpUMHpKTzlkZmVDZE8tVkgzSjdramR0SHZQdXhsMjdFVTlONE9fQkk3VWtIWWZKVU9uajN5RTdfVXdPeF9ZdkUxS1RONVhPcEpYb0lpR1ZteUtDMGtDY05wYjZJV2I4Y3lPTTdlZTdhd3pWV2RSUmVnbl84eXh4cUdxM2g2dC1EekNvLXFfeFVxdTZZTkR1OTJtaXRQdmpFcXdnQ1J6RmVkcVgxTTh6Rnd5TTNqLTVXRF9qbWs0djI4V01YWmVpbU1CSjFtblHSAfMBQVVfeXFMTlhGZ3YzNk0yYnUyZEc1bEMtM1MxNjNYQ2ZBRGx2QUl0dXFhZGh6VDB6Sk85ZGZlQ2RPLVZIM0o3a2pkdEh2UHV4bDI3RVU5TjRPX0JJN1VrSFlmSlVPbmozeUU3X1V3T3hfWXZFMUtUTjVYT3BKWG9JaUdWbXlLQzBrQ2NOcGI2SVdiOGN5T003ZWU3YXd6VldkUlJlZ25fOHl4eHFHcTNoNnQtRHpDby1xX3hVcXU2WU5EdTkybWl0UHZqRXF3Z0NSekZlZHFYMU04ekZ3eU0zai01V0Rfam1rNHYyOFdNWFplaW1NQkoxbW5R?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "산업 동향",
+      "title": "아마존, 메타 AI 쇼핑 에이전트 'Muse' 차단 푸는 방안 협의",
+      "body": "Fortune 보도에 따르면 아마존이 **메타의 AI 에이전트 Muse**가 자사 온라인 마켓플레이스에서 쇼핑하도록 허용하는 방안을 논의했습니다. 이 논의가 성사되면 아마존이 Muse에 걸어둔 **접근 차단이 풀릴 수 있습니다**.\n\n협의의 쟁점은 Muse가 **어떤 상품을 추천하는지**, 그리고 이것이 아마존의 **광고 매출**에 줄 영향입니다. 사용자 대신 AI가 상품을 고르면 검색 결과와 스폰서 광고에 노출되는 기존 구조가 흔들릴 수 있기 때문입니다.",
+      "insight": "AI 에이전트가 소비자 대신 쇼핑하는 시대에는 **누가 추천 권한을 쥐느냐**가 커머스 수익 구조를 좌우합니다. 플랫폼은 에이전트를 막을지 받아들일지 선택해야 하고, 광고 중심 비즈니스는 모델 재설계 압력을 받습니다. 판매자와 브랜드도 사람이 아닌 AI에게 선택받는 상품 정보 구성을 고민해야 합니다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "유통 고객사에는 AI 에이전트가 상품을 대신 탐색하는 환경이 올 수 있다는 점이 새로운 화두가 됩니다. 단기 영업 기회는 아니지만, 상품·고객 데이터를 AI가 읽기 좋게 정비하는 수요가 생길 수 있습니다. 이는 SAP 기반 ERP 마스터 데이터 정비나 RAG 챗봇 컨설팅과 연결할 수 있어 계속 지켜볼 만합니다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/1042071/meta-amazon-muse-ai-shopping-discussions"
+    },
+    {
+      "number": 3,
+      "category": "글로벌 이슈",
+      "title": "미 FCC, 스페이스X의 'AI 위성 데이터센터' 최대 100만 기 승인",
+      "body": "미 연방통신위원회(FCC)가 수요일 발표에서 스페이스X가 **최대 100만 기의 AI 칩 탑재 위성**을 배치하도록 승인했다고 밝혔습니다. 일론 머스크의 스페이스X가 추진하는 **'Starmind' 구상**의 일부입니다.\n\n구글과 블루오리진 등도 우주 AI 데이터센터를 추진하고 있습니다. 이번 승인은 규제 당국이 **이 아이디어에 내준 첫 승인**으로 소개됐습니다.",
+      "insight": "AI 연산 수요가 지상의 전력과 부지 한계를 넘어서면서 데이터센터의 입지를 우주까지 확장하려는 시도가 규제 승인 단계에 들어섰습니다. 당장 상용화를 뜻하지는 않지만, 빅테크가 AI 인프라 확보 경쟁을 지구 밖으로 넓히고 있다는 신호입니다. 승인과 실제 운영 사이에는 기술, 비용, 우주 쓰레기 같은 과제가 남아 있습니다.",
+      "isu_area": "클라우드 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "NCP 파트너로서 당장 영향을 받는 사안은 아닙니다. 다만 AI 연산 인프라의 전력과 비용 문제가 클라우드 요금과 서비스 구조에 영향을 주는 흐름은 눈여겨볼 만합니다. 고객사에 AI 워크로드를 클라우드로 옮기자고 제안할 때 비용 구조 설명 자료로 활용할 수 있습니다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers"
+    },
+    {
+      "number": 4,
+      "category": "제품 업데이트",
+      "title": "통화도 녹음·요약하는 Nothing의 AI 이어버드, 12월 8일 출시",
+      "body": "Nothing이 12월 8일 출시를 앞두고 AI 이어버드 **Ear Note**의 상세 모습을 공개했습니다. 이어버드로 **통화를 녹음**할 수 있고, 마이크가 달린 충전 케이스는 대화를 **녹음, 전사, 요약**합니다.\n\n기존 Ear 3처럼 케이스에는 **'Talk' 버튼**이 있습니다. 회의나 통화 내용을 별도 앱 없이 기기 하나로 기록하고 정리하는 쓰임새를 노린 제품입니다.",
+      "insight": "AI 기능이 앱에서 **웨어러블 하드웨어**로 내려오면서 회의록, 통화 요약 같은 업무 보조가 일상 기기에 들어오고 있습니다. 편리함이 커지는 만큼 통화와 대화 녹음에 따른 **개인정보, 동의, 기밀 유출** 문제도 함께 커집니다. 기업은 직원이 개인 기기로 업무 대화를 녹음하는 상황에 대비한 가이드라인이 필요해집니다.",
+      "isu_area": "안전 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "BizPTT 같은 음성 기반 현장 소통 솔루션에서 음성 기록의 자동 전사와 요약 수요가 커질 수 있음을 보여주는 참고 사례입니다. 현장 지시와 작업 내용을 텍스트로 남기면 안전 점검 이력 관리에 활용할 여지가 있습니다. 다만 음성 녹음에 따른 개인정보 이슈가 함께 따라오므로, 기능을 검토할 때 동의와 보관 기준을 먼저 설계해야 합니다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/gadgets/1042162/nothing-ear-note-ai-earbuds-reveal"
+    },
+    {
+      "number": 5,
+      "category": "글로벌 이슈",
+      "title": "비영어권 텍스트 처리에 AI 에너지 최대 180배 더 든다는 연구",
+      "body": "Deccan Herald가 소개한 연구에 따르면 생성형 AI는 **영어가 아닌 언어**의 텍스트를 처리하고 생성할 때 최대 **180배**의 에너지를 쓸 수 있습니다. 같은 내용이라도 언어에 따라 AI가 쓰는 자원이 크게 달라진다는 의미입니다.\n\n수집된 기사에는 상세 분석이 담겨 있지 않습니다. 다만 비영어권 언어가 AI 서비스의 비용과 환경 부담에서 불리한 위치에 있을 수 있다는 문제의식을 던집니다.",
+      "insight": "AI 서비스의 비용과 탄소 발자국은 모델 성능만이 아니라 **사용 언어**에도 좌우될 수 있습니다. 한국어처럼 영어권이 아닌 환경에서 AI를 대규모로 쓰는 기업은 같은 업무에도 더 큰 비용과 에너지를 부담할 가능성이 있습니다. 모델 선택 때 정확도뿐 아니라 해당 언어의 처리 효율을 함께 따져야 한다는 신호입니다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[제품 강화]",
+      "isu_insight": "한국어 기반 RAG 챗봇과 HR AI Package를 운영할 때 호출 비용이 영어 대비 커질 수 있다는 점을 제안서에 반영할 필요가 있습니다. 문서 청크 크기 조정, 프롬프트 간결화, 한국어 효율이 좋은 모델 선택 같은 비용 최적화 방안은 기존 제품에 바로 적용할 수 있습니다. 고객사에 예상 운영비를 투명하게 제시하는 것이 영업 신뢰도로 이어질 수 있습니다.",
+      "source": "Deccan Herald (Google News)",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOOEd1ckFFMVVpY2FQX28yRHYwY0F3bEdmQ25ac3EwMHVmX2t6OWFNZk9DWGprWno0Y0RzTXR2SzdTMTVwUnN5Rmd5UFZ0N3Z2QU0yRk1DRTNHdERCN0NPZXQzNFd2V09ESnRpQ0o3anVjeV9VSk8tWXo5NUI2R1hGQ0Z2NklnbFBIVTlNN2ExdUV1bTA0aDg1d2FyMml0dFh1Q196RV93VVAwV1BQNkxOWVRYbVcwSnBsNkR0Q215V19kNHFUcWdXVEVPMWdOdm9kNk5kb2NR?oc=5"
+    }
+  ],
+  "takeaways": [
+    "**자율형 AI 에이전트**가 대세입니다. Claude Duet처럼 자리를 비워도 일하는 AI가 등장하면서 업무 위임 범위와 검수 책임이 새 화두가 됩니다.",
+    "AI가 대신 쇼핑하고 대신 기록하는 시대에는 **플랫폼 접근권, 광고 모델, 개인정보 문제**가 AI 확산의 변수로 떠오릅니다.",
+    "AI 인프라 경쟁은 우주 데이터센터까지 확장되고, **언어별 에너지 격차**는 한국어 환경의 AI 도입 비용을 다시 따져보게 만듭니다."
+  ],
+  "isu_summary": "오늘 수집된 기사 23건 중 한국 AI 산업 관련 기사는 없어, 글로벌 뉴스 중 영향도가 높은 5건으로 구성했습니다. 영업 관점에서는 외부 LLM의 에이전트 기능을 RAG 챗봇과 HR AI Package에 접목하는 시나리오와, 한국어 AI 운영 비용을 투명하게 설명하는 제안 자료가 가장 실용적입니다. 우주 데이터센터와 AI 쇼핑 에이전트는 당장의 사업과는 거리가 있어 모니터링 수준으로 보면 충분합니다."
+}
