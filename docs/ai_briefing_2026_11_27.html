@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Daily Briefing — 2026.11.27 (금)</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:title" content="AI Daily Briefing — 2026.11.27 (금)">
+<meta property="og:description" content="바쁜 사람을 위한 3분 AI 뉴스">
+<meta property="og:image" content="og-image.png">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #12121a;
+    --surface-2: #1a1a26;
+    --accent: #00e5a0;
+    --accent-dim: rgba(0,229,160,0.12);
+    --accent-glow: rgba(0,229,160,0.25);
+    --text: #e8e8ed;
+    --text-dim: #8888a0;
+    --text-muted: #555568;
+    --orange: #ff8844;
+    --blue: #4488ff;
+    --pink: #ff4488;
+    --yellow: #ffcc00;
+    --border: rgba(255,255,255,0.06);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    min-height: 100vh;
+    padding-bottom: 0;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+  .header {
+    padding: 60px 0 40px;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: -100px; right: -100px;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+    pointer-events: none;
+    animation: pulse 4s ease-in-out infinite;
+  }
+  @keyframes pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.6; } }
+  .header-top { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+  .logo-mark {
+    width: 36px; height: 36px;
+    background: var(--accent);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500; font-size: 14px; color: var(--bg);
+  }
+  .brand-name {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; font-weight: 500;
+    color: var(--text-dim);
+    letter-spacing: 2px; text-transform: uppercase;
+  }
+  .header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px; font-weight: 900; line-height: 1.15;
+    margin-bottom: 12px;
+    background: linear-gradient(135deg, var(--text) 0%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .date-line {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; color: var(--text-muted);
+    display: flex; align-items: center; gap: 12px;
+  }
+  .date-line .dot {
+    width: 6px; height: 6px;
+    background: var(--accent); border-radius: 50%;
+    animation: blink 2s ease-in-out infinite;
+  }
+  @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+  .tldr { padding: 32px 0; border-bottom: 1px solid var(--border); }
+  .tldr-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; color: var(--accent);
+    letter-spacing: 3px; text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .tldr p { font-size: 17px; font-weight: 500; line-height: 1.8; }
+  .section { padding: 40px 0; border-bottom: 1px solid var(--border); }
+  .section:last-child { border-bottom: none; }
+  .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+  .section-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px; font-weight: 900; color: var(--accent); line-height: 1;
+  }
+  .section-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+    padding: 4px 10px; border-radius: 4px; font-weight: 500;
+  }
+  .tag-model { background: rgba(68,136,255,0.15); color: var(--blue); }
+  .tag-product { background: rgba(0,229,160,0.12); color: var(--accent); }
+  .tag-society { background: rgba(255,68,136,0.15); color: var(--pink); }
+  .tag-industry { background: rgba(255,136,68,0.15); color: var(--orange); }
+  .tag-insight { background: rgba(255,204,0,0.15); color: var(--yellow); }
+  .news-title { font-size: 22px; font-weight: 700; line-height: 1.4; margin-bottom: 16px; }
+  .news-body {
+    font-size: 15px; line-height: 1.85; margin-bottom: 16px; font-weight: 300;
+    overflow-wrap: break-word; word-break: break-word;
+  }
+  .news-body strong { color: var(--accent); font-weight: 500; }
+  .insight-box {
+    background: var(--surface-2);
+    border-left: 3px solid var(--accent);
+    padding: 16px 20px; border-radius: 0 8px 8px 0; margin-top: 16px;
+  }
+  .insight-box .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; color: var(--accent);
+    letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;
+  }
+  .insight-box p { font-size: 14px; line-height: 1.75; font-weight: 400; }
+  .isu-box {
+    background: rgba(255,136,68,0.08);
+    border-left: 3px solid var(--orange);
+    padding: 10px 14px; border-radius: 0 6px 6px 0; margin-top: 12px;
+  }
+  .isu-box .isu-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; color: var(--orange);
+    letter-spacing: 2px; text-transform: uppercase; margin-bottom: 6px;
+  }
+  .isu-area-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; padding: 2px 8px; border-radius: 3px;
+    background: rgba(255,136,68,0.15); color: var(--orange);
+    margin-right: 6px;
+  }
+  .isu-opp-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; padding: 2px 8px; border-radius: 3px;
+    background: rgba(255,204,0,0.15); color: var(--yellow);
+  }
+  .source-link { margin-top: 10px; text-align: right; }
+  .source-link a { font-size: 12px; color: var(--text-muted); text-decoration: none; }
+  .source-link a:hover { color: var(--text-dim); }
+  .isu-section {
+    padding: 40px 0; border-top: 2px solid var(--orange); margin-top: 20px;
+  }
+  .isu-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; font-weight: 700; margin-bottom: 16px; color: var(--orange);
+  }
+  .isu-section p { font-size: 15px; line-height: 1.85; font-weight: 300; }
+  .bottom-line {
+    padding: 40px 0; border-top: 2px solid var(--accent); margin-top: 20px;
+  }
+  .bottom-line h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; font-weight: 700; margin-bottom: 20px; color: var(--accent);
+  }
+  .bottom-line p { font-size: 15px; line-height: 1.85; font-weight: 300; margin-bottom: 12px; }
+  .action-list { list-style: none; margin-top: 20px; }
+  .action-list li {
+    position: relative; padding: 10px 0 10px 24px;
+    font-size: 14px; font-weight: 400; line-height: 1.7;
+  }
+  .action-list li::before {
+    content: '→'; position: absolute; left: 0;
+    color: var(--accent); font-family: 'JetBrains Mono', monospace; font-weight: 500;
+  }
+  .action-list li strong { color: var(--accent); font-weight: 500; }
+  .footer {
+    padding: 40px 0; text-align: center;
+    color: var(--text-muted); font-size: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    border-top: 1px solid var(--border);
+  }
+  .footer .accent { color: var(--accent); }
+  .tab-nav {
+    display: flex;
+    gap: 0;
+    border-bottom: 2px solid var(--border);
+    margin-top: 8px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--bg);
+  }
+  .tab-btn {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+    padding: 16px 20px;
+    background: none; border: none;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+    white-space: nowrap;
+  }
+  .tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .tab-btn:hover:not(.active) { color: var(--text-dim); }
+  .tab-pane { display: none; }
+  .tab-pane.active { display: block; }
+  .tab-empty {
+    padding: 80px 0; text-align: center;
+    color: var(--text-muted);
+    font-family: 'JetBrains Mono', monospace; font-size: 13px;
+  }
+  .tab-empty .empty-icon { font-size: 36px; margin-bottom: 16px; opacity: 0.3; }
+  .tab-empty p { line-height: 2; }
+  .tab-empty .coming { color: var(--accent); }
+  @media (max-width: 600px) {
+    .header h1 { font-size: 30px; }
+    .news-title { font-size: 19px; }
+    .container { padding: 0 16px; }
+    .header { padding: 40px 0 30px; }
+    .tab-btn { font-size: 10px; padding: 14px 14px; letter-spacing: 1px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <div class="header-top">
+      <div class="logo-mark">AI</div>
+      <span class="brand-name">Daily Briefing</span>
+    </div>
+    <h1 id="main-title">오늘의 AI, 3분 안에 끝내기</h1>
+    <div class="date-line">
+      <span class="dot"></span>
+      <span>2026.11.27 (금) — 바쁜 당신을 위한 AI 핵심 브리핑</span>
+    </div>
+  </header>
+
+  <nav class="tab-nav">
+    <button class="tab-btn active" onclick="switchTab(this,'tab-ai')">오늘의 AI 브리핑</button>
+    <button class="tab-btn" onclick="switchTab(this,'tab-it')">국내 IT 회사 동향</button>
+  </nav>
+
+  <div id="tab-ai" class="tab-pane active">
+  <div class="tldr">
+    <div class="tldr-label">오늘의 한 줄</div>
+    <p>AI가 '쓰는 도구'에서 '일을 맡기는 동료'로 넘어가면서, 사용 한도·거버넌스·데이터 규칙 같은 운영 문제가 전면에 올라온 하루</p>
+  </div>
+
+  
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <span class="section-tag tag-product">제품 업데이트</span>
+    </div>
+    <h3 class="news-title">GPT-6.2 과금 오류 수정…ChatGPT 사용 한도, 40% 더 빨리 찬다</h3>
+    <p class="news-body">OpenAI가 <strong>GPT-6.2</strong> 관련 <strong>과금 오류</strong>를 바로잡았고, 그 결과 ChatGPT 이용자가 <strong>사용 한도에 약 40% 더 빨리 도달</strong>하게 된다는 보도가 나왔습니다. 수집된 기사는 제목과 짧은 요약만 확인되어, 어떤 요금제에 어떤 방식으로 적용되는지 세부 내용은 원문 확인이 필요합니다.
+
+핵심은 오류 수정 이후 체감 사용량 기준이 달라진다는 점입니다. 같은 요금제를 쓰더라도 무거운 작업을 자주 돌리는 이용자는 한도에 더 자주 걸릴 수 있습니다. 같은 날 Claude Code와 Codex의 토큰당 가격을 비교하는 기사(<strong>$8/$40 vs $2/$10</strong>)도 나와, AI 코딩 도구의 비용 구조에 대한 관심이 커지고 있음을 보여줍니다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>생성형 AI는 성능 경쟁에서 '얼마나 오래, 얼마나 싸게 쓸 수 있는가'의 경쟁으로 무게중심이 옮겨가고 있습니다. 사용 한도와 과금 방식은 언제든 바뀔 수 있어서, 업무에 AI를 깊이 넣은 조직일수록 비용과 한도 변동을 하나의 운영 리스크로 관리해야 합니다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[리스크]</span>
+      </div>
+      <p>HR AI Package나 RAG 챗봇이 외부 LLM API에 의존한다면, 한도·단가 변동이 고객사 운영비로 바로 이어집니다. 제안 단계에서 월 호출량 기준 비용 시나리오를 제시하고, 질의 유형별로 모델을 나눠 쓰는 구조를 검토해두면 고객사 설득에 도움이 됩니다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxOQlNSTXZOSVVpU0dCZXVmZTB4cnBrTFNpN21VWThGX28zVU8yZFpVSzJJNHVsTF9BcE9yWjNwTkRWcXhad3hPNWdXSGhFRVpYdkc5Z2w0SXFVdTdMbUtUdHV6czB2SHA3cW9Bd1hGTXpKUTFjOXRuenAxWmVsQUUtblBCWUZHclZ2Smh2TDZnUXdKdw?oc=5" target="_blank" rel="noopener noreferrer">출처: Google News (ascendants.in) →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <span class="section-tag tag-product">제품 업데이트</span>
+    </div>
+    <h3 class="news-title">MS 이그나이트 2026, 코파일럿을 '업무 운영체제'로…에이전트 통제도 확대</h3>
+    <p class="news-body">Microsoft Ignite 2026에서 <strong>Copilot을 업무용 운영체제(work OS)</strong>로 내세우는 방향이 소개됐습니다. 함께 <strong>에이전트 거버넌스(agent governance)</strong>가 확대된다는 내용도 전해졌습니다. 이 기사 역시 제목 수준의 정보만 확인되어 구체적인 신규 기능은 원문 확인이 필요합니다.
+
+메시지는 분명합니다. AI를 문서 작성 보조 정도로 쓰던 단계에서 벗어나, 여러 업무 앱을 오가며 일을 처리하는 에이전트가 일하는 방식의 기본 단위가 된다는 것입니다. 그만큼 에이전트가 무엇에 접근하고 어디까지 실행할 수 있는지 관리하는 기능도 함께 강조되고 있습니다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>AI 에이전트 도입이 늘수록 경쟁 포인트는 '얼마나 똑똑한가'에서 '얼마나 안전하게 통제되는가'로 이동합니다. 기업 고객은 권한 관리, 실행 기록, 승인 절차 같은 거버넌스 기능을 도입 조건으로 요구할 가능성이 큽니다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[핵심 기회]</span>
+      </div>
+      <p>인사·급여 데이터는 에이전트에 가장 먼저 권한 문제가 생기는 영역입니다. HR 레퍼런스 500곳 이상의 경험을 바탕으로 WORKUP과 AI 플랫폼에 열람 권한 분리, 질의·응답 로그, 민감 정보 마스킹 기능을 갖추면 차별화 포인트가 됩니다. 고객사의 MS 365 Copilot 도입 시 HR 데이터 연동 범위를 함께 점검해주는 컨설팅도 영업 소재로 쓸 수 있습니다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxNV00xUXAwTjA5LVpnVlJoZklXMHRIeDM4VXRJTkNXSEdiTUEtSXdMdWtpc3hyTjk5RVBZQ3MyWGd4UmpFUERoOHFmSHdxbnZNMEh2UjFhc2ZYZWx3RXZYbFlGSEtWa3BQcEdGWm9IcEQtNkxJamNiNDI0RElnbW1CMGRldWpIY0cyZ2M3UDlVYWpZZHNIbUg5d09GN3pGQWRScmVzUGdB?oc=5" target="_blank" rel="noopener noreferrer">출처: TechGig (Google News) →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <span class="section-tag tag-product">제품 업데이트</span>
+    </div>
+    <h3 class="news-title">'큰 형님' 구글의 귀환…제미나이 네온·무료 비서 '태스크' 써보니</h3>
+    <p class="news-body">매일경제가 구글의 <strong>제미나이 네온</strong>과 <strong>무료 비서 기능 '태스크'</strong>를 직접 써본 후기를 실었습니다. 기사 제목은 '꽤 쓸만하네'라는 평가를 담고 있고, 한동안 OpenAI와 Anthropic에 쏠렸던 관심이 구글로 다시 돌아오고 있음을 '귀환'이라는 표현으로 짚었습니다.
+
+주목할 점은 <strong>무료</strong>로 제공되는 비서형 기능이라는 것입니다. 일정 정리나 할 일 처리 같은 개인 업무를 AI에 맡기는 경험을 별도 비용 없이 접할 수 있다면, 직장인의 AI 사용 습관이 빠르게 바뀔 수 있습니다. 세부 기능 범위는 원문 확인이 필요합니다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>빅테크가 비서형 AI 기능을 무료로 풀면 개인 사용자의 기대 수준이 올라가고, 기업용 도구도 같은 수준의 편의성을 요구받게 됩니다. 반대로 개인용 무료 AI는 사내 데이터와 연결되지 않기 때문에, 기업 환경에서의 차별화는 보안과 업무 시스템 연동에서 갈립니다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">디지털서비스 사업</span>
+        <span class="isu-opp-tag">[모니터링]</span>
+      </div>
+      <p>무료 비서형 AI가 퍼지면 단순 반복 업무를 자동화하는 RPA의 가치 제안이 일부 겹칠 수 있습니다. 반면 SAP 같은 ERP, 사내 승인 흐름처럼 정형화된 업무는 여전히 RPA의 강점입니다. 고객사에 'AI 비서는 판단과 요약, RPA는 시스템 간 정확한 실행'으로 역할을 나눠 설명하는 제안 구도를 준비해두면 좋습니다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiRkFVX3lxTE9ablo4OU4tS2lkNGZlZDBaY2g1a1hVLW9pYWs2RWU3OE5USmdzcEJSWHBiTHBIOWV3OV9IRldTMjBzLVpxWVE?oc=5" target="_blank" rel="noopener noreferrer">출처: 매일경제 (Google 뉴스) →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <span class="section-tag tag-industry">산업 동향</span>
+    </div>
+    <h3 class="news-title">복지부, 의료데이터 활용 절차 간소화…AI 사용 안전기준 신설</h3>
+    <p class="news-body">보건복지부가 <strong>보건의료데이터 활용 가이드라인을 6차 전부개정</strong>했습니다. 머니투데이는 이번 개정으로 <strong>의료데이터 활용 절차가 간소화</strong>되고, <strong>AI 사용에 대한 안전기준이 새로 생겼다</strong>고 전했습니다.
+
+의료데이터는 개인정보 중에서도 민감도가 높아 활용 절차가 까다롭기로 알려져 있습니다. 절차가 줄어들면 의료기관과 AI 기업이 데이터를 활용하기 쉬워지고, AI 안전기준이 함께 들어가면서 무분별한 사용에 대한 최소한의 기준선도 마련됩니다. 개정안의 세부 조항은 원문 확인이 필요합니다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>한국에서도 산업별로 'AI를 쓰되 어떤 기준을 지켜야 하는가'를 정하는 규칙이 구체화되고 있습니다. 데이터 활용 장벽은 낮추고 안전 요건은 명시하는 흐름은 의료 외에 금융·공공 등 민감 정보를 다루는 산업으로 번질 가능성이 큽니다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">AI 사업</span>
+        <span class="isu-opp-tag">[정부 사업]</span>
+      </div>
+      <p>의료·공공 분야에서 데이터 활용과 AI 안전기준이 정리되면 민원·내부 문서 검색용 RAG 챗봇 수요가 생길 수 있습니다. 보건의료 기관과 공공 고객 대상으로 접근 권한 통제와 응답 근거 표시를 갖춘 챗봇 제안을 준비해볼 만합니다. ISO27001 인증과 NCP 공공 클라우드 파트너 경험을 결합하면 보안 요건 대응에서 설득력을 높일 수 있습니다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE9QSnVwYkZlV051WnQtcWp2TW92NVRZWFprYTN2NUhoUE95SUpMcEZOdlAyRnIwSDgzZ28wOUVNYTBmaTZUdmNxWUhmWEpMekhiVUMyZmFiZkVVUTAyNGtGMkpDQ2ZyT1RWR2hTM25ETXktdlhIZGM00gF8QVVfeXFMTXFoVF8zang5RHBtZ21TQ19ib0dtY1ZUd2hpODltNVpPR3FGbXFjTjRNYWEwMWF5WUx5dkoyQVNkVnhpQ0RscHZzQzZvZE9MS1Rxd0JSRkZDdGlQN0ZXVlZobjZIV0RZOGJIeE1reVh4NWx1Z2k3R05QTEFEOA?oc=5" target="_blank" rel="noopener noreferrer">출처: 머니투데이 (Google 뉴스) →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">05</span>
+      <span class="section-tag tag-insight">글로벌 이슈</span>
+    </div>
+    <h3 class="news-title">FCC, 스페이스X 'AI 데이터센터 위성' 최대 100만 기 승인</h3>
+    <p class="news-body">미국 FCC가 일론 머스크의 스페이스X가 추진하는 <strong>'Starmind' 구상</strong>에 따라 <strong>AI 칩을 탑재한 위성을 최대 100만 기</strong> 배치하도록 승인했습니다. 구글과 블루 오리진 등도 우주 AI 데이터센터를 추진하고 있으며, 이번이 <strong>해당 기관의 첫 승인</strong>이라고 합니다.
+
+AI 연산 수요가 폭증하면서 전력과 부지 문제를 우주로 풀겠다는 구상이 규제 승인 단계까지 왔다는 의미입니다. 다만 승인은 배치 가능 범위에 대한 허가이며, 실제 운영 시점과 비용 경쟁력은 아직 확인된 바 없습니다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>AI 인프라 경쟁이 칩과 모델을 넘어 전력, 부지, 냉각 같은 물리적 한계를 어떻게 돌파하느냐로 확장되고 있습니다. 우주 데이터센터가 현실화되더라도 상용화에는 시간이 걸리겠지만, 연산 자원 확보가 AI 사업의 핵심 병목이라는 신호로 읽을 수 있습니다.</p>
+    </div>
+    <div class="isu-box">
+      <div class="isu-label">
+        <span class="isu-area-tag">클라우드 사업</span>
+        <span class="isu-opp-tag">[모니터링]</span>
+      </div>
+      <p>우주 데이터센터는 당장 국내 고객사 사업과 직접 연결되지 않습니다. 다만 AI 연산 비용과 인프라 확보 이슈는 고객사의 클라우드 비용 문제로 이어집니다. NCP 파트너로서 AI 워크로드가 늘어나는 고객에게 마이그레이션 시 비용 최적화와 GPU 사용 계획을 함께 컨설팅하는 방향이 현실적입니다.</p>
+    </div>
+    <div class="source-link"><a href="https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers" target="_blank" rel="noopener noreferrer">출처: The Verge →</a></div>
+  </section>
+  
+  <div class="isu-section">
+    <h2>이수시스템 인사이트</h2>
+    <p>오늘 뉴스는 AI 도입 이후 필요한 운영 요소가 비용 관리, 권한 통제, 데이터 활용 기준이라는 점을 보여줍니다. 이는 HR 데이터를 다뤄온 WORKUP·HR AI Package 고객에게 권한 분리와 로그 관리 기능을 갖춘 AI 제안을 할 수 있는 기회입니다. 또한 복지부 가이드라인 개정은 공공·의료 분야의 RAG 챗봇 영업 소재가 되고, 무료 AI 비서 확산은 RPA와의 역할 구분을 고객에게 설명해야 할 이유가 됩니다.</p>
+  </div>
+
+  <div class="bottom-line">
+    <h2>오늘의 핵심 테이크어웨이</h2>
+    <ul class="action-list">
+      <li><strong>AI 사용 한도와 과금은 고정값이 아닙니다.</strong> GPT-6.2 사례처럼 정책이 바뀌면 체감 사용량이 달라지므로, 업무에 AI를 깊이 넣을수록 비용 변동을 미리 점검해야 합니다.</li>
+      <li><strong>AI 에이전트 시대의 경쟁력은 '통제 가능성'입니다.</strong> MS의 에이전트 거버넌스 확대처럼 권한·기록·승인 관리가 기업 도입의 기본 조건이 되고 있습니다.</li>
+      <li><strong>한국에서도 업종별 AI 사용 기준이 구체화되고 있습니다.</strong> 복지부의 의료데이터 가이드라인 개정은 규제 완화와 안전기준이 함께 가는 방향을 보여줍니다.</li>
+    </ul>
+  </div>
+  </div><!-- /tab-ai -->
+
+  <div id="tab-it" class="tab-pane">
+  <div class="tldr">
+    <div class="tldr-label">오늘의 한 줄</div>
+    <p>삼성전자의 M&A 전담조직 신설과 에이피알의 3,900억 원 닥터멜락신 인수, 토스의 커머스 확장이 겹치며 국내 기업들이 인수와 제휴로 성장 동력을 찾는 흐름이 뚜렷해졌습니다.</p>
+  </div>
+
+  
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <span class="section-tag tag-industry">M&A·인수합병</span>
+    </div>
+    <h3 class="news-title">삼성전자, M&A 전담조직 신설…대형 인수합병 속도 붙나</h3>
+    <p class="news-body"><strong>삼성전자</strong>가 <strong>M&A 전담조직을 신설</strong>한 것으로 전해졌습니다. 연합뉴스는 이 조직 신설로 대형 인수합병에 속도가 붙을지 주목된다고 종합 보도했습니다.
+
+전담조직이 만들어졌다는 것은 외부 기업 인수를 일회성 이벤트가 아니라 상시 경영 과제로 다루겠다는 신호로 읽힙니다. 다만 확보된 기사 요약에는 조직의 구체적인 구성, 책임자, 인수 대상 분야가 나와 있지 않아 원문 확인이 필요합니다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>국내 최대 IT 기업이 M&A 기능을 조직으로 제도화한 만큼, AI·반도체·로봇 등 신성장 분야의 기술 기업과 스타트업이 인수 후보로 거론될 가능성이 커졌습니다. 삼성의 움직임은 국내 IT 업계 전반의 M&A 시장 분위기와 몸값 형성에도 영향을 줄 수 있습니다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMidEFVX3lxTFB3dmx2U1pYUTMtN0FYSDFKNE5MaEdYUXVCVHY1SW56T2R3Yy1wQkNkYWFaU3JzWlZ4SlAwdzU2amdqTUpzSDNpay1NMjc5Tng5UXhPVS1pYWxQT2tyUl9DVUd0ZW5Kbnl6VDh3ZHJCT2lUQUd0?oc=5" target="_blank" rel="noopener noreferrer">출처: 연합뉴스 한민족센터 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <span class="section-tag tag-industry">M&A·인수합병</span>
+    </div>
+    <h3 class="news-title">에이피알, 3,900억 투자해 '닥터멜락신' 인수…더마 스킨케어로 영토 확장</h3>
+    <p class="news-body"><strong>에이피알</strong>(김병훈 대표)이 <strong>약 3,900억 원</strong>을 투자해 더마 스킨케어 브랜드 <strong>닥터멜락신</strong>을 인수한다고 여러 매체가 보도했습니다. 에이피알은 이번 인수로 <strong>더마 스킨케어 사업</strong>을 확장하고 글로벌 영토를 넓힌다는 계획입니다.
+
+매일경제는 닥터멜락신이 자본잠식 상태에서 3,900억 원에 매각돼 'M&A 성공 스토리'로 평가된다고 전했습니다. 매각 측으로서는 자본잠식 기업이 대형 엑시트에 성공한 사례입니다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>뷰티 디바이스와 D2C 중심의 플랫폼형 기업이 인수로 브랜드 포트폴리오를 넓히는 사례입니다. 기술·플랫폼 역량을 가진 기업이 소비재 브랜드를 직접 인수하는 흐름은 업종 경계를 흐리는 M&A가 늘고 있음을 보여줍니다. 자본잠식 기업이 높은 가격에 팔린 점은 스타트업 엑시트 시장에도 참고가 됩니다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE0yREVsSzJ4RzUtWG84SHJwYmY3LUtldHJTdmhMMFJ2NkhaeUc0VGlLVXJKWm9FSTZTMC1aYWlJaE1LZHJWejdrSG1ESnotYmN6NVNXcnhhNXphVGVqXzlnZEdsczZZaEhuSU9RTEZ1dWJiMlk?oc=5" target="_blank" rel="noopener noreferrer">출처: 어패럴뉴스 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <span class="section-tag tag-model">투자·펀딩</span>
+    </div>
+    <h3 class="news-title">토스, 300억 투자한 '오아시스'와 협력 확대…커머스 사업 키운다</h3>
+    <p class="news-body"><strong>토스</strong>가 <strong>300억 원을 투자한 오아시스</strong>와 협력을 확대하며 <strong>커머스 사업</strong>을 키우기로 했습니다. 전략적 투자로 맺은 관계를 실제 사업 협력으로 넓히는 단계로 보입니다.
+
+확보된 기사 요약에는 구체적인 협력 범위와 일정이 나와 있지 않아 세부 내용은 원문 확인이 필요합니다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>금융 슈퍼앱 토스가 결제·금융 이용자 기반을 커머스로 확장하려는 움직임입니다. 지분 투자와 사업 제휴를 결합하는 방식은 인수보다 부담이 적어, 핀테크와 이커머스 업계의 새로운 협력 모델로 자리 잡을 가능성이 있습니다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE5MajFHYjE0Uld5WHBrS0h0cUdDbXI2SmlzQWRNR0hpSWdNSWdpUzNVOVlQTC1xZ3FzUzZqb2ZKQU5QUzdQLW84TzJFYkozcURDVjN6Z1VwWkNyTnM5Q3g2WnZ0dzFOUXpkNnFacnhYRkJ0dWs?oc=5" target="_blank" rel="noopener noreferrer">출처: 디지털투데이 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <span class="section-tag tag-model">투자·펀딩</span>
+    </div>
+    <h3 class="news-title">핀테크 IPO 러시…얼어붙은 증시 넘을 수 있을까</h3>
+    <p class="news-body">핀테크 기업들이 잇따라 <strong>IPO</strong>에 나서며 <strong>'IPO 러시'</strong>가 이어지고 있습니다. 이뉴스투데이는 <strong>얼어붙은 증시</strong> 환경을 넘어설 수 있을지가 관건이라고 짚었습니다.
+
+확보된 요약에는 개별 기업명과 공모 규모가 나와 있지 않아, 세부 일정과 밸류에이션은 원문 확인이 필요합니다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>증시 환경이 좋지 않은 가운데 상장을 추진하는 것은 투자금 회수 시점과 성장 자금 확보 필요성이 모두 커졌다는 뜻으로 읽힙니다. 이번 IPO들의 흥행 여부는 이후 국내 IT·핀테크 기업의 상장 일정과 VC 투자 심리에 영향을 줄 수 있습니다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE5aOGJqRjBXQlNuVVNWUUl5SEk2bmxGblF1UDdTblhmWnlSaXlnOUJIckRDMXFqZXV4N0NoYlZka2R3Z2JmelctSWRYUGlFb2k2bUpJQVJMQm02UFpOeGhCUHl3V2xnam1iTzdTZDdQcjRjOGQx0gF0QVVfeXFMTlo4YmpGMFdCU25VU1ZRSXlISTZubEZuUXVQN1NuWGZaeVJpeWc5QkhyREMxcWpldXg3Q2hiVmRrZHdnYmZ6Vy1JZFhQaUVvaTZtSklBUkxCbTZQWk54aEJQeXdXbGdqbWJPN1NkN1ByNGM4ZDE?oc=5" target="_blank" rel="noopener noreferrer">출처: 이뉴스투데이 →</a></div>
+  </section>
+  <section class="section">
+    <div class="section-header">
+      <span class="section-number">05</span>
+      <span class="section-tag tag-insight">사업 전략</span>
+    </div>
+    <h3 class="news-title">유베이스, AI 네이티브 기업 '엑스베이스' 출범…글로벌 시장 공략</h3>
+    <p class="news-body"><strong>유베이스</strong>가 <strong>AI 네이티브 기업 '엑스베이스'</strong>를 출범시키고 <strong>글로벌 시장 공략</strong>에 나섭니다. 기존 사업에 AI를 덧붙이는 방식이 아니라 AI를 전제로 한 별도 기업을 세웠다는 점이 특징입니다.
+
+확보된 요약에는 출범 시점의 구체적인 사업 모델과 투자 규모가 나와 있지 않아 세부 내용은 원문 확인이 필요합니다.</p>
+    <div class="insight-box">
+      <div class="label">시사점</div>
+      <p>국내 기업이 AI 전환을 위해 별도 법인이나 브랜드를 만드는 사례가 늘고 있음을 보여줍니다. 기존 서비스형 사업의 한계를 AI 기반 신규 조직으로 돌파하려는 전략으로, 유사한 분사·신설 움직임이 이어질지 지켜볼 만합니다.</p>
+    </div>
+    <div class="source-link"><a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE5mVUVLcG00Z1U4a3ctZ3Zvdy0zcU5ETEZYQ3M1dklQcUQyS0JFaFpqZGJDQUFqNDZSUWctbVJIOU9XMUstVnBacGs5bGROWjhnSGhyZEFoUXMzYXBqWlEyS053b0RFZw?oc=5" target="_blank" rel="noopener noreferrer">출처: 올포칩 →</a></div>
+  </section>
+
+  <div class="bottom-line">
+    <h2>오늘의 핵심 테이크어웨이</h2>
+    <ul class="action-list">
+      <li><strong>삼성전자의 M&A 전담조직 신설</strong>은 국내 IT 업계의 대형 인수합병 기대감을 키우는 신호입니다.</li>
+      <li><strong>에이피알의 닥터멜락신 인수(3,900억 원)</strong>는 플랫폼·D2C 기업이 소비재 브랜드까지 사들이는 업종 간 M&A 흐름을 보여줍니다.</li>
+      <li><strong>토스의 오아시스 투자와 협력 확대</strong>, <strong>유베이스의 엑스베이스 출범</strong>처럼 투자와 제휴, 신설 법인으로 신사업을 키우는 움직임이 활발합니다. <strong>핀테크 IPO</strong>의 성과는 시장 심리의 시험대가 될 전망입니다.</li>
+    </ul>
+  </div>
+  </div><!-- /tab-it -->
+
+  <footer class="footer">
+    <p>AI Daily Briefing — <span class="accent">바쁜 사람을 위한 3분 AI 뉴스</span></p>
+    <p style="margin-top: 8px;">2026.11.27 (금) | 매일 아침 업데이트</p>
+    <p style="margin-top: 8px;">© keyboard@kakao.com</p>
+  </footer>
+</div>
+<audio src="ai_briefing_2026_11_27.mp3" controls style="position:fixed;bottom:20px;right:20px;z-index:100;width:260px;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.5);"></audio>
+<script>
+  const TAB_TITLES = {
+    'tab-ai': '오늘의 AI, 3분 안에 끝내기',
+    'tab-it': '국내 IT 회사 동향'
+  };
+  function switchTab(btn, id) {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(id).classList.add('active');
+    document.getElementById('main-title').textContent = TAB_TITLES[id];
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const audio = document.querySelector('audio');
+    if (audio) {
+      if (id === 'tab-it') {
+        audio.pause();
+        audio.style.display = 'none';
+      } else {
+        audio.style.display = '';
+      }
+    }
+  }
+</script>
+</body>
+</html>

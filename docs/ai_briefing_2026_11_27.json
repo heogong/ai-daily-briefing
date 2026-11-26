@@ -1,0 +1,72 @@
+{
+  "date": "2026.11.27 (금)",
+  "one_liner": "AI가 '쓰는 도구'에서 '일을 맡기는 동료'로 넘어가면서, 사용 한도·거버넌스·데이터 규칙 같은 운영 문제가 전면에 올라온 하루",
+  "news": [
+    {
+      "number": 1,
+      "category": "제품 업데이트",
+      "title": "GPT-6.2 과금 오류 수정…ChatGPT 사용 한도, 40% 더 빨리 찬다",
+      "body": "OpenAI가 **GPT-6.2** 관련 **과금 오류**를 바로잡았고, 그 결과 ChatGPT 이용자가 **사용 한도에 약 40% 더 빨리 도달**하게 된다는 보도가 나왔습니다. 수집된 기사는 제목과 짧은 요약만 확인되어, 어떤 요금제에 어떤 방식으로 적용되는지 세부 내용은 원문 확인이 필요합니다.\n\n핵심은 오류 수정 이후 체감 사용량 기준이 달라진다는 점입니다. 같은 요금제를 쓰더라도 무거운 작업을 자주 돌리는 이용자는 한도에 더 자주 걸릴 수 있습니다. 같은 날 Claude Code와 Codex의 토큰당 가격을 비교하는 기사(**$8/$40 vs $2/$10**)도 나와, AI 코딩 도구의 비용 구조에 대한 관심이 커지고 있음을 보여줍니다.",
+      "insight": "생성형 AI는 성능 경쟁에서 '얼마나 오래, 얼마나 싸게 쓸 수 있는가'의 경쟁으로 무게중심이 옮겨가고 있습니다. 사용 한도와 과금 방식은 언제든 바뀔 수 있어서, 업무에 AI를 깊이 넣은 조직일수록 비용과 한도 변동을 하나의 운영 리스크로 관리해야 합니다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[리스크]",
+      "isu_insight": "HR AI Package나 RAG 챗봇이 외부 LLM API에 의존한다면, 한도·단가 변동이 고객사 운영비로 바로 이어집니다. 제안 단계에서 월 호출량 기준 비용 시나리오를 제시하고, 질의 유형별로 모델을 나눠 쓰는 구조를 검토해두면 고객사 설득에 도움이 됩니다.",
+      "source": "Google News (ascendants.in)",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOQlNSTXZOSVVpU0dCZXVmZTB4cnBrTFNpN21VWThGX28zVU8yZFpVSzJJNHVsTF9BcE9yWjNwTkRWcXhad3hPNWdXSGhFRVpYdkc5Z2w0SXFVdTdMbUtUdHV6czB2SHA3cW9Bd1hGTXpKUTFjOXRuenAxWmVsQUUtblBCWUZHclZ2Smh2TDZnUXdKdw?oc=5"
+    },
+    {
+      "number": 2,
+      "category": "제품 업데이트",
+      "title": "MS 이그나이트 2026, 코파일럿을 '업무 운영체제'로…에이전트 통제도 확대",
+      "body": "Microsoft Ignite 2026에서 **Copilot을 업무용 운영체제(work OS)**로 내세우는 방향이 소개됐습니다. 함께 **에이전트 거버넌스(agent governance)**가 확대된다는 내용도 전해졌습니다. 이 기사 역시 제목 수준의 정보만 확인되어 구체적인 신규 기능은 원문 확인이 필요합니다.\n\n메시지는 분명합니다. AI를 문서 작성 보조 정도로 쓰던 단계에서 벗어나, 여러 업무 앱을 오가며 일을 처리하는 에이전트가 일하는 방식의 기본 단위가 된다는 것입니다. 그만큼 에이전트가 무엇에 접근하고 어디까지 실행할 수 있는지 관리하는 기능도 함께 강조되고 있습니다.",
+      "insight": "AI 에이전트 도입이 늘수록 경쟁 포인트는 '얼마나 똑똑한가'에서 '얼마나 안전하게 통제되는가'로 이동합니다. 기업 고객은 권한 관리, 실행 기록, 승인 절차 같은 거버넌스 기능을 도입 조건으로 요구할 가능성이 큽니다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[핵심 기회]",
+      "isu_insight": "인사·급여 데이터는 에이전트에 가장 먼저 권한 문제가 생기는 영역입니다. HR 레퍼런스 500곳 이상의 경험을 바탕으로 WORKUP과 AI 플랫폼에 열람 권한 분리, 질의·응답 로그, 민감 정보 마스킹 기능을 갖추면 차별화 포인트가 됩니다. 고객사의 MS 365 Copilot 도입 시 HR 데이터 연동 범위를 함께 점검해주는 컨설팅도 영업 소재로 쓸 수 있습니다.",
+      "source": "TechGig (Google News)",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNV00xUXAwTjA5LVpnVlJoZklXMHRIeDM4VXRJTkNXSEdiTUEtSXdMdWtpc3hyTjk5RVBZQ3MyWGd4UmpFUERoOHFmSHdxbnZNMEh2UjFhc2ZYZWx3RXZYbFlGSEtWa3BQcEdGWm9IcEQtNkxJamNiNDI0RElnbW1CMGRldWpIY0cyZ2M3UDlVYWpZZHNIbUg5d09GN3pGQWRScmVzUGdB?oc=5"
+    },
+    {
+      "number": 3,
+      "category": "제품 업데이트",
+      "title": "'큰 형님' 구글의 귀환…제미나이 네온·무료 비서 '태스크' 써보니",
+      "body": "매일경제가 구글의 **제미나이 네온**과 **무료 비서 기능 '태스크'**를 직접 써본 후기를 실었습니다. 기사 제목은 '꽤 쓸만하네'라는 평가를 담고 있고, 한동안 OpenAI와 Anthropic에 쏠렸던 관심이 구글로 다시 돌아오고 있음을 '귀환'이라는 표현으로 짚었습니다.\n\n주목할 점은 **무료**로 제공되는 비서형 기능이라는 것입니다. 일정 정리나 할 일 처리 같은 개인 업무를 AI에 맡기는 경험을 별도 비용 없이 접할 수 있다면, 직장인의 AI 사용 습관이 빠르게 바뀔 수 있습니다. 세부 기능 범위는 원문 확인이 필요합니다.",
+      "insight": "빅테크가 비서형 AI 기능을 무료로 풀면 개인 사용자의 기대 수준이 올라가고, 기업용 도구도 같은 수준의 편의성을 요구받게 됩니다. 반대로 개인용 무료 AI는 사내 데이터와 연결되지 않기 때문에, 기업 환경에서의 차별화는 보안과 업무 시스템 연동에서 갈립니다.",
+      "isu_area": "디지털서비스 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "무료 비서형 AI가 퍼지면 단순 반복 업무를 자동화하는 RPA의 가치 제안이 일부 겹칠 수 있습니다. 반면 SAP 같은 ERP, 사내 승인 흐름처럼 정형화된 업무는 여전히 RPA의 강점입니다. 고객사에 'AI 비서는 판단과 요약, RPA는 시스템 간 정확한 실행'으로 역할을 나눠 설명하는 제안 구도를 준비해두면 좋습니다.",
+      "source": "매일경제 (Google 뉴스)",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9ablo4OU4tS2lkNGZlZDBaY2g1a1hVLW9pYWs2RWU3OE5USmdzcEJSWHBiTHBIOWV3OV9IRldTMjBzLVpxWVE?oc=5"
+    },
+    {
+      "number": 4,
+      "category": "산업 동향",
+      "title": "복지부, 의료데이터 활용 절차 간소화…AI 사용 안전기준 신설",
+      "body": "보건복지부가 **보건의료데이터 활용 가이드라인을 6차 전부개정**했습니다. 머니투데이는 이번 개정으로 **의료데이터 활용 절차가 간소화**되고, **AI 사용에 대한 안전기준이 새로 생겼다**고 전했습니다.\n\n의료데이터는 개인정보 중에서도 민감도가 높아 활용 절차가 까다롭기로 알려져 있습니다. 절차가 줄어들면 의료기관과 AI 기업이 데이터를 활용하기 쉬워지고, AI 안전기준이 함께 들어가면서 무분별한 사용에 대한 최소한의 기준선도 마련됩니다. 개정안의 세부 조항은 원문 확인이 필요합니다.",
+      "insight": "한국에서도 산업별로 'AI를 쓰되 어떤 기준을 지켜야 하는가'를 정하는 규칙이 구체화되고 있습니다. 데이터 활용 장벽은 낮추고 안전 요건은 명시하는 흐름은 의료 외에 금융·공공 등 민감 정보를 다루는 산업으로 번질 가능성이 큽니다.",
+      "isu_area": "AI 사업",
+      "isu_tag": "[정부 사업]",
+      "isu_insight": "의료·공공 분야에서 데이터 활용과 AI 안전기준이 정리되면 민원·내부 문서 검색용 RAG 챗봇 수요가 생길 수 있습니다. 보건의료 기관과 공공 고객 대상으로 접근 권한 통제와 응답 근거 표시를 갖춘 챗봇 제안을 준비해볼 만합니다. ISO27001 인증과 NCP 공공 클라우드 파트너 경험을 결합하면 보안 요건 대응에서 설득력을 높일 수 있습니다.",
+      "source": "머니투데이 (Google 뉴스)",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9QSnVwYkZlV051WnQtcWp2TW92NVRZWFprYTN2NUhoUE95SUpMcEZOdlAyRnIwSDgzZ28wOUVNYTBmaTZUdmNxWUhmWEpMekhiVUMyZmFiZkVVUTAyNGtGMkpDQ2ZyT1RWR2hTM25ETXktdlhIZGM00gF8QVVfeXFMTXFoVF8zang5RHBtZ21TQ19ib0dtY1ZUd2hpODltNVpPR3FGbXFjTjRNYWEwMWF5WUx5dkoyQVNkVnhpQ0RscHZzQzZvZE9MS1Rxd0JSRkZDdGlQN0ZXVlZobjZIV0RZOGJIeE1reVh4NWx1Z2k3R05QTEFEOA?oc=5"
+    },
+    {
+      "number": 5,
+      "category": "글로벌 이슈",
+      "title": "FCC, 스페이스X 'AI 데이터센터 위성' 최대 100만 기 승인",
+      "body": "미국 FCC가 일론 머스크의 스페이스X가 추진하는 **'Starmind' 구상**에 따라 **AI 칩을 탑재한 위성을 최대 100만 기** 배치하도록 승인했습니다. 구글과 블루 오리진 등도 우주 AI 데이터센터를 추진하고 있으며, 이번이 **해당 기관의 첫 승인**이라고 합니다.\n\nAI 연산 수요가 폭증하면서 전력과 부지 문제를 우주로 풀겠다는 구상이 규제 승인 단계까지 왔다는 의미입니다. 다만 승인은 배치 가능 범위에 대한 허가이며, 실제 운영 시점과 비용 경쟁력은 아직 확인된 바 없습니다.",
+      "insight": "AI 인프라 경쟁이 칩과 모델을 넘어 전력, 부지, 냉각 같은 물리적 한계를 어떻게 돌파하느냐로 확장되고 있습니다. 우주 데이터센터가 현실화되더라도 상용화에는 시간이 걸리겠지만, 연산 자원 확보가 AI 사업의 핵심 병목이라는 신호로 읽을 수 있습니다.",
+      "isu_area": "클라우드 사업",
+      "isu_tag": "[모니터링]",
+      "isu_insight": "우주 데이터센터는 당장 국내 고객사 사업과 직접 연결되지 않습니다. 다만 AI 연산 비용과 인프라 확보 이슈는 고객사의 클라우드 비용 문제로 이어집니다. NCP 파트너로서 AI 워크로드가 늘어나는 고객에게 마이그레이션 시 비용 최적화와 GPU 사용 계획을 함께 컨설팅하는 방향이 현실적입니다.",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers"
+    }
+  ],
+  "takeaways": [
+    "**AI 사용 한도와 과금은 고정값이 아닙니다.** GPT-6.2 사례처럼 정책이 바뀌면 체감 사용량이 달라지므로, 업무에 AI를 깊이 넣을수록 비용 변동을 미리 점검해야 합니다.",
+    "**AI 에이전트 시대의 경쟁력은 '통제 가능성'입니다.** MS의 에이전트 거버넌스 확대처럼 권한·기록·승인 관리가 기업 도입의 기본 조건이 되고 있습니다.",
+    "**한국에서도 업종별 AI 사용 기준이 구체화되고 있습니다.** 복지부의 의료데이터 가이드라인 개정은 규제 완화와 안전기준이 함께 가는 방향을 보여줍니다."
+  ],
+  "isu_summary": "오늘 뉴스는 AI 도입 이후 필요한 운영 요소가 비용 관리, 권한 통제, 데이터 활용 기준이라는 점을 보여줍니다. 이는 HR 데이터를 다뤄온 WORKUP·HR AI Package 고객에게 권한 분리와 로그 관리 기능을 갖춘 AI 제안을 할 수 있는 기회입니다. 또한 복지부 가이드라인 개정은 공공·의료 분야의 RAG 챗봇 영업 소재가 되고, 무료 AI 비서 확산은 RPA와의 역할 구분을 고객에게 설명해야 할 이유가 됩니다."
+}
