@@ -226,6 +226,7 @@ def build_ai_briefing_prompt(today: str, isu_context: str) -> str:
       "category": "모델 릴리스",
       "title": "뉴스 제목",
       "body": "본문 요약. 핵심 키워드는 **별표두개**로 강조. 큰따옴표 대신 작은따옴표 사용.",
+      "note": "기사 정보의 한계·추가 확인 필요 사항이 있을 때만 1문장 (없으면 빈 문자열)",
       "insight": "이 뉴스가 업계 전반에 미치는 의미와 맥락 (이수시스템 언급 금지)",
       "isu_area": "AI 사업",
       "isu_tag": "[핵심 기회]",
@@ -249,6 +250,7 @@ def build_ai_briefing_prompt(today: str, isu_context: str) -> str:
 - JSON이 유효한지 반드시 확인 후 출력하세요.
 - insight 필드에는 이수시스템을 절대 언급하지 마세요. ISU 관련 내용은 오직 isu_insight에만 작성합니다.
 - article_ref 는 해당 뉴스의 원본 기사 번호([1], [2], ... 형식)를 정수로 입력하세요.
+- body에는 기사에서 확인된 사실만 쓰세요. '제목과 짧은 요약만 확인되어', '세부 내용은 원문 확인이 필요합니다', '구체적인 내용은 알려지지 않았습니다'처럼 정보 출처의 한계나 추가 확인 필요성을 언급하는 문장은 body·insight에 절대 쓰지 말고, 꼭 필요할 때만 note 필드에 1문장으로 작성하세요.
 
 --- 이수시스템 컨텍스트 ---
 insight 필드는 기사 자체의 업계 시사점이므로 절대 수정하지 않는다. ISU 관점은 isu_insight와 isu_summary에만 작성한다.
@@ -293,6 +295,7 @@ def build_it_company_prompt(today: str) -> str:
       "category": "M&A·인수합병",
       "title": "뉴스 제목",
       "body": "본문 요약. 핵심 키워드는 **별표두개**로 강조. 큰따옴표 대신 작은따옴표 사용.",
+      "note": "기사 정보의 한계·추가 확인 필요 사항이 있을 때만 1문장 (없으면 빈 문자열)",
       "insight": "이 뉴스가 국내 IT 업계에 미치는 의미와 맥락",
       "article_ref": 3,
       "source": "출처명"
@@ -310,7 +313,8 @@ def build_it_company_prompt(today: str) -> str:
 - JSON 문자열 값 안에서 큰따옴표(")를 절대 사용하지 마세요. 작은따옴표(')를 쓰세요.
 - HTML 태그를 사용하지 마세요. 강조는 **별표두개**만 사용하세요.
 - JSON이 유효한지 반드시 확인 후 출력하세요.
-- article_ref 는 해당 뉴스의 원본 기사 번호([1], [2], ... 형식)를 정수로 입력하세요."""
+- article_ref 는 해당 뉴스의 원본 기사 번호([1], [2], ... 형식)를 정수로 입력하세요.
+- body에는 기사에서 확인된 사실만 쓰세요. '제목과 짧은 요약만 확인되어', '세부 내용은 원문 확인이 필요합니다', '구체적인 내용은 알려지지 않았습니다'처럼 정보 출처의 한계나 추가 확인 필요성을 언급하는 문장은 body·insight에 절대 쓰지 말고, 꼭 필요할 때만 note 필드에 1문장으로 작성하세요."""
 
 
 # ============================================================
@@ -460,7 +464,7 @@ def build_tts_text(news_data: dict) -> str:
     for i, item in enumerate(news_data.get('news', []), 1):
         cat = _strip_special(item.get('category', ''))
         title = _strip_special(item.get('title', ''))
-        body = _strip_special(item.get('body', ''))
+        body = _strip_special(get_body_and_note(item)[0])
         lines.append(f"뉴스 {i}번. {cat}.")
         lines.append(title)
         if body:
@@ -514,6 +518,61 @@ def generate_tts_audio(text: str, api_key: str) -> bytes | None:
 # ============================================================
 # Step 4: HTML 생성
 # ============================================================
+# 정보 한계·원문 확인 안내 문장 패턴 (본문/TTS에서 제외하고 '참고'로만 노출)
+_CAVEAT_PATTERNS = [
+    re.compile(p) for p in (
+        r'만\s*확인되',
+        r'확인(이|은)?\s*필요',
+        r'원문(을|의|에서)?\s*(확인|참고|참조)',
+        r'(수집된|제공된)\s*(기사|정보|자료)',
+        r'기사\s*(본문|원문|내용)?\s*(에서|에는|로는|만으로는)[^.!?]{0,30}(확인되지|알 수 없|파악되지|나와 있지)',
+        r'추가\s*확인',
+    )
+]
+_SENTENCE_SPLIT_RE = re.compile(r'(?<=[.!?。])(\s+)')
+
+
+_CAVEAT_CLAUSE_RE = re.compile(r'^(.*?(?:필요하나|필요하지만|필요하며|않았으나|않았지만|않았으며)),\s*(.+)$')
+
+
+def _is_caveat(sentence: str) -> bool:
+    return any(p.search(sentence) for p in _CAVEAT_PATTERNS)
+
+
+def split_caveats(text: str) -> tuple[str, list[str]]:
+    """본문에서 정보 한계/원문 확인 안내 문장을 분리해 (본문, [단서 문장]) 반환."""
+    if not text:
+        return text, []
+    parts = _SENTENCE_SPLIT_RE.split(text)
+    kept, caveats = [], []
+    # parts = [문장, 공백, 문장, 공백, ...]
+    for i in range(0, len(parts), 2):
+        sent = parts[i]
+        sep = parts[i + 1] if i + 1 < len(parts) else ""
+        if sent.strip() and _is_caveat(sent):
+            # '~확인이 필요하나, <사실>' 처럼 뒤에 사실 서술이 이어지면 뒷부분은 본문에 남긴다
+            m = _CAVEAT_CLAUSE_RE.match(sent.strip())
+            if m and not _is_caveat(m.group(2)):
+                clause = re.sub(r'필요(하나|하지만|하며)$', '필요합니다', m.group(1))
+                clause = re.sub(r'않았(으나|지만|으며)$', '않았습니다', clause)
+                caveats.append(clause + ".")
+                kept.append(m.group(2) + sep)
+                continue
+            caveats.append(sent.strip())
+            if kept and "\n" in sep:
+                kept[-1] = kept[-1].rstrip() + sep  # 문단 경계 유지
+        else:
+            kept.append(sent + sep)
+    return "".join(kept).strip(), caveats
+
+
+def get_body_and_note(item: dict) -> tuple[str, str]:
+    """item의 body에서 단서 문장을 걷어내고, note 필드와 합친 참고 문구를 반환."""
+    body, caveats = split_caveats(item.get("body", ""))
+    notes = [n for n in [item.get("note", "").strip(), *caveats] if n]
+    return body, " ".join(dict.fromkeys(notes))
+
+
 def md_to_html(text: str) -> str:
     return re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', text)
 
@@ -552,6 +611,9 @@ def generate_html(data: dict, it_data: dict = None, audio_filename=None) -> str:
       <p>{isu_insight}</p>
     </div>"""
 
+        body, note = get_body_and_note(item)
+        note_html = f"""
+    <p class="news-note">※ 참고: {md_to_html(note)}</p>""" if note else ""
         url = item.get("url", "")
         source = item.get("source", "")
         source_link = ""
@@ -567,7 +629,7 @@ def generate_html(data: dict, it_data: dict = None, audio_filename=None) -> str:
       <span class="section-tag {tag_class}">{cat}</span>
     </div>
     <h3 class="news-title">{item['title']}</h3>
-    <p class="news-body">{md_to_html(item['body'])}</p>
+    <p class="news-body">{md_to_html(body)}</p>{note_html}
     <div class="insight-box">
       <div class="label">시사점</div>
       <p>{md_to_html(item['insight'])}</p>
@@ -598,6 +660,9 @@ def generate_html(data: dict, it_data: dict = None, audio_filename=None) -> str:
         for item in it_data.get("news", []):
             cat = item.get("category", "시장 동향")
             tag_class = it_category_tags.get(cat, "tag-industry")
+            body, note = get_body_and_note(item)
+            note_html = f"""
+    <p class="news-note">※ 참고: {md_to_html(note)}</p>""" if note else ""
             url = item.get("url", "")
             source = item.get("source", "")
             source_link = ""
@@ -613,7 +678,7 @@ def generate_html(data: dict, it_data: dict = None, audio_filename=None) -> str:
       <span class="section-tag {tag_class}">{cat}</span>
     </div>
     <h3 class="news-title">{item['title']}</h3>
-    <p class="news-body">{md_to_html(item['body'])}</p>
+    <p class="news-body">{md_to_html(body)}</p>{note_html}
     <div class="insight-box">
       <div class="label">시사점</div>
       <p>{md_to_html(item['insight'])}</p>
@@ -764,6 +829,10 @@ def generate_html(data: dict, it_data: dict = None, audio_filename=None) -> str:
     overflow-wrap: break-word; word-break: break-word;
   }}
   .news-body strong {{ color: var(--accent); font-weight: 500; }}
+  .news-note {{
+    font-size: 12.5px; line-height: 1.7; color: var(--text-dim);
+    margin: -6px 0 16px; font-weight: 300;
+  }}
   .insight-box {{
     background: var(--surface-2);
     border-left: 3px solid var(--accent);
